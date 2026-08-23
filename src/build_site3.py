@@ -444,6 +444,9 @@ for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "fina
     _sp = ROOT / _f
     if _sp.exists():
         _sh.copy(_sp, _srcdst / _f)
+(_srcdst / "agents").mkdir(exist_ok=True)
+for _a in sorted((ROOT / "agents").glob("*.md")):
+    _sh.copy(_a, _srcdst / "agents" / _a.name)
 (_srcdst / "briefs").mkdir(exist_ok=True)
 for _b in (ROOT / "briefs").glob("*.html"):
     _sh.copy(_b, _srcdst / "briefs" / _b.name)
@@ -467,6 +470,7 @@ _manifest = {
     "current_through": latest_brief,
     "master_edition": "2026-08-22",
     "counts": {   # monotonic guards in check.sh compare these against the previous week's manifest
+        "agents": len(list((ROOT / "agents").glob("*.md"))),
         "briefs": len(briefs),
         "corrections": len(re.findall(r'&middot; C-0\d\d', update_html)),
         "clocks": update_html.count('class="clock"'),

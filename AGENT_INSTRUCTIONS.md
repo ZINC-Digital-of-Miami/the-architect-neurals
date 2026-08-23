@@ -64,6 +64,9 @@ src/                        ← SOURCES + GENERATOR. Regenerate only from here.
                               §C the exact in-run actions, §D the turnover written after the work
   brief_lint.py               enforces the canonical brief shape (= Brief 001) and the voice floor;
                               check.sh runs it on every brief, every build
+  agents/1-elections.md …     the eight standing research specialists — job, standing instruction,
+  agents/8-dockets.md         owned anchors, working routes, known traps, sweep areas, and the handoff
+                              written to each by the agent that closed the previous run
 
 check.sh                    the pre-deploy guards (no network) — the automated run calls this
 deploy.sh                   build + check.sh + link + deploy: --prod (the weekly run), or no

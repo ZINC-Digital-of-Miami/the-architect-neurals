@@ -5,6 +5,7 @@
  "current_through": "2026-08-23",
  "master_edition": "2026-08-22",
  "counts": {
+  "agents": 8,
   "briefs": 2,
   "corrections": 13,
   "clocks": 12,
@@ -15,18 +16,58 @@
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 21616,
-   "sha256": "8adda059ba28d638a5f1fd01b84c04fc6fc0cbb0928af07f7fd433b3ba2ab64e"
+   "bytes": 21910,
+   "sha256": "2373b5dd3abf99d53613cbbdf7313f1601d5b330f28a4e03dfd0fe37374461c6"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 14003,
-   "sha256": "ba19dc2b05045a21b828cc1f41df549a50664c4b1cc105b8305cbd21eec97ed7"
+   "bytes": 14293,
+   "sha256": "88b9cff80b1c39df5dcdbe0f26a7d9a3b548ae0fcfbbb3085f4dd150e634bd34"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 38269,
-   "sha256": "d8c1162a02e19e9b9f5811b7059bd0b84ba9056606a4f3a6bde4054525ddc0f3"
+   "bytes": 22234,
+   "sha256": "fa8feb80586f86018aad0244a26d38c6277b100e61ac471f72535751ec9f2d70"
+  },
+  {
+   "path": "agents/1-elections.md",
+   "bytes": 8858,
+   "sha256": "41f4e8680d93bc02368d85123a309cab6bd4410ba15c8bccb0a403ff41c992fb"
+  },
+  {
+   "path": "agents/2-executive-power.md",
+   "bytes": 8237,
+   "sha256": "f357ed27e0d612d7d01bc9c789b9c380a874c5aa441d5e5772d81050d7ade5c6"
+  },
+  {
+   "path": "agents/3-wars.md",
+   "bytes": 9265,
+   "sha256": "f7bd9cbc543eb2c59d6c3adef7f769f49eba1c2126f3001a4f2ade8a516ed9f6"
+  },
+  {
+   "path": "agents/4-epstein-doj.md",
+   "bytes": 10579,
+   "sha256": "61a4240fde512924696a92c62cee114040c8811769487cdc53b4dc83927ca6df"
+  },
+  {
+   "path": "agents/5-detention.md",
+   "bytes": 10081,
+   "sha256": "b208061d23fe063e66e0582fa812dc2610c2dd1fc6b28e82feda3f6a995b4909"
+  },
+  {
+   "path": "agents/6-succession.md",
+   "bytes": 8527,
+   "sha256": "4e8ec712caa29c2ee8f6ef7c476db9835b0d4b10e57bc284fb4ada2df558742b"
+  },
+  {
+   "path": "agents/7-money.md",
+   "bytes": 12054,
+   "sha256": "63e520b0ff00d260f477b100a856dfa477604a1287614a5b5914e24d812d9a77"
+  },
+  {
+   "path": "agents/8-dockets.md",
+   "bytes": 10111,
+   "sha256": "24c47725df88a5a8568206e3f11380253d9a2c8ff4981a5ce37344088a83aa30"
   },
   {
    "path": "brief_lint.py",
@@ -60,13 +101,13 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 31795,
-   "sha256": "24794562246145008c7b5fb69a0f83ce3c57b430ca3f5648b4b9e6df3ec0f3d6"
+   "bytes": 31995,
+   "sha256": "b701eb94bcd403e4a255dfadc5ee06d6034185a0b736364673e649529af2d5f1"
   },
   {
    "path": "check.sh",
-   "bytes": 5772,
-   "sha256": "fb7031d2289607aaa77d8bdc9621a57e5dbbe8148d02277f49c7718ca2fe93bc"
+   "bytes": 6825,
+   "sha256": "d40264cee725d9f209531ce8279e2a80bac997c176065899f31b1c98bb490cf8"
   },
   {
    "path": "deploy.sh",

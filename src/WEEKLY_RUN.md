@@ -66,119 +66,26 @@ RETURN FORMAT: raw structured data, not prose for a reader. One row per finding:
 
 **[Added 2026-08-22 — the leash.]** You are a LEAF agent. Do NOT spawn subagents, do NOT delegate, do NOT use the Agent tool under any name — every search and every fetch is done by you, in this context. Work you cannot complete yourself is reported in list (1) as an absence with what you tried, never handed to another agent. Stop when your sweep areas are covered or when you have made roughly sixty tool calls, whichever comes first, and return your rows then; a partial return with stated gaps beats an exhaustive one that never arrives.
 
-## A.2 The eight sweep blocks — append ONE to the preamble per agent
+## A.2 The eight standing specialists
 
-Owner's text with dated anchor corrections marked `[upd 08-22]`. Do not edit these blocks during a run; list drift in the turnover (§D.4) and apply it at the start of the next run.
+Each agent is a **standing specialist with a file of its own** in `src/agents/`, shipped with the working copy and hash-verified by the pull. The file carries the specialist's job, its standing instruction, the anchors it owns, the fetch routes that beat the blocks, the traps it has already hit, its sweep areas, and — at the foot — **the handoff written to it by the agent that closed the previous run**.
 
-### SPAWN 1 — Elections & election machinery
+| # | File | Specialist |
+|---|---|---|
+| 1 | `src/agents/1-elections.md` | Elections & election machinery |
+| 2 | `src/agents/2-executive-power.md` | Insurrection Act & executive power |
+| 3 | `src/agents/3-wars.md` | The wars, the count |
+| 4 | `src/agents/4-epstein-doj.md` | Epstein files & DOJ compliance |
+| 5 | `src/agents/5-detention.md` | Immigration detention & enforcement |
+| 6 | `src/agents/6-succession.md` | Succession, health, 2028 |
+| 7 | `src/agents/7-money.md` | The money (EDGAR-first) |
+| 8 | `src/agents/8-dockets.md` | The dockets |
 
-description: "Elections and machinery sweep"
+**Each prompt = §A.1 preamble, verbatim (including the leaf paragraph) + the whole specialist file, with substitutions resolved.** Do not summarize the file and do not send only its sweep areas: the standing instruction, the owned anchors and the handoff are what stop the agent starting cold every week.
 
-YOUR SWEEP AREAS:
+**Never edit a specialist file during a run.** Agents return a `FILE DRIFT` section; the closing agent applies it at the *start* of the next run (§C.1) and records that it did so.
 
-1. November 3, 2026 midterms & election administration: DOJ or DHS involvement, federal monitors and where deployed, certification disputes, candidate-filing disputes, litigation over election procedures. DOJ's own releases are primary — its standing position is that monitoring "continues through the general election on November 3, 2026."
-2. Election machinery: post-*Louisiana v. Callais* redistricting (new maps, mid-decade redistricting, state supreme court action), SAVE Act status in Congress (last action: cloture on the HAVA photo-ID variant failed 52–46, 4:36 a.m. Aug 8, 2026, Senate roll call #231; both chambers are in recess until Sept 14 **[upd 08-22]**), DHS/FEMA notices and grant conditions to states and the 26-state suit in D.R.I., suspended/moved/postponed primaries, the Missouri redistricting referendum fight in Cole County (hearing was Aug 18 — find the ruling; ballot-print deadline is Sept 8 **[upd 08-22]**).
-3. SCOTUS emergency applications **26A124** and **26A139** (mail-ballot executive order, 23 states + DC): any order, briefing, or disposition. Pending without order since July 27, 2026 as of the last brief (27 days at Aug 23 **[upd 08-22]**) — an order EITHER WAY is a lead, and continued silence is itself reportable with the day count. Also any OTHER direct SCOTUS order to the president and documented compliance or defiance.
-
-### SPAWN 2 — Insurrection Act & executive power
-
-description: "Insurrection Act / executive power sweep"
-
-YOUR SWEEP AREAS:
-
-1. Insurrection Act: any invocation, proclamation, or new explicit threat to deploy troops against a US city; National Guard federalization or military deployment in US cities; related litigation and compliance. **Verify absence against the primary record**: query the Federal Register presidential-documents API for the window and report what it returned.
-2. Direct court orders to the president or executive branch and compliance/defiance — especially any SCOTUS order and the administration's response. Contempt ledger: the DHS civil contempt in C.D. Cal. (Vasquez Perdomo, $500/day since Aug 4, 2026) and the Boasberg contempt inquiry (en banc pending since June 22, 2026).
-3. Executive orders signed this window with structural significance (elections, law enforcement, emergency powers, civil service, citizenship). Cite the Federal Register document number, not the press coverage.
-4. **[upd 08-22]** Director of National Intelligence: Walter (Jay) Clayton was confirmed 51–47 on July 28, 2026 (Senate roll call #211); Pulte's acting tenure is over (Corrections Log C-007). Report only new DNI/FHFA developments; do not re-report the acting stint as current.
-5. Trial balloons on executive power: third-term/2028 statements, election-emergency statements, habeas suspension. Get the exact quote, date, venue, and primary source (official transcript, video, Truth Social post). The two standing poles: "Let me just say stranger things have happened" (Aug 11, 2026, on an election national-security emergency) and "I'd love to run, but the law is very strong" (Aug 11, 2026, on 2028).
-
-### SPAWN 3 — The wars, the count
-
-description: "Wars and Iran/Hormuz sweep"
-
-YOUR SWEEP AREAS:
-
-1. Iran / Strait of Hormuz: US or Iranian military action, strikes, naval blockade enforcement (vessels redirected/disabled/boarded — anchor the running tally to CENTCOM's own releases and flag drift), ceasefire status, escalation or de-escalation. The tempo of presidential statements: collect EACH with exact date, venue, and verbatim quote; note market-relevant statements and the market move as SEPARATE dated facts, asserting no causation.
-2. Congressional war powers: authorization votes, war-powers resolutions, discharge motions — escalate to the actual roll call at senate.gov/congress.gov. Standing: H.Con.Res. 89 passed the House 214–208 (July 23); S.J.Res. 180 discharge failed 47–49 (July 23, roll call #207); S.J.Res. 181 discharge failed 49–50 (July 30, roll call #216). The report now carries this as a tier change — the check survives in one chamber only (C-008) **[upd 08-22]**. No floor votes are possible before Sept 14.
-3. Casualty figures and any RECATEGORIZATION of them. Standing finding: in July 2026 the Pentagon moved Iran-war casualties from "Operation Epic Fury" to a new "Overseas Operations" category, restarting the count (displayed KIA 18→14; 600+ wounded became "207 since July 7"). Track: DoD/DCAS changes, Sen. Rosen's Aug 14 bill barring "manipulating casualty records" (GET THE BILL NUMBER — it was not yet posted), and the USS Lincoln conditions with each denial's exact scope (CENTCOM denies deaths aboard; the Navy denies an *increase in reported* suicidal ideation; Hegseth's is broad and evidence-free).
-4. Other active US hostilities (Yemen, Venezuela/Caribbean, elsewhere): strikes, claimed legal authorities, congressional notifications, civilian-casualty reviews, casualty counts.
-
-### SPAWN 4 — Epstein files & DOJ
-
-description: "Epstein/DOJ compliance sweep"
-
-YOUR SWEEP AREAS:
-
-1. **Phang v. Blanche, D.D.C. No. 1:26-cv-01417 (Sullivan)** — the compliance case. At the Aug 13, 2026 hearing Sullivan warned of contempt: "I don't want to do it, but I will do it… That isn't a threat. That's a promise." Plaintiff's proposed compliance orders were due ~Aug 23 — i.e. this window **[upd 08-22]**. PULL THE DOCKET: any contempt order, compliance filing, redaction log, or new deadline. **Any contempt order is the lead finding of the week.** CourtListener has been blocking fetches — try storage.courtlistener.com PDFs, the court's own site, and PACER-derived reporting, and say which route worked.
-2. Epstein Files Transparency Act compliance: DOJ's disclosure page (justice.gov/epstein) — any release after the standing last-activity date of April 3, 2026. The DOJ OIG audit of EFTA compliance. Withholding grounds asserted, and whether the withheld handwritten FBI interview notes (the 2019 trafficking allegation) are addressed by any DOJ statement.
-3. **Preska unsealing, S.D.N.Y. (Giuffre v. Maxwell, 15-cv-07433 / US v. Maxwell)** — she rejected all of Maxwell's objections Aug 11–12, 2026 and ordered materials unsealed. Has the release actually EXECUTED? Any newly named individuals qualify only at [A]/[B].
-4. Survivor litigation (including the Jane Does suit against DOJ and Google), and any DOJ leadership changes, resignations-in-protest, or whistleblower letters this window.
-5. Attorney General Blanche's department: new OLC opinions, policy memos, personnel actions. Standing: the ~Aug 10–11 OLC opinion extending executive privilege to presidential communications with "private advisers" outside government.
-6. **[upd 08-22]** The report's Chapter 21-O now carries the administration's Epstein explanations as a nine-phase dated chronology ending with Sullivan's Aug 13 warning. Any NEW official explanation this window is a tenth phase: quote it exactly, date it, and say which earlier phase it contradicts.
-
-DENIAL-SCOPE DISCIPLINE IS THE POINT HERE: DOJ's institutional line is that it has "not KNOWINGLY violated, nor has it ever ACKNOWLEDGED violating" the Act — a knowledge-qualified denial that concedes nothing about the withholding. Blanche's December 2025 line — "There's no effort to hold anything back because there's the name Donald J. Trump" — is a MOTIVE denial, not a withholding denial. Record whether any new statement finally covers the allegation.
-
-### SPAWN 5 — Immigration detention & enforcement
-
-description: "Immigration detention sweep"
-
-YOUR SWEEP AREAS:
-
-1. Detention population: the most recent official ICE detention statistics release — anchor to the dataset and its as-of date; do NOT merge point-in-time figures with average-daily-population figures. Standing anchors: ~68,000 in early Aug 2026; record 70,766 on Jan 24, 2026; TRAC's 65,765 is a July 11 point-in-time.
-2. Contracts, especially no-bid/sole-source: the up-to-$10B "Mega Hub" IDC solicitation (seven concurrent sites incl. Guantánamo; bids are due Aug 31, 2026 — after this window; report any amendment, Q&A, or extension; the award is next week's item **[upd 08-22]**), the ~$1.5B CoreCivic facility PURCHASES (California City, Otay Mesa), GEO awards, the Camp East Montana no-bid extension. Escalate to SAM.gov notice IDs and USAspending award IDs.
-3. Deaths in custody: new ICE death notifications (ICE must publish them), plus deaths ICE declines to count. Standing finding: Jose Chajon-Raxon, third Delaney Hall-linked death, where ICE stated "when an individual is no longer in ICE custody, then ICE will no longer be responsible for monitoring or reviewing deaths that may occur" — a denial whose scope is the accounting category, not the death. Keep the competing YTD tallies (AILA, NIPNLG, Kocher) separate and labeled; do not merge them.
-4. Court blocks: injunctions/TROs on detention and removal practice, appellate developments, third-country removal agreements and flights, Guard/military use in immigration enforcement.
-5. Abrego Garcia: CA4 No. 26-6466 (briefing due Sept 21 / Oct 21 **[upd 08-22]**), D. Md. habeas 8:25-cv-02780, M.D. Tenn. 3:25-cr-00115 dismissal appeal.
-6. **[upd 08-22]** DRI target: the report carries **November 30, 2026** (C-005 corrected a Sept 30 figure). Report any change to the 92,600-bed / 8 mega-center / 16 RPC / 12,000-officer targets against the white paper, and any new site purchase with its USAspending award ID.
-
-### SPAWN 6 — Succession, health, 2028
-
-description: "Succession and health sweep"
-
-YOUR SWEEP AREAS — **sourced facts only; offer NO diagnosis and no clinical inference in your own voice. Report what named people and official documents say, and nothing beyond it.**
-
-1. Presidential fitness: statements by the White House physician (official memos — the last was May 29–30, 2026), named-outlet visible-event reporting, schedule anomalies documented in official schedules or pool reports. Standing: Dr. Jonathan Reiner's on-record NYT op-ed of Aug 12, 2026 seeking a congressional commission (NOT the 25th Amendment), and the named White House response, which is rhetorical in scope with no clinical content.
-2. 25th Amendment: any on-the-record statement by a member of Congress or an official.
-3. VP positioning: Vance's schedule, delegated authorities, any "acting" role, 2028 statements.
-4. 2028 trial balloons: exact quote, date, venue, primary source. Merchandise/organizational signals only if 2+ independent outlets.
-5. Any succession-relevant legal or constitutional maneuver.
-6. Senior personnel changes in the White House and Cabinet this window.
-
-### SPAWN 7 — The money (EDGAR-first)
-
-description: "Family money and crypto sweep"
-
-**DO THE DOCUMENT PULLS FIRST — they outrank news coverage.** Use EDGAR full-text search (efts.sec.gov/LATEST/search-index?q=) and browse-edgar. Report accession numbers.
-
-1. **AI Financial Corp / ALT5 Sigma — CIK 0000862861** (ONE registrant, renamed Apr 28, 2026; ALTS→AIFC). Pull every new filing: the Q2 10-Q that followed the Aug 12 NT 10-Q, any 8-K, going-concern language, Nasdaq deficiency status, and the marks on its WLFI tokens after the scheduled Aug 12, 2026 unlock of 3.58B tokens (was the unlock executed on-chain?). Standing at [A]: $348.3M one-quarter unrealized WLFI loss; a $15M loan FROM WLFI with 378M tokens pledged; −92.2% from the $7.50 offering.
-2. **World Liberty Trust Company, N.A.** — OCC Corporate Decision #1385, Control No. 2026-Charter-344521, preliminary conditional approval Aug 14, 2026. Follow-on: comment letters, conditions satisfied or not, final approval, GENIUS Act compliance, any change to the passive indirect investors named in the decision (DT Marks SC LLC, StringZ Holding RSC (DE) LLC, AMGUS, LLC).
-3. **Warren–Reed letter (Nov 17, 2025) to Bessent and Bondi** on WLFI buyers tied to sanctioned/DPRK/A7A5/Tornado Cash wallets — deadline Dec 1, 2025. Any Treasury or DOJ response. **A continued non-answer IS the finding** — establish the current day count. Same for the Dec 15, 2025 USD1/PancakeSwap follow-up (deadline Jan 12, 2026) and the July 6, 2026 Warren/Wyden/Schumer letters to ten Trump-orbit entities about the alleged May 2026 DOJ–IRS immunity settlement (deadline July 20, 2026; 0 of 10 had replied). Also: has the settlement document itself surfaced? It remains unobtained.
-4. **Steve Witkoff's OGE 278e** — uncertified for roughly a year against a ~60-day norm. Check OGE and ProPublica's disclosure database for a certification date.
-5. **Point72 and ExodusPoint 13F/13D/13G** for any AIFC position change (CUSIP 47089W104). Q2 2026: Point72 held NO position; ExodusPoint held 2,170,301 shares / $1,269,843.
-6. This window's sweep: WLFI/USD1/$TRUMP developments and the Warren–Blumenthal SEC referral; Trump Media (DJT) filings and the Truth Social API business that sells post feeds to ~10 customers, "primarily high-frequency trading firms" per its interim CEO on the record; American Bitcoin; Kushner–Affinity; Witkoff positions; new foreign-state deals; pardons where the recipient or associates had financial ties (report the pardon and the money as SEPARATE dated facts); 1789 Capital; no-bid enforcement contracts; OGE/ethics filings.
-7. **[upd 08-22] Four new Silence Ledger clocks (Consolidated Edition) — establish each day count as of {{SUNDAY}} and report any answer:** (a) Huffman/Garcia/Heinrich → Defense, Commerce, Energy, Interior, Feb 2, 2026, on officials'/donors'/Trump Organization equity in companies taking federal mineral stakes — documents were due Feb 26, 2026; (b) Warren/Blumenthal/Stansbury → the Trump Presidential Library Foundation, July 16, 2026, on the ~$14.5M gap between identified settlement proceeds and reported revenue; (c) Warren/Garcia/Blumenthal/Duckworth → DoD Inspector General, Aug 5, 2026, on $3.2B in awards to companies tied to 1789 Capital and American Ventures — has an investigation opened?; (d) the 15%/25% China chip remittances — any regulation, appropriation, or Treasury receipt showing they were ever collected.
-8. **[upd 08-22] New standing money items from the Consolidated Edition:** Project Vault / EO 14415 (91 Fed. Reg. 46693) and the federal mineral-equity ledger (MP Materials, Trilogy, Lithium Americas, Vulcan/ReElement, Korea Zinc, USA Rare Earth, Atlantic Alumina) — any new federal stake, price floor, or insider sale; Stargate — MGX/G42/Tahnoon transactions and any filing that links Stargate capital to family revenue (standing: none — report ABSENT if still none); Argentina — the $40B package, Bessent–Citrone, Discovery Capital positions; the presidential library foundation's filings; Disney/ABC v. FCC (filed Aug 18, 2026) and the NYT v. Trump amended-complaint deadline of Aug 27, 2026 (dockets to Spawn 8; the money side — settlements, the $56.5M to the library — is yours).
-9. **The un-drawn edge — confirm the absence:** any subpoena identifying Polymarket wallet holders, WLFI stake buyers, or an envoy's market position. This has been ABSENT every week; say what you searched and confirm it is still absent.
-
-DO NOT merge these entities: DT Marks DEFI LLC (receives 75% of token-sale proceeds) is not DT Marks SC LLC (passive investor in the trust bank). Zach Witkoff (WLF CEO, trust-bank president, ALT5 chairman) is not Steve Witkoff (special envoy).
-
-### SPAWN 8 — The dockets
-
-description: "Docket sweep: prosecutions and appeals"
-
-YOUR SWEEP AREAS — identify every case number; pull the docket entry, not the coverage:
-
-1. **US v. Comey** — CA4 Nos. 25-4673(L)/25-4674 (argument set for Sept 15, 2026, Richmond **[upd 08-22]**): any scheduling change, supplemental briefing, or opinion. And the separate E.D.N.C. No. 4:26-cr-00016-FL ("86 47" threat case): government responses to the four dismissal motions were due Aug 18 — pull them **[upd 08-22]**; arraignment; trial set for Oct 21, 2026.
-2. **US v. Letitia James** — the consolidated CA4 appeal; any new indictment attempt.
-3. **US v. Bolton** — D. Md. 8:25-cr-00314-TDC, sentencing set Oct 28, 2026. NOTE: the plea was to **Count 12 only**, per the docket minute entry — coverage claiming "all 18 counts" is wrong; the docket controls.
-4. Any grand jury or probe targeting Gavin Newsom.
-5. Press subpoenas: new DOJ subpoenas to journalists or outlets, and litigation over them.
-6. **Harvard** — CA1 No. 25-2230 (funding appeal; government reply filed Aug 12, 2026; watch for an argument date) and D. Mass. 1:26-cv-10844-MJJ (Title VII; MTD hearing Sept 24, 2026). The Title VI suit was dismissed Aug 13, 2026 (D. Mass. 1:26-cv-11352-RGS) — any appeal?
-7. **AAP v. Kennedy** — CA1 No. 26-1503; the government moved Aug 14, 2026 to expedite argument or submit on the briefs. Any ruling, argument date, or district-court movement.
-8. **Abrego Garcia** — CA4 26-6466, D. Md. 8:25-cv-02780, M.D. Tenn. 3:25-cr-00115.
-9. NEW indictments of political adversaries (former officials, prosecutors, judges, governors) and any grand jury refusals to indict.
-10. Contempt proceedings against DOJ or administration officials.
-11. **[upd 08-22]** The press dockets the report's Chapter M now tracks: Disney/ABC v. FCC (filed Aug 18, 2026 — complaint, any TRO motion, FCC response); NYT v. Trump (amended complaint due Aug 27, 2026); the refiled WSJ suit (May 27, 2026); the Selzer state case (argued Jan 30, 2026, no ruling); the AP D.C. Circuit merits (argued Nov 24, 2025, no opinion — report the day count); the USAGM/VOA stay (D.C. Cir., since Mar 31, 2026). Also the White House ballroom: the D.C. Circuit self-stay expired Aug 21 — what happened, and the status of the SCOTUS application filed Aug 14.
+The eight sweep blocks that used to live inline here are now §Sweep areas inside each specialist file; the original wording is preserved there and in the owner's Google Doc named under Provenance.
 
 ---
 
@@ -307,7 +214,7 @@ Write `_backups/TURNOVER_{{SUNDAY}}.md` before the commit in C.8. Facts only, fo
 1. **What moved.** Every correction/context ID added; every thread retired (how) or added; every clock answered; every map edge changed. IDs and dates only.
 2. **What did not resolve.** Every origin domain that 403'd and the route that worked; every docket that could not be read and why; every "find the award / find the bill number" still open.
 3. **Standing anchors.** The exact numbers the next run advances from: `current_through`; next correction ID; every clock's day count as of {{SUNDAY}}; detention figure and as-of date; last statutory Epstein release date; newest Senate roll call recorded; map node/edge counts; the pushed SHA.
-4. **Spawn-prompt drift.** Every sentence in §A.2 that this week's record superseded — quote it, give the replacement, name the record. Also: any agent that delegated despite the leaf rule (which one, how many children) so §A.1's last paragraph can be tightened. **Do not edit §A.2 mid-run**; the next run applies this list first and commits it.
+4. **Specialist handoffs — write all eight.** For each `src/agents/N-*.md`, replace its `## Handoff from the closing agent` section with a new dated one addressed to that specialist: *what I could not resolve for you* (named, with what was tried), *pull these first* (two to four items, in order, with dates), and *what moved in your anchors* (including any correction that overturned something the file asserted). Then apply every `FILE DRIFT` item the agents returned, and update each §Standing anchors to the values this run measured. **This is the memory. A run that skips it makes next week start cold.** Also record any agent that delegated despite the leaf rule, so §A.1 can be tightened.
 5. **Environment.** `vercel whoami`; Node/Python versions if changed; any tool that blocked; anything the next run must know before C.1.
 
 The turnover replaces nothing. §A–§C stay as they are; the turnover is the delta the next run reads after the three governing files.

@@ -166,7 +166,12 @@ cd work && python3 src/build_site3.py && ./check.sh
 ## 6. Sync back, commit, push (the backup of record), then archive to Drive
 
 **Only after step 5 verified live.** From the project folder:
-`rsync -a --delete work/src/ src/ && rsync -a --delete --exclude .vercel work/site/ site/ && cp work/AGENT_INSTRUCTIONS.md work/AUTOMATED_RUN_TASK.md work/check.sh work/deploy.sh work/pull_src.sh .`
+`rsync -a --delete work/src/ src/ && rsync -a --delete --exclude .vercel work/site/ site/`
+
+**Do NOT copy `work/*.sh` or the two root .md files back over the project's own.** They came from last week's
+deployment and are older than the repo; on 2026-08-23 exactly that copy silently deleted the design-lock guard
+from `check.sh` and it went a full cycle unnoticed. The root scripts and specs are canonical. If a script must
+change, change it in the project and let the next build ship it.
 then `./check.sh` again on the synced tree (must exit 0), then
 `git add -A && git commit -m "Weekly Brief NNN — week ending BRIEF_DATE" && git push origin main`,
 and verify `git ls-remote origin main` equals `git rev-parse HEAD`. Record both SHAs in the run
