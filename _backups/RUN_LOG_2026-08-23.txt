@@ -12,6 +12,6 @@ build: sections 14; index 594,958 B; check.sh OK in work/ with monotonic guards 
 deploy: attempt 1 — Vercel CLI threw an uncaught exception after upload (stack trace only; no deployment created); attempt 2 — dpl_Bd4ES22hED9g4FTfXidGkm95gL1f, production, aliased
 verify (G9): / 200 · /briefs/2026-08-23.html 200 · /src/MANIFEST.json 200 current_through=2026-08-23 · masthead EDITION UPDATE 002 · live index sha256 == built
 index.html sha256: f03eb5e5a5f459af5a4634e7fc647ace4e406ea1d86ea67fd4c282aa7211efe4
-git: synced work/ → project; check.sh OK on synced tree; commit + push below
+git: synced work/ → project; check.sh OK; pushed a3f402bd23be64042f9eef0f122ec0b7a1828dfc (== origin/main)
 Drive archive: see notification
 artifact: not republished — artifact 43bad372… belongs to the other account; not owned here
