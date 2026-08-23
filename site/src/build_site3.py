@@ -436,7 +436,7 @@ _srcdst = DIST / "src"
 if _srcdst.exists():
     _sh.rmtree(_srcdst)
 _srcdst.mkdir()
-for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css",
+for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
            "build_site3.py", "neural_map.html", "neural_data.json", "neural_svg.frag",
            "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js"]:
     _sp = ROOT / _f

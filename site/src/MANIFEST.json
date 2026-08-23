@@ -6,13 +6,18 @@
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 20240,
-   "sha256": "a227d70a2530ac4dd4c4e49ed96224072e7b16fb67d275132ac0a21cf28d0147"
+   "bytes": 21017,
+   "sha256": "eebfa1a5833f032ca34cd39ae01fa2e97c46172d21bfff5899a0b8bccb4c3e52"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 10895,
-   "sha256": "37435176901a107ff9fe207e563ece649b55eebde351bb55d3743340df891148"
+   "bytes": 13577,
+   "sha256": "d6e4889ecd1277103604fb61b54825e1b463d3e2e1762386d654d166799d9e37"
+  },
+  {
+   "path": "WEEKLY_RUN.md",
+   "bytes": 31489,
+   "sha256": "d84b37fec1f45c4956525748bda8c07c4883177eb428586aa2458d0557e9c282"
   },
   {
    "path": "briefs/2026-08-16.html",
@@ -36,8 +41,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 31182,
-   "sha256": "3739e893749eeb8caf1ce68d3522d5c2ae92778156337db8d0e4726d87f8cc9d"
+   "bytes": 31199,
+   "sha256": "4f1c3e487eb923c8d237bc7942bb2eda11bc400e931eab80f005edfeeac55c7c"
   },
   {
    "path": "check.sh",

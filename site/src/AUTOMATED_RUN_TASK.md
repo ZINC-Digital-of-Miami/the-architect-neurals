@@ -1,9 +1,17 @@
-# THE ARCHITECTURE — Sunday automated run (task text v7)
+# THE ARCHITECTURE — Sunday automated run (task text v8 — local Claude Code Desktop)
 
-Paste this as the body of the weekly scheduled task. It runs every Sunday (week ending Sunday)
-and ends with the updated report **live on Vercel and verified**, or with an honest "not live"
-notification and the deploy package attached to the run. No preview step: the weekly update
-goes straight to production. It never ends with a silent partial result.
+This is the body of the weekly scheduled task, registered as a **local** Claude Code Desktop
+task on Kirk's Mac (task id `architecture-sunday-run`, Sundays 07:00 local; runs on next app
+launch if the Mac was asleep). It runs every Sunday (week ending Sunday) and ends with the
+updated report **live on Vercel and verified**, or with an honest "not live" notification and
+the deploy package left in the project folder. No preview step: the weekly update goes straight
+to production. It never ends with a silent partial result.
+
+**v8 changes from v7 (local execution):** no `VERCEL_TOKEN` — the Vercel CLI on this Mac is
+already logged in (`vercel whoami` → `zincdigitalofmiami`); the working copy is pulled from the
+live site exactly as before and, on success, synced back into the project folder and **pushed to
+GitHub** (`ZINC-Digital-of-Miami/the-architect-neurals`, branch `main`) as the off-machine
+backup; the run log is committed with it. Everything else is v7 verbatim.
 
 Fixed facts for this task:
 
@@ -15,11 +23,13 @@ Fixed facts for this task:
   wherever this text and the spec differ)
 - SEC User-Agent for every EDGAR request: `TheArchitectureResearch [FILL IN: your email]`
   (SEC rejects requests without a name-plus-contact User-Agent)
-- Deploy credential: a Vercel token stored as the Drive file named `VERCEL_TOKEN` inside the
-  THE ARCHITECTURE folder (one line, the token only). Read it with the Drive connector at
-  deploy time, export it to the shell, and never write it into any file, artifact, log or
-  notification. If the scheduler offers a secrets/environment feature, prefer that and skip
-  the Drive file.
+- Deploy credential: **none needed.** This Mac's Vercel CLI session is persisted. First command
+  of every run: `vercel whoami` must print `zincdigitalofmiami`; if it does not, stop and notify
+  "NOT LIVE — Vercel CLI not logged in" (Kirk runs `vercel login` once). Never write any token
+  into a file, artifact, log, notification, or commit.
+- Project folder (git, remote `origin` = GitHub): `/Users/zincdigital/Documents/the architect neural`
+- Prerequisites on this Mac (verified 2026-08-22): Node 22, `vercel` 53.x, Python 3.12 with
+  `markdown`, `/sbin/sha256sum`, `gh` logged in as zincdigitalofmiami.
 
 ---
 
@@ -32,15 +42,17 @@ this week has already run — stop and say so.
 
 ## 1. Pull the working copy (newest deployment, promoted or not)
 
-1. Read the `VERCEL_TOKEN` Drive file now (connector `download_file_content`; base64-decode;
-   strip whitespace); export it to the shell for the rest of the run. `npm i -g vercel`.
-2. Bootstrap the pull script from the live site, then let it do the rest:
-   `curl -sf https://the-architecture-neurals.vercel.app/src/pull_src.sh -o pull_src.sh && bash pull_src.sh work`
+1. `cd "/Users/zincdigital/Documents/the architect neural" && vercel whoami` (must be
+   `zincdigitalofmiami`) and `git status --porcelain` (must be empty — if not, stop and notify:
+   uncommitted local edits would be overwritten by the sync in step 6).
+2. Pull the working copy from the live site with the script in the repo:
+   `bash pull_src.sh work`  (`work/` is git-ignored)
    The script finds the project's newest READY deployment (preview or production) with
    `vercel ls`, fetches `/src/MANIFEST.json` and every listed file from it with `vercel curl`
-   (which bypasses deployment protection), verifies every SHA-256, and writes the working copy
-   to `work/` (`work/src/…`, plus the spec, this text and the scripts at `work/`). If the
-   token is unavailable it falls back to the live alias. It prints which deployment it used.
+   verifies every SHA-256, and writes the working copy to `work/` (`work/src/…`, plus the spec,
+   this text and the scripts at `work/`). Without a token it uses the live alias, which is the
+   production deployment — the correct source for a straight-to-production run. It prints which
+   deployment it used.
 3. `PREV_DATE` = `current_through` in `work/MANIFEST.json`. If the live alias's
    `/src/MANIFEST.json` carries an older date than `PREV_DATE`, an unpromoted manual preview
    exists: build on it (the script already did) and say so in the notification.
@@ -48,10 +60,16 @@ this week has already run — stop and say so.
    mismatch that survives one retry), do not improvise a working copy from memory or from
    older project files: notify what failed and stop.
 
-Read `work/AGENT_INSTRUCTIONS.md` in full before touching anything. Its §6 evidence rules and
-§7 permanent corrections are not optional.
+Read `work/AGENT_INSTRUCTIONS.md` and `work/src/WEEKLY_RUN.md` in full before touching anything.
+The spec's §6 evidence rules and §7 permanent corrections are not optional. If a
+`_backups/TURNOVER_<date>.md` exists in the project folder from last week, read it next — and apply
+its Part-A drift list to `work/src/WEEKLY_RUN.md` as the first edit of the run.
 
 ## 2. Evidence sweep — primary records only, for the window
+
+**The sweep is the eight research agents of `WEEKLY_RUN.md` Part A, spawned in ONE message
+(A.0–A.2), verified in the main thread against primary records (B.3).** The endpoints below are
+the ones the agents and the verification use.
 
 Work from the open threads (`#u-threads`), the silence ledger (`#u-silence`), the nearest-dates
 rail, and the standing watch-list. Primary sources first; a secondary source never carries a
@@ -115,16 +133,16 @@ with the reason, never as findings. Dotted edges stay dotted until a document cl
 ## 4. Rebuild and guard
 
 ```
-pip install markdown --break-system-packages
 cd work && python3 src/build_site3.py && ./check.sh
 ```
+(`markdown` is already installed here; `deploy.sh` installs it only if missing.)
 
 `check.sh` must exit 0. If it fails, fix the cause in `work/src/` and rebuild; never patch
 `work/site/` by hand. Record `sha256sum work/site/index.html`.
 
 ## 5. Deploy to production and verify
 
-1. From `work/`: `VERCEL_TOKEN=<token> ./deploy.sh --no-build --prod`. This links `site/` to
+1. From `work/`: `./deploy.sh --no-build --prod` (no token — persisted CLI login). This links `site/` to
    project `the-architecture` in team `zincdigitalofmiamis-projects` (explicitly — the folder
    name differs from the project name) and uploads it as a production deployment. The payload
    never passes through the model; the Vercel connector is not used for the upload because
@@ -137,32 +155,47 @@ cd work && python3 src/build_site3.py && ./check.sh
    **Only if all three pass** is the site live. Say "live and verified" only then.
 3. If the token is missing or rejected, the CLI errors, or verification never passes: zip
    `work/` (with `site/`, `src/`, the scripts, the spec, this text) as
-   `THE_ARCHITECTURE_deploy_BRIEF_DATE.zip`, present it as this run's output file, and mark
-   the run **NOT LIVE** with the exact error. The manual path is then: unzip,
-   `./deploy.sh --no-build --prod` (it prompts for the Vercel login once if no token is set).
+   `THE_ARCHITECTURE_deploy_BRIEF_DATE.zip` in the project folder, name its path in the
+   notification, and mark the run **NOT LIVE** with the exact error. The manual path is then:
+   `cd work && ./deploy.sh --no-build --prod`.
 
-## 6. Archive to Drive (folder `1_S9ouWMx2SWZ7mYCN52V296hdGzFkOAs`)
+## 6. Sync back, commit, push (the backup of record), then archive to Drive
 
-Use `create_file` with `parentId` set to the folder (never `copy_file`). Text only — the
-connector is not a transport for large or binary files:
+**Only after step 5 verified live.** From the project folder:
+`rsync -a --delete work/src/ src/ && rsync -a --delete --exclude .vercel work/site/ site/ && cp work/AGENT_INSTRUCTIONS.md work/AUTOMATED_RUN_TASK.md work/check.sh work/deploy.sh work/pull_src.sh .`
+then `./check.sh` again on the synced tree (must exit 0), then
+`git add -A && git commit -m "Weekly Brief NNN — week ending BRIEF_DATE" && git push origin main`,
+and verify `git ls-remote origin main` equals `git rev-parse HEAD`. Record both SHAs in the run
+log. If the push fails, the site is still live — say so, and mark the notification
+"LIVE — NOT PUSHED: <error>" so Kirk pushes by hand.
+
+Then archive to Drive (folder `1_S9ouWMx2SWZ7mYCN52V296hdGzFkOAs`, connector account
+kirk@zincdigital.co). Use `create_file` with `parentId` set to the folder (never `copy_file`).
+Text only — the connector is not a transport for large or binary files:
 
 - the brief as a Google Doc: `THE ARCHITECTURE — Brief BRIEF_DATE` (content type `text/html`,
   converted);
 - a short run log `RUN_LOG BRIEF_DATE` (plain text, conversion disabled): source deployment
-  used, deployment URL, live status, index.html SHA-256, brief count, corrections and context
-  lines added, clocks as of, and the exact error if anything failed.
+  used, deployment URL, live status, index.html SHA-256, git commit SHA and push result, brief
+  count, corrections and context lines added, clocks as of, and the exact error if anything
+  failed. Also write the same log to `_backups/RUN_LOG_BRIEF_DATE.txt` in the project folder
+  before the commit in this step so it ships with the push.
 
 The newest READY deployment's `/src/` is the working copy of record; the deploy zip is only
 produced and attached when the site could not be verified live.
 
-## 7. Republish the in-app artifact and notify
+## 7. Turnover, artifact, notify
+
+Before the commit in §6, write `_backups/TURNOVER_BRIEF_DATE.md` per `WEEKLY_RUN.md` Part D —
+what moved, what did not resolve, standing anchors, spawn-prompt drift to fix next week, environment
+facts. It ships with the push.
 
 Republish `work/site/index.html` as the report artifact so the in-app copy matches the live
 site. Then notify with:
 
 1. the lede, verbatim from the brief;
-2. one line: `LIVE — verified BRIEF_DATE at https://the-architecture-neurals.vercel.app/` or
-   `NOT LIVE — <error>; deploy zip attached`;
+2. one line: `LIVE — verified BRIEF_DATE at https://the-architecture-neurals.vercel.app/ — pushed <sha>`,
+   `LIVE — NOT PUSHED: <error>`, or `NOT LIVE — <error>; deploy zip at <path>`;
 3. what changed: corrections and context lines added (IDs), threads retired/added, map edges changed or "none",
    clocks as of;
 4. next checks (the rail's nearest dates).
@@ -170,4 +203,5 @@ site. Then notify with:
 Hard rules for the whole run: never report a launch that was not verified live; never reword
 or drop a corrections entry; never reset a clock; never let a single-outlet item in as a
 finding; never edit generated files by hand; never paste the SEC User-Agent contact or the
-Vercel token into the published site, a log, or a notification.
+Vercel token into the published site, a log, a notification, or a commit; never `git push --force`;
+never commit `work/`.

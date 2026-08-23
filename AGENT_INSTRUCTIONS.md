@@ -59,6 +59,8 @@ src/                        ← SOURCES + GENERATOR. Regenerate only from here.
   build_neural_map.py         LEGACY, do not run — hardcoded 21-node tables, ignores
                               map_source.json, writes nothing the site uses (see its header)
   build_site3.py              the generator (v3.2)
+  WEEKLY_RUN.md               the run book — Part A the eight verbatim research-agent spawn
+                              prompts, Part B the exact in-run actions, Part D the weekly turnover
 
 check.sh                    the pre-deploy guards (no network) — the automated run calls this
 deploy.sh                   build + check.sh + link + deploy: --prod (the weekly run), or no
@@ -66,7 +68,7 @@ deploy.sh                   build + check.sh + link + deploy: --prod (the weekly
 pull_src.sh                 pulls the working copy from the newest READY deployment (preview
                             or production) and verifies every hash — the run starts here
 AGENT_INSTRUCTIONS.md       this file
-AUTOMATED_RUN_TASK.md       the Sunday scheduled-task text (v7) that executes §5
+AUTOMATED_RUN_TASK.md       the Sunday scheduled-task text (v8, local Claude Code Desktop) that executes §5
 ```
 
 ### Deploy verbatim or regenerate — both are valid
@@ -95,7 +97,7 @@ Never hand-edit `site/index.html`. It is generated. Edit `src/` and rebuild.
 | Project | `the-architecture` (team `zincdigitalofmiamis-projects`, no Git repository) |
 | Type | static output directory, **no build step**, no framework preset |
 | What gets uploaded | the contents of `site/` only — `src/`, `deploy.sh` and this file stay out of the upload (the self-hosted copies under `site/src/` go up with it) |
-| Automated deploy | **Straight to production, then verified.** The weekly run exports `VERCEL_TOKEN` and runs `./deploy.sh --no-build --prod` (link + `vercel deploy --prod --yes`), then verifies the live address. The token is read at run time from the secret file named in `AUTOMATED_RUN_TASK.md`; it is never written into the package or the site. The Vercel **connector** is not the transport for this site: its `deploy_to_vercel` call carries every file through the model's context, and `site/` is ~1.7 MB — far beyond what a single tool call can carry. |
+| Automated deploy | **Straight to production, then verified.** The weekly run (a local Claude Code Desktop task on Kirk's Mac, v8) runs `./deploy.sh --no-build --prod` (link + `vercel deploy --prod --yes`) on the Mac's persisted `vercel login` session, then verifies the live address, then syncs the working copy back into the project folder and pushes it to GitHub (`ZINC-Digital-of-Miami/the-architect-neurals`, `main`) as the off-machine backup. No token file exists anywhere; `VERCEL_TOKEN` is honoured by `deploy.sh` only for non-interactive use elsewhere. The Vercel **connector** is not the transport for this site: its `deploy_to_vercel` call carries every file through the model's context, and `site/` is ~1.7 MB — far beyond what a single tool call can carry. |
 | Reviewed deploy (manual) | `./deploy.sh` with no flags creates a *preview* and prints its URL; after review, `./deploy.sh --promote <url>` launches exactly that preview. Used for the initial go-live of a new package and for any change you want to see first; not part of the weekly run. |
 | Working copy of record | the newest READY deployment of the project, preview or production (`pull_src.sh`), so a previewed-but-unpromoted week is never lost; the live alias is the fallback |
 | Manual deploy | `./deploy.sh` (preview) then `./deploy.sh --promote <url>`, or `./deploy.sh --prod` to go straight to production; equivalently from inside `site/`: `vercel link --team zincdigitalofmiamis-projects --project the-architecture --yes` then `vercel deploy --yes` / `vercel deploy --prod --yes` |
@@ -161,7 +163,10 @@ Runs weekly, week ending Sunday. Output of the run is edits to `src/` plus one d
    stamp), the node/edge counts, the "This window" chip strip, and the week ledger at the
    foot of the section.
 
-1. **Gather** the week's material to the evidence rules in §6. Primary records first:
+1. **Gather** the week's material to the evidence rules in §6. The literal research-agent
+   spawn prompts and the command-level procedure live in `src/WEEKLY_RUN.md` — Part A is the
+   eight verbatim prompts (spawned in ONE message), Part B the exact actions, Part D the turnover
+   written after the work. Follow it rather than improvising. Primary records first:
    dockets, filings (with accession numbers), roll calls, agency decision documents,
    contract solicitations, FOIA responses.
 2. **Write the brief.** Copy `src/briefs/_TEMPLATE.html` to
@@ -189,10 +194,11 @@ Runs weekly, week ending Sunday. Output of the run is edits to `src/` plus one d
    `site/src/MANIFEST.json` exists; `robots.txt` disallows `/src/`; `sitemap.xml` carries the
    live address; and no `class="content"` appears more than once (a nested wrapper means a
    brief was ingested without unwrapping). `deploy.sh` asserts all of this.
-7. **Deploy to production, then verify.** Automated runs export `VERCEL_TOKEN` and run
-   `./deploy.sh --no-build --prod`, then fetch `/`, the new brief page and `/src/MANIFEST.json`
-   from the live address and confirm the new date is what is serving. If the token is
-   missing or rejected, the CLI errors, or verification never passes, the run does **not**
+7. **Deploy to production, then verify.** Automated runs (v8, local) run
+   `./deploy.sh --no-build --prod` on the persisted CLI login, then fetch `/`, the new brief page
+   and `/src/MANIFEST.json` from the live address and confirm the new date is what is serving;
+   on success they commit and push the synced tree to GitHub. If the CLI is not logged in or
+   errors, or verification never passes, the run does **not**
    stop: it packages the rebuilt tree as `THE_ARCHITECTURE_deploy_YYYY-MM-DD.zip`, presents
    it as the run's output file, and says plainly in its notification that the site is
    **not live** and why. Never report a launch that was not verified.
