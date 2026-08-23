@@ -37,4 +37,39 @@ for b in src/briefs/[0-9]*.html; do
   test -s "site/briefs/$s.html"                           || fail "built brief page missing for $s"
   grep -q "/briefs/$s.html" site/sitemap.xml              || fail "sitemap missing /briefs/$s.html"
 done
+# ---- every brief must pass the linter (shape = Brief 001; voice floor; no undefined classes) ----
+python3 src/brief_lint.py --css src/final.css src/briefs/2*.html        || fail "a brief failed brief_lint.py — fix the brief, never the linter"
+# ---- page hygiene: no duplicate ids, no dead in-page anchors, no template residue ----
+python3 - <<'PY' || fail "page hygiene"
+import re,sys,collections
+h=open("site/index.html").read()
+ids=re.findall(r' id="([^"]+)"',h); dup=[k for k,v in collections.Counter(ids).items() if v>1]
+if dup: print("duplicate ids:",dup[:10]); sys.exit(1)
+hrefs=set(re.findall(r'href="#([^"]+)"',h)); dead=sorted(hrefs-set(ids))
+if dead: print("dead in-page anchors:",dead[:10]); sys.exit(1)
+for ph in ["YYYY-MM-DD","{{SUNDAY}}","{{SITE}}","Edition NNN","EDITION NNN","The topic lead."]:
+    if ph in h: print("template residue in index:",ph); sys.exit(1)
+PY
+# ---- the look is frozen: final.css may change only when this pin is updated by hand ----
+FINAL_CSS_SHA=$(shasum -a 256 src/final.css | cut -c1-16)
+[ "$FINAL_CSS_SHA" = "2ef00da80bbd84f4" ]                    || fail "src/final.css changed (sha $FINAL_CSS_SHA) — the look is settled; if this is deliberate, update 2ef00da80bbd84f4 in check.sh"
+# ---- monotonic guards vs the previous week's pulled manifest (present only inside a work/ pull) ----
+if [ -s MANIFEST.json ]; then
+python3 - <<'PY' || fail "monotonic guard"
+import json,sys
+prev=json.load(open("MANIFEST.json")); cur=json.load(open("site/src/MANIFEST.json"))
+pc=prev.get("counts",{}); cc=cur["counts"]
+def need(k,op,why):
+    a,b=pc.get(k),cc.get(k)
+    if a is None: return
+    ok={"ge":b>=a,"eq1":b in(a,a+1),"gt":b>a}[op]
+    if not ok: print(f"{k}: previous {a}, now {b} — {why}"); sys.exit(1)
+need("corrections","ge","a correction was dropped (append-only)")
+need("clocks","ge","a silence clock was dropped (advance or resolve, never delete)")
+need("briefs","eq1","briefs must grow by exactly one per week")
+need("map_nodes","ge","a map node was dropped without a ruling")
+if cur["current_through"] <= prev["current_through"]: print("current_through did not advance"); sys.exit(1)
+if cc["index_bytes"] > pc.get("index_bytes",0)+120000: print("index grew >120 KB in one week — something was inlined that should not be"); sys.exit(1)
+PY
+fi
 echo "OK: $(ls site/briefs/[0-9]*.html | wc -l) brief(s); index $(wc -c < site/index.html | tr -d " ") B; current through $(python3 -c "import json;print(json.load(open('site/src/MANIFEST.json'))['current_through'])")"

@@ -1,37 +1,78 @@
 <!doctype html>
-<!-- Weekly brief template. Save as briefs/YYYY-MM-DD.html (week-ending Sunday).
-     The builder strips everything outside <body>, so keep the wrapper. Anything named
-     _TEMPLATE is ignored by the build (it only globs 2*.html). -->
+<!-- THE ARCHITECTURE — weekly brief template (canonical shape = Brief 001, 2026-08-16).
+     Save as briefs/YYYY-MM-DD.html (the week-ending Sunday). The build strips everything
+     outside <body>; keep the wrapper. _TEMPLATE is ignored by the build (it globs 2*.html).
+
+     check.sh enforces, for every brief: exactly these eight <h2> headings in this order;
+     <section> blocks, no <h3>/<h4>, no lists, no tables, no <style>/<script>/inline style;
+     only classes defined in final.css; 2,500–6,500 words; tier chips present; no placeholder
+     text left behind; none of the banned phrases in WEEKLY_RUN.md §B.
+
+     VOICE (measured from Brief 001 and the master report — not a preference):
+     · Declarative, dated, sourced. Every paragraph opens with a fact, not a frame.
+     · The documents do the accusing. Name the record in the sentence that uses it:
+       "The OCC decision (Aug 14) approves…", "the 8-K eighteen days later states…".
+     · Paragraphs build. A section is 3–6 paragraphs of 90–220 words, each beginning with a
+       bolded topic lead of two to four words — "The bank." "The corrections." "The count." —
+       then the evidence in sequence, then the tier chip on the sentence that carries it.
+     · Academic in discipline, human in cadence: short sentence after a long one; a plain
+       verb where a Latinate one would do; one dry observation per section at most, earned by
+       the record ("a brief that only adds and never subtracts isn't applying its own standard").
+     · Denials stay attached to their allegation, read for exactly what they deny.
+     · Adjacency is stated as adjacency: "Two documents, one architecture. No causal claim required."
+     · Never: bullets, headline-sentences, rhetorical questions, motive speculation, adjectives
+       doing a tier's work, "it is worth noting", "underscores", "in conclusion", "a stark
+       reminder", "raises questions", "sends a message", "at the end of the day". -->
 <html lang="en"><head><meta charset="utf-8"><title>Brief — week ending YYYY-MM-DD</title>
 <link rel="stylesheet" href="/styles.css"></head>
 <body>
 <div class="mast-kicker"><a href="/">&larr; The Architecture — Main Report</a></div>
-<h1 class="mast">Weekly Brief — MONTH D&ndash;D, YYYY</h1>
+<h1 class="mast">Weekly Brief — Edition NNN</h1>
+<p class="mast-sub">Window: MONTH D&ndash;D, YYYY &middot; compiled MONTH D, YYYY &middot; eight parallel research tracks</p>
 
-<p class="lede-line"><strong>The lede.</strong> One sentence: the single most load-bearing
-documented fact of the week, with its primary record named inline and its tier tagged
-<span class="tier a">A</span>.</p>
+<section class="lede">
+<h2>The lede</h2>
+<p>The single most load-bearing documented fact of the week, stated in one or two sentences with its primary record named inline and its tier on the sentence that carries it <span class="tier a">A</span>. Then one paragraph on why it is the lede — what it closes, what it opens, what the record now says that it did not say last week.</p>
+<p>If the week also subtracted — a carried claim that the primary record dismantled — that is the second half of the lede, stated plainly.</p>
+</section>
 
-<h4>I &middot; Power</h4>
-<p>Dated facts only. Primary record named in the sentence that uses it.</p>
+<section>
+<h2>Architecture I — The family money</h2>
+<p><strong>The topic lead.</strong> Deal by deal, filing by filing. Accession numbers, decision numbers, docket numbers in the sentence that uses them. Each paragraph a bolded two-to-four-word lead, then the evidence, then the tier <span class="tier a">A</span>.</p>
+<p><strong>The non-answers.</strong> Every silence clock that touches this architecture, with its day count as of the window's close. A week with no answer is a finding.</p>
+</section>
 
-<h4>II &middot; Money</h4>
-<p>Deal by deal, filing by filing.</p>
+<section>
+<h2>Architecture II — Executive power</h2>
+<p><strong>The topic lead.</strong> Dockets, orders, roll calls, Federal Register documents. Compliance and defiance reported as separate dated facts. The scope of every denial, read exactly.</p>
+</section>
 
-<h4>III &middot; Ideology</h4>
-<p>Same evidence discipline, including where analogies break down.</p>
+<section>
+<h2>Architecture III — The wars and the count</h2>
+<p><strong>The topic lead.</strong> CENTCOM's own releases for the tally; the roll call for the vote; the statement and the market move as separate facts with no causal edge drawn.</p>
+</section>
 
-<h4>Rejected this week</h4>
-<div class="correction"><p><span class="was">The claim.</span><br>
-<span class="now">Why it failed the tier test — single outlet, aggregator, or one wire origin
-syndicated many times.</span> <span class="tier c">C</span><br>
-<span class="now">Context, not a claim: what the primary record does show, and what two or more
-independent named outlets report about the circumstances the claim was pointing at, each
-outlet named with its date. If no such context exists, say so.</span> <span class="tier b">B</span></p></div>
+<section>
+<h2>The node where the architectures touch</h2>
+<p>The week's clearest three-body intersection — each vertex independently documented, each edge between them named as solid or dotted.</p>
+<div class="dotted-edge"><span class="label">DOTTED EDGE &middot; ADJACENCY, NOT CAUSE</span>
+<p>Vertex 1 <span class="tier a">A</span> &middot; Vertex 2 <span class="tier a">A</span> &middot; Vertex 3 <span class="tier b">B</span>. What would make any edge solid: the subpoena, the filing, the on-the-record admission that has not appeared. <span class="tier abs">ABSENT</span></p></div>
+</section>
 
-<h4>Checked for and not found</h4>
-<p>Verified absences, with what was searched and where. <span class="tier abs">ABSENT</span></p>
+<section>
+<h2>What would change the tier</h2>
+<p>The specific documents that would move this week's [B] items to [A], or close a dotted edge — named, with where they would appear and when they are due.</p>
+</section>
 
-<h4>Sourcing notes</h4>
-<p>Docket numbers, accession numbers, roll-call numbers, decision documents.</p>
+<section>
+<h2>Rejected below [B], with reasons</h2>
+<p>Each sub-[B] item in one or two sentences: the claim, the single origin or the syndication chain, the reason it fails <span class="tier c">C</span>. Then, for each, context rather than a claim: what the primary record does show and what two or more independent named outlets report about the circumstances, each outlet dated. If no sourced context exists, say so.</p>
+<p><strong>Checked for and not found.</strong> Every verified absence, with what was searched and where <span class="tier abs">ABSENT</span>.</p>
+</section>
+
+<section>
+<h2>Next week's priorities</h2>
+<p>The three to five nearest dated checks in order, each with the docket or record to pull. Then the method line: the eight tracks, syndications counted as single origins, the number-drift anchors resolved this week, and which origin domains were fetch-restricted.</p>
+<p class="mono">EDITION NNN &middot; YYYY-MM-DD</p>
+</section>
 </body></html>

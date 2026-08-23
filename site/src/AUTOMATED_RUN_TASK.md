@@ -45,8 +45,10 @@ this week has already run — stop and say so.
 1. `cd "/Users/zincdigital/Documents/the architect neural" && vercel whoami` (must be
    `zincdigitalofmiami`) and `git status --porcelain` (must be empty — if not, stop and notify:
    uncommitted local edits would be overwritten by the sync in step 6).
-2. Pull the working copy from the live site with the script in the repo:
-   `bash pull_src.sh work`  (`work/` is git-ignored)
+2. Move any stale `work/` aside first — a draft left by an interrupted run must never be built:
+   `[ -d work ] && mv work "work.prev-$(date +%Y%m%d-%H%M%S)"` — then pull the working copy
+   from the live site with the script in the repo: `bash pull_src.sh work` (`work/` and
+   `work.prev-*` are git-ignored; delete `work.prev-*` after a successful run).
    The script finds the project's newest READY deployment (preview or production) with
    `vercel ls`, fetches `/src/MANIFEST.json` and every listed file from it with `vercel curl`
    verifies every SHA-256, and writes the working copy to `work/` (`work/src/…`, plus the spec,
@@ -67,9 +69,11 @@ its Part-A drift list to `work/src/WEEKLY_RUN.md` as the first edit of the run.
 
 ## 2. Evidence sweep — primary records only, for the window
 
-**The sweep is the eight research agents of `WEEKLY_RUN.md` Part A, spawned in ONE message
-(A.0–A.2), verified in the main thread against primary records (B.3).** The endpoints below are
-the ones the agents and the verification use.
+**The sweep is the eight research agents of `WEEKLY_RUN.md` §A, spawned in ONE message
+(§A.0–A.2), each a LEAF — no nested spawns, no delegation — verified in the main thread against
+primary records (§C.3). The gates and stop conditions are `WEEKLY_RUN.md` §0; the writing
+standard is §B and is enforced by `src/brief_lint.py` through `check.sh`.** The endpoints below
+are the ones the agents and the verification use.
 
 Work from the open threads (`#u-threads`), the silence ledger (`#u-silence`), the nearest-dates
 rail, and the standing watch-list. Primary sources first; a secondary source never carries a
@@ -186,7 +190,7 @@ produced and attached when the site could not be verified live.
 
 ## 7. Turnover, artifact, notify
 
-Before the commit in §6, write `_backups/TURNOVER_BRIEF_DATE.md` per `WEEKLY_RUN.md` Part D —
+Before the commit in §6, write `_backups/TURNOVER_BRIEF_DATE.md` per `WEEKLY_RUN.md` §D —
 what moved, what did not resolve, standing anchors, spawn-prompt drift to fix next week, environment
 facts. It ships with the push.
 

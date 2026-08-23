@@ -1,3 +1,5 @@
 site/.vercel/
 .DS_Store
 work/
+.plan-triage/
+work.prev-*/

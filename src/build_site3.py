@@ -438,7 +438,7 @@ if _srcdst.exists():
 _srcdst.mkdir()
 for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
            "build_site3.py", "neural_map.html", "neural_data.json", "neural_svg.frag",
-           "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js"]:
+           "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
     _sp = ROOT / _f
     if _sp.exists():
         _sh.copy(_sp, _srcdst / _f)
@@ -463,6 +463,14 @@ _manifest = {
     "vercel_project": "the-architecture",
     "vercel_team": "zincdigitalofmiamis-projects",
     "current_through": latest_brief,
+    "master_edition": "2026-08-22",
+    "counts": {   # monotonic guards in check.sh compare these against the previous week's manifest
+        "briefs": len(briefs),
+        "corrections": len(re.findall(r'&middot; C-0\d\d', update_html)),
+        "clocks": update_html.count('class="clock"'),
+        "map_nodes": _n_nodes, "map_edges": _n_edges,
+        "index_bytes": (DIST / "index.html").stat().st_size,
+    },
     "files": [{"path": str(p.relative_to(_srcdst)).replace("\\", "/"),
                "bytes": p.stat().st_size,
                "sha256": _hl.sha256(p.read_bytes()).hexdigest()} for p in _entries],

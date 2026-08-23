@@ -59,8 +59,11 @@ src/                        ← SOURCES + GENERATOR. Regenerate only from here.
   build_neural_map.py         LEGACY, do not run — hardcoded 21-node tables, ignores
                               map_source.json, writes nothing the site uses (see its header)
   build_site3.py              the generator (v3.2)
-  WEEKLY_RUN.md               the run book — Part A the eight verbatim research-agent spawn
-                              prompts, Part B the exact in-run actions, Part D the weekly turnover
+  WEEKLY_RUN.md               the run book (v3): §0 gates and stop conditions, §A the eight
+                              research agents (leaf agents — no nesting), §B the writing standard,
+                              §C the exact in-run actions, §D the turnover written after the work
+  brief_lint.py               enforces the canonical brief shape (= Brief 001) and the voice floor;
+                              check.sh runs it on every brief, every build
 
 check.sh                    the pre-deploy guards (no network) — the automated run calls this
 deploy.sh                   build + check.sh + link + deploy: --prod (the weekly run), or no
@@ -164,15 +167,18 @@ Runs weekly, week ending Sunday. Output of the run is edits to `src/` plus one d
    foot of the section.
 
 1. **Gather** the week's material to the evidence rules in §6. The literal research-agent
-   spawn prompts and the command-level procedure live in `src/WEEKLY_RUN.md` — Part A is the
-   eight verbatim prompts (spawned in ONE message), Part B the exact actions, Part D the turnover
+   spawn prompts and the command-level procedure live in `src/WEEKLY_RUN.md` — §A is the eight
+   prompts (spawned in ONE message; each agent is a leaf), §C the exact actions, §D the turnover
    written after the work. Follow it rather than improvising. Primary records first:
    dockets, filings (with accession numbers), roll calls, agency decision documents,
    contract solicitations, FOIA responses.
 2. **Write the brief.** Copy `src/briefs/_TEMPLATE.html` to
    `src/briefs/YYYY-MM-DD.html` (the week-ending Sunday). Keep the `<body>` wrapper —
-   the build strips everything outside it. Structure: lede, then Power / Money / Ideology,
-   then rejected-this-week, then checked-for-and-not-found, then sourcing notes.
+   the build strips everything outside it. The shape is Brief 001's and is enforced by
+   `src/brief_lint.py`: eight `<section>`/`<h2>` blocks — The lede · Architecture I — The family
+   money · II — Executive power · III — The wars and the count · The node where the architectures
+   touch · What would change the tier · Rejected below [B], with reasons · Next week's priorities.
+   Voice per `WEEKLY_RUN.md` §B: declarative, dated, sourced; bolded topic leads; no lists.
 3. **Update `src/update_part2.html`** — this is the page's live record:
    - `#u-week` — replace with the new week; move the outgoing week's substance into the
      brief archive (it is already there via step 2) and keep only what still carries.

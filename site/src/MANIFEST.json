@@ -3,21 +3,35 @@
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
  "current_through": "2026-08-16",
+ "master_edition": "2026-08-22",
+ "counts": {
+  "briefs": 1,
+  "corrections": 9,
+  "clocks": 9,
+  "map_nodes": 30,
+  "map_edges": 57,
+  "index_bytes": 554060
+ },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 21017,
-   "sha256": "eebfa1a5833f032ca34cd39ae01fa2e97c46172d21bfff5899a0b8bccb4c3e52"
+   "bytes": 21616,
+   "sha256": "8adda059ba28d638a5f1fd01b84c04fc6fc0cbb0928af07f7fd433b3ba2ab64e"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 13577,
-   "sha256": "d6e4889ecd1277103604fb61b54825e1b463d3e2e1762386d654d166799d9e37"
+   "bytes": 14003,
+   "sha256": "ba19dc2b05045a21b828cc1f41df549a50664c4b1cc105b8305cbd21eec97ed7"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 35536,
-   "sha256": "81b12e2bc2acde970d2e966d53ae03b80cd661ffeb2eb32d4881a3f76566f547"
+   "bytes": 38269,
+   "sha256": "d8c1162a02e19e9b9f5811b7059bd0b84ba9056606a4f3a6bde4054525ddc0f3"
+  },
+  {
+   "path": "brief_lint.py",
+   "bytes": 7144,
+   "sha256": "266c4f174d37b7a5bca0a8a890a5cd4431ac5c82dfef27d2246f0b40154f586e"
   },
   {
    "path": "briefs/2026-08-16.html",
@@ -26,8 +40,8 @@
   },
   {
    "path": "briefs/_TEMPLATE.html",
-   "bytes": 1840,
-   "sha256": "b064eb8b1d32df7f56d8186e159b2ca67a892362a02e624b43788231ba9c1c8c"
+   "bytes": 5788,
+   "sha256": "91e3ef93168f086467f74d1fc3c1b8ccce6e6dd4b2621ee8fba1e45c05456d1e"
   },
   {
    "path": "build_neural_map.js",
@@ -41,13 +55,13 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 31199,
-   "sha256": "4f1c3e487eb923c8d237bc7942bb2eda11bc400e931eab80f005edfeeac55c7c"
+   "bytes": 31633,
+   "sha256": "100cfc0c607eabd205cc3e97a7b554e9df57ce09465550588bfcf0d2d3f50fee"
   },
   {
    "path": "check.sh",
-   "bytes": 3473,
-   "sha256": "b67a210398c8108330069e2d1f2be1e71aaefd102d0e3a7aeaafd19739e8b74f"
+   "bytes": 5772,
+   "sha256": "fb7031d2289607aaa77d8bdc9621a57e5dbbe8148d02277f49c7718ca2fe93bc"
   },
   {
    "path": "deploy.sh",
