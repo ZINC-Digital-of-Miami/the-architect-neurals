@@ -124,6 +124,10 @@ under the project's default protection; `vercel curl` reads through it for check
 
 ## 4. Design tokens — do not re-invent the look
 
+**THE LINEAGE IS SETTLED.** The research began **December 2025**; the synthesis was first compiled
+2026-07-19. The masthead reads "RESEARCH BEGUN 2025-12" and that is correct. Earlier corpus documents
+saying "research series since spring 2026" are superseded. Do not raise this as a conflict.
+
 **THE LIVE SITE IS THE DESIGN.** <https://the-architecture-neurals.vercel.app/> is canonical and current
 until Kirk says otherwise. It is not up for discussion, review, comparison, or improvement. Do not raise it,
 do not propose alternatives, do not flag it as an open question, do not ask whether it should change. The

@@ -16,8 +16,8 @@
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 22397,
-   "sha256": "6020f866a9741b4bb6c933f0985aff02f04a627a8f036ca1130b28df268686cf"
+   "bytes": 22691,
+   "sha256": "5fc911100b18c93a03b4249d6e01cf9e6c9fba6c3d68cc51d2b965283abc3021"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
