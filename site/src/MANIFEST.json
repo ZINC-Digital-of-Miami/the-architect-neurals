@@ -2,15 +2,15 @@
  "site": "https://the-architecture-neurals.vercel.app",
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
- "current_through": "2026-08-16",
+ "current_through": "2026-08-23",
  "master_edition": "2026-08-22",
  "counts": {
-  "briefs": 1,
-  "corrections": 9,
-  "clocks": 9,
-  "map_nodes": 30,
-  "map_edges": 57,
-  "index_bytes": 554060
+  "briefs": 2,
+  "corrections": 13,
+  "clocks": 12,
+  "map_nodes": 31,
+  "map_edges": 60,
+  "index_bytes": 594958
  },
  "files": [
   {
@@ -39,6 +39,11 @@
    "sha256": "ba710b19fe0bae3a741f4194c2c5035da11ef68e0a7bf6a06a5526c7e08a5676"
   },
   {
+   "path": "briefs/2026-08-23.html",
+   "bytes": 37631,
+   "sha256": "7b40ac3b2fbb9417df33b144c27437fe756841039c77047bbfb535f1c3d85e91"
+  },
+  {
    "path": "briefs/_TEMPLATE.html",
    "bytes": 5788,
    "sha256": "91e3ef93168f086467f74d1fc3c1b8ccce6e6dd4b2621ee8fba1e45c05456d1e"
@@ -55,13 +60,13 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 31633,
-   "sha256": "100cfc0c607eabd205cc3e97a7b554e9df57ce09465550588bfcf0d2d3f50fee"
+   "bytes": 31795,
+   "sha256": "24794562246145008c7b5fb69a0f83ce3c57b430ca3f5648b4b9e6df3ec0f3d6"
   },
   {
    "path": "check.sh",
-   "bytes": 6825,
-   "sha256": "da4887c300029dccdfca9f554a14a6c193bd954bd1410f3333267805ba6c6c61"
+   "bytes": 5772,
+   "sha256": "fb7031d2289607aaa77d8bdc9621a57e5dbbe8148d02277f49c7718ca2fe93bc"
   },
   {
    "path": "deploy.sh",
@@ -75,8 +80,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 10155,
-   "sha256": "f787246091513910fc4385d1ae8283564fe5ef225efa638c6345d5f42d102ac3"
+   "bytes": 11170,
+   "sha256": "46e04d9e3efdf218b08a239e135588e19539705a2732f219146772800da861fc"
   },
   {
    "path": "mapgen.js",
@@ -90,18 +95,18 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 6651,
-   "sha256": "8f4ba7a819bfad97d4aecf99e198c5209aeb80f9d7b304975d1e428baa8c986a"
+   "bytes": 7246,
+   "sha256": "5c15e103a76876c8a33cd8e29e052e43eeff8a06ffdacf87ede85705e651eb38"
   },
   {
    "path": "neural_map.html",
-   "bytes": 18250,
-   "sha256": "844dc86e9526e60a3f5d4f5db32bc7b89a3bea7bd3097e5ce3027336bc0554b2"
+   "bytes": 18025,
+   "sha256": "86999f1f103f2b551b07fb1a66afc12faa07d450e8aec6b152dea6171b28e984"
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 64468,
-   "sha256": "259a09e4d4ed5ade288bfa0ace4581fb98412abc96cf0e2e4044af956bb12897"
+   "bytes": 68786,
+   "sha256": "14d258556060b17999b8747966aa963d90852f73ac5f2a955d27677ef96245ce"
   },
   {
    "path": "pull_src.sh",
@@ -115,8 +120,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 33099,
-   "sha256": "ad989182a7a4dc86060c92b61f1745cd9396052c375411b0b1182a343ce4dfb9"
+   "bytes": 36087,
+   "sha256": "3bc959334f97b733320ce93f9ec12572236300c996fa0422262a4afcda375821"
   }
  ]
 }

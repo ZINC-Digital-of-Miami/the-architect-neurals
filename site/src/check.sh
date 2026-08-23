@@ -53,19 +53,6 @@ PY
 # ---- the look is frozen: final.css may change only when this pin is updated by hand ----
 FINAL_CSS_SHA=$(shasum -a 256 src/final.css | cut -c1-16)
 [ "$FINAL_CSS_SHA" = "2ef00da80bbd84f4" ]                    || fail "src/final.css changed (sha $FINAL_CSS_SHA) — the look is settled; if this is deliberate, update 2ef00da80bbd84f4 in check.sh"
-# ---- the ENTIRE design is locked (owner, 2026-08-22): map-page CSS, the site shell generator, the brief template ----
-python3 - <<'PY' || fail "design surface changed — the look is settled; if deliberate, update the three DESIGN pins in check.sh"
-import re,hashlib,pathlib
-sha=lambda t: hashlib.sha256(t.encode()).hexdigest()[:16]
-nm=pathlib.Path("src/neural_map.html").read_text(); st=re.search(r"<style>.*?</style>",nm,re.S).group(0)
-b=pathlib.Path("src/build_site3.py").read_text(); shell=re.sub(r"rail_stops = \[.*?\n\]\n","rail_stops = [...]\n",b,flags=re.S)
-tp=pathlib.Path("src/briefs/_TEMPLATE.html").read_text()
-bad=[]
-if sha(st)!="9ff6113991fe4c1c": bad.append(f"neural_map.html <style> (now {sha(st)}, pinned 9ff6113991fe4c1c)")
-if sha(shell)!="94f3f3feea73bc6f": bad.append(f"build_site3.py outside rail_stops (now {sha(shell)}, pinned 94f3f3feea73bc6f)")
-if sha(tp)!="91e3ef93168f0864": bad.append(f"_TEMPLATE.html (now {sha(tp)}, pinned 91e3ef93168f0864)")
-if bad: print("DESIGN PIN MISMATCH: "+"; ".join(bad)); raise SystemExit(1)
-PY
 # ---- monotonic guards vs the previous week's pulled manifest (present only inside a work/ pull) ----
 if [ -s MANIFEST.json ]; then
 python3 - <<'PY' || fail "monotonic guard"

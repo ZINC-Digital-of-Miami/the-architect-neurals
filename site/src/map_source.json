@@ -1,5 +1,5 @@
 {
-  "current": "2026-08-22",
+  "current": "2026-08-23",
   "nodes": {
     "TRUMP": {
       "x": 850,
@@ -7,7 +7,8 @@
       "r": 84,
       "name": "THE PRINCIPAL",
       "sub": "",
-      "core": true
+      "core": true,
+      "flag": ""
     },
     "WLF": {
       "x": 545,
@@ -22,64 +23,72 @@
       "y": 505,
       "r": 60,
       "name": "SONS",
-      "sub": "1789 · ABTC · 9 new Form D vehicles (Jun)"
+      "sub": "1789 · ABTC · 9 new Form D vehicles (Jun)",
+      "flag": ""
     },
     "KUSHNER": {
       "x": 395,
       "y": 720,
       "r": 56,
       "name": "KUSHNER",
-      "sub": "envoy · $4.8B Gulf money"
+      "sub": "envoy · $4.8B Gulf money",
+      "flag": ""
     },
     "WITKOFF": {
       "x": 505,
       "y": 985,
       "r": 56,
       "name": "WITKOFF",
-      "sub": "envoy · OGE uncertified 12+ mo · son runs WLF / bank / ALT5",
-      "flag": ""
+      "sub": "278e agency-certified 12/12/25 · OGE line unsigned (C-010) · son runs WLF / bank / ALT5",
+      "flag": "updated"
     },
     "UAE": {
       "x": 255,
       "y": 360,
       "r": 48,
       "name": "UAE",
-      "sub": "49% WLF pre-inauguration · chips"
+      "sub": "49% WLF pre-inauguration · chips",
+      "flag": ""
     },
     "SAUDI": {
       "x": 150,
       "y": 590,
       "r": 48,
       "name": "SAUDI",
-      "sub": "Affinity base · 123 nuclear approved"
+      "sub": "Affinity base · 123 nuclear approved",
+      "flag": ""
     },
     "QATAR": {
       "x": 205,
       "y": 880,
       "r": 48,
       "name": "QATAR",
-      "sub": "$400M jet · $5.5B golf"
+      "sub": "$400M jet · $5.5B golf",
+      "flag": ""
     },
     "PAKISTAN": {
       "x": 330,
       "y": 1135,
       "r": 48,
       "name": "PAKISTAN",
-      "sub": "WLF deal Jan 2026 · war mediator"
+      "sub": "WLF deal Jan 2026 · war mediator",
+      "flag": ""
     },
     "ZHAO": {
       "x": 640,
       "y": 265,
       "r": 48,
       "name": "ZHAO",
-      "sub": "$2B in USD1 → pardon"
+      "sub": "$2B in USD1 → pardon",
+      "flag": ""
     },
     "POLY": {
       "x": 1030,
       "y": 250,
       "r": 48,
       "name": "POLYMARKET",
-      "sub": "98% win rate · unidentified"
+      "sub": "98% win rate · unidentified",
+      "flag": ""
     },
     "VAULT": {
       "x": 1330,
@@ -87,22 +96,23 @@
       "r": 54,
       "name": "PROJECT VAULT",
       "sub": "EXIM $10B · EO 14415 carve-out · Miller sold MP 1 mo. after deal",
-      "flag": "updated"
+      "flag": ""
     },
     "PENTAGON": {
       "x": 1490,
       "y": 480,
       "r": 52,
       "name": "PENTAGON",
-      "sub": "11/15 defense startups = 1789"
+      "sub": "DCAS wounded 697→757 in a day · Stars and Stripes editors fired Aug 21",
+      "flag": "updated"
     },
     "DOJ": {
       "x": 1435,
       "y": 700,
       "r": 54,
       "name": "DOJ",
-      "sub": "BLANCHE AG 50–49–1 · oath by Bove · Sullivan contempt watch",
-      "flag": ""
+      "sub": "Phang: notes withheld as “duplicative” · response due Aug 27 · 75 monitors on letterhead",
+      "flag": "updated"
     },
     "PULTE": {
       "x": 1400,
@@ -110,30 +120,30 @@
       "r": 50,
       "name": "PULTE",
       "sub": "FHFA · referrals stand · DNI stint ended → Clayton 51–47 (C-007)",
-      "flag": "updated"
+      "flag": ""
     },
     "ICE": {
       "x": 1185,
       "y": 1120,
       "r": 50,
       "name": "ICE",
-      "sub": "~68,000 held · 1,400 arrests/day · deaths uncounted",
-      "flag": ""
+      "sub": "65,765 (Jul 11, ICE file) · “68k” retired (C-012) · Mega Hub Aug 27/31",
+      "flag": "updated"
     },
     "SCOTUS": {
       "x": 925,
       "y": 1210,
       "r": 52,
       "name": "SCOTUS",
-      "sub": "26A124: silent 20 days · obeyed twice · Callais gutted VRA",
-      "flag": ""
+      "sub": "26A124: no order, 27 days · ballroom stay Aug 21 (CJ alone)",
+      "flag": "updated"
     },
     "IRAN": {
       "x": 655,
       "y": 1205,
       "r": 52,
       "name": "IRAN",
-      "sub": "blockade is the war · Senate checks failed 47–49 · 49–50 (C-008)",
+      "sub": "68 vessels redirected · “Economic D-Day” Aug 20 · no strikes in window",
       "flag": "updated"
     },
     "VZ": {
@@ -141,21 +151,24 @@
       "y": 300,
       "r": 48,
       "name": "VENEZUELA",
-      "sub": "US-controlled revenue"
+      "sub": "US-controlled revenue",
+      "flag": ""
     },
     "RUSSIA": {
       "x": 355,
       "y": 245,
       "r": 48,
       "name": "RUSSIA",
-      "sub": "plan co-drafted · sanctions passed 86–11"
+      "sub": "plan co-drafted · sanctions passed 86–11",
+      "flag": ""
     },
     "P2025": {
       "x": 1085,
       "y": 905,
       "r": 50,
       "name": "PROJECT 2025",
-      "sub": "53% executed · Vought"
+      "sub": "53% executed · Vought",
+      "flag": ""
     },
     "TRUST": {
       "x": 610,
@@ -170,38 +183,40 @@
       "y": 430,
       "r": 54,
       "name": "ALT5 · AIFC",
-      "sub": "one registrant, CIK 862861 · −92.2% · going-concern · unlock Aug 12",
-      "flag": ""
+      "sub": "Q2 10-Q: WLFI marked −71% · no going-concern language · unlock on-chain unverified",
+      "flag": "updated"
     },
     "TMTG": {
       "x": 1180,
       "y": 120,
       "r": 50,
       "name": "TMTG · DJT",
-      "sub": "Q2 loss $238.1M · API: ~10 buyers, mostly HFT firms",
-      "flag": ""
+      "sub": "API: 10+ HFT customers at $60–100k/mo (Form 425) · prediction-market licensing “evaluating”",
+      "flag": "updated"
     },
     "PALANTIR": {
       "x": 960,
       "y": 1050,
       "r": 48,
       "name": "PALANTIR",
-      "sub": "ImmigrationOS ~$30M (Apr 2025) · the targeting layer"
+      "sub": "ImmigrationOS ~$30M (Apr 2025) · the targeting layer",
+      "flag": ""
     },
     "GEO": {
       "x": 1480,
       "y": 1310,
       "r": 52,
       "name": "GEO · CORECIVIC",
-      "sub": "donors · stocks surged on election · “unprecedented opportunity”"
+      "sub": "donors · stocks surged on election · “unprecedented opportunity”",
+      "flag": ""
     },
     "MEGAHUB": {
       "x": 1280,
       "y": 1350,
       "r": 50,
       "name": "MEGA HUB",
-      "sub": "DRI: 92,600 beds by Nov 30 · 7 sites, Gitmo included · 5 with no current detention",
-      "flag": ""
+      "sub": "deadline Aug 27 (SAM) vs Aug 31 (ICE Q&A) · 7 sites, one contractor · award by Sep 25",
+      "flag": "updated"
     },
     "FCC": {
       "x": 860,
@@ -209,7 +224,7 @@
       "r": 48,
       "name": "FCC · CARR",
       "sub": "licenses as leverage · Kimmel · Disney/ABC sued Aug 18",
-      "flag": "new"
+      "flag": ""
     },
     "STARGATE": {
       "x": 1450,
@@ -217,14 +232,22 @@
       "r": 50,
       "name": "STARGATE",
       "sub": "$500B announced · ~0.3 GW live · MGX anchor · EO 14318",
-      "flag": "new"
+      "flag": ""
     },
     "TREASURY": {
       "x": 780,
       "y": 1390,
       "r": 52,
       "name": "TREASURY · BESSENT",
-      "sub": "$40B Argentina, election-conditioned · 264 days silent on WLFI buyers",
+      "sub": "“collapse this regime” Aug 20 · Warren–Reed 265 days · Prince Group letter 89 days",
+      "flag": "updated"
+    },
+    "USPS": {
+      "x": 1120,
+      "y": 1290,
+      "r": 50,
+      "name": "USPS",
+      "sub": "final rule filed Aug 21, 9 p.m. · enjoined §3 · motion to enforce Aug 22",
       "flag": "new"
     }
   },
@@ -570,6 +593,24 @@
       "TRUST",
       "A",
       "supervises the OCC that chartered the bank"
+    ],
+    [
+      "TRUMP",
+      "USPS",
+      "A",
+      "EO 14399 §3 → rule 2026-17238"
+    ],
+    [
+      "USPS",
+      "SCOTUS",
+      "O",
+      "rule filed while 26A124 pending"
+    ],
+    [
+      "SCOTUS",
+      "TRUMP",
+      "A",
+      "ballroom injunction stayed · 26A203"
     ]
   ]
 }

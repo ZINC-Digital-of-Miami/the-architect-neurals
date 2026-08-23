@@ -1,0 +1,66 @@
+# SPAWN 7 — The money (returned; ~55 calls; 0 nested; WebSearch cap at ~47 → EDGAR/FR/CL API only after)
+
+## AIFC / ALT5 (CIK 0000862861)
+| DATE | FACT | TIER | RECORD | NOTES |
+|---|---|---|---|---|
+| 08-17 | Q2 10-Q filed (13/26 wks ended Jun 27, 2026), five days after NT 10-Q | A | acc. 0001493152-26-038732 sec.gov/Archives/edgar/data/862861/000149315226038732/form10-q.htm | signed CEO Tony Isaac |
+| 08-17 | Q2 unrealized WLFI loss ~$285.1M; H1 ~$633.4M (table $633,380k; MD&A "$633.5 million") | A | Note 9 + MD&A | standing $348.3M = Q1; Q1+Q2 reconciles |
+| 08-17 | WLFI holding 7,283,585,650 tokens; cost $1,456.717M; fair value $421.283M at Jun 27 (−71.1%; ≈$0.0578/token vs $0.20 purchase); "~7.3% of supply" | A | Schedule of Outstanding Units | |
+| 08-17 | Net loss cont. ops ~$499.7M (26 wks); Q2 net loss $229.557M; working-capital deficit ~$9.9M (CL $24.9M vs CA $14.9M); cash $3.05M | A | Liquidity / balance sheet | **"substantial liquidity concerns" but NO "going concern"/"substantial doubt" language (grep 0)** — asserts 12-month sufficiency "based on the current market value of the Company's WLFI token holdings" |
+| 08-17 | 10-Q: WLFI tokens "became fully transferable on August 12, 2026" | A (company assertion) | Liquidity | Note 1: 3.75B SPA-tranche release requires stockholder approval, charter amendment, resale registration effectiveness; EDGAR: NO S-1/S-3/EFFECT since 2025-08-08; no 8-K on unlock. **On-chain execution NOT VERIFIED.** |
+| 08-17 | Pledge: 220,620,679 (Mar 28) + 157,689,435 (Q2) = 378,310,114 tokens pledged at Jun 27 under Jan 2026 Master Loan and Security Agreement with WLFI ($15M, 65% LTV, net ~$14.2M, use: buyback) | A | Related Party Loans note | related parties: Zachary Witkoff (AIFC chair / WLFI co-founder & CEO), Zachary Folkman. WLFI holds 1,000,000 AIFC sh + pre-funded warrants 99,000,000 + 20,000,000 warrants $7.50–$9.75 |
+| 08-17 | Material weaknesses in ICFR (FY2024 restatement, ASC 820 misapplication, duplicated fees overstating revenue); remediation by Dec 26, 2026 | A | Item 4 | **No Nasdaq deficiency notice in 10-Q; no 8-K Item 3.01 in 2026.** Shares outstanding 139,836,511 at Aug 12 |
+| 08-07 (pre-window) | Sold ALT 5 Sigma Canada, Inc. to Prime Delta Corp. Aug 3 for $12M secured 4% note ($1M due Aug 11; $11M from 20% of Prime's raises or 4×$2.75M from Aug 3, 2027) + 11,551,750 restricted Prime shares | A | 8-K acc. 0001493152-26-036566 | cryptoslate "$23M business for $1M cash" = [C] |
+| 08-12 | CRCM LP (CIK 0001483234) 13G/A: 12,701,530 sh shared voting (event 06/30) — Institutional Master 8,080,000; B SPV 3,720,847; Fintech 693,403; Special Situations 90,000 | A | acc. 0001483234-26-000004 | also 13F-HR -000003 (Aug 12), 13F-HR/A -000005/-000006 (Aug 18) listing 47089W104 |
+| 08-14 | Point72 Q2 13F-HR (acc. 0000919574-26-005520); full-text "Point72"+"47089W104" Jul 1–Aug 23 = 0 | A (absence) | efts | consistent with "no position" |
+| 08-23 | ExodusPoint + "47089W104" full-text = 0; CIK resolution failed (0001679688 → DigitalBridge) | — | efts | **standing 2,170,301 / $1,269,843 UNVERIFIED this week — not absent** |
+
+## World Liberty Trust Company — OCC CD #1385
+| 08-14 | CD #1385 (Control 2026-Charter-344521; Proposed Charter No. 25407): preliminary conditional approval, Bay Harbor Islands FL; addressed to Brandi Reynolds, SC Financial Technologies, LLC, 4400 Biscayne Blvd, Miami | A | occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf | application filed Jan 5, 2026 → 221 days |
+| 08-14 | Conditions: trust-only (not BHC Act "bank"); conform/cease/divest stablecoin activities to GENIUS Act (12 USC 5901) "in the sole discretion of the OCC"; 60-day prior notice for business-plan deviations (3 yrs); min $20M tier 1, ≥50%/$10M Eligible Liquid Assets (3 yrs); 180 days opex in ELA; no-objection for every SEO/director; internal audit manager. Capital within 12 months; open within 18 or approval expires. "Enforceable under 12 USC 1818." | A | pp. 8–11 | |
+| 08-14 | Passivity commitments dated **July 13, 2026** from StringZ Holdings RSC (DE) LLC, DT Marks SC LLC, AMGUS, LLC (Exhibit). Bank "will not issue, custody, or deal in WLFI tokens." | A | pp. 3, 5 | entity = "StringZ Holdings" (brief had "Holding") |
+| 08-14 | 7 comments / 4 commenters; 4 raised Trump-family, "Alexander and Zachary Witkoff," UAE conflicts; Emoluments/WLFI-purchase concerns "outside the scope" (WLF Inc. and foreign investors not parties); approval "under authority delegated by the Comptroller to career staff"; no Fed master account sought "to date" | A | pp. 4–6 | OCC: "The Comptroller and staff acted consistently with their statutory duties and ethical obligations" (scope: OCC staff process) |
+| 08-14 | No objection to: Zachary Witkoff (Organizer, Director, President), Scott Alper, Robert Witkoff (Organizer/Director), Jeffrey Weiner, Erin Baskett (indep. directors), Mack McCain (Chief Trust Officer), Brandi Reynolds (CCO), Himang Patel (BSA), Chris McNab (CISO), Corey Caplan (CTO) | A | p. 11 | no Steve Witkoff |
+| 08-14 | Affiliate asset purchase approved exempt from Reg W limits, 12 CFR 223.42(i) | A | p. 3 | |
+| 08-15 | Warren + 9 (Van Hollen, Alsobrooks, Murphy, Sanders, Blumenthal, Reed, Kim, Duckworth, Gallego): "Ending Presidential Corruption in Banking Act" — bars Fed/OCC/FDIC approvals where President/VP/Member/immediate family owns >10% or controls; review + termination of approvals after Jan 20, 2025 | A (text) + B | warren.senate.gov/…/Ending-Presidential-Corruption-in-Banking-Act-119th-Congress.pdf (LIP26967, "S. ll"); banking.senate.gov minority release | WLF's David Wachsman (Banking Dive): "World Liberty Financial is running towards regulation and continuous oversight, not away from it." Date drift: Banking Dive says Aug 17; release Aug 15; decision Aug 14. No bill number located |
+| 08-15 | Warren: "President Trump is now the first President in history to approve, operate, and supervise his own bank. This is the most brazen act of self-dealing our financial system has ever seen." Blumenthal: "This latest act of self-dealing puts our banking system in danger by legitimizing a company that has proven to be unscrupulous." | A | release | Banking Dive "38% / 49%" not anchored |
+| 08-17 | AIFC PR congratulating WLF (USD1 $4B; $8B volume) | C REJECTED | stocktitan | not on EDGAR |
+| 08-20 | Judge Donato (N.D. Cal.) denied WLF motion to compel arbitration in Sun v. WLF, 3:26-cv-03360 ($45M token freeze) | REJECTED pending docket (Coinpedia single) | docket 73224507 identified | Zach Witkoff: "entirely meritless" |
+
+## Trump Media (DJT, CIK 0001849635)
+| 08-10 | Q2 10-Q: Truth API launched Aug 1, 2026; Aug 7 "mutually terminated" TMTG CRO Strategy combination | A | acc. 0001437749-26-026777 | 0 hits "high-frequency"; TAE merger (Dec 18, 2025) open; Yorkville fee 6,000,000 DJT sh |
+| 08-10 | Form 425 earnings transcript — McGurn: "we've signed more than 10 customer agreements to date, primarily high-frequency trading firms, at rates generally in the range of $60,000-$100,000 a month"; "we are evaluating opportunities in the prediction market space for data licensing"; "We recognize a modest amount of revenue from these agreements today." Q2 opex $165.2M | A | acc. 0001437749-26-027049 | confirms standing + adds rate + prediction-market line |
+| 08-13 / 08-21 | Form 4s code F (tax withholding): Juhan 18,817 @ $8.3265; Glabe 25,546 @ $8.325; Novachki 29,957 @ $8.3251; McGurn 16,509 @ $8.3252 (Aug 13); McGurn 7,958 @ $8.8864 (Aug 21); Forms 144 ×5 | A | accs. …-027758/-027761/-027763/-027765/-028743 | not open-market; no DJT Holdings sale |
+
+## Other
+| 08-17 | 1789 Capital Dawn LP (CIK 0002146946) Form D: pooled fund, $10,150,000 sold to 6 investors, "Indefinite"; officers Christopher Buskirk, Omeed Malik | A | acc. 0002146946-26-000001 | Don Jr. not listed |
+| 08-05 (dated 08-04) | Warren/Garcia/Blumenthal/Duckworth → DoD IG re $3.2B to ≥15 companies tied to 1789 / American Ventures | A | warren.senate.gov/…/2026.08.04-Letter-to-DoD-IG-… .pdf | no deadline; **no IG response/investigation found (18 days)** |
+| 08-12 | Warren + Garcia → Trump: 3,555 stock trades (up to $500M) Q1 2026; >17,000 trades (up to $1.56B) since inauguration; names Meta, GEO Group, CoreCivic; **deadline Aug 28, 2026** | A | warren.senate.gov/…/2026.8.12-Letter-to-Trump-re-Stock-Trades-final.pdf | NEW CLOCK; underlying 278e whitehouse.gov/…/2026/06/President-Donald-J.-Trump-2025-Annual-Report.pdf |
+| 08-07 (release 08-12) | Heinrich + Huffman → Acting Comptroller General Orice Williams Brown: GAO examination of federal equity stakes in mining firms (EO 14241 S-K 1300 waivers; NEDC; BLM/USFS; Project VAULT) | A | energy.senate.gov/services/files/F9D0EFA6-… | does not say whether Feb 2 letters answered |
+| 07-29 | Warren released responses to Jul 6 IRS-immunity letters: **6 responded** (TMTG, Polymarket, Kalshi, American Bitcoin, Powerus, Kaz Resources) "suggesting they were not involved with or granted immunity"; **5 did not** (Trump Organization, World Liberty Financial, 1789 Capital + two unnamed) | A | warren.senate.gov/newsroom/press-releases/warren-releases-new-responses-… | **CORRECTS standing "0 of 10 replied"**: 11 addressees (Forbes adds Foundation Future Industries, Tag Air); 6 replied by Jul 29; 5 silent; 34 days past Jul 20 |
+| 07-16 | Warren/Wyden → Treasury/IRS after Trump v. IRS (S.D. Fla. 1:26-cv-20609) ruled May 19 settlement addendum "directly contravenes" 26 U.S.C. §7217; deadline Jul 22 | A | warren.senate.gov/…/Warren-Wyden-Letter-to-Treasury-and-IRS-re-Immunity-Order-final.pdf; CL docket 72207870 | settlement document still unobtained; no Treasury/IRS reply (32 days) |
+| 07-16 | Warren/Blumenthal/Stansbury → Library Foundation: $64.5M settlements; $56.5M (Meta, ABC, Paramount) reached Foundation; $8M (X) unclear; $50M revenue as of Oct 10, 2025 → up to $14.5M gap; ~$7M expenditures incl. $6M "other" | A | warren.senate.gov/…/Warren-Letter-to-Trump-Library-Foundation-… .pdf | no deadline; no response (38 days); no new settlement/payment in window |
+| 05-14 | Warren + Reed → Bessent / Acting AG Blanche: WLF partnered with venture led by Oct 2025-sanctioned individuals (Prince Group); deadline May 26; cites "failure to respond to the original inquiry" | A | banking.senate.gov/download/20260513-letter-to-bessent-blanche-on-wlf | Nov 17 / Dec 15 letters: no response located |
+| 12-12-2025 | Steve Witkoff OGE 278e (New Entrant, signed 08/13/2025): agency certifying official Scott F. Gast signed 12/12/2025; **OGE Certification block blank** in latest posted version | A | whitehouse.gov/wp-content/uploads/2025/12/Witkoff-Steven.pdf | **CORRECTS standing "uncertified"**: agency-certified Dec 12, 2025 (121 days vs 60-day norm); OGE-level absent; 2026 uploads 404; 375 days since signature |
+| 08-21 | HJC Dems staff report "Pardons, Inc." (Raskin): ~$1.7B restitution/fines wiped across 197 clemency grants; Binance $260,000 lobbying WH on "executive relief"; Zhao retained Ches McDowell; family ">$1.4B" from WLF/crypto | C REJECTED as to causal claims | democrats-judiciary.house.gov/…/2026-08-hjc-dems-staff-report-pardons-inc.pdf | Zhao: relationship "misconstrued"; Trump: "no idea" who Zhao is (knowledge-only). No new pardon Aug 17–23 |
+
+## Silence Ledger day counts as of 2026-08-23 (from this sweep)
+| Clock | Sent | Due | Days | Status |
+|---|---|---|---|---|
+| Warren–Reed → Treasury/DOJ (WLFI buyers) | 2025-11-17 | 2025-12-01 | 265 | none; May 14 follow-up cites "failure to respond" |
+| USD1/PancakeSwap | 2025-12-15 | 2026-01-12 | 223 | none |
+| Warren–Reed → Bessent/Blanche (Prince Group) | 2026-05-14 | 2026-05-26 | 89 | none (NEW to ledger) |
+| Huffman/Garcia/Heinrich minerals | 2026-02-02 | 2026-02-26 | 178 | none; escalated to GAO Aug 7 |
+| Library Foundation | 2026-07-16 | — | 38 | none |
+| Immunity letters → 11 entities | 2026-07-06 | 2026-07-20 | 34 | 6 replied; 5 silent (Trump Org, WLF, 1789, +2) |
+| Warren/Wyden → Treasury/IRS | 2026-07-16 | 2026-07-22 | 32 | none (NEW) |
+| DoD IG | 2026-08-05 | — | 18 | no probe found |
+| Warren/Garcia → Trump trades | 2026-08-12 | 2026-08-28 | pending | NEW |
+| Chip remittances | — | — | — | FR 0 docs; no Treasury receipt; MTS not queried |
+| Witkoff OGE | signed 2025-08-13 | ~60d | 375; OGE block blank | agency certified 2025-12-12 |
+
+## Absences
+On-chain unlock (unverified); going-concern/Nasdaq notice (absent); ExodusPoint (unverified); Treasury/DOJ replies (absent); DoD IG probe (absent); Feb 2 agency replies (absent); Library reply (absent); minerals equity sweep (GAP, budget); Stargate–family link (EDGAR/FR 0; absent); Argentina/Discovery (0 in window); Polymarket/WLFI/envoy subpoena (EDGAR 2 unrelated; CL no new WLF case after Jun 12; **still ABSENT**); WLTC on EDGAR (0); OCC index 404; WLF GC promotion (no URL); Kushner/Affinity 13F-HR acc. 0000905148-26-003725 (Aug 14) not parsed (GAP); American Bitcoin (nothing); Project Vault FR (0); new pardons (none).
+
+## Rejections
+Coinpedia Sun v. WLF (pending docket); Stocktitan PR; Banking Dive 49% + date drift; HJC causal narrative; WebSearch-summary items (Reuters/Ipsos 63% Aug 20; WLFI "+13%/−48% YTD"; GC promotion); cryptoslate framing; DDF "seven months uncertified" (conflates agency vs OGE).
