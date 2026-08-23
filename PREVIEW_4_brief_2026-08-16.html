@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Brief — week ending 2026-08-16 · The Architecture</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+/* THE ARCHITECTURE — v3: white, large-type, full-width, sidebar + menu. Deliberate single-theme. */
+:root{
+  --paper:#ffffff; --ink:#17150f; --ink-2:#4c4a42; --ink-3:#8a877c;
+  --rule:#e2dfd6; --rule-soft:#f4f2ec; --card:#fbfaf7;
+  --tier-a-bg:#e9f1e5; --tier-a-fg:#2c5030; --tier-a-rule:#b9cdb2;
+  --tier-b-bg:#f6eed9; --tier-b-fg:#6f5716; --tier-b-rule:#dcc98f;
+  --tier-c-bg:#f1eae7; --tier-c-fg:#83655a; --tier-c-rule:#d6c4bc;
+  --absent-bg:#eceef4; --absent-fg:#3f4c69; --absent-rule:#bcc6d9;
+  --dotted:#a34a2b; --accent:#8c2f1b; --link:#274d8f; --mark:#fff3c4;
+  --nav-h:58px;
+  --font-display:"DM Serif Display",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 14px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:19px;line-height:1.68;font-variant-numeric:tabular-nums}
+a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--accent)}
+mark{background:var(--mark);color:inherit;padding:0 .15em}
+h1,h2,h3,h4{text-wrap:balance}
+h1,h2,h3{font-family:var(--font-display);font-weight:400}
+
+/* ---------- progress + top menu ---------- */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:70}
+.topnav{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:1.4rem;
+  background:var(--ink);color:#fff;height:var(--nav-h);padding:0 clamp(1rem,3vw,2.5rem);
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem;letter-spacing:.08em}
+.topnav .brand{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.22em;font-size:.8rem;white-space:nowrap}
+.whereami{color:#fff;opacity:.5;font-size:.7rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  max-width:22rem;letter-spacing:.05em}
+.topnav .navlinks{display:flex;align-items:center;gap:1.3rem;margin-left:auto;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;opacity:.85}
+.topnav a:hover{opacity:1;color:#fff}
+.navgroup{position:relative}
+.navgroup>button{all:unset;cursor:pointer;opacity:.85;font:inherit;letter-spacing:inherit;color:#fff}
+.navgroup>button:hover,.navgroup>button:focus-visible{opacity:1;outline:none}
+.navgroup>button:focus-visible{text-decoration:underline}
+.navgroup .dd{display:none;position:absolute;right:0;top:2.2rem;min-width:21rem;max-height:72vh;overflow:auto;
+  background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:10px;
+  box-shadow:0 12px 34px rgba(23,21,15,.18);padding:.5rem 0}
+.navgroup.open .dd{display:block}
+.navgroup .dd a{display:block;padding:.5rem 1.1rem;color:var(--ink);opacity:1;font-size:.74rem;line-height:1.45}
+.navgroup .dd a:hover{background:var(--rule-soft)}
+
+/* ---------- shell: sidebar + content ---------- */
+.shell{display:grid;grid-template-columns:314px minmax(0,1fr)}
+.sidebar{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));overflow-y:auto;
+  border-right:1px solid var(--rule);padding:1.6rem 1.2rem 3rem 1.4rem;background:var(--card)}
+.sidebar .sb-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-3);margin:1.6rem 0 .5rem}
+.sidebar .sb-label:first-child{margin-top:0}
+.sidebar a{display:block;color:var(--ink-2);text-decoration:none;font-size:.94rem;line-height:1.45;
+  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent}
+.sidebar a:hover{background:var(--rule-soft);color:var(--ink)}
+.sidebar a.on{border-left-color:var(--accent);color:var(--ink);font-weight:600;background:var(--rule-soft)}
+.sidebar details{margin:.1rem 0}
+.sidebar summary{cursor:pointer;list-style:none;display:block;color:var(--ink-2);font-size:.94rem;line-height:1.45;
+  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent;font-weight:600}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary:hover{background:var(--rule-soft);color:var(--ink)}
+.sidebar details.on>summary{border-left-color:var(--accent);color:var(--ink);background:var(--rule-soft)}
+.sidebar details>div{margin:.1rem 0 .3rem .9rem;border-left:1px solid var(--rule);padding-left:.4rem}
+.sidebar details>div a{font-size:.85rem;color:var(--ink-3);padding:.22rem .5rem}
+.content{min-width:0;padding:0 clamp(1.1rem,3.5vw,3.5rem) 6rem}
+@media (max-width:1080px){.shell{grid-template-columns:1fr}.sidebar{display:none}}
+
+/* ---------- cover ---------- */
+.cover{margin-top:3rem;padding-bottom:0}
+.mast-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-3)}
+.cover h1{font-size:clamp(3.4rem,7.5vw,6.5rem);line-height:.96;margin:.7rem 0 1rem;letter-spacing:.005em}
+.cover p{max-width:75ch;color:var(--ink-2);font-size:1.08rem}
+.cover>p:first-child{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);max-width:none}
+.cover strong{color:var(--ink)}
+.mast-meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;color:var(--ink-3);
+  margin-top:1.1rem;display:flex;gap:1.8rem;flex-wrap:wrap}
+.front-matter{margin-top:1.8rem;border:1px solid var(--rule);border-radius:12px;background:var(--card)}
+.front-matter summary{cursor:pointer;padding:1rem 1.3rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.front-matter[open] summary{border-bottom:1px solid var(--rule)}
+.front-matter .fm-body{padding:.5rem 1.6rem 1.2rem}
+.front-matter .fm-body p{max-width:85ch;font-size:.98rem}
+
+/* ---------- the sentence ---------- */
+.sentence{margin:4rem 0 0;border-top:3px double var(--ink);border-bottom:3px double var(--ink);
+  padding:clamp(2.2rem,5vw,4rem) 0}
+.sentence .kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+.sentence blockquote{border:none;margin:0;padding:0;font-style:italic;color:var(--ink);
+  font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.28;font-weight:600;max-width:none}
+.sentence .attr{margin-top:1.2rem;color:var(--ink-3);font-size:.95rem;font-style:normal}
+
+/* ---------- orientation cards ---------- */
+.deck-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-3);margin:3.5rem 0 1.1rem}
+.arch3{display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1.4rem}
+.arch3 a{display:block;border:1px solid var(--rule);border-radius:14px;padding:1.7rem 1.7rem 1.5rem;
+  text-decoration:none;color:var(--ink);background:var(--card);transition:border-color .15s, box-shadow .15s}
+.arch3 a:hover{border-color:var(--accent);box-shadow:0 6px 22px rgba(23,21,15,.07)}
+.arch3 .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.18em;color:var(--accent)}
+.arch3 h3{margin:.5rem 0 .6rem;font-size:1.6rem}
+.arch3 p{margin:0;color:var(--ink-2);font-size:1rem;line-height:1.58}
+.arch3 .go{display:block;margin-top:1rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;letter-spacing:.14em;color:var(--accent)}
+.howto{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;margin-top:1.4rem}
+@media (max-width:980px){.howto{grid-template-columns:1fr}}
+.card{border:1px solid var(--rule);border-radius:14px;padding:1.6rem 1.7rem;background:var(--card)}
+.card h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 .9rem;border:none;padding:0}
+.legend p{font-size:1rem;color:var(--ink-2);margin:.6rem 0;max-width:none}
+.legend p strong{color:var(--ink)}
+.paths a{display:block;border:1px solid var(--rule);border-radius:10px;padding:.9rem 1.1rem;margin:.7rem 0;
+  text-decoration:none;color:var(--ink);background:var(--paper)}
+.paths a:hover{border-color:var(--accent)}
+.paths .pt{font-weight:700;font-size:1.05rem}
+.paths .pm{float:right;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);margin-top:.2rem}
+.paths .pd{display:block;font-size:.9rem;color:var(--ink-2);margin-top:.2rem}
+.cast{margin-top:1.4rem}
+.cast dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(21rem,1fr));gap:.2rem 2.4rem;margin:0}
+.cast dt{font-weight:700;font-size:1rem;margin-top:.6rem}
+.cast dd{margin:0;font-size:.92rem;color:var(--ink-2)}
+.rail-wrap{margin-top:1.4rem}
+.rail{display:flex;overflow-x:auto;padding-bottom:.5rem}
+.rail .stop{min-width:10.5rem;position:relative;padding-right:1.1rem}
+.rail .stop::before{content:"";position:absolute;left:0;right:0;top:.38rem;border-top:2px solid var(--rule)}
+.rail .stop::after{content:"";position:absolute;left:0;top:0;width:.78rem;height:.78rem;border-radius:50%;
+  background:var(--paper);border:2px solid var(--accent)}
+.rail .d{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--accent);
+  margin:1.2rem 0 .25rem;letter-spacing:.06em}
+.rail .w{font-size:.87rem;color:var(--ink-2);line-height:1.42;padding-right:.6rem}
+.rail a{text-decoration:none;color:inherit;display:block}
+.rail .stop.big .d{font-weight:700}
+.rail .stop.big .w{color:var(--ink);font-weight:600}
+
+/* ---------- tier chips, callouts, quotes ---------- */
+.tier{display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;font-weight:600;
+  letter-spacing:.05em;padding:.08rem .42rem;border-radius:4px;vertical-align:.12em;border:1px solid;white-space:nowrap}
+.tier.a{background:var(--tier-a-bg);color:var(--tier-a-fg);border-color:var(--tier-a-rule)}
+.tier.b{background:var(--tier-b-bg);color:var(--tier-b-fg);border-color:var(--tier-b-rule)}
+.tier.c{background:var(--tier-c-bg);color:var(--tier-c-fg);border-color:var(--tier-c-rule)}
+.tier.abs{background:var(--absent-bg);color:var(--absent-fg);border-color:var(--absent-rule)}
+.dotted-edge{border:2px dashed var(--dotted);border-radius:10px;padding:1.1rem 1.3rem;margin:1.4rem 0;
+  color:var(--ink);max-width:95ch;background:var(--paper)}
+.dotted-edge .label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--dotted);display:block;margin-bottom:.4rem}
+blockquote{border-left:3px solid var(--rule);margin:1.1rem 0;padding:.15rem 0 .15rem 1.1rem;color:var(--ink-2);font-style:italic}
+.scope{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);
+  text-transform:uppercase;letter-spacing:.08em}
+.pullquote{border:none;margin:2rem 0;padding:0;font-size:clamp(1.4rem,2.4vw,1.9rem);line-height:1.32;
+  font-style:italic;font-weight:600;color:var(--ink);max-width:62ch}
+.pullquote .who{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:.7rem;font-style:normal;font-weight:400}
+.ed-note{display:block;border:2px dashed var(--accent);border-radius:8px;background:var(--rule-soft);
+  padding:.8rem 1.1rem;margin:1rem 0;font-size:.95rem;font-style:normal;color:var(--ink-2);max-width:85ch}
+.ed-note strong{color:var(--accent);font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* ---------- ledgers, corrections, clocks ---------- */
+table.ledger{width:100%;max-width:1200px;border-collapse:collapse;font-size:.95rem;margin:1.1rem 0}
+table.ledger th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);text-align:left;font-weight:600;padding:.5rem .7rem .5rem 0;
+  border-bottom:2px solid var(--rule)}
+table.ledger td{padding:.6rem .7rem .6rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+table.ledger td.mono,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;white-space:nowrap}
+.overdue{color:var(--accent);font-weight:600}
+.correction{border-left:4px solid var(--accent);padding:.3rem 0 .3rem 1.2rem;margin:1.2rem 0;max-width:95ch}
+.correction .was{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1px}
+.correction .now{font-weight:600}
+.clocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.1rem;margin:1.3rem 0}
+.clock{border:1px solid var(--rule);border-radius:14px;padding:1.2rem 1.3rem;background:var(--card);
+  text-decoration:none;display:block;color:var(--ink)}
+a.clock:hover{border-color:var(--accent)}
+.clock .num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:2.6rem;font-weight:600;
+  color:var(--accent);line-height:1}
+.clock .unit{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);margin:.35rem 0 .55rem}
+.clock .what{font-size:.9rem;color:var(--ink-2);line-height:1.45}
+.clocks-asof{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);letter-spacing:.08em}
+
+/* ---------- update part ---------- */
+.update{margin-top:3.5rem;border:2px solid var(--accent);border-radius:16px;
+  padding:clamp(1.4rem,3vw,3rem);background:var(--card)}
+.update .part-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.update h2{font-size:clamp(2rem,3.4vw,2.9rem);font-weight:400;margin:.35rem 0 .7rem}
+.update h3{font-size:1.45rem;margin:2.6rem 0 .6rem}
+.update h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.64rem;font-weight:500;
+  letter-spacing:.08em;vertical-align:.25em;margin-left:.55em;color:var(--ink-3);text-transform:uppercase}
+.update h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin:2.6rem 0 .9rem;border-bottom:2px solid var(--rule);padding-bottom:.45rem}
+.update p,.update blockquote{max-width:95ch}
+.update .cols{columns:2 32rem;column-gap:3rem}
+.update .cols>*{break-inside:avoid}
+@media (max-width:760px){.update .cols{columns:1}}
+
+/* ---------- story ---------- */
+.story{margin-top:1.5rem}
+.story p,.story ul,.story ol,.story blockquote{max-width:85ch}
+.story p{margin:.9rem 0}
+.story h3{font-size:1.45rem;margin:2.8rem 0 .6rem}
+.story table{width:100%;max-width:1200px;border-collapse:collapse;font-size:.96rem;margin:1.3rem 0}
+.story th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.5rem .9rem .5rem 0;border-bottom:2px solid var(--rule)}
+.story td{padding:.55rem .9rem .55rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+.story li{margin:.4rem 0}
+.story hr{border:0;border-top:1px solid var(--rule);margin:2.8rem 0}
+.part-open{margin:5.5rem 0 1.6rem;border-top:3px double var(--ink);padding-top:2.2rem}
+.part-open .pmeta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--accent);display:flex;gap:1.6rem;flex-wrap:wrap;align-items:baseline}
+.part-open .pmeta .rt{color:var(--ink-3)}
+.part-open .pmeta .top{margin-left:auto}
+.part-open .pmeta .top a{color:var(--ink-3);text-decoration:none}
+.part-open .pmeta .top a:hover{color:var(--accent)}
+.story .part-open h2{font-size:clamp(2.1rem,3.8vw,3.2rem);border:none;margin:.55rem 0 .45rem;padding:0}
+.part-open .dek{font-size:1.28rem;font-style:italic;color:var(--ink-2);max-width:75ch;margin:0 0 .5rem}
+
+/* ---------- node diagram ---------- */
+.node-fig{margin:1.6rem 0;max-width:680px}
+.node-fig svg{width:100%;height:auto;display:block}
+.node-fig .cap{font-size:.86rem;color:var(--ink-3);margin-top:.5rem}
+.nf-box{fill:var(--paper);stroke:var(--ink);stroke-width:1.4}
+.nf-edge{stroke:var(--dotted);stroke-width:1.7;stroke-dasharray:7 5;fill:none}
+.nf-t{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;fill:var(--ink)}
+.nf-t2{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;fill:var(--ink-3)}
+.nf-c{fill:var(--rule-soft);stroke:var(--accent);stroke-width:1.4}
+
+/* ---------- archive cards, brief page, sources ---------- */
+.masthead{border-bottom:3px double var(--ink);margin-top:2.5rem;padding-bottom:1.2rem}
+h1.mast{font-size:2.6rem;line-height:1.05;margin:.35rem 0 .5rem}
+.mast-sub{color:var(--ink-2);font-size:1.08rem;font-style:italic;margin:0}
+.standards{background:var(--rule-soft);border-radius:10px;padding:1.1rem 1.3rem;font-size:.98rem;color:var(--ink-2);margin-top:1.4rem}
+.standards strong{color:var(--ink)}
+.lede p:first-child{font-size:1.22rem;line-height:1.6}
+.brief-card{border:1px solid var(--rule);border-radius:12px;padding:1.2rem 1.4rem;margin:.9rem 0;background:var(--card)}
+.brief-card .date{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);letter-spacing:.1em}
+.brief-card h4{margin:.3rem 0 .35rem;font-size:1.15rem}
+.brief-card p{margin:.25rem 0;font-size:.96rem;color:var(--ink-2)}
+pre.manifest{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.82rem;line-height:1.62;
+  white-space:pre-wrap;word-break:break-word;background:var(--rule-soft);border-radius:10px;padding:1.6rem;margin-top:1.5rem}
+section{margin-top:3rem}
+h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;letter-spacing:.01em;
+  color:var(--accent);border-bottom:2px solid var(--rule);padding-bottom:.5rem;margin:0 0 1.3rem}
+h2 .num{color:var(--ink-3);margin-right:.6em}
+h3{font-size:1.35rem;margin:1.9rem 0 .45rem;font-weight:400}
+h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62rem;font-weight:500;
+  letter-spacing:.08em;vertical-align:.2em;margin-left:.5em;color:var(--ink-3);text-transform:uppercase}
+p{margin:.75rem 0}
+.scroll-x{overflow-x:auto}
+.site-footer,footer{margin-top:5rem;border-top:3px double var(--ink);padding-top:1.3rem;font-size:.92rem;color:var(--ink-3)}
+.site-footer p,footer p{max-width:110ch}
+footer .mono{font-size:.72rem}
+
+@media print{
+  .progress,.topnav,.sidebar,.paths{display:none}
+  body{font-size:11pt}
+  .content{padding:0}
+  .shell{display:block}
+  .part-open{break-before:page;border-top:none;padding-top:0}
+  a{color:inherit;text-decoration:none}
+}
+@media (max-width:700px){
+  body{font-size:17.5px}
+  .cover h1{font-size:2.6rem}
+  .topnav{gap:.8rem}.topnav .navlinks{gap:.8rem}.whereami{display:none}
+}
+
+.topnav a.nav-flag{color:#fff;border:1px solid var(--accent);border-radius:999px;padding:.26rem .7rem;
+  background:rgba(140,47,27,.4);opacity:1;letter-spacing:.1em}
+.topnav a.nav-flag:hover{background:var(--accent)}
+.sidebar a.sb-flag{color:var(--accent);font-weight:600}
+
+</style></head><body><div class="content" style="max-width:1200px;margin:0 auto"><p class="mast-kicker" style="margin-top:2rem"><a href="/">&larr; The Architecture</a></p>
+<div class="wrap">
+
+<header class="masthead">
+  <div class="mast-kicker">Weekly Brief Archive</div>
+  <h1 class="mast" style="font-size:2rem">Weekly Brief — Edition 001</h1>
+  <p class="mast-sub">Window: August 9&ndash;16, 2026 &middot; compiled August 16, 2026 &middot; eight parallel research tracks</p>
+</header>
+
+<section class="lede">
+  <h2>The lede</h2>
+  <p>On August 14 the Office of the Comptroller of the Currency granted preliminary conditional approval for World Liberty Trust Company, N.A. — a national trust bank whose president and director is Zachary Witkoff, whose product is the family's USD1 stablecoin, and whose indirect investors, named in the OCC's own decision document, include DT Marks SC LLC, the Trump-family investment vehicle. The federal chartering record itself now documents the structure: the president's family holds a passive stake in a federally chartered bank that issues the dollar-pegged token whose sales route 75% of proceeds to the family, while the Treasury Department that supervises that regulator has gone eight and a half months without answering a Senate letter asking who bought the token. <span class="tier a">A</span> OCC Corporate Decision #1385, Control No. 2026-Charter-344521.</p>
+  <p>The same week, the primary records dismantled three pieces of the story as this corpus had been carrying it. That is the second half of the lede, because a brief that only adds and never subtracts isn't applying its own standard.</p>
+</section>
+
+<section>
+  <h2>Architecture I — The family money</h2>
+  <p><strong>The bank.</strong> The OCC decision (Aug 14) approves World Liberty Trust Company, N.A. of Bay Harbor Islands, Florida, to issue and redeem USD1 and provide digital-asset custody as fiduciary. Zachary Witkoff is organizer, director, and President; Robert Witkoff and Scott Alper are organizers/directors. The approval carries conditions — GENIUS Act compliance or divestiture, $20M minimum Tier 1 capital, prior OCC approval of executives — and, critically, passivity commitments from three indirect investors: DT Marks SC LLC, StringZ Holding RSC (DE) LLC, and AMGUS, LLC, each barred from board seats or control. Seven public comments raising Trump-family conflicts, UAE investor exposure, and BSA/AML concerns were rejected as outside charter-review scope or addressed. <span class="tier a">A</span> Sen. Warren, on the record: &ldquo;If the application is approved, you would promulgate rules that influence the profitability of the President's company.&rdquo; USD1 sits near $4B <span class="tier b">B</span>.</p>
+  <p>The structural description needs no embellishment: the same family name appears on the token issuer's proceeds (DT Marks DEFI LLC, per WLF's own disclosures) and on the passive investor roster of the bank now chartered to issue that token. Two documents, one architecture. No causal claim required.</p>
+
+  <p><strong>The corrections.</strong> The carried-forward thread held that Eric Trump joined the ALT5 Sigma board per the company's 8/13/25 release, and that ALT5's $1.5B raise included $750M from Point72 and ExodusPoint. The EDGAR pull — the priority assignment — returns a different picture, and the filings control.</p>
+  <p>First, ALT5 Sigma and &ldquo;AI Financial Corp&rdquo; are the <em>same</em> SEC registrant — CIK 0000862861, formerly JanOne, formerly Appliance Recycling Centers of America; renamed AI Financial Corporation effective April 28, 2026 by short-form merger requiring no shareholder vote <span class="tier a">A</span>. What we had been tracking as two entities is one shell.</p>
+  <p>Second, <strong>Eric Trump was never seated as a director.</strong> The August 11, 2025 8-K did announce his board appointment <span class="tier a">A</span> (acc. 0001641172-25-022905). But an 8-K eighteen days later states: &ldquo;After discussion with The Nasdaq Stock Market LLC&hellip; Both Eric Trump and Zachary Folkman have been designated as observers.&rdquo; <span class="tier a">A</span> (acc. 0001641172-25-026082). The February 2026 proxy's director slate contains zero occurrences of his name; no Form 3 exists. The carried question is answered — in the negative, at tier A. Prior reporting calling him a board member is contradicted by the primary record.</p>
+  <p>Third, <strong>the &ldquo;$1.5B raise&rdquo; was half tokens, and the hedge-fund stake story does not survive the 13F pull.</strong> The 8-K itself shows $750M cash plus $750M <em>of $WLFI tokens</em> contributed by World Liberty Financial as &ldquo;Lead Investor&rdquo; — a token-for-equity swap, not $1.5B of outside cash <span class="tier a">A</span>. Point72's Q2 2026 13F, signed August 14, contains no ALT5/AIFC position at all; its only exposure ever was $1.08M of call options in Q3 2025 <span class="tier a">A</span> — absence verified in the infotable. ExodusPoint's Q2 13F shows 2,170,301 shares worth $1,269,843 — a rounding error in a 1,510-position book <span class="tier a">A</span>. The framing should be retired from the corpus.</p>
+  <p>What survives, upgraded: the wreckage is now fully documented at tier A. Going-concern doubt in the 10-Q filed May 18, 2026 (the carried &ldquo;5/19&rdquo; date was one day off), with a $348.3M one-quarter unrealized loss on WLFI tokens — and a $15M loan <em>from</em> WLFI to the company, 378.31M tokens pledged as collateral, the token issuer lending money to its own largest bagholder while the issuer's CEO chairs the borrower's board <span class="tier a">A</span>. Nasdaq bid-price deficiency notice July 1 <span class="tier a">A</span>. The decline anchors at −92.2% from the $7.50 offering price; &ldquo;&gt;90%&rdquo; is confirmed, but the circulating &ldquo;&lt;$60M market cap&rdquo; is <em>not</em> (shares-outstanding math gives ~$74M at 6/30) and should be dropped. In-window: AIFC filed an NT 10-Q on August 12 — late again <span class="tier a">A</span> — and August 12 was also the scheduled date its remaining 3.58B WLFI tokens became fully transferable per the June 8-K <span class="tier a">A</span> for the schedule; on-chain execution unverified <span class="tier c">C</span>.</p>
+
+  <p><strong>The non-answers, still accruing.</strong> No Treasury or DOJ response to the Warren&ndash;Reed letter of November 17, 2025 (WLFI buyers transacting with sanctioned, DPRK-linked, A7A5, and Tornado Cash wallets; deadline December 1, 2025) appears in any record through August 16 — eight and a half months past deadline <span class="tier b">B</span>−, absence across primary venues. The follow-up letter's January 12 deadline is likewise unanswered. The July 6 Warren/Wyden/Schumer letters to ten Trump-orbit entities — 1789 Capital, American Bitcoin, TMTG, WLFI, Polymarket, Trump Organization, Kalshi and others — concerning an alleged May 2026 DOJ settlement granting immunity from Treasury/IRS enforcement for pre-May 19 conduct drew zero responses by their July 20 deadline; 27 days past as of the window's close <span class="tier a">A</span> for the letters; the settlement document itself remains unobtained — its terms are <span class="tier b">B</span> as-alleged. Steve Witkoff's OGE disclosure remains uncertified as of August 16 — roughly a year past filing, with two amended versions posted and no certification date <span class="tier b">B</span>−. The non-answer is the finding, three times over.</p>
+
+  <p><strong>Trump Media.</strong> The Q2 10-Q (filed Aug 10, in window) shows a $238.1M quarterly net loss, $644.0M for the half, digital-asset holdings down ~$360M from year-end <span class="tier a">A</span>. The Crypto.com SPAC deal died August 7 by mutual termination &ldquo;due to market conditions&rdquo; <span class="tier a">A</span>, Yorkville 8-K with the termination agreement as exhibit. And buried in the week's disclosures, on the record from interim CEO Kevin McGurn: Truth Social's API business has roughly ten customers, &ldquo;primarily high-frequency trading firms that ingest data from platforms like Truth Social to inform algorithmic trading.&rdquo; <span class="tier b">B</span> The president's posts move oil and defense markets (Architecture III); his company now sells structured machine access to those posts; Sen. Warren held a hearing statement on exactly this on August 6. Those are three separate dated facts.</p>
+  <div class="dotted-edge"><span class="label">Dotted edge — evidence absent</span>
+  Whether any specific trader profited from advance or structured access during the war-statement cycle: no subpoena identifying Polymarket wallet holders, WLFI stake buyers, or any envoy's market position surfaced anywhere this week. Confirmed absent, as expected — the un-drawn edge, ninth consecutive report. It stays un-drawn.</div>
+
+  <p><strong>The Gulf sequence.</strong> Warren's August 5 letter to Commerce Secretary Lutnick documents, in a congressional record, the sequence: UAE-linked entities invested hundreds of millions into WLF in 2025; Commerce granted license-free advanced AI-chip access to G42, chaired by Sheikh Tahnoon, over reported staff diversion warnings <span class="tier a">A</span> for the letter. The investment and the export decision are separate dated facts. The causal edge remains dotted — documented sequence, no evidence of exchange, exactly where the Schiff letter left it in October.</p>
+  <p>Also logged: Warren/Blumenthal asked the SEC on August 4 to investigate $TRUMP as a possible &ldquo;rug pull&rdquo; — their figures ($3.81B investor losses, $636M personal gain) remain the senators' figures, <span class="tier c">C</span> until the underlying chain analytics are anchored. No SEC response found.</p>
+</section>
+
+<section>
+  <h2>Architecture II — Executive power</h2>
+  <p><strong>The Court's silence is the week's largest structural fact.</strong> Emergency application 26A124 — the administration's request to stay the injunctions against the March 31 mail-ballot executive order — has now been pending twenty days without any order, which election-law scholar Rick Hasen flags as possibly the longest the Court has ever sat on an emergency election motion <span class="tier a">A</span> for the docket posture. While the Court sat, Judge Talwani issued a second, <em>nationwide</em> injunction on August 11 barring USPS from enforcing the EO's mail-ballot provisions for the November elections <span class="tier a">A</span> — opinion PDF, D. Mass. ECF 183 — and both sides filed supplemental briefs August 12, the Solicitor General telling the Court &ldquo;it is critical that the Court act promptly.&rdquo; By inaction, the Court has so far let both injunctions stand. The administration is complying with them. Both facts matter.</p>
+  <p><strong>The machinery, meanwhile, is being contested lawfully and losing — mostly.</strong> DOJ is now roughly 0-for-20 in suits demanding state voter rolls; the Sixth Circuit denied en banc rehearing in the Michigan case August 14, though with several Republican-appointed judges writing in partial sympathy — the tally worth watching is appellate judges, not district losses <span class="tier b">B</span>. The Fifth Circuit went the other way on August 13, reinstating nine provisions of Texas SB1 (mail-ballot ID matching among them) for November <span class="tier b">B</span>. DOJ election monitors deployed to Minnesota's primary August 11 — the department's own release says more than fifty monitors across seven counties this season and that monitoring &ldquo;continues through the general election on November 3, 2026&rdquo; <span class="tier a">A</span>. Twenty-six states are suing over DHS/FEMA's conditioning of ~$1B in homeland-security grants on election-procedure changes; no ruling yet <span class="tier a">A</span> for the complaint. In Missouri, the Secretary of State blocked a referendum on the new congressional map from the ballot on certification day without disclosing signature counts (&ldquo;Whether they had one signature or 500 million signatures doesn't really matter&rdquo;); the suit is at hearing August 18, with a September 8 ballot-printing deadline <span class="tier b">B</span>.</p>
+  <p><strong>The trial balloon.</strong> Asked August 11 whether he could declare a &ldquo;national security emergency&rdquo; for elections if the SAVE Act stalls, the president answered: &ldquo;Let me just say stranger things have happened, okay? I'll leave it at that.&rdquo; <span class="tier b">B</span>, video anchored — and note the standing February denial that any election-emergency EO draft existed was scoped to <em>knowledge of the draft</em>, which this remark neither repeats nor reaffirms. The SAVE-variant cloture vote had failed 52&ndash;46 three days earlier at 4:36 a.m. <span class="tier a">A</span>, Senate roll call #231. On 2028, the same night, the tempo ran the other direction: &ldquo;I'd love to run, but the law is very strong&rdquo; — twice, on camera <span class="tier a">A</span>. That is a more 22nd-Amendment-deferential formulation than anything since spring; log the oscillation, assert nothing.</p>
+  <p><strong>Blanche, Sullivan, and the scope of a denial.</strong> Todd Blanche was confirmed Attorney General 50&ndash;49&ndash;1 at 4:17 a.m. on August 8 — Collins and Murkowski voting no, citing politicization <span class="tier a">A</span>, roll call #230 — and sworn in August 10 by Third Circuit Judge Emil Bove, his former co-defense counsel, with press excluded. The carried-forward premise of a <em>postponed</em> swearing-in over Republican dissent found no support in any record: confirmation Saturday, oath Monday. That premise is corrected; the press exclusion is the only anomaly in evidence <span class="tier b">B</span>.</p>
+  <p>Three days into his tenure, Judge Sullivan put Blanche's department on notice of contempt in <em>Phang v. Blanche</em> (D.D.C. 1:26-cv-01417) at a hearing he deliberately held in open court: &ldquo;I don't want to do it, but I will do it&hellip; That isn't a threat. That's a promise.&rdquo; &ldquo;The public has a right to know what the hell is going on in this case.&rdquo; <span class="tier a">A</span> for the hearing; <span class="tier b">B</span> for quotes, five-plus independent origins. The department's position remains its knowledge-qualified formulation — it has &ldquo;not knowingly violated, nor has it ever acknowledged violating&rdquo; the Act — which denies <em>knowing</em> violation while conceding nothing about the underlying withholding, and which no DOJ statement this week extended to the withheld handwritten FBI notes concerning the 2019 trafficking allegation. Read against Blanche's December on-record denial (&ldquo;There's no effort to hold anything back because there's the name Donald J. Trump&rdquo;) — a <em>motive</em> denial, not a <em>withholding</em> denial — the scopes continue to nest without ever overlapping the allegation. DOJ has partially complied in camera, sought another two-month delay, and produced no redaction log; no new statutory release since April 3. Separately, Judge Preska on August 11&ndash;12 rejected all of Maxwell's objections and ordered Epstein-investigation materials unsealed, citing the Transparency Act as superseding prior secrecy orders <span class="tier b">B</span>; the actual release had not occurred by window's close. Plaintiff's proposed compliance orders in <em>Phang</em> are due around August 23.</p>
+  <p><strong>One more instrument, quietly filed.</strong> DOJ's Office of Legal Counsel issued an opinion (~Aug 10&ndash;11) extending executive privilege to presidential communications with &ldquo;private advisers&rdquo; outside government <span class="tier b">B</span>. Its first test will come whenever a congressional subpoena reaches the family-business orbit — which is to say, it is a pre-positioned wall around exactly the dotted edges this brief tracks. Structure, not intent.</p>
+  <p><strong>Absent, verified:</strong> No Insurrection Act invocation, proclamation, or new threat against a US city this week — checked against the Federal Register's presidential-documents API, which returned seven documents for the window, none deployment-related. No defiance of any court order: the administration is complying with the mail-ballot injunctions, the ballroom stop-work order (while seeking SCOTUS relief, filed Aug 14), and the Guard rulings. The only live contempt findings remain the DHS discovery contempt in C.D. Cal. (Aug 4, $500/day, with DHS's response deflecting rather than denying noncompliance) and Sullivan's warning.</p>
+</section>
+
+<section>
+  <h2>Architecture III — The wars and the count</h2>
+  <p><strong>The blockade is now the war.</strong> No US strikes on Iranian territory were announced this week — last strike release July 29, an A-grade absence against CENTCOM's release page. Instead: a Navy helicopter put two Hellfires into the engine room of a Panama-flagged freighter running the blockade August 11 <span class="tier a">A</span>, CENTCOM's own post — the third vessel disabled; Iranian drones hit ADNOC tankers August 13 and 15; a UKMTO-reported projectile strike August 16. Hormuz transits are down to single digits a day against 130&ndash;140 pre-war. The Energy Secretary's claim that ~9M barrels/day still flow was disputed on the record by a named analyst (&ldquo;Zero. Not 'maybe'&rdquo;) — the figure dispute is flagged, not resolved <span class="tier b">B</span>.</p>
+  <p><strong>The presidential tempo, dated and quoted:</strong> Aug 9, &ldquo;We are only semi-negotiating with them.&rdquo; Aug 10, Truth Social, demanding &ldquo;compensation from Iran&rdquo; reaching back to the USS Cole. Aug 12, Truth Social: &ldquo;The U.S.A. has total control over the Strait of Hormuz. I THINK WE WILL KEEP IT!&hellip; 'A WALL OF STEEL.'&rdquo; Aug 14, Long Island: &ldquo;Pretty soon I'll be declaring the Hormuz strait a territory of the United States&rdquo; (two renderings circulate; no official transcript exists — <span class="tier b">B</span> with drift flagged). Brent rose ~6% on the week. The statement dates and the market moves are reported separately; the causal edge is not ours to draw — but note again who sells machine-readable access to the posts (Architecture I).</p>
+  <p><strong>The count.</strong> The standing finding — the Pentagon's July recategorization of Iran-war casualties into a new &ldquo;Overseas Operations&rdquo; bucket that restarted the count (KIA displayed dropped 18&rarr;14; 600+ wounded became &ldquo;207 since July 7&rdquo;) — acquired an in-window congressional record: Sen. Rosen's August 14 bill would bar the SecDef from &ldquo;manipulating casualty records&rdquo; and restore the reclassified records; her office's release calls the practice &ldquo;disgraceful and beyond the pale&rdquo; <span class="tier a">A</span> for the bill and release; the recategorization itself <span class="tier b">B</span>, ABC/WaPo/NPR/NYT origins. The Intercept's larger aggregation (704 combined, &gt;900 with unreported cases) remains single-outlet <span class="tier c">C</span> and is not adopted. On the USS Lincoln — 250+ days deployed — the denials are a study in scope: CENTCOM denies any deaths aboard (narrow, checkable); the Navy denies an <em>increase in reported</em> suicidal ideation and affirms clean water and meals (specific), while not denying the record deployment length; Hegseth calls the picture &ldquo;completely misrepresented&rdquo; (broad, evidence-free). The narrow denials concede the questions the broad one waves away. An August 12 Pentagon review, obtained by AP, found three April 2025 Yemen strikes killed 153 civilians — with no condolence payments deemed appropriate; CENTCOM's attached statement justifies the targeting and denies none of the counts <span class="tier b">B</span>, one AP origin, flagged.</p>
+  <p>Congress held no war-powers votes — it can't; both chambers recessed after the July 30 discharge failure (49&ndash;50) until September 14 <span class="tier a">A</span>.</p>
+  <p><strong>Enforcement.</strong> Detention stands near 68,000 — approaching January's record 70,766 — with July book-ins the administration's highest month <span class="tier b">B</span>, anchored to the ICE release; TRAC's 65,765 is a July 11 as-of, don't merge the figures. The build-out is going vertical: an up-to-$10B &ldquo;Mega Hub&rdquo; solicitation would have one company build seven sites concurrently, five of which currently hold no ICE detention (Guant&aacute;namo among them), bids due August 31 <span class="tier b">B</span>, procurement documents reproduced; July obligations hit $2.5B including ~$1.5B in outright <em>purchases</em> of CoreCivic facilities — buying, not leasing, after the warehouse-detention legal losses <span class="tier b">B</span>&rarr;<span class="tier a">A</span>, USAspending. No new death notification for a death occurring in-window — but ICE released the name of a third man to die after Delaney Hall detention (Jose Chajon-Raxon) while announcing it will not count or review his death: &ldquo;when an individual is no longer in ICE custody, then ICE will no longer be responsible for monitoring or reviewing deaths that may occur.&rdquo; <span class="tier b">B</span> That is a denial whose scope is the accounting category, not the death — hospitalized from custody July 19, released from custody July 22, dead shortly after, uncounted. The category is doing the same work the casualty recategorization does in this architecture's other half. Two bookkeeping systems, one design pattern — noted as structure, not asserted as coordination.</p>
+  <p><strong>Health, sourced only:</strong> Dr. Jonathan Reiner (Cheney's cardiologist) in the NYT August 12, on the record: &ldquo;at times over the past year, the president has not looked well,&rdquo; seeking a congressional commission — not the 25th Amendment <span class="tier a">A</span>, a named physician who has never examined the patient. White House response, named (Davis Ingle): &ldquo;Democrat hack doctor&rdquo; — rhetorical scope, no clinical content, single-hop quote. No new physician memo since May 29. Leavitt announced her departure August 12, stated reason family <span class="tier a">A</span>; timing coincides with the op-ed cycle — no causal link asserted by any named source, none asserted here.</p>
+</section>
+
+<section>
+  <h2>The node where the architectures touch</h2>
+  <p>The week's clearest three-body intersection: (1) the president's family bank was chartered by a federal regulator on August 14 <span class="tier a">A</span>; (2) that regulator's supervising department, Treasury, is 8.5 months silent on who bought the family's token <span class="tier b">B</span>− absence; (3) the department whose new chief was sworn in by the president's former defense lawyer is under contempt warning for withholding files that concern the president personally <span class="tier a">A</span>/<span class="tier b">B</span>. Each vertex is independently documented. Every edge between them is <strong>dotted</strong> — no document shows the silence was ordered, the charter was directed, or the withholding was instructed. The OLC private-adviser privilege opinion sits at the center of the triangle, pre-hardening all three edges against subpoena. That, too, is structure.</p>
+  <p>The Polymarket/WLFI-buyer/envoy-position edge — the one subpoena that would convert the market-access story from architecture to case — remains ABSENT, checked and confirmed, ninth consecutive report.</p>
+</section>
+
+<section>
+  <h2>What would change the tier</h2>
+  <p>Direct Truth Social post URLs (would convert A* quote anchors to clean A); a PACER pull of <em>Phang</em> 1:26-cv-01417 and S.D.N.Y. 15-cv-07433 (CourtListener blocked all routes this week); the May 2026 DOJ&ndash;Trump settlement document itself (would move the immunity allegation from B-as-alleged to A); AIFC's Q2 10-Q, due within days, which will mark the WLFI tokens post-unlock; official transcripts of the Aug 11 and Aug 14 remarks (two renderings of the &ldquo;territory&rdquo; line currently circulate); a second origin for the Ingle &ldquo;hack doctor&rdquo; quote; the CA4 order text in the Abrego Garcia Liberia matter; and any on-chain confirmation of the August 12 WLFI unlock execution.</p>
+</section>
+
+<section>
+  <h2>Rejected below [B], with reasons</h2>
+  <p>ProPublica's HSI/&ldquo;Athena Toolbox&rdquo; voter-roll cross-matching investigation — single origin, partly anonymous, all other hits syndication (watch for second-outlet confirmation; the White House response defended rather than denied the program). &ldquo;&lt;$60M AIFC market cap&rdquo; — unanchored; primary-record math gives ~$74M. MeidasTouch-origin &ldquo;DOJ admits redaction error&rdquo; detail — single origin pending docket. The Daily Beast/OK &ldquo;dozing at the EO signing&rdquo; characterization — tabloid origins; the video is public but the characterization isn't sourced. WaPo's &ldquo;we need to elect JD&rdquo; donor story — anonymous, single origin, pre-window. Tarlov's &ldquo;Trump 2028 hats&rdquo; anecdote — single origin. The Intercept's &gt;900-casualty extrapolation — single-outlet beyond its DCAS-anchored figures. Conservative Brief's claim that Justice Jackson denied a stay — contradicted by the docket. Kadoa schedule granularity — unofficial aggregator. NYT's habeas/Insurrection Act internal-debate memo story — one origin, and pre-window. Factually.co's claim DOJ &ldquo;appealed&rdquo; the Phang injunction — no appellate docket exists; it sought a stay.</p>
+</section>
+
+<section>
+  <h2>Next week's priorities</h2>
+  <p><strong>1. PACER: Phang v. Blanche</strong> — proposed compliance orders due ~Aug 23; any contempt order would be the year's most consequential docket event. Also pull the Preska unsealing execution. <strong>2. 26A124</strong> — an order could issue any day; either outcome (stay granted, or continued silence into September) is a lead. <strong>3. AIFC Q2 10-Q</strong> (grace period ends ~Aug 19) — post-unlock WLFI marks, going-concern language; verify the Aug 12 on-chain unlock; watch for any 13D on the warrant position. <strong>4. Aug 18 double docket</strong>: Comey E.D.N.C. government responses to the four dismissal motions; Missouri Cole County referendum hearing (Sept 8 print deadline). Plus the D.C. Circuit ballroom self-stay expiring Aug 21. <strong>5. OCC follow-on and the silence ledger</strong>: comment letters on Corporate Decision #1385; any Treasury/DOJ movement on Warren&ndash;Reed (a response, or another week of none — both reportable); Witkoff OGE certification status; the ICE Mega Hub bid deadline Aug 31.</p>
+</section>
+
+<footer>
+  <p>Method: eight parallel research tracks; syndications counted as single origins throughout; number drift anchored to origin documents where found (55&rarr;59 vessel redirections, 3&rarr;4&rarr;6 Mokha deaths, $1.5B raise composition, &ldquo;&lt;$60M&rdquo; cap, plea-count discrepancy in Bolton coverage resolved against the docket). Fetch-restricted origins this week: CourtListener (all routes), dhs.gov, washingtonpost.com, thehill.com, cnn.com, congress.gov CRS pages, ice.gov press pages — items read via syndication are flagged inline. CA4 Liberia framing corrected against docket entries 22&ndash;23 (motion to dismiss appeal granted in part, not &ldquo;appeal denied&rdquo;).</p>
+  <p class="mono">EDITION 001 &middot; 2026-08-16</p>
+</footer>
+
+</div>
+</div></body></html>

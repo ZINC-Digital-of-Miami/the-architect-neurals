@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>The Neural Map — The Architecture</title><meta name="description" content="The Architecture’s neural map: 30 nodes and 57 edges of power, money and ideology in the second Trump era, every edge graded by evidence."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body><nav class="topnav" id="top"><a class="brand" href="/">THE&nbsp;ARCHITECTURE</a><div class="navlinks"><a href="/">&larr; Main report</a><a href="/#update">The Record</a><a class="nav-flag" href="/neural.html" aria-current="page">Neural Map</a><a href="/sources.html">Sources</a></div></nav><div class="content" style="max-width:1700px;margin:0 auto;padding:0 clamp(1rem,3vw,2.5rem) 5rem"><style>
+.nmap{--nm-bg:#141210;--nm-ink:#e9e3d6;--nm-soft:#b9b0a0;--nm-faint:#8a8172;--nm-amber:#d98a2b;
+  --nm-amber-hi:#e9a94e;--nm-red:#c0562f;--nm-rule:#3a352d;--nm-rule-2:#2a2620;
+  margin-top:3.5rem;background:var(--nm-bg);color:var(--nm-ink);border-radius:16px;
+  padding:clamp(1.3rem,3vw,2.6rem);border:1px solid #0a0908}
+.nmap .nm-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--nm-amber)}
+.nmap h2{font-family:var(--font-display);font-size:clamp(2rem,3.4vw,2.9rem);font-weight:400;color:var(--nm-ink);
+  border:none;padding:0;margin:.35rem 0 .6rem;letter-spacing:.01em}
+.nmap .nm-dek{color:var(--nm-soft);max-width:82ch;font-size:1.02rem;line-height:1.6;margin:0}
+.nm-legend{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;margin:1.5rem 0 1.1rem;padding:.75rem 0;
+  border-top:1px solid var(--nm-rule);border-bottom:1px solid var(--nm-rule);
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.06em;color:var(--nm-faint)}
+.nm-lg{display:flex;align-items:center;gap:.5rem}
+.nm-lg b{color:var(--nm-soft);font-weight:600}
+.nm-count{margin-left:auto;text-transform:uppercase;letter-spacing:.16em}
+.nm-stage{display:grid;grid-template-columns:minmax(0,1fr) minmax(19rem,23rem);gap:1.6rem;align-items:start}
+@media (max-width:1200px){.nm-stage{grid-template-columns:minmax(0,1fr)}}
+.nm-svg{width:100%;height:auto;display:block;font-family:"IBM Plex Mono",ui-monospace,monospace}
+.nm-node{cursor:pointer}
+.nm-node:focus{outline:none}
+.nm-node:focus-visible .nm-disc{stroke:var(--nm-amber-hi);stroke-width:3.4}
+.nm-edge,.nm-lab,.nm-node{transition:opacity .18s ease}
+.nm-stage.is-focused .nm-edge,.nm-stage.is-focused .nm-lab,.nm-stage.is-focused .nm-node{opacity:.13}
+.nm-stage.is-focused .nm-edge.on,.nm-stage.is-focused .nm-lab.on,.nm-stage.is-focused .nm-node.on{opacity:1}
+.nm-stage.is-focused .nm-node.sel .nm-disc{stroke:var(--nm-amber-hi);stroke-width:3.4}
+.nm-dossier{position:sticky;top:calc(var(--nav-h) + 1.2rem);border:1px solid var(--nm-rule);border-radius:12px;
+  background:#191613;padding:1.2rem 1.3rem 1.3rem;min-height:26rem}
+.nm-dossier.pinned{border-color:var(--nm-amber)}
+.nm-idle-t{font-family:var(--font-display);font-weight:400;font-size:1.35rem;color:var(--nm-ink);margin-bottom:.5rem}
+.nm-dossier p{color:var(--nm-soft);font-size:.92rem;line-height:1.6;margin:0 0 .9rem;max-width:none}
+.nm-tally{margin:1.1rem 0;padding:.9rem 0;border-top:1px solid var(--nm-rule-2);border-bottom:1px solid var(--nm-rule-2);
+  display:grid;gap:.4rem;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem}
+.nm-tally>div{display:flex;justify-content:space-between;gap:1rem}
+.nm-tally dt{color:var(--nm-faint);letter-spacing:.06em}
+.nm-tally dd{margin:0;color:var(--nm-amber)}
+.nm-idle-note{font-size:.8rem;color:var(--nm-faint);line-height:1.55}
+.nm-card-top{display:flex;gap:1rem;align-items:flex-start}
+.nm-plate{flex:0 0 5.6rem;height:7rem;border:1px solid var(--nm-rule);border-radius:6px;background:#100e0c;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.35rem;overflow:hidden}
+.nm-plate img{width:100%;height:100%;object-fit:cover;display:block}
+.nm-mono{font-family:var(--font-display);font-size:1.9rem;color:var(--nm-amber);line-height:1}
+.nm-plate-cap{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.52rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--nm-faint)}
+.nm-plate.has-img .nm-mono,.nm-plate.has-img .nm-plate-cap{display:none}
+.nm-card-id h3{font-family:var(--font-display);font-weight:400;font-size:1.5rem;margin:.1rem 0 .3rem;
+  color:var(--nm-ink);line-height:1.1}
+.nm-flag{display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.6rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--nm-bg);background:var(--nm-amber-hi);border-radius:3px;padding:.1rem .4rem}
+.nm-dossier .nm-sub-t{font-size:.9rem;color:var(--nm-soft);margin:0 0 .45rem}
+.nm-dossier .nm-degree{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--nm-faint);margin:0}
+.nm-conns{margin-top:1.1rem;border-top:1px solid var(--nm-rule-2);padding-top:.9rem;max-height:20rem;overflow-y:auto}
+.nm-conn{display:grid;grid-template-columns:1.5rem 1fr;gap:.55rem;padding:.5rem 0;border-bottom:1px solid var(--nm-rule-2)}
+.nm-conn:last-child{border-bottom:none}
+.nm-g{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62rem;font-weight:600;text-align:center;
+  border:1px solid;border-radius:3px;height:1.15rem;line-height:1.05rem}
+.nm-g-A{color:var(--nm-amber-hi);border-color:var(--nm-amber)}
+.nm-g-B{color:var(--nm-soft);border-color:var(--nm-rule)}
+.nm-g-C{color:var(--nm-red);border-color:var(--nm-red)}
+.nm-g-O{color:var(--nm-faint);border-color:var(--nm-rule);border-style:dotted}
+.nm-c-to{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.1em;color:var(--nm-ink)}
+.nm-c-lab{display:block;font-size:.86rem;color:var(--nm-soft);line-height:1.45;margin-top:.15rem}
+.nm-dossier .nm-pin-hint{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.6rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--nm-faint);margin:.9rem 0 0}
+.nm-foot{margin-top:1.6rem;border-top:1px solid var(--nm-rule);padding-top:1.1rem}
+.nm-foot .nm-note{font-size:.86rem;color:var(--nm-soft);line-height:1.6;max-width:100ch;margin:0}
+.nm-foot .nm-ledger{font-size:.82rem;color:var(--nm-amber);line-height:1.65;margin:1rem 0 0;padding-top:.9rem;
+  border-top:1px solid var(--nm-rule-2);max-width:110ch}
+.nm-foot .nm-stamp{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--nm-faint);margin:1.1rem 0 0}
+.topnav a.nav-flag{color:#fff;border:1px solid var(--accent);border-radius:999px;padding:.26rem .7rem;
+  background:rgba(140,47,27,.4);opacity:1;letter-spacing:.1em}
+.topnav a.nav-flag:hover{background:var(--accent)}
+.sidebar a.sb-flag{color:var(--accent);font-weight:600}
+.nm-window{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:0 0 1.2rem;
+  font-family:"IBM Plex Mono",ui-monospace,monospace}
+.nm-w-label{font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--nm-faint);margin-right:.4rem}
+.nm-chip{font:inherit;font-size:.66rem;letter-spacing:.08em;color:var(--nm-soft);background:none;
+  border:1px solid var(--nm-rule);border-radius:999px;padding:.24rem .65rem;cursor:pointer;
+  transition:border-color .15s,color .15s}
+.nm-chip:hover{border-color:var(--nm-amber);color:var(--nm-amber-hi)}
+.nm-chip:focus-visible{outline:2px solid var(--nm-amber);outline-offset:2px}
+.nm-chip-new{border-color:var(--nm-amber);color:var(--nm-amber-hi)}
+.nm-chip-new::before{content:"+ "}
+.nm-chip-clear{margin-left:auto;border-style:dashed;color:var(--nm-faint)}
+.nm-chip-clear:hover{border-color:var(--nm-red);color:var(--nm-red)}
+.nm-lab{cursor:pointer}
+.nm-node:hover .nm-disc{stroke:var(--nm-amber-hi)}
+.nm-canvas{min-width:0;min-height:20rem}
+.nm-loading{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--nm-faint);padding:4rem 0;text-align:center}
+</style>
+<section id="neural" class="nmap">
+  <div class="nm-head">
+    <div class="nm-kicker">Neural map · data state 2026-08-22 · updated weekly · consolidated edition folded in</div>
+    <h2 id="neural-map">The Neural Map</h2>
+    <p class="nm-dek">Thirty nodes, fifty-seven edges. Every solid edge resolves to a primary record. Every dotted edge is an adjacency the record has not yet closed. Hover or tab a node to open its dossier; click to pin it.</p>
+  </div>
+  <div class="nm-legend">
+    <span class="nm-lg" data-g="A"><svg width="42" height="10" aria-hidden="true"><line x1="1" y1="5" x2="41" y2="5" stroke="#d98a2b" stroke-width="3" stroke-linecap="round"/></svg><b>[A]</b> documented</span>
+    <span class="nm-lg" data-g="B"><svg width="42" height="10" aria-hidden="true"><line x1="1" y1="5" x2="41" y2="5" stroke="#8a8172" stroke-width="2.2" stroke-linecap="round"/></svg><b>[B]</b> reported</span>
+    <span class="nm-lg" data-g="C"><svg width="42" height="10" aria-hidden="true"><line x1="1" y1="5" x2="41" y2="5" stroke="#c0562f" stroke-width="2" stroke-dasharray="9,7" stroke-linecap="round"/></svg><b>[C]</b> alleged / denied</span>
+    <span class="nm-lg" data-g="O"><svg width="42" height="10" aria-hidden="true"><line x1="1" y1="5" x2="41" y2="5" stroke="#8a8172" stroke-width="2" stroke-dasharray="2,7" stroke-linecap="round"/></svg><b>[O]</b> adjacency</span>
+    <span class="nm-count">30 nodes · 57 edges</span>
+  </div>
+  <div class="nm-window" role="group" aria-label="Changed this window">
+    <span class="nm-w-label">This window · Aug 16–22 · consolidated edition</span>
+    <button class="nm-chip nm-chip-new" data-key="STARGATE" type="button">Stargate</button>
+    <button class="nm-chip nm-chip-new" data-key="FCC" type="button">FCC · Carr</button>
+    <button class="nm-chip nm-chip-new" data-key="TREASURY" type="button">Treasury · Bessent</button>
+    <button class="nm-chip" data-key="VAULT" type="button">Project Vault</button>
+    <button class="nm-chip" data-key="PULTE" type="button">Pulte → Clayton</button>
+    <button class="nm-chip" data-key="IRAN" type="button">Iran · war powers</button>
+    <button class="nm-chip" data-key="TRUST" type="button">Trust Bank</button>
+    <button class="nm-chip nm-chip-clear" id="nm-clear" type="button" aria-label="Clear selection and reset the map">Clear all</button>
+  </div>
+  <div class="nm-stage" id="nm-stage">
+    <div class="nm-canvas" id="nm-canvas"><div class="nm-loading">Loading the map…</div></div>
+    <aside class="nm-dossier" id="nm-dossier" aria-live="polite">
+      <div class="nm-idle">
+        <div class="nm-idle-t">The dossier</div>
+        <p>Move over any node — or tab to it — and its record opens here: what it is, what it is joined to, and at what grade. Click to pin the dossier while you read; click again, or press Esc, to release.</p>
+        <dl class="nm-tally">
+          <div><dt>[A] documented</dt><dd id="nm-tA">—</dd></div>
+          <div><dt>[B] reported</dt><dd id="nm-tB">—</dd></div>
+          <div><dt>[C] alleged / denied</dt><dd id="nm-tC">—</dd></div>
+          <div><dt>[O] adjacency</dt><dd id="nm-tO">—</dd></div>
+        </dl>
+        <p class="nm-idle-note">Un-drawn by design: wallet identities, WLFI stake buyers, any envoy market position, any family or 1789 position in EMAT or REEMF. Identification would reprice the entire map.</p>
+      </div>
+      <div class="nm-card" hidden>
+        <div class="nm-card-top">
+          <div class="nm-plate" id="nm-plate"><span class="nm-mono" id="nm-mono"></span><span class="nm-plate-cap">photograph slot</span></div>
+          <div class="nm-card-id">
+            <span class="nm-flag" id="nm-flag" hidden></span>
+            <h3 id="nm-name"></h3>
+            <p class="nm-sub-t" id="nm-subtitle"></p>
+            <p class="nm-degree" id="nm-degree"></p>
+          </div>
+        </div>
+        <div class="nm-conns" id="nm-conns"></div>
+        <p class="nm-pin-hint" id="nm-pin-hint">Click the node to pin · Esc to release</p>
+      </div>
+    </aside>
+  </div>
+  <div class="nm-foot">
+    <p class="nm-note">* “dismissals upheld” reflects district rulings; DOJ appeals pending. A propagandist draws the dotted edges solid. An investigator marks them dotted — and names who could make them solid.</p>
+    <p class="nm-ledger">The consolidated edition (Aug 22): three nodes added from the merged chapters — Stargate (MGX anchor; EO 14318), the FCC under Carr (Kimmel; Disney/ABC sued Aug 18), Treasury under Bessent ($40B Argentina conditioned aloud on an election; 264 days silent on WLFI buyers) · Project Vault carries the Miller MP Materials sale (one month after the deal) · Pulte’s DNI stint superseded by Clayton 51–47 (C-007) · the Senate war-powers check moved against the record, 47–49 and 49–50 (C-008). Every new causal edge is dotted. The prior week (Aug 9–16 · Brief 001 · primary-record): OCC charters the family trust bank — Decision #1385, Aug 14 · Blanche sworn AG — 50–49–1, oath by Bove, Sullivan contempt warning Aug 13 · ALT5 = AIFC, one registrant — the “Lead Investor” was World Liberty itself (C-002); Eric Trump never seated (C-001) · SCOTUS silent 20 days on 26A124 while a second nationwide mail-ballot injunction stands · the blockade is now the war — Hormuz transits single digits · ICE “Mega Hub,” up to $10B, bids due Aug 31 · Rosen bill would bar casualty-record manipulation · OLC extends privilege to “private advisers.”</p>
+    <p class="nm-stamp">The Architecture · Neural Map · data state 2026-08-22 · Kirk Musick, MS, MBA · ZINC Digital</p>
+  </div>
+<script>
+(function(){
+  var stage=document.getElementById('nm-stage'); if(!stage) return;
+  
+  var canvas=document.getElementById('nm-canvas');
+  var dossier=document.getElementById('nm-dossier');
+  var base=(document.getElementById('neural').getAttribute('data-asset-base')||'map/');
+  Promise.all([
+    fetch(base+'svg.frag').then(function(r){if(!r.ok)throw r.status;return r.text();}),
+    fetch(base+'data.json').then(function(r){if(!r.ok)throw r.status;return r.json();})
+  ]).then(function(res){ canvas.innerHTML=res[0]; init(res[1]); })
+    .catch(function(e){ canvas.innerHTML='<div class="nm-loading">Map failed to load ('+e+')</div>'; });
+  function init(D){
+  var idle=dossier.querySelector('.nm-idle'), card=dossier.querySelector('.nm-card');
+  var IMAGES={};                       // node key -> image URL; drop files in /assets and map here
+  var GN={A:'documented',B:'reported',C:'alleged / denied',O:'adjacency'};
+  var adj={}, tally={A:0,B:0,C:0,O:0};
+  D.edges.forEach(function(e){
+    tally[e.g]++;
+    (adj[e.s]=adj[e.s]||[]).push({o:e.t,g:e.g,l:e.l,dir:'\u2192'});
+    (adj[e.t]=adj[e.t]||[]).push({o:e.s,g:e.g,l:e.l,dir:'\u2190'});
+  });
+  ['A','B','C','O'].forEach(function(g){var el=document.getElementById('nm-t'+g); if(el) el.textContent=tally[g];});
+
+  var nodes=[].slice.call(stage.querySelectorAll('.nm-node'));
+  var edges=[].slice.call(stage.querySelectorAll('.nm-edge'));
+  var labs=[].slice.call(stage.querySelectorAll('.nm-lab'));
+  var pinned=null;
+
+  function order(a,b){var r={A:0,B:1,C:2,O:3};return r[a.g]-r[b.g];}
+  function paint(key){
+    stage.classList.add('is-focused');
+    var near={}; near[key]=1;
+    edges.forEach(function(p){
+      var hit=p.dataset.s===key||p.dataset.t===key;
+      p.classList.toggle('on',hit);
+      if(hit){near[p.dataset.s]=1;near[p.dataset.t]=1;}
+    });
+    labs.forEach(function(l){l.classList.toggle('on',l.dataset.s===key||l.dataset.t===key);});
+    nodes.forEach(function(n){
+      n.classList.toggle('on',!!near[n.dataset.key]);
+      n.classList.toggle('sel',n.dataset.key===key);
+    });
+  }
+  function clear(){
+    stage.classList.remove('is-focused');
+    edges.concat(labs,nodes).forEach(function(el){el.classList.remove('on');el.classList.remove('sel');});
+    card.hidden=true; idle.hidden=false; dossier.classList.remove('pinned');
+  }
+  function show(key){
+    var n=D.nodes[key]; if(!n) return;
+    paint(key);
+    idle.hidden=true; card.hidden=false;
+    var plate=document.getElementById('nm-plate');
+    var img=plate.querySelector('img'); if(img) img.remove();
+    if(IMAGES[key]){
+      var i=document.createElement('img'); i.src=IMAGES[key]; i.alt=n.name;
+      plate.insertBefore(i,plate.firstChild); plate.classList.add('has-img');
+    } else {
+      plate.classList.remove('has-img');
+      document.getElementById('nm-mono').textContent=n.name.replace(/[^A-Za-z]/g,'').slice(0,2).toUpperCase();
+    }
+    var flag=document.getElementById('nm-flag');
+    if(n.flag){flag.hidden=false;flag.textContent=n.flag==='new'?'new this window':'updated this window';}
+    else flag.hidden=true;
+    document.getElementById('nm-name').textContent=n.name;
+    document.getElementById('nm-subtitle').textContent=n.sub||'\u2014';
+    var cs=(adj[key]||[]).slice().sort(order);
+    var counts={A:0,B:0,C:0,O:0}; cs.forEach(function(c){counts[c.g]++;});
+    document.getElementById('nm-degree').textContent=cs.length+' edges \u00b7 '+
+      ['A','B','C','O'].filter(function(g){return counts[g];}).map(function(g){return counts[g]+' ['+g+']';}).join(' \u00b7 ');
+    document.getElementById('nm-conns').innerHTML=cs.map(function(c){
+      var on=D.nodes[c.o]?D.nodes[c.o].name:c.o;
+      return '<div class="nm-conn"><span class="nm-g nm-g-'+c.g+'" title="'+GN[c.g]+'">'+c.g+'</span>'+
+        '<span><span class="nm-c-to">'+c.dir+' '+on+'</span><span class="nm-c-lab">'+c.l+'</span></span></div>';
+    }).join('');
+    document.getElementById('nm-pin-hint').textContent = pinned===key
+      ? 'Pinned \u00b7 click again or press Esc to release'
+      : 'Click the node to pin \u00b7 Esc to release';
+  }
+  nodes.forEach(function(n){
+    var key=n.dataset.key;
+    n.addEventListener('mouseenter',function(){ if(!pinned) show(key); });
+    n.addEventListener('focus',function(){ if(!pinned) show(key); });
+    n.addEventListener('click',function(e){
+      e.stopPropagation();
+      if(pinned===key){pinned=null;show(key);} else {pinned=key;show(key);}
+      dossier.classList.toggle('pinned',!!pinned);
+    });
+    n.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();n.click();}
+    });
+  });
+  stage.addEventListener('mouseleave',function(){ if(!pinned) clear(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape'&&pinned){pinned=null;clear();} });
+  [].slice.call(document.querySelectorAll('.nm-chip')).forEach(function(ch){
+    ch.addEventListener('click',function(){if(!ch.dataset.key)return;pinned=ch.dataset.key;show(pinned);dossier.classList.add('pinned');});
+  });
+  var cl=document.getElementById('nm-clear');
+  if(cl) cl.addEventListener('click',function(){pinned=null;clear();});
+  labs.forEach(function(l){ l.addEventListener('mouseenter',function(){ if(!pinned) show(l.dataset.s); }); });
+  }
+})();
+</script>
+
+</section></div></body></html>

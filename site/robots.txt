@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Sitemap: https://the-architecture-neurals.vercel.app/sitemap.xml

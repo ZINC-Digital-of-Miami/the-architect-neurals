@@ -1,0 +1,103 @@
+{
+ "site": "https://the-architecture-neurals.vercel.app",
+ "vercel_project": "the-architecture",
+ "vercel_team": "zincdigitalofmiamis-projects",
+ "current_through": "2026-08-16",
+ "files": [
+  {
+   "path": "AGENT_INSTRUCTIONS.md",
+   "bytes": 20240,
+   "sha256": "a227d70a2530ac4dd4c4e49ed96224072e7b16fb67d275132ac0a21cf28d0147"
+  },
+  {
+   "path": "AUTOMATED_RUN_TASK.md",
+   "bytes": 10895,
+   "sha256": "37435176901a107ff9fe207e563ece649b55eebde351bb55d3743340df891148"
+  },
+  {
+   "path": "briefs/2026-08-16.html",
+   "bytes": 28380,
+   "sha256": "ba710b19fe0bae3a741f4194c2c5035da11ef68e0a7bf6a06a5526c7e08a5676"
+  },
+  {
+   "path": "briefs/_TEMPLATE.html",
+   "bytes": 1840,
+   "sha256": "b064eb8b1d32df7f56d8186e159b2ca67a892362a02e624b43788231ba9c1c8c"
+  },
+  {
+   "path": "build_neural_map.js",
+   "bytes": 2009,
+   "sha256": "c24d345bfa7a591c6d1d3a907ddeae17ec17cf676f77d7c8edb5f42f89955086"
+  },
+  {
+   "path": "build_neural_map.py",
+   "bytes": 20729,
+   "sha256": "6a40403eca7da0335bb8e7b701056ef76baa26da00537f2a617857dc0415a3e1"
+  },
+  {
+   "path": "build_site3.py",
+   "bytes": 31182,
+   "sha256": "3739e893749eeb8caf1ce68d3522d5c2ae92778156337db8d0e4726d87f8cc9d"
+  },
+  {
+   "path": "check.sh",
+   "bytes": 2176,
+   "sha256": "81c607e2c53282652d7c7591920424795302737fe4be11eabeb405b4d759c40f"
+  },
+  {
+   "path": "deploy.sh",
+   "bytes": 2620,
+   "sha256": "0733893289b4cde1b7bc635c02e2d3d92580cb3033a9ef1fff1b9e2fb38b3ac8"
+  },
+  {
+   "path": "final.css",
+   "bytes": 18884,
+   "sha256": "2ef00da80bbd84f45b8ac1009f7e3e4512a00cdacf2a22e98f6139c8acad4e45"
+  },
+  {
+   "path": "map_source.json",
+   "bytes": 10155,
+   "sha256": "f787246091513910fc4385d1ae8283564fe5ef225efa638c6345d5f42d102ac3"
+  },
+  {
+   "path": "mapgen.js",
+   "bytes": 7218,
+   "sha256": "f2276bf6c5da7969b2c3cb6a89ed9be4e8ed70a1badfc16cb3d049127a60db51"
+  },
+  {
+   "path": "master_report.md",
+   "bytes": 339941,
+   "sha256": "1197bc1f67bf57b957bdd3f8807f135cf64f20113263f1ab1510fbfbea04d310"
+  },
+  {
+   "path": "neural_data.json",
+   "bytes": 6651,
+   "sha256": "8f4ba7a819bfad97d4aecf99e198c5209aeb80f9d7b304975d1e428baa8c986a"
+  },
+  {
+   "path": "neural_map.html",
+   "bytes": 18250,
+   "sha256": "844dc86e9526e60a3f5d4f5db32bc7b89a3bea7bd3097e5ce3027336bc0554b2"
+  },
+  {
+   "path": "neural_svg.frag",
+   "bytes": 64468,
+   "sha256": "259a09e4d4ed5ade288bfa0ace4581fb98412abc96cf0e2e4044af956bb12897"
+  },
+  {
+   "path": "pull_src.sh",
+   "bytes": 2600,
+   "sha256": "a85d4051b9c88b709151af60574910aeaaf581ba3b88f8ca72a8db7865f240c4"
+  },
+  {
+   "path": "sources_manifest.md",
+   "bytes": 66873,
+   "sha256": "dc832086d4f15d1bacca36cc0bb9e24e2a75707c0835a97dda82a41211e2695a"
+  },
+  {
+   "path": "update_part2.html",
+   "bytes": 33099,
+   "sha256": "ad989182a7a4dc86060c92b61f1745cd9396052c375411b0b1182a343ce4dfb9"
+  }
+ ]
+}

@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="index,follow"><title>Source Archive Index — The Architecture</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
+/* THE ARCHITECTURE — v3: white, large-type, full-width, sidebar + menu. Deliberate single-theme. */
+:root{
+  --paper:#ffffff; --ink:#17150f; --ink-2:#4c4a42; --ink-3:#8a877c;
+  --rule:#e2dfd6; --rule-soft:#f4f2ec; --card:#fbfaf7;
+  --tier-a-bg:#e9f1e5; --tier-a-fg:#2c5030; --tier-a-rule:#b9cdb2;
+  --tier-b-bg:#f6eed9; --tier-b-fg:#6f5716; --tier-b-rule:#dcc98f;
+  --tier-c-bg:#f1eae7; --tier-c-fg:#83655a; --tier-c-rule:#d6c4bc;
+  --absent-bg:#eceef4; --absent-fg:#3f4c69; --absent-rule:#bcc6d9;
+  --dotted:#a34a2b; --accent:#8c2f1b; --link:#274d8f; --mark:#fff3c4;
+  --nav-h:58px;
+  --font-display:"DM Serif Display",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 14px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
+  font-size:19px;line-height:1.68;font-variant-numeric:tabular-nums}
+a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--accent)}
+mark{background:var(--mark);color:inherit;padding:0 .15em}
+h1,h2,h3,h4{text-wrap:balance}
+h1,h2,h3{font-family:var(--font-display);font-weight:400}
+
+/* ---------- progress + top menu ---------- */
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:70}
+.topnav{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:1.4rem;
+  background:var(--ink);color:#fff;height:var(--nav-h);padding:0 clamp(1rem,3vw,2.5rem);
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem;letter-spacing:.08em}
+.topnav .brand{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.22em;font-size:.8rem;white-space:nowrap}
+.whereami{color:#fff;opacity:.5;font-size:.7rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  max-width:22rem;letter-spacing:.05em}
+.topnav .navlinks{display:flex;align-items:center;gap:1.3rem;margin-left:auto;flex-wrap:wrap}
+.topnav a{color:#fff;text-decoration:none;opacity:.85}
+.topnav a:hover{opacity:1;color:#fff}
+.navgroup{position:relative}
+.navgroup>button{all:unset;cursor:pointer;opacity:.85;font:inherit;letter-spacing:inherit;color:#fff}
+.navgroup>button:hover,.navgroup>button:focus-visible{opacity:1;outline:none}
+.navgroup>button:focus-visible{text-decoration:underline}
+.navgroup .dd{display:none;position:absolute;right:0;top:2.2rem;min-width:21rem;max-height:72vh;overflow:auto;
+  background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:10px;
+  box-shadow:0 12px 34px rgba(23,21,15,.18);padding:.5rem 0}
+.navgroup.open .dd{display:block}
+.navgroup .dd a{display:block;padding:.5rem 1.1rem;color:var(--ink);opacity:1;font-size:.74rem;line-height:1.45}
+.navgroup .dd a:hover{background:var(--rule-soft)}
+
+/* ---------- shell: sidebar + content ---------- */
+.shell{display:grid;grid-template-columns:314px minmax(0,1fr)}
+.sidebar{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));overflow-y:auto;
+  border-right:1px solid var(--rule);padding:1.6rem 1.2rem 3rem 1.4rem;background:var(--card)}
+.sidebar .sb-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-3);margin:1.6rem 0 .5rem}
+.sidebar .sb-label:first-child{margin-top:0}
+.sidebar a{display:block;color:var(--ink-2);text-decoration:none;font-size:.94rem;line-height:1.45;
+  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent}
+.sidebar a:hover{background:var(--rule-soft);color:var(--ink)}
+.sidebar a.on{border-left-color:var(--accent);color:var(--ink);font-weight:600;background:var(--rule-soft)}
+.sidebar details{margin:.1rem 0}
+.sidebar summary{cursor:pointer;list-style:none;display:block;color:var(--ink-2);font-size:.94rem;line-height:1.45;
+  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent;font-weight:600}
+.sidebar summary::-webkit-details-marker{display:none}
+.sidebar summary:hover{background:var(--rule-soft);color:var(--ink)}
+.sidebar details.on>summary{border-left-color:var(--accent);color:var(--ink);background:var(--rule-soft)}
+.sidebar details>div{margin:.1rem 0 .3rem .9rem;border-left:1px solid var(--rule);padding-left:.4rem}
+.sidebar details>div a{font-size:.85rem;color:var(--ink-3);padding:.22rem .5rem}
+.content{min-width:0;padding:0 clamp(1.1rem,3.5vw,3.5rem) 6rem}
+@media (max-width:1080px){.shell{grid-template-columns:1fr}.sidebar{display:none}}
+
+/* ---------- cover ---------- */
+.cover{margin-top:3rem;padding-bottom:0}
+.mast-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--ink-3)}
+.cover h1{font-size:clamp(3.4rem,7.5vw,6.5rem);line-height:.96;margin:.7rem 0 1rem;letter-spacing:.005em}
+.cover p{max-width:75ch;color:var(--ink-2);font-size:1.08rem}
+.cover>p:first-child{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);max-width:none}
+.cover strong{color:var(--ink)}
+.mast-meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;color:var(--ink-3);
+  margin-top:1.1rem;display:flex;gap:1.8rem;flex-wrap:wrap}
+.front-matter{margin-top:1.8rem;border:1px solid var(--rule);border-radius:12px;background:var(--card)}
+.front-matter summary{cursor:pointer;padding:1rem 1.3rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.front-matter[open] summary{border-bottom:1px solid var(--rule)}
+.front-matter .fm-body{padding:.5rem 1.6rem 1.2rem}
+.front-matter .fm-body p{max-width:85ch;font-size:.98rem}
+
+/* ---------- the sentence ---------- */
+.sentence{margin:4rem 0 0;border-top:3px double var(--ink);border-bottom:3px double var(--ink);
+  padding:clamp(2.2rem,5vw,4rem) 0}
+.sentence .kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
+.sentence blockquote{border:none;margin:0;padding:0;font-style:italic;color:var(--ink);
+  font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.28;font-weight:600;max-width:none}
+.sentence .attr{margin-top:1.2rem;color:var(--ink-3);font-size:.95rem;font-style:normal}
+
+/* ---------- orientation cards ---------- */
+.deck-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--ink-3);margin:3.5rem 0 1.1rem}
+.arch3{display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1.4rem}
+.arch3 a{display:block;border:1px solid var(--rule);border-radius:14px;padding:1.7rem 1.7rem 1.5rem;
+  text-decoration:none;color:var(--ink);background:var(--card);transition:border-color .15s, box-shadow .15s}
+.arch3 a:hover{border-color:var(--accent);box-shadow:0 6px 22px rgba(23,21,15,.07)}
+.arch3 .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.18em;color:var(--accent)}
+.arch3 h3{margin:.5rem 0 .6rem;font-size:1.6rem}
+.arch3 p{margin:0;color:var(--ink-2);font-size:1rem;line-height:1.58}
+.arch3 .go{display:block;margin-top:1rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;letter-spacing:.14em;color:var(--accent)}
+.howto{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;margin-top:1.4rem}
+@media (max-width:980px){.howto{grid-template-columns:1fr}}
+.card{border:1px solid var(--rule);border-radius:14px;padding:1.6rem 1.7rem;background:var(--card)}
+.card h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 .9rem;border:none;padding:0}
+.legend p{font-size:1rem;color:var(--ink-2);margin:.6rem 0;max-width:none}
+.legend p strong{color:var(--ink)}
+.paths a{display:block;border:1px solid var(--rule);border-radius:10px;padding:.9rem 1.1rem;margin:.7rem 0;
+  text-decoration:none;color:var(--ink);background:var(--paper)}
+.paths a:hover{border-color:var(--accent)}
+.paths .pt{font-weight:700;font-size:1.05rem}
+.paths .pm{float:right;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);margin-top:.2rem}
+.paths .pd{display:block;font-size:.9rem;color:var(--ink-2);margin-top:.2rem}
+.cast{margin-top:1.4rem}
+.cast dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(21rem,1fr));gap:.2rem 2.4rem;margin:0}
+.cast dt{font-weight:700;font-size:1rem;margin-top:.6rem}
+.cast dd{margin:0;font-size:.92rem;color:var(--ink-2)}
+.rail-wrap{margin-top:1.4rem}
+.rail{display:flex;overflow-x:auto;padding-bottom:.5rem}
+.rail .stop{min-width:10.5rem;position:relative;padding-right:1.1rem}
+.rail .stop::before{content:"";position:absolute;left:0;right:0;top:.38rem;border-top:2px solid var(--rule)}
+.rail .stop::after{content:"";position:absolute;left:0;top:0;width:.78rem;height:.78rem;border-radius:50%;
+  background:var(--paper);border:2px solid var(--accent)}
+.rail .d{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--accent);
+  margin:1.2rem 0 .25rem;letter-spacing:.06em}
+.rail .w{font-size:.87rem;color:var(--ink-2);line-height:1.42;padding-right:.6rem}
+.rail a{text-decoration:none;color:inherit;display:block}
+.rail .stop.big .d{font-weight:700}
+.rail .stop.big .w{color:var(--ink);font-weight:600}
+
+/* ---------- tier chips, callouts, quotes ---------- */
+.tier{display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;font-weight:600;
+  letter-spacing:.05em;padding:.08rem .42rem;border-radius:4px;vertical-align:.12em;border:1px solid;white-space:nowrap}
+.tier.a{background:var(--tier-a-bg);color:var(--tier-a-fg);border-color:var(--tier-a-rule)}
+.tier.b{background:var(--tier-b-bg);color:var(--tier-b-fg);border-color:var(--tier-b-rule)}
+.tier.c{background:var(--tier-c-bg);color:var(--tier-c-fg);border-color:var(--tier-c-rule)}
+.tier.abs{background:var(--absent-bg);color:var(--absent-fg);border-color:var(--absent-rule)}
+.dotted-edge{border:2px dashed var(--dotted);border-radius:10px;padding:1.1rem 1.3rem;margin:1.4rem 0;
+  color:var(--ink);max-width:95ch;background:var(--paper)}
+.dotted-edge .label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--dotted);display:block;margin-bottom:.4rem}
+blockquote{border-left:3px solid var(--rule);margin:1.1rem 0;padding:.15rem 0 .15rem 1.1rem;color:var(--ink-2);font-style:italic}
+.scope{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);
+  text-transform:uppercase;letter-spacing:.08em}
+.pullquote{border:none;margin:2rem 0;padding:0;font-size:clamp(1.4rem,2.4vw,1.9rem);line-height:1.32;
+  font-style:italic;font-weight:600;color:var(--ink);max-width:62ch}
+.pullquote .who{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:.7rem;font-style:normal;font-weight:400}
+.ed-note{display:block;border:2px dashed var(--accent);border-radius:8px;background:var(--rule-soft);
+  padding:.8rem 1.1rem;margin:1rem 0;font-size:.95rem;font-style:normal;color:var(--ink-2);max-width:85ch}
+.ed-note strong{color:var(--accent);font-family:"IBM Plex Mono",ui-monospace,monospace;
+  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
+
+/* ---------- ledgers, corrections, clocks ---------- */
+table.ledger{width:100%;max-width:1200px;border-collapse:collapse;font-size:.95rem;margin:1.1rem 0}
+table.ledger th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3);text-align:left;font-weight:600;padding:.5rem .7rem .5rem 0;
+  border-bottom:2px solid var(--rule)}
+table.ledger td{padding:.6rem .7rem .6rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+table.ledger td.mono,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;white-space:nowrap}
+.overdue{color:var(--accent);font-weight:600}
+.correction{border-left:4px solid var(--accent);padding:.3rem 0 .3rem 1.2rem;margin:1.2rem 0;max-width:95ch}
+.correction .was{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1px}
+.correction .now{font-weight:600}
+.clocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.1rem;margin:1.3rem 0}
+.clock{border:1px solid var(--rule);border-radius:14px;padding:1.2rem 1.3rem;background:var(--card);
+  text-decoration:none;display:block;color:var(--ink)}
+a.clock:hover{border-color:var(--accent)}
+.clock .num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:2.6rem;font-weight:600;
+  color:var(--accent);line-height:1}
+.clock .unit{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--ink-3);margin:.35rem 0 .55rem}
+.clock .what{font-size:.9rem;color:var(--ink-2);line-height:1.45}
+.clocks-asof{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);letter-spacing:.08em}
+
+/* ---------- update part ---------- */
+.update{margin-top:3.5rem;border:2px solid var(--accent);border-radius:16px;
+  padding:clamp(1.4rem,3vw,3rem);background:var(--card)}
+.update .part-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.update h2{font-size:clamp(2rem,3.4vw,2.9rem);font-weight:400;margin:.35rem 0 .7rem}
+.update h3{font-size:1.45rem;margin:2.6rem 0 .6rem}
+.update h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.64rem;font-weight:500;
+  letter-spacing:.08em;vertical-align:.25em;margin-left:.55em;color:var(--ink-3);text-transform:uppercase}
+.update h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--accent);margin:2.6rem 0 .9rem;border-bottom:2px solid var(--rule);padding-bottom:.45rem}
+.update p,.update blockquote{max-width:95ch}
+.update .cols{columns:2 32rem;column-gap:3rem}
+.update .cols>*{break-inside:avoid}
+@media (max-width:760px){.update .cols{columns:1}}
+
+/* ---------- story ---------- */
+.story{margin-top:1.5rem}
+.story p,.story ul,.story ol,.story blockquote{max-width:85ch}
+.story p{margin:.9rem 0}
+.story h3{font-size:1.45rem;margin:2.8rem 0 .6rem}
+.story table{width:100%;max-width:1200px;border-collapse:collapse;font-size:.96rem;margin:1.3rem 0}
+.story th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.5rem .9rem .5rem 0;border-bottom:2px solid var(--rule)}
+.story td{padding:.55rem .9rem .55rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
+.story li{margin:.4rem 0}
+.story hr{border:0;border-top:1px solid var(--rule);margin:2.8rem 0}
+.part-open{margin:5.5rem 0 1.6rem;border-top:3px double var(--ink);padding-top:2.2rem}
+.part-open .pmeta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--accent);display:flex;gap:1.6rem;flex-wrap:wrap;align-items:baseline}
+.part-open .pmeta .rt{color:var(--ink-3)}
+.part-open .pmeta .top{margin-left:auto}
+.part-open .pmeta .top a{color:var(--ink-3);text-decoration:none}
+.part-open .pmeta .top a:hover{color:var(--accent)}
+.story .part-open h2{font-size:clamp(2.1rem,3.8vw,3.2rem);border:none;margin:.55rem 0 .45rem;padding:0}
+.part-open .dek{font-size:1.28rem;font-style:italic;color:var(--ink-2);max-width:75ch;margin:0 0 .5rem}
+
+/* ---------- node diagram ---------- */
+.node-fig{margin:1.6rem 0;max-width:680px}
+.node-fig svg{width:100%;height:auto;display:block}
+.node-fig .cap{font-size:.86rem;color:var(--ink-3);margin-top:.5rem}
+.nf-box{fill:var(--paper);stroke:var(--ink);stroke-width:1.4}
+.nf-edge{stroke:var(--dotted);stroke-width:1.7;stroke-dasharray:7 5;fill:none}
+.nf-t{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;fill:var(--ink)}
+.nf-t2{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;fill:var(--ink-3)}
+.nf-c{fill:var(--rule-soft);stroke:var(--accent);stroke-width:1.4}
+
+/* ---------- archive cards, brief page, sources ---------- */
+.masthead{border-bottom:3px double var(--ink);margin-top:2.5rem;padding-bottom:1.2rem}
+h1.mast{font-size:2.6rem;line-height:1.05;margin:.35rem 0 .5rem}
+.mast-sub{color:var(--ink-2);font-size:1.08rem;font-style:italic;margin:0}
+.standards{background:var(--rule-soft);border-radius:10px;padding:1.1rem 1.3rem;font-size:.98rem;color:var(--ink-2);margin-top:1.4rem}
+.standards strong{color:var(--ink)}
+.lede p:first-child{font-size:1.22rem;line-height:1.6}
+.brief-card{border:1px solid var(--rule);border-radius:12px;padding:1.2rem 1.4rem;margin:.9rem 0;background:var(--card)}
+.brief-card .date{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);letter-spacing:.1em}
+.brief-card h4{margin:.3rem 0 .35rem;font-size:1.15rem}
+.brief-card p{margin:.25rem 0;font-size:.96rem;color:var(--ink-2)}
+pre.manifest{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.82rem;line-height:1.62;
+  white-space:pre-wrap;word-break:break-word;background:var(--rule-soft);border-radius:10px;padding:1.6rem;margin-top:1.5rem}
+section{margin-top:3rem}
+h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;letter-spacing:.01em;
+  color:var(--accent);border-bottom:2px solid var(--rule);padding-bottom:.5rem;margin:0 0 1.3rem}
+h2 .num{color:var(--ink-3);margin-right:.6em}
+h3{font-size:1.35rem;margin:1.9rem 0 .45rem;font-weight:400}
+h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62rem;font-weight:500;
+  letter-spacing:.08em;vertical-align:.2em;margin-left:.5em;color:var(--ink-3);text-transform:uppercase}
+p{margin:.75rem 0}
+.scroll-x{overflow-x:auto}
+.site-footer,footer{margin-top:5rem;border-top:3px double var(--ink);padding-top:1.3rem;font-size:.92rem;color:var(--ink-3)}
+.site-footer p,footer p{max-width:110ch}
+footer .mono{font-size:.72rem}
+
+@media print{
+  .progress,.topnav,.sidebar,.paths{display:none}
+  body{font-size:11pt}
+  .content{padding:0}
+  .shell{display:block}
+  .part-open{break-before:page;border-top:none;padding-top:0}
+  a{color:inherit;text-decoration:none}
+}
+@media (max-width:700px){
+  body{font-size:17.5px}
+  .cover h1{font-size:2.6rem}
+  .topnav{gap:.8rem}.topnav .navlinks{gap:.8rem}.whereami{display:none}
+}
+
+.topnav a.nav-flag{color:#fff;border:1px solid var(--accent);border-radius:999px;padding:.26rem .7rem;
+  background:rgba(140,47,27,.4);opacity:1;letter-spacing:.1em}
+.topnav a.nav-flag:hover{background:var(--accent)}
+.sidebar a.sb-flag{color:var(--accent);font-weight:600}
+
+</style></head><body><div class="content" style="max-width:1200px;margin:0 auto"><p class="mast-kicker" style="margin-top:2rem"><a href="/">&larr; The Architecture</a></p><h1 class="mast">Source Archive Index</h1><pre class="manifest"># THE ARCHITECTURE — Source Archive Index (2026-07-19)
+
+This report cites by source name, outlet, and date (no live links in the body, by design).
+This index extracts every sourced line for archiving: search each name/date, save the page,
+and preserve via the Wayback Machine (web.archive.org/save/) before link-rot sets in.
+
+Sourced entries: 200
+
+
+## What This Document Is
+
+- [ ] Documented historical facts about Weimar Germany and the rise of National Socialism
+- [ ] Published, peer-reviewed scholarship by historians Timothy Snyder, Hannah Arendt, Christopher Browning, Madeleine Albright, and others
+- [ ] Documented, verifiable facts about current U.S. policy, executive orders, detention statistics, budget proposals, and political actions
+- [ ] Analytical parallels, clearly labeled as interpretation, between historical mechanisms and contemporary ones
+
+## What This Document Is Not
+
+- [ ] A claim that Donald Trump is Adolf Hitler, that the United States is Nazi Germany, or that current events are identical to the 1930s — the historical material is a lens for mechanism-recognition, not an equation of persons or outcomes
+- [ ] A predetermined verdict on where the United States is heading
+- [ ] A partisan political document — the patterns it identifies have been flagged by scholars across the political spectrum
+- [ ] An exhaustive academic treatise — it is a compiled analytical argument intended for general audiences
+
+## The Honest Acknowledgment of Differences
+
+- [ ] The United States has a far more established democratic tradition than the 14-year-old Weimar Republic
+- [ ] Federal courts continue to rule against executive actions, though compliance is contested
+- [ ] An independent press continues to function, though under significant pressure
+- [ ] Opposition political parties continue to operate and contest elections
+- [ ] Fifty state governments actively resist federal overreach, including through litigation
+- [ ] The methods of suppression are primarily legal, economic, and reputational — not yet the physical violence of the SA
+- [ ] On February 19, 2025, after moving to kill New York&#x27;s congestion-pricing program, Trump posted: &#x27;CONGESTION PRICING IS DEAD. Manhattan, and all of New York, is SAVED. LONG LIVE THE KING!&#x27; The official White House account amplified it with a mock magazine cover depicting Trump wearing a crown. On February 15, 2025, he posted a line attributed to Napoleon: &#x27;He who saves his Country does not violate any Law.&#x27; In an April 2025 interview with The Atlantic he said of his second term: &#x27;The first time, I had two things to do — run the country and survive; I had all these crooked guys. And the second time, I run the country and the world.&#x27;
+- [ ] The third-term record is layered and bipolar by design. November 13, 2024, to House Republicans: &#x27;I suspect I won&#x27;t be running again unless you say, &quot;He&#x27;s good, we&#x27;ve got to figure something else.&quot;&#x27; October 27, 2025: &#x27;I would love to do it. I have my best numbers ever&#x27; — while ruling out a VP-slot workaround as &#x27;too cute&#x27; (scholars note the 12th Amendment bars it anyway). October 29, 2025: &#x27;If you read it, it&#x27;s pretty clear. I&#x27;m not allowed to run. It&#x27;s too bad, obviously.&#x27; May 21, 2026: he vowed he&#x27;ll be in office in 2028 — &#x27;Maybe I&#x27;ll be here in &#x27;32 too.&#x27; Meanwhile &#x27;Trump 2028&#x27; merchandise is sold by his organization and handed to White House visitors; Steve Bannon told The Economist in October 2025: &#x27;He&#x27;s gonna get a third term... people just ought to get accommodated with that&#x27;; Speaker Johnson calls it &#x27;trolling&#x27;; Sen. Tuberville allowed that Trump might have &#x27;different circumstances that might be able to go around the Constitution&#x27;; and Vice President Vance has said Trump floated a Vance–Rubio 2028 ticket. The pattern is the point: the constitutional bar is acknowledged and un-acknowledged in alternation, keeping the question alive.
+- [ ] The aesthetic record matches the verbal one: the gilding of the Oval Office; the demolition of the East Wing beginning October 2025 for a corporate-donor-funded ballroom (Senate Republicans stripped its security funding from an immigration bill in June 2026); a military parade through Washington on June 14, 2025 — the Army&#x27;s 250th and the president&#x27;s 79th birthday; and UFC Freedom 250 staged on the White House lawn for his 80th birthday in June 2026, with fighter bonuses paid in the family&#x27;s USD1 stablecoin. The White House as venue, the state as stage.
+- [ ] The self-conception behind the signaling was documented, on the record, by Haberman and Swan: in a March 2026 interview, Trump produced and proudly shared a two-page document arguing that he was **more powerful than Attila the Hun, Genghis Khan, Napoleon, Stalin, Mao, and Hitler** — each of whom, it contended, held only local or regional power, while Trump&#x27;s was global. The document was presented as the work of &quot;a historian&quot;; the reporters established its actual author was a golf caddy. [B] The anecdote matters beyond its absurdity: it is the clearest primary evidence yet that the &quot;king&quot; self-conception documented in Chapter 0 is not rhetorical decoration but a literal, cultivated self-image — and that the historical figures this report uses as analytic lenses are figures the subject himself invokes, as rivals to surpass rather than warnings to heed.
+- [ ] The public answered in the largest sustained protest movement in modern American history, organized under a name that identifies the pattern precisely: **No Kings.** Roughly five million marched on June 14, 2025; nearly seven million on October 18, 2025; and organizers estimate some eight million across 3,300 sites on March 28, 2026 — among the largest single-day demonstrations in US history (Britannica running account).
+- [ ] **The vehicle.** World Liberty Financial was founded in September 2024 by Zachary Folkman, Chase Herro, Zach and Alex Witkoff (sons of the future Middle East envoy), and members of the Trump family; Donald Trump Jr., Eric, and Barron are co-founders, and Barron is billed as its &#x27;DeFi visionary.&#x27; A Trump business entity initially held roughly 60–75% and is entitled to 75% of coin-sale revenue; the family received 22.5 billion $WLFI tokens; reporting indicates the family stake has since been sold down to roughly 38%, with the buyers of the divested stakes not fully disclosed (New Republic, Wikipedia/WSJ compilation).
+- [ ] **The income.** The Office of Government Ethics disclosure released June 30, 2026 — 927 pages for the president, against the vice president&#x27;s 17 — reports more than **$1.4 billion in 2025 income from the family&#x27;s crypto ventures**, including over $500 million (Reuters&#x27; broader read: nearly $800 million) from World Liberty and **$635 million from sales of the $TRUMP memecoin** launched days before the inauguration. Forbes now puts Trump&#x27;s net worth at $6.5 billion (Bloomberg: ~$7.1B), roughly **tripled from $2.3–2.4 billion in 2024**, with crypto — ventures that barely existed before he retook office — the largest driver and, for the first time, about a fifth of the family fortune. Trump&#x27;s own framing, on the record: he is profiting because &#x27;everybody&#x27;s profiting.&#x27; Barron Trump has reportedly pocketed ~$80 million from token sales and holds ~2.3 billion locked tokens; Melania Trump&#x27;s disclosure includes her own memecoin among ~$20 million in earnings.
+- [ ] **The foreign money.** Per a Wall Street Journal report cited in a February 4, 2026 House letter to Zach Witkoff: lieutenants of Abu Dhabi royal and UAE national security adviser Sheikh Tahnoon bin Zayed &#x27;secretly signed a deal with the Trump Family to purchase a 49% stake&#x27; in World Liberty &#x27;for half a billion dollars&#x27; — **before the inauguration**. In May 2025, the Emirati state fund MGX routed a **$2 billion investment into Binance using World Liberty&#x27;s USD1 stablecoin**, instantly making USD1 a top-tier stablecoin and generating ongoing reserve income for the family (Warren–Merkley letter, May 14, 2025). Days after Tahnoon&#x27;s money moved, the administration approved giving one of his companies access to hundreds of thousands of the world&#x27;s most advanced American AI chips — a deal unveiled by Steve Witkoff himself (WSJ). Reuters separately documented an anonymous wallet accumulating roughly **$2 billion of USD1** in late April, owner unidentified. In January 2026, the government of **Pakistan** signed an agreement, negotiated by Zach Witkoff with Pakistan&#x27;s finance minister, to incorporate WLF&#x27;s products into its financial system. The documented adjacency that this edition flags and leaves open: within weeks, Pakistan became the indispensable mediator of the Iran war — broker of the April ceasefire, host of the Islamabad Talks, co-architect of the June framework. No evidence establishes that the crypto agreement purchased the mediation role or vice versa. The two facts are recorded here because a functioning oversight system would want to know, and none has asked with subpoena power.
+- [ ] **The regulatory mirror.** While the family sells the products, the government the father runs sets their rules: a Strategic Bitcoin Reserve established by executive order (March 2025); the first White House crypto summit; the GENIUS Act stablecoin framework signed July 2025, which critics across the spectrum noted directly benefits USD1; SEC enforcement against major crypto firms dropped or paused in 2025, including matters touching Binance and the investor Justin Sun — who had put roughly $75 million into World Liberty; and, as of January 9, 2026, **World Liberty&#x27;s application to the OCC — the president&#x27;s own Treasury regulator — for a national trust bank charter** to bring USD1 under federal blessing (Forbes). The Trump Organization pledged no new foreign-government deals for the term. World Liberty made no such pledge, and its spokesman&#x27;s position is that its business &#x27;has nothing to do with the U.S. government.&#x27;
+- [ ] **Jared Kushner** serves as an unpaid &#x27;Special Envoy for Peace&#x27; — the administration classifies him as a **volunteer**, a designation ethics lawyers note tracks a maneuver a 1977 DOJ Office of Legal Counsel opinion warned against precisely because it can be used to evade the conflict-of-interest statutes. In that capacity he has led or co-led US negotiations on Gaza (including the &#x27;Board of Peace&#x27;), Ukraine, and Iran — representing the United States in Geneva with Iranian officials in the war&#x27;s final pre-launch days (February 2026), at the Lucerne quadrilateral in June, and in Doha with Qatar&#x27;s prime minister on June 30. Simultaneously: his firm **Affinity Partners** manages billions for Gulf sovereign funds led by Saudi Arabia&#x27;s PIF; its assets jumped to **$4.8 billion after a fresh Gulf cash injection** (Reuters, March 28, 2026); and the New York Times reported on March 13, 2026 that Kushner was **soliciting $5 billion or more from foreign governments** — directly breaking his post-election pledge not to raise money during the term. The kicker documented by Popular Information: **Saudi Arabia&#x27;s right to renegotiate or withdraw its Affinity money matures in August 2026** — meaning the kingdom holds a live financial option over the American negotiator, during a war the Washington Post reports the Saudis helped push Trump to start and, per the New York Times, urged him in private calls to continue. Kushner&#x27;s own words, on 60 Minutes: &#x27;What people call conflicts of interests, Steve and I call experience and trusted relationships.&#x27; The president&#x27;s: &#x27;I found out that nobody cared, and I&#x27;m allowed to.&#x27;
+- [ ] **Steve Witkoff**, the Middle East envoy, co-founded World Liberty with his sons and the president&#x27;s sons — and per Sen. Schiff&#x27;s October 2025 letter, **had still not divested ten months into the job** despite commitments. Forbes (April 2026) tallies the Witkoffs&#x27; take: roughly **$130 million from $WLFI token sales**, plus ~$48 million post-tax from selling about half their stake to Aryam Investment — a firm backed by the same Sheikh Tahnoon — leaving a ~6.4% stake in the USD1 stablecoin business worth ~$60 million. While the father negotiated across the region, the son **Zach toured at least four countries promoting the family coin**, including the Pakistan deal above; the company&#x27;s spokesman denies any connection between the envoy&#x27;s meetings and the firm&#x27;s deals in the same countries.
+- [ ] **The allegation, labeled as such:** during the Lucerne talks, Iranian negotiators sent a private message to Vice President Vance — per a senior Iranian official speaking to Drop Site News (July 2026) — warning that Witkoff and Kushner &#x27;were more interested in exploiting insider knowledge of the negotiations to profit in financial markets than they were in reaching a deal,&#x27; and that their continued presence would undermine a durable agreement. **The administration says it never happened.** No evidence identifies either man with any market position, and this document asserts none. The allegation is recorded because it is now part of the diplomatic record of the war, because Chapter G documents that someone with foreknowledge was in fact trading, and because the identity of that someone is exactly what an investigation with compulsory process would establish.
+- [ ] **The oversight response:** the Garcia–Wyden letter (March 19, 2026) calling the arrangement &#x27;not only criminal but... endangering the lives of Americans&#x27; — their characterization; Rep. Raskin&#x27;s formal House Judiciary investigation opened April 16–17, 2026, citing a &#x27;glaring and incurable conflict of interest&#x27;; and the Meeks–Amo–Garcia demand for an inspector-general investigation of Witkoff. None has compulsory power in the minority.
+- [ ] **The jet.** Qatar&#x27;s royal family gave the United States a Boeing 747-8 &#x27;flying palace&#x27; valued at roughly **$400 million** — the most valuable foreign gift to a president in American history — accepted by the Pentagon in May 2025 for use as Air Force One, with ownership to transfer to Trump&#x27;s presidential library foundation **no later than January 1, 2029**, retrofit costs borne by the Air Force. Trump&#x27;s on-camera reasoning: &#x27;I could be a stupid person and say, &quot;no, we don&#x27;t want a free, very expensive airplane.&quot;&#x27; The Foreign Emoluments Clause requires congressional consent for presidential gifts from foreign states; Congress gave none — Senate and House resolutions demanding compliance (S.Res.244, H.Res.410) went nowhere, and even the American Enterprise Institute&#x27;s analysis concludes that congressional inaction is ceding the Clause&#x27;s meaning &#x27;to the business dealings of President Trump.&#x27; The backlash notably included the president&#x27;s own base — Ben Shapiro and Laura Loomer led a rare MAGA revolt. In July 2026, the DOJ **subpoenaed a newspaper** over its reporting on the jet&#x27;s security problems.
+- [ ] **The simultaneity.** The jet emerged as the Trump Organization announced a **$5.5 billion luxury golf resort in Qatar** developed with Qatari Diar — a company owned by the Qatari state — despite the Organization&#x27;s own second-term ethics pledge against new foreign-government deals (Sen. Shaheen&#x27;s letter documents both). The same May 2025 Gulf trip produced $243.5 billion in announced US–Qatar deals and a claimed $1.2 trillion economic exchange, alongside the family&#x27;s parallel private pipeline across the region: Dar Global-branded Trump towers and projects announced in Saudi Arabia, the UAE, Oman (on government-provided land), and Qatar; a reported $1.5 billion golf development in Vietnam timed with tariff negotiations; and a Trump tower project in Belgrade on Serbian state land pursued by Kushner&#x27;s Affinity — each reported at the time, 2024–2025.
+- [ ] **The Zhao pardon, in sequence.** 2023: Changpeng &#x27;CZ&#x27; Zhao pleads guilty to Bank Secrecy Act violations; Binance pays a record **$4.3 billion**; prosecutors document transactions flowing to terrorist groups, sanctioned Iranian entities, and child-exploitation networks; Zhao serves four months — the first person imprisoned for such violations. May 2025: the MGX **$2 billion** investment into Binance is executed **in the Trump family&#x27;s USD1**, delivering the family&#x27;s stablecoin its breakout. Reporting documents Zhao lobbying for a pardon while Binance boosts World Liberty; Zach Witkoff and WLF co-founders meet Zhao in Abu Dhabi (Reuters). **October 23, 2025: full pardon.** November, on 60 Minutes, asked why he pardoned a man the government said harmed national security, the president answers: **&#x27;OK, are you ready? I don&#x27;t know who he is.&#x27;** Warren and Schiff introduce a condemnation resolution; the DOJ&#x27;s former pardon attorney, Elizabeth Oyer — herself fired in 2025 — becomes a public witness to the pardon process&#x27;s transformation. Benzinga&#x27;s running tally: three crypto felons pardoned in ten months.
+- [ ] **The access price list, as reported:** the $TRUMP memecoin dinner of May 22, 2025, where the top ~220 holders of the president&#x27;s personal coin — having spent a reported ~$148 million acquiring it, many via anonymous or foreign wallets — dined with him at his golf club; **Executive Branch**, the private Georgetown club co-founded by Donald Trump Jr. with 1789 Capital&#x27;s Omeed Malik and Chris Buskirk, with **memberships up to $500,000** and co-owners including White House crypto czar David Sacks, the Winklevoss twins, and Zach and Alex Witkoff — a physical clubhouse where regulated industry pays to socialize with the regulators; reported million-dollar-a-seat Mar-a-Lago dinners; and the corporate-donor-funded White House ballroom. The through-line is not hidden; it is the product.
+- [ ] **Someone knew.** On Polymarket, whose advisory orbit has included Donald Trump Jr. (an adviser, with his firm 1789 Capital an investor, since early 2025), Iran-war betting exploded past **$2 billion in volume** in the first four months of 2026 across 170+ markets. Blockchain analytics firm Bubblemaps documented **six newly created accounts, funded within a day, taking positions hours before the February 28 strikes** — netting about $1 million when Tehran was hit. Bloomberg&#x27;s June 2026 investigation found **nine anonymous accounts with a 98% win rate** across war-and-peace contracts, including a wallet that cleared ~$370,000 on the June 15 peace-framework market. Congressional probes followed; Rep. Ritchie Torres introduced the **Public Integrity in Financial Prediction Markets Act of 2026** to bar federal officials from trading on confidential government information — a bill whose necessity is itself a finding. The regulated competitor Kalshi noted it is barred from listing war contracts at all. **No account holder has been publicly identified.** The Iranian allegation against the envoys (Chapter D) and these anonymous wallets are, on the current record, two separate facts. This document connects them only as a question: American war decisions have become tradable, someone with apparent foreknowledge traded them, and nobody in power has been made to say who.
+- [ ] **The family&#x27;s war-side book.** The Washington Post&#x27;s July 13, 2026 investigation documents that the president&#x27;s sons have &#x27;amassed a portfolio of defense technology start-ups that are benefiting from new Pentagon priorities and spending&#x27;: **1789 Capital — where Don Jr. is a partner — holds stakes in 11 of the 15 defense, robotics, and AI companies with Pentagon business** in the Post&#x27;s analysis, including SpaceX and Anduril; Eric&#x27;s deals run through American Ventures at Dominari Holdings, headquartered in Trump Tower, whose stock jumped 83% the week the brothers joined. The demand side of that portfolio is set by their father&#x27;s **$1.5 trillion FY2027 defense request** (Chapter 21), a wartime budget whose &#x27;Golden Dome&#x27; line alone is a generational procurement stream. 1789 — controlled by Omeed Malik, Rebekah Mercer, and Chris Buskirk, a key Vance strategist — denies benefiting from the family connection; Dominari&#x27;s CEO credited the brothers&#x27; &#x27;strategic insight.&#x27; Don Jr. sits on at least eight corporate boards since the election, from gunmaker GrabAGun to drone maker Unusual Machines, whose valuations moved on his arrival.
+- [ ] Trump —[A]→ **family crypto income $1.4B+ (2025)**: OGE disclosure, June 30 2026. The spine edge; everything in the money architecture hangs off it.
+- [ ] UAE (Tahnoon) —[A]→ **World Liberty**: $2B via MGX into Binance in USD1 (documented); the pre-inauguration 49%/$500M stake is [B] (WSJ, via House letter).
+- [ ] Zhao —[A]→ boosted WLF; Zhao —[A]→ **pardoned** Oct 23 2025. Zhao→pardon *causation* is [Ø]/[C]: the sequence is documented; the quid-pro-quo is alleged (Warren/Schiff) and denied (&quot;I don&#x27;t know who he is&quot;).
+- [ ] Kushner —[A]→ Affinity —[A]→ **Gulf sovereign funds** ($4.8B; $5B+ solicitation, NYT); Kushner —[A]→ US Iran negotiator. Saudi renegotiation-option-August-2026 —[Ø]→ war-continuation incentive: adjacency documented, motive not proven.
+- [ ] Iran —[C]→ warned Vance the envoys sought market profit from talks (Drop Site, denied). Kept as [C]; not merged with the next edge.
+- [ ] Anonymous wallets —[A]→ **$1M+ on pre-strike Iran bets** (Bubblemaps); nine 98%-win accounts (Bloomberg). Wallet-holder identity —[Ø]→ anyone in government: **unknown**. This is the single most important un-drawn edge in the entire map, and honesty requires leaving it un-drawn.
+- [ ] Don Jr. —[A]→ 1789 Capital —[A]→ **11 of 15 Pentagon-business defense/AI startups** (WaPo, July 13 2026); Trump —[A]→ $1.5T war budget. The demand-and-supply loop is documented; personal enrichment from specific contracts is [B].
+- [ ] **Bill Pulte** —[A]→ FHFA director —[A]→ mortgage-fraud criminal referrals of Schiff, James, Lisa Cook, Swalwell (Democracy Forward records; GAO probe open); Pulte —[A]→ **Acting Director of National Intelligence** (June 2026, replacing Gabbard). The &quot;mortgage guy running security&quot; is real and worse than the phrase: the same official who weaponized housing data against the president&#x27;s named enemies now sits atop the intelligence product of 18 agencies. AP&#x27;s documented thesis: &quot;Before Bill Pulte started targeting President Donald Trump&#x27;s political enemies, he practiced on his own family.&quot;
+- [ ] **Edges added in the Fifth Edition (all [A] unless noted):** Trump —[A]→ AEA proclamation —[A]→ Bukele/CECOT ($6M; Boasberg contempt finding; SCOTUS 9-0 defied-then-obeyed-late). Halligan —[A]→ Comey/James indictments —[A]→ both dismissed as unlawfully brought; grand juries —[A]→ twice refused James re-indictment and refused the six-lawmakers push. SCOTUS (*Callais*) —[A]→ VRA §2 gutted —[A]→ Landry primary suspension mid-vote —[A]→ 2026 map redraws (LA, AL cleared). Kennedy —[A]→ ACIP purge —[A]→ schedule cut to 11 —[A]→ court reversal (Mar 16, 2026) —[A]→ appeal + re-charter. Witkoff —[A]→ drafted the 28-point plan **with** Dmitriev; Witkoff —[B]→ coached Ushakov (leaked transcript; Trump: &quot;standard negotiating&quot;). US Treasury —[A]→ controls Venezuelan oil revenue under Rodríguez (NPR/CFR). Pentagon budget —[A]→ sons&#x27; defense portfolio (WaPo) remains the war-finance loop&#x27;s demand side.
+- [ ] Vought —[A]→ **Project 2025** —[A]→ ~53% implemented (Center for Progressive Reform, Feb 2026); Vought —[A]→ OMB/acting CFPB. The blueprint-to-policy edge is the most heavily documented ideological edge in the map.
+- [ ] **Kushner &amp; the Witkoffs** (Chs C–D): why these two, and what is their role? Because they are the two things this presidency most requires fused into single individuals — **family/absolute-loyalty** and **a private channel to foreign money**. Kushner is family and runs a Gulf-funded fund; Witkoff is a decades-long friend who co-owns the family crypto venture with the sons. Their &quot;role&quot; is not conventional diplomacy; it is to be trusted intermediaries who can carry both state business and family business through the same door. That is precisely why they were picked: in a patrimonial system, the qualification is not expertise but loyalty-plus-access.
+- [ ] **Contractors he overpays** (Chs H, G): the ICE warehouse build-out via no-bid contracts (a $29.9M design contract to a firm with no prior government work; GEO added by no-bid); Palantir&#x27;s ImmigrationOS; defense startups in the sons&#x27; portfolio riding a $1.5T budget. The common feature is **directed money with weak competitive discipline flowing toward politically aligned recipients** — the definition of patronage spending.
+- [ ] **China** — the Nvidia/AMD arrangement taking a **15% cut of China chip revenue** as the price of export licenses; the TikTok–Oracle brokerage; tariff whiplash. Trade policy operated as **personal deal-approval leverage**, not rule-bound policy.
+- [ ] **Russia** — the documented tilt: pressure on Ukraine, the reported willingness to let Russia&#x27;s oil flow to ease war costs (Ch 21-B), Project 2025&#x27;s [A]-completed &quot;reduce US force posture in Europe&quot; (5,000 troops out of Germany), and the Greenland gambit justified partly by Russian &quot;encirclement.&quot; The common feature is **the subordination of alliance commitments to transactional and personalist calculation**.
+- [ ] **Cuba &amp; Venezuela** — the January 3, 2026 capture of Maduro by Delta Force after months of Caribbean boat strikes that killed ~115 people with no presented evidence the boats carried drugs bound for the US; 32 Cuban soldiers killed; Cuba in national mourning. The common feature is **lethal executive force projected in the hemisphere without congressional authorization** — the Venezuela war-powers resolution failed, exactly as the Iran ones were ignored.
+- [ ] **Greenland** — threats to annex a NATO ally&#x27;s territory, a January 2026 tariff ultimatum to eight European nations to force the cession, reversal at Davos, then revival at the July 2026 NATO summit (&quot;should be controlled by the United States&quot;), with the largest protest in Greenland&#x27;s history in response. The common feature is **territorial-acquisitive nationalism treating sovereignty as negotiable real estate** — &quot;buy, buy, buy,&quot; in Time&#x27;s phrase.
+- [ ] **AI takeover** — not Skynet, but the documented policy reality: aggressive deregulation, the Golden Dome and defense-AI procurement stream feeding the sons&#x27; portfolio, Palantir&#x27;s targeting layer for ICE, and the chip-export leverage over China. The common feature is **AI as both a patronage-rich industry and a surveillance-and-enforcement instrument**, concentrated under an executive already testing its limits.
+- [ ] **The midterms &amp; voting regulation** — the July 2026 revival of &quot;rigged 2020&quot; (now with China voter-roll claims), the SAVE America Act push, DHS Secretary Mullin &quot;putting states on notice,&quot; the Lafayette Square fencing, and the redistricting fights. The common feature is **pre-emptive contestation of the next election&#x27;s legitimacy by the incumbent state apparatus**.
+
+## The Common Elements: What Academic Consensus Identifies
+
+- [ ] Economic crisis or perceived decline creating a population primed for simple explanations and strong solutions
+- [ ] A charismatic leader who claims unique insight and the ability to personally fix systemic problems
+- [ ] A manufactured enemy — a visible, documented, politically voiceless group blamed for the crisis
+- [ ] A restoration narrative — invocation of a lost greatness that justifies emergency measures
+- [ ] Delegitimization of institutions: press, courts, civil service, military — framed as corrupt or captured
+- [ ] Parallel enforcement structures operating outside normal legal accountability
+- [ ] Incremental normalization — each escalation building on the previous one, each step small enough to seem acceptable
+- [ ] Elite miscalculation — conservative or business elites believing they can use and control the movement
+- [ ] The loyalty purge — systematic removal of anyone who prioritizes institutional duty over personal loyalty to the leader
+- [ ] Emergency powers accumulated but not rescinded — each crisis adding authority without subtracting any
+- [ ] Senator Mitch McConnell, after January 6, 2021: stated Trump was &#x27;practically and morally responsible for what happened.&#x27; McConnell subsequently voted against impeachment conviction and later endorsed Trump for 2024.
+- [ ] Speaker Paul Ryan described Trump in private as &#x27;a racist.&#x27; Ryan remained Speaker, shepherded the 2017 Tax Cuts and Jobs Act, then resigned.
+- [ ] Senator Lindsey Graham in 2016: &#x27;He&#x27;s a race-baiting, xenophobic bigot.&#x27; Graham became one of Trump&#x27;s most consistent public defenders thereafter. (Second-edition note: Graham died in July 2026; South Carolina&#x27;s governor appointed an interim successor. This document makes no claim about the circumstances, which were not independently verified for this edition.)
+- [ ] Vice President Mike Pence provided evangelical legitimacy to the 2016 and 2020 tickets. On January 6, 2021, a crowd chanting &#x27;Hang Mike Pence&#x27; arrived at the Capitol. Trump was informed and did not immediately call off the crowd.
+- [ ] 17 Inspectors General fired in a single night, January 2025, without the required 30-day congressional notice
+- [ ] FBI Director James Comey fired in 2017; Trump told NBC that the &#x27;Russia thing&#x27; was a factor; Comey testified to a dinner where Trump asked him for personal loyalty
+- [ ] Attorney General Jeff Sessions fired after recusing himself from the Russia investigation per DOJ ethics rules
+- [ ] Special Counsel Jack Smith&#x27;s investigation dismantled on January 20, 2025; all federal charges dropped
+- [ ] General Mark Milley&#x27;s security clearance revoked; Trump had earlier posted on Truth Social (September 2023) that Milley&#x27;s conduct was &#x27;an act so egregious that, in times gone by, the punishment would have been DEATH&#x27;
+- [ ] Multiple U.S. Attorneys fired for insufficient political alignment with administration priorities
+- [ ] Schedule F executive order reinstated January 20, 2025, reclassifying tens of thousands of career civil servants as at-will employees removable for any reason
+- [ ] Federal job applications modified to include questions asking applicants to name their favorite Trump executive order
+- [ ] The Trump administration has declared multiple overlapping national emergencies (border, economic/tariff, energy) that have not been rescinded
+- [ ] 225 executive orders signed in 2025 — surpassing FDR&#x27;s 1933 record of 99 in a president&#x27;s first 100 days
+- [ ] An analysis by Time found nearly two-thirds of these actions mirror proposals from Project 2025
+- [ ] The administration has openly defied multiple federal court orders regarding deportation operations, including orders requiring the return of individuals deported to El Salvador&#x27;s CECOT facility
+- [ ] The Department of Defense was formally given the secondary title &#x27;Department of War&#x27; by executive order on September 5, 2025
+- [ ] National Guard forces were deployed to Los Angeles for immigration enforcement in June 2025; a federal judge ruled this illegal
+- [ ] ICE detention population: approximately 40,000 when Trump took office January 2025; nearly 66,000-70,000 by late 2025 — a 75% increase, the highest level in agency history
+- [ ] Congress appropriated $75 billion for ICE over four years in the July 2025 reconciliation package — approximately $18.75 billion annually, nearly triple ICE&#x27;s FY2024 budget
+- [ ] The $11.25 billion added to ICE&#x27;s annual detention budget represents a 400% increase from the previous year and exceeds the DOJ&#x27;s entire federal prison system budget request
+- [ ] A 2,450% increase in people with no criminal record held in ICE detention on any given day, compared to the start of the administration
+- [ ] 32 deaths in ICE detention in 2025 — the highest since 2004, nearly three times the 2024 total
+- [ ] One death, Geraldo Lunas Campos, officially ruled a homicide by local authorities in January 2026
+- [ ] ICE detention facility inspections dropped 36.25% in 2025 despite the massive expansion in detention population
+- [ ] Trump&#x27;s FY2027 budget requests $152 million for the first year of reopening Alcatraz as an expanded federal prison, framed as a &#x27;symbol of law, order, and justice&#x27;
+- [ ] Hundreds of individuals deported to CECOT in El Salvador — a 40,000-capacity maximum security facility with no windows, no legal access, and no family contact — including documented cases of U.S. legal residents
+- [ ] Day one executive order eliminating federal recognition of gender identity and directing agencies to recognize only biological sex
+- [ ] Ban on transgender military service reinstated by executive order January 27, 2025
+- [ ] Executive order &#x27;Protecting Children From Chemical and Surgical Mutilation&#x27; directing federal agencies to restrict gender-affirming care
+- [ ] Systematic removal of LGBTQ+ content from federal websites and databases
+- [ ] DEI programs eliminated from the federal government and threatened in federal contractors and universities
+- [ ] Trump used the phrase &#x27;poisoning the blood&#x27; in reference to immigration — a phrase with documented use in Nazi propaganda
+- [ ] Immigrants described in presidential statements and official communications as &#x27;animals,&#x27; &#x27;vermin,&#x27; and an &#x27;invasion&#x27; — all documented
+- [ ] Trump stated the United States should acquire Greenland from Denmark, refused to rule out military force, and sent Don Jr. as an unofficial envoy. His FY2027 budget includes provisions relevant to Arctic positioning.
+- [ ] Trump stated Canada should become the 51st state; imposed tariffs framed as economic coercion; has not ruled out force
+- [ ] Trump stated the United States should retake control of the Panama Canal
+- [ ] Trump harbored former Brazilian President Jair Bolsonaro in Florida following his January 8, 2023 Brazilian Capitol riot (which mirrored the January 6, 2021 U.S. Capitol riot in striking structural detail); Bolsonaro has not been extradited
+- [ ] Trump administration engaged in direct military action against Iran (Soleimani assassination, 2020); maximum pressure sanctions; military threats concurrent with diplomatic talks
+- [ ] Trump withdrew the United States from the WHO, the Paris Agreement, and has questioned continued NATO participation
+- [ ] Trump built documented political relationships with Viktor Orbán, Jair Bolsonaro, Javier Milei, and other nationalist leaders internationally
+- [ ] Defense spending: $1.5 trillion requested — potentially the largest year-over-year increase in post-WWII history, a 40% increase from current levels
+- [ ] Federal law enforcement: $19+ billion — a 15% increase — focused on immigration enforcement and violent crime
+- [ ] ICE: $75 billion over 4 years from reconciliation plus additional FY2027 requests
+- [ ] Domestic programs: $73 billion in cuts — health, housing, agriculture, and education
+- [ ] Bureau of Prisons: $1.7 billion increase including $152 million for Alcatraz
+- [ ] **February 24, 2026:** In the State of the Union address, Trump claimed Iran had restarted its nuclear program and was developing missiles capable of striking the United States — claims that contradicted his own earlier statement that the program had been &#x27;obliterated&#x27; in the June 2025 strikes, and that ran ahead of US intelligence assessments. The IAEA, while unable to verify Iran&#x27;s stockpile after inspections were restricted, reported it had found no evidence of active weaponization.
+- [ ] **February 27–28, 2026:** Trump ordered Operation Epic Fury from Air Force One. The United States and Israel launched surprise strikes across Iran — during active nuclear negotiations, and during Ramadan — killing Supreme Leader Ali Khamenei and roughly forty senior officials, including former president Mahmoud Ahmadinejad, in the opening hours. Trump&#x27;s 2:30 a.m. video statement framed the war&#x27;s purpose in regime-change terms. The administration subsequently offered multiple, shifting rationales: preempting an Iranian attack, destroying missile capability, preventing a nuclear weapon, seizing oil resources, and regime change.
+- [ ] **Late February–March 2026:** Iran retaliated with missile and drone strikes on Israel, US bases, and at least six Gulf states, and closed the Strait of Hormuz — through which roughly a fifth of the world&#x27;s oil moves — triggering the largest oil-supply disruption since the 1970s. NATO members and Indo-Pacific allies (Japan, South Korea, Australia) declined to join US strikes; Trump publicly denounced them and declared the US &#x27;does not need the help of anyone.&#x27; On March 6 he posted &#x27;There will be no deal with Iran except UNCONDITIONAL SURRENDER!&#x27; By late March, CENTCOM reported over 11,000 targets struck; B-52s flew over Iranian territory; Israel struck Iran&#x27;s South Pars gas field and Iran struck Qatar&#x27;s LNG facilities in reply; Brent crude passed $115 per barrel.
+- [ ] **April 2026:** A US strike collapsed the Karaj B1 bridge outside Tehran while families gathered below for a holiday, killing eight and wounding 95; legal experts assessed it as a possible war crime, and reporters documented Trump publicly celebrating the strike. On Easter Sunday, April 5, at 8:03 a.m., Trump posted the message quoted in full in Chapter 21-C below — verified as authentic by both Snopes and Lead Stories. On April 7, ahead of his own infrastructure deadline, Trump posted that &#x27;a whole civilization will die tonight, never to be brought back again&#x27;; the Secretary General of Amnesty International said the statement &#x27;may constitute a threat to commit genocide,&#x27; the White House denied nuclear use was under consideration, and members of Congress from both parties raised the 25th Amendment. Hours later, Trump announced a Pakistan-brokered two-week ceasefire. When the 21-hour Islamabad Talks failed on April 11 — the highest-level US–Iran talks since 1979 — Trump said he no longer cared about negotiations and imposed a naval blockade of Iran from April 13. The result through late April was a &#x27;dual blockade&#x27;: the US Navy blockading Iranian ports while Iran kept the strait effectively closed to US allies.
+- [ ] **May–June 2026:** Renewed US strikes (including May 7) alternated with pauses. In June, a memorandum of understanding negotiated at Bürgenstock, Switzerland — a quadrilateral involving the US, Iran, Pakistan, and Qatar — sought to end the war and reopen the strait.
+- [ ] **July 6–19, 2026:** The truce collapsed after attacks on merchant shipping. The US launched three consecutive nights of strikes (140 targets on July 11 alone); Iran struck tankers — killing a crew member in UAE waters — and US-allied territory; the naval blockade resumed July 14; Brent jumped 9.6% in a day to $83.30; and Trump proposed that the United States itself charge a 20% toll for safe passage through the strait. As of this writing (July 19), strikes are ongoing, and areas around Tehran have been hit for the first time in the latest round.
+- [ ] **The decision, from inside the room (Haberman &amp; Swan, [B] reported).** *Regime Change* documents that the war was decided by an extraordinarily small group — the final February 26 Situation Room meeting included Trump, Vance, chief of staff Susie Wiles, CIA Director Ratcliffe, and White House Counsel Warrington, but **not** Treasury Secretary Bessent or Energy Secretary Wright — &quot;the two people who would have to handle the biggest oil shock in world history,&quot; in Swan&#x27;s words, and DNI Tulsi Gabbard was also excluded. The reporters document that Trump disregarded warnings from Joint Chiefs Chairman Gen. Dan Caine about effects on American weaponry and about casualties, and that Trump believed the war would be over quickly because the Iranian regime was &quot;a paper tiger&quot; that would &quot;collapse very quickly&quot; — which Swan characterized as &quot;a form of magical thinking.&quot; Notably, the book reports that Secretary of State Rubio privately called an Israeli presentation of regime-change objectives for Iran an expletive (&quot;bulls—&quot;), and that senior advisers mocked the very &quot;regime change&quot; premise — even as the operation proceeded. The White House, tellingly, did not dispute the verbatim Situation Room dialogue. This is the war-decision analog to everything Chapter 0 documents about the man: a loss is unthinkable, so the war must be a fast win, so contrary warnings are excluded along with the officials who would voice them.
+- [ ] **Human and material cost (contested; all figures are as reported):** the US-based monitor HRANA documented 3,636 deaths in Iran by April 7, including 1,701 civilians, and cautioned that military deaths are likely undercounted; US and Israeli figures claim 6,000+ Iranian military dead; UNICEF reported more than 1,100 children killed or injured across the region by mid-March; the US reported 15 service members killed and 538 wounded. The direct US cost was estimated at $18 billion by March 19, and the Pentagon requested $200 billion more. Contemporaneous accounts document that the United States, Israel, and Iran have all imposed severe censorship on war information.
+- [ ] **Congress and the War Powers Act:** Congress has now voted ten times on the war. A first Senate resolution was blocked on March 5; a House measure failed 212–212 on May 14 after leadership sent members home early to avoid a vote it appeared to be losing; on June 3 the House passed a war powers resolution 215–208 (four Republicans joining); and on June 23 the Senate passed it 50–48 (Cassidy, Collins, Murkowski, and Paul joining; Fetterman the lone Democratic no). Trump called the Republican House yes-votes &#x27;GRANDSTANDERS&#x27; and &#x27;unpatriotic.&#x27; Because it is a concurrent resolution, it was never presented for signature; the White House responded that &#x27;there are no hostilities from which to remove&#x27; forces. No congressional authorization for the war has been sought or granted, and hostilities have continued past the 60-day War Powers framework and past both chambers&#x27; votes.
+
+## The Courts: Two Landmark Defeats Accepted, One Landmark Victory
+
+- [ ] **Tariffs struck down, and the administration complied.** On February 20, 2026, in Learning Resources, Inc. v. Trump, the Court held 6–3 (Roberts writing, joined by Gorsuch and Barrett and in part by Sotomayor, Kagan, and Jackson) that IEEPA does not authorize presidential tariffs — invalidating the signature economic program of the second term. The administration rescinded the tariffs by executive order and had already stipulated in January to refunds following a final decision; the Court of International Trade then directed Customs to process refunds of the roughly $166 billion collected. Whatever else is true of 2026, the president&#x27;s flagship economic policy was struck down by the Supreme Court and he complied.
+- [ ] **Birthright citizenship struck down.** On June 30, 2026, the Court ruled 6–3, again with Roberts writing, that the Constitution guarantees birthright citizenship to virtually all children born in the United States — &#x27;Citizenship, then and now, was the right to have rights&#x27; — killing the day-one executive order. Trump acknowledged the loss and said he would &#x27;work to correct it in Congress&#x27;; Speaker Johnson said Congress is weighing legislation and a constitutional amendment. Pursuing the goal through Article V and legislation, rather than defiance, is the constitutional route.
+- [ ] **Removal power massively expanded.** One day earlier, on June 29, the Court in the Slaughter case overruled the 91-year-old Humphrey&#x27;s Executor precedent, holding that presidents may fire the heads of independent agencies at will — with a carve-out for the Federal Reserve, where Governor Lisa Cook keeps her seat while contesting her removal. Trump celebrated it as &#x27;the biggest and most consequential Decision issued by the Court, by far.&#x27; Scholars note this formalizes, as constitutional doctrine, much of the personnel control this document describes in Chapter 12.
+- [ ] **Domestic troop deployments blocked — and ended.** In December 2025 the Supreme Court refused to allow the National Guard deployment into Chicago, after an Illinois district court found federal officials&#x27; factual claims &#x27;not reliable&#x27; and flagged a &#x27;troubling trend&#x27; of &#x27;equating protests with riots.&#x27; On December 31, Trump announced the end of the Chicago, Portland, and Los Angeles deployments, and those federalized troops were withdrawn in January 2026. Guard contingents remain in Washington, D.C. and Memphis under different legal authorities.
+- [ ] **Election administration.** In a 5–4 decision authored by Justice Barrett (joined by Roberts, Sotomayor, Kagan, and Jackson), the Court upheld a Mississippi law counting mail ballots received after Election Day — a ruling against the movement&#x27;s ballot-restriction position, from a Trump appointee.
+
+## 6. The 2026 Record of Functioning Checks (added July 2026)
+
+- [ ] The Supreme Court struck down the president&#x27;s signature economic program (the IEEPA tariffs, February 20) and the administration complied — rescinding the tariffs and entering a refund process for roughly $166 billion.
+- [ ] The Supreme Court struck down the day-one birthright citizenship order (June 30), and the president&#x27;s stated response was to pursue legislation and a constitutional amendment — the lawful route — not defiance.
+- [ ] The Supreme Court blocked the Chicago troop deployment (December 2025), lower courts rejected the administration&#x27;s factual claims as &#x27;not reliable,&#x27; and the federalized deployments to Los Angeles, Chicago, and Portland were ended and withdrawn in January 2026.
+- [ ] Majorities of both chambers of Congress — including Republicans — voted to end the Iran war, and Congress passed the Epstein Files Transparency Act nearly unanimously over the president&#x27;s objections, and he signed it.
+- [ ] Congressional Republicans separately forced the administration to scrap a $1.8 billion fund that could have compensated January 6 defendants convicted of attacking police, and stripped White House ballroom security funding from an immigration bill.
+- [ ] The November 2025 elections were held and counted normally, Democrats surged, the 2026 primaries are proceeding on schedule under contested but adjudicated maps, and a Trump-appointed justice wrote the 5–4 opinion protecting late-arriving mail ballots in Mississippi.
+- [ ] The movement itself is visibly not monolithic: Tucker Carlson, Marjorie Taylor Greene, and Thomas Massie publicly broke with the president over the war and the Epstein files — at real cost, which is itself evidence of the loyalty architecture, but the dissent occurred, loudly, in public.
+- [ ] Every fact in this edition was gathered from a functioning free press, human-rights monitors, fact-checkers, congressional records, and court opinions — with the caveat that the same period saw wartime censorship, DOJ subpoenas of reporters, and investigations of opposition figures.
+- [ ] These specific mechanisms — loyalty purges, emergency power accumulation, parallel enforcement structures, information environment manipulation, manufactured enemies, detention infrastructure — have historically appeared together in documented cases of democratic erosion.
+- [ ] When these mechanisms appear together in historical cases, they have generally produced escalating outcomes unless actively interrupted by institutional resistance.
+- [ ] The window for effective institutional resistance is historically early — it narrows significantly as each mechanism becomes more entrenched.
+- [ ] Several of these mechanisms are currently documented as operational in the United States.
+- [ ] That any specific outcome is inevitable — democratic institutions have successfully resisted these patterns in multiple historical cases.
+- [ ] That the individuals involved are equivalent to their historical analogues — context, constraint, and intention differ.
+- [ ] That the United States in 2026 is equivalent to Germany in 1933 — the differences documented in Chapter 23 are real.
+- [ ] That any specific action is certain to cross any specific line — these are probabilistic observations about trajectories, not deterministic predictions.
+
+## The Open Tests, as of July 19, 2026
+
+- [ ] Whether hostilities with Iran end, are authorized by Congress, or simply continue past the legislature&#x27;s recorded objection — and whether the proposed 20% US toll on strait transit becomes policy.
+- [ ] Whether Todd Blanche is confirmed as Attorney General despite the Epstein files standoff, and whether the statutorily required releases resume.
+- [ ] Whether the Detention Reengineering Initiative reaches its November 30, 2026 activation target (92,600 beds) — and what the 2026 custody death toll, at least 22 by mid-July, totals by year&#x27;s end.
+- [ ] Whether the election-security campaign launched in July remains rhetorical or produces federal action affecting the administration of the November 3, 2026 midterms — the single most informative upcoming event this framework can identify.
+- [ ] Whether the birthright citizenship response stays within Article V and ordinary legislation, as stated on June 30.
+- [ ] **Scenario 1 — Constrained Continuation (~50%).** The checks that have already bitten continue to bite. The 2026 midterms occur on November 3 and are counted; the historically favorable environment for the out-party plus record GOP retirements plus No Kings-scale mobilization deliver at least one chamber to the opposition, restoring subpoena power and slowing the agenda. Courts keep issuing adverse rulings that are, on balance, obeyed. The money architecture persists and grows, but the power architecture is contained. This is the modal path because it is what the base rates favor *and* what the last twelve months of documented institutional behavior actually show.
+- [ ] **Scenario 2 — Deepening Consolidation (~30%).** Election-administration pressure (SAVE Act, DHS &quot;notice&quot; to states, litigation, redistricting) plus continued war footing plus the Slaughter-empowered removal machinery tilt the field enough that the midterms are disputed or blunted; the loyalty architecture deepens; the third-term ambiguity hardens into an actual 2028 project. The architecture moves from contested to entrenched without a single dramatic rupture — the classic competitive-authoritarian slide.
+- [ ] **Scenario 3 — Rupture (~20%, high-variance).** A specific overreach forces a discontinuity: an Insurrection Act invocation against a US city; open defiance of a direct Supreme Court order; an attempt to nullify or postpone the 2026 or 2028 vote; or — the personalist regime&#x27;s signature vulnerability — a **health or succession shock** to a 79-year-old leader whose fitness is already contested (Ch 21-C), which the base rates flag as capable of collapsing the entire structure faster than any opposition could. Rupture resolves *either* toward restoration (the overreach triggers decisive counter-mobilization) *or* toward crisis; the branch is genuinely indeterminate.
+
+## Primary Historical Scholarship
+
+- [ ] Arendt, Hannah. *The Origins of Totalitarianism*. Harcourt, 1951.
+- [ ] Browning, Christopher. *Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland*. HarperCollins, 1992.
+- [ ] Kershaw, Ian. *Hitler: 1889-1936 Hubris* and *Hitler: 1936-1945 Nemesis*. W.W. Norton, 1999/2000.
+- [ ] Evans, Richard J. *The Third Reich Trilogy*. Penguin, 2003-2008.
+- [ ] Shirer, William L. *The Rise and Fall of the Third Reich*. Simon &amp; Schuster, 1960.
+- [ ] Klemperer, Victor. *I Will Bear Witness* (Diaries 1933-1945). Random House, 1998.
+
+## Contemporary Democratic Erosion Scholarship
+
+- [ ] Snyder, Timothy. *On Tyranny: Twenty Lessons from the Twentieth Century*. Tim Duggan Books, 2017.
+- [ ] Snyder, Timothy. *The Road to Unfreedom: Russia, Europe, America*. Tim Duggan Books, 2018.
+- [ ] Albright, Madeleine. *Fascism: A Warning*. HarperCollins, 2018.
+- [ ] Levitsky, Steven and Ziblatt, Daniel. *How Democracies Die*. Crown, 2018.
+- [ ] Ben-Ghiat, Ruth. *Strongmen: Mussolini to the Present*. W.W. Norton, 2020.
+
+## Current Documentation Sources
+
+- [ ] American Immigration Council: Immigration Detention Expansion in Trump&#x27;s Second Term (2026).
+- [ ] Brennan Center for Justice: Big Budget Act Creates a Deportation-Industrial Complex (2025).
+- [ ] Project on Government Oversight: ICE Inspections Plummeted as Detentions Soared in 2025 (2026).
+- [ ] NPR: 2025 is the deadliest year to be in ICE custody in decades (2025/2026).
+- [ ] Wikipedia: List of executive orders in the second Trump presidency (updated 2026).
+- [ ] Federal Register: 2025 Donald J. Trump Executive Orders.
+- [ ] White House: Fiscal Year 2027 Budget Proposal (April 2026); CSIS, &quot;Unpacking the $1.5 Trillion FY 2027 Defense Budget Topline&quot; (April 2026).
+
+## Fifth-Edition Sources — The Machinery Chapters (added July 19, 2026)
+
+- [ ] Rendition: SCOTUS *Trump v. J.G.G.* and the May 16, 2025 7-2 due-process ruling; Lawfare, &quot;Mixed Signals on Alleged Alien Enemies&quot;; CLINIC&#x27;s AEA/CECOT case histories; LegalClarity, &quot;Kilmar Abrego Garcia: Deportation, Lawsuit, and Release&quot; (2026, incl. the vindictive-prosecution dismissal); Boasberg contempt record; contemporaneous 2025 reporting on the $6M CECOT payment, the July 2025 Venezuela swap, and South Sudan/Eswatini removals.
+- [ ] Civil society: 2025 district-court invalidations for Perkins Coie, Jenner, WilmerHale, Susman; reporting on the nine settling firms&#x27; ~$1B pledges; Steptoe, &quot;Higher Education — Year in Review 2025&quot;; Thompson Coburn Higher-Ed Litigation Summary (Apr 2026); LegalClarity Harvard timelines (2026: $1B demand, First Circuit appeal, Mar 2026 DOJ Title VI suit + monitor, ten open probes); NPR (Jan 29, 2026); AAUP litigation tracker; contemporaneous 2025 reporting on AP/Oval, Pentagon credentials, Kimmel, and the ABC/Paramount settlements; OGE June 2026 disclosure (settlement income).
+- [ ] Expertise: CRS IN12684 and R48982 (2026 schedule; the Mar 16, 2026 AAP v. Kennedy stay; E.O. 14407); US News RFK vaccine tracker; NBC and The Conversation (Jan 2026 schedule cut); AJMC; PBS (charter revision); Cassidy statements.
+- [ ] Military: contemporaneous 2025 reporting on the Feb 21 firings incl. three service JAGs, the Department of War rename (Sept 5), the Quantico summit (Sept 30, &quot;training grounds&quot;/&quot;war from within&quot;), the boat-strike &quot;kill everybody&quot; probe, the Nov &quot;SEDITIOUS...DEATH&quot; reposts; ABC News 2026 target-list review (grand jury refusal; Kelly review).
+- [ ] Shutdown: contemporaneous Oct–Nov 2025 record (43 days; SNAP; RIF injunctions; flight cuts; premium notices; the Nov 4 results; &quot;affordability... con job&quot;).
+- [ ] Surveillance: contemporaneous 2025 reporting on IRS–ICE and Medicaid data sharing, DOGE access litigation, Palantir consolidation, ICE social-media monitoring and Paragon Graphite, SAVE expansion.
+- [ ] External board: Freedman&#x27;s annotated Witkoff–Dmitriev plan; CSIS provision review; Commons Library &quot;Ukraine peace talks&quot; (July 2026); CNBC/Fox on the Kremlin meetings and &quot;land deals&quot;; FT via Commons (guarantees-for-territory); Kellogg resignation (CSIS); Bloomberg&#x27;s leaked Witkoff–Ushakov transcript (Nov 2025, [B]); PassBlue (Apr 2026, Rodríguez consolidation); NPR (Jun 7, 2026, US-controlled oil revenue); CFR expert brief; Soufan Center IntelBrief (Jan 5, 2026); Al Jazeera.
+- [ ] Redistricting/VRA: *Louisiana v. Callais*, 608 U.S. ___ (Apr 29, 2026) — slip op., SCOTUSblog, CRS LSB11431; CAP on the 5-day finalization and the suspended primary (100k+ early votes); NAACP LDF; Campaign Legal Center; League of Women Voters; June 2026 Alabama order; 2025 state-by-state record (TX, CA Prop 50, MO, NC, OH, IN, VA, UT).
+- [ ] Docket: Levin Center *US v. Comey* case page; NBC (Feb 10, 2026 &quot;paperwork mistake&quot; brief; two failed James grand juries); ABC News target list (2026); CNBC/MS NOW (Bolton plea, June 26, 2026); Fox (Dec 2025).
+- [ ] Epstein: House Oversight releases (Nov 12, 2025) and verbatim email text; NBC/AOL contemporaneous coverage; Democracy Now; the Nov reversal and Act passage; Ch 21-C&#x27;s 2026 record.
+
+## Fourth-Edition Sources — Formation, Network, Convergence, Forecast (added July 19, 2026)
+
+- [ ] Biography/formation: Kranish &amp; Fisher, *Trump Revealed* (2016); Blair, *The Trumps*; Timothy O&#x27;Brien, *TrumpNation*; Tony Schwartz interviews and FRONTLINE, &quot;The Choice 2020&quot;; PBS NewsHour early-years series (2016); **Mary L. Trump, *Too Much and Never Enough: How My Family Created the World&#x27;s Most Dangerous Man* (2020)**; **Fred C. Trump III, *All in the Family: The Trumps and How We Got This Way* (2024)** — the nephew&#x27;s memoir, incl. the &quot;mashed potatoes story&quot;; **Russ Buettner &amp; Susanne Craig, *Lucky Loser: How Donald Trump Squandered His Father&#x27;s Fortune and Created the Illusion of Success* (2024)** — the Pulitzer-winning reporters&#x27; book built on 20+ years of concealed tax records; Fuchs &amp; Petschauer, &quot;The Abusive and Troubled Childhood of Donald Trump,&quot; *Clio&#x27;s Psyche* 27(1), 2020; CNBC on Norman Vincent Peale&#x27;s influence (2020); Maryanne Trump Barry recordings as reported.
+- [ ] Second-term journalism — primary: **Maggie Haberman &amp; Jonathan Swan, *Regime Change: Inside the Imperial Presidency of Donald Trump* (Simon &amp; Schuster, June 23, 2026).** Based on ~1,000 interviews conducted over two years; the title advances the same structural thesis as this report — that the honest frame is domestic regime change. Specific revelations cited herein (all [B] reported, single authoritative source): the February 26 Situation Room war-decision meeting and its exclusions (Bessent, Wright, Gabbard); Gen. Caine&#x27;s disregarded warnings; Trump&#x27;s &quot;paper tiger&quot;/fast-war &quot;magical thinking&quot;; Rubio&#x27;s private dismissal of Israeli regime-change objectives; the Epstein damage-control meetings held in the Situation Room without the president; and the Attila-to-Hitler &quot;more powerful than&quot; document authored by a golf caddy. **Sourcing note for transparency:** the book generated a significant controversy and a White House leak-hunt because several verbatim Situation Room accounts appeared to derive from secretly made recordings — a serious breach if true, and a fact this report discloses rather than obscures; the White House notably did not dispute the accuracy of the quoted dialogue. Coverage: Axios (Apr 7 &amp; Jun 14, 2026), NYT (&quot;How Trump Took the U.S. to War With Iran,&quot; Apr 7, 2026), Poynter, The Daily Beast, MS NOW/Lawrence O&#x27;Donnell interview. Corroborating second-term reporting: Josh Dawsey, Tyler Pager &amp; Isaac Arnsdorf, *2024* (Penguin, 2025), 300+ interviews.
+- [ ] Bill Pulte: National Mortgage News and NMP on his appointment as Acting DNI (June 2026); Democracy Forward, &quot;Weaponization of FHFA Investigations&quot; (records on Schiff/James/Cook/Swalwell referrals); CBS on the protective detail; AOL/AP on the GAO probe; AP, &quot;How Bill Pulte Learned the Art of the Attack&quot; (Oct 2025).
+- [ ] Venezuela/Cuba: Wikipedia, &quot;2026 United States strikes in Venezuela&quot;; Brookings, &quot;Making sense of the US military operation in Venezuela&quot; (Jan 2026); CFR, &quot;Operation Southern Spear&quot;; NPR (Jan 3 2026); House of Commons Library briefing on Maduro&#x27;s capture; GlobalSecurity on the Southern Spear buildup and boat strikes.
+- [ ] Greenland: Wikipedia, &quot;Greenland crisis&quot; and &quot;Hands off Greenland protests&quot;; CRS, &quot;Greenland, Denmark, and U.S. Relations&quot; (Jan 2026); Time (March and July 2026); CNBC and Reuters on the July 2026 NATO-summit revival; House of Commons Library FAQ.
+- [ ] Project 2025: Center for Progressive Reform / Governing for Impact tracker (53% as of Feb 2026; 47% Oct 2025; 28% April 2025); Bloomberg Law and Newsweek; PBS NewsHour; Heritage Foundation&#x27;s own claims.
+- [ ] China/Russia/state-capitalism edges: contemporaneous 2025 reporting on the Nvidia/AMD China-revenue arrangement, TikTok–Oracle, and Project 2025 tracker entry &quot;Reduce U.S. force posture in Europe&quot; (troop withdrawals from Germany/Romania).
+- [ ] Forecast reference classes: V-Dem democratic-backsliding datasets and reports; Geddes, Wright &amp; Frantz on authoritarian-regime types and durability; Levitsky &amp; Way on competitive authoritarianism (Foreign Affairs, 2025). Probabilities in Chapter 26 are the author&#x27;s reasoned estimates anchored to these reference classes, not model outputs.
+
+## Third-Edition Sources — The Money and Power Architecture (added July 19, 2026)
+
+- [ ] US Office of Government Ethics: annual financial disclosures of President Trump and Vice President Vance, released June 30, 2026 (927-page presidential filing); coverage by Reuters, Al Jazeera, Bloomberg. Forbes billionaires data and &quot;How Peace Envoy Steve Witkoff Got Richer&quot; (April 4, 2026); Bloomberg, &quot;Donald Trump Family Net Worth Increasingly Comes From Crypto&quot; (Jan. 20, 2026).
+- [ ] World Liberty Financial: WSJ reporting via House Select Committee (CCP) letter to Zach Witkoff (Feb. 4, 2026, UAE 49%/$500M pre-inauguration stake); Warren–Merkley letter on the MGX–Binance $2B USD1 transaction (May 14, 2025); Reuters on the anonymous $2B USD1 wallet and Abu Dhabi meetings; Forbes on the OCC trust-bank application (Jan. 9, 2026); Wikipedia compilation with underlying citations, including the January 2026 Pakistan agreement and the June 2026 UFC White House event.
+- [ ] Kushner/Affinity: Raskin–House Judiciary letter and investigation (April 16–17, 2026); Garcia–Wyden letter (March 19, 2026); NYT, &quot;Jared Kushner Solicits Funds for His Firm While Working as Mideast Envoy&quot; (March 13, 2026); Reuters on Affinity assets reaching $4.8B (March 28, 2026); Washington Post, &quot;Push from Saudis, Israel Helped Move Trump to Attack Iran&quot; (Feb. 28, 2026) and &quot;How Jared Kushner Became Trump&#x27;s Indispensable Second Peace Envoy&quot; (Dec. 9, 2025); Popular Information (Feb. 25, 2026); Drop Site News on the Iranian message to Vance (July 2026) — allegation, denied by the administration; Meeks–Amo–Garcia IG demand; Schiff-led letter on Witkoff&#x27;s non-divestment (Oct. 22, 2025); CNN live coverage of the Doha and Lucerne talks.
+- [ ] Foreign-state revenue and emoluments: S.Res.244 and H.Res.410 (Qatar 747-8); Shaheen letter to the White House Counsel (May 12, 2025, incl. the $5.5B Qatari Diar golf deal); Axios and Pentagon confirmation of the jet&#x27;s acceptance; AEI, &quot;Trump 2.0 and the Foreign Emoluments Clause&quot; (2026); contemporaneous 2024–2025 reporting on Dar Global, Vietnam, and Belgrade projects; NBC on July 2026 DOJ press subpoenas over the jet.
+- [ ] Pardon and access market: DOJ/Binance plea and $4.3B settlement record (2023); White House pardon statement (Oct. 23, 2025); 60 Minutes interview and reporting (Nov. 2025); Warren–Schiff condemnation resolution (Oct. 24, 2025); New Republic and The Hill analyses; contemporaneous May 2025 reporting on the $TRUMP-holders dinner; reporting on the Executive Branch club and 1789 Capital (Reuters, CBS, Institute for the Study of Modern Authoritarianism).
+- [ ] War finance: Bloomberg, &quot;Prediction Market Bets Spark New Fears of Insider Trading on Iran War&quot; (June 18, 2026); TechCrunch/Bubblemaps on the six pre-strike accounts (March 1, 2026); Crypto Briefing on the $2B Iran-market volume; Rep. Torres, Public Integrity in Financial Prediction Markets Act of 2026; Washington Post, &quot;Trump&#x27;s sons invest heavily in defense tech as father&#x27;s administration pours money in&quot; (July 13, 2026).
+- [ ] State-directed capitalism (2025, contemporaneously reported): the Intel equity stake; the US Steel &#x27;golden share&#x27;; the Nvidia/AMD China-revenue arrangement; the TikTok–Oracle transaction; the sovereign wealth fund executive order.
+- [ ] Frames scholarship: Levitsky &amp; Way, &quot;The Path to American Authoritarianism&quot; (Foreign Affairs, 2025); Levitsky &amp; Ziblatt on patrimonialism (2025); Chayes, *Thieves of State* and subsequent kleptocracy work; Magyar, *Post-Communist Mafia State*; Britannica, &quot;No Kings protests&quot; (2026).
+
+## Second-Edition Sources (added July 19, 2026)
+
+- [ ] Human Rights Watch: Dying in Detention — Rising Deaths in an Expanding US Immigration Detention System (June 25, 2026).
+- [ ] National Immigration Project (NIPNLG): Mourning Those Who Have Died in ICE Custody (updated July 15, 2026); AILA detention-death records.
+- [ ] Warren–Raskin letter to GEO Group Chairman Zoley on the warehouse Detention Reengineering Initiative (March 29, 2026); Bloomberg, NBC, Washington Post, and Wired reporting on the DRI (December 2025–February 2026); the ICE DRI white paper disclosed via Gov. Kelly Ayotte&#x27;s office.
+- [ ] Supreme Court of the United States: Learning Resources, Inc. v. Trump (Feb. 20, 2026); the birthright citizenship decision (June 30, 2026); the Slaughter decision overruling Humphrey&#x27;s Executor (June 29, 2026); Trump v. Cook proceedings. Analyses: Penn Wharton Budget Model, WilmerHale, Skadden, Holland &amp; Knight, Norton Rose Fulbright, BDO, Brookings; NPR and CNN end-of-term coverage.
+- [ ] Congressional records: H.Con.Res. 86 (House Roll Call 199, June 3, 2026, 215–208); Senate war powers vote (June 23, 2026, 50–48); NPR, CNN, Time, and Al Jazeera war-powers coverage; Epstein Files Transparency Act (Nov. 2025) and subsequent release coverage (NBC, NPR, Britannica, Time interview with Rep. Khanna).
+- [ ] War documentation: Britannica, &quot;2026 Iran War&quot; (running account); Wikipedia articles on the 2026 Iran war, Strait of Hormuz crisis and campaign, US naval blockade, and ceasefire (with their underlying wire citations); CNN live war coverage (July 11–15, 2026); HRANA casualty documentation; UNICEF statements.
+- [ ] Fact-checking of presidential statements: Snopes and Lead Stories verification of the April 5, 2026 Easter post; Snopes coverage of the April hospitalization rumors.
+- [ ] Domestic deployments and the Insurrection Act: ACLU explainer (Jan. 30, 2026); NILC FAQ; States United Democracy Center; NPR (Jan. 15, 2026); American Oversight tracker; Wikipedia, 2025–2026 deployment of federal forces in the United States.
+- [ ] Economy: Bureau of Labor Statistics CPI releases via AP (April–July 2026); Dallas Fed working paper and CEPR column on the war&#x27;s inflation impact; Euronews energy coverage.
+- [ ] July 2026 election-administration developments: NBC News and The Hill live coverage of the July 16 presidential address, declassified releases, the SAVE America Act push, and DHS Secretary Mullin&#x27;s statements; CNN and CalMatters on the Newsom investigation; NBC on DOJ press subpoenas and the Lafayette Square fencing proposal.
+- [ ] Political landscape: The Hill, ABC News, Brookings, and the NPR tracker on record congressional retirements; NBC News on the political consequences for Epstein-transparency Republicans; coverage of the November 2025 off-year elections and 2026 primaries.</pre></div></body></html>
