@@ -41,13 +41,13 @@
   },
   {
    "path": "check.sh",
-   "bytes": 2176,
-   "sha256": "81c607e2c53282652d7c7591920424795302737fe4be11eabeb405b4d759c40f"
+   "bytes": 3473,
+   "sha256": "b67a210398c8108330069e2d1f2be1e71aaefd102d0e3a7aeaafd19739e8b74f"
   },
   {
    "path": "deploy.sh",
-   "bytes": 2620,
-   "sha256": "0733893289b4cde1b7bc635c02e2d3d92580cb3033a9ef1fff1b9e2fb38b3ac8"
+   "bytes": 2699,
+   "sha256": "d4f5a4d6ae6f0e15c6c099f4d3c8bd44ed6d648b3748e62c490da412512d5afb"
   },
   {
    "path": "final.css",

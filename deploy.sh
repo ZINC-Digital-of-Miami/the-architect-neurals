@@ -32,7 +32,7 @@ if [ "$MODE" = promote ]; then
 fi
 
 if [ "$BUILD" = yes ]; then
-  python3 -m pip install --quiet markdown
+  python3 -c 'import markdown' 2>/dev/null || python3 -m pip install --quiet markdown  # only if missing (PEP 668 hosts)
   python3 src/build_site3.py            # rewrites site/ from src/
 fi
 ./check.sh                              # all pre-deploy guards live in check.sh

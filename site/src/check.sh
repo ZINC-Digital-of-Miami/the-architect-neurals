@@ -12,6 +12,19 @@ for id in u-corrections u-silence u-threads brief-001 sources; do
 done
 grep -q '\$1,269,843' site/index.html                     || fail "C-002 ExodusPoint figure (\$1,269,843) missing — a correction was reverted"
 grep -q 'after discussion with The Nasdaq' site/index.html || fail "C-001 observer language missing"
+# consolidated edition (2026-08-22): corrections C-005..C-008, the eleven new chapters, both appendices
+for c in C-005 C-006 C-007 C-008; do
+  grep -q "$c" site/index.html                             || fail "correction $c missing — a correction was reverted"
+done
+for id in chapter-0-b chapter-c-2 chapter-e-2 chapter-e-3 chapter-g-2 chapter-h-the-warehouse chapter-m chapter-21-n chapter-21-o chapter-21-p chapter-21-q appendix-a appendix-b; do
+  grep -q "id=\"$id" site/index.html                      || fail "missing #$id — consolidated-edition chapter dropped"
+done
+[ "$(grep -c 'class="clock"' site/index.html)" -ge 9 ]    || fail "silence ledger has fewer than 9 clocks — a clock was dropped"
+# map prose must match map data (neural_map.html counts are hand-typed)
+NN=$(python3 -c "import json;d=json.load(open('site/map/data.json'));print(len(d['nodes']))")
+NE=$(python3 -c "import json;d=json.load(open('site/map/data.json'));print(len(d['edges']))")
+grep -q "$NN nodes · $NE edges" site/neural.html          || fail "neural.html says a different node/edge count than map/data.json ($NN/$NE)"
+grep -q "data state $(python3 -c "import json;print(json.load(open('site/map/data.json'))['current'])")" site/neural.html || fail "neural.html data-state date differs from map/data.json"
 test -s site/neural.html && test -s site/map/svg.frag && test -s site/map/data.json || fail "neural map assets missing"
 test -s site/src/MANIFEST.json                            || fail "site/src/MANIFEST.json missing — rebuild with build_site3.py v3.2+"
 grep -q 'Disallow: /src/' site/robots.txt                 || fail "robots.txt does not disallow /src/"
