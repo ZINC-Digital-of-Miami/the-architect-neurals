@@ -60,8 +60,8 @@
   },
   {
    "path": "check.sh",
-   "bytes": 5772,
-   "sha256": "fb7031d2289607aaa77d8bdc9621a57e5dbbe8148d02277f49c7718ca2fe93bc"
+   "bytes": 6825,
+   "sha256": "da4887c300029dccdfca9f554a14a6c193bd954bd1410f3333267805ba6c6c61"
   },
   {
    "path": "deploy.sh",
