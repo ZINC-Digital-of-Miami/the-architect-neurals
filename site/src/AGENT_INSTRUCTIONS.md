@@ -124,6 +124,13 @@ under the project's default protection; `vercel curl` reads through it for check
 
 ## 4. Design tokens — do not re-invent the look
 
+**THE LIVE SITE IS THE DESIGN.** <https://the-architecture-neurals.vercel.app/> is canonical and current
+until Kirk says otherwise. It is not up for discussion, review, comparison, or improvement. Do not raise it,
+do not propose alternatives, do not flag it as an open question, do not ask whether it should change. The
+pins in check.sh exist to keep it exactly as it is. If Kirk changes it, he will say so and the pins get
+updated then — by him, not by an agent noticing something.
+
+
 The look is defined once, in `src/final.css` (mirrored to `site/styles.css` by the build).
 A deliberate single theme: white ground, large serif type, full-width shell with a left
 sidebar and a dark top menu. Take every value from these variables.
