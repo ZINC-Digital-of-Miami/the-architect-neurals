@@ -14,7 +14,7 @@ GATES
   G7 anchors                 PASS (5 anchors only; corrections append-only 13->17; clocks 12, all advanced)
   G8 build + check.sh        PASS (exit 0, in work/ and again on the synced tree)
   G9 live                    PASS (three URLs 200; manifest current_through=2026-08-30)
-  G10 push                   see PUSH below
+  G10 push                   PASS (git ls-remote origin main == git rev-parse HEAD)
   G11 turnover               PASS (_backups/TURNOVER_2026-08-30.md)
 
 DEPLOYMENTS (two, deliberate)
@@ -55,3 +55,9 @@ ERRORS
   A research agent left a scratch file (src/agents/fts2.json, a raw EDGAR full-text search response) in the
   specialist directory. Caught at staging, deleted from work/src, src and the index. Never in MANIFEST.json;
   site/index.html SHA-256 unchanged, so the live site was unaffected and no redeploy was needed.
+
+PUSH
+  Commit  : "Weekly Brief 003 — week ending 2026-08-30"
+  SHA     : ab6573584497468e31ad40da79c1034c1c85e802
+  Remote  : https://github.com/ZINC-Digital-of-Miami/the-architect-neurals.git  main
+  Landing : git ls-remote origin main == git rev-parse HEAD == ab6573584497468e31ad40da79c1034c1c85e802  (verified)
