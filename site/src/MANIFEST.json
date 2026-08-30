@@ -2,16 +2,16 @@
  "site": "https://the-architecture-neurals.vercel.app",
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
- "current_through": "2026-08-23",
+ "current_through": "2026-08-30",
  "master_edition": "2026-08-22",
  "counts": {
   "agents": 8,
-  "briefs": 2,
-  "corrections": 13,
+  "briefs": 3,
+  "corrections": 17,
   "clocks": 12,
   "map_nodes": 31,
-  "map_edges": 60,
-  "index_bytes": 594958
+  "map_edges": 62,
+  "index_bytes": 637562
  },
  "files": [
   {
@@ -31,43 +31,43 @@
   },
   {
    "path": "agents/1-elections.md",
-   "bytes": 8858,
-   "sha256": "41f4e8680d93bc02368d85123a309cab6bd4410ba15c8bccb0a403ff41c992fb"
+   "bytes": 13618,
+   "sha256": "a96f2cb8771311ca43108b3a856e9dfbc6b67637d6bde2dff14491d684d5fd9e"
   },
   {
    "path": "agents/2-executive-power.md",
-   "bytes": 8237,
-   "sha256": "f357ed27e0d612d7d01bc9c789b9c380a874c5aa441d5e5772d81050d7ade5c6"
+   "bytes": 12788,
+   "sha256": "952435827a598a23604e6ceb35e39b8a8d6f59216c7010deb0f4d17700abbc66"
   },
   {
    "path": "agents/3-wars.md",
-   "bytes": 9265,
-   "sha256": "f7bd9cbc543eb2c59d6c3adef7f769f49eba1c2126f3001a4f2ade8a516ed9f6"
+   "bytes": 15260,
+   "sha256": "7b385a136b8fff88dc43b147db735c820e9aff361463c6a35fdeef24bb15791b"
   },
   {
    "path": "agents/4-epstein-doj.md",
-   "bytes": 10579,
-   "sha256": "61a4240fde512924696a92c62cee114040c8811769487cdc53b4dc83927ca6df"
+   "bytes": 19415,
+   "sha256": "f283239a783a267b139667fc5a351c1b8958e54c4db34f9d28f2796a462778f8"
   },
   {
    "path": "agents/5-detention.md",
-   "bytes": 10081,
-   "sha256": "b208061d23fe063e66e0582fa812dc2610c2dd1fc6b28e82feda3f6a995b4909"
+   "bytes": 17112,
+   "sha256": "11866fd6cb1efebaf76f1fa234b1837741ad4cdea69db8a175fa1d0539cd9285"
   },
   {
    "path": "agents/6-succession.md",
-   "bytes": 8527,
-   "sha256": "4e8ec712caa29c2ee8f6ef7c476db9835b0d4b10e57bc284fb4ada2df558742b"
+   "bytes": 12957,
+   "sha256": "f00e4525feff23bb2b011fdebc04f2c7eee8b509c55b286796af9a26133860cf"
   },
   {
    "path": "agents/7-money.md",
-   "bytes": 12054,
-   "sha256": "63e520b0ff00d260f477b100a856dfa477604a1287614a5b5914e24d812d9a77"
+   "bytes": 18996,
+   "sha256": "696b901c9cdf8644316de44bac35e73fb3c4817d561941f49cdd19dad2590ef9"
   },
   {
    "path": "agents/8-dockets.md",
-   "bytes": 10111,
-   "sha256": "24c47725df88a5a8568206e3f11380253d9a2c8ff4981a5ce37344088a83aa30"
+   "bytes": 18885,
+   "sha256": "c62a4362062ad4b1ae071884eac4577f32f0f466ade03fa8b2879967b2c17e23"
   },
   {
    "path": "brief_lint.py",
@@ -83,6 +83,11 @@
    "path": "briefs/2026-08-23.html",
    "bytes": 37631,
    "sha256": "7b40ac3b2fbb9417df33b144c27437fe756841039c77047bbfb535f1c3d85e91"
+  },
+  {
+   "path": "briefs/2026-08-30.html",
+   "bytes": 37534,
+   "sha256": "66ca4096e3121c7dc18f5eb70cf695b46f0248eba63c87b8f00f0dadcb41874f"
   },
   {
    "path": "briefs/_TEMPLATE.html",
@@ -101,8 +106,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 31995,
-   "sha256": "b701eb94bcd403e4a255dfadc5ee06d6034185a0b736364673e649529af2d5f1"
+   "bytes": 31920,
+   "sha256": "c48af7597103e77c15d062e6e362fee4462f5e450f4c6e7c6a1b956128924221"
   },
   {
    "path": "check.sh",
@@ -121,8 +126,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 11170,
-   "sha256": "46e04d9e3efdf218b08a239e135588e19539705a2732f219146772800da861fc"
+   "bytes": 9813,
+   "sha256": "b4f8002a5f2af0f07e65623671e2cf86eaa2f563a95a27e5bdab83013f2c57d7"
   },
   {
    "path": "mapgen.js",
@@ -136,18 +141,18 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 7246,
-   "sha256": "5c15e103a76876c8a33cd8e29e052e43eeff8a06ffdacf87ede85705e651eb38"
+   "bytes": 7528,
+   "sha256": "ffd339639662ba3b23a2584eaec774958d07c3fbcac8e87b0626d19e1af97447"
   },
   {
    "path": "neural_map.html",
-   "bytes": 18025,
-   "sha256": "86999f1f103f2b551b07fb1a66afc12faa07d450e8aec6b152dea6171b28e984"
+   "bytes": 18516,
+   "sha256": "a2b48de67b6e2ee81648c94e25ad56627f9425b3148ecc267207dbaa94b167bc"
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 68786,
-   "sha256": "14d258556060b17999b8747966aa963d90852f73ac5f2a955d27677ef96245ce"
+   "bytes": 70791,
+   "sha256": "8b536bec4a439bc59a0759ed83db0467b69b765e7c6a0361eabeb75ee095fe38"
   },
   {
    "path": "pull_src.sh",
@@ -161,8 +166,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 36087,
-   "sha256": "3bc959334f97b733320ce93f9ec12572236300c996fa0422262a4afcda375821"
+   "bytes": 41274,
+   "sha256": "f410807ad029437101823f4325e68c45a6ee27008c674fe095d069dc484961d4"
   }
  ]
 }

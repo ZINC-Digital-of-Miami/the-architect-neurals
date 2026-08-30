@@ -1,0 +1,57 @@
+RUN LOG — THE ARCHITECTURE — 2026-08-30 (Brief 003, week ending Sunday Aug 30)
+
+SOURCE DEPLOYMENT USED FOR THE PULL
+  https://the-architecture-neurals.vercel.app (live alias); current_through 2026-08-23; 30 files, every SHA-256 verified.
+
+GATES
+  G0 vercel whoami           PASS (zincdigitalofmiami)
+  G1 git status --porcelain  PASS (empty)
+  G2 pull_src.sh work        PASS (30 files, hashes verified)
+  G3 window                  PASS (PREV 2026-08-23 < SUNDAY 2026-08-30)
+  G4 spawn                   PASS (8 Agent calls in one message; 8 non-null returns; 0 nested spawns)
+  G5 verify                  PASS (every [A] opened in the main thread; see notes)
+  G6 brief_lint.py           PASS (exit 0, first run)
+  G7 anchors                 PASS (5 anchors only; corrections append-only 13->17; clocks 12, all advanced)
+  G8 build + check.sh        PASS (exit 0, in work/ and again on the synced tree)
+  G9 live                    PASS (three URLs 200; manifest current_through=2026-08-30)
+  G10 push                   see PUSH below
+  G11 turnover               PASS (_backups/TURNOVER_2026-08-30.md)
+
+DEPLOYMENTS (two, deliberate)
+  1) dpl_BWqN3HyPbdvDE5fUib6XBx8oNqyY -> the-architecture-kyx6zwkxm  (brief + site)
+  2) the-architecture-6zmcijqu2                                       (adds the eight rewritten specialist handoffs)
+  Both aliased to https://the-architecture-neurals.vercel.app on the first invocation.
+  Vercel CLI 59.3.0. The 53.x first-deploy exception recorded last week did NOT recur.
+
+LIVE STATUS
+  LIVE — verified 2026-08-30.
+  GET /                        200, masthead carries 2026-08-30
+  GET /briefs/2026-08-30.html  200
+  GET /src/MANIFEST.json       200, current_through = 2026-08-30
+  GET /src/agents/7-money.md   200, carries the 2026-08-30 handoff
+
+INDEX SHA-256
+  96c67414e1c3b1b3e74ee56fc53be7d0f35b223f7f0cb87f8dab558a2be9d479  site/index.html  (637,562 B)
+
+COUNTS  briefs 2->3 | corrections 13->17 | clocks 12->12 (all advanced) | map 31/60 -> 31/62 | index +42,604 B
+
+CORRECTIONS AND CONTEXT ADDED
+  C-013  FBI HQ appeal WAS noticed (ECF 36, Aug 19; CA4 26-2158, Aug 24)
+  C-014  AIFC Nasdaq deficiency Jul 1, 8-K Item 3.01 acc. 0001493152-26-031925; cure by Dec 28, 2026
+  C-015  ExodusPoint restored to [A] (CIK 0001736225; acc. 0001736225-26-000010; 2,170,301 sh / $1,269,843)
+  C-016  Warren/Garcia letter says 3,555 trades (OGE Form 278-T Q1 2026); "17,000+" appears nowhere in it
+  All four are [A] and all four correct this corpus's own anchors.
+
+MAP  USPS->SCOTUS upgraded [O]->[A]; new [A] edges UAE->WLF and TREASURY->IRAN; no new nodes; data state 2026-08-30.
+
+CLOCKS AS OF 2026-08-30
+  272 / 230 / 41 / 382 / 73 / 185 / 45 / 25 / 96 / 39 / +2 (Warren-Garcia deadline passed Aug 28 unanswered) / undated.
+
+ERRORS
+  None fatal. One build failure and one recovery: the first build failed check.sh page hygiene on a dead in-page
+  anchor (#brief-003); the correct id is #brief-2026-08-30. Fixed in src/update_part2.html and rebuilt.
+  CourtListener throttling (empty-body responses at ~5 req/min) prevented opening the D. Colo. GEO injunction,
+  so no correction was published on the Aug 20-vs-Aug 21 date conflict.
+  A research agent left a scratch file (src/agents/fts2.json, a raw EDGAR full-text search response) in the
+  specialist directory. Caught at staging, deleted from work/src, src and the index. Never in MANIFEST.json;
+  site/index.html SHA-256 unchanged, so the live site was unaffected and no redeploy was needed.

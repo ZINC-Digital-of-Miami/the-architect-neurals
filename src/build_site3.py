@@ -178,17 +178,17 @@ cast = '''
 </section>'''
 
 rail_stops = [
- ("AUG 24","Treasury presser — the Iran “economic operation”",""),
- ("AUG 26","USPS mail-ballot rule publishes; D. Mass. enforcement motion pending",""),
- ("AUG 27","Phang v. Blanche: DOJ response on the withheld notes",""),
- ("AUG 27","ICE Mega Hub deadline (SAM) — or Aug 31 per ICE",""),
- ("AUG 28","Warren/Garcia trades letter due; Preska joint letter",""),
  ("SEP 2","Missouri Supreme Court — referendum argument",""),
  ("SEP 3","Phang reply; FCC opposes Disney TRO",""),
+ ("SEP 4","Slavin v. Parnell — TRO hearing on the Stripes firings",""),
+ ("SEP 10","Ballot-rule restraining order expires",""),
  ("SEP 14","Congress returns — SAVE Act; war powers; S. 5300",""),
  ("SEP 15","CA4 argument: Comey / James dismissal appeals",""),
  ("SEP 24","US v. Harvard (Title VII) motion hearing",""),
+ ("SEP 25","ICE Mega Hub — IDIQ awards due",""),
  ("SEP 29","D.C. Circuit en banc — Boasberg contempt inquiry",""),
+ ("SEP 30","Camp East Montana contract ends",""),
+ ("OCT 6","Disney v. FCC — TRO/PI hearing, Courtroom 21",""),
  ("OCT 21","Comey trial date, New Bern",""),
  ("OCT 28","Bolton sentencing, Greenbelt",""),
  ("NOV 3","THE MIDTERMS — the nearest test with a date","big"),
