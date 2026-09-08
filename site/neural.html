@@ -624,7 +624,7 @@
     <div class="nm-workspace" id="nm-workspace">
       <div class="nm-toolbar"><label class="nm-search" for="nm-search"><span class="nm-label">Find an entity or topic</span><input id="nm-search" type="search" placeholder="Search people, institutions, topics…" autocomplete="off" aria-controls="nm-entity-list"></label><div class="nm-mode" role="group" aria-label="Map display"><button type="button" id="nm-view-network" aria-pressed="true" aria-controls="nm-network">Network</button><button type="button" id="nm-view-entities" aria-pressed="false" aria-controls="nm-entities">Entities</button></div></div>
       <div class="nm-filters"><label class="nm-filter"><span class="nm-label">Topic</span><select id="nm-topic"><option value="">All topics</option></select></label><label class="nm-filter"><span class="nm-label">Relationship grade</span><select id="nm-grade"><option value="">All grades</option><option value="A">[A] Documented</option><option value="B">[B] Reported</option><option value="C">[C] Alleged / denied</option><option value="O">[O] Adjacency</option></select></label><button type="button" id="nm-reset">Reset all</button></div>
-      <p class="nm-meta"><span id="nm-count">48 nodes · 81 edges</span> · existing report snapshot</p><p class="nm-meta nm-status" id="nm-status" role="status" aria-live="polite">Loading relationships…</p><p class="nm-coverage" id="nm-coverage" hidden></p>
+      <p class="nm-meta"><span id="nm-count">48 nodes · 81 edges</span> · preserved report and reviewed additions</p><p class="nm-meta nm-status" id="nm-status" role="status" aria-live="polite">Loading relationships…</p><p class="nm-coverage" id="nm-coverage" hidden></p>
       <div class="nm-network" id="nm-network"><div class="nm-canvas" id="nm-canvas"><div class="nm-loading">Loading the map…</div></div><p class="nm-network-note">Select an entity to focus its connections. Drag empty space to pan. Use + / − to zoom; arrow keys pan the focused canvas.</p><div class="nm-zoom" role="group" aria-label="Map viewport"><button type="button" id="nm-zoom-in" aria-label="Zoom in">+</button><button type="button" id="nm-zoom-out" aria-label="Zoom out">−</button><button type="button" id="nm-fit" aria-label="Fit visible entities">Fit</button><button type="button" id="nm-motion" aria-pressed="false">Pause pulse</button></div></div>
       <div id="nm-entities" hidden><ul class="nm-entity-list" id="nm-entity-list" aria-label="Entities"></ul><p class="nm-empty" id="nm-empty" hidden>No entities match these filters. Try another term or reset the filters.</p></div>
       <div class="nm-legend" aria-label="Relationship evidence legend"><span><b class="nm-grade">A</b> Documented</span><span><b class="nm-grade nm-grade-B">B</b> Reported</span><span><b class="nm-grade nm-grade-C">C</b> Alleged / denied</span><span><b class="nm-grade nm-grade-O">O</b> Adjacency</span></div><p class="nm-meta" id="nm-registry-status">Grades describe relationship claims in the existing report, not ratings of people.</p>
@@ -909,14 +909,14 @@
     $("nm-name").textContent = node.name;
     $("nm-subtitle").textContent = node.sub || "Entity in the existing report";
     $("nm-flag").textContent = node.flag
-      ? node.flag + " in this map snapshot"
-      : "Existing report node";
+      ? node.flag + " · original map flag, " + data.current
+      : "Dated entity record";
     $("nm-copy-status").textContent = "";
     const report = safeHref(meta.reportHref || "/");
     $("nm-panel-overview").innerHTML =
       "<p>" +
       all.length +
-      " relationships in the report snapshot. " +
+      " relationships in the accumulated map. " +
       shown.length +
       " match the current view.</p>" +
       (topics.length
@@ -1079,7 +1079,8 @@
     renderDossier();
     $("nm-count").textContent =
       Object.keys(data.nodes).length + " nodes · " + data.edges.length + " edges";
-    $("nm-data-state").textContent = "data state " + data.current;
+    $("nm-data-state").textContent = "Original map data state " + data.current +
+      (registry && registry.updatedAt ? " · research additions reviewed " + registry.updatedAt : "");
     $("nm-status").textContent =
       (drawingFailed ? "The network drawing is unavailable; the entity list remains usable. " : "") +
       keys.length +

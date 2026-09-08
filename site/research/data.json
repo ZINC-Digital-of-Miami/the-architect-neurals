@@ -2707,6 +2707,60 @@
       "id": "candidate-origin-normalization-20260908",
       "date": "2026-09-08",
       "summary": "Normalize origin IDs in four newly researched, unpublished candidate sources before release, retaining original URLs and statements. Original registry source records remain unchanged."
+    },
+    {
+      "id": "reviewed-connection-paths-20260908",
+      "date": "2026-09-08",
+      "summary": "Add two dated connection paths using already reviewed map relationships and claims; retain each step’s sources and causal limits.",
+      "pathIds": [
+        "taj-creditor-network",
+        "ross-finance-government-bridge"
+      ]
+    }
+  ],
+  "networkPaths": [
+    {
+      "id": "taj-creditor-network",
+      "title": "The Taj creditor network, 1988–1991",
+      "summary": "Rothschild Inc. advised Taj bondholders in the restructuring. The bondholders negotiated with the casino business to which Trump had contributed capital.",
+      "context": "The capital contribution and creditor negotiations are separately dated relationships. Creditor-side advisory work does not establish a personal loan from a Rothschild family member or continuing institutional control.",
+      "nextCheck": "Retrieve the creditor engagement, committee appointment and fee orders to establish the precise legal mandate and its duration.",
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "entityIds": [
+        "ROTHSCHILD_INC",
+        "TAJ_BONDHOLDERS",
+        "TAJ_ASSOCIATES",
+        "TRUMP"
+      ],
+      "edgeIndices": [
+        70,
+        69,
+        67
+      ],
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "ross-finance-government-bridge",
+      "title": "Wilbur Ross: creditor adviser to Commerce secretary",
+      "summary": "The same person connects the earlier creditor negotiations with a later Trump administration appointment.",
+      "context": "The SEC-filed biography dates the end of Ross’s Rothschild Inc. employment to March 2000; his Commerce appointment followed in February 2017. The path is a personnel connection across time. A continuing institutional mandate or influence over the appointment requires separate evidence.",
+      "nextCheck": "Check dated appointment ethics records and disclosed interests for a specific continuing relationship; former employment alone does not establish one.",
+      "topicIds": [
+        "trump-early-financing",
+        "trump-later-financing"
+      ],
+      "entityIds": [
+        "ROTHSCHILD_INC",
+        "ROSS",
+        "TRUMP"
+      ],
+      "edgeIndices": [
+        71,
+        74
+      ],
+      "reviewedAt": "2026-09-08"
     }
   ],
   "reportSections": [

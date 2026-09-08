@@ -168,7 +168,27 @@ def build_research(root, dist, render_page):
         write_page(f"topics/{ident}.html", topic["title"] + " — The Architecture", body, "topics")
         urls.append(f"/topics/{ident}.html")
 
-    overview = ('<section class="research-view" id="view-overview" data-view="overview"><h2>Questions across the report</h2><div class="topic-list">'
+    connections = '<section class="research-view" id="view-connections" data-view="connections"><h2>Connections across the record</h2><p>Follow each relationship, its date and its evidence. A path can cross different periods; it does not by itself establish shared intent or continuing control.</p>'
+    relationships = {r["mapEdgeIndex"]: r for r in data.get("relationships", [])}
+    for path in data.get("networkPaths", []):
+        connections += (f'<article class="evidence-record" id="connection-{esc(path["id"])}"><h3>{esc(path["title"])}</h3>'
+                        f'<p>{esc(path["summary"])}</p><ol class="question-list">')
+        for index in path["edgeIndices"]:
+            start, end, grade, label = map_data["edges"][index]
+            record = relationships[index]
+            connections += '<li>' + ' → '.join(
+                f'<a href="/neural.html?entity={quote(entity)}&amp;topic={quote(path["topicIds"][0])}">{esc(map_data["nodes"][entity]["name"])}</a>'
+                for entity in (start, end)) + f'<p>{esc(label)} · Evidence [{esc(grade)}]</p><p>'
+            connections += ' · '.join(f'<a href="/synthesis.html#claim-{esc(cid)}">Read the supporting record</a>' for cid in record["claimIds"])
+            connections += '</p>' + source_links(record["sourceIds"]) + '</li>'
+        connections += (f'</ol><p class="record-context">{esc(path["context"])}</p><p><strong>Next check:</strong> {esc(path["nextCheck"])}</p>'
+                        f'<p class="topic-meta">Reviewed {esc(path["reviewedAt"])}</p>'
+                        f'<p><a href="/neural.html?topic={quote(path["topicIds"][0])}">Explore the complete topic map →</a></p></article>')
+    if not data.get("networkPaths"):
+        connections += '<p>No connection paths have completed evidence review yet.</p>'
+    connections += '</section>'
+
+    overview = ('<section class="research-view" id="view-overview" data-view="overview"><h2>Questions across the report</h2><p><a href="?view=connections">Explore connections across the record →</a></p><div class="topic-list">'
                 + "".join(topic_row(t) for t in data["topics"] if t["status"] in {"active", "new"})
                 + '</div><p><a href="/topics.html">Browse every research topic →</a></p><div class="research-grid">'
                 '<section class="research-panel"><h2>Compare the history</h2><p>Examine original records, similarities, material differences and evidence against each comparison.</p><a href="?view=compare">Open historical comparisons →</a></section>'
@@ -196,8 +216,8 @@ def build_research(root, dist, render_page):
     checks += '</div></section>'
     contents = '<section class="research-view" id="view-contents" data-view="contents"><h2>The complete report index</h2><p>These links open the preserved authored sections, including their interpretations and qualifications. Inclusion is not a new verification of each underlying claim.</p><ol class="report-outline">'
     contents += "".join(f'<li class="outline-level-{row["level"]}"><a href="{esc(row["href"])}">{esc(row["title"])}</a></li>' for row in outline) + '</ol></section>'
-    tabs = '<div class="view-tabs" aria-label="Synthesis views">' + "".join(f'<button type="button" data-view-tab="{ident}" aria-controls="view-{ident}">{label}</button>' for ident, label in (("overview", "Overview"), ("timeline", "Timeline"), ("compare", "Historical comparisons"), ("checks", "Records to check"), ("contents", "Full report"))) + '</div>'
+    tabs = '<div class="view-tabs" aria-label="Synthesis views">' + "".join(f'<button type="button" data-view-tab="{ident}" aria-controls="view-{ident}">{label}</button>' for ident, label in (("overview", "Overview"), ("connections", "Connections"), ("timeline", "Timeline"), ("compare", "Historical comparisons"), ("checks", "Records to check"), ("contents", "Full report"))) + '</div>'
     body = ('<header class="research-intro"><p class="kicker">SYNTHESIS</p><h1>The wider picture.</h1><p class="dek">Explore the record, compare the history, follow what changes.</p>'
-            + freshness + '</header>' + tabs + overview + timeline + comparison_html + checks + contents + footer)
+            + freshness + '</header>' + tabs + overview + connections + timeline + comparison_html + checks + contents + footer)
     write_page("synthesis.html", "Synthesis — The Architecture", body, "synthesis")
     return urls

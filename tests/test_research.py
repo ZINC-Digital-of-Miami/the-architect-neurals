@@ -22,6 +22,57 @@ class ResearchIntegrityTests(unittest.TestCase):
     def test_real_registry_has_resolvable_sources_and_entities(self):
         validate(self.data, self.map)
 
+    def test_connection_path_rejects_a_disconnected_intermediary(self):
+        path = self.data["networkPaths"][0]
+        path["entityIds"][1] = next(n for n in self.map["nodes"] if n not in path["entityIds"])
+        with self.assertRaisesRegex(ValueError, "disconnected"):
+            validate(self.data, self.map)
+
+    def test_connection_path_cannot_promote_an_unverified_claim(self):
+        index = self.data["networkPaths"][0]["edgeIndices"][0]
+        relation = next(r for r in self.data["relationships"] if r["mapEdgeIndex"] == index)
+        claim = next(c for c in self.data["claims"] if c["id"] == relation["claimIds"][0])
+        claim["status"] = "lead"
+        with self.assertRaisesRegex(ValueError, "current documented"):
+            validate(self.data, self.map)
+
+    def test_connection_path_rejects_documented_but_unrelated_evidence(self):
+        relation = next(r for r in self.data["relationships"] if r["mapEdgeIndex"] == 70)
+        unrelated = next(c for c in self.data["claims"] if c["id"] == "afd-thuringia-history-ruling-2024")
+        relation.update(claimIds=[unrelated["id"]], sourceIds=unrelated["sourceIds"])
+        with self.assertRaisesRegex(ValueError, "does not support"):
+            validate(self.data, self.map)
+
+    def test_relationship_evidence_changes_require_retained_history(self):
+        candidate = copy.deepcopy(self.data)
+        relation = next(r for r in candidate["relationships"] if r["mapEdgeIndex"] == 70)
+        before = copy.deepcopy(relation)
+        relation["reportHref"] = "/topics/trump-early-financing.html"
+        with self.assertRaisesRegex(ValueError, "before and after evidence"):
+            validate_transition(self.data, candidate, self.map)
+        candidate["revisions"].append({"id": "relationship-evidence-review", "date": "2026-09-08",
+            "changes": [{"collection": "relationships", "mapEdgeIndex": 70,
+            "before": before, "after": copy.deepcopy(relation), "reason": "Retain the prior evidence route."}]})
+        validate_transition(self.data, candidate, self.map)
+
+    def test_new_connection_path_requires_a_revision(self):
+        candidate = copy.deepcopy(self.data)
+        candidate["networkPaths"].append({**copy.deepcopy(candidate["networkPaths"][0]), "id": "unreviewed-path"})
+        with self.assertRaisesRegex(ValueError, "new path requires"):
+            validate_transition(self.data, candidate, self.map)
+
+    def test_connection_path_context_changes_retain_prior_interpretation(self):
+        candidate = copy.deepcopy(self.data)
+        path = candidate["networkPaths"][0]
+        before = copy.deepcopy(path)
+        path["context"] = "A newly reviewed interpretation with explicit limits."
+        with self.assertRaisesRegex(ValueError, "before and after"):
+            validate_transition(self.data, candidate, self.map)
+        candidate["revisions"].append({"id": "path-context-review", "date": "2026-09-08",
+            "pathIds": [path["id"]], "changes": [{"collection": "networkPaths", "id": path["id"],
+            "before": before, "after": copy.deepcopy(path), "reason": "New evidence changes the interpretation."}]})
+        validate_transition(self.data, candidate, self.map)
+
     def test_single_wire_story_cannot_be_promoted_by_syndication(self):
         candidate = copy.deepcopy(self.data)
         claim = next(c for c in candidate["claims"] if c["id"] == "rothschild-taj-creditor-role")

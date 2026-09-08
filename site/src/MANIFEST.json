@@ -106,8 +106,8 @@
   },
   {
    "path": "build_research.py",
-   "bytes": 17225,
-   "sha256": "b6cf33bea32ac30c1c636fcde104fa2ff559b79f057b42903632f16d70a9bd6b"
+   "bytes": 19193,
+   "sha256": "315f197fe848d35ee9fbbb4a2e12872599f0660b88b4f5b6b08668ffc49b2c60"
   },
   {
    "path": "build_site3.py",
@@ -151,8 +151,8 @@
   },
   {
    "path": "neural_map.html",
-   "bytes": 49001,
-   "sha256": "f18beba06d853ee83610d0bfe6d3fa30cf9d33d0e75d2f3e54e11d1a8ab5cc41"
+   "bytes": 49149,
+   "sha256": "41506c281bdc21e021c4107930c75a47c44a096d0217e01129eb8129ff12c538"
   },
   {
    "path": "neural_svg.frag",
@@ -166,13 +166,13 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 89675,
-   "sha256": "60cc8f31925e7b155b80fcc57e730867b24e2eac4198f909476d1f667f5794cb"
+   "bytes": 92003,
+   "sha256": "1d5a34340c1b2194b5d626689969a491f4ca5604d31717d0ca62570106f31876"
   },
   {
    "path": "research_registry.py",
-   "bytes": 18620,
-   "sha256": "2b5dfd25e7a5974ccf3a7132ca6cb8c2516bf0d019ca3f72f0cc0f0bef2705ff"
+   "bytes": 20405,
+   "sha256": "e9b50c6cc20301826d127e628640af05e87802ce29412fa75f2ea72de8ad7393"
   },
   {
    "path": "research_ui.js",

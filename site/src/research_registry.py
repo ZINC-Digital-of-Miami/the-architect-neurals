@@ -176,13 +176,24 @@ def validate(data, map_data=None):
         for position, index in enumerate(indices):
             if type(index) is not int or index not in mappings:
                 raise ValueError(f"{path['id']}: path requires a sourced relationship for every step")
-            claims = mappings[index].get("claimIds", [])
-            if not claims or any(tables['claims'][c]['status'] != 'documented' for c in claims):
-                raise ValueError(f"{path['id']}: path requires current documented claims")
             if map_data:
                 edge = map_data['edges'][index]
                 if set(edge[:2]) != set(nodes[position:position + 2]) or edge[2] not in {'A', 'B'}:
                     raise ValueError(f"{path['id']}: disconnected or unsupported path step")
+            claims = mappings[index].get("claimIds", [])
+            if not claims or any(tables['claims'][c]['status'] != 'documented' for c in claims):
+                raise ValueError(f"{path['id']}: path requires current documented claims")
+            cited = set(mappings[index]["sourceIds"])
+            supported_sources = set()
+            for claim_id in claims:
+                claim = tables['claims'][claim_id]
+                if (not set(nodes[position:position + 2]).issubset(claim.get('entityIds', []))
+                        or not set(path['topicIds']).intersection(claim['topicIds'])
+                        or not cited.intersection(claim['sourceIds'])):
+                    raise ValueError(f"{path['id']}: claim does not support this path step")
+                supported_sources.update(claim['sourceIds'])
+            if not cited.issubset(supported_sources):
+                raise ValueError(f"{path['id']}: relationship cites sources outside its supporting claims")
     return tables
 
 
@@ -205,6 +216,18 @@ def validate_transition(previous, candidate, map_data=None):
                 if incoming.get(field) != value:
                     raise ValueError(f"Cannot rewrite historical {key} record {ident}.{field}; append a new record")
     appended_revisions = [r for ident, r in new["revisions"].items() if ident not in old["revisions"]]
+    new_relationships = {r['mapEdgeIndex']: r for r in candidate.get('relationships', [])}
+    for before in previous.get('relationships', []):
+        index = before['mapEdgeIndex']
+        after = new_relationships.get(index)
+        if after is None:
+            raise ValueError(f"Cannot delete historical relationship evidence {index}")
+        if after != before and not any(
+            change.get('collection') == 'relationships' and change.get('mapEdgeIndex') == index
+            and change.get('before') == before and change.get('after') == after and change.get('reason')
+            for revision in appended_revisions for change in revision.get('changes', [])
+        ):
+            raise ValueError(f"Relationship {index}: changes require a dated revision retaining before and after evidence")
     for collection in ("comparisons", "watchpoints", "topicProposals", "categories", "networkPaths"):
         for ident, row in old[collection].items():
             if ident not in new[collection]:
@@ -231,6 +254,9 @@ def validate_transition(previous, candidate, map_data=None):
     for ident in new["claims"]:
         if ident not in old["claims"] and not any(ident in r.get("claimIds", []) for r in appended_revisions):
             raise ValueError(f"{ident}: new claim requires a dated revision")
+    for ident in new["networkPaths"]:
+        if ident not in old["networkPaths"] and not any(ident in r.get("pathIds", []) for r in appended_revisions):
+            raise ValueError(f"{ident}: new path requires a dated revision")
     return new
 
 
