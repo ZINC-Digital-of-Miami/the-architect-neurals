@@ -89,7 +89,11 @@
         "HOECKE",
         "CHRUPALLA",
         "MEUTHEN",
-        "LANZERATH"
+        "LANZERATH",
+        "TRUMP",
+        "MUSK",
+        "WEIDEL",
+        "VANCE"
       ],
       "reportLinks": [
         {
@@ -125,9 +129,26 @@
       "entityIds": [
         "IRAN",
         "TRUMP",
-        "PENTAGON"
+        "PENTAGON",
+        "TREASURY",
+        "OFAC",
+        "GG_BANK",
+        "GG_LEASING",
+        "GG_PORTFOLIO"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+          "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+        },
+        {
+          "label": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
+          "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+        },
+        {
+          "label": "Chapter 17: Foreign Policy and the Expansionist Pattern",
+          "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
+        },
         {
           "label": "Report: money and foreign affairs",
           "href": "/#the-money-the-profit-architecture"
@@ -194,7 +215,8 @@
         "TRUMP",
         "DOJ",
         "SCOTUS",
-        "P2025"
+        "P2025",
+        "MUSK"
       ],
       "reportLinks": [
         {
@@ -206,7 +228,7 @@
         "What is proposed, legally effective, stayed, appealed or implemented?",
         "What records establish compliance with each operative order?"
       ],
-      "status": "watching",
+      "status": "active",
       "keywords": [
         "executive order",
         "injunction",
@@ -237,7 +259,11 @@
         "LADDER_FINANCE",
         "LADDER_FINANCE_I",
         "AXOS",
-        "SCHWAB_BANK"
+        "SCHWAB_BANK",
+        "DONALD_TRUMP_JR",
+        "CAPITAL_1789",
+        "ERIC_TRUMP",
+        "ZACH_WITKOFF"
       ],
       "reportLinks": [
         {
@@ -249,7 +275,7 @@
         "Who held which disclosed interest at the relevant date?",
         "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
       ],
-      "status": "watching",
+      "status": "active",
       "keywords": [
         "ownership",
         "disclosure",
@@ -275,9 +301,23 @@
         "VAULT",
         "TRUST",
         "ALT5",
-        "TREASURY"
+        "TREASURY",
+        "ERIC_TRUMP",
+        "ZACH_WITKOFF"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
+          "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+        },
+        {
+          "label": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
+          "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+        },
+        {
+          "label": "Chapter F: The Pardon and Access Market",
+          "href": "/#chapter-f-the-pardon-and-access-market"
+        },
         {
           "label": "The Money",
           "href": "/#the-money-the-profit-architecture"
@@ -287,7 +327,7 @@
         "Which entity issued, held or transferred an asset?",
         "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
       ],
-      "status": "watching",
+      "status": "active",
       "keywords": [
         "crypto",
         "token",
@@ -308,9 +348,21 @@
       ],
       "entityIds": [
         "FCC",
-        "TMTG"
+        "TMTG",
+        "MUSK",
+        "WEIDEL",
+        "AFD",
+        "VANCE"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas",
+          "href": "/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces"
+        },
+        {
+          "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+          "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+        },
         {
           "label": "The Ideology",
           "href": "/#the-ideology-supremacy-politics-and-its-limits"
@@ -320,7 +372,7 @@
         "What was stated, by whom, when and in what context?",
         "What evidence establishes an institutional effect beyond the statement?"
       ],
-      "status": "watching",
+      "status": "active",
       "keywords": [
         "media",
         "speech",
@@ -347,6 +399,22 @@
         "DOJ"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter H: The Warehouse State — Detention as an Industry",
+          "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+        },
+        {
+          "label": "Chapter 14: The Enforcement and Detention Industrial Complex",
+          "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
+        },
+        {
+          "label": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
+          "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
+        },
+        {
+          "label": "Chapter 21-I: The Surveillance Consolidation",
+          "href": "/#chapter-21-i-the-surveillance-consolidation"
+        },
         {
           "label": "Current documentation",
           "href": "/#current-documentation-2025-july-2026"
@@ -383,9 +451,30 @@
         "UAE",
         "SAUDI",
         "QATAR",
-        "PAKISTAN"
+        "PAKISTAN",
+        "TREASURY",
+        "OFAC",
+        "GG_BANK",
+        "GG_LEASING",
+        "GG_PORTFOLIO"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+          "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+        },
+        {
+          "label": "Chapter 21-J: The External Board — Russia's Draft, Venezuela's Oil",
+          "href": "/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o"
+        },
+        {
+          "label": "Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government",
+          "href": "/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-"
+        },
+        {
+          "label": "Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut",
+          "href": "/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut"
+        },
         {
           "label": "Current documentation",
           "href": "/#current-documentation-2025-july-2026"
@@ -395,7 +484,7 @@
         "Which original records establish the sequence and legal authority?",
         "Are reported counts and economic measures comparable in period and definition?"
       ],
-      "status": "watching",
+      "status": "active",
       "keywords": [
         "war",
         "trade",
@@ -417,6 +506,18 @@
       ],
       "entityIds": [],
       "reportLinks": [
+        {
+          "label": "Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press",
+          "href": "/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an"
+        },
+        {
+          "label": "Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt",
+          "href": "/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol"
+        },
+        {
+          "label": "Chapter 8: What Scholars Tell Us About Democratic Erosion",
+          "href": "/#chapter-8-what-scholars-tell-us-about-democratic-erosion"
+        },
         {
           "label": "The honest assessment",
           "href": "/#the-honest-assessment"
@@ -451,6 +552,18 @@
         "FCC"
       ],
       "reportLinks": [
+        {
+          "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+          "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+        },
+        {
+          "label": "Chapter 21-I: The Surveillance Consolidation",
+          "href": "/#chapter-21-i-the-surveillance-consolidation"
+        },
+        {
+          "label": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
+          "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
+        },
         {
           "label": "The Money",
           "href": "/#the-money-the-profit-architecture"
@@ -884,6 +997,83 @@
       "originId": "ladder-capital-sec-filings",
       "locator": "Exhibit 21.1 to 2025 Form 10-K, accession 0001577670-26-000011; Lending/Real Estate Debt-Related Subsidiaries",
       "sourceType": "corporate_filing"
+    },
+    {
+      "id": "1789-trump-jr-profile",
+      "title": "Don Trump Jr — Partner",
+      "url": "https://1789capital.vc/don-trump-jr",
+      "publisher": "1789 Capital",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "sourceType": "corporate_statement",
+      "originId": "1789-capital",
+      "locator": "Heading, title and first biography paragraph; no effective appointment date supplied"
+    },
+    {
+      "id": "alt5-governance-20250829",
+      "title": "ALT5 Sigma Corporation Form 8-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/862861/000164117225026082/form8-k.htm",
+      "publisher": "ALT5 Sigma Corporation, filed through SEC EDGAR",
+      "publishedAt": "2025-08-29",
+      "accessedAt": "2026-09-08",
+      "sourceType": "corporate_filing",
+      "originId": "alt5-sec-filings",
+      "locator": "Accession 0001641172-25-026082; Item 5.02, Board Composition and Employment Matters, paragraphs 1–2; signed August 29; earliest report event August 25"
+    },
+    {
+      "id": "ofac-designations-20260904",
+      "title": "Iran-related Designations; Issuance of Iran-related General License",
+      "url": "https://ofac.treasury.gov/recent-actions/20260904",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "publishedAt": "2026-09-04",
+      "accessedAt": "2026-09-08",
+      "sourceType": "official_record",
+      "originId": "us-treasury-ofac",
+      "locator": "Release date and the three entity entries under Specially Designated Nationals List Updates"
+    },
+    {
+      "id": "ofac-iran-license-cc",
+      "title": "Iran General License CC",
+      "url": "https://ofac.treasury.gov/media/936881/download?inline",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "publishedAt": "2026-09-04",
+      "accessedAt": "2026-09-08",
+      "sourceType": "official_record",
+      "originId": "us-treasury-ofac",
+      "locator": "Complete one-page license; paragraphs (a)(1)–(4), payment condition and (b); director signature and date"
+    },
+    {
+      "id": "trump-musk-doge-announcement-2024",
+      "title": "Trump statement announcing Musk and Ramaswamy’s DOGE roles",
+      "url": "https://www.presidency.ucsb.edu/documents/statement-president-elect-donald-j-trump-announcing-that-elon-musk-and-vivek-ramaswamy",
+      "publisher": "Donald Trump, archived by The American Presidency Project",
+      "publishedAt": "2024-11-12",
+      "accessedAt": "2026-09-08",
+      "sourceType": "official_record",
+      "originId": "donald-trump-statements",
+      "locator": "Full November 12 statement, opening and paragraph describing advice from outside government"
+    },
+    {
+      "id": "afd-halle-campaign-record-2025",
+      "title": "AfD campaign launch in Halle with Weidel, Chrupalla and Musk video appearance",
+      "url": "https://www.afd.de/afd-kanzlerkandidatin-alice-weidel-und-bundessprecher-tino-chrupalla-eroeffneten-in-halle-an-der-saale-vor-rund-4-500-gaesten-den-bundestagswahlkampf/",
+      "publisher": "Alternative für Deutschland",
+      "publishedAt": "2025-01-25",
+      "accessedAt": "2026-09-08",
+      "sourceType": "party_statement",
+      "originId": "afd",
+      "locator": "Heading and opening two event paragraphs; event dated January 25, 2025"
+    },
+    {
+      "id": "vance-weidel-pool-20250214",
+      "title": "Vice Presidential Pool Reports of February 14, 2025",
+      "url": "https://www.presidency.ucsb.edu/documents/vice-presidential-pool-reports-february-14-2025",
+      "publisher": "White House pool report by Cat Zakrzewski, archived by The American Presidency Project",
+      "publishedAt": "2025-02-14",
+      "accessedAt": "2026-09-08",
+      "sourceType": "pool_report",
+      "originId": "white-house-pool",
+      "locator": "20:31 CET pool report #13, Alice Weidel; complete entry and adjacent arrival/departure records"
     }
   ],
   "claims": [
@@ -1392,6 +1582,174 @@
         "trump-later-financing",
         "ownership-disclosures"
       ]
+    },
+    {
+      "id": "trump-jr-1789-partner-profile",
+      "text": "1789 Capital’s published biography identifies Donald Trump Jr. as a partner responsible for investment origination, fundraising and strategy.",
+      "context": "This is the firm’s own description, reviewed September 8, 2026. The profile does not give an effective joining date or establish ownership percentages, fund holdings or a government role.",
+      "sourceIds": [
+        "1789-trump-jr-profile"
+      ],
+      "entityIds": [
+        "DONALD_TRUMP_JR",
+        "CAPITAL_1789"
+      ],
+      "topicIds": [
+        "ownership-disclosures"
+      ],
+      "eventDate": null,
+      "reviewedAt": "2026-09-08",
+      "recordType": "Company-published role description",
+      "status": "superseded"
+    },
+    {
+      "id": "alt5-separate-governance-roles-2025",
+      "text": "ALT5’s August 29, 2025 filing distinguishes Eric Trump’s observer designation from Zachary Witkoff’s accepted chairman appointment. It also records WLF’s right to nominate two directors and certain observation rights.",
+      "context": "These are separately described roles in Item 5.02. The filing does not appoint Eric as a director. It separately describes Zachary Folkman’s conditional director appointment. The earliest event on the cover is August 25; August 29 is the filing date, not a proven effective date for every role. Later changes require later records.",
+      "sourceIds": [
+        "alt5-governance-20250829"
+      ],
+      "entityIds": [
+        "ERIC_TRUMP",
+        "ZACH_WITKOFF",
+        "ALT5",
+        "WLF"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "eventDate": "2025-08-29",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Company filing: governance roles",
+      "status": "documented"
+    },
+    {
+      "id": "ofac-golden-global-designations-2026",
+      "text": "On September 4, 2026, Treasury’s OFAC added Golden Global Yatirim Bankasi Anonim Sirketi, Golden Global Varlik Kiralama Anonim Sirketi and Golden Global Portfoy Yonetimi Anonim Sirketi to its sanctions list under the Iran E.O. 13902 program.",
+      "context": "The official entries distinguish the bank, leasing company and portfolio-management company. The map records the U.S. designation action; it does not turn a program label into a finding that Iran owns these companies. The entries link the latter two entities to the bank without specifying an ownership percentage in this notice.",
+      "sourceIds": [
+        "ofac-designations-20260904"
+      ],
+      "entityIds": [
+        "TREASURY",
+        "OFAC",
+        "GG_BANK",
+        "GG_LEASING",
+        "GG_PORTFOLIO"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "eventDate": "2026-09-04",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Official sanctions-list action",
+      "status": "documented"
+    },
+    {
+      "id": "ofac-iran-winddown-license-2026",
+      "text": "Treasury’s OFAC issued General License CC on September 4, 2026. It permits specified wind-down transactions involving the three named Golden Global entities and entities they own at least 50 percent of, individually or together, through 12:01 a.m. EDT on September 19, 2026.",
+      "context": "Payments to blocked persons must enter a blocked, interest-bearing U.S. account. Paragraph (b) retains other prohibitions under E.O. 13902 unless separately authorized. The license is a limited exception to sanctions, not an unblocking order or a general permission to continue business. The expiry is a scheduled boundary, not an observed future event.",
+      "sourceIds": [
+        "ofac-iran-license-cc"
+      ],
+      "entityIds": [
+        "TREASURY",
+        "OFAC",
+        "GG_BANK",
+        "GG_LEASING",
+        "GG_PORTFOLIO"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "eventDate": "2026-09-04",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Official license and scheduled expiry",
+      "status": "documented"
+    },
+    {
+      "id": "trump-announced-musk-doge-2024",
+      "text": "On November 12, 2024, President-elect Trump announced that Elon Musk and Vivek Ramaswamy would lead the effort he called the Department of Government Efficiency.",
+      "context": "The statement described advice and guidance from outside government, working with the White House and OMB. This record establishes the announcement; it does not establish every later legal power, staffing arrangement or instruction to Musk.",
+      "sourceIds": [
+        "trump-musk-doge-announcement-2024"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "MUSK"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "germany-afd"
+      ],
+      "eventDate": "2024-11-12",
+      "recordType": "Presidential transition statement",
+      "status": "documented",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "afd-halle-musk-weidel-2025",
+      "text": "AfD’s own account of its January 25, 2025 campaign launch in Halle identifies Alice Weidel as its chancellor candidate and records Elon Musk addressing the event by live video.",
+      "context": "This party-authored record establishes the event’s account of participation and candidacy. Its characterizations of government roles and its campaign rhetoric are not adopted here as independent findings. Participation alone does not establish Trump authorization or operational coordination.",
+      "sourceIds": [
+        "afd-halle-campaign-record-2025"
+      ],
+      "entityIds": [
+        "MUSK",
+        "WEIDEL",
+        "AFD"
+      ],
+      "topicIds": [
+        "germany-afd",
+        "information-media"
+      ],
+      "eventDate": "2025-01-25",
+      "recordType": "Party-authored event account",
+      "status": "documented",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "vance-weidel-meeting-pool-2025",
+      "text": "The February 14, 2025 vice-presidential pool report records an official in Vance’s office confirming that he met Alice Weidel during his Germany visit.",
+      "context": "The 20:31 CET entry attributes this confirmation to an unnamed office official; it is not the reporter’s account from inside the meeting. The same official said Vance met leaders of all major German parties and named other meetings. No agenda, commitments or coordination agreement is recorded in this entry.",
+      "sourceIds": [
+        "vance-weidel-pool-20250214"
+      ],
+      "entityIds": [
+        "VANCE",
+        "WEIDEL"
+      ],
+      "topicIds": [
+        "germany-afd",
+        "information-media"
+      ],
+      "eventDate": "2025-02-14",
+      "recordType": "Pool record of official confirmation",
+      "status": "documented",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "trump-jr-1789-partner-profile-precise",
+      "text": "1789 Capital’s published biography identifies Donald Trump Jr. as a partner focused on new investment origination, capital raising and strategy.",
+      "context": "This is the firm’s own description, reviewed September 8, 2026. The profile does not give an effective joining date or establish ownership percentages, fund holdings or a government role.",
+      "sourceIds": [
+        "1789-trump-jr-profile"
+      ],
+      "entityIds": [
+        "DONALD_TRUMP_JR",
+        "CAPITAL_1789"
+      ],
+      "topicIds": [
+        "ownership-disclosures"
+      ],
+      "eventDate": null,
+      "reviewedAt": "2026-09-08",
+      "recordType": "Company-published role description",
+      "status": "documented",
+      "supersedes": "trump-jr-1789-partner-profile"
     }
   ],
   "comparisons": [
@@ -1857,6 +2215,126 @@
         "oge-trump-report-2025"
       ],
       "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 81,
+      "sourceIds": [
+        "1789-trump-jr-profile"
+      ],
+      "claimIds": [
+        "trump-jr-1789-partner-profile-precise"
+      ],
+      "reportHref": "/topics/ownership-disclosures.html#records"
+    },
+    {
+      "mapEdgeIndex": 82,
+      "sourceIds": [
+        "alt5-governance-20250829"
+      ],
+      "claimIds": [
+        "alt5-separate-governance-roles-2025"
+      ],
+      "reportHref": "/topics/ownership-disclosures.html#records"
+    },
+    {
+      "mapEdgeIndex": 83,
+      "sourceIds": [
+        "alt5-governance-20250829"
+      ],
+      "claimIds": [
+        "alt5-separate-governance-roles-2025"
+      ],
+      "reportHref": "/topics/ownership-disclosures.html#records"
+    },
+    {
+      "mapEdgeIndex": 84,
+      "sourceIds": [
+        "alt5-governance-20250829"
+      ],
+      "claimIds": [
+        "alt5-separate-governance-roles-2025"
+      ],
+      "reportHref": "/topics/ownership-disclosures.html#records"
+    },
+    {
+      "mapEdgeIndex": 85,
+      "sourceIds": [
+        "ofac-iran-license-cc"
+      ],
+      "claimIds": [
+        "ofac-iran-winddown-license-2026"
+      ],
+      "reportHref": "/topics/iran-us-decisions.html#records"
+    },
+    {
+      "mapEdgeIndex": 86,
+      "sourceIds": [
+        "ofac-designations-20260904"
+      ],
+      "claimIds": [
+        "ofac-golden-global-designations-2026"
+      ],
+      "reportHref": "/topics/iran-us-decisions.html#records"
+    },
+    {
+      "mapEdgeIndex": 87,
+      "sourceIds": [
+        "ofac-designations-20260904"
+      ],
+      "claimIds": [
+        "ofac-golden-global-designations-2026"
+      ],
+      "reportHref": "/topics/iran-us-decisions.html#records"
+    },
+    {
+      "mapEdgeIndex": 88,
+      "sourceIds": [
+        "ofac-designations-20260904"
+      ],
+      "claimIds": [
+        "ofac-golden-global-designations-2026"
+      ],
+      "reportHref": "/topics/iran-us-decisions.html#records"
+    },
+    {
+      "mapEdgeIndex": 89,
+      "sourceIds": [
+        "trump-musk-doge-announcement-2024"
+      ],
+      "claimIds": [
+        "trump-announced-musk-doge-2024"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 90,
+      "sourceIds": [
+        "afd-halle-campaign-record-2025"
+      ],
+      "claimIds": [
+        "afd-halle-musk-weidel-2025"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 91,
+      "sourceIds": [
+        "afd-halle-campaign-record-2025"
+      ],
+      "claimIds": [
+        "afd-halle-musk-weidel-2025"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 92,
+      "sourceIds": [
+        "vance-weidel-pool-20250214"
+      ],
+      "claimIds": [
+        "vance-weidel-meeting-pool-2025"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
     }
   ],
   "feedback": [
@@ -2361,6 +2839,2237 @@
         "taj-creditor-network",
         "ross-finance-government-bridge"
       ]
+    },
+    {
+      "id": "individual-roles-and-sanctions-20260908",
+      "date": "2026-09-08",
+      "summary": "Add distinct individual governance and investment roles plus dated Treasury sanctions records without replacing aggregate or historical nodes.",
+      "claimIds": [
+        "trump-jr-1789-partner-profile",
+        "alt5-separate-governance-roles-2025",
+        "ofac-golden-global-designations-2026",
+        "ofac-iran-winddown-license-2026"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "digital-assets",
+        "war-trade"
+      ],
+      "pathIds": [
+        "alt5-distinct-individual-roles"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "iran-us-decisions",
+          "before": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON"
+            ],
+            "reportLinks": [
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add entities with individually reviewed source records and expose newly documented coverage."
+        },
+        {
+          "collection": "topics",
+          "id": "ownership-disclosures",
+          "before": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add entities with individually reviewed source records and expose newly documented coverage."
+        },
+        {
+          "collection": "topics",
+          "id": "digital-assets",
+          "before": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add entities with individually reviewed source records and expose newly documented coverage."
+        },
+        {
+          "collection": "topics",
+          "id": "war-trade",
+          "before": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "active",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add entities with individually reviewed source records and expose newly documented coverage."
+        }
+      ]
+    },
+    {
+      "id": "dated-us-afd-path-20260908",
+      "date": "2026-09-08",
+      "summary": "Admit a bounded contact path from three original records, retaining dates, attribution and causal limits.",
+      "claimIds": [
+        "trump-announced-musk-doge-2024",
+        "afd-halle-musk-weidel-2025",
+        "vance-weidel-meeting-pool-2025"
+      ],
+      "topicIds": [
+        "germany-afd",
+        "executive-authority",
+        "information-media"
+      ],
+      "pathIds": [
+        "us-afd-dated-contact-path"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "germany-afd",
+          "before": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [
+              "AFD",
+              "AFD_THURINGIA",
+              "HOECKE",
+              "CHRUPALLA",
+              "MEUTHEN",
+              "LANZERATH"
+            ],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [
+              "AFD",
+              "AFD_THURINGIA",
+              "HOECKE",
+              "CHRUPALLA",
+              "MEUTHEN",
+              "LANZERATH",
+              "TRUMP",
+              "MUSK",
+              "WEIDEL",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose individually verified contact and role records across relevant topics."
+        },
+        {
+          "collection": "topics",
+          "id": "executive-authority",
+          "before": {
+            "id": "executive-authority",
+            "title": "Executive authority & courts",
+            "description": "Legal instruments, appointments, judicial review and observed implementation.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "DOJ",
+              "SCOTUS",
+              "P2025"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Crown",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "What is proposed, legally effective, stayed, appealed or implemented?",
+              "What records establish compliance with each operative order?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "executive order",
+              "injunction",
+              "court",
+              "appointment",
+              "judicial"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "executive-authority",
+            "title": "Executive authority & courts",
+            "description": "Legal instruments, appointments, judicial review and observed implementation.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "DOJ",
+              "SCOTUS",
+              "P2025",
+              "MUSK"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Crown",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "What is proposed, legally effective, stayed, appealed or implemented?",
+              "What records establish compliance with each operative order?"
+            ],
+            "status": "active",
+            "keywords": [
+              "executive order",
+              "injunction",
+              "court",
+              "appointment",
+              "judicial"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose individually verified contact and role records across relevant topics."
+        },
+        {
+          "collection": "topics",
+          "id": "information-media",
+          "before": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG",
+              "MUSK",
+              "WEIDEL",
+              "AFD",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose individually verified contact and role records across relevant topics."
+        }
+      ]
+    },
+    {
+      "id": "specific-report-coverage-links-20260908",
+      "date": "2026-09-08",
+      "summary": "Make existing authored coverage discoverable from seven topic pages.",
+      "topicIds": [
+        "iran-us-decisions",
+        "digital-assets",
+        "information-media",
+        "enforcement-surveillance",
+        "war-trade",
+        "civil-society",
+        "technology-infrastructure"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "iran-us-decisions",
+          "before": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter 17: Foreign Policy and the Expansionist Pattern",
+                "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
+              },
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "digital-assets",
+          "before": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter F: The Pardon and Access Market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "information-media",
+          "before": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG",
+              "MUSK",
+              "WEIDEL",
+              "AFD",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG",
+              "MUSK",
+              "WEIDEL",
+              "AFD",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas",
+                "href": "/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces"
+              },
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "enforcement-surveillance",
+          "before": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter H: The Warehouse State — Detention as an Industry",
+                "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+              },
+              {
+                "label": "Chapter 14: The Enforcement and Detention Industrial Complex",
+                "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
+              },
+              {
+                "label": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
+                "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "war-trade",
+          "before": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "active",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter 21-J: The External Board — Russia's Draft, Venezuela's Oil",
+                "href": "/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o"
+              },
+              {
+                "label": "Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government",
+                "href": "/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-"
+              },
+              {
+                "label": "Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut",
+                "href": "/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "active",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "civil-society",
+          "before": {
+            "id": "civil-society",
+            "title": "Civic institutions & responses",
+            "description": "Public records concerning civil institutions, legal challenges and subsequent actions.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [],
+            "reportLinks": [
+              {
+                "label": "The honest assessment",
+                "href": "/#the-honest-assessment"
+              }
+            ],
+            "researchQuestions": [
+              "Which actions were implemented, revised, challenged or reversed?",
+              "What alternative explanations and relevant comparison cases exist?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "civil society",
+              "university",
+              "protest",
+              "litigation",
+              "institution"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "civil-society",
+            "title": "Civic institutions & responses",
+            "description": "Public records concerning civil institutions, legal challenges and subsequent actions.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press",
+                "href": "/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an"
+              },
+              {
+                "label": "Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt",
+                "href": "/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol"
+              },
+              {
+                "label": "Chapter 8: What Scholars Tell Us About Democratic Erosion",
+                "href": "/#chapter-8-what-scholars-tell-us-about-democratic-erosion"
+              },
+              {
+                "label": "The honest assessment",
+                "href": "/#the-honest-assessment"
+              }
+            ],
+            "researchQuestions": [
+              "Which actions were implemented, revised, challenged or reversed?",
+              "What alternative explanations and relevant comparison cases exist?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "civil society",
+              "university",
+              "protest",
+              "litigation",
+              "institution"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        },
+        {
+          "collection": "topics",
+          "id": "technology-infrastructure",
+          "before": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
+                "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Expose specific existing report chapters alongside the broad section link."
+        }
+      ]
+    },
+    {
+      "id": "1789-profile-wording-20260908",
+      "date": "2026-09-08",
+      "summary": "Retain the initial draft and narrow its replacement to the company’s exact description before publication.",
+      "claimIds": [
+        "trump-jr-1789-partner-profile",
+        "trump-jr-1789-partner-profile-precise"
+      ],
+      "changes": [
+        {
+          "collection": "relationships",
+          "mapEdgeIndex": 81,
+          "before": {
+            "mapEdgeIndex": 81,
+            "sourceIds": [
+              "1789-trump-jr-profile"
+            ],
+            "claimIds": [
+              "trump-jr-1789-partner-profile"
+            ],
+            "reportHref": "/topics/ownership-disclosures.html#records"
+          },
+          "after": {
+            "mapEdgeIndex": 81,
+            "sourceIds": [
+              "1789-trump-jr-profile"
+            ],
+            "claimIds": [
+              "trump-jr-1789-partner-profile-precise"
+            ],
+            "reportHref": "/topics/ownership-disclosures.html#records"
+          },
+          "reason": "Use the corrected current claim without implying a broader assignment of responsibility."
+        }
+      ]
+    },
+    {
+      "id": "map-expansion-release-provenance-20260908",
+      "date": "2026-09-08",
+      "summary": "Record the complete transition from published main to this expanded map release.",
+      "topicIds": [
+        "germany-afd",
+        "iran-us-decisions",
+        "executive-authority",
+        "ownership-disclosures",
+        "digital-assets",
+        "information-media",
+        "enforcement-surveillance",
+        "war-trade",
+        "civil-society",
+        "technology-infrastructure"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "germany-afd",
+          "before": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [
+              "AFD",
+              "AFD_THURINGIA",
+              "HOECKE",
+              "CHRUPALLA",
+              "MEUTHEN",
+              "LANZERATH"
+            ],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [
+              "AFD",
+              "AFD_THURINGIA",
+              "HOECKE",
+              "CHRUPALLA",
+              "MEUTHEN",
+              "LANZERATH",
+              "TRUMP",
+              "MUSK",
+              "WEIDEL",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "iran-us-decisions",
+          "before": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON"
+            ],
+            "reportLinks": [
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter 17: Foreign Policy and the Expansionist Pattern",
+                "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
+              },
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "executive-authority",
+          "before": {
+            "id": "executive-authority",
+            "title": "Executive authority & courts",
+            "description": "Legal instruments, appointments, judicial review and observed implementation.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "DOJ",
+              "SCOTUS",
+              "P2025"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Crown",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "What is proposed, legally effective, stayed, appealed or implemented?",
+              "What records establish compliance with each operative order?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "executive order",
+              "injunction",
+              "court",
+              "appointment",
+              "judicial"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "executive-authority",
+            "title": "Executive authority & courts",
+            "description": "Legal instruments, appointments, judicial review and observed implementation.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "DOJ",
+              "SCOTUS",
+              "P2025",
+              "MUSK"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Crown",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "What is proposed, legally effective, stayed, appealed or implemented?",
+              "What records establish compliance with each operative order?"
+            ],
+            "status": "active",
+            "keywords": [
+              "executive order",
+              "injunction",
+              "court",
+              "appointment",
+              "judicial"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "ownership-disclosures",
+          "before": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "digital-assets",
+          "before": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter F: The Pardon and Access Market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "information-media",
+          "before": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "information-media",
+            "title": "Information & public communication",
+            "description": "Exact statements, media institutions, access rules and attributable evidence.",
+            "categoryIds": [
+              "campaigns"
+            ],
+            "entityIds": [
+              "FCC",
+              "TMTG",
+              "MUSK",
+              "WEIDEL",
+              "AFD",
+              "VANCE"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas",
+                "href": "/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces"
+              },
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "The Ideology",
+                "href": "/#the-ideology-supremacy-politics-and-its-limits"
+              }
+            ],
+            "researchQuestions": [
+              "What was stated, by whom, when and in what context?",
+              "What evidence establishes an institutional effect beyond the statement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "media",
+              "speech",
+              "FCC",
+              "broadcast",
+              "information",
+              "statement"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "enforcement-surveillance",
+          "before": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter H: The Warehouse State — Detention as an Industry",
+                "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+              },
+              {
+                "label": "Chapter 14: The Enforcement and Detention Industrial Complex",
+                "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
+              },
+              {
+                "label": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
+                "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "war-trade",
+          "before": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN"
+            ],
+            "reportLinks": [
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "war-trade",
+            "title": "War, trade & international records",
+            "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "RUSSIA",
+              "VZ",
+              "PENTAGON",
+              "UAE",
+              "SAUDI",
+              "QATAR",
+              "PAKISTAN",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter 21-J: The External Board — Russia's Draft, Venezuela's Oil",
+                "href": "/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o"
+              },
+              {
+                "label": "Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government",
+                "href": "/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-"
+              },
+              {
+                "label": "Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut",
+                "href": "/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Which original records establish the sequence and legal authority?",
+              "Are reported counts and economic measures comparable in period and definition?"
+            ],
+            "status": "active",
+            "keywords": [
+              "war",
+              "trade",
+              "sanction",
+              "tariff",
+              "foreign affairs",
+              "authorization"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "civil-society",
+          "before": {
+            "id": "civil-society",
+            "title": "Civic institutions & responses",
+            "description": "Public records concerning civil institutions, legal challenges and subsequent actions.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [],
+            "reportLinks": [
+              {
+                "label": "The honest assessment",
+                "href": "/#the-honest-assessment"
+              }
+            ],
+            "researchQuestions": [
+              "Which actions were implemented, revised, challenged or reversed?",
+              "What alternative explanations and relevant comparison cases exist?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "civil society",
+              "university",
+              "protest",
+              "litigation",
+              "institution"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "civil-society",
+            "title": "Civic institutions & responses",
+            "description": "Public records concerning civil institutions, legal challenges and subsequent actions.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press",
+                "href": "/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an"
+              },
+              {
+                "label": "Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt",
+                "href": "/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol"
+              },
+              {
+                "label": "Chapter 8: What Scholars Tell Us About Democratic Erosion",
+                "href": "/#chapter-8-what-scholars-tell-us-about-democratic-erosion"
+              },
+              {
+                "label": "The honest assessment",
+                "href": "/#the-honest-assessment"
+              }
+            ],
+            "researchQuestions": [
+              "Which actions were implemented, revised, challenged or reversed?",
+              "What alternative explanations and relevant comparison cases exist?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "civil society",
+              "university",
+              "protest",
+              "litigation",
+              "institution"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        },
+        {
+          "collection": "topics",
+          "id": "technology-infrastructure",
+          "before": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
+                "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
+        }
+      ]
     }
   ],
   "networkPaths": [
@@ -2404,6 +5113,53 @@
       "edgeIndices": [
         71,
         74
+      ],
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "alt5-distinct-individual-roles",
+      "title": "ALT5: an observer and a chairman are different roles",
+      "summary": "The same filing distinguishes Eric Trump’s observer designation from Zachary Witkoff’s board appointment.",
+      "context": "These steps share a company, not an office. The record establishes the roles reported in August 2025 and does not establish their continuation to the present.",
+      "nextCheck": "Review later issuer filings for any resignation, replacement or change in observer status.",
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "entityIds": [
+        "ERIC_TRUMP",
+        "ALT5",
+        "ZACH_WITKOFF"
+      ],
+      "edgeIndices": [
+        82,
+        83
+      ],
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "us-afd-dated-contact-path",
+      "title": "U.S. political figures and AfD: a dated contact path",
+      "summary": "Different records connect Trump’s announced Musk role, Musk’s AfD campaign appearance, Weidel’s candidacy and Vance’s meeting with her.",
+      "context": "The steps span November 2024 to February 2025 and establish different kinds of association. They do not establish a single chain of command, shared campaign operations or a proven transfer of strategy.",
+      "nextCheck": "Seek contemporaneous meeting readouts or correspondence to test specific coordination or strategy-transfer hypotheses.",
+      "topicIds": [
+        "germany-afd",
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "MUSK",
+        "AFD",
+        "WEIDEL",
+        "VANCE"
+      ],
+      "edgeIndices": [
+        89,
+        90,
+        91,
+        92
       ],
       "reviewedAt": "2026-09-08"
     }

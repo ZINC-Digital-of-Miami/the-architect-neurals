@@ -22,6 +22,34 @@ class ResearchIntegrityTests(unittest.TestCase):
     def test_real_registry_has_resolvable_sources_and_entities(self):
         validate(self.data, self.map)
 
+    def test_company_role_profile_is_identified_as_a_company_statement(self):
+        claim = next(c for c in self.data['claims'] if c['id'] == 'trump-jr-1789-partner-profile')
+        source = next(s for s in self.data['sources'] if s['id'] == claim['sourceIds'][0])
+        self.assertEqual(source['sourceType'], 'corporate_statement')
+        self.assertIsNone(claim['eventDate'])
+        candidate = copy.deepcopy(self.data)
+        next(c for c in candidate['claims'] if c['id'] == claim['id'])['status'] = 'documented'
+        next(s for s in candidate['sources'] if s['id'] == source['id'])['sourceType'] = 'reporting'
+        with self.assertRaisesRegex(ValueError, 'single-origin'):
+            validate(candidate, self.map)
+
+    def test_sparse_topic_keeps_report_coverage_before_structured_records(self):
+        data = copy.deepcopy(self.data)
+        topic = {**copy.deepcopy(data['topics'][0]), 'id': 'test-sparse-topic'}
+        data['topics'].append(topic)
+        with tempfile.TemporaryDirectory() as temp:
+            src, dist = Path(temp) / 'src', Path(temp) / 'site'
+            src.mkdir(); dist.mkdir(); (src / 'briefs').mkdir()
+            (src / 'research_registry.json').write_text(json.dumps(data))
+            (src / 'map_source.json').write_text(json.dumps(self.map))
+            (src / 'research_ui.js').write_text('')
+            (dist / 'index.html').write_text('<h2 id="existing">Preserved section</h2>')
+            build_research(src, dist, lambda title, body, **kw: body)
+            page = (dist / 'topics/test-sparse-topic.html').read_text()
+            self.assertEqual(page.count('id="report"'), 1)
+            self.assertLess(page.index('id="report"'), page.index('id="records"'))
+            self.assertIn(html.escape(topic['reportLinks'][0]['href'], quote=True), page[:page.index('id="records"')])
+
     def test_connection_path_rejects_a_disconnected_intermediary(self):
         path = self.data["networkPaths"][0]
         path["entityIds"][1] = next(n for n in self.map["nodes"] if n not in path["entityIds"])
