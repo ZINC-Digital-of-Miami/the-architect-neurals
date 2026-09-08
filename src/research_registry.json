@@ -1,0 +1,2357 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-08",
+  "categories": [
+    {
+      "id": "financial-history",
+      "title": "People & financial history",
+      "description": "Financing, ownership, counterparties and dated disclosures."
+    },
+    {
+      "id": "institutions",
+      "title": "Institutions & law",
+      "description": "Authorities, procedures, court records and implementation."
+    },
+    {
+      "id": "foreign-affairs",
+      "title": "Conflict & foreign affairs",
+      "description": "Official objectives, international decisions and recorded consequences."
+    },
+    {
+      "id": "campaigns",
+      "title": "Campaigns & public communication",
+      "description": "Campaign materials, public statements, contacts and civic records."
+    },
+    {
+      "id": "history",
+      "title": "Historical context",
+      "description": "Original historical records, comparisons and material differences."
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence & corrections",
+      "description": "Sources, provenance, corrections and open research questions."
+    }
+  ],
+  "topics": [
+    {
+      "id": "trump-early-financing",
+      "title": "Trump: early financing",
+      "description": "Trace Trump’s early casino financing, Rothschild Inc.’s creditor-side role, Wilbur Ross and the records needed to test later institutional involvement.",
+      "categoryIds": [
+        "financial-history",
+        "history"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "ROSS",
+        "ROTHSCHILD_INC",
+        "TAJ_ASSOCIATES",
+        "TAJ_BONDHOLDERS",
+        "MERRILL_LYNCH",
+        "TAJ_FUNDING"
+      ],
+      "reportLinks": [
+        {
+          "label": "Formation: the making of the man",
+          "href": "/#formation-the-making-of-the-man"
+        }
+      ],
+      "researchQuestions": [
+        "Which legal entities represented lenders or creditors in each restructuring?",
+        "Which named Rothschild entities or individuals, if any, appear in later verified financing, ownership or advisory records?",
+        "What do bankruptcy plans and creditor appointments establish beyond contemporary reporting?"
+      ],
+      "status": "active",
+      "keywords": [
+        "Rothschild",
+        "Wilbur Ross",
+        "Taj Mahal",
+        "bankruptcy",
+        "creditor",
+        "financing"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "germany-afd",
+      "title": "Germany / AfD",
+      "description": "Named statements, court findings, campaign materials and documented international contacts.",
+      "categoryIds": [
+        "campaigns",
+        "institutions",
+        "history"
+      ],
+      "entityIds": [
+        "AFD",
+        "AFD_THURINGIA",
+        "HOECKE",
+        "CHRUPALLA",
+        "MEUTHEN",
+        "LANZERATH"
+      ],
+      "reportLinks": [
+        {
+          "label": "Historical lens",
+          "href": "/#the-historical-lens-retained-in-full"
+        }
+      ],
+      "researchQuestions": [
+        "Which conduct belongs to a named individual, a regional organization or the national party?",
+        "What evidence establishes explicit borrowing, contact or joint planning?",
+        "How do court findings, appeals and official statements differ in scope?"
+      ],
+      "status": "active",
+      "keywords": [
+        "AfD",
+        "Höcke",
+        "Hoecke",
+        "Weidel",
+        "Chrupalla",
+        "Germany",
+        "Deutschland"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "iran-us-decisions",
+      "title": "Iran & U.S. decisions",
+      "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+      "categoryIds": [
+        "foreign-affairs"
+      ],
+      "entityIds": [
+        "IRAN",
+        "TRUMP",
+        "PENTAGON"
+      ],
+      "reportLinks": [
+        {
+          "label": "Report: money and foreign affairs",
+          "href": "/#the-money-the-profit-architecture"
+        }
+      ],
+      "researchQuestions": [
+        "Which authorization and official stated objectives apply to each dated action?",
+        "Which explanations have direct documentary support, and what contradicts them?",
+        "Which observed consequences can be attributed, and which remain uncertain?"
+      ],
+      "status": "active",
+      "keywords": [
+        "Iran",
+        "authorization",
+        "military",
+        "sanctions",
+        "Hormuz"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "us-midterms",
+      "title": "2026 U.S. midterms",
+      "description": "Official election dates, administration, campaign-finance disclosures and court records.",
+      "categoryIds": [
+        "institutions",
+        "campaigns"
+      ],
+      "entityIds": [
+        "USPS"
+      ],
+      "reportLinks": [
+        {
+          "label": "Report: institutions",
+          "href": "/#the-crown-the-architecture-of-power"
+        }
+      ],
+      "researchQuestions": [
+        "Which election-administration rules are operative after rulings and appeals?",
+        "What do official campaign-finance records disclose?",
+        "Which results have been certified, and by which authority?"
+      ],
+      "status": "active",
+      "keywords": [
+        "midterms",
+        "FEC",
+        "election",
+        "ballot",
+        "certification",
+        "campaign finance"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "executive-authority",
+      "title": "Executive authority & courts",
+      "description": "Legal instruments, appointments, judicial review and observed implementation.",
+      "categoryIds": [
+        "institutions"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "DOJ",
+        "SCOTUS",
+        "P2025"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Crown",
+          "href": "/#the-crown-the-architecture-of-power"
+        }
+      ],
+      "researchQuestions": [
+        "What is proposed, legally effective, stayed, appealed or implemented?",
+        "What records establish compliance with each operative order?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "executive order",
+        "injunction",
+        "court",
+        "appointment",
+        "judicial"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "ownership-disclosures",
+      "title": "Ownership & financial disclosures",
+      "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+      "categoryIds": [
+        "financial-history"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "WLF",
+        "SONS",
+        "KUSHNER",
+        "WITKOFF",
+        "ALT5",
+        "TMTG",
+        "TRUST",
+        "LADDER_CAPITAL",
+        "LADDER_FINANCE",
+        "LADDER_FINANCE_I",
+        "AXOS",
+        "SCHWAB_BANK"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Money",
+          "href": "/#the-money-the-profit-architecture"
+        }
+      ],
+      "researchQuestions": [
+        "Who held which disclosed interest at the relevant date?",
+        "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "ownership",
+        "disclosure",
+        "SEC",
+        "beneficial owner",
+        "contract",
+        "financing"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "digital-assets",
+      "title": "Digital assets & financial entities",
+      "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+      "categoryIds": [
+        "financial-history"
+      ],
+      "entityIds": [
+        "WLF",
+        "ZHAO",
+        "POLY",
+        "VAULT",
+        "TRUST",
+        "ALT5",
+        "TREASURY"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Money",
+          "href": "/#the-money-the-profit-architecture"
+        }
+      ],
+      "researchQuestions": [
+        "Which entity issued, held or transferred an asset?",
+        "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "crypto",
+        "token",
+        "stablecoin",
+        "USD1",
+        "WLFI",
+        "digital asset"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "information-media",
+      "title": "Information & public communication",
+      "description": "Exact statements, media institutions, access rules and attributable evidence.",
+      "categoryIds": [
+        "campaigns"
+      ],
+      "entityIds": [
+        "FCC",
+        "TMTG"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Ideology",
+          "href": "/#the-ideology-supremacy-politics-and-its-limits"
+        }
+      ],
+      "researchQuestions": [
+        "What was stated, by whom, when and in what context?",
+        "What evidence establishes an institutional effect beyond the statement?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "media",
+        "speech",
+        "FCC",
+        "broadcast",
+        "information",
+        "statement"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "enforcement-surveillance",
+      "title": "Enforcement & surveillance",
+      "description": "Authorities, contracts, operational records, populations and oversight.",
+      "categoryIds": [
+        "institutions"
+      ],
+      "entityIds": [
+        "ICE",
+        "GEO",
+        "MEGAHUB",
+        "PALANTIR",
+        "DOJ"
+      ],
+      "reportLinks": [
+        {
+          "label": "Current documentation",
+          "href": "/#current-documentation-2025-july-2026"
+        }
+      ],
+      "researchQuestions": [
+        "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+        "What are the observation date, population definition and oversight findings?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "detention",
+        "ICE",
+        "surveillance",
+        "facility",
+        "GEO",
+        "Palantir"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "war-trade",
+      "title": "War, trade & international records",
+      "description": "Authorizations, sanctions, trade records, operations and dated outcomes.",
+      "categoryIds": [
+        "foreign-affairs"
+      ],
+      "entityIds": [
+        "IRAN",
+        "RUSSIA",
+        "VZ",
+        "PENTAGON",
+        "UAE",
+        "SAUDI",
+        "QATAR",
+        "PAKISTAN"
+      ],
+      "reportLinks": [
+        {
+          "label": "Current documentation",
+          "href": "/#current-documentation-2025-july-2026"
+        }
+      ],
+      "researchQuestions": [
+        "Which original records establish the sequence and legal authority?",
+        "Are reported counts and economic measures comparable in period and definition?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "war",
+        "trade",
+        "sanction",
+        "tariff",
+        "foreign affairs",
+        "authorization"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "civil-society",
+      "title": "Civic institutions & responses",
+      "description": "Public records concerning civil institutions, legal challenges and subsequent actions.",
+      "categoryIds": [
+        "institutions",
+        "campaigns"
+      ],
+      "entityIds": [],
+      "reportLinks": [
+        {
+          "label": "The honest assessment",
+          "href": "/#the-honest-assessment"
+        }
+      ],
+      "researchQuestions": [
+        "Which actions were implemented, revised, challenged or reversed?",
+        "What alternative explanations and relevant comparison cases exist?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "civil society",
+        "university",
+        "protest",
+        "litigation",
+        "institution"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "technology-infrastructure",
+      "title": "Technology & infrastructure",
+      "description": "Companies, procurement, infrastructure commitments and implementation records.",
+      "categoryIds": [
+        "financial-history",
+        "institutions"
+      ],
+      "entityIds": [
+        "STARGATE",
+        "PALANTIR",
+        "FCC"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Money",
+          "href": "/#the-money-the-profit-architecture"
+        }
+      ],
+      "researchQuestions": [
+        "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+        "Which parties, obligations and implementation dates are documented?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "technology",
+        "data center",
+        "infrastructure",
+        "procurement",
+        "Stargate"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "historical-comparisons",
+      "title": "Historical comparisons",
+      "description": "Original historical evidence, documented sequences, differences and counterexamples.",
+      "categoryIds": [
+        "history"
+      ],
+      "entityIds": [],
+      "reportLinks": [
+        {
+          "label": "The historical record",
+          "href": "/#the-historical-record"
+        }
+      ],
+      "researchQuestions": [
+        "Which historical mechanism is being compared, within which institutional conditions?",
+        "What material differences or counterexamples limit the comparison?",
+        "Which observation would support or contradict the proposed comparison?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "history",
+        "historical",
+        "Weimar",
+        "comparison",
+        "institutional"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "corrections-provenance",
+      "title": "Corrections & source provenance",
+      "description": "Current and superseded claims, source identity and retained research history.",
+      "categoryIds": [
+        "evidence"
+      ],
+      "entityIds": [],
+      "reportLinks": [
+        {
+          "label": "Permanent correction ledger",
+          "href": "/#u-corrections"
+        }
+      ],
+      "researchQuestions": [
+        "Which earlier claim has been superseded, and by what original record?",
+        "Does a source establish an underlying fact, an assertion or an allegation?"
+      ],
+      "status": "watching",
+      "keywords": [
+        "correction",
+        "provenance",
+        "source",
+        "retraction",
+        "accession"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "trump-later-financing",
+      "title": "Trump: later financing",
+      "description": "Follow the named creditors and corporate entities in later records, with paid-off loans, reporting periods and unresolved intermediaries kept distinct.",
+      "categoryIds": [
+        "financial-history"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "ROSS",
+        "ROTHSCHILD_INC",
+        "LADDER_CAPITAL",
+        "LADDER_FINANCE",
+        "LADDER_FINANCE_I",
+        "AXOS",
+        "SCHWAB_BANK"
+      ],
+      "reportLinks": [
+        {
+          "label": "The money architecture",
+          "href": "/#the-money-the-profit-architecture"
+        },
+        {
+          "label": "Early financing and creditor negotiations",
+          "href": "/topics/trump-early-financing.html"
+        }
+      ],
+      "researchQuestions": [
+        "Which exact borrower, creditor and assignee appear in the underlying loan instruments?",
+        "What later ownership, compensation or advisory record could connect a historical intermediary to a current transaction?",
+        "Which liabilities have matured, been assigned or been repaid since the reporting period?"
+      ],
+      "status": "new",
+      "keywords": [
+        "Axos",
+        "Ladder Capital",
+        "Charles Schwab",
+        "mortgage",
+        "refinancing",
+        "Rothschild",
+        "Wilbur Ross"
+      ],
+      "createdAt": "2026-09-08",
+      "updatedAt": "2026-09-08"
+    }
+  ],
+  "sources": [
+    {
+      "id": "upi-1990-taj",
+      "title": "Trump's Taj Mahal casino to enter consensual bankruptcy",
+      "url": "https://www.upi.com/Archives/1990/11/17/Trumps-Taj-Mahal-casino-to-enter-consensual-bankruptcy/7010658818000/",
+      "publisher": "UPI",
+      "publishedAt": "1990-11-17",
+      "sourceType": "reporting",
+      "originId": "upi",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "upi-1990-creditors",
+      "title": "Bondholders reject Trump offer",
+      "url": "https://www.upi.com/Archives/1990/10/16/Report-Bondholders-reject-Trump-offer/4614656049600/",
+      "publisher": "UPI",
+      "publishedAt": "1990-10-16",
+      "sourceType": "reporting",
+      "originId": "upi",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "halle-2025-final",
+      "title": "Höcke convictions for prohibited symbols are final",
+      "url": "https://lg-hal.sachsen-anhalt.de/aktuelles/pressemitteilungen?cHash=f7d40c60f8cb5b03c9e191bec69cdb75&tx_tsarssinclude_pi1%5Baction%5D=single&tx_tsarssinclude_pi1%5Bcontroller%5D=Base&tx_tsarssinclude_pi1%5Buid%5D=598221",
+      "publisher": "Landgericht Halle",
+      "publishedAt": "2025-09-11",
+      "sourceType": "court",
+      "originId": "landgericht-halle",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "afd-2020-holocaust",
+      "title": "Meuthen and Chrupalla: remembrance of victims of National Socialism",
+      "url": "https://www.afd.de/meuthen-chrupalla-27-januar-der-ns-opfer-gedenken-rechtsstaat-und-demokratie-entschlossen-verteidigen/",
+      "publisher": "Alternative für Deutschland",
+      "publishedAt": "2020-01-26",
+      "sourceType": "party_statement",
+      "originId": "afd",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "afd-2025-halle",
+      "title": "AfD campaign launch in Halle",
+      "url": "https://www.afd.de/afd-kanzlerkandidatin-alice-weidel-und-bundessprecher-tino-chrupalla-eroeffneten-in-halle-an-der-saale-vor-rund-4-500-gaesten-den-bundestagswahlkampf/",
+      "publisher": "Alternative für Deutschland",
+      "publishedAt": "2025-01-25",
+      "sourceType": "party_statement",
+      "originId": "afd",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "reuters-2025-halle",
+      "title": "Elon Musk appears on video at German campaign event",
+      "url": "https://www.investing.com/news/world-news/elon-musk-appears-on-video-at-german-far-right-campaign-event-3830823",
+      "publisher": "Reuters, via Investing.com",
+      "publishedAt": "2025-01-25",
+      "sourceType": "reporting",
+      "originId": "reuters",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "vp-pool-2025-munich",
+      "title": "Vice Presidential Pool Reports of February 14, 2025",
+      "url": "https://www.presidency.ucsb.edu/documents/vice-presidential-pool-reports-february-14-2025",
+      "publisher": "Vice-presidential press pool / American Presidency Project",
+      "publishedAt": "2025-02-14",
+      "sourceType": "pool_report",
+      "originId": "vp-pool",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "fec-2026-election",
+      "title": "Election results and voting information",
+      "url": "https://www.fec.gov/introduction-campaign-finance/election-results-and-voting-information/",
+      "publisher": "Federal Election Commission",
+      "sourceType": "official_record",
+      "originId": "fec",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "ushmm-hitler-power",
+      "title": "Hitler Comes to Power",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/hitler-comes-to-power",
+      "publisher": "United States Holocaust Memorial Museum",
+      "sourceType": "historical_reference",
+      "originId": "ushmm",
+      "accessedAt": "2026-09-08"
+    },
+    {
+      "id": "ushmm-enabling-act-text",
+      "title": "The Enabling Act: translation of Reichsgesetzblatt I (1933), p. 141",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/the-enabling-act",
+      "publisher": "United States Holocaust Memorial Museum",
+      "originId": "ushmm",
+      "sourceType": "historical_reference",
+      "publishedAt": "2026-04-03",
+      "accessedAt": "2026-09-08",
+      "locator": "Translation, Articles 1–5; last-edited date describes the museum page, not the historical act."
+    },
+    {
+      "id": "nara-constitution-text",
+      "title": "The Constitution of the United States: A Transcription",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "publisher": "National Archives",
+      "originId": "nara",
+      "sourceType": "official_record",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "locator": "Article I, sections 1 and 7; Article II, sections 2–3; Article III, sections 1–2."
+    },
+    {
+      "id": "fec-official-results-2024",
+      "title": "Official 2024 Presidential General Election Results",
+      "url": "https://www.fec.gov/resources/cms-content/documents/2024presgeresults.pdf",
+      "publisher": "Federal Election Commission; compiled from state election offices",
+      "originId": "fec",
+      "sourceType": "official_record",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "locator": "Pages 1 (electoral votes), 3 (Harris popular vote), 5 (Trump popular vote)."
+    },
+    {
+      "id": "de-bgh-3-str-484-24-2025-10-15",
+      "title": "BGH, Beschluss vom 15. Oktober 2025 - 3 StR 484/24",
+      "url": "https://de.openlegaldata.io/case/bgh-2025-10-15-3-str-48424",
+      "publisher": "Bundesgerichtshof",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "locator": "ECLI:DE:BGH:2025:151025B3STR484.24.0; hearing-complaint ruling; court-authored text mirrored by Open Legal Data",
+      "sourceType": "court",
+      "originId": "german-judiciary-bgh"
+    },
+    {
+      "id": "de-bgh-3-str-519-24-2025-10-15",
+      "title": "BGH, Beschluss vom 15. Oktober 2025 - 3 StR 519/24",
+      "url": "https://de.openlegaldata.io/case/bgh-2025-10-15-3-str-51924",
+      "publisher": "Bundesgerichtshof",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "locator": "ECLI:DE:BGH:2025:151025B3STR519.24.0; hearing-complaint ruling; court-authored text mirrored by Open Legal Data",
+      "sourceType": "court",
+      "originId": "german-judiciary-bgh"
+    },
+    {
+      "id": "de-vg-weimar-8-k-1272-23",
+      "title": "Klage des Landesverbandes Thüringen der AfD gegen drei Textpassagen in dem Verfassungsschutzbericht 2021 erfolglos",
+      "url": "https://verwaltungsgerichte.thueringen.de/thueringer-oberverwaltungsgericht/pressemitteilungen/details-1-1?cHash=795e9719c4f7a8e1f9b6d95c97aa9e48&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=4750",
+      "publisher": "Verwaltungsgericht Weimar / Thüringer Verwaltungsgerichtsbarkeit",
+      "publishedAt": "2024-08-28",
+      "accessedAt": "2026-09-08",
+      "locator": "judgment and release of 2024-08-28, 8 K 1272/23 We; oral reasons summarized; release expressly says not final",
+      "sourceType": "court",
+      "originId": "german-judiciary-thuringia"
+    },
+    {
+      "id": "afd-federal-2021-03-09-exclusion-statement",
+      "title": "Meuthen/Chrupalla: In der AfD haben Holocaust-Verharmloser keinen Platz",
+      "url": "https://www.afd.de/meuthen-chrupalla-in-der-afd-haben-holocaust-verharmloser-keinen-platz/",
+      "publisher": "Alternative für Deutschland",
+      "publishedAt": "2021-03-09",
+      "accessedAt": "2026-09-08",
+      "locator": "paragraphs identifying the Bavarian member's comparison and the federal board's stated response",
+      "sourceType": "party_statement",
+      "originId": "afd"
+    },
+    {
+      "id": "de-bverwg-6-b-23-24",
+      "title": "Keine Zulassung der Revision gegen die Urteile des OVG Münster zur Einstufung der AfD als Verdachtsfall",
+      "url": "https://ssl.bverwg.de/200525B6B23.24.0",
+      "publisher": "Bundesverwaltungsgericht",
+      "publishedAt": "2025-07-22",
+      "accessedAt": "2026-09-08",
+      "locator": "decision 2025-05-20, 6 B 23.24, ECLI:DE:BVerwG:2025:200525B6B23.24.0; press release 54/2025",
+      "sourceType": "court",
+      "originId": "german-judiciary-bverwg"
+    },
+    {
+      "id": "echr-lanzerath-1854-22",
+      "title": "Lanzerath v. Germany, application no. 1854/22",
+      "url": "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=001-218850&filename=001-218850.pdf",
+      "publisher": "European Court of Human Rights",
+      "publishedAt": "2022-07-28",
+      "accessedAt": "2026-09-08",
+      "locator": "decision 2022-07-05; paragraphs 1-15; notified 2022-07-28",
+      "sourceType": "court",
+      "originId": "echr"
+    },
+    {
+      "id": "taj-securities-opinion-1992",
+      "title": "In re Donald J. Trump Casino Securities Litigation, 793 F. Supp. 543",
+      "url": "https://law.justia.com/cases/federal/district-courts/FSupp/793/543/1369115/",
+      "publisher": "U.S. District Court for the District of New Jersey; Justia mirror",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "sourceType": "court",
+      "originId": "dnj-mdl-864-opinion",
+      "locator": "793 F. Supp. 543; MDL 864 (JFG); Civ. A. No. 90-0919; prospectus dated Nov. 9, 1988; HTML lines 73-78, 195-211, 258-271, 361-383"
+    },
+    {
+      "id": "taj-bankruptcy-opinion-1993",
+      "title": "In re Trump Taj Mahal Associates, 156 B.R. 928",
+      "url": "https://www.casemine.com/judgement/us/5914be78add7b049347a8675",
+      "publisher": "U.S. Bankruptcy Court for the District of New Jersey; CaseMine mirror",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "sourceType": "court",
+      "originId": "taj-bankruptcy-case-91-13321",
+      "locator": "156 B.R. 928; Bankruptcy Nos. 91-13321, 91-13325, 91-13351, 91-13334; Adv. No. 93-2056; Facts paragraphs reproduced at HTML lines 107-118"
+    },
+    {
+      "id": "upi-taj-deal-1990-11-16",
+      "title": "Trump's Taj Mahal casino to enter consensual bankruptcy",
+      "url": "https://www.upi.com/Archives/1990/11/16/Trumps-Taj-Mahal-casino-to-enter-consensual-bankruptcy/2565658731600/",
+      "publisher": "United Press International",
+      "publishedAt": "1990-11-16",
+      "accessedAt": "2026-09-08",
+      "sourceType": "reporting",
+      "originId": "upi",
+      "locator": "Indexed article text naming Ross as a key negotiator and describing announced terms"
+    },
+    {
+      "id": "wapo-taj-creditor-adviser-1990",
+      "title": "Speculators Are Enjoying the Spectacle of Trump's Taj Mahal Troubles",
+      "url": "https://www.washingtonpost.com/archive/business/1990/11/13/speculators-are-enjoying-the-spectacle-of-trumps-taj-mahal-troubles/1fa963f2-ba14-4b06-87c6-b8674e6d234f/",
+      "publisher": "The Washington Post",
+      "publishedAt": "1990-11-12",
+      "accessedAt": "2026-09-08",
+      "sourceType": "reporting",
+      "originId": "washington-post",
+      "locator": "Displayed date Nov. 12, 1990; HTML lines 19-28"
+    },
+    {
+      "id": "time-taj-creditor-adviser-1991",
+      "title": "Wall Street: The Dealers Return",
+      "url": "https://time.com/archive/6718587/wall-street-the-dealers-return/",
+      "publisher": "TIME",
+      "publishedAt": "1991-09-16",
+      "accessedAt": "2026-09-08",
+      "sourceType": "reporting",
+      "originId": "time",
+      "locator": "Opening article passage"
+    },
+    {
+      "id": "sec-mittal-ross-2005",
+      "title": "Mittal Steel Company N.V. Shareholders Circular dated March 14, 2005",
+      "url": "https://www.sec.gov/Archives/edgar/data/1041989/000095012305003084/y69139dexv99w1w1.htm",
+      "publisher": "Mittal Steel Company N.V., filed through U.S. SEC EDGAR",
+      "publishedAt": "2005-03-14",
+      "accessedAt": "2026-09-08",
+      "sourceType": "corporate_filing",
+      "originId": "mittal-steel-sec-filings",
+      "locator": "Exhibit 99.1.1 to Form 6-K, accession 0000950123-05-003084; Wilbur L. Ross biographical paragraph"
+    },
+    {
+      "id": "senate-ross-confirmation-2017",
+      "title": "U.S. Senate Roll Call Vote 73, confirmation of Wilbur L. Ross, Jr. to be Secretary of Commerce",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1151/vote_115_1_00073.htm",
+      "publisher": "United States Senate",
+      "publishedAt": "2017-02-27",
+      "accessedAt": "2026-09-08",
+      "sourceType": "official_record",
+      "originId": "us-senate-115th-congress",
+      "locator": "Nomination PN32; vote 73; confirmed 72-27 on 2017-02-27"
+    },
+    {
+      "id": "whitehouse-ross-biography",
+      "title": "Wilbur L. Ross, Jr. — Secretary of Commerce",
+      "url": "https://trumpwhitehouse.archives.gov/people/wilbur-ross/",
+      "publisher": "Trump White House, archived by the National Archives",
+      "publishedAt": null,
+      "accessedAt": "2026-09-08",
+      "sourceType": "official_record",
+      "originId": "first-trump-white-house",
+      "locator": "Biography opening; sworn-in date, office, Trump administration role, and prior WL Ross & Co. role"
+    },
+    {
+      "id": "oge-trump-release-2026",
+      "title": "Now Available: The President's and Vice President's certified annual financial disclosure reports",
+      "url": "https://www2.oge.gov/web/oge.nsf/Resources/Now%2BAvailable:%2BThe%2BPresident%E2%80%99s%2Band%2BVice%2BPresident%E2%80%99s%2Bcertified%2Bannual%2Bfinancial%2Bdisclosure%2Breports",
+      "publisher": "U.S. Office of Government Ethics",
+      "publishedAt": "2026-06-30",
+      "accessedAt": "2026-09-08",
+      "originId": "us-office-government-ethics",
+      "locator": "Release text and link to the President's certified annual report",
+      "sourceType": "official_record"
+    },
+    {
+      "id": "oge-trump-report-2025",
+      "title": "Public Financial Disclosure Report (OGE Form 278e), Donald J. Trump, annual report for calendar year 2025",
+      "url": "https://oge.box.com/shared/static/zycb5i2ny8kssm51uzqm8ygyq2zkpkqq.pdf",
+      "publisher": "U.S. Office of Government Ethics",
+      "publishedAt": "2026-06-30",
+      "accessedAt": "2026-09-08",
+      "originId": "us-office-government-ethics",
+      "locator": "927-page PDF; Part 8 liabilities at PDF/printed pages 846-847; relevant Schedule 1 property interests in the following pages; Part 8 reporting summary at the end",
+      "sourceType": "official_record"
+    },
+    {
+      "id": "ladder-subsidiaries-2025",
+      "title": "Subsidiaries of Ladder Capital Corp",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577670/000157767026000011/ladr12312025ex-211.htm",
+      "publisher": "Ladder Capital Corp, filed through U.S. SEC EDGAR",
+      "publishedAt": "2026-02-09",
+      "accessedAt": "2026-09-08",
+      "originId": "ladder-capital-sec-filings",
+      "locator": "Exhibit 21.1 to 2025 Form 10-K, accession 0001577670-26-000011; Lending/Real Estate Debt-Related Subsidiaries",
+      "sourceType": "corporate_filing"
+    }
+  ],
+  "claims": [
+    {
+      "id": "rothschild-taj-creditor-role",
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "entityIds": [
+        "TRUMP"
+      ],
+      "text": "Contemporary UPI reporting identifies Wilbur Ross of Rothschild Inc. as a negotiator for Taj Mahal bondholders during the announced 1990 restructuring.",
+      "status": "superseded",
+      "sourceIds": [
+        "upi-1990-taj",
+        "upi-1990-creditors"
+      ],
+      "eventDate": "1990-11-16",
+      "recordType": "Contemporary reporting",
+      "context": "This is a research lead pending original bankruptcy and creditor records. The reporting describes a creditor-side role and earlier rejection of Trump's offer; it does not establish a personal family loan or continuing involvement.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "hocke-slogan-final",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "text": "Landgericht Halle reports that Höcke's two convictions for using prohibited SA slogans became final after the Federal Court of Justice rejected both appeals in August 2025.",
+      "status": "documented",
+      "sourceIds": [
+        "halle-2025-final"
+      ],
+      "eventDate": "2025-08-20",
+      "recordType": "Court finding",
+      "context": "The cases concerned conduct in Merseburg in May 2021 and Gera in December 2023. They were prohibited-symbol convictions, not Holocaust-denial convictions.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "afd-holocaust-statement",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "text": "In January 2020, AfD national spokespeople Jörg Meuthen and Tino Chrupalla explicitly acknowledged the Nazi mass murder of European Jews.",
+      "status": "documented",
+      "sourceIds": [
+        "afd-2020-holocaust"
+      ],
+      "eventDate": "2020-01-26",
+      "recordType": "Attributed party statement",
+      "context": "This establishes the speakers' stated position. Individual allegations of denial, minimization or disputes over remembrance require separate, named attribution.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "musk-halle-appearance",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "text": "Musk appeared by live video at AfD's January 2025 campaign launch in Halle and publicly supported the party.",
+      "status": "documented",
+      "sourceIds": [
+        "afd-2025-halle",
+        "reuters-2025-halle"
+      ],
+      "eventDate": "2025-01-25",
+      "recordType": "Recorded campaign appearance",
+      "context": "The party's own event account and independent reporting identify the appearance. Public support does not establish shared campaign planning.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "weidel-slogan-2025",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "text": "Reuters reported that Weidel referenced the Republicans' American slogan and called for making Germany great again at the Halle rally.",
+      "status": "lead",
+      "sourceIds": [
+        "reuters-2025-halle"
+      ],
+      "eventDate": "2025-01-25",
+      "recordType": "Reported statement",
+      "context": "Retained as a reporting lead for the original speech record. This does not establish adoption of an entire coordinated campaign strategy.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "vance-weidel-meeting",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "text": "The February 14, 2025 vice-presidential pool report records Vance's meeting with Weidel, citing an official in his office.",
+      "status": "documented",
+      "sourceIds": [
+        "vp-pool-2025-munich"
+      ],
+      "eventDate": "2025-02-14",
+      "recordType": "Attributed official account",
+      "context": "The same report records meetings with other major German political leaders. The entry establishes a reported meeting, not exclusive coordination or campaign instructions.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "fec-election-date-2026",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "The FEC lists November 3, 2026 as the next regularly scheduled federal general election.",
+      "status": "documented",
+      "sourceIds": [
+        "fec-2026-election"
+      ],
+      "eventDate": "2026-11-03",
+      "recordType": "Official calendar",
+      "context": "This is a scheduled date, not a result or outcome forecast. State-specific administrative deadlines require their own current official records.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "hitler-appointment-1933",
+      "topicIds": [
+        "historical-comparisons"
+      ],
+      "entityIds": [],
+      "text": "The United States Holocaust Memorial Museum records that President Paul von Hindenburg appointed Hitler chancellor on January 30, 1933; Hitler was not directly elected chancellor.",
+      "status": "documented",
+      "sourceIds": [
+        "ushmm-hitler-power"
+      ],
+      "eventDate": "1933-01-30",
+      "recordType": "Historical reference",
+      "context": "This historical sequence does not establish equivalence with a contemporary person, party or outcome.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "enabling-act-government-law-1933",
+      "text": "The Enabling Act, proclaimed March 24, 1933, authorized the Reich government to enact laws outside the ordinary parliamentary procedure and permitted departures from the constitution within the act’s stated exceptions.",
+      "context": "The translated law establishes the authority granted. The museum also documents intimidation and exclusion during passage. This historical sequence does not by itself establish a contemporary equivalent.",
+      "recordType": "Historical legal text and attributed museum context",
+      "status": "documented",
+      "eventDate": "1933-03-24",
+      "reviewedAt": "2026-09-08",
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority"
+      ],
+      "sourceIds": [
+        "ushmm-enabling-act-text"
+      ]
+    },
+    {
+      "id": "us-constitutional-allocation-powers",
+      "text": "The U.S. Constitution assigns legislative powers to Congress, provides a congressional bill-and-presentment procedure, and vests judicial power in a separate judiciary.",
+      "context": "These are the written institutional rules in Articles I and III. Their existence alone does not demonstrate present compliance; that requires dated statutes, orders, judgments and implementation records.",
+      "recordType": "Constitutional text",
+      "status": "documented",
+      "eventDate": null,
+      "reviewedAt": "2026-09-08",
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority"
+      ],
+      "sourceIds": [
+        "nara-constitution-text"
+      ]
+    },
+    {
+      "id": "trump-2024-popular-vote-correction",
+      "topicIds": [
+        "corrections-provenance",
+        "historical-comparisons",
+        "us-midterms"
+      ],
+      "entityIds": [
+        "TRUMP"
+      ],
+      "text": "The FEC’s official 2024 results record Trump with 77,302,580 votes (49.80%) and Harris with 75,017,613 (48.32%); the electoral-vote result was 312–226.",
+      "status": "documented",
+      "sourceIds": [
+        "fec-official-results-2024"
+      ],
+      "eventDate": "2024-11-05",
+      "recordType": "Official election results; correction C-017",
+      "context": "This corrects the preserved Chapter 10 statement that treats 2024 as a national popular-vote loss. Trump won a plurality; a share below 50% does not mean losing the popular vote. It does not predict the 2026 midterms.",
+      "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "hocke-merseburg-slogan-2021",
+      "text": "LG Halle found that Björn Höcke knowingly used the prohibited SA slogan at the end of a campaign speech in Merseburg on 29 May 2021. Its 14 May 2024 judgment imposed 100 daily units of €130.",
+      "context": "The court found deliberate public use and an effort to return the slogan to ordinary political language. The offense was use of prohibited symbols under § 86a StGB. The court’s September 2025 release reports the conviction as final; this is not a Holocaust-denial finding.",
+      "sourceIds": [
+        "halle-2025-final"
+      ],
+      "entityIds": [
+        "HOECKE"
+      ],
+      "eventDate": "2021-05-29",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "hocke-gera-slogan-2023",
+      "text": "LG Halle found that Höcke deliberately prompted an audience in Gera to complete the prohibited SA slogan on 12 December 2023. Its 1 July 2024 judgment imposed 130 daily units of €130.",
+      "context": "According to the court, he spoke the opening words and gestured for the audience’s completion while the earlier prosecution was pending. The completion was attributable to him. This final prohibited-symbol conviction must be distinguished from Holocaust denial or minimization.",
+      "sourceIds": [
+        "halle-2025-final"
+      ],
+      "entityIds": [
+        "HOECKE"
+      ],
+      "eventDate": "2023-12-12",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "hocke-hearing-complaints-2025",
+      "text": "On 15 October 2025, the Federal Court of Justice rejected Höcke’s hearing complaints in both SA-slogan cases, 3 StR 484/24 and 3 StR 519/24.",
+      "context": "The court-authored texts are available through Open Legal Data mirrors. They follow the August 2025 rejection of the revisions. The legacy official document routes returned generic website content when checked; that access failure does not undermine the identified court texts or establish any further proceeding’s outcome.",
+      "sourceIds": [
+        "de-bgh-3-str-484-24-2025-10-15",
+        "de-bgh-3-str-519-24-2025-10-15",
+        "halle-2025-final"
+      ],
+      "entityIds": [
+        "HOECKE"
+      ],
+      "eventDate": "2025-10-15",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "afd-thuringia-history-ruling-2024",
+      "text": "VG Weimar rejected AfD Thüringen’s challenge to three passages in the 2021 state intelligence report. The court’s 28 August 2024 release says the agency could characterize a remembrance post by state spokesperson Höcke, which omitted Holocaust victims, as historical revisionism.",
+      "context": "This is the court’s summary of oral reasons in 8 K 1272/23 We, an administrative reporting dispute. The release expressly said the judgment was not final and written reasons were not yet available. A later appellate disposition remains unresolved. The source identifies AfD Thüringen as the regional party organization and Höcke as its state spokesperson; it does not establish a criminal Holocaust-denial conviction.",
+      "sourceIds": [
+        "de-vg-weimar-8-k-1272-23"
+      ],
+      "entityIds": [
+        "HOECKE",
+        "AFD_THURINGIA",
+        "AFD"
+      ],
+      "eventDate": "2024-08-28",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "afd-federal-spokespeople-2020",
+      "text": "AfD’s 26 January 2020 remembrance statement identifies Jörg Meuthen and Tino Chrupalla as its federal spokespeople and attributes to them an acknowledgment of the Nazi murder of European Jews.",
+      "context": "This dated party record establishes the named speakers and their published position. It is not evidence that every member shared that position or that these were their offices at all later dates.",
+      "sourceIds": [
+        "afd-2020-holocaust"
+      ],
+      "entityIds": [
+        "MEUTHEN",
+        "CHRUPALLA",
+        "AFD"
+      ],
+      "eventDate": "2020-01-26",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Attributed party statement",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "afd-federal-minimization-response-2021",
+      "text": "In a 9 March 2021 party statement, Meuthen and Chrupalla condemned Holocaust denial and minimization and said the federal board had initiated exclusion proceedings against a Bavarian member over a vaccine–Zyklon B comparison.",
+      "context": "This is the party’s account of its stated position and steps it said it took. The statement does not establish completed expulsion, every member’s beliefs, or the party’s entire present position. It is relevant counterevidence to a blanket claim that the national party denies the Holocaust.",
+      "sourceIds": [
+        "afd-federal-2021-03-09-exclusion-statement"
+      ],
+      "entityIds": [
+        "MEUTHEN",
+        "CHRUPALLA",
+        "AFD"
+      ],
+      "eventDate": "2021-03-09",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Attributed party statement",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "afd-suspected-case-appeal-2025",
+      "text": "The Federal Administrative Court’s 20 May 2025 decision in 6 B 23.24 rejected the complaint against non-admission of revision concerning the federal AfD’s suspected-case classification. Its July release reported that the 13 May 2024 OVG Münster judgments had become final.",
+      "context": "The decision addresses the grounds for admitting a further appeal. It is not a party ban, a criminal Holocaust-denial judgment, or a determination of every later intelligence classification or dispute. The operative date is May 2025; the publication release is dated 22 July 2025.",
+      "sourceIds": [
+        "de-bverwg-6-b-23-24"
+      ],
+      "entityIds": [
+        "AFD"
+      ],
+      "eventDate": "2025-05-20",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "lanzerath-holocaust-minimization-2019",
+      "text": "The European Court of Human Rights records that AfD member Rainer Edmund Maria Lanzerath was convicted in Augsburg on 23 August 2019 and fined €4,500 for two counts of Holocaust minimization under § 130(3) StGB.",
+      "context": "His banner and earlier online image compared a yellow Star of David marked 1933–1945 with the AfD logo marked 2013–?. He argued that he was protesting marginalization of AfD members. The courts found the comparison blatantly minimized the Holocaust. The decision identifies individual membership and a congress setting; it does not establish party commissioning or adoption, or Holocaust denial.",
+      "sourceIds": [
+        "echr-lanzerath-1854-22"
+      ],
+      "entityIds": [
+        "LANZERATH",
+        "AFD"
+      ],
+      "eventDate": "2019-08-23",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "lanzerath-echr-disposition-2022",
+      "text": "The European Court of Human Rights unanimously declared Lanzerath’s application 1854/22 inadmissible on 5 July 2022, with written notification on 28 July.",
+      "context": "The four-page decision records the unsuccessful domestic appeals and the Federal Constitutional Court’s 21 September 2021 refusal to accept the constitutional complaint without reasons. It treats the conviction as a proportionate interference with expression. It does not attribute the member’s banner to the federal party.",
+      "sourceIds": [
+        "echr-lanzerath-1854-22"
+      ],
+      "entityIds": [
+        "LANZERATH"
+      ],
+      "eventDate": "2022-07-05",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "germany-afd"
+      ]
+    },
+    {
+      "id": "taj-capital-contribution-1988",
+      "text": "The 1992 federal securities opinion records a $75 million capital contribution by Donald Trump to the Taj partnership and identifies Merrill Lynch as the 1988 bond underwriter.",
+      "context": "The reproduced prospectus table lists $675 million in bond proceeds, $75 million in capital and $55 million from other sources. The opinion’s opening background instead says $674 million; that source discrepancy is retained. The court says Trump made the required contribution and was not a personal guarantor of the Taj’s success. This does not resolve every separate debt or guarantee.",
+      "sourceIds": [
+        "taj-securities-opinion-1992"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "TAJ_ASSOCIATES",
+        "MERRILL_LYNCH",
+        "TAJ_BONDHOLDERS"
+      ],
+      "eventDate": "1988-11-09",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court account of prospectus financing",
+      "status": "documented",
+      "topicIds": [
+        "trump-early-financing"
+      ]
+    },
+    {
+      "id": "taj-corporate-reorganization-1991",
+      "text": "A 1993 bankruptcy opinion records that Trump Taj Mahal Associates and three affiliated corporate debtors filed Chapter 11 petitions on 16 July 1991; the court confirmed their plan on 28 August 1991.",
+      "context": "The named affiliates were Trump Taj Mahal, Inc., The Trump Taj Mahal Corporation and Trump Taj Mahal Funding, Inc. These are entity bankruptcies. This opinion supplies the filing and confirmation dates; it does not establish every creditor’s role, final distribution or a personal Trump bankruptcy.",
+      "sourceIds": [
+        "taj-bankruptcy-opinion-1993"
+      ],
+      "entityIds": [
+        "TAJ_ASSOCIATES",
+        "TAJ_FUNDING"
+      ],
+      "eventDate": "1991-07-16",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Court finding",
+      "status": "documented",
+      "topicIds": [
+        "trump-early-financing"
+      ]
+    },
+    {
+      "id": "rothschild-ross-taj-advisers-1990",
+      "text": "Contemporary UPI and Washington Post reporting identifies Wilbur Ross of Rothschild Inc. as a Taj bondholder representative. TIME independently reports the firm’s creditor role in the 1991 bankruptcy.",
+      "context": "Together these establish a corroborated reporting record of creditor-side negotiation and restructuring work. The contemporaneous UPI announcement describes preliminary terms; it is not the final confirmed plan. The engagement agreement, creditor-committee appointment and fee order remain records to retrieve. A personal loan from a Rothschild family member, or continuing institutional control, is not established by these reports.",
+      "sourceIds": [
+        "upi-taj-deal-1990-11-16",
+        "wapo-taj-creditor-adviser-1990",
+        "time-taj-creditor-adviser-1991"
+      ],
+      "entityIds": [
+        "ROSS",
+        "ROTHSCHILD_INC",
+        "TAJ_BONDHOLDERS",
+        "TAJ_ASSOCIATES",
+        "TRUMP"
+      ],
+      "eventDate": "1990-11-16",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Corroborated contemporary reporting",
+      "status": "documented",
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "supersedes": "rothschild-taj-creditor-role"
+    },
+    {
+      "id": "ross-rothschild-employment-boundary",
+      "text": "A 2005 SEC-filed Mittal Steel biography identifies Wilbur L. Ross as a former executive managing director of Rothschild Inc., with that employment ending in March 2000, and as CEO of WL Ross & Co. from April 2000.",
+      "context": "This issuer-filed biography supports Ross’s identity and the employment boundary. His later roles cannot automatically be attributed to his former employer. An institutional, ownership or financial continuation needs a separate dated record. The early-finance packet also identified differing historical start years in a later Senate questionnaire; that discrepancy does not change the shared 1990 employment interval.",
+      "sourceIds": [
+        "sec-mittal-ross-2005"
+      ],
+      "entityIds": [
+        "ROSS",
+        "ROTHSCHILD_INC"
+      ],
+      "eventDate": null,
+      "reviewedAt": "2026-09-08",
+      "recordType": "Issuer-filed biographical account",
+      "status": "documented",
+      "topicIds": [
+        "trump-early-financing"
+      ]
+    },
+    {
+      "id": "ross-trump-commerce-bridge-2017",
+      "text": "The Senate confirmed Wilbur L. Ross Jr. as Secretary of Commerce on 27 February 2017 by 72–27. The archived White House biography records his swearing-in the next day and his role in the Trump administration.",
+      "context": "This is a documented personnel bridge from Trump’s earlier creditor negotiations to his first administration when read alongside the separately dated Ross employment and Taj records. It does not establish that Rothschild Inc. directed the appointment or continued a financing or advisory role.",
+      "sourceIds": [
+        "senate-ross-confirmation-2017",
+        "whitehouse-ross-biography"
+      ],
+      "entityIds": [
+        "ROSS",
+        "TRUMP"
+      ],
+      "eventDate": "2017-02-28",
+      "reviewedAt": "2026-09-08",
+      "recordType": "Official appointment record",
+      "status": "documented",
+      "topicIds": [
+        "trump-early-financing"
+      ]
+    },
+    {
+      "id": "trump-liabilities-disclosure-2025",
+      "text": "Trump’s certified annual disclosure for 2025 lists Ladder Capital Finance LLC’s TIHT mortgage at $5,000,001–$25,000,000 with a 2026 maturity, two Axos mortgages above $50 million each with 2032 maturities, and a Charles Schwab Bank pledged-asset line above $50 million incurred in 2025.",
+      "context": "Part 8 also reports the Bryn Mawr Seven Springs and Professional Bank South Ocean mortgages paid off in July 2025, and Ladder Capital Finance I LLC’s 40 Wall Street mortgage paid off in June 2025. The two Ladder names are distinct. These are the filer’s reported liabilities, not live lender balances or proof of the exact legal obligor on each underlying instrument. OGE released the certified report on 30 June 2026; it does not establish status on 8 September 2026.",
+      "sourceIds": [
+        "oge-trump-report-2025",
+        "oge-trump-release-2026"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "LADDER_FINANCE",
+        "LADDER_FINANCE_I",
+        "AXOS",
+        "SCHWAB_BANK"
+      ],
+      "eventDate": null,
+      "recordType": "Certified annual financial disclosure",
+      "status": "documented",
+      "reviewedAt": "2026-09-08",
+      "topicIds": [
+        "trump-later-financing",
+        "ownership-disclosures"
+      ]
+    },
+    {
+      "id": "ladder-common-parent-record-2025",
+      "text": "Ladder Capital Corp’s subsidiary exhibit filed with its 2025 Form 10-K lists both Ladder Capital Finance LLC and Ladder Capital Finance I LLC under lending and real-estate debt subsidiaries. Both exact names also appear in Trump’s 2025 liability disclosure.",
+      "context": "This establishes a dated common corporate-group connection. The exhibit does not specify ownership percentages, direct-parent layers or subsequent assignments. The creditors remain separate legal entities and their mortgages have different reported statuses; common group membership does not merge their roles.",
+      "sourceIds": [
+        "ladder-subsidiaries-2025",
+        "oge-trump-report-2025"
+      ],
+      "entityIds": [
+        "LADDER_CAPITAL",
+        "LADDER_FINANCE",
+        "LADDER_FINANCE_I",
+        "TRUMP"
+      ],
+      "eventDate": "2025-12-31",
+      "recordType": "Issuer-filed subsidiary list and disclosure",
+      "status": "documented",
+      "reviewedAt": "2026-09-08",
+      "topicIds": [
+        "trump-later-financing",
+        "ownership-disclosures"
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "institutional-sequences",
+      "title": "Institutional sequences across historical cases",
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority",
+        "germany-afd"
+      ],
+      "historicalCase": "Germany, 1933: appointment and subsequent institutional changes",
+      "sourceIds": [
+        "ushmm-hitler-power"
+      ],
+      "documentedBasis": "The historical reference distinguishes appointment to office from direct election to that office.",
+      "similarities": "No contemporary equivalence has been established in this comparison record.",
+      "differences": "Jurisdiction, constitutional rules, institutions, time period and observed outcomes must be specified for each proposed comparison.",
+      "counterevidence": "Cases in which similar pressures were constrained, reversed or produced different outcomes must be examined alongside the proposed case.",
+      "nextCheck": "Add original historical and contemporary records before asserting a shared mechanism.",
+      "status": "under_review"
+    },
+    {
+      "id": "law-making-and-constraint",
+      "title": "Emergency authority: test the mechanism, then its limits",
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority"
+      ],
+      "sourceIds": [
+        "ushmm-enabling-act-text",
+        "nara-constitution-text"
+      ],
+      "historicalCase": "Germany, March 1933: a law authorized government legislation outside ordinary parliamentary procedure.",
+      "documentedBasis": "The Enabling Act’s Articles 1–3 specify the transfer and its stated exceptions.",
+      "similarities": "A useful research question is whether a present measure bypasses ordinary lawmaking, and how institutions respond. A shared mechanism has to be proved in the specific records.",
+      "differences": "The U.S. Constitution allocates powers separately. Rhetoric, an executive order and the 1933 legislative transfer are different acts; the authority and legal effect of each must be examined.",
+      "counterevidence": "An effective judicial limit, legislative refusal, reversal or verified compliance would weaken a claim that constraints have ceased to function. A ruling alone does not establish compliance.",
+      "nextCheck": "For each current controversy, join the exact instrument to the operative ruling and later compliance record. Record what would strengthen and what would disprove the proposed comparison before checking the next event.",
+      "status": "conditional-research-framework"
+    }
+  ],
+  "watchpoints": [
+    {
+      "id": "check-trump-early-financing",
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "question": "Which legal entities represented lenders or creditors in each restructuring?",
+      "sourceIds": [
+        "taj-securities-opinion-1992",
+        "taj-bankruptcy-opinion-1993",
+        "upi-taj-deal-1990-11-16",
+        "time-taj-creditor-adviser-1991",
+        "sec-mittal-ross-2005"
+      ],
+      "status": "open",
+      "lastCheckedAt": "2026-09-08",
+      "nextCheck": "Retrieve the Taj creditor-committee engagement and fee records; identify exact legal entities in each later loan, advisory, ownership or compensation document before testing a continuing institutional bridge.",
+      "outcome": "Creditor-side Rothschild Inc./Ross work and the later Ross personnel bridge are supported. The underlying engagement, committee appointment and fee records remain unresolved; blocked archive scans are not verified absence.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-germany-afd",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "question": "Which conduct belongs to a named individual, a regional organization or the national party?",
+      "sourceIds": [
+        "halle-2025-final",
+        "de-vg-weimar-8-k-1272-23",
+        "echr-lanzerath-1854-22"
+      ],
+      "status": "open",
+      "lastCheckedAt": "2026-09-08",
+      "nextCheck": "Retrieve a later appellate disposition for VG Weimar 8 K 1272/23 We; verify each new allegation against its named docket.",
+      "outcome": "Named court records distinguish prohibited slogans, individual Holocaust minimization and an administrative revisionism dispute. Weimar appellate status remains unresolved.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-iran-us-decisions",
+      "topicIds": [
+        "iran-us-decisions"
+      ],
+      "question": "Which authorization and official stated objectives apply to each dated action?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-us-midterms",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "question": "Which election-administration rules are operative after rulings and appeals?",
+      "sourceIds": [
+        "fec-2026-election"
+      ],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-executive-authority",
+      "topicIds": [
+        "executive-authority"
+      ],
+      "question": "What is proposed, legally effective, stayed, appealed or implemented?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-ownership-disclosures",
+      "topicIds": [
+        "ownership-disclosures"
+      ],
+      "question": "Who held which disclosed interest at the relevant date?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-digital-assets",
+      "topicIds": [
+        "digital-assets"
+      ],
+      "question": "Which entity issued, held or transferred an asset?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-information-media",
+      "topicIds": [
+        "information-media"
+      ],
+      "question": "What was stated, by whom, when and in what context?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-enforcement-surveillance",
+      "topicIds": [
+        "enforcement-surveillance"
+      ],
+      "question": "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-war-trade",
+      "topicIds": [
+        "war-trade"
+      ],
+      "question": "Which original records establish the sequence and legal authority?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-civil-society",
+      "topicIds": [
+        "civil-society"
+      ],
+      "question": "Which actions were implemented, revised, challenged or reversed?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-technology-infrastructure",
+      "topicIds": [
+        "technology-infrastructure"
+      ],
+      "question": "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-historical-comparisons",
+      "topicIds": [
+        "historical-comparisons"
+      ],
+      "question": "Which historical mechanism is being compared, within which institutional conditions?",
+      "sourceIds": [
+        "ushmm-hitler-power"
+      ],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-corrections-provenance",
+      "topicIds": [
+        "corrections-provenance"
+      ],
+      "question": "Which earlier claim has been superseded, and by what original record?",
+      "sourceIds": [],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Next weekly research run",
+      "outcome": "Pending a recorded source check.",
+      "createdAt": "2026-09-08"
+    },
+    {
+      "id": "check-trump-later-financing",
+      "topicIds": [
+        "trump-later-financing"
+      ],
+      "question": "Do later instruments establish a continuing institutional or financial bridge?",
+      "sourceIds": [
+        "oge-trump-report-2025",
+        "ladder-subsidiaries-2025",
+        "sec-mittal-ross-2005"
+      ],
+      "status": "open",
+      "createdAt": "2026-09-08",
+      "lastCheckedAt": "2026-09-08",
+      "outcome": "The checked disclosures identify named creditors and a common Ladder group; the Ross personnel bridge is separately documented. A later Rothschild institutional or financial bridge remains unresolved.",
+      "nextCheck": "Inspect executed loan instruments, assignment chains, adviser engagements and compensation records; reconcile 2026 maturities and payoffs against later originals."
+    }
+  ],
+  "entities": [],
+  "relationships": [
+    {
+      "mapEdgeIndex": 62,
+      "sourceIds": [
+        "de-vg-weimar-8-k-1272-23"
+      ],
+      "claimIds": [
+        "afd-thuringia-history-ruling-2024"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 63,
+      "sourceIds": [
+        "de-vg-weimar-8-k-1272-23"
+      ],
+      "claimIds": [
+        "afd-thuringia-history-ruling-2024"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 64,
+      "sourceIds": [
+        "echr-lanzerath-1854-22"
+      ],
+      "claimIds": [
+        "lanzerath-holocaust-minimization-2019"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 65,
+      "sourceIds": [
+        "afd-2020-holocaust",
+        "afd-federal-2021-03-09-exclusion-statement"
+      ],
+      "claimIds": [
+        "afd-federal-spokespeople-2020",
+        "afd-federal-minimization-response-2021"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 66,
+      "sourceIds": [
+        "afd-2020-holocaust",
+        "afd-federal-2021-03-09-exclusion-statement"
+      ],
+      "claimIds": [
+        "afd-federal-spokespeople-2020",
+        "afd-federal-minimization-response-2021"
+      ],
+      "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 67,
+      "sourceIds": [
+        "taj-securities-opinion-1992"
+      ],
+      "claimIds": [
+        "taj-capital-contribution-1988"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 68,
+      "sourceIds": [
+        "taj-securities-opinion-1992"
+      ],
+      "claimIds": [
+        "taj-capital-contribution-1988"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 69,
+      "sourceIds": [
+        "time-taj-creditor-adviser-1991",
+        "upi-taj-deal-1990-11-16",
+        "wapo-taj-creditor-adviser-1990"
+      ],
+      "claimIds": [
+        "rothschild-ross-taj-advisers-1990"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 70,
+      "sourceIds": [
+        "time-taj-creditor-adviser-1991",
+        "upi-taj-deal-1990-11-16",
+        "wapo-taj-creditor-adviser-1990"
+      ],
+      "claimIds": [
+        "rothschild-ross-taj-advisers-1990"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 71,
+      "sourceIds": [
+        "sec-mittal-ross-2005"
+      ],
+      "claimIds": [
+        "ross-rothschild-employment-boundary"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 72,
+      "sourceIds": [
+        "time-taj-creditor-adviser-1991",
+        "upi-taj-deal-1990-11-16",
+        "wapo-taj-creditor-adviser-1990"
+      ],
+      "claimIds": [
+        "rothschild-ross-taj-advisers-1990"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 73,
+      "sourceIds": [
+        "taj-bankruptcy-opinion-1993"
+      ],
+      "claimIds": [
+        "taj-corporate-reorganization-1991"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 74,
+      "sourceIds": [
+        "senate-ross-confirmation-2017",
+        "whitehouse-ross-biography"
+      ],
+      "claimIds": [
+        "ross-trump-commerce-bridge-2017"
+      ],
+      "reportHref": "/topics/trump-early-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 75,
+      "claimIds": [
+        "trump-liabilities-disclosure-2025"
+      ],
+      "sourceIds": [
+        "oge-trump-release-2026",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 76,
+      "claimIds": [
+        "trump-liabilities-disclosure-2025"
+      ],
+      "sourceIds": [
+        "oge-trump-release-2026",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 77,
+      "claimIds": [
+        "trump-liabilities-disclosure-2025"
+      ],
+      "sourceIds": [
+        "oge-trump-release-2026",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 78,
+      "claimIds": [
+        "trump-liabilities-disclosure-2025"
+      ],
+      "sourceIds": [
+        "oge-trump-release-2026",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 79,
+      "claimIds": [
+        "ladder-common-parent-record-2025"
+      ],
+      "sourceIds": [
+        "ladder-subsidiaries-2025",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    },
+    {
+      "mapEdgeIndex": 80,
+      "claimIds": [
+        "ladder-common-parent-record-2025"
+      ],
+      "sourceIds": [
+        "ladder-subsidiaries-2025",
+        "oge-trump-report-2025"
+      ],
+      "reportHref": "/topics/trump-later-financing.html#records"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "feedback-history-mechanism-20260908",
+      "date": "2026-09-08",
+      "decision": "accept",
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority"
+      ],
+      "exampleText": "Enabling Act Articles 1 2 3 legislative authority judicial compliance constitutional allocation",
+      "reason": "Use the actual legal instrument and implementation records to test a mechanism; a similar slogan is not sufficient."
+    },
+    {
+      "id": "afd-court-offense-scope-20260908",
+      "date": "2026-09-08",
+      "decision": "reject",
+      "purpose": "evidence_review",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "reason": "Do not convert a prohibited-symbol conviction into Holocaust denial, or a member’s conduct into national-party policy. Check the offense, actor and disposition separately."
+    },
+    {
+      "id": "afd-court-source-route-20260908",
+      "date": "2026-09-08",
+      "decision": "reject",
+      "purpose": "source_route",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "reason": "The legacy BGH routes returned generic website content. Use the identified court-authored mirror plus docket and ECLI checks; failed retrieval cannot establish absence."
+    },
+    {
+      "id": "finance-role-boundaries-20260908",
+      "date": "2026-09-08",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "reason": "Creditor representation, professional fees, lending, ownership and later public appointments are distinct relations. Trace intermediaries without converting one role into another or interpreting a failed archive fetch as absence."
+    },
+    {
+      "id": "later-finance-identities-20260908",
+      "date": "2026-09-08",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "trump-later-financing",
+        "ownership-disclosures"
+      ],
+      "reason": "A disclosure occurrence is not necessarily an outstanding loan. Preserve payoff status, exact LLC names and reporting period. Common parentage supports an intermediary path, not merged entities or an unproven lender identity."
+    },
+    {
+      "id": "source-origin-normalization-20260908",
+      "date": "2026-09-08",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "trump-early-financing",
+        "germany-afd"
+      ],
+      "reason": "Normalize incoming source origins against the existing registry before admission. Different article dates, author labels or packet-local origin names do not create independent outlets; repeated UPI stories remain one origin."
+    }
+  ],
+  "topicProposals": [],
+  "revisions": [
+    {
+      "id": "research-registry-2026-09-08",
+      "date": "2026-09-08",
+      "summary": "Initial structured research layer, separate from the preserved report and published weekly history.",
+      "claimIds": [
+        "rothschild-taj-creditor-role",
+        "hocke-slogan-final",
+        "afd-holocaust-statement",
+        "musk-halle-appearance",
+        "weidel-slogan-2025",
+        "vance-weidel-meeting",
+        "fec-election-date-2026",
+        "hitler-appointment-1933"
+      ]
+    },
+    {
+      "id": "history-legal-foundations-20260908",
+      "date": "2026-09-08",
+      "summary": "Adds inspected historical legal text, constitutional distinctions and conditional checks without asserting a modern equivalence.",
+      "claimIds": [
+        "enabling-act-government-law-1933",
+        "us-constitutional-allocation-powers"
+      ],
+      "topicIds": [
+        "historical-comparisons",
+        "executive-authority"
+      ]
+    },
+    {
+      "id": "fec-popular-vote-correction-20260908",
+      "date": "2026-09-08",
+      "summary": "Appends C-017 and an inline note while retaining the original master paragraph.",
+      "claimIds": [
+        "trump-2024-popular-vote-correction"
+      ],
+      "topicIds": [
+        "corrections-provenance",
+        "historical-comparisons",
+        "us-midterms"
+      ]
+    },
+    {
+      "id": "afd-court-admission-20260908",
+      "date": "2026-09-08",
+      "summary": "Add individually attributed court findings, dated party roles, counterevidence and five sourced map relationships; preserve all existing records.",
+      "claimIds": [
+        "hocke-merseburg-slogan-2021",
+        "hocke-gera-slogan-2023",
+        "hocke-hearing-complaints-2025",
+        "afd-thuringia-history-ruling-2024",
+        "afd-federal-spokespeople-2020",
+        "afd-federal-minimization-response-2021",
+        "afd-suspected-case-appeal-2025",
+        "lanzerath-holocaust-minimization-2019",
+        "lanzerath-echr-disposition-2022"
+      ],
+      "topicIds": [
+        "germany-afd"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "germany-afd",
+          "before": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "germany-afd",
+            "title": "Germany / AfD",
+            "description": "Named statements, court findings, campaign materials and documented international contacts.",
+            "categoryIds": [
+              "campaigns",
+              "institutions",
+              "history"
+            ],
+            "entityIds": [
+              "AFD",
+              "AFD_THURINGIA",
+              "HOECKE",
+              "CHRUPALLA",
+              "MEUTHEN",
+              "LANZERATH"
+            ],
+            "reportLinks": [
+              {
+                "label": "Historical lens",
+                "href": "/#the-historical-lens-retained-in-full"
+              }
+            ],
+            "researchQuestions": [
+              "Which conduct belongs to a named individual, a regional organization or the national party?",
+              "What evidence establishes explicit borrowing, contact or joint planning?",
+              "How do court findings, appeals and official statements differ in scope?"
+            ],
+            "status": "active",
+            "keywords": [
+              "AfD",
+              "Höcke",
+              "Hoecke",
+              "Weidel",
+              "Chrupalla",
+              "Germany",
+              "Deutschland"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Admit dated legal identities and sourced relationships."
+        },
+        {
+          "collection": "watchpoints",
+          "id": "check-germany-afd",
+          "before": {
+            "id": "check-germany-afd",
+            "topicIds": [
+              "germany-afd"
+            ],
+            "question": "Which conduct belongs to a named individual, a regional organization or the national party?",
+            "sourceIds": [
+              "halle-2025-final",
+              "afd-2020-holocaust",
+              "afd-2025-halle",
+              "reuters-2025-halle",
+              "vp-pool-2025-munich"
+            ],
+            "status": "open",
+            "lastCheckedAt": null,
+            "nextCheck": "Next weekly research run",
+            "outcome": "Pending a recorded source check.",
+            "createdAt": "2026-09-08"
+          },
+          "after": {
+            "id": "check-germany-afd",
+            "topicIds": [
+              "germany-afd"
+            ],
+            "question": "Which conduct belongs to a named individual, a regional organization or the national party?",
+            "sourceIds": [
+              "halle-2025-final",
+              "de-vg-weimar-8-k-1272-23",
+              "echr-lanzerath-1854-22"
+            ],
+            "status": "open",
+            "lastCheckedAt": "2026-09-08",
+            "nextCheck": "Retrieve a later appellate disposition for VG Weimar 8 K 1272/23 We; verify each new allegation against its named docket.",
+            "outcome": "Named court records distinguish prohibited slogans, individual Holocaust minimization and an administrative revisionism dispute. Weimar appellate status remains unresolved.",
+            "createdAt": "2026-09-08"
+          },
+          "reason": "Record actual named-source checks and the remaining record needed."
+        }
+      ]
+    },
+    {
+      "id": "finance-foundations-20260908",
+      "date": "2026-09-08",
+      "summary": "Admit inspected early-financing records, a corroborated creditor-adviser account and the later Ross personnel bridge; preserve the original lead through explicit supersession.",
+      "claimIds": [
+        "taj-capital-contribution-1988",
+        "taj-corporate-reorganization-1991",
+        "rothschild-ross-taj-advisers-1990",
+        "ross-rothschild-employment-boundary",
+        "ross-trump-commerce-bridge-2017"
+      ],
+      "topicIds": [
+        "trump-early-financing"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "trump-early-financing",
+          "before": {
+            "id": "trump-early-financing",
+            "title": "Trump: early financing",
+            "description": "Historical financing and creditor negotiations, including the Rothschild Inc. research lead.",
+            "categoryIds": [
+              "financial-history",
+              "history"
+            ],
+            "entityIds": [
+              "TRUMP"
+            ],
+            "reportLinks": [
+              {
+                "label": "Formation: the making of the man",
+                "href": "/#formation-the-making-of-the-man"
+              }
+            ],
+            "researchQuestions": [
+              "Which legal entities represented lenders or creditors in each restructuring?",
+              "Which named Rothschild entities or individuals, if any, appear in later verified financing, ownership or advisory records?",
+              "What do bankruptcy plans and creditor appointments establish beyond contemporary reporting?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Rothschild",
+              "Wilbur Ross",
+              "Taj Mahal",
+              "bankruptcy",
+              "creditor",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "trump-early-financing",
+            "title": "Trump: early financing",
+            "description": "Trace Trump’s early casino financing, Rothschild Inc.’s creditor-side role, Wilbur Ross and the records needed to test later institutional involvement.",
+            "categoryIds": [
+              "financial-history",
+              "history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "ROSS",
+              "ROTHSCHILD_INC",
+              "TAJ_ASSOCIATES",
+              "TAJ_BONDHOLDERS",
+              "MERRILL_LYNCH",
+              "TAJ_FUNDING"
+            ],
+            "reportLinks": [
+              {
+                "label": "Formation: the making of the man",
+                "href": "/#formation-the-making-of-the-man"
+              }
+            ],
+            "researchQuestions": [
+              "Which legal entities represented lenders or creditors in each restructuring?",
+              "Which named Rothschild entities or individuals, if any, appear in later verified financing, ownership or advisory records?",
+              "What do bankruptcy plans and creditor appointments establish beyond contemporary reporting?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Rothschild",
+              "Wilbur Ross",
+              "Taj Mahal",
+              "bankruptcy",
+              "creditor",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Replace the empty network with independently reviewed, dated financing and personnel relationships."
+        },
+        {
+          "collection": "watchpoints",
+          "id": "check-trump-early-financing",
+          "before": {
+            "id": "check-trump-early-financing",
+            "topicIds": [
+              "trump-early-financing"
+            ],
+            "question": "Which legal entities represented lenders or creditors in each restructuring?",
+            "sourceIds": [
+              "upi-1990-taj",
+              "upi-1990-creditors"
+            ],
+            "status": "open",
+            "lastCheckedAt": null,
+            "nextCheck": "Next weekly research run",
+            "outcome": "Pending a recorded source check.",
+            "createdAt": "2026-09-08"
+          },
+          "after": {
+            "id": "check-trump-early-financing",
+            "topicIds": [
+              "trump-early-financing"
+            ],
+            "question": "Which legal entities represented lenders or creditors in each restructuring?",
+            "sourceIds": [
+              "taj-securities-opinion-1992",
+              "taj-bankruptcy-opinion-1993",
+              "upi-taj-deal-1990-11-16",
+              "time-taj-creditor-adviser-1991",
+              "sec-mittal-ross-2005"
+            ],
+            "status": "open",
+            "lastCheckedAt": "2026-09-08",
+            "nextCheck": "Retrieve the Taj creditor-committee engagement and fee records; identify exact legal entities in each later loan, advisory, ownership or compensation document before testing a continuing institutional bridge.",
+            "outcome": "Creditor-side Rothschild Inc./Ross work and the later Ross personnel bridge are supported. The underlying engagement, committee appointment and fee records remain unresolved; blocked archive scans are not verified absence.",
+            "createdAt": "2026-09-08"
+          },
+          "reason": "Record inspected sources and the precise next documents for indirect connections."
+        }
+      ]
+    },
+    {
+      "id": "later-financing-disclosure-20260908",
+      "date": "2026-09-08",
+      "summary": "Open an evidence-led later-financing topic and add exact creditor identities, period limits and the common Ladder group path.",
+      "topicIds": [
+        "trump-later-financing",
+        "ownership-disclosures"
+      ],
+      "claimIds": [
+        "trump-liabilities-disclosure-2025",
+        "ladder-common-parent-record-2025"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "ownership-disclosures",
+          "before": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add distinct creditors and their source-backed corporate-group path."
+        }
+      ]
+    },
+    {
+      "id": "candidate-origin-normalization-20260908",
+      "date": "2026-09-08",
+      "summary": "Normalize origin IDs in four newly researched, unpublished candidate sources before release, retaining original URLs and statements. Original registry source records remain unchanged."
+    }
+  ]
+}

@@ -1,331 +1,26 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
-<title>The Architecture — Power, Money, and Ideology in the Second Trump Era</title>
-<meta name="description" content="An investigative synthesis of the second Trump era: the power architecture, the money architecture, and the ideology architecture — with a tiered-evidence weekly record, corrections log, and source archive.">
-<meta property="og:title" content="The Architecture — Power, Money, and Ideology in the Second Trump Era"><meta property="og:description" content="An investigative synthesis of the second Trump era: the power architecture, the money architecture, and the ideology architecture — with a tiered-evidence weekly record, corrections log, and source archive.">
-<meta property="og:type" content="article">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>
-/* THE ARCHITECTURE — v3: white, large-type, full-width, sidebar + menu. Deliberate single-theme. */
-:root{
-  --paper:#ffffff; --ink:#17150f; --ink-2:#4c4a42; --ink-3:#8a877c;
-  --rule:#e2dfd6; --rule-soft:#f4f2ec; --card:#fbfaf7;
-  --tier-a-bg:#e9f1e5; --tier-a-fg:#2c5030; --tier-a-rule:#b9cdb2;
-  --tier-b-bg:#f6eed9; --tier-b-fg:#6f5716; --tier-b-rule:#dcc98f;
-  --tier-c-bg:#f1eae7; --tier-c-fg:#83655a; --tier-c-rule:#d6c4bc;
-  --absent-bg:#eceef4; --absent-fg:#3f4c69; --absent-rule:#bcc6d9;
-  --dotted:#a34a2b; --accent:#8c2f1b; --link:#274d8f; --mark:#fff3c4;
-  --nav-h:58px;
-  --font-display:"DM Serif Display",Georgia,"Times New Roman",serif;
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 14px)}
-@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);
-  font-family:"Source Serif 4",Georgia,"Times New Roman",serif;
-  font-size:19px;line-height:1.68;font-variant-numeric:tabular-nums}
-a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px}
-a:hover{color:var(--accent)}
-mark{background:var(--mark);color:inherit;padding:0 .15em}
-h1,h2,h3,h4{text-wrap:balance}
-h1,h2,h3{font-family:var(--font-display);font-weight:400}
-
-/* ---------- progress + top menu ---------- */
-.progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:70}
-.topnav{position:sticky;top:0;z-index:60;display:flex;align-items:center;gap:1.4rem;
-  background:var(--ink);color:#fff;height:var(--nav-h);padding:0 clamp(1rem,3vw,2.5rem);
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.76rem;letter-spacing:.08em}
-.topnav .brand{color:#fff;text-decoration:none;font-weight:600;letter-spacing:.22em;font-size:.8rem;white-space:nowrap}
-.whereami{color:#fff;opacity:.5;font-size:.7rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
-  max-width:22rem;letter-spacing:.05em}
-.topnav .navlinks{display:flex;align-items:center;gap:1.3rem;margin-left:auto;flex-wrap:wrap}
-.topnav a{color:#fff;text-decoration:none;opacity:.85}
-.topnav a:hover{opacity:1;color:#fff}
-.navgroup{position:relative}
-.navgroup>button{all:unset;cursor:pointer;opacity:.85;font:inherit;letter-spacing:inherit;color:#fff}
-.navgroup>button:hover,.navgroup>button:focus-visible{opacity:1;outline:none}
-.navgroup>button:focus-visible{text-decoration:underline}
-.navgroup .dd{display:none;position:absolute;right:0;top:2.2rem;min-width:21rem;max-height:72vh;overflow:auto;
-  background:var(--paper);color:var(--ink);border:1px solid var(--rule);border-radius:10px;
-  box-shadow:0 12px 34px rgba(23,21,15,.18);padding:.5rem 0}
-.navgroup.open .dd{display:block}
-.navgroup .dd a{display:block;padding:.5rem 1.1rem;color:var(--ink);opacity:1;font-size:.74rem;line-height:1.45}
-.navgroup .dd a:hover{background:var(--rule-soft)}
-
-/* ---------- shell: sidebar + content ---------- */
-.shell{display:grid;grid-template-columns:314px minmax(0,1fr)}
-.sidebar{position:sticky;top:var(--nav-h);height:calc(100vh - var(--nav-h));overflow-y:auto;
-  border-right:1px solid var(--rule);padding:1.6rem 1.2rem 3rem 1.4rem;background:var(--card)}
-.sidebar .sb-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-3);margin:1.6rem 0 .5rem}
-.sidebar .sb-label:first-child{margin-top:0}
-.sidebar a{display:block;color:var(--ink-2);text-decoration:none;font-size:.94rem;line-height:1.45;
-  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent}
-.sidebar a:hover{background:var(--rule-soft);color:var(--ink)}
-.sidebar a.on{border-left-color:var(--accent);color:var(--ink);font-weight:600;background:var(--rule-soft)}
-.sidebar details{margin:.1rem 0}
-.sidebar summary{cursor:pointer;list-style:none;display:block;color:var(--ink-2);font-size:.94rem;line-height:1.45;
-  padding:.28rem .6rem;border-radius:6px;border-left:3px solid transparent;font-weight:600}
-.sidebar summary::-webkit-details-marker{display:none}
-.sidebar summary:hover{background:var(--rule-soft);color:var(--ink)}
-.sidebar details.on>summary{border-left-color:var(--accent);color:var(--ink);background:var(--rule-soft)}
-.sidebar details>div{margin:.1rem 0 .3rem .9rem;border-left:1px solid var(--rule);padding-left:.4rem}
-.sidebar details>div a{font-size:.85rem;color:var(--ink-3);padding:.22rem .5rem}
-.content{min-width:0;padding:0 clamp(1.1rem,3.5vw,3.5rem) 6rem}
-@media (max-width:1080px){.shell{grid-template-columns:1fr}.sidebar{display:none}}
-
-/* ---------- cover ---------- */
-.cover{margin-top:3rem;padding-bottom:0}
-.mast-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.2em;
-  text-transform:uppercase;color:var(--ink-3)}
-.cover h1{font-size:clamp(3.4rem,7.5vw,6.5rem);line-height:.96;margin:.7rem 0 1rem;letter-spacing:.005em}
-.cover p{max-width:75ch;color:var(--ink-2);font-size:1.08rem}
-.cover>p:first-child{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-3);max-width:none}
-.cover strong{color:var(--ink)}
-.mast-meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;color:var(--ink-3);
-  margin-top:1.1rem;display:flex;gap:1.8rem;flex-wrap:wrap}
-.front-matter{margin-top:1.8rem;border:1px solid var(--rule);border-radius:12px;background:var(--card)}
-.front-matter summary{cursor:pointer;padding:1rem 1.3rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
-.front-matter[open] summary{border-bottom:1px solid var(--rule)}
-.front-matter .fm-body{padding:.5rem 1.6rem 1.2rem}
-.front-matter .fm-body p{max-width:85ch;font-size:.98rem}
-
-/* ---------- the sentence ---------- */
-.sentence{margin:4rem 0 0;border-top:3px double var(--ink);border-bottom:3px double var(--ink);
-  padding:clamp(2.2rem,5vw,4rem) 0}
-.sentence .kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--accent);margin-bottom:1.2rem}
-.sentence blockquote{border:none;margin:0;padding:0;font-style:italic;color:var(--ink);
-  font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.28;font-weight:600;max-width:none}
-.sentence .attr{margin-top:1.2rem;color:var(--ink-3);font-size:.95rem;font-style:normal}
-
-/* ---------- orientation cards ---------- */
-.deck-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--ink-3);margin:3.5rem 0 1.1rem}
-.arch3{display:grid;grid-template-columns:repeat(auto-fit,minmax(19rem,1fr));gap:1.4rem}
-.arch3 a{display:block;border:1px solid var(--rule);border-radius:14px;padding:1.7rem 1.7rem 1.5rem;
-  text-decoration:none;color:var(--ink);background:var(--card);transition:border-color .15s, box-shadow .15s}
-.arch3 a:hover{border-color:var(--accent);box-shadow:0 6px 22px rgba(23,21,15,.07)}
-.arch3 .n{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.18em;color:var(--accent)}
-.arch3 h3{margin:.5rem 0 .6rem;font-size:1.6rem}
-.arch3 p{margin:0;color:var(--ink-2);font-size:1rem;line-height:1.58}
-.arch3 .go{display:block;margin-top:1rem;font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:.7rem;letter-spacing:.14em;color:var(--accent)}
-.howto{display:grid;grid-template-columns:1.15fr .85fr;gap:1.4rem;margin-top:1.4rem}
-@media (max-width:980px){.howto{grid-template-columns:1fr}}
-.card{border:1px solid var(--rule);border-radius:14px;padding:1.6rem 1.7rem;background:var(--card)}
-.card h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 .9rem;border:none;padding:0}
-.legend p{font-size:1rem;color:var(--ink-2);margin:.6rem 0;max-width:none}
-.legend p strong{color:var(--ink)}
-.paths a{display:block;border:1px solid var(--rule);border-radius:10px;padding:.9rem 1.1rem;margin:.7rem 0;
-  text-decoration:none;color:var(--ink);background:var(--paper)}
-.paths a:hover{border-color:var(--accent)}
-.paths .pt{font-weight:700;font-size:1.05rem}
-.paths .pm{float:right;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);margin-top:.2rem}
-.paths .pd{display:block;font-size:.9rem;color:var(--ink-2);margin-top:.2rem}
-.cast{margin-top:1.4rem}
-.cast dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(21rem,1fr));gap:.2rem 2.4rem;margin:0}
-.cast dt{font-weight:700;font-size:1rem;margin-top:.6rem}
-.cast dd{margin:0;font-size:.92rem;color:var(--ink-2)}
-.rail-wrap{margin-top:1.4rem}
-.rail{display:flex;overflow-x:auto;padding-bottom:.5rem}
-.rail .stop{min-width:10.5rem;position:relative;padding-right:1.1rem}
-.rail .stop::before{content:"";position:absolute;left:0;right:0;top:.38rem;border-top:2px solid var(--rule)}
-.rail .stop::after{content:"";position:absolute;left:0;top:0;width:.78rem;height:.78rem;border-radius:50%;
-  background:var(--paper);border:2px solid var(--accent)}
-.rail .d{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--accent);
-  margin:1.2rem 0 .25rem;letter-spacing:.06em}
-.rail .w{font-size:.87rem;color:var(--ink-2);line-height:1.42;padding-right:.6rem}
-.rail a{text-decoration:none;color:inherit;display:block}
-.rail .stop.big .d{font-weight:700}
-.rail .stop.big .w{color:var(--ink);font-weight:600}
-
-/* ---------- tier chips, callouts, quotes ---------- */
-.tier{display:inline-block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;font-weight:600;
-  letter-spacing:.05em;padding:.08rem .42rem;border-radius:4px;vertical-align:.12em;border:1px solid;white-space:nowrap}
-.tier.a{background:var(--tier-a-bg);color:var(--tier-a-fg);border-color:var(--tier-a-rule)}
-.tier.b{background:var(--tier-b-bg);color:var(--tier-b-fg);border-color:var(--tier-b-rule)}
-.tier.c{background:var(--tier-c-bg);color:var(--tier-c-fg);border-color:var(--tier-c-rule)}
-.tier.abs{background:var(--absent-bg);color:var(--absent-fg);border-color:var(--absent-rule)}
-.dotted-edge{border:2px dashed var(--dotted);border-radius:10px;padding:1.1rem 1.3rem;margin:1.4rem 0;
-  color:var(--ink);max-width:95ch;background:var(--paper)}
-.dotted-edge .label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--dotted);display:block;margin-bottom:.4rem}
-blockquote{border-left:3px solid var(--rule);margin:1.1rem 0;padding:.15rem 0 .15rem 1.1rem;color:var(--ink-2);font-style:italic}
-.scope{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);
-  text-transform:uppercase;letter-spacing:.08em}
-.pullquote{border:none;margin:2rem 0;padding:0;font-size:clamp(1.4rem,2.4vw,1.9rem);line-height:1.32;
-  font-style:italic;font-weight:600;color:var(--ink);max-width:62ch}
-.pullquote .who{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin-top:.7rem;font-style:normal;font-weight:400}
-.ed-note{display:block;border:2px dashed var(--accent);border-radius:8px;background:var(--rule-soft);
-  padding:.8rem 1.1rem;margin:1rem 0;font-size:.95rem;font-style:normal;color:var(--ink-2);max-width:85ch}
-.ed-note strong{color:var(--accent);font-family:"IBM Plex Mono",ui-monospace,monospace;
-  font-size:.7rem;letter-spacing:.1em;text-transform:uppercase}
-
-/* ---------- ledgers, corrections, clocks ---------- */
-table.ledger{width:100%;max-width:1200px;border-collapse:collapse;font-size:.95rem;margin:1.1rem 0}
-table.ledger th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.68rem;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--ink-3);text-align:left;font-weight:600;padding:.5rem .7rem .5rem 0;
-  border-bottom:2px solid var(--rule)}
-table.ledger td{padding:.6rem .7rem .6rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
-table.ledger td.mono,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;white-space:nowrap}
-.overdue{color:var(--accent);font-weight:600}
-.correction{border-left:4px solid var(--accent);padding:.3rem 0 .3rem 1.2rem;margin:1.2rem 0;max-width:95ch}
-.correction .was{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1px}
-.correction .now{font-weight:600}
-.clocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.1rem;margin:1.3rem 0}
-.clock{border:1px solid var(--rule);border-radius:14px;padding:1.2rem 1.3rem;background:var(--card);
-  text-decoration:none;display:block;color:var(--ink)}
-a.clock:hover{border-color:var(--accent)}
-.clock .num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:2.6rem;font-weight:600;
-  color:var(--accent);line-height:1}
-.clock .unit{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.66rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--ink-3);margin:.35rem 0 .55rem}
-.clock .what{font-size:.9rem;color:var(--ink-2);line-height:1.45}
-.clocks-asof{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;color:var(--ink-3);letter-spacing:.08em}
-
-/* ---------- update part ---------- */
-.update{margin-top:3.5rem;border:2px solid var(--accent);border-radius:16px;
-  padding:clamp(1.4rem,3vw,3rem);background:var(--card)}
-.update .part-kicker{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.74rem;
-  letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
-.update h2{font-size:clamp(2rem,3.4vw,2.9rem);font-weight:400;margin:.35rem 0 .7rem}
-.update h3{font-size:1.45rem;margin:2.6rem 0 .6rem}
-.update h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.64rem;font-weight:500;
-  letter-spacing:.08em;vertical-align:.25em;margin-left:.55em;color:var(--ink-3);text-transform:uppercase}
-.update h4{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.8rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--accent);margin:2.6rem 0 .9rem;border-bottom:2px solid var(--rule);padding-bottom:.45rem}
-.update p,.update blockquote{max-width:95ch}
-.update .cols{columns:2 32rem;column-gap:3rem}
-.update .cols>*{break-inside:avoid}
-@media (max-width:760px){.update .cols{columns:1}}
-
-/* ---------- story ---------- */
-.story{margin-top:1.5rem}
-.story p,.story ul,.story ol,.story blockquote{max-width:85ch}
-.story p{margin:.9rem 0}
-.story h3{font-size:1.45rem;margin:2.8rem 0 .6rem}
-.story table{width:100%;max-width:1200px;border-collapse:collapse;font-size:.96rem;margin:1.3rem 0}
-.story th{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.7rem;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--ink-3);text-align:left;padding:.5rem .9rem .5rem 0;border-bottom:2px solid var(--rule)}
-.story td{padding:.55rem .9rem .55rem 0;border-bottom:1px solid var(--rule-soft);vertical-align:top}
-.story li{margin:.4rem 0}
-.story hr{border:0;border-top:1px solid var(--rule);margin:2.8rem 0}
-.part-open{margin:5.5rem 0 1.6rem;border-top:3px double var(--ink);padding-top:2.2rem}
-.part-open .pmeta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;letter-spacing:.18em;
-  text-transform:uppercase;color:var(--accent);display:flex;gap:1.6rem;flex-wrap:wrap;align-items:baseline}
-.part-open .pmeta .rt{color:var(--ink-3)}
-.part-open .pmeta .top{margin-left:auto}
-.part-open .pmeta .top a{color:var(--ink-3);text-decoration:none}
-.part-open .pmeta .top a:hover{color:var(--accent)}
-.story .part-open h2{font-size:clamp(2.1rem,3.8vw,3.2rem);border:none;margin:.55rem 0 .45rem;padding:0}
-.part-open .dek{font-size:1.28rem;font-style:italic;color:var(--ink-2);max-width:75ch;margin:0 0 .5rem}
-
-/* ---------- node diagram ---------- */
-.node-fig{margin:1.6rem 0;max-width:680px}
-.node-fig svg{width:100%;height:auto;display:block}
-.node-fig .cap{font-size:.86rem;color:var(--ink-3);margin-top:.5rem}
-.nf-box{fill:var(--paper);stroke:var(--ink);stroke-width:1.4}
-.nf-edge{stroke:var(--dotted);stroke-width:1.7;stroke-dasharray:7 5;fill:none}
-.nf-t{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;fill:var(--ink)}
-.nf-t2{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:10px;fill:var(--ink-3)}
-.nf-c{fill:var(--rule-soft);stroke:var(--accent);stroke-width:1.4}
-
-/* ---------- archive cards, brief page, sources ---------- */
-.masthead{border-bottom:3px double var(--ink);margin-top:2.5rem;padding-bottom:1.2rem}
-h1.mast{font-size:2.6rem;line-height:1.05;margin:.35rem 0 .5rem}
-.mast-sub{color:var(--ink-2);font-size:1.08rem;font-style:italic;margin:0}
-.standards{background:var(--rule-soft);border-radius:10px;padding:1.1rem 1.3rem;font-size:.98rem;color:var(--ink-2);margin-top:1.4rem}
-.standards strong{color:var(--ink)}
-.lede p:first-child{font-size:1.22rem;line-height:1.6}
-.brief-card{border:1px solid var(--rule);border-radius:12px;padding:1.2rem 1.4rem;margin:.9rem 0;background:var(--card)}
-.brief-card .date{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.72rem;color:var(--ink-3);letter-spacing:.1em}
-.brief-card h4{margin:.3rem 0 .35rem;font-size:1.15rem}
-.brief-card p{margin:.25rem 0;font-size:.96rem;color:var(--ink-2)}
-pre.manifest{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.82rem;line-height:1.62;
-  white-space:pre-wrap;word-break:break-word;background:var(--rule-soft);border-radius:10px;padding:1.6rem;margin-top:1.5rem}
-section{margin-top:3rem}
-h2{font-family:var(--font-display);font-size:1.5rem;font-weight:400;letter-spacing:.01em;
-  color:var(--accent);border-bottom:2px solid var(--rule);padding-bottom:.5rem;margin:0 0 1.3rem}
-h2 .num{color:var(--ink-3);margin-right:.6em}
-h3{font-size:1.35rem;margin:1.9rem 0 .45rem;font-weight:400}
-h3 .thread-status{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.62rem;font-weight:500;
-  letter-spacing:.08em;vertical-align:.2em;margin-left:.5em;color:var(--ink-3);text-transform:uppercase}
-p{margin:.75rem 0}
-.scroll-x{overflow-x:auto}
-.site-footer,footer{margin-top:5rem;border-top:3px double var(--ink);padding-top:1.3rem;font-size:.92rem;color:var(--ink-3)}
-.site-footer p,footer p{max-width:110ch}
-footer .mono{font-size:.72rem}
-
-@media print{
-  .progress,.topnav,.sidebar,.paths{display:none}
-  body{font-size:11pt}
-  .content{padding:0}
-  .shell{display:block}
-  .part-open{break-before:page;border-top:none;padding-top:0}
-  a{color:inherit;text-decoration:none}
-}
-@media (max-width:700px){
-  body{font-size:17.5px}
-  .cover h1{font-size:2.6rem}
-  .topnav{gap:.8rem}.topnav .navlinks{gap:.8rem}.whereami{display:none}
-}
-
-.topnav a.nav-flag{color:#fff;border:1px solid var(--accent);border-radius:999px;padding:.26rem .7rem;
-  background:rgba(140,47,27,.4);opacity:1;letter-spacing:.1em}
-.topnav a.nav-flag:hover{background:var(--accent)}
-.sidebar a.sb-flag{color:var(--accent);font-weight:600}
-</style>
-</head>
-<body>
-<div class="progress" id="progress"></div>
-<nav class="topnav" id="top">
-  <a class="brand" href="#top">THE&nbsp;ARCHITECTURE</a>
-  <span class="whereami" id="whereami"></span>
-  <div class="navlinks">
-    <div class="navgroup"><button type="button">Start ▾</button><div class="dd">
-      <a href="#the-sentence">The Sentence</a><a href="#arch">The Three Architectures</a>
-      <a href="#howto">How to Read &middot; Three Ways In</a><a href="#cast">The Cast, Briefly</a>
-      <a href="#dates">The Nearest Dates</a></div></div>
-    <div class="navgroup"><button type="button">Updates ▾</button><div class="dd">
-      <a href="#update">The Record Since July 19</a><a href="#u-gap">The Gap — Jul 19 &rarr; Aug 9</a>
-      <a href="#u-week">The Week — Aug 9&ndash;16</a><a href="#u-node">The Node</a>
-      <a href="#u-corrections">Corrections Log</a><a href="#u-silence">The Silence Ledger</a>
-      <a href="#u-threads">Open Threads &middot; Next Checks</a><a href="#brief-001">Weekly Brief Archive</a></div></div>
-    <a class="nav-flag" href="/neural.html">Neural Map</a>
-    <div class="navgroup"><button type="button">The Story ▾</button><div class="dd"><a href="#executive-summary-one-page">Executive Summary (one page)</a><a href="#formation-the-making-of-the-man">Formation: The Making of the Man</a><a href="#the-crown-the-architecture-of-power">The Crown: The Architecture of Power</a><a href="#the-money-the-profit-architecture">The Money: The Profit Architecture</a><a href="#the-ideology-supremacy-politics-and-its-limits">The Ideology: Supremacy Politics and Its Limits</a><a href="#the-historical-lens-retained-in-full">The Historical Lens — retained in full</a><a href="#the-historical-record">The Historical Record</a><a href="#the-scholarly-framework">The Scholarly Framework</a><a href="#pattern-recognition">Pattern Recognition</a><a href="#current-documentation-2025-july-2026">Current Documentation (2025–July 2026)</a><a href="#the-honest-assessment">The Honest Assessment</a><a href="#pattern-recognition-is-not-prophecy-it-is-responsibility">Pattern Recognition Is Not Prophecy — It Is Responsibility</a><a href="#appendix-a-editorial-method-and-verification-history">Appendix A — Editorial Method and Verification History</a><a href="#appendix-b-provenance-what-this-edition-consolidated">Appendix B — Provenance: What This Edition Consolidated</a></div></div>
-    <a href="#sources">Sources</a>
-  </div>
-</nav><div class="shell"><aside class="sidebar" aria-label="Section navigation">
-  <div class="sb-label">Orient</div>
-  <a href="#the-sentence">The Sentence</a><a href="#arch">Three Architectures</a>
-  <a href="#howto">How to Read</a><a href="#cast">The Cast</a><a href="#dates">The Nearest Dates</a>
-  <div class="sb-label">The Record</div>
-  <a href="#update">Since July 19</a><a href="#u-gap">— The Gap</a><a href="#u-week">— The Week</a>
-  <a href="#u-node">— The Node</a><a href="#u-corrections">— Corrections</a>
-  <a href="#u-silence">— Silence Ledger</a><a href="#u-threads">— Next Checks</a>
-  <a class="sb-flag" href="/neural.html">The Neural Map &rarr;</a>
-  <div class="sb-label">The Story</div>
-  <details data-part="executive-summary-one-page"><summary><a href="#executive-summary-one-page" style="all:unset;cursor:pointer">Executive Summary (one page)</a></summary></details><details data-part="formation-the-making-of-the-man"><summary><a href="#formation-the-making-of-the-man" style="all:unset;cursor:pointer">Formation: The Making of the Man</a></summary><div><a href="#chapter-0-the-father-s-two-words-king-and-killer-and-the-mac">Chapter 0: The Father&#x27;s Two Words — &quot;King&quot; and &quot;Killer,&quot; and the Machinery of Endless Retribution</a><a href="#chapter-0-b-the-unfit-record-what-clinicians-and-family-have">Chapter 0-B: The Unfit Record — What Clinicians and Family Have Said, and the Limits of Saying It</a></div></details><details data-part="the-crown-the-architecture-of-power"><summary><a href="#the-crown-the-architecture-of-power" style="all:unset;cursor:pointer">The Crown: The Architecture of Power</a></summary><div><a href="#chapter-a-the-king-words-royal-signaling-the-third-term-and-">Chapter A: The King Words — Royal Signaling, the Third Term, and Eight Million in the Streets</a><a href="#chapter-b-the-power-ledger-what-has-actually-been-consolidat">Chapter B: The Power Ledger — What Has Actually Been Consolidated, and What Has Held</a></div></details><details data-part="the-money-the-profit-architecture"><summary><a href="#the-money-the-profit-architecture" style="all:unset;cursor:pointer">The Money: The Profit Architecture</a></summary><div><a href="#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r">Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner</a><a href="#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september">Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026</a><a href="#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma">Chapter D: The Envoy Economy — Kushner, the Witkoffs, and Diplomacy on Commission</a><a href="#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo">Chapter E: Foreign-State Revenue — The Jet, the Gulf, and the Emoluments Question</a><a href="#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso">Chapter E-2: The Qatar File — A Security Guarantee, a Jet, a Resort, and a Base</a><a href="#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a">Chapter E-3: The Argentina Channel — A $40 Billion Bailout and a Treasury Secretary&#x27;s Friend</a><a href="#chapter-f-the-pardon-and-access-market">Chapter F: The Pardon and Access Market</a><a href="#chapter-g-war-finance-prediction-markets-defense-portfolios-">Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates</a><a href="#chapter-g-2-five-follow-the-money-streams">Chapter G-2: Five Follow-the-Money Streams</a><a href="#chapter-h-the-warehouse-state-detention-as-an-industry">Chapter H: The Warehouse State — Detention as an Industry</a><a href="#chapter-i-the-sum-what-the-money-architecture-adds-up-to">Chapter I: The Sum — What the Money Architecture Adds Up To</a></div></details><details data-part="the-ideology-supremacy-politics-and-its-limits"><summary><a href="#the-ideology-supremacy-politics-and-its-limits" style="all:unset;cursor:pointer">The Ideology: Supremacy Politics and Its Limits</a></summary><div><a href="#chapter-j-what-nazi-light-gets-right-what-it-gets-wrong-and-">Chapter J: What &#x27;Nazi-Light&#x27; Gets Right, What It Gets Wrong, and What the Precise Words Are</a><a href="#chapter-k-the-network-map-every-actor-every-edge-graded-by-e">Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence</a><a href="#chapter-l-the-convergence-what-kushner-china-russia-cuba-gre">Chapter L: The Convergence — What Kushner, China, Russia, Cuba, Greenland, ICE, AI, and the Midterms Have in Common</a><a href="#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces">Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas</a></div></details><details data-part="the-historical-lens-retained-in-full"><summary><a href="#the-historical-lens-retained-in-full" style="all:unset;cursor:pointer">The Historical Lens — retained in full</a></summary></details><details data-part="the-historical-record"><summary><a href="#the-historical-record" style="all:unset;cursor:pointer">The Historical Record</a></summary><div><a href="#chapter-1-formation-austria-the-army-and-the-birth-of-a-poli">Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal</a><a href="#chapter-2-the-prison-pivot-from-putsch-to-parliamentary-stra">Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy</a><a href="#chapter-3-the-weimar-republic-democratic-mechanics-weaponize">Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized</a><a href="#chapter-4-the-legal-revolution-53-days">Chapter 4: The Legal Revolution — 53 Days</a><a href="#chapter-5-the-enforcement-architecture-sa-ss-and-persecution">Chapter 5: The Enforcement Architecture — SA, SS, and Persecution</a><a href="#chapter-6-consolidation-night-of-the-long-knives-and-the-thi">Chapter 6: Consolidation — Night of the Long Knives and the Third Reich</a><a href="#chapter-7-war-genocide-and-the-aftermath">Chapter 7: War, Genocide, and the Aftermath</a></div></details><details data-part="the-scholarly-framework"><summary><a href="#the-scholarly-framework" style="all:unset;cursor:pointer">The Scholarly Framework</a></summary><div><a href="#chapter-8-what-scholars-tell-us-about-democratic-erosion">Chapter 8: What Scholars Tell Us About Democratic Erosion</a></div></details><details data-part="pattern-recognition"><summary><a href="#pattern-recognition" style="all:unset;cursor:pointer">Pattern Recognition</a></summary><div><a href="#chapter-9-the-rhetorical-architecture-restoration-and-the-sa">Chapter 9: The Rhetorical Architecture — Restoration and the Savior Myth</a><a href="#chapter-10-using-democracy-against-itself-the-legal-entry">Chapter 10: Using Democracy Against Itself — The Legal Entry</a><a href="#chapter-11-the-conservative-enablement-elite-miscalculation">Chapter 11: The Conservative Enablement — Elite Miscalculation</a><a href="#chapter-12-purging-dissent-the-loyalty-architecture">Chapter 12: Purging Dissent — The Loyalty Architecture</a><a href="#chapter-13-emergency-powers-and-the-parallel-enforcement-arc">Chapter 13: Emergency Powers and the Parallel Enforcement Architecture</a><a href="#chapter-14-the-enforcement-and-detention-industrial-complex">Chapter 14: The Enforcement and Detention Industrial Complex</a><a href="#chapter-15-technology-propaganda-and-the-information-environ">Chapter 15: Technology, Propaganda, and the Information Environment</a><a href="#chapter-16-the-targeting-of-vulnerable-communities">Chapter 16: The Targeting of Vulnerable Communities</a><a href="#chapter-17-foreign-policy-and-the-expansionist-pattern">Chapter 17: Foreign Policy and the Expansionist Pattern</a><a href="#chapter-18-the-chaos-doctrine-manufacturing-crisis">Chapter 18: The Chaos Doctrine — Manufacturing Crisis</a></div></details><details data-part="current-documentation-2025-july-2026"><summary><a href="#current-documentation-2025-july-2026" style="all:unset;cursor:pointer">Current Documentation (2025–July 2026)</a></summary><div><a href="#chapter-19-the-executive-order-record">Chapter 19: The Executive Order Record</a><a href="#chapter-20-the-detention-infrastructure-key-metrics">Chapter 20: The Detention Infrastructure — Key Metrics</a><a href="#the-budget-architecture-priorities-revealed">The Budget Architecture — Priorities Revealed</a><a href="#chapter-21-b-the-war-the-united-states-israel-and-iran-febru">Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)</a><a href="#chapter-21-c-the-home-front-january-july-2026">Chapter 21-C: The Home Front (January–July 2026)</a><a href="#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce">Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia</a><a href="#chapter-21-e-the-capture-of-civil-society-law-the-academy-an">Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press</a><a href="#chapter-21-f-the-war-on-expertise-hhs-the-cdc-and-the-vaccin">Chapter 21-F: The War on Expertise — HHS, the CDC, and the Vaccine Schedule</a><a href="#chapter-21-g-the-military-purge-and-the-war-from-within">Chapter 21-G: The Military Purge and the &quot;War From Within&quot;</a><a href="#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol">Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt</a><a href="#chapter-21-i-the-surveillance-consolidation">Chapter 21-I: The Surveillance Consolidation</a><a href="#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o">Chapter 21-J: The External Board — Russia&#x27;s Draft, Venezuela&#x27;s Oil</a><a href="#chapter-21-k-the-redistricting-war-and-the-fall-of-the-votin">Chapter 21-K: The Redistricting War and the Fall of the Voting Rights Act</a><a href="#chapter-21-l-the-retribution-docket-every-case-one-table">Chapter 21-L: The Retribution Docket — Every Case, One Table</a><a href="#chapter-21-m-the-epstein-files-what-they-say-about-the-princ">Chapter 21-M: The Epstein Files — What They Say About the Principal</a><a href="#chapter-21-n-the-blueprint-executed-project-2025-schedule-f-">Chapter 21-N: The Blueprint Executed — Project 2025, Schedule F, and the Shutdown as Instrument</a><a href="#chapter-21-o-the-evolving-epstein-narrative-every-explanatio">Chapter 21-O: The Evolving Epstein Narrative — Every Explanation, in Order</a><a href="#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-">Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government</a><a href="#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut">Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut</a></div></details><details data-part="the-honest-assessment"><summary><a href="#the-honest-assessment" style="all:unset;cursor:pointer">The Honest Assessment</a></summary><div><a href="#chapter-22-where-the-parallels-are-strongest">Chapter 22: Where the Parallels Are Strongest</a><a href="#chapter-23-where-the-parallels-break-down-the-genuine-differ">Chapter 23: Where the Parallels Break Down — The Genuine Differences</a><a href="#chapter-24-what-pattern-recognition-tells-us-and-what-it-doe">Chapter 24: What Pattern Recognition Tells Us — And What It Doesn&#x27;t</a><a href="#chapter-24-b-what-would-change-this-report-s-mind-the-falsif">Chapter 24-B: What Would Change This Report&#x27;s Mind — The Falsifiability Statement (added in the Fifth Edition)</a><a href="#chapter-25-weighing-the-frames-monarchy-kleptocracy-patrimon">Chapter 25: Weighing the Frames — Monarchy, Kleptocracy, Patrimonialism, Fascism (added in the Third Edition)</a><a href="#chapter-26-the-forecast-base-rates-scenarios-and-dated-tests">Chapter 26: The Forecast — Base Rates, Scenarios, and Dated Tests (How This Could End)</a></div></details><details data-part="pattern-recognition-is-not-prophecy-it-is-responsibility"><summary><a href="#pattern-recognition-is-not-prophecy-it-is-responsibility" style="all:unset;cursor:pointer">Pattern Recognition Is Not Prophecy — It Is Responsibility</a></summary><div><a href="#key-sources-and-further-reading">Key Sources and Further Reading</a></div></details><details data-part="appendix-a-editorial-method-and-verification-history"><summary><a href="#appendix-a-editorial-method-and-verification-history" style="all:unset;cursor:pointer">Appendix A — Editorial Method and Verification History</a></summary><div><a href="#a-1-the-standing-method">A.1 — The standing method</a><a href="#a-2-edition-history">A.2 — Edition history</a><a href="#a-3-corrections-carried-forward-from-the-review">A.3 — Corrections carried forward from the review</a><a href="#a-4-what-could-not-be-independently-re-verified">A.4 — What could not be independently re-verified</a><a href="#a-5-the-reviewer-s-standing-cautions">A.5 — The reviewer&#x27;s standing cautions</a></div></details><details data-part="appendix-b-provenance-what-this-edition-consolidated"><summary><a href="#appendix-b-provenance-what-this-edition-consolidated" style="all:unset;cursor:pointer">Appendix B — Provenance: What This Edition Consolidated</a></summary><div><a href="#b-1-why-this-edition-exists">B.1 — Why this edition exists</a><a href="#b-2-sources-merged">B.2 — Sources merged</a><a href="#b-3-what-could-not-be-reached-and-how-it-was-handled">B.3 — What could not be reached, and how it was handled</a><a href="#b-4-new-this-edition">B.4 — New this edition</a></div></details>
-  <div class="sb-label">Reference</div>
-  <a href="#brief-001">Weekly Briefs</a><a href="#sources">Source Archive</a>
-</aside><div class="content"><header class="cover" id="cover"><p>The Architecture — Power, Money, and Ideology in the Second Trump Era</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow"><title>The Architecture — Power, Money, and Ideology in the Second Trump Era</title><meta name="description" content="An investigative synthesis of the second Trump era: the power architecture, the money architecture, and the ideology architecture — with a tiered-evidence weekly record, corrections log, and source archive."><meta property="og:title" content="The Architecture — Power, Money, and Ideology in the Second Trump Era"><meta property="og:description" content="An investigative synthesis of the second Trump era: the power architecture, the money architecture, and the ideology architecture — with a tiered-evidence weekly record, corrections log, and source archive."><meta property="og:type" content="article"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/styles.css"></head><body class="report-page"><a class="skip-link" href="#main-content">Skip to content</a><div class="progress" id="progress" aria-hidden="true"></div><header class="topnav" id="top"><a class="brand" href="/">THE ARCHITECTURE</a><button class="menu-toggle" type="button" data-ui-menu aria-expanded="false" aria-controls="site-navigation"><span aria-hidden="true">☰</span> Menu</button><nav class="navlinks" id="site-navigation" aria-label="Main navigation"><a href="/" aria-current="page">Report</a><a href="/#update">Weekly record</a><div class="navgroup"><button type="button" data-ui-dropdown aria-expanded="false" aria-controls="topics-navigation">Topics <span aria-hidden="true">⌄</span></button><div class="dd topics-menu" id="topics-navigation" hidden><div class="topic-menu-grid"><div><h3>People &amp; financial history</h3><a href="/topics/trump-early-financing.html">Trump: early financing</a><a href="/topics/ownership-disclosures.html">Ownership &amp; financial disclosures</a><a href="/topics/digital-assets.html">Digital assets &amp; financial entities</a></div><div><h3>Institutions &amp; law</h3><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/us-midterms.html">2026 U.S. midterms</a><a href="/topics/executive-authority.html">Executive authority &amp; courts</a></div><div><h3>Conflict &amp; foreign affairs</h3><a href="/topics/iran-us-decisions.html">Iran &amp; U.S. decisions</a><a href="/topics/war-trade.html">War, trade &amp; international records</a></div><div><h3>Campaigns &amp; public communication</h3><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/us-midterms.html">2026 U.S. midterms</a><a href="/topics/information-media.html">Information &amp; public communication</a></div><div><h3>Historical context</h3><a href="/topics/trump-early-financing.html">Trump: early financing</a><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/historical-comparisons.html">Historical comparisons</a></div><div><h3>Evidence &amp; corrections</h3><a href="/topics/corrections-provenance.html">Corrections &amp; source provenance</a></div></div><a class="browse-topics" href="/topics.html">Browse all topics &rarr;</a></div></div><a href="/synthesis.html">Synthesis</a><a href="/neural.html">Neural map</a><a href="/sources.html">Sources</a><a class="search-link" href="/topics.html#topic-search" aria-label="Search topics"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="1.4"/></svg></a></nav></header><div class="shell"><aside class="sidebar sidebar-links" aria-label="Section navigation"><div class="sb-label">Start here</div>
+<a href="/#cover">The report</a><a href="/#howto">How to read this</a>
+<a href="/#edition-notes">Edition notes</a>
+<div class="sb-label">The record</div>
+<a href="/#update">This week's record</a><a href="/#brief-001">Weekly briefs</a>
+<a href="/#u-corrections">Corrections</a><a href="/#u-silence">Silence ledger</a>
+<a href="/#u-threads">Next checks</a>
+<div class="sb-label">The story</div><details data-part="executive-summary-one-page"><summary>Executive Summary (one page)</summary><div><a href="/#executive-summary-one-page">Read this section</a></div></details><details data-part="formation-the-making-of-the-man"><summary>Formation: The Making of the Man</summary><div><a href="/#formation-the-making-of-the-man">Read this section</a><a href="/#chapter-0-the-father-s-two-words-king-and-killer-and-the-mac">Chapter 0: The Father&#x27;s Two Words — &quot;King&quot; and &quot;Killer,&quot; and the Machinery of Endless Retribution</a><a href="/#chapter-0-b-the-unfit-record-what-clinicians-and-family-have">Chapter 0-B: The Unfit Record — What Clinicians and Family Have Said, and the Limits of Saying It</a></div></details><details data-part="the-crown-the-architecture-of-power"><summary>The Crown: The Architecture of Power</summary><div><a href="/#the-crown-the-architecture-of-power">Read this section</a><a href="/#chapter-a-the-king-words-royal-signaling-the-third-term-and-">Chapter A: The King Words — Royal Signaling, the Third Term, and Eight Million in the Streets</a><a href="/#chapter-b-the-power-ledger-what-has-actually-been-consolidat">Chapter B: The Power Ledger — What Has Actually Been Consolidated, and What Has Held</a></div></details><details data-part="the-money-the-profit-architecture"><summary>The Money: The Profit Architecture</summary><div><a href="/#the-money-the-profit-architecture">Read this section</a><a href="/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r">Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner</a><a href="/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september">Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026</a><a href="/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma">Chapter D: The Envoy Economy — Kushner, the Witkoffs, and Diplomacy on Commission</a><a href="/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo">Chapter E: Foreign-State Revenue — The Jet, the Gulf, and the Emoluments Question</a><a href="/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso">Chapter E-2: The Qatar File — A Security Guarantee, a Jet, a Resort, and a Base</a><a href="/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a">Chapter E-3: The Argentina Channel — A $40 Billion Bailout and a Treasury Secretary&#x27;s Friend</a><a href="/#chapter-f-the-pardon-and-access-market">Chapter F: The Pardon and Access Market</a><a href="/#chapter-g-war-finance-prediction-markets-defense-portfolios-">Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates</a><a href="/#chapter-g-2-five-follow-the-money-streams">Chapter G-2: Five Follow-the-Money Streams</a><a href="/#chapter-h-the-warehouse-state-detention-as-an-industry">Chapter H: The Warehouse State — Detention as an Industry</a><a href="/#chapter-i-the-sum-what-the-money-architecture-adds-up-to">Chapter I: The Sum — What the Money Architecture Adds Up To</a></div></details><details data-part="the-ideology-supremacy-politics-and-its-limits"><summary>The Ideology: Supremacy Politics and Its Limits</summary><div><a href="/#the-ideology-supremacy-politics-and-its-limits">Read this section</a><a href="/#chapter-j-what-nazi-light-gets-right-what-it-gets-wrong-and-">Chapter J: What &#x27;Nazi-Light&#x27; Gets Right, What It Gets Wrong, and What the Precise Words Are</a><a href="/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e">Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence</a><a href="/#chapter-l-the-convergence-what-kushner-china-russia-cuba-gre">Chapter L: The Convergence — What Kushner, China, Russia, Cuba, Greenland, ICE, AI, and the Midterms Have in Common</a><a href="/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces">Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas</a></div></details><details data-part="the-historical-lens-retained-in-full"><summary>The Historical Lens — retained in full</summary><div><a href="/#the-historical-lens-retained-in-full">Read this section</a></div></details><details data-part="the-historical-record"><summary>The Historical Record</summary><div><a href="/#the-historical-record">Read this section</a><a href="/#chapter-1-formation-austria-the-army-and-the-birth-of-a-poli">Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal</a><a href="/#chapter-2-the-prison-pivot-from-putsch-to-parliamentary-stra">Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy</a><a href="/#chapter-3-the-weimar-republic-democratic-mechanics-weaponize">Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized</a><a href="/#chapter-4-the-legal-revolution-53-days">Chapter 4: The Legal Revolution — 53 Days</a><a href="/#chapter-5-the-enforcement-architecture-sa-ss-and-persecution">Chapter 5: The Enforcement Architecture — SA, SS, and Persecution</a><a href="/#chapter-6-consolidation-night-of-the-long-knives-and-the-thi">Chapter 6: Consolidation — Night of the Long Knives and the Third Reich</a><a href="/#chapter-7-war-genocide-and-the-aftermath">Chapter 7: War, Genocide, and the Aftermath</a></div></details><details data-part="the-scholarly-framework"><summary>The Scholarly Framework</summary><div><a href="/#the-scholarly-framework">Read this section</a><a href="/#chapter-8-what-scholars-tell-us-about-democratic-erosion">Chapter 8: What Scholars Tell Us About Democratic Erosion</a></div></details><details data-part="pattern-recognition"><summary>Pattern Recognition</summary><div><a href="/#pattern-recognition">Read this section</a><a href="/#chapter-9-the-rhetorical-architecture-restoration-and-the-sa">Chapter 9: The Rhetorical Architecture — Restoration and the Savior Myth</a><a href="/#chapter-10-using-democracy-against-itself-the-legal-entry">Chapter 10: Using Democracy Against Itself — The Legal Entry</a><a href="/#chapter-11-the-conservative-enablement-elite-miscalculation">Chapter 11: The Conservative Enablement — Elite Miscalculation</a><a href="/#chapter-12-purging-dissent-the-loyalty-architecture">Chapter 12: Purging Dissent — The Loyalty Architecture</a><a href="/#chapter-13-emergency-powers-and-the-parallel-enforcement-arc">Chapter 13: Emergency Powers and the Parallel Enforcement Architecture</a><a href="/#chapter-14-the-enforcement-and-detention-industrial-complex">Chapter 14: The Enforcement and Detention Industrial Complex</a><a href="/#chapter-15-technology-propaganda-and-the-information-environ">Chapter 15: Technology, Propaganda, and the Information Environment</a><a href="/#chapter-16-the-targeting-of-vulnerable-communities">Chapter 16: The Targeting of Vulnerable Communities</a><a href="/#chapter-17-foreign-policy-and-the-expansionist-pattern">Chapter 17: Foreign Policy and the Expansionist Pattern</a><a href="/#chapter-18-the-chaos-doctrine-manufacturing-crisis">Chapter 18: The Chaos Doctrine — Manufacturing Crisis</a></div></details><details data-part="current-documentation-2025-july-2026"><summary>Current Documentation (2025–July 2026)</summary><div><a href="/#current-documentation-2025-july-2026">Read this section</a><a href="/#chapter-19-the-executive-order-record">Chapter 19: The Executive Order Record</a><a href="/#chapter-20-the-detention-infrastructure-key-metrics">Chapter 20: The Detention Infrastructure — Key Metrics</a><a href="/#the-budget-architecture-priorities-revealed">The Budget Architecture — Priorities Revealed</a><a href="/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru">Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)</a><a href="/#chapter-21-c-the-home-front-january-july-2026">Chapter 21-C: The Home Front (January–July 2026)</a><a href="/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce">Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia</a><a href="/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an">Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press</a><a href="/#chapter-21-f-the-war-on-expertise-hhs-the-cdc-and-the-vaccin">Chapter 21-F: The War on Expertise — HHS, the CDC, and the Vaccine Schedule</a><a href="/#chapter-21-g-the-military-purge-and-the-war-from-within">Chapter 21-G: The Military Purge and the &quot;War From Within&quot;</a><a href="/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol">Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt</a><a href="/#chapter-21-i-the-surveillance-consolidation">Chapter 21-I: The Surveillance Consolidation</a><a href="/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o">Chapter 21-J: The External Board — Russia&#x27;s Draft, Venezuela&#x27;s Oil</a><a href="/#chapter-21-k-the-redistricting-war-and-the-fall-of-the-votin">Chapter 21-K: The Redistricting War and the Fall of the Voting Rights Act</a><a href="/#chapter-21-l-the-retribution-docket-every-case-one-table">Chapter 21-L: The Retribution Docket — Every Case, One Table</a><a href="/#chapter-21-m-the-epstein-files-what-they-say-about-the-princ">Chapter 21-M: The Epstein Files — What They Say About the Principal</a><a href="/#chapter-21-n-the-blueprint-executed-project-2025-schedule-f-">Chapter 21-N: The Blueprint Executed — Project 2025, Schedule F, and the Shutdown as Instrument</a><a href="/#chapter-21-o-the-evolving-epstein-narrative-every-explanatio">Chapter 21-O: The Evolving Epstein Narrative — Every Explanation, in Order</a><a href="/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-">Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government</a><a href="/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut">Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut</a></div></details><details data-part="the-honest-assessment"><summary>The Honest Assessment</summary><div><a href="/#the-honest-assessment">Read this section</a><a href="/#chapter-22-where-the-parallels-are-strongest">Chapter 22: Where the Parallels Are Strongest</a><a href="/#chapter-23-where-the-parallels-break-down-the-genuine-differ">Chapter 23: Where the Parallels Break Down — The Genuine Differences</a><a href="/#chapter-24-what-pattern-recognition-tells-us-and-what-it-doe">Chapter 24: What Pattern Recognition Tells Us — And What It Doesn&#x27;t</a><a href="/#chapter-24-b-what-would-change-this-report-s-mind-the-falsif">Chapter 24-B: What Would Change This Report&#x27;s Mind — The Falsifiability Statement (added in the Fifth Edition)</a><a href="/#chapter-25-weighing-the-frames-monarchy-kleptocracy-patrimon">Chapter 25: Weighing the Frames — Monarchy, Kleptocracy, Patrimonialism, Fascism (added in the Third Edition)</a><a href="/#chapter-26-the-forecast-base-rates-scenarios-and-dated-tests">Chapter 26: The Forecast — Base Rates, Scenarios, and Dated Tests (How This Could End)</a></div></details><details data-part="pattern-recognition-is-not-prophecy-it-is-responsibility"><summary>Pattern Recognition Is Not Prophecy — It Is Responsibility</summary><div><a href="/#pattern-recognition-is-not-prophecy-it-is-responsibility">Read this section</a><a href="/#key-sources-and-further-reading">Key Sources and Further Reading</a></div></details><details data-part="appendix-a-editorial-method-and-verification-history"><summary>Appendix A — Editorial Method and Verification History</summary><div><a href="/#appendix-a-editorial-method-and-verification-history">Read this section</a><a href="/#a-1-the-standing-method">A.1 — The standing method</a><a href="/#a-2-edition-history">A.2 — Edition history</a><a href="/#a-3-corrections-carried-forward-from-the-review">A.3 — Corrections carried forward from the review</a><a href="/#a-4-what-could-not-be-independently-re-verified">A.4 — What could not be independently re-verified</a><a href="/#a-5-the-reviewer-s-standing-cautions">A.5 — The reviewer&#x27;s standing cautions</a></div></details><details data-part="appendix-b-provenance-what-this-edition-consolidated"><summary>Appendix B — Provenance: What This Edition Consolidated</summary><div><a href="/#appendix-b-provenance-what-this-edition-consolidated">Read this section</a><a href="/#b-1-why-this-edition-exists">B.1 — Why this edition exists</a><a href="/#b-2-sources-merged">B.2 — Sources merged</a><a href="/#b-3-what-could-not-be-reached-and-how-it-was-handled">B.3 — What could not be reached, and how it was handled</a><a href="/#b-4-new-this-edition">B.4 — New this edition</a></div></details>
+<div class="sb-label">Reference</div>
+<a href="/topics.html">Topics</a><a href="/synthesis.html">Synthesis</a>
+<a href="/neural.html">Neural map</a><a href="/sources.html">Sources</a></aside><main class="content" id="main-content" tabindex="-1"><header class="cover" id="cover"><p>The Architecture — Power, Money, and Ideology in the Second Trump Era</p>
 <h1>THE ARCHITECTURE</h1>
 <p>Power. Money. Ideology.</p>
 <p>An investigative synthesis of the second Trump era — consolidated edition, August 22, 2026 — incorporating, as its historical lens, the full pattern-recognition study <em>"Adolf Hitler: It All Started With Making Germany Great Again"</em></p>
 <p>by Kirk Musick, MS, MBA</p>
 <p>A United States Air Force Veteran, Patriot, Father, Partner, Son, and Quant Modeled Marketing and Derivatives Trader.</p>
 <p>Research compilation begun December 2025 · consolidated August 22, 2026</p>
-<p><strong>A note on the title.</strong> In June 2026, New York Times reporters Maggie Haberman and Jonathan Swan — after roughly 1,000 interviews conducted over two years — published <em>Regime Change: Inside the Imperial Presidency of Donald Trump</em>. Their title is a deliberate argument: for generations American journalists parachuted into foreign capitals to chronicle regime change; Haberman and Swan concluded they were <strong>covering one at home</strong>. This report, built independently and from different sources, reaches the same structural conclusion by a different road. Where their book and this document overlap on facts, that convergence is noted; where the book supplies primary-room detail this document could not otherwise obtain, it is cited as [B] reported (single authoritative source) and flagged as such.</p><div class="mast-meta"><span>MASTER REPORT: CONSOLIDATED EDITION &middot; 2026-08-22</span><span>RESEARCH BEGUN 2025-12</span><span>EDITION UPDATE 003 &middot; 2026-08-30</span><span>~4 HR 1 MIN &middot; 14 SECTIONS</span></div><details class="front-matter"><summary>Front matter — edition notes, table of contents, what this document is and is not</summary><div class="fm-body"><p><strong>CONSOLIDATED EDITION — August 22, 2026.</strong> This edition merges the project's separately published reports into one master text. Thirteen source documents — two master reports, a verification memo, two standalone investigations, the published artifact with its weekly evidence record, and the superseded earlier editions — were reconciled against each other and against primary records. Eleven chapters are new. Eight corrections have been logged to date. Four questions the government has not answered were added to the Silence Ledger. Where two documents contradicted each other, the contradiction was resolved against a primary record and recorded permanently rather than quietly smoothed over. The full accounting, including the five reports that could not be retrieved and how their ground is covered instead, is Appendix B. The project's research compilation began in December 2025; its first edition ran through April 2026.</p>
+<p><strong>A note on the title.</strong> In June 2026, New York Times reporters Maggie Haberman and Jonathan Swan — after roughly 1,000 interviews conducted over two years — published <em>Regime Change: Inside the Imperial Presidency of Donald Trump</em>. Their title is a deliberate argument: for generations American journalists parachuted into foreign capitals to chronicle regime change; Haberman and Swan concluded they were <strong>covering one at home</strong>. This report, built independently and from different sources, reaches the same structural conclusion by a different road. Where their book and this document overlap on facts, that convergence is noted; where the book supplies primary-room detail this document could not otherwise obtain, it is cited as [B] reported (single authoritative source) and flagged as such.</p><div class="mast-meta"><span>MASTER REPORT: CONSOLIDATED EDITION &middot; 2026-08-22</span><span>RESEARCH BEGUN 2025-12</span><span>EDITION UPDATE 003 &middot; 2026-08-30</span><span>~4 HR 1 MIN &middot; 14 SECTIONS</span></div><details class="front-matter" id="edition-notes"><summary>Front matter — edition notes, table of contents, what this document is and is not</summary><div class="fm-body"><p><strong>CONSOLIDATED EDITION — August 22, 2026.</strong> This edition merges the project's separately published reports into one master text. Thirteen source documents — two master reports, a verification memo, two standalone investigations, the published artifact with its weekly evidence record, and the superseded earlier editions — were reconciled against each other and against primary records. Eleven chapters are new. Eight corrections have been logged to date. Four questions the government has not answered were added to the Silence Ledger. Where two documents contradicted each other, the contradiction was resolved against a primary record and recorded permanently rather than quietly smoothed over. The full accounting, including the five reports that could not be retrieved and how their ground is covered instead, is Appendix B. The project's research compilation began in December 2025; its first edition ran through April 2026.</p>
 <p><strong>THIRD EDITION note (retained) — restructured and expanded, July 19, 2026.</strong> This edition reframes the report. The first two editions asked one question: do the documented mechanisms of 1930s democratic erosion recur in the present? This edition asks the larger question the evidence itself now poses: <em>what, exactly, is being built?</em> The answer this investigation documents is not a single thing but three interlocking architectures — a <strong>power</strong> architecture that concentrates authority in one man; a <strong>money</strong> architecture that converts that authority into family wealth; and an <strong>ideology</strong> architecture that supplies the enemies, the grievances, and the justifications. The historical material is retained in full — as one analytic lens among several, not as the verdict. The evidence tiers, the honest-assessment discipline, and every verification from the second edition carry forward unchanged.</p>
 <p><strong>SECOND EDITION note (retained) — reviewed, fact-checked, and updated through July 19, 2026.</strong> This edition adds Chapter 21-B (the United States–Iran war) and Chapter 21-C (the domestic record, January–July 2026), refreshes every detention, budget, and enforcement metric, corrects several quotations and dates for precision, and — consistent with this document's method — expands the Honest Assessment (Chapters 22–24) with the counter-evidence from the same period. Where the first edition's claims could be independently verified, they were; where they could not be, that is stated. A companion review memo documents every verification and correction; it is carried in this edition as Appendix A.</p>
-<p><strong>The evidence discipline, stated once.</strong> <strong>[A] Documented</strong> — primary record cited directly, or an on-the-record admission: the docket entry, the roll call, the filing, the agency's own decision document. <strong>[B] Reported</strong> — two or more genuinely independent named outlets with the primary record identified; syndications of one wire story count as one origin. <strong>[C] Alleged</strong> — single outlet, anonymous, or aggregator; rejected with the reason stated, and rejections are published, not hidden. <strong>[Ø] Adjacency</strong> — two documented facts sit suggestively close; the edge between them is drawn dotted and stays dotted until a document closes it. <strong>ABSENT</strong> — checked for and not found; a verified absence is a result, not a gap. <strong>Denials</strong> stay attached to their allegations and are read for exactly what they deny. Every chapter's claims additionally sit under one of three labels — Documented Fact, Scholarly Argument, or Analytical Parallel — and the third is this report's own interpretation, never presented as the first.</p></div></details></header>
+<p><strong>The evidence discipline, stated once.</strong> <strong>[A] Documented</strong> — primary record cited directly, or an on-the-record admission: the docket entry, the roll call, the filing, the agency's own decision document. <strong>[B] Reported</strong> — two or more genuinely independent named outlets with the primary record identified; syndications of one wire story count as one origin. <strong>[C] Alleged</strong> — single outlet, anonymous, or aggregator; rejected with the reason stated, and rejections are published, not hidden. <strong>[Ø] Adjacency</strong> — two documented facts sit suggestively close; the edge between them is drawn dotted and stays dotted until a document closes it. <strong>ABSENT</strong> — checked for and not found; a verified absence is a result, not a gap. <strong>Denials</strong> stay attached to their allegations and are read for exactly what they deny. Every chapter's claims additionally sit under one of three labels — Documented Fact, Scholarly Argument, or Analytical Parallel — and the third is this report's own interpretation, never presented as the first.</p></div></details></header><a class="latest-record" href="/briefs/2026-08-30.html"><span><span class="mast-kicker">Latest record · 2026-08-30</span><strong>Weekly Brief 003</strong></span><span class="latest-record-action">Read the brief <span aria-hidden="true">→</span></span></a><div class="entry-links"><a href="#executive-summary-one-page"><strong>Read the report</strong><span>Start at the beginning →</span></a><a href="#update"><strong>Read this week</strong><span>Latest record and analysis →</span></a><a href="/neural.html"><strong>Explore the map</strong><span>People, money, institutions →</span></a></div>
 <section class="sentence" id="the-sentence">
   <div class="kicker">The precise sentence the evidence carries</div>
   <blockquote>&ldquo;A personalist, patrimonial regime-in-formation, using supremacist mobilization rhetoric, inside a still-functioning constitutional shell.&rdquo;</blockquote>
@@ -359,29 +54,50 @@ footer .mono{font-size:.72rem}
   </div>
   <div class="card paths">
     <h4>Three ways in</h4>
-    <a href="#the-sentence"><span class="pm">~10 MIN</span><span class="pt">The ten-minute read</span>
-      <span class="pd">The sentence &rarr; <a href="#executive-summary-one-page">executive summary</a> &rarr; <a href="#u-week">this week's lede</a> &rarr; <a href="#u-node">the node</a> &rarr; <a href="#pattern-recognition-is-not-prophecy-it-is-responsibility">the conclusion</a>.</span></a>
-    <a href="#the-money-the-profit-architecture"><span class="pm">~50 MIN</span><span class="pt">The evidence spine</span>
-      <span class="pd">The <a href="#the-money-the-profit-architecture">money architecture</a> &rarr; <a href="#current-documentation-2025-july-2026">current documentation</a> &rarr; <a href="#u-corrections">corrections</a> &rarr; <a href="#u-silence">the silence ledger</a>.</span></a>
-    <a href="#executive-summary-one-page"><span class="pm">~4 HR 1 MIN</span><span class="pt">The full synthesis</span>
-      <span class="pd">Cover to conclusion in order, the <a href="#the-historical-lens-retained-in-full">historical lens</a> in full, honest assessment included.</span></a>
+    <div class="reading-path"><span class="pm">~10 MIN</span><a class="pt" href="#the-sentence">The ten-minute read</a>
+      <span class="pd">The sentence &rarr; <a href="#executive-summary-one-page">executive summary</a> &rarr; <a href="#u-week">this week's lede</a> &rarr; <a href="#u-node">the node</a> &rarr; <a href="#pattern-recognition-is-not-prophecy-it-is-responsibility">the conclusion</a>.</span></div>
+    <div class="reading-path"><span class="pm">~50 MIN</span><a class="pt" href="#the-money-the-profit-architecture">The evidence spine</a>
+      <span class="pd">The <a href="#the-money-the-profit-architecture">money architecture</a> &rarr; <a href="#current-documentation-2025-july-2026">current documentation</a> &rarr; <a href="#u-corrections">corrections</a> &rarr; <a href="#u-silence">the silence ledger</a>.</span></div>
+    <div class="reading-path"><span class="pm">~4 HR 1 MIN</span><a class="pt" href="#executive-summary-one-page">The full synthesis</a>
+      <span class="pd">Cover to conclusion in order, the <a href="#the-historical-lens-retained-in-full">historical lens</a> in full, honest assessment included.</span></div>
   </div>
 </div>
 </section>
 <section id="cast">
 <div class="card cast">
   <h4>The cast, briefly — people and vehicles this report keeps distinct</h4>
+  <p>A guide to the principal figures already covered in the report. Follow each section for its dated evidence, corrections, denials, and limits.</p>
+  <h5>People</h5>
+  <dl>
+    <dt>Donald Trump</dt><dd>The report's principal subject: <a href="#formation-the-making-of-the-man">formation and early financing</a>, <a href="#the-crown-the-architecture-of-power">presidential authority</a>, and <a href="#the-money-the-profit-architecture">family businesses</a>.</dd>
+    <dt>Wilbur Ross</dt><dd>Trace his <a href="/topics/trump-early-financing.html">Rothschild Inc. creditor-side work in the Taj restructuring</a> and his later role as Trump's Commerce secretary. The <a href="/neural.html?entity=ROSS&amp;topic=trump-early-financing">dated map</a> keeps employment, negotiation and public office distinct.</dd>
+    <dt>Donald Trump Jr.</dt><dd>1789 Capital; Polymarket adviser. His investment and advisory roles are covered in <a href="#the-money-the-profit-architecture">the money architecture</a>. <a href="https://1789capital.vc/don-trump-jr">1789's partner biography</a>.</dd>
+    <dt>Eric Trump</dt><dd>American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Read <a href="#u-corrections">the correction</a> alongside <a href="#the-money-the-profit-architecture">the family portfolio</a>.</dd>
+    <dt>Steve Witkoff</dt><dd>Diplomacy and financial disclosures, including the distinction between agency and OGE certification. Read <a href="#u-corrections">the dated certification correction</a> and <a href="#the-money-the-profit-architecture">the envoy economy</a>; his son's company roles are listed separately.</dd>
+    <dt>Zach Witkoff</dt><dd>WLF CEO, trust-bank president, ALT5 chairman. Follow <a href="#the-money-the-profit-architecture">the company and trust-bank records</a>.</dd>
+    <dt>Jared Kushner</dt><dd>Affinity Partners — Gulf sovereign money; the envoy economy's other pole. Read <a href="#the-money-the-profit-architecture">the envoy economy and foreign-state revenue chapters</a>.</dd>
+    <dt>JD Vance</dt><dd>Vice-presidential authority and the Rockbridge / 1789 references in <a href="#the-ideology-supremacy-politics-and-its-limits">the network chapter</a>.</dd>
+    <dt>Stephen Miller</dt><dd>Immigration policy and the enforcement structure covered in <a href="#current-documentation-2025-july-2026">the current documentation</a>.</dd>
+    <dt>Todd Blanche</dt><dd>The president's former defense lawyer; confirmed Attorney General Aug 8, 2026, 50&ndash;49&ndash;1; under Sullivan's contempt warning over the Epstein files. Read <a href="#update">the dated record and corrections</a>.</dd>
+    <dt>Kash Patel</dt><dd>FBI leadership and the investigations examined in <a href="#current-documentation-2025-july-2026">the current documentation</a>.</dd>
+    <dt>Russell Vought</dt><dd>OMB, Project 2025, and executive-branch personnel policy in <a href="#current-documentation-2025-july-2026">the blueprint and machinery chapters</a>.</dd>
+    <dt>Omeed Malik</dt><dd>1789 Capital and the financing connections identified in <a href="#the-ideology-supremacy-politics-and-its-limits">the network chapter</a>.</dd>
+    <dt>Chris Buskirk</dt><dd>1789 Capital and the network's organizing connections in <a href="#the-ideology-supremacy-politics-and-its-limits">the network chapter</a>.</dd>
+    <dt>Rebekah Mercer</dt><dd>1789 Capital and the financing references in <a href="#the-ideology-supremacy-politics-and-its-limits">the network chapter</a>.</dd>
+    <dt>David Sacks</dt><dd>The crypto-policy and investment references covered in <a href="#the-money-the-profit-architecture">the money architecture</a> and <a href="#the-ideology-supremacy-politics-and-its-limits">network chapter</a>.</dd>
+    <dt>Justin Sun</dt><dd>Token purchases and regulatory proceedings documented in <a href="#the-money-the-profit-architecture">the crypto ledger</a>.</dd>
+    <dt>Changpeng Zhao</dt><dd>Binance, WLF-related transactions, and the pardon record. <a href="#the-money-the-profit-architecture">The report distinguishes the documented sequence from alleged causation</a>.</dd>
+    <dt>Sheikh Tahnoon bin Zayed Al Nahyan</dt><dd>The UAE-linked financing and MGX / USD1 transaction covered in <a href="#the-money-the-profit-architecture">the foreign-state and crypto records</a>.</dd>
+    <dt>Mohammed bin Salman</dt><dd>Saudi Arabia, PIF, and the sovereign-funding references in <a href="#the-money-the-profit-architecture">the envoy economy</a>.</dd>
+  </dl>
+  <h5>Companies and vehicles</h5>
   <dl>
     <dt>World Liberty Financial (WLF / WLFI / USD1)</dt><dd>The family crypto venture: governance token (WLFI) and dollar-pegged stablecoin (USD1, ~$4B).</dd>
     <dt>DT Marks DEFI LLC</dt><dd>The Trump vehicle that WLF's own disclosures say receives 75% of token-sale proceeds [A].</dd>
     <dt>DT Marks SC LLC</dt><dd>A second Trump vehicle — named in OCC Corporate Decision #1385 as a passive indirect investor in the family's chartered trust bank [A].</dd>
     <dt>World Liberty Trust Company, N.A.</dt><dd>The national trust bank the OCC conditionally approved Aug 14, 2026. Zachary Witkoff, president and director.</dd>
     <dt>ALT5 Sigma = AI Financial Corp (AIFC)</dt><dd>One SEC registrant (CIK 862861), renamed April 2026 — WLFI's largest disclosed token holder, &minus;92.2% with going-concern doubt.</dd>
-    <dt>Zach Witkoff &middot; Steve Witkoff</dt><dd>Son: WLF CEO, trust-bank president, ALT5 chairman. Father: special envoy whose OGE disclosure remains uncertified ~12 months on.</dd>
-    <dt>Eric Trump &middot; Donald Trump Jr.</dt><dd>Eric: American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Don Jr.: 1789 Capital; Polymarket adviser.</dd>
-    <dt>Jared Kushner</dt><dd>Affinity Partners — Gulf sovereign money; the envoy economy's other pole.</dd>
     <dt>TMTG / DJT (Truth Social)</dt><dd>The president's media company — whose API sells structured post feeds to ~10 customers, primarily high-frequency trading firms, per its interim CEO on the record.</dd>
-    <dt>Todd Blanche</dt><dd>The president's former defense lawyer; confirmed Attorney General Aug 8, 2026, 50&ndash;49&ndash;1; under Sullivan's contempt warning over the Epstein files.</dd>
   </dl>
 </div>
 </section><section id="dates"><div class="card rail-wrap"><h4>The nearest dates — this report tests itself on a calendar</h4><div class="rail"><div class="stop "><a href="#u-threads"><div class="d">SEP 2</div><div class="w">Missouri Supreme Court — referendum argument</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 3</div><div class="w">Phang reply; FCC opposes Disney TRO</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 4</div><div class="w">Slavin v. Parnell — TRO hearing on the Stripes firings</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 10</div><div class="w">Ballot-rule restraining order expires</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 14</div><div class="w">Congress returns — SAVE Act; war powers; S. 5300</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 15</div><div class="w">CA4 argument: Comey / James dismissal appeals</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 24</div><div class="w">US v. Harvard (Title VII) motion hearing</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 25</div><div class="w">ICE Mega Hub — IDIQ awards due</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 29</div><div class="w">D.C. Circuit en banc — Boasberg contempt inquiry</div></a></div><div class="stop "><a href="#u-threads"><div class="d">SEP 30</div><div class="w">Camp East Montana contract ends</div></a></div><div class="stop "><a href="#u-threads"><div class="d">OCT 6</div><div class="w">Disney v. FCC — TRO/PI hearing, Courtroom 21</div></a></div><div class="stop "><a href="#u-threads"><div class="d">OCT 21</div><div class="w">Comey trial date, New Bern</div></a></div><div class="stop "><a href="#u-threads"><div class="d">OCT 28</div><div class="w">Bolton sentencing, Greenbelt</div></a></div><div class="stop big"><a href="#u-threads"><div class="d">NOV 3</div><div class="w">THE MIDTERMS — the nearest test with a date</div></a></div></div></div></section><section class="update" id="update">
@@ -499,6 +215,10 @@ footer .mono{font-size:.72rem}
     <p><span class="was">The August 12 Warren/Garcia letter concerns &ldquo;more than 17,000 stock trades since the inauguration.&rdquo;</span><br>
     <span class="now">That figure appears nowhere in the letter. The seventeen-page letter asks about the <strong>3,555 individual stock trades</strong> in the President's OGE <strong>Form 278-T</strong> for the first quarter of 2026, and separately attributes &ldquo;more than 14,000&rdquo; trades to the website GovGreed and 21,000 trades in 2025 to Bloomberg. Three counts, three periods, three sources; only the 3,555 rests on a government record.</span> <span class="tier a">A</span></p></div>
 
+  <div class="correction" id="u-c017"><div class="mono">2026-09-08 &middot; C-017</div>
+    <p><span class="was">Chapter 10 includes 2024 in a statement that Trump twice won the presidency while losing the national popular vote.</span><br>
+    <span class="now">The FEC's official 2024 results show Trump with <strong>77,302,580 votes (49.80%)</strong>, Harris with <strong>75,017,613 (48.32%)</strong>, and an electoral-vote result of <strong>312–226</strong>. Trump won the national popular-vote plurality in 2024; being below 50% is not a popular-vote loss. The original authored paragraph is retained with a dated correction beside it.</span> <a class="tier a" href="https://www.fec.gov/resources/cms-content/documents/2024presgeresults.pdf">A · FEC, pp. 1, 3, 5</a></p></div>
+
   <h4 id="u-silence">The Silence Ledger</h4>
   <p>Questions put to the government in writing, with deadlines, and the running count of days without an answer. A response — or another week of none — are both findings. <span class="clocks-asof">COUNTS AS OF 2026-08-30</span></p>
   <div class="clocks">
@@ -529,7 +249,7 @@ footer .mono{font-size:.72rem}
   </div>
 
   <h4 id="u-threads">Open Threads — Next Checks</h4>
-  <div class="scroll-x"><table class="ledger">
+  <div class="scroll-x"><div class="table-scroll" role="region" aria-label="Table 1" tabindex="0"><table class="ledger">
     <tr><th>Date</th><th>Thread</th><th>What to pull</th></tr>
     <tr><td class="mono">any day</td><td>Gov. Newsom &mdash; California AB 1539</td><td>Signature, veto message, or continued inaction on the Twenty-Second Amendment ballot-certification bill (Senate 30&ndash;9 Aug 25; Assembly concurrence 77&ndash;0 Aug 26; enrolled Aug 26)</td></tr>
     <tr><td class="mono">any day</td><td>1st Cir. 26-1987 / 26-1988 / 26-1989</td><td>Any ruling on the motions to stay Talwani's Aug 27 restraining order pending appeal; none had issued at the close of the window</td></tr>
@@ -551,10 +271,10 @@ footer .mono{font-size:.72rem}
     <tr><td class="mono">weekly</td><td>USPS Privacy Act system of records</td><td>Unpublished as of Aug 30; by the final rule's own terms the ballot portal cannot operate until it publishes <span class="tier abs">ABSENT</span></td></tr>
     <tr><td class="mono">weekly</td><td>US v. Letitia James &mdash; CA2 26-156 (Sarcone)</td><td>Any cert petition or rehearing petition; the department said Aug 21 it intends to take the case to the Supreme Court and had filed nothing by Aug 30 <span class="tier abs">ABSENT</span></td></tr>
     <tr><td class="mono">weekly</td><td>ICE detention dataset</td><td>Nothing newer than the Jul 20 file (Jul 11 snapshot, 65,765); twelve candidate filenames probed <span class="tier abs">ABSENT</span></td></tr>
-  </table></div>
+  </table></div></div>
   <p style="margin-top:1.5rem">Full weekly narrative, sub-[B] rejects with reasons, and sourcing notes: <a href="#brief-2026-08-30"><strong>Weekly Brief 003 — August 24&ndash;30, 2026</strong></a>.</p>
 </section>
-<main class="story"><header class="part-open"><div class="pmeta"><span>Section 1 of 14</span><span class="rt">~7 min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div><h2 id="executive-summary-one-page">Executive Summary (one page)</h2><p class="dek">The whole argument in one page — three architectures, one precise sentence, and the date it gets tested.</p></header>
+<article class="story" id="report-story"><header class="part-open"><div class="pmeta"><span>Section 1 of 14</span><span class="rt">~7 min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div><h2 id="executive-summary-one-page">Executive Summary (one page)</h2><p class="dek">The whole argument in one page — three architectures, one precise sentence, and the date it gets tested.</p></header>
 <p>Three architectures, assembled in public, reinforcing one another. <strong>Power:</strong> a presidency that has captured personnel, prosecution, and the commanding heights of the economy; that wages a war both chambers voted to end; that signals royal self-conception and third-term intent — and that is still, contestedly, checked by courts it has so far obeyed, elections it has so far conceded, and streets it has so far tolerated. <strong>Money:</strong> a first family whose net worth roughly tripled in two years; $1.4B+ in one year's crypto income per the government's own 927-page disclosure; foreign states buying in before the inauguration; envoys fundraising from the governments across the table; a pardon that followed money in the family's own currency; anonymous wallets with a 98% win rate on the war the president wages. <strong>Ideology:</strong> manufactured enemies, a documented dehumanization vocabulary, a blueprint (Project 2025) 53% executed in year one — inside a movement that still wins diverse electoral coalitions and has not built the racial state the darkest analogies imply. The precise sentence the evidence carries: <em>a personalist, patrimonial regime-in-formation, using supremacist mobilization rhetoric, inside a still-functioning constitutional shell.</em> This edition adds the machinery chapters — rendition, civil-society capture, the war on expertise, the military purge, the shutdown, surveillance, the external board, the redistricting war, the retribution docket, and the Epstein record — and finds each is the same operation on a different surface. How it ends is not predicted here; it is <em>tested</em> here, with dates. The nearest date is November 3, 2026.</p>
 <p>Table of Contents</p>
 <ul>
@@ -803,7 +523,8 @@ footer .mono{font-size:.72rem}
 </ul>
 <p>These differences matter. The most defensible version of the pattern-recognition argument does not claim America is identical to Weimar Germany. It claims that some of the same mechanisms — the tools that enabled democratic erosion there — are operating here, at an earlier stage, where intervention remains possible.</p>
 <p>Part Zero</p>
-<header class="part-open"><div class="pmeta"><span>Section 2 of 14</span><span class="rt">~11 min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div><h2 id="formation-the-making-of-the-man">Formation: The Making of the Man</h2><p class="dek">Part Zero. The father's two words — “king” and “killer” — and where the machinery of endless retribution was learned.</p></header>
+<header class="part-open"><div class="pmeta"><span>Section 2 of 14</span><span class="rt">~11 min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div><h2 id="formation-the-making-of-the-man">Formation: The Making of the Man</h2><p class="dek">Part Zero. The father's two words — “king” and “killer” — and where the machinery of endless retribution was learned.</p></header><aside class="research-note" aria-label="Research navigation"><span class="topic-meta">Research navigation · 2026-09-08</span><br><a href="/topics/trump-early-financing.html">Research topic: early financing and creditor records</a></aside>
+<p><span class="ed-note">[<strong>Research added, 2026-09-08</strong> — Follow <a href="/topics/trump-early-financing.html">Trump’s early financing, Rothschild Inc. and Wilbur Ross</a>: the creditor negotiations, exact entities, later personnel bridge and remaining records to check. <a href="/neural.html?topic=trump-early-financing">Explore the dated connections</a>; <a href="/topics/trump-later-financing.html">continue into later financing</a>.]</span></p>
 <p>A synthesis this large owes the reader an answer to the first question anyone actually asks: <em>why is he like this?</em> Where does the erratic behavior come from, and why do the retributions never seem to end? The honest answer is that no one can psychoanalyze a person they have never examined, and this document will not pretend to. But there is a documented biographical record — from named biographers, from family members speaking on the record, and from the man's own words — and that record is remarkably consistent about where the operating system was installed. This chapter presents it, labeled as what it is: biography and published psychological argument, not clinical diagnosis.</p>
 <h3 id="chapter-0-the-father-s-two-words-king-and-killer-and-the-mac">Chapter 0: The Father's Two Words — "King" and "Killer," and the Machinery of Endless Retribution</h3>
 <p>▌ Documented Fact</p>
@@ -893,7 +614,7 @@ footer .mono{font-size:.72rem}
 <p>▌ Method note</p>
 <p>Chapter C establishes the structure. This chapter is the ledger underneath it: the entities in the order they were created, the money in the order it was disclosed, and the regulatory decisions in the order they landed. Figures from different dates are kept on their own dates rather than averaged — a running total that mixes an October 2025 net-worth estimate with a June 2026 disclosure is not a total, it is an error. Where two credible sources give different numbers for the same thing, both appear.</p>
 <p>▌ Documented Fact — the vehicles, in order of creation</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 2" tabindex="0"><table>
 <thead>
 <tr>
 <th>Date</th>
@@ -938,7 +659,7 @@ footer .mono{font-size:.72rem}
 <td>OCC grants <strong>preliminary conditional approval</strong> for a national trust bank — Corporate Decision #1385, Control No. 2026-Charter-344521. Zachary Witkoff is organizer, director, and President. Indirect investors named in the decision include <strong>DT Marks SC LLC</strong>, the Trump-family vehicle, committed to passivity and barred from board seats. Conditions: GENIUS Act compliance or divestiture, $20M minimum Tier 1 capital, prior OCC approval of executives. Seven public comments on family conflicts and UAE exposure were <strong>rejected as outside charter-review scope.</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>▌ Documented Fact — the money, by disclosure date</p>
 <p><strong>The Financial Times tally, October 2025 (first ten months of the term).</strong> Over <strong>$1 billion in pre-tax profits</strong> across the family's crypto ventures: <strong>$362M</strong> in $TRUMP trading fees, <strong>$550M</strong> from WLFI governance-token sales, <strong>$65M</strong> from $MELANIA, <strong>$40M</strong> in USD1 reserve interest. WLF sold <strong>$2.71B</strong> in USD1. Asked whether the $1B figure was accurate, <strong>Eric Trump: "probably more."</strong> At that date, crypto represented roughly <strong>40% of a $2.9B family net worth</strong> (~$1.16B).</p>
 <p><strong>The Office of Government Ethics disclosure, released June 30, 2026</strong> — 927 pages for the president against 17 for the vice president. More than <strong>$1.4 billion in 2025 income</strong> from the family's crypto ventures, including over $500M (Reuters' broader read: nearly $800M) from World Liberty and <strong>$635M from $TRUMP sales</strong>. Forbes then put the president's net worth at <strong>$6.5B</strong> (Bloomberg: ~$7.1B), roughly <strong>tripled from $2.3–2.4B in 2024</strong>, with crypto the largest single driver and about a fifth of the fortune. Barron Trump has reportedly taken ~$80M from token sales and holds ~2.3B locked tokens.</p>
@@ -1064,7 +785,7 @@ footer .mono{font-size:.72rem}
 <p><strong>The carve-out is the story.</strong> Section 6 provides that nothing in the order shall impair the <strong>U.S. Strategic Critical Minerals Reserve — "Project Vault" — "for which the Export-Import Bank of the United States is a lender"</strong> — and exempts EXIM-, DFC-, and U.S.-government-financed foreign projects, and producers receiving federal grants, financing, loans, or equity. <strong>Closing the waiver door while leaving a government-financed lane open creates a mandated market with a preferred supplier set.</strong> The text is [A]; that characterization is this report's analysis.</p>
 <p><strong>Project Vault itself.</strong> Announced February 2026. EXIM approved a <strong>$10 billion direct loan on February 2, 2026</strong> — the largest in the bank's 92-year history — inside a roughly $12B package. Demand-driven structure: original-equipment manufacturers nominate minerals and prepay costs, storage, and interest. Procurement agents: <strong>Hartree Partners, Traxys North America, Mercuria Energy Group.</strong> Covers all 60 minerals on the USGS 2025 list [A]. Paired with <strong>FORGE</strong> (Forum on Resource Geostrategic Engagement), replacing the Minerals Security Partnership; the vice president described the object as a "preferential trading zone" with tariff-enforced price floors [A]. The enabling authority came earlier: <strong>EO 14241</strong> (March 20, 2025, 90 Fed. Reg. 13673) delegated <strong>Defense Production Act §§301–303</strong> to Defense and the DFC and made minerals a "primary land use" on federal lands [A].</p>
 <p><strong>The federal equity ledger</strong> — the government taking ownership positions in private miners, a practice with no modern precedent at this scale [A]:</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 3" tabindex="0"><table>
 <thead>
 <tr>
 <th>Date</th>
@@ -1109,7 +830,7 @@ footer .mono{font-size:.72rem}
 <td>$150M</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>By August 2026 roughly <strong>30 companies</strong> government-wide held federal equity or warrant positions [A].</p>
 <p><strong>The named private positions — the sharpest material in this stream.</strong> Public Citizen's January 29, 2026 report "Critical Conflicts," with the New York Times of December 9, 2025:</p>
 <ul>
@@ -1155,7 +876,7 @@ footer .mono{font-size:.72rem}
 <p>The July 2025 reconciliation package appropriated <strong>$75 billion to ICE over four years</strong> — roughly $18.75B annually against an FY2024 budget of about <strong>$10 billion</strong>. The detention line alone rose <strong>400% in a single year</strong>, exceeding the Justice Department's entire federal prison system request. Of the <strong>$45 billion</strong> detention appropriation, <strong>$38.3 billion</strong> was allocated to the warehouse acquisition program. The money flows overwhelmingly to two for-profit operators, <strong>GEO Group</strong> and <strong>CoreCivic</strong> — donors to the president's campaigns, whose stocks surged on his election and whose executives told investors the moment was an unprecedented opportunity.</p>
 <p>▌ Documented Fact — the Detention Reengineering Initiative</p>
 <p>The <strong>DRI</strong>, disclosed through Governor Kelly Ayotte's (R-NH) office as an ICE white paper, is the build-out plan: <strong>92,600 beds</strong>, <strong>8 "mega centers"</strong> of 7,000–10,000 capacity each, <strong>16 regional processing centers</strong> of 1,000–1,500 each, and <strong>12,000 newly hired officers</strong>, all targeted to activate by <strong>November 30, 2026</strong>. (An earlier draft of this project's source material carried a September 30, 2026 target; the white paper says November 30, and the correction is logged as C-005.) Sites and prices as documented:</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 4" tabindex="0"><table>
 <thead>
 <tr>
 <th>Site</th>
@@ -1192,7 +913,7 @@ footer .mono{font-size:.72rem}
 <td><strong>9 of 24 planned; ~$700M spent</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>The operational model is <strong>government-owned, privately operated</strong>, with <strong>GEO Group added to the pre-qualified vendor list through a no-bid process</strong> and a <strong>$29.9 million no-bid "concept design" contract</strong> awarded to a firm with no prior government work. <strong>Palantir</strong>'s roughly $30 million <strong>ImmigrationOS</strong> contract (April 2025) supplies the targeting layer. Acting ICE director <strong>Todd Lyons</strong>'s own description of the vision, as quoted in the March 29, 2026 Warren–Raskin letter to GEO Group: <strong>"(Amazon) Prime, but with human beings."</strong></p>
 <p>Forty-five lawmakers led by Senator Warren and Representative Raskin are formally investigating the program for waste and profiteering — in a system whose <strong>detention-oversight office was simultaneously wound down</strong> in 2026, which DHS attributed to the appropriations lapse although the bill ending the DHS shutdown did not mandate the closure.</p>
 <p>▌ Documented Fact — the 2026 escalation</p>
@@ -1262,7 +983,7 @@ footer .mono{font-size:.72rem}
 <p>▌ Method note</p>
 <p>Chapter 21-E documents the capture pressure applied to law, the academy, and the press as one campaign against civil society. This chapter takes the press half and gives it the full record, because the press campaign has a feature the others lack: it runs on <strong>four separate instruments</strong> — private litigation, regulatory leverage, physical access, and criminal process — and each has a distinct legal fate. The pattern only becomes visible when they are read together.</p>
 <p>▌ Documented Fact — Instrument 1: private litigation and the settlement fund</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 5" tabindex="0"><table>
 <thead>
 <tr>
 <th>Defendant</th>
@@ -1317,7 +1038,7 @@ footer .mono{font-size:.72rem}
 <td><strong>Dismissed Jul 7–8, 2026</strong> — TMTG "failed to present evidence that would allow a jury to find by clear and convincing evidence" actual malice</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Where the money went, and the $14.5 million that is missing.</strong> The June 30, 2026 financial disclosure lists settlement proceeds from ABC, Meta, and Paramount totaling <strong>$56.5 million</strong> with the notation "net proceeds paid to The Donald J. Trump Presidential Library Foundation, Inc." <strong>The X Corp. settlement's destination is not clarified in the filing.</strong> A July 16, 2026 letter from Senators Warren, Blumenthal, and Representative Stansbury documents that identified settlements total <strong>$64.5 million</strong>, while the Foundation reported only <strong>$50 million in revenue</strong> as of October 10, 2025 — leaving <strong>up to $14.5 million unaccounted for</strong> — plus roughly <strong>$7 million in expenditures with no clear explanation</strong>, including <strong>$6 million categorized only as "other."</strong> The original <em>Donald J. Trump Presidential Library Fund, Inc.</em> was <strong>dissolved by Florida's Department of State in September 2025</strong> for failing to file a required annual report; a successor entity had been incorporated that May. <strong>No answer to the letter has been located.</strong> It is entered in the Silence Ledger.</p>
 <p><strong>The Paramount scope note.</strong> The president publicly claimed the settlement's true value was "$32 to $35 million" including advertising and public-service announcements. <strong>Paramount's denial was narrow and specific:</strong> the settlement "does not include PSAs or anything related to PSAs," and the company had "no knowledge of any promises or commitments made to President Trump other than those set forth in the settlement proposed by the mediator." <strong>Read the scope: Paramount denied its own commitments. It did not deny that Skydance- or Ellison-side commitments existed.</strong> A Paramount investor subsequently sued David and Larry Ellison alleging a Trump "side deal" [B].</p>
 <p>▌ Documented Fact — Instrument 2: the FCC</p>
@@ -1392,7 +1113,7 @@ footer .mono{font-size:.72rem}
 <h3 id="chapter-3-the-weimar-republic-democratic-mechanics-weaponize">Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized</h3>
 <h4>The Electoral Record</h4>
 <p>The Weimar Republic, established in 1919, used proportional representation designed to include all voices. This system, intended for fairness, became exploitable by a bad-faith actor who consistently sought to obstruct rather than govern.</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 6" tabindex="0"><table>
 <thead>
 <tr>
 <th>Election</th>
@@ -1429,7 +1150,7 @@ footer .mono{font-size:.72rem}
 <td>43.9% — 288 seats. SA in streets; not a free election.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>Critical finding:</strong> Hitler never won an outright majority in a free election. His peak free vote was 37.4%, and that figure was declining by November 1932. He was appointed Chancellor — not elected to the position — when his electoral support was falling.</p>
 <h4>The October 1929 Crash: The Crisis That Transformed a Fringe into a Mass Movement</h4>
 <p>Germany was uniquely vulnerable to the Wall Street Crash of October 1929. The entire Weimar economic recovery had been built on American loans under the Dawes Plan. When American banks recalled loans immediately, Germany's economy collapsed with extraordinary speed. Unemployment rose from 1.3 million in 1928 to 6.1 million — 30% of the workforce — by 1932. The middle class had already had its savings wiped out twice in one decade (hyperinflation of 1923; now the Depression). Young men had no work and no prospects.</p>
@@ -1550,7 +1271,7 @@ footer .mono{font-size:.72rem}
 <p>The rhetorical structure of Hitler's restoration narrative — Germany was great, it was betrayed (the 'stab in the back' myth), specific enemies are responsible (Jews, communists, Weimar politicians), only Hitler can restore German greatness — follows the same psychological architecture as the contemporary American restoration narrative. Both target real grievances (post-WWI German humiliation was real; post-2008 American economic displacement was real) with manufactured explanations and a single-man solution. The parallel is in the mechanism, not in the specific ideology or the specific target population.</p>
 <h3 id="chapter-10-using-democracy-against-itself-the-legal-entry">Chapter 10: Using Democracy Against Itself — The Legal Entry</h3>
 <p>▌ Documented Fact</p>
-<p>Adolf Hitler never won an outright majority in a free election. He became Chancellor through elite appointment, not electoral victory. The American Electoral College system has twice delivered the presidency to Donald Trump despite his losing the national popular vote (2016: lost by approximately 2.9 million votes; 2024: won with approximately 49.9% of the popular vote). These are documented facts about electoral mathematics.</p>
+<p>Adolf Hitler never won an outright majority in a free election. He became Chancellor through elite appointment, not electoral victory. The American Electoral College system has twice delivered the presidency to Donald Trump despite his losing the national popular vote (2016: lost by approximately 2.9 million votes; 2024: won with approximately 49.9% of the popular vote). These are documented facts about electoral mathematics. <span class="ed-note">[<strong>Correction, 2026-09-08 · C-017</strong> — Trump won the 2024 national popular-vote plurality: 77,302,580 votes (49.80%), ahead of Harris. A plurality below 50% is not a popular-vote loss. See <a href="#u-c017">the FEC record and correction</a>.]</span></p>
 <p>Trump's legal challenges to the 2020 election result — the 'stolen election' claim — were adjudicated in 60+ court cases, including before judges appointed by Trump himself, all of which found no evidence of fraud sufficient to overturn results. This is documented in court records.</p>
 <p>▌ Scholarly Argument</p>
 <p>Scholars of democratic erosion — including Steven Levitsky and Daniel Ziblatt in <em>How Democracies Die</em> (2018) — identify the use of legal mechanisms to undermine democratic norms as a defining feature of modern authoritarian consolidation, distinct from the military coups of earlier eras. The 'Big Lie' mechanism — Hitler articulated it as the Große Lüge in Mein Kampf: the larger the lie, the more believable, because people cannot conceive that someone would lie on a massive scale — is a documented propaganda technique with specific psychological effects on information environments.</p>
@@ -1751,7 +1472,7 @@ footer .mono{font-size:.72rem}
 <p>Key categories of executive action include: immigration enforcement expansion; civil service restructuring (Schedule F reinstated); DEI elimination across federal government; military policy changes including transgender service ban and the renaming of the Department of Defense to 'Department of War' (secondary title, September 2025); international withdrawal from WHO and Paris Agreement; emergency declaration at the southern border; pardons for January 6 participants on day one of the second term.</p>
 <p><strong>July 2026 update:</strong> The executive-order record now also includes a significant reversal. After the Supreme Court ruled 6–3 on February 20, 2026 (Learning Resources, Inc. v. Trump) that the International Emergency Economic Powers Act does not authorize presidential tariffs, the administration issued the executive order 'Ending Certain Tariff Actions' rescinding the IEEPA tariffs, and a court-supervised refund process began for the roughly $166 billion collected (Supreme Court opinion; WilmerHale, Skadden, BDO client analyses, February–April 2026). The tariff-emergency pillar of the 2025 emergency architecture was thus dismantled — by a court ruling the administration complied with. Chapter 21-C and Chapter 23 treat the significance of that compliance. Note also that the 'Department of War' secondary title is now used on official government domains (war.gov), including for the FY2027 budget rollout.</p>
 <h3 id="chapter-20-the-detention-infrastructure-key-metrics">Chapter 20: The Detention Infrastructure — Key Metrics</h3>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 7" tabindex="0"><table>
 <thead>
 <tr>
 <th>Metric</th>
@@ -1900,7 +1621,7 @@ footer .mono{font-size:.72rem}
 <td>"(Amazon) Prime, but with human beings" (as quoted in the March 29, 2026 Warren–Raskin congressional letter to GEO Group)</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="the-budget-architecture-priorities-revealed">The Budget Architecture — Priorities Revealed</h3>
 <p>The Trump FY2027 budget request, released April 3, 2026, reveals the administration's stated priorities through funding allocations:</p>
 <ul>
@@ -2060,7 +1781,7 @@ footer .mono{font-size:.72rem}
 <p>Chapter 26's second dated test asked whether election-machinery pressure would stay rhetorical or become operational before November. <strong>This edition records the answer: operational</strong> — not by executive order but by judicial doctrine plus immediate state execution, including the suspension of an election in progress. The test's weight now transfers almost entirely to Test 1: whether November 3 itself is held, counted, and conceded on a field that Callais has already measurably tilted.</p>
 <h3 id="chapter-21-l-the-retribution-docket-every-case-one-table">Chapter 21-L: The Retribution Docket — Every Case, One Table</h3>
 <p>▌ Documented Fact — status as of July 19, 2026</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 8" tabindex="0"><table>
 <thead>
 <tr>
 <th>Target</th>
@@ -2119,7 +1840,7 @@ footer .mono{font-size:.72rem}
 <td>Open</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>▌ Analytical Parallel</p>
 <p>Read as one artifact, the docket's pattern is unmistakable and, importantly, two-sided: every case manufactured by irregular means has so far <strong>failed</strong> — dismissed, un-reindictable, or refused by ordinary citizens on grand juries — while the one conviction came from a career-prosecutor case that predates the vendetta. The machinery of retribution is real, documented, and personally directed; the institutions absorbing it — judges, juries, the Fed carve-out — have so far held. Both halves of that sentence are the finding.</p>
 <h3 id="chapter-21-m-the-epstein-files-what-they-say-about-the-princ">Chapter 21-M: The Epstein Files — What They Say About the Principal</h3>
@@ -2132,7 +1853,7 @@ footer .mono{font-size:.72rem}
 <p><strong>Russell Vought</strong> — OMB Director, acting CFPB director, and <strong>author of Project 2025's chapter on the Executive Office of the President</strong> — is the mechanism's operator. On Steve Bannon's podcast he called the shutdown a "very critical juncture": <strong>"If Congress has given us authority that is too broad, then we're going to use that authority aggressively."</strong> Senator Mike Lee (R-UT), approvingly: Vought has been "dreaming about this moment, preparing for this moment since puberty."</p>
 <p>▌ Documented Fact — the implementation rate</p>
 <p>Independent trackers, all published:</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 9" tabindex="0"><table>
 <thead>
 <tr>
 <th>Source</th>
@@ -2161,7 +1882,7 @@ footer .mono{font-size:.72rem}
 <td>Trump's efforts "exceeded my expectations. My wildest dreams, if you will." "Dismantling the administrative state" was his "number one goal."</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>▌ Documented Fact — the personnel machine</p>
 <p><strong>Schedule F</strong> was reinstated by executive order on day one, reclassifying career civil servants as at-will. The Office of Personnel Management's proposed rule reached <strong>as many as 50,000 federal workers</strong>, roughly 2% of the workforce. Federal job applications were modified to ask applicants <strong>how they would advance the President's executive orders</strong> — and, in some postings, to name a favorite one. Collective bargaining rights were ended by executive order for large portions of the workforce. Roughly <strong>211,000 people</strong> were forced out of federal jobs by late 2025 per contemporaneous reporting; the administration estimated 200,000-plus departures by October 2025 with projections of 300,000 by year-end.</p>
 <p>▌ Documented Fact — the shutdown as instrument</p>
@@ -2569,7 +2290,7 @@ footer .mono{font-size:.72rem}
 <li><strong>Corrections are permanent.</strong> Entries in the Corrections Log are never deleted, only added to.</li>
 </ul>
 <h3 id="a-2-edition-history">A.2 — Edition history</h3>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 10" tabindex="0"><table>
 <thead>
 <tr>
 <th>Edition</th>
@@ -2634,7 +2355,7 @@ footer .mono{font-size:.72rem}
 <td><strong>This edition.</strong> The project's separately published reports merged into a single master. Eleven new chapters, four new corrections, four new Silence Ledger entries, and a full reconciliation pass across editions. See Appendix B.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="a-3-corrections-carried-forward-from-the-review">A.3 — Corrections carried forward from the review</h3>
 <p>Four precision fixes from the July 19, 2026 verification memo remain in force and are recorded here permanently:</p>
 <ol>
@@ -2656,7 +2377,7 @@ footer .mono{font-size:.72rem}
 <h3 id="b-1-why-this-edition-exists">B.1 — Why this edition exists</h3>
 <p>This project had grown into more than a dozen separately published documents — master reports, standalone investigations, styled renderings, a verification memo, and a weekly brief — with overlapping chapters, divergent figures, and no single authoritative text. This edition is the consolidation. Where two documents covered the same ground, the more recent and better-sourced version governs and the other is superseded. Where a document contained material found nowhere else, that material became a new chapter. Where two documents contradicted each other, the contradiction was resolved against a primary record and logged in the Corrections Log rather than quietly smoothed over.</p>
 <h3 id="b-2-sources-merged">B.2 — Sources merged</h3>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 11" tabindex="0"><table>
 <thead>
 <tr>
 <th>Source document</th>
@@ -2706,10 +2427,10 @@ footer .mono{font-size:.72rem}
 <td>Superseded — an earlier edition of the same text, per the verification memo.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h3 id="b-3-what-could-not-be-reached-and-how-it-was-handled">B.3 — What could not be reached, and how it was handled</h3>
 <p>Five separately published reports in the project's artifact gallery were <strong>not retrievable from the session that built this edition.</strong> Rather than guess at their contents, their subject matter was reconstructed from the master report, the merged source documents above, and fresh primary research conducted for this edition. Each is flagged here so the reader knows which chapters are reconstructions rather than merges:</p>
-<table>
+<div class="table-scroll" role="region" aria-label="Table 12" tabindex="0"><table>
 <thead>
 <tr>
 <th>Unreachable report</th>
@@ -2738,7 +2459,7 @@ footer .mono{font-size:.72rem}
 <td><strong>Chapter 21-O</strong>, rebuilt as a dated chronology of the administration's own public positions.</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>A note on what that means for reliability.</strong> A reconstruction is not a lesser thing than a merge if it rests on primary records, and these do — federal-register citations, docket numbers, roll-call numbers, SEC accession numbers, and named congressional letters with dates. What a reconstruction <em>cannot</em> do is preserve a specific figure or source that appeared only in the original and nowhere else. If the original reports contain material not represented here, this edition should be updated against them rather than assumed complete. That instruction is itself part of the record.</p>
 <h3 id="b-4-new-this-edition">B.4 — New this edition</h3>
 <p><strong>Eleven new chapters:</strong> 0-B (The Unfit Record), C-2 (The Crypto Apparatus), E-2 (The Qatar File), E-3 (The Argentina Channel), G-2 (Five Follow-the-Money Streams), H (The Warehouse State — replacing the shorter Enforcement Economy chapter), M (The Media Revenge Campaign), 21-N (The Blueprint Executed), 21-O (The Evolving Epstein Narrative), 21-P (The Hemisphere), and 21-Q (China).</p>
@@ -2747,7 +2468,7 @@ footer .mono{font-size:.72rem}
 <p><strong>One structural finding worth stating on its own.</strong> Consolidating thirteen documents written across sixteen months surfaced something none of them showed individually: <strong>the same four-part shape recurs in every architecture.</strong> A discretionary decision without a governing statute; a beneficiary with a documented private position; an oversight question asked in writing; and no answer. Streams 1 through 5 in Chapter G-2, the detention build-out in Chapter H, the press campaign in Chapter M, and the Epstein chronology in Chapter 21-O are the same structure applied to minerals, to beds, to broadcast licenses, and to a document release. That recurrence is the strongest argument in this edition — and it is an argument about <strong>structure</strong>, not about proven intent. Every causal edge inside it remains dotted.</p>
 <p><em>THE ARCHITECTURE — Power, Money, and Ideology in the Second Trump Era</em>
 <em>An Investigative Synthesis, incorporating the pattern-recognition study "Adolf Hitler: It All Started With Making Germany Great Again"</em>
-Research compilation begun December 2025 — Consolidated Edition, August 22, 2026</p></main><section id="brief-001"><h2><span class="num">ARCHIVE</span>Weekly Brief Archive</h2><p>3 briefs on the record, newest first. Each opens in full — lede, three architectures, rejects, sourcing notes.</p><details class="front-matter" id="brief-2026-08-30"><summary>Weekly Brief 003 &mdash; week ending 2026-08-30 (full narrative)</summary><div class="fm-body">
+Research compilation begun December 2025 — Consolidated Edition, August 22, 2026</p></article><section id="brief-001"><h2><span class="num">ARCHIVE</span>Weekly Brief Archive</h2><p>3 briefs on the record, newest first. Each opens in full — lede, three architectures, rejects, sourcing notes.</p><details class="front-matter" id="brief-2026-08-30"><summary>Weekly Brief 003 &mdash; week ending 2026-08-30 (full narrative)</summary><div class="fm-body">
 <div class="mast-kicker">Weekly Brief Archive</div>
 <h1 class="mast">Weekly Brief — Edition 003</h1>
 <p class="mast-sub">Window: August 24&ndash;30, 2026 &middot; compiled August 30, 2026 &middot; eight parallel research tracks</p>
@@ -3225,43 +2946,26 @@ Sourced entries: 200
 - [ ] Political landscape: The Hill, ABC News, Brookings, and the NPR tracker on record congressional retirements; NBC News on the political consequences for Epstein-transparency Republicans; coverage of the November 2025 off-year elections and 2026 primaries.</pre></div></details></section><footer class="site-footer">
 <p>THE ARCHITECTURE is an investigative synthesis by Kirk Musick, carried forward by a standing tiered-evidence weekly process. It reports structure, not intent; separates private positions from government actions; labels dotted edges dotted; keeps denials attached to their allegations with exact scope; treats verified absence as a result; and logs corrections permanently.</p>
 <p class="mono">MASTER REPORT: CONSOLIDATED EDITION (2026-08-22; research begun 2025-12) &middot; EDITION UPDATE 003 (2026-08-30) &middot; <a href="#brief-001">WEEKLY BRIEFS</a> &middot; <a href="#sources">SOURCE ARCHIVE</a> &middot; <a href="#u-corrections">CORRECTIONS</a></p>
-</footer></div></div><script>
-document.querySelectorAll('.navgroup > button').forEach(function(b){
-  b.addEventListener('click', function(e){ e.stopPropagation();
-    var g=b.parentElement, open=g.classList.contains('open');
-    document.querySelectorAll('.navgroup.open').forEach(function(x){x.classList.remove('open')});
-    if(!open) g.classList.add('open'); });});
-document.addEventListener('click', function(){
-  document.querySelectorAll('.navgroup.open').forEach(function(x){x.classList.remove('open')});});
-var bar=document.getElementById('progress');
-addEventListener('scroll', function(){
-  var h=document.documentElement, p=h.scrollTop/(h.scrollHeight-h.clientHeight);
-  bar.style.width=(p*100).toFixed(2)+'%';}, {passive:true});
-var where=document.getElementById('whereami');
-var targets=[].slice.call(document.querySelectorAll('section[id], h2[id], h3[id], h4[id]'));
-var sbLinks={}; [].slice.call(document.querySelectorAll('.sidebar a[href^="#"]')).forEach(function(a){
-  sbLinks[a.getAttribute('href').slice(1)]=a;});
-var sbParts={}; [].slice.call(document.querySelectorAll('.sidebar details[data-part]')).forEach(function(d){
-  sbParts[d.getAttribute('data-part')]=d;});
-function label(el){var t=el.tagName==='SECTION'?(el.querySelector('h2,h4')||el):el;return (t.textContent||'').trim().slice(0,60);}
-var current=null;
-var io=new IntersectionObserver(function(es){
-  es.forEach(function(e){ if(e.isIntersecting){ current=e.target;
-    if(where) where.textContent='You are in: '+label(current);
-    var id=current.id;
-    document.querySelectorAll('.sidebar a.on').forEach(function(x){x.classList.remove('on')});
-    document.querySelectorAll('.sidebar details.on').forEach(function(x){x.classList.remove('on')});
-    if(sbLinks[id]) sbLinks[id].classList.add('on');
-    var el=current;
-    while(el && el!==document.body){
-      if(el.id && sbParts[el.id]){sbParts[el.id].classList.add('on');sbParts[el.id].open=true;break;} el=el.parentElement;}
-    if(sbParts[id]){sbParts[id].classList.add('on');sbParts[id].open=true;}
-    var h2p=current.closest && current.closest('header.part-open');
-    var pd=null, node=current;
-    if(current.tagName==='H3'){ var prev=current; while(prev && !(prev.tagName==='H2'&&prev.id)){prev=prev.previousElementSibling||prev.parentElement;}
-      if(prev&&prev.id&&sbParts[prev.id]){sbParts[prev.id].classList.add('on');sbParts[prev.id].open=true;}}
-  }});},{rootMargin:'-35% 0px -55% 0px'});
-targets.forEach(function(t){io.observe(t)});
-</script>
-</body>
-</html>
+</footer></main></div><dialog class="contents-dialog" id="contents-dialog" aria-labelledby="contents-heading">
+<div class="dialog-heading"><h2 id="contents-heading">Contents</h2>
+<button type="button" data-ui-close-contents aria-label="Close contents">Close <span aria-hidden="true">×</span></button></div>
+<nav class="contents-links sidebar-links" aria-label="Page contents"><div class="sb-label">Start here</div>
+<a href="/#cover">The report</a><a href="/#howto">How to read this</a>
+<a href="/#edition-notes">Edition notes</a>
+<div class="sb-label">The record</div>
+<a href="/#update">This week's record</a><a href="/#brief-001">Weekly briefs</a>
+<a href="/#u-corrections">Corrections</a><a href="/#u-silence">Silence ledger</a>
+<a href="/#u-threads">Next checks</a>
+<div class="sb-label">The story</div><details data-part="executive-summary-one-page"><summary>Executive Summary (one page)</summary><div><a href="/#executive-summary-one-page">Read this section</a></div></details><details data-part="formation-the-making-of-the-man"><summary>Formation: The Making of the Man</summary><div><a href="/#formation-the-making-of-the-man">Read this section</a><a href="/#chapter-0-the-father-s-two-words-king-and-killer-and-the-mac">Chapter 0: The Father&#x27;s Two Words — &quot;King&quot; and &quot;Killer,&quot; and the Machinery of Endless Retribution</a><a href="/#chapter-0-b-the-unfit-record-what-clinicians-and-family-have">Chapter 0-B: The Unfit Record — What Clinicians and Family Have Said, and the Limits of Saying It</a></div></details><details data-part="the-crown-the-architecture-of-power"><summary>The Crown: The Architecture of Power</summary><div><a href="/#the-crown-the-architecture-of-power">Read this section</a><a href="/#chapter-a-the-king-words-royal-signaling-the-third-term-and-">Chapter A: The King Words — Royal Signaling, the Third Term, and Eight Million in the Streets</a><a href="/#chapter-b-the-power-ledger-what-has-actually-been-consolidat">Chapter B: The Power Ledger — What Has Actually Been Consolidated, and What Has Held</a></div></details><details data-part="the-money-the-profit-architecture"><summary>The Money: The Profit Architecture</summary><div><a href="/#the-money-the-profit-architecture">Read this section</a><a href="/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r">Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner</a><a href="/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september">Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026</a><a href="/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma">Chapter D: The Envoy Economy — Kushner, the Witkoffs, and Diplomacy on Commission</a><a href="/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo">Chapter E: Foreign-State Revenue — The Jet, the Gulf, and the Emoluments Question</a><a href="/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso">Chapter E-2: The Qatar File — A Security Guarantee, a Jet, a Resort, and a Base</a><a href="/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a">Chapter E-3: The Argentina Channel — A $40 Billion Bailout and a Treasury Secretary&#x27;s Friend</a><a href="/#chapter-f-the-pardon-and-access-market">Chapter F: The Pardon and Access Market</a><a href="/#chapter-g-war-finance-prediction-markets-defense-portfolios-">Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates</a><a href="/#chapter-g-2-five-follow-the-money-streams">Chapter G-2: Five Follow-the-Money Streams</a><a href="/#chapter-h-the-warehouse-state-detention-as-an-industry">Chapter H: The Warehouse State — Detention as an Industry</a><a href="/#chapter-i-the-sum-what-the-money-architecture-adds-up-to">Chapter I: The Sum — What the Money Architecture Adds Up To</a></div></details><details data-part="the-ideology-supremacy-politics-and-its-limits"><summary>The Ideology: Supremacy Politics and Its Limits</summary><div><a href="/#the-ideology-supremacy-politics-and-its-limits">Read this section</a><a href="/#chapter-j-what-nazi-light-gets-right-what-it-gets-wrong-and-">Chapter J: What &#x27;Nazi-Light&#x27; Gets Right, What It Gets Wrong, and What the Precise Words Are</a><a href="/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e">Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence</a><a href="/#chapter-l-the-convergence-what-kushner-china-russia-cuba-gre">Chapter L: The Convergence — What Kushner, China, Russia, Cuba, Greenland, ICE, AI, and the Midterms Have in Common</a><a href="/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces">Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas</a></div></details><details data-part="the-historical-lens-retained-in-full"><summary>The Historical Lens — retained in full</summary><div><a href="/#the-historical-lens-retained-in-full">Read this section</a></div></details><details data-part="the-historical-record"><summary>The Historical Record</summary><div><a href="/#the-historical-record">Read this section</a><a href="/#chapter-1-formation-austria-the-army-and-the-birth-of-a-poli">Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal</a><a href="/#chapter-2-the-prison-pivot-from-putsch-to-parliamentary-stra">Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy</a><a href="/#chapter-3-the-weimar-republic-democratic-mechanics-weaponize">Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized</a><a href="/#chapter-4-the-legal-revolution-53-days">Chapter 4: The Legal Revolution — 53 Days</a><a href="/#chapter-5-the-enforcement-architecture-sa-ss-and-persecution">Chapter 5: The Enforcement Architecture — SA, SS, and Persecution</a><a href="/#chapter-6-consolidation-night-of-the-long-knives-and-the-thi">Chapter 6: Consolidation — Night of the Long Knives and the Third Reich</a><a href="/#chapter-7-war-genocide-and-the-aftermath">Chapter 7: War, Genocide, and the Aftermath</a></div></details><details data-part="the-scholarly-framework"><summary>The Scholarly Framework</summary><div><a href="/#the-scholarly-framework">Read this section</a><a href="/#chapter-8-what-scholars-tell-us-about-democratic-erosion">Chapter 8: What Scholars Tell Us About Democratic Erosion</a></div></details><details data-part="pattern-recognition"><summary>Pattern Recognition</summary><div><a href="/#pattern-recognition">Read this section</a><a href="/#chapter-9-the-rhetorical-architecture-restoration-and-the-sa">Chapter 9: The Rhetorical Architecture — Restoration and the Savior Myth</a><a href="/#chapter-10-using-democracy-against-itself-the-legal-entry">Chapter 10: Using Democracy Against Itself — The Legal Entry</a><a href="/#chapter-11-the-conservative-enablement-elite-miscalculation">Chapter 11: The Conservative Enablement — Elite Miscalculation</a><a href="/#chapter-12-purging-dissent-the-loyalty-architecture">Chapter 12: Purging Dissent — The Loyalty Architecture</a><a href="/#chapter-13-emergency-powers-and-the-parallel-enforcement-arc">Chapter 13: Emergency Powers and the Parallel Enforcement Architecture</a><a href="/#chapter-14-the-enforcement-and-detention-industrial-complex">Chapter 14: The Enforcement and Detention Industrial Complex</a><a href="/#chapter-15-technology-propaganda-and-the-information-environ">Chapter 15: Technology, Propaganda, and the Information Environment</a><a href="/#chapter-16-the-targeting-of-vulnerable-communities">Chapter 16: The Targeting of Vulnerable Communities</a><a href="/#chapter-17-foreign-policy-and-the-expansionist-pattern">Chapter 17: Foreign Policy and the Expansionist Pattern</a><a href="/#chapter-18-the-chaos-doctrine-manufacturing-crisis">Chapter 18: The Chaos Doctrine — Manufacturing Crisis</a></div></details><details data-part="current-documentation-2025-july-2026"><summary>Current Documentation (2025–July 2026)</summary><div><a href="/#current-documentation-2025-july-2026">Read this section</a><a href="/#chapter-19-the-executive-order-record">Chapter 19: The Executive Order Record</a><a href="/#chapter-20-the-detention-infrastructure-key-metrics">Chapter 20: The Detention Infrastructure — Key Metrics</a><a href="/#the-budget-architecture-priorities-revealed">The Budget Architecture — Priorities Revealed</a><a href="/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru">Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)</a><a href="/#chapter-21-c-the-home-front-january-july-2026">Chapter 21-C: The Home Front (January–July 2026)</a><a href="/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce">Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia</a><a href="/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an">Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press</a><a href="/#chapter-21-f-the-war-on-expertise-hhs-the-cdc-and-the-vaccin">Chapter 21-F: The War on Expertise — HHS, the CDC, and the Vaccine Schedule</a><a href="/#chapter-21-g-the-military-purge-and-the-war-from-within">Chapter 21-G: The Military Purge and the &quot;War From Within&quot;</a><a href="/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol">Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt</a><a href="/#chapter-21-i-the-surveillance-consolidation">Chapter 21-I: The Surveillance Consolidation</a><a href="/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o">Chapter 21-J: The External Board — Russia&#x27;s Draft, Venezuela&#x27;s Oil</a><a href="/#chapter-21-k-the-redistricting-war-and-the-fall-of-the-votin">Chapter 21-K: The Redistricting War and the Fall of the Voting Rights Act</a><a href="/#chapter-21-l-the-retribution-docket-every-case-one-table">Chapter 21-L: The Retribution Docket — Every Case, One Table</a><a href="/#chapter-21-m-the-epstein-files-what-they-say-about-the-princ">Chapter 21-M: The Epstein Files — What They Say About the Principal</a><a href="/#chapter-21-n-the-blueprint-executed-project-2025-schedule-f-">Chapter 21-N: The Blueprint Executed — Project 2025, Schedule F, and the Shutdown as Instrument</a><a href="/#chapter-21-o-the-evolving-epstein-narrative-every-explanatio">Chapter 21-O: The Evolving Epstein Narrative — Every Explanation, in Order</a><a href="/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-">Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government</a><a href="/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut">Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut</a></div></details><details data-part="the-honest-assessment"><summary>The Honest Assessment</summary><div><a href="/#the-honest-assessment">Read this section</a><a href="/#chapter-22-where-the-parallels-are-strongest">Chapter 22: Where the Parallels Are Strongest</a><a href="/#chapter-23-where-the-parallels-break-down-the-genuine-differ">Chapter 23: Where the Parallels Break Down — The Genuine Differences</a><a href="/#chapter-24-what-pattern-recognition-tells-us-and-what-it-doe">Chapter 24: What Pattern Recognition Tells Us — And What It Doesn&#x27;t</a><a href="/#chapter-24-b-what-would-change-this-report-s-mind-the-falsif">Chapter 24-B: What Would Change This Report&#x27;s Mind — The Falsifiability Statement (added in the Fifth Edition)</a><a href="/#chapter-25-weighing-the-frames-monarchy-kleptocracy-patrimon">Chapter 25: Weighing the Frames — Monarchy, Kleptocracy, Patrimonialism, Fascism (added in the Third Edition)</a><a href="/#chapter-26-the-forecast-base-rates-scenarios-and-dated-tests">Chapter 26: The Forecast — Base Rates, Scenarios, and Dated Tests (How This Could End)</a></div></details><details data-part="pattern-recognition-is-not-prophecy-it-is-responsibility"><summary>Pattern Recognition Is Not Prophecy — It Is Responsibility</summary><div><a href="/#pattern-recognition-is-not-prophecy-it-is-responsibility">Read this section</a><a href="/#key-sources-and-further-reading">Key Sources and Further Reading</a></div></details><details data-part="appendix-a-editorial-method-and-verification-history"><summary>Appendix A — Editorial Method and Verification History</summary><div><a href="/#appendix-a-editorial-method-and-verification-history">Read this section</a><a href="/#a-1-the-standing-method">A.1 — The standing method</a><a href="/#a-2-edition-history">A.2 — Edition history</a><a href="/#a-3-corrections-carried-forward-from-the-review">A.3 — Corrections carried forward from the review</a><a href="/#a-4-what-could-not-be-independently-re-verified">A.4 — What could not be independently re-verified</a><a href="/#a-5-the-reviewer-s-standing-cautions">A.5 — The reviewer&#x27;s standing cautions</a></div></details><details data-part="appendix-b-provenance-what-this-edition-consolidated"><summary>Appendix B — Provenance: What This Edition Consolidated</summary><div><a href="/#appendix-b-provenance-what-this-edition-consolidated">Read this section</a><a href="/#b-1-why-this-edition-exists">B.1 — Why this edition exists</a><a href="/#b-2-sources-merged">B.2 — Sources merged</a><a href="/#b-3-what-could-not-be-reached-and-how-it-was-handled">B.3 — What could not be reached, and how it was handled</a><a href="/#b-4-new-this-edition">B.4 — New this edition</a></div></details>
+<div class="sb-label">Reference</div>
+<a href="/topics.html">Topics</a><a href="/synthesis.html">Synthesis</a>
+<a href="/neural.html">Neural map</a><a href="/sources.html">Sources</a></nav></dialog>
+<div class="reader-bar" role="region" aria-label="Reading controls">
+<button type="button" data-ui-contents aria-controls="contents-dialog" aria-haspopup="dialog"><span aria-hidden="true">☰</span> Contents</button>
+<span class="reader-current">Current section: <span id="whereami">Introduction</span></span>
+<a class="reader-topics" href="/topics.html">Topics</a>
+<button type="button" data-ui-save><svg viewBox="0 0 16 20" width="13" height="17" aria-hidden="true"><path d="M2 1h12v17l-6-4-6 4Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg> Save place</button>
+<button type="button" data-ui-resume hidden>Resume reading</button>
+<a class="reader-top" href="#top"><span aria-hidden="true">↑</span> Top</a>
+<progress id="reading-progress" max="100" value="0" aria-label="Page reading progress"></progress>
+</div><p class="reader-status" data-ui-status role="status" aria-live="polite"></p><script src="/site-ui.js" defer></script></body></html>

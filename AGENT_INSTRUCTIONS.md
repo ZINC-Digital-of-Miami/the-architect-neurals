@@ -1,235 +1,106 @@
-# THE ARCHITECTURE — Agent Instructions + Scheduled-Update Spec
+# THE ARCHITECTURE — Preservation and Codex operating instructions
 
-Handoff document. Follow it exactly. Everything referenced ships in this package.
+These instructions govern research and publication. The owner's current directions take
+precedence. The approved responsive site, Topics navigation and evidence map are a new
+presentation of a protected accumulated report, not permission to rewrite that report.
 
----
+## 1. Authority and identity
 
-## 1. What this is
+- Canonical repository: `https://github.com/ZINC-Digital-of-Miami/the-architect-neurals.git`,
+  **live remote main**, queried with `git ls-remote origin refs/heads/main` before decisions.
+- Live delivery: `https://the-architecture-neurals.vercel.app/`.
+- Vercel project: `the-architecture`; scope: `zincdigitalofmiamis-projects`.
+- Saved project: `/Users/zincdigital/Documents/the architect neural`.
+- The report is Kirk Musick's accumulated work. Read its original source before making a
+  claim about it; distinguish its historical assertions from newly verified findings.
 
-A single-page investigative report site — *The Architecture* by Kirk Musick — plus a weekly
-evidence process that folds new material into it. The site is static: no framework, no build
-step at deploy time, no server. The published page is one self-contained HTML file (~414 KB)
-with the CSS inlined; Google Fonts is the only external dependency.
+Local refs, plans, agent summaries, preview deployments and published source copies are
+leads and delivery evidence. They never replace live main as repository authority. Do not
+copy older deployed instructions over current repository instructions. Only release an
+artifact whose source change has already landed on main through the repository release path.
 
-Live: <https://the-architecture-neurals.vercel.app/>
-(`the-architecture-liard.vercel.app` is the project's former address and redirects here.)
-Vercel project: `the-architecture` · Team: `zincdigitalofmiamis-projects` · no Git repository —
-every deployment is a direct file upload from the Vercel CLI (see §3).
-Dashboard: <https://vercel.com/zincdigitalofmiamis-projects/the-architecture>
+## 2. Preservation contract
 
-The report is the product. **Nothing in the weekly process may soften, restructure, or
-re-voice the existing text.** New material is appended in its own sections; corrections are
-logged, never silently applied.
+`preservation/baseline.json` freezes the original commit and content hashes of the master,
+source index and existing briefs, plus exact correction blocks and historical map records.
+`python3 scripts/preservation.py check` is mandatory. Never recreate or weaken the baseline
+to make a change pass. The original commit is the recovery source; the baseline is the
+integrity inventory. A future numbered master edition requires a separate, explicit owner
+decision and preservation of the preceding edition.
 
----
+Every run also captures `.architecture/base-preservation.json` in its isolated candidate,
+so all briefs and corrections present on that run's base main remain protected, including
+those created after the initial migration. Existing correction HTML stays verbatim and in
+order. Context is a new dated sibling block, never an inline rewrite. New sources go into
+`src/research_registry.json`; do not rewrite the historical source checklist. Existing map
+nodes, edges, labels and grades remain as historical records; use reviewed registry versions
+for later evidence or a changed interpretation.
 
-## 2. File map
+## 3. Files and responsibilities
 
-```
-site/                       ← THIS FOLDER IS THE DEPLOY. Nothing here needs building.
-  index.html                  the whole report, CSS inlined, ~414 KB
-  styles.css                  same CSS as a file, for the sub-pages
-  neural.html                 the neural map page (generated from src/neural_map.html)
-  map/svg.frag  map/data.json the map drawing + dossier data the page fetches at runtime
-  sources.html                200-entry source archive, standalone
-  briefs/2026-08-16.html      weekly brief 001, standalone
-  robots.txt  sitemap.xml     public + indexed; /src/ is disallowed
-  vercel.json                 static config, X-Robots-Tag: index, follow
-  src/                        self-hosted copy of the working sources (below) plus this file
-                              and MANIFEST.json — the weekly run pulls its working copy from
-                              here: fetch /src/MANIFEST.json, then every listed path, and
-                              check each SHA-256. Written by the build; never hand-edit.
+- `src/master_report.md`, `src/sources_manifest.md`, dated `src/briefs/`: preserved sources.
+- `src/update_part2.html`: current summary, permanent correction ledger, clocks, open checks.
+- `src/map_source.json`: preserved legacy node and edge records.
+- `src/research_registry.json` and `src/research_registry.py`: versioned topics, sources,
+  entities, claims, relationships, watchpoints and reviewable retrieval feedback.
+- `src/build_site3.py`, `src/build_neural_map.js`, `src/build_research.py`: generators.
+- `src/final.css`, `src/neural_map.html`, `src/research_ui.js`: presentation and interactions.
+- `site/`: generated, reviewed static artifact committed before deployment. Never hand-edit.
+- `scripts/preservation.py`, `scripts/weekly_run.py`, `scripts/release.py`: integrity, durable
+  run ownership/coverage, exact-main publication and live-byte verification.
+- `.architecture/`: private candidates, run state, locks and release receipts; git-ignored
+  and excluded from public export. No credentials belong in its logs or anywhere in source.
 
-src/                        ← SOURCES + GENERATOR. Regenerate only from here.
-  master_report.md            221 KB — the master report, third edition (2026-07-19)
-  update_part2.html           the appended weekly record: gap, week, node, corrections,
-                              silence ledger, open threads
-  sources_manifest.md         the 200-entry source index
-  final.css                   the single stylesheet — the only place the look is defined
-  briefs/2026-08-16.html      brief 001 source (reconstructed from the built sub-page; the
-                              builder normalizes either form to the same bare body)
-  briefs/_TEMPLATE.html       the shape every new brief must take
-  neural_map.html             the neural map section (own <style>/<script>)
-  neural_svg.frag             the map drawing  ┐ regenerated together by
-  neural_data.json            the map dossiers ┘ `node src/build_neural_map.js`
-  build_neural_map.js         THE map build step — reads map_source.json, runs mapgen.js,
-                              writes the two files above. Node 18+, no dependencies.
-  map_source.json             the canonical node/edge tables — the file you edit
-  mapgen.js                   the layout + edge-grading engine build_neural_map.js calls
-  build_neural_map.py         LEGACY, do not run — hardcoded 21-node tables, ignores
-                              map_source.json, writes nothing the site uses (see its header)
-  build_site3.py              the generator (v3.2)
-  WEEKLY_RUN.md               the run book (v3): §0 gates and stop conditions, §A the eight
-                              research agents (leaf agents — no nesting), §B the writing standard,
-                              §C the exact in-run actions, §D the turnover written after the work
-  brief_lint.py               enforces the canonical brief shape (= Brief 001) and the voice floor;
-                              check.sh runs it on every brief, every build
-  agents/1-elections.md …     the eight standing research specialists — job, standing instruction,
-  agents/8-dockets.md         owned anchors, working routes, known traps, sweep areas, and the handoff
-                              written to each by the agent that closed the previous run
+Use existing installed Python/Node/CLI capabilities. Scripts do not install dependencies,
+create alternative remotes, overwrite drafts or synchronize with deletion.
 
-check.sh                    the pre-deploy guards (no network) — the automated run calls this
-deploy.sh                   build + check.sh + link + deploy: --prod (the weekly run), or no
-                            flag = preview then --promote <url> (manual review)
-pull_src.sh                 pulls the working copy from the newest READY deployment (preview
-                            or production) and verifies every hash — the run starts here
-AGENT_INSTRUCTIONS.md       this file
-AUTOMATED_RUN_TASK.md       the Sunday scheduled-task text (v8, local Claude Code Desktop) that executes §5
-```
+## 4. Scheduling and release
 
-### Deploy verbatim or regenerate — both are valid
+The authoritative Codex task prompt is `AUTOMATED_RUN_TASK.md`; the in-run procedure is
+`src/WEEKLY_RUN.md`. The actual scheduler record is separate and must be freshly inspected.
+Sunday 07:00 **America/Chicago** is the due boundary, including DST. A daily status check
+permits catch-up without daily research. The oldest uncovered Sunday is processed first.
+A dispatch timestamp, a written draft, a preview, or a successful push does not advance
+successful-publication coverage.
 
-- **Verbatim.** `site/` is already correct. From inside `site/`:
-  `vercel link --team zincdigitalofmiamis-projects --project the-architecture --yes` once,
-  then `vercel deploy --prod --yes`. The folder is named `site` and the project is named
-  `the-architecture`; an unlinked folder plus `--yes` auto-links by folder name, which would
-  create a stray project called `site` instead of updating the live one. `deploy.sh` does the
-  link check for you.
-- **Regenerate.** Only when `src/` changed. `python3 src/build_site3.py` rewrites `site/`
-  in place. Requires Python 3 and `markdown` (`pip install markdown`). The script reads from
-  its own directory and writes to `../site` — no absolute paths, no working-directory
-  assumptions. `ARCH_ROOT`, `ARCH_DIST`, `ARCH_SITE_URL` override if the layout moves; the
-  built-in `ARCH_SITE_URL` default is the live address above, so robots.txt and sitemap.xml
-  come out right without setting anything.
+Start through `scripts/weekly_run.py start`; its persistent token lock protects a single
+writer across tool calls. Never steal another run's token or automatically discard a stale
+attempt. Resume that run, or explicitly record its failure and reason before retrying.
 
-Never hand-edit `site/index.html`. It is generated. Edit `src/` and rebuild.
+`pull_src.sh NEW_DIRECTORY` acquires exact live main into a new candidate without overwriting
+anything. Build, check, inspect the full diff and original evidence, and stage its hashes.
+Integrate only reviewed changes; account for every intervening main change. Land on main,
+then `./deploy.sh --prod --run-token TOKEN` uploads its committed artifact from an isolated
+copy. Main is checked before upload and promotion and after live verification. Public
+`release.json` is generated only in the isolated artifact to identify the already-existing
+main commit; no circular commit hash is written into tracked files.
 
----
+`weekly_run.py complete` independently verifies the receipt against current main, all public
+bytes and the exact staged candidate before advancing coverage. Failures retain evidence.
+The script never treats deployment success as permission to overwrite the repository.
 
-## 3. Deploy configuration
+## 5. Research, learning and presentation
 
-| Setting | Value |
-| --- | --- |
-| Project | `the-architecture` (team `zincdigitalofmiamis-projects`, no Git repository) |
-| Type | static output directory, **no build step**, no framework preset |
-| What gets uploaded | the contents of `site/` only — `src/`, `deploy.sh` and this file stay out of the upload (the self-hosted copies under `site/src/` go up with it) |
-| Automated deploy | **Straight to production, then verified.** The weekly run (a local Claude Code Desktop task on Kirk's Mac, v8) runs `./deploy.sh --no-build --prod` (link + `vercel deploy --prod --yes`) on the Mac's persisted `vercel login` session, then verifies the live address, then syncs the working copy back into the project folder and pushes it to GitHub (`ZINC-Digital-of-Miami/the-architect-neurals`, `main`) as the off-machine backup. No token file exists anywhere; `VERCEL_TOKEN` is honoured by `deploy.sh` only for non-interactive use elsewhere. The Vercel **connector** is not the transport for this site: its `deploy_to_vercel` call carries every file through the model's context, and `site/` is ~1.7 MB — far beyond what a single tool call can carry. |
-| Reviewed deploy (manual) | `./deploy.sh` with no flags creates a *preview* and prints its URL; after review, `./deploy.sh --promote <url>` launches exactly that preview. Used for the initial go-live of a new package and for any change you want to see first; not part of the weekly run. |
-| Working copy of record | the newest READY deployment of the project, preview or production (`pull_src.sh`), so a previewed-but-unpromoted week is never lost; the live alias is the fallback |
-| Manual deploy | `./deploy.sh` (preview) then `./deploy.sh --promote <url>`, or `./deploy.sh --prod` to go straight to production; equivalently from inside `site/`: `vercel link --team zincdigitalofmiamis-projects --project the-architecture --yes` then `vercel deploy --yes` / `vercel deploy --prod --yes` |
-| Root directory (dashboard) | empty — the upload *is* the site root |
-| Install / build command | none — leave empty |
-| Visibility | production **public**. Manual previews may stay behind Vercel Authentication (the project default). No password protection, no Trusted IPs. |
-| Indexing | **allowed** — `robots.txt` allows all except `/src/`, `vercel.json` sets `X-Robots-Tag: index, follow`, every page carries `<meta name="robots" content="index,follow">` |
+Topics/categories, not hardcoded menu lists, drive discovery and the map. Registry helpers
+may suggest topic membership from explicit retrieval feedback and propose new questions.
+They never autonomously change historical prose, erase evidence, promote grades, or turn
+co-occurrence into a causal link. Validate transitions against the original registry and
+require an evidence review before accepting claims or publishing new relationships.
 
-Do not add a `package.json`, a framework preset, or password protection. Any of the three
-will change how Vercel treats the directory.
+Political research must be neutral, factual and attributed. Distinguish official actions,
+stated reasons, and hypotheses. Do not invent private motives, collective control, political
+probabilities, recommendations, or quantitative scores for officials, parties or candidates.
+Respect legal-entity identities and dates; former employment alone proves no current mandate.
 
-A deployment is not done until it is verified live: `GET /` on the live address returns 200
-with the new masthead date, `GET /briefs/YYYY-MM-DD.html` returns 200, and
-`GET /src/MANIFEST.json` carries the new date. (Manual previews sit behind Vercel sign-in
-under the project's default protection; `vercel curl` reads through it for checks.)
+The approved redesign may change layout, responsive navigation, Topics, search, accessible
+controls and map exploration. Preserve existing anchor URLs and archived reading routes.
+Keep all old content recoverable, keyboard operation, reduced motion and mobile readability.
+No source credential, private retrieval log or runtime lock may enter the public source export.
 
----
-
-## 4. Design tokens — do not re-invent the look
-
-**THE LINEAGE IS SETTLED.** The research began **December 2025**; the synthesis was first compiled
-2026-07-19. The masthead reads "RESEARCH BEGUN 2025-12" and that is correct. Earlier corpus documents
-saying "research series since spring 2026" are superseded. Do not raise this as a conflict.
-
-**THE LIVE SITE IS THE DESIGN.** <https://the-architecture-neurals.vercel.app/> is canonical and current
-until Kirk says otherwise. It is not up for discussion, review, comparison, or improvement. Do not raise it,
-do not propose alternatives, do not flag it as an open question, do not ask whether it should change. The
-pins in check.sh exist to keep it exactly as it is. If Kirk changes it, he will say so and the pins get
-updated then — by him, not by an agent noticing something.
-
-
-The look is defined once, in `src/final.css` (mirrored to `site/styles.css` by the build).
-A deliberate single theme: white ground, large serif type, full-width shell with a left
-sidebar and a dark top menu. Take every value from these variables.
-
-```css
---paper:#ffffff  --ink:#17150f  --ink-2:#4c4a42  --ink-3:#8a877c
---rule:#e2dfd6   --rule-soft:#f4f2ec  --card:#fbfaf7
---tier-a-bg:#e9f1e5  --tier-a-fg:#2c5030  --tier-a-rule:#b9cdb2   /* A — primary record */
---tier-b-bg:#f6eed9  --tier-b-fg:#6f5716  --tier-b-rule:#dcc98f   /* B — two+ outlets  */
---tier-c-bg:#f1eae7  --tier-c-fg:#83655a  --tier-c-rule:#d6c4bc   /* C — rejected      */
---absent-bg:#eceef4  --absent-fg:#3f4c69  --absent-rule:#bcc6d9   /* verified absence  */
---dotted:#a34a2b  --accent:#8c2f1b  --link:#274d8f  --mark:#fff3c4
---nav-h:58px
-```
-
-- Body: `"Source Serif 4", Georgia, serif` · 19px · line-height 1.68 · `tabular-nums`.
-- Headings (h1–h3): `--font-display: "DM Serif Display", Georgia, serif` at weight 400 — the
-  display face from the report design system. DM Serif Display ships one weight; never set
-  `font-weight: 600/700` on a heading (the browser fakes it and it shows).
-- Mono (nav, kickers, meta, dates, h4 labels): `"IBM Plex Mono", ui-monospace, monospace`.
-- Fonts load from Google Fonts — DM Serif Display (roman + italic), Source Serif 4 (400/600/700
-  + italics) and IBM Plex Mono (400/500/600). Keep the `preconnect` pair.
-- Existing classes to reuse rather than replace: `.tier a|b|c|abs`, `.correction` with
-  `.was`/`.now`, `.clocks`, `.ledger`, `.rail`/`.stop`, `.card`, `.arch3`, `.part-open`,
-  `.dek`, `.front-matter`, `.ed-note`, `.manifest`, `.lede-line`, `.mast`, `.mast-kicker`.
-- No new colors, no second typeface, no dark mode, no framework. If a new element is
-  genuinely needed, add one rule to `src/final.css` using the variables above.
-
----
-
-## 5. The weekly scheduled update
-
-Runs weekly, week ending Sunday. Output of the run is edits to `src/` plus one deploy.
-
-0. **The neural map** (`/neural.html`) is part of the weekly surface. Its drawing and dossier
-   data live in two generated assets — `src/neural_svg.frag` and `src/neural_data.json`,
-   copied by the build to `site/map/svg.frag` and `site/map/data.json`. Node/edge changes are
-   made by regenerating those two files from the map's node and edge tables (grades [A]/[B]/
-   [C]/[O]; dotted stays dotted until a document closes it): edit `src/map_source.json`,
-   then run `node src/build_neural_map.js` — which prints the new counts and the flags it
-   set. (`src/build_neural_map.py` is legacy and regenerates nothing; do not run it.)
-   Then update the "data state" date in `src/neural_map.html` (kicker,
-   stamp), the node/edge counts, the "This window" chip strip, and the week ledger at the
-   foot of the section.
-
-1. **Gather** the week's material to the evidence rules in §6. The literal research-agent
-   spawn prompts and the command-level procedure live in `src/WEEKLY_RUN.md` — §A is the eight
-   prompts (spawned in ONE message; each agent is a leaf), §C the exact actions, §D the turnover
-   written after the work. Follow it rather than improvising. Primary records first:
-   dockets, filings (with accession numbers), roll calls, agency decision documents,
-   contract solicitations, FOIA responses.
-2. **Write the brief.** Copy `src/briefs/_TEMPLATE.html` to
-   `src/briefs/YYYY-MM-DD.html` (the week-ending Sunday). Keep the `<body>` wrapper —
-   the build strips everything outside it. The shape is Brief 001's and is enforced by
-   `src/brief_lint.py`: eight `<section>`/`<h2>` blocks — The lede · Architecture I — The family
-   money · II — Executive power · III — The wars and the count · The node where the architectures
-   touch · What would change the tier · Rejected below [B], with reasons · Next week's priorities.
-   Voice per `WEEKLY_RUN.md` §B: declarative, dated, sourced; bolded topic leads; no lists.
-3. **Update `src/update_part2.html`** — this is the page's live record:
-   - `#u-week` — replace with the new week; move the outgoing week's substance into the
-     brief archive (it is already there via step 2) and keep only what still carries.
-   - `#u-node` — the node diagram, if the week changed it.
-   - `#u-corrections` — **append only.** Never delete or reword an existing entry
-     (see §7). Number sequentially: C-005, C-006, …
-   - `#u-silence` — advance every clock's day count and the `clocks-asof` date. A week
-     with no answer is a finding: the count goes up, the entry stays.
-   - `#u-threads` — retire threads that resolved (state how), add the new next checks.
-4. **Update the nearest-dates rail** in `src/build_site3.py` (`rail_stops`): drop dates
-   that have passed, add newly docketed ones, keep `NOV 3` flagged `big` until it passes.
-5. **Rebuild:** `python3 src/build_site3.py`. Brief numbering, the edition number, the
-   masthead date, the archive list, the per-brief pages, and `sitemap.xml` all derive from
-   the contents of `src/briefs/` — nothing to bump by hand.
-6. **Check** before deploying: `site/index.html` exists and is > 350 KB; it contains
-   `id="u-corrections"`, `id="u-silence"`, `id="u-threads"`, `id="brief-001"`, `id="sources"`;
-   the new brief resolves at `/briefs/YYYY-MM-DD.html`; the four permanent corrections in §7
-   are still present in substance (the C-002 ExodusPoint figure `$1,269,843` must appear);
-   `site/src/MANIFEST.json` exists; `robots.txt` disallows `/src/`; `sitemap.xml` carries the
-   live address; and no `class="content"` appears more than once (a nested wrapper means a
-   brief was ingested without unwrapping). `deploy.sh` asserts all of this.
-7. **Deploy to production, then verify.** Automated runs (v8, local) run
-   `./deploy.sh --no-build --prod` on the persisted CLI login, then fetch `/`, the new brief page
-   and `/src/MANIFEST.json` from the live address and confirm the new date is what is serving;
-   on success they commit and push the synced tree to GitHub. If the CLI is not logged in or
-   errors, or verification never passes, the run does **not**
-   stop: it packages the rebuilt tree as `THE_ARCHITECTURE_deploy_YYYY-MM-DD.zip`, presents
-   it as the run's output file, and says plainly in its notification that the site is
-   **not live** and why. Never report a launch that was not verified.
-
-The automated weekly task that executes this section is kept beside this file as
-`AUTOMATED_RUN_TASK.md`; the task text and this spec must agree, and this spec governs.
-
-The master report itself (`src/master_report.md`, third edition, 2026-07-19) is **frozen**.
-It changes only in a numbered new edition. Weekly material never edits it; where the weekly
-record supersedes a line in it, that is handled by the inline edition-note mechanism at the
-top of `build_site3.py` (`notes`), which annotates without rewriting.
+The following historical evidence rules and correction descriptions are retained for
+continuity. They describe the existing corpus; they do not establish that an assertion was
+freshly reverified in this run. Prospective structured records must satisfy registry validation
+and actual original-source inspection as well.
 
 ---
 
@@ -286,16 +157,16 @@ Context lines are appended under an entry (dated), never folded into its origina
 
 Also keep distinct, permanently: ALT5 Sigma **is** AI Financial Corp (one SEC registrant,
 CIK 862861, renamed April 2026); Zach Witkoff (WLF CEO, trust-bank president, ALT5 chairman)
-is not Steve Witkoff (special envoy, OGE disclosure uncertified); DT Marks DEFI LLC is not
+is not Steve Witkoff (special envoy; preserve the dated agency/OGE certification distinction in C-010); DT Marks DEFI LLC is not
 DT Marks SC LLC.
 
 ---
 
-## 8. Failure modes to avoid
+## 8. Failure boundaries
 
-- Rebuilding the site from scratch, or "improving" the layout. The design is settled.
-- Hand-editing `site/index.html`, then rebuilding — the edit is lost.
-- Rewording or dropping a corrections entry, or resetting a silence clock.
-- Letting a [C] item into the record without its rejection reason.
-- Adding a framework, a `package.json`, password protection or Trusted IPs to the Vercel project.
-- Changing the URL shape. `/`, `/sources.html`, `/briefs/YYYY-MM-DD.html` are indexed.
+Stop publication on preservation failure, a missing original source needed for a claim,
+identity ambiguity, changed main, mismatched candidate, failed live-byte verification, or
+another writer's active lock. A limited research return must state the unmeasured scope;
+it must not declare a comprehensive audit or a verified absence from a blocked fetch.
+Never weaken a check to admit a desired conclusion. Keep failed candidates and receipts,
+report the exact stage, and preserve the last verified publication watermark.

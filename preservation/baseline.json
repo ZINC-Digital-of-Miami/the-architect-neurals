@@ -1,0 +1,674 @@
+{
+  "version": 1,
+  "source_commit": "6521a38f30be473e77aded87e318e24a6f7b6568",
+  "frozen_at": "2026-09-08T12:13:00.552800+00:00",
+  "immutable_files": {
+    "src/master_report.md": {
+      "sha256": "1197bc1f67bf57b957bdd3f8807f135cf64f20113263f1ab1510fbfbea04d310",
+      "bytes": 339941
+    },
+    "src/sources_manifest.md": {
+      "sha256": "dc832086d4f15d1bacca36cc0bb9e24e2a75707c0835a97dda82a41211e2695a",
+      "bytes": 66873
+    },
+    "src/briefs/2026-08-16.html": {
+      "sha256": "ba710b19fe0bae3a741f4194c2c5035da11ef68e0a7bf6a06a5526c7e08a5676",
+      "bytes": 28380
+    },
+    "src/briefs/2026-08-23.html": {
+      "sha256": "7b40ac3b2fbb9417df33b144c27437fe756841039c77047bbfb535f1c3d85e91",
+      "bytes": 37631
+    },
+    "src/briefs/2026-08-30.html": {
+      "sha256": "66ca4096e3121c7dc18f5eb70cf695b46f0248eba63c87b8f00f0dadcb41874f",
+      "bytes": 37534
+    }
+  },
+  "corrections": [
+    "<div class=\"correction\"><div class=\"mono\">2026-08-16 &middot; C-001</div>\n    <p><span class=\"was\">Eric Trump joined the ALT5 Sigma board per the company's 8/13/25 release.</span><br>\n    <span class=\"now\">Never seated. Aug 29, 2025 8-K (acc. 0001641172-25-026082): designated observer &ldquo;after discussion with The Nasdaq Stock Market LLC.&rdquo; Zero proxy occurrences; no Form 3.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-16 &middot; C-002</div>\n    <p><span class=\"was\">ALT5 raised $1.5B including $750M from Point72 and ExodusPoint.</span><br>\n    <span class=\"now\">$750M cash + $750M in WLFI tokens from World Liberty itself as &ldquo;Lead Investor.&rdquo; Point72 Q2-26 13F: no position (only-ever exposure $1.08M of Q3-25 calls). ExodusPoint: $1.27M. ALT5 and AIFC are one registrant, CIK 862861.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-16 &middot; C-003</div>\n    <p><span class=\"was\">An AG swearing-in was postponed over Republican dissent.</span><br>\n    <span class=\"now\">No record supports postponement. Confirmed Sat Aug 8, 4:17 a.m.; sworn in Mon Aug 10. The only anomaly in evidence is press exclusion from the ceremony.</span> <span class=\"tier b\">B</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-22 &middot; C-003 &middot; context added</div>\n    <p><span class=\"now\">What the record shows instead of a postponement is a confirmation held to the narrowest possible margin. Senate roll call #230 (Aug 8, 2026, 4:17 a.m., PN1078): 50&ndash;49, Collins (R-ME) and Murkowski (R-AK) voting no, McConnell (R-KY) not voting <span class=\"tier a\">A</span>. Why the margin was that thin, per independent named outlets: with a 53&ndash;47 majority, McConnell absent since a June fall, and every Democrat opposed, Republicans could lose no more than two votes (Roll Call, CBS News, NPR, Aug 8). Collins announced her no on Aug 4 and Murkowski on Aug 7, both citing the department&rsquo;s independence &mdash; the $1.8B &ldquo;anti-weaponization&rdquo; fund, the IRS-settlement audit immunity for the president and his family, the handling of the Epstein-files release, and the targeting of former staff and sitting senators (ABC News, CBS News, Roll Call, The Hill, Aug 8). Cornyn and Tillis had conditioned their votes on a written rescission of the fund and a rewrite of the settlement&rsquo;s immunity language; Tillis also required Blanche to meet Epstein survivors, which he did in July (NPR, PBS, Daily Caller). Cassidy, the last undecided Republican, announced his yes from the floor on Aug 7 and was the deciding vote (CNBC/Reuters, CBS News, NPR). The vote was taken in an overnight session hours before the August recess (PBS, ABC News). Context, not a claim: the premise of a &ldquo;postponed swearing-in&rdquo; still has no record behind it; what it likely described was this weeks-long hold-up of the confirmation vote itself.</span> <span class=\"tier b\">B</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-16 &middot; C-004 (minor)</div>\n    <p><span class=\"was\">AIFC going-concern filing dated 5/19/26; market cap &lt;$60M.</span><br>\n    <span class=\"now\">10-Q filed 5/18/26. &lt;$60M unanchored — primary-record math gives ~$74M at 6/30/26. &gt;90% decline confirmed (&minus;92.2%).</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-22 &middot; C-005 &middot; consolidated edition</div>\n    <p><span class=\"was\">The DRI target activation date is September 30, 2026.</span><br>\n    <span class=\"now\">The ICE white paper disclosed through Gov. Ayotte's office says <strong>November 30, 2026</strong>. Carried from the earlier first-edition source material; corrected on the primary document.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-22 &middot; C-006 &middot; consolidated edition</div>\n    <p><span class=\"was\">&ldquo;Mass formation psychosis&rdquo; describes the movement's group dynamics.</span><br>\n    <span class=\"now\"><strong>Withdrawn.</strong> Not a recognized clinical or scientific construct; no diagnostic status and no empirical literature. The measurable phenomena &mdash; affective polarization, motivated reasoning, identity-protective cognition &mdash; are cited under their actual names in Chapter 0-B.</span> <span class=\"mono\">&mdash;</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-22 &middot; C-007 &middot; consolidated edition</div>\n    <p><span class=\"was\">Bill Pulte holds the Director of National Intelligence portfolio.</span><br>\n    <span class=\"now\"><strong>Superseded.</strong> Walter (Jay) Clayton confirmed DNI <strong>51&ndash;47 on July 28, 2026</strong> (Senate roll call #211). Pulte's FHFA role and the referrals record stand; the acting-DNI tenure has ended.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-22 &middot; C-008 &middot; consolidated edition</div>\n    <p><span class=\"was\">Majorities of both chambers voted to end the Iran war, and that check holds.</span><br>\n    <span class=\"now\"><strong>Tier change.</strong> The Senate majority is gone: S.J.Res. 180 rejected 47&ndash;49 (Jul 23, roll call #207); S.J.Res. 181 rejected 49&ndash;50 (Jul 30, roll call #216). The House passed H.Con.Res. 89, 214&ndash;208 (Jul 23). The objection survives in one chamber only.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-23 &middot; C-009</div>\n    <p><span class=\"was\">Sen. Rosen's August 14 bill would bar the Secretary of Defense from &ldquo;manipulating casualty records.&rdquo;</span><br>\n    <span class=\"now\">The bill is <strong>S. 5300</strong>, the Honoring the Sacrifice of Troops in War Act of 2026, introduced by Sen. Duckworth on August 6 with seventeen Democratic cosponsors; Rosen is a cosponsor whose August 14 release announced her support. Rosen's quoted words stand. (congress.gov returned 403 this week; the bill number rests on sponsor releases and a congress.gov search record — re-verify on the bill page.)</span> <span class=\"tier b\">B</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-23 &middot; C-010</div>\n    <p><span class=\"was\">Steve Witkoff's OGE public financial disclosure is uncertified, 12+ months on.</span><br>\n    <span class=\"now\">The posted Form 278e (filer signature 08/13/2025) bears the agency certifying official's electronic signature dated <strong>12/12/2025</strong> — 121 days after filing, against a ~60-day norm. The U.S. Office of Government Ethics certification line in that posted version is unsigned. Precise form: agency-certified late; OGE-level certification not shown; 375 days since the filer signed as of 2026-08-23.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-23 &middot; C-011</div>\n    <p><span class=\"was\">Zero of ten Trump-orbit entities replied to the July 6 Warren/Wyden/Schumer immunity-settlement letters by the July 20 deadline.</span><br>\n    <span class=\"now\">Eleven organizations were written to. Per Warren's July 29 release, <strong>six responded</strong> — Trump Media, Polymarket, Kalshi, American Bitcoin, Powerus, Kaz Resources — &ldquo;by suggesting they were not involved with or granted immunity&rdquo;; <strong>five did not</strong>, &ldquo;including the Trump Organization, World Liberty Financial, and 1789 Capital.&rdquo; The settlement document itself remains unobtained.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-23 &middot; C-012</div>\n    <p><span class=\"was\">Detention stands near 68,000 in early August; TRAC's 65,765 is an independent July 11 figure.</span><br>\n    <span class=\"now\">ICE's latest published dataset as of August 22 is <code>FY26_detentionStats07202026.xlsx</code>, a snapshot as of <strong>July 11, 2026: 65,765</strong> detained (58,231 ICE-arrested; 7,534 CBP-arrested). The 65,765 this corpus attributed to TRAC is ICE's own number. No ICE dataset supports &ldquo;~68,000&rdquo;; that figure is retired until a newer file posts.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-30 &middot; C-013</div>\n    <p><span class=\"was\">No appeal was noticed from Judge Chuang's August 17 judgment vacating the FBI headquarters relocation (as of August 19).</span><br>\n    <span class=\"now\">The notice of appeal was filed <strong>August 19, 2026</strong> (D. Md. 8:25-cv-03644, ECF 36, signed Andrew I. Warden), and the Fourth Circuit assigned it <strong>No. 26-2158 on August 24, 2026</strong>. The judgment ran for the plaintiffs on Counts 1, 2 and 6, and directed a joint status report within fourteen days. No stay has been sought in the circuit.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-30 &middot; C-014</div>\n    <p><span class=\"was\">AI Financial Corp discloses no Nasdaq deficiency notice; no 8-K under Item 3.01 exists in 2026.</span><br>\n    <span class=\"now\">Both halves are wrong. The company was notified <strong>July 1, 2026</strong> that it fails the $1.00 minimum closing bid price under Nasdaq Listing Rule 5550(a)(2), June 30 having been the thirtieth consecutive business day of deficiency, and disclosed it the next day in an <strong>8-K under Item 3.01, accession 0001493152-26-031925</strong>. The letter allows 180 days, &ldquo;or until <strong>December 28, 2026</strong>,&rdquo; to regain compliance; the filing names a reverse split among the options. A second Item 3.01 report exists at accession 0001493152-25-026011 (December 3, 2025).</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-30 &middot; C-015</div>\n    <p><span class=\"was\">The ExodusPoint position underlying C-002 could not be re-confirmed and is held unverified.</span><br>\n    <span class=\"now\">Verified at the primary record. Filer CIK <strong>0001736225</strong>; Q2 2026 <strong>13F-HR accession 0001736225-26-000010</strong>, filed August 14 for the period ended June 30: &ldquo;AI FINL CORP,&rdquo; CUSIP 47089W104, <strong>2,170,301 shares</strong>, sole investment discretion, value <strong>$1,269,843</strong>. The figures match Brief 001 exactly. The prior failure was a wrong CIK, not a missing filing.</span> <span class=\"tier a\">A</span></p></div>",
+    "<div class=\"correction\"><div class=\"mono\">2026-08-30 &middot; C-016</div>\n    <p><span class=\"was\">The August 12 Warren/Garcia letter concerns &ldquo;more than 17,000 stock trades since the inauguration.&rdquo;</span><br>\n    <span class=\"now\">That figure appears nowhere in the letter. The seventeen-page letter asks about the <strong>3,555 individual stock trades</strong> in the President's OGE <strong>Form 278-T</strong> for the first quarter of 2026, and separately attributes &ldquo;more than 14,000&rdquo; trades to the website GovGreed and 21,000 trades in 2025 to Bloomberg. Three counts, three periods, three sources; only the 3,555 rests on a government record.</span> <span class=\"tier a\">A</span></p></div>"
+  ],
+  "map": {
+    "current": "2026-08-30",
+    "nodes": {
+      "TRUMP": {
+        "x": 850,
+        "y": 790,
+        "r": 84,
+        "name": "THE PRINCIPAL",
+        "sub": "",
+        "core": true,
+        "flag": ""
+      },
+      "WLF": {
+        "x": 545,
+        "y": 505,
+        "r": 60,
+        "name": "WLF",
+        "sub": "family crypto · USD1 ~$4B · 75% of proceeds to family · UAE members certified",
+        "flag": "updated"
+      },
+      "SONS": {
+        "x": 1170,
+        "y": 505,
+        "r": 60,
+        "name": "SONS",
+        "sub": "1789 · ABTC · 9 new Form D vehicles (Jun)",
+        "flag": ""
+      },
+      "KUSHNER": {
+        "x": 395,
+        "y": 720,
+        "r": 56,
+        "name": "KUSHNER",
+        "sub": "envoy · $4.8B Gulf money",
+        "flag": ""
+      },
+      "WITKOFF": {
+        "x": 505,
+        "y": 985,
+        "r": 56,
+        "name": "WITKOFF",
+        "sub": "278e agency-certified 12/12/25 · OGE line unsigned (C-010) · son runs WLF / bank / ALT5",
+        "flag": "updated"
+      },
+      "UAE": {
+        "x": 255,
+        "y": 360,
+        "r": 48,
+        "name": "UAE",
+        "sub": "UAE citizenship certified in WLF disclosure Aug 26 · no percentage stated",
+        "flag": "updated"
+      },
+      "SAUDI": {
+        "x": 150,
+        "y": 590,
+        "r": 48,
+        "name": "SAUDI",
+        "sub": "Affinity base · 123 nuclear approved",
+        "flag": ""
+      },
+      "QATAR": {
+        "x": 205,
+        "y": 880,
+        "r": 48,
+        "name": "QATAR",
+        "sub": "$400M jet · $5.5B golf",
+        "flag": ""
+      },
+      "PAKISTAN": {
+        "x": 330,
+        "y": 1135,
+        "r": 48,
+        "name": "PAKISTAN",
+        "sub": "WLF deal Jan 2026 · war mediator",
+        "flag": ""
+      },
+      "ZHAO": {
+        "x": 640,
+        "y": 265,
+        "r": 48,
+        "name": "ZHAO",
+        "sub": "$2B in USD1 → pardon",
+        "flag": ""
+      },
+      "POLY": {
+        "x": 1030,
+        "y": 250,
+        "r": 48,
+        "name": "POLYMARKET",
+        "sub": "98% win rate · unidentified",
+        "flag": ""
+      },
+      "VAULT": {
+        "x": 1330,
+        "y": 275,
+        "r": 54,
+        "name": "PROJECT VAULT",
+        "sub": "EXIM $10B · EO 14415 carve-out · Miller sold MP 1 mo. after deal",
+        "flag": ""
+      },
+      "PENTAGON": {
+        "x": 1490,
+        "y": 480,
+        "r": 52,
+        "name": "PENTAGON",
+        "sub": "DCAS 758 wounded · Epic Fury sub-count falling · Stars and Stripes suit Aug 27",
+        "flag": "updated"
+      },
+      "DOJ": {
+        "x": 1435,
+        "y": 700,
+        "r": 54,
+        "name": "DOJ",
+        "sub": "FR notice Aug 27 = Feb 14 letter, scanned images · category defended again",
+        "flag": "updated"
+      },
+      "PULTE": {
+        "x": 1400,
+        "y": 945,
+        "r": 50,
+        "name": "PULTE",
+        "sub": "FHFA · referrals stand · DNI stint ended → Clayton 51–47 (C-007)",
+        "flag": ""
+      },
+      "ICE": {
+        "x": 1185,
+        "y": 1120,
+        "r": 50,
+        "name": "ICE",
+        "sub": "65,765 (Jul 11 file) · no newer dataset · Mega Hub Aug 27 passed unanswered",
+        "flag": "updated"
+      },
+      "SCOTUS": {
+        "x": 925,
+        "y": 1210,
+        "r": 52,
+        "name": "SCOTUS",
+        "sub": "26A124 stay GRANTED Aug 24, day 28 · 26A139 moot · ballroom stay 26A203",
+        "flag": "updated"
+      },
+      "IRAN": {
+        "x": 655,
+        "y": 1205,
+        "r": 52,
+        "name": "IRAN",
+        "sub": "82 vessels redirected Aug 28 · 5 sector determinations · lanes declared mine-free",
+        "flag": "updated"
+      },
+      "VZ": {
+        "x": 860,
+        "y": 300,
+        "r": 48,
+        "name": "VENEZUELA",
+        "sub": "US-controlled revenue",
+        "flag": ""
+      },
+      "RUSSIA": {
+        "x": 355,
+        "y": 245,
+        "r": 48,
+        "name": "RUSSIA",
+        "sub": "plan co-drafted · sanctions passed 86–11",
+        "flag": ""
+      },
+      "P2025": {
+        "x": 1085,
+        "y": 905,
+        "r": 50,
+        "name": "PROJECT 2025",
+        "sub": "53% executed · Vought",
+        "flag": ""
+      },
+      "TRUST": {
+        "x": 610,
+        "y": 680,
+        "r": 56,
+        "name": "TRUST BANK",
+        "sub": "World Liberty Trust Co · OCC CD #1385 · parent WLTC Holdings LLC",
+        "flag": "updated"
+      },
+      "ALT5": {
+        "x": 855,
+        "y": 430,
+        "r": 54,
+        "name": "ALT5 · AIFC",
+        "sub": "Nasdaq bid deficiency Jul 1, cure by Dec 28 (C-014) · WLFI marked −71%",
+        "flag": "updated"
+      },
+      "TMTG": {
+        "x": 1180,
+        "y": 120,
+        "r": 50,
+        "name": "TMTG · DJT",
+        "sub": "API: 10+ HFT customers at $60–100k/mo (Form 425) · prediction-market licensing “evaluating”",
+        "flag": "updated"
+      },
+      "PALANTIR": {
+        "x": 960,
+        "y": 1050,
+        "r": 48,
+        "name": "PALANTIR",
+        "sub": "ImmigrationOS ~$30M (Apr 2025) · the targeting layer",
+        "flag": ""
+      },
+      "GEO": {
+        "x": 1480,
+        "y": 1310,
+        "r": 52,
+        "name": "GEO · CORECIVIC",
+        "sub": "donors · stocks surged on election · “unprecedented opportunity”",
+        "flag": ""
+      },
+      "MEGAHUB": {
+        "x": 1280,
+        "y": 1350,
+        "r": 50,
+        "name": "MEGA HUB",
+        "sub": "deadline Aug 27 (SAM) vs Aug 31 (ICE Q&A) · 7 sites, one contractor · award by Sep 25",
+        "flag": "updated"
+      },
+      "FCC": {
+        "x": 860,
+        "y": 120,
+        "r": 48,
+        "name": "FCC · CARR",
+        "sub": "licenses as leverage · Kimmel · Disney/ABC sued Aug 18",
+        "flag": ""
+      },
+      "STARGATE": {
+        "x": 1450,
+        "y": 110,
+        "r": 50,
+        "name": "STARGATE",
+        "sub": "$500B announced · ~0.3 GW live · MGX anchor · EO 14318",
+        "flag": ""
+      },
+      "TREASURY": {
+        "x": 780,
+        "y": 1390,
+        "r": 52,
+        "name": "TREASURY · BESSENT",
+        "sub": "Operation Economic Outcast Aug 24 · Warren–Reed 272 days · Prince Group 96",
+        "flag": "updated"
+      },
+      "USPS": {
+        "x": 1120,
+        "y": 1290,
+        "r": 50,
+        "name": "USPS",
+        "sub": "rule published Aug 26, 91 FR 54966 · violation found Aug 25 · TRO to Sep 10",
+        "flag": "updated"
+      }
+    },
+    "edges": [
+      [
+        "TRUMP",
+        "WLF",
+        "A",
+        "75% of coin revenue"
+      ],
+      [
+        "UAE",
+        "WLF",
+        "A",
+        "$2B MGX in USD1"
+      ],
+      [
+        "UAE",
+        "WLF",
+        "B",
+        "49%/$500M secret"
+      ],
+      [
+        "SAUDI",
+        "KUSHNER",
+        "A",
+        "fund base + leverage"
+      ],
+      [
+        "SAUDI",
+        "KUSHNER",
+        "O",
+        "123 ↔ Affinity adjacency"
+      ],
+      [
+        "TRUMP",
+        "SAUDI",
+        "A",
+        "123 pact · PD 2026-18"
+      ],
+      [
+        "KUSHNER",
+        "IRAN",
+        "A",
+        "US negotiator"
+      ],
+      [
+        "WITKOFF",
+        "WLF",
+        "A",
+        "co-founders"
+      ],
+      [
+        "WITKOFF",
+        "RUSSIA",
+        "A",
+        "28-pt co-draft"
+      ],
+      [
+        "WITKOFF",
+        "RUSSIA",
+        "C",
+        "coached Ushakov"
+      ],
+      [
+        "PAKISTAN",
+        "WLF",
+        "A",
+        "Jan 2026 deal"
+      ],
+      [
+        "PAKISTAN",
+        "IRAN",
+        "O",
+        "mediator adjacency"
+      ],
+      [
+        "QATAR",
+        "TRUMP",
+        "A",
+        "jet → library 2029"
+      ],
+      [
+        "ZHAO",
+        "WLF",
+        "A",
+        "boosted"
+      ],
+      [
+        "TRUMP",
+        "ZHAO",
+        "A",
+        "pardon Oct 23"
+      ],
+      [
+        "ZHAO",
+        "TRUMP",
+        "C",
+        "quid pro quo (denied)"
+      ],
+      [
+        "POLY",
+        "IRAN",
+        "A",
+        "$1M pre-strike bets"
+      ],
+      [
+        "POLY",
+        "TRUMP",
+        "O",
+        "holders unknown"
+      ],
+      [
+        "SONS",
+        "PENTAGON",
+        "A",
+        "defense portfolio"
+      ],
+      [
+        "TRUMP",
+        "PENTAGON",
+        "A",
+        "$1.5T request"
+      ],
+      [
+        "TRUMP",
+        "VAULT",
+        "A",
+        "EO 14415 + DPA 101"
+      ],
+      [
+        "SONS",
+        "VAULT",
+        "O",
+        "no position located · tickers: EMAT / REEMF"
+      ],
+      [
+        "TRUMP",
+        "DOJ",
+        "A",
+        "directed cases"
+      ],
+      [
+        "DOJ",
+        "SCOTUS",
+        "A",
+        "dismissals upheld*"
+      ],
+      [
+        "TRUMP",
+        "PULTE",
+        "A",
+        "acting-DNI stint → superseded"
+      ],
+      [
+        "PULTE",
+        "DOJ",
+        "A",
+        "referrals: Schiff/James/Cook"
+      ],
+      [
+        "TRUMP",
+        "ICE",
+        "A",
+        "$45B build-out"
+      ],
+      [
+        "ICE",
+        "SONS",
+        "O",
+        "patronage adjacency"
+      ],
+      [
+        "TRUMP",
+        "IRAN",
+        "A",
+        "war past Congress"
+      ],
+      [
+        "TRUMP",
+        "VZ",
+        "A",
+        "Maduro seized · oil"
+      ],
+      [
+        "P2025",
+        "TRUMP",
+        "A",
+        "blueprint 53%"
+      ],
+      [
+        "SCOTUS",
+        "TRUMP",
+        "A",
+        "checked: tariffs/birthright"
+      ],
+      [
+        "TRUMP",
+        "SONS",
+        "A",
+        "family"
+      ],
+      [
+        "TRUMP",
+        "KUSHNER",
+        "A",
+        "family envoy"
+      ],
+      [
+        "TRUMP",
+        "WITKOFF",
+        "A",
+        "friend envoy"
+      ],
+      [
+        "TRUMP",
+        "TRUST",
+        "A",
+        "DT Marks SC LLC — passive stake · OCC #1385"
+      ],
+      [
+        "WITKOFF",
+        "TRUST",
+        "A",
+        "son Zach: president & director"
+      ],
+      [
+        "WLF",
+        "TRUST",
+        "A",
+        "USD1 is the product"
+      ],
+      [
+        "TRUST",
+        "DOJ",
+        "O",
+        "the node: dotted triangle · OLC-hardened"
+      ],
+      [
+        "WLF",
+        "ALT5",
+        "A",
+        "“Lead Investor” — $750M in WLFI (C-002)"
+      ],
+      [
+        "WLF",
+        "ALT5",
+        "A",
+        "$15M loan · 378M tokens pledged"
+      ],
+      [
+        "SONS",
+        "ALT5",
+        "A",
+        "Eric: observer, never seated (C-001)"
+      ],
+      [
+        "WITKOFF",
+        "ALT5",
+        "A",
+        "Zach chairs the board"
+      ],
+      [
+        "TRUMP",
+        "TMTG",
+        "A",
+        "his company sells the posts’ feed"
+      ],
+      [
+        "ICE",
+        "GEO",
+        "A",
+        "~$1.5B CoreCivic purchases · Jul (USAspending)"
+      ],
+      [
+        "ICE",
+        "GEO",
+        "A",
+        "GEO added no-bid to vendor list"
+      ],
+      [
+        "GEO",
+        "TRUMP",
+        "A",
+        "campaign donors · $45B flows back"
+      ],
+      [
+        "ICE",
+        "PALANTIR",
+        "A",
+        "ImmigrationOS — data + targeting layer"
+      ],
+      [
+        "ICE",
+        "MEGAHUB",
+        "O",
+        "awardee unknown · bids due Aug 31"
+      ],
+      [
+        "TRUMP",
+        "FCC",
+        "A",
+        "license threats → Carr acts"
+      ],
+      [
+        "FCC",
+        "TRUMP",
+        "O",
+        "merger approvals ↔ $56.5M settlements → library"
+      ],
+      [
+        "UAE",
+        "STARGATE",
+        "A",
+        "MGX anchors Stargate"
+      ],
+      [
+        "TRUMP",
+        "STARGATE",
+        "A",
+        "EO 14318 permitting · AI task force"
+      ],
+      [
+        "STARGATE",
+        "TRUMP",
+        "O",
+        "no filing links to family revenue"
+      ],
+      [
+        "TRUMP",
+        "TREASURY",
+        "A",
+        "$40B Argentina · “if he wins, we’re staying”"
+      ],
+      [
+        "TREASURY",
+        "WLF",
+        "O",
+        "264 days silent on who bought WLFI"
+      ],
+      [
+        "TREASURY",
+        "TRUST",
+        "A",
+        "supervises the OCC that chartered the bank"
+      ],
+      [
+        "TRUMP",
+        "USPS",
+        "A",
+        "EO 14399 §3 → rule 2026-17238"
+      ],
+      [
+        "USPS",
+        "SCOTUS",
+        "A",
+        "26A124 stay granted Aug 24 · rule published Aug 26"
+      ],
+      [
+        "SCOTUS",
+        "TRUMP",
+        "A",
+        "ballroom injunction stayed · 26A203"
+      ],
+      [
+        "UAE",
+        "WLF",
+        "A",
+        "UAE citizenship certified · 3:26-cv-03360 Dkt. 66"
+      ],
+      [
+        "TREASURY",
+        "IRAN",
+        "A",
+        "Operation Economic Outcast · 5 EO 13902 determinations"
+      ]
+    ]
+  }
+}
