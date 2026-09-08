@@ -11,7 +11,7 @@
   "clocks": 12,
   "map_nodes": 59,
   "map_edges": 93,
-  "index_bytes": 639430
+  "index_bytes": 640247
  },
  "files": [
   {
@@ -111,8 +111,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 39614,
-   "sha256": "b5dc3309da209d0f2acff3d5d22779378e6cfadee5894491a0d731dab25c7fca"
+   "bytes": 40431,
+   "sha256": "9fe58d6760c800df74c2bf055de7755481b95ab740f4245775c694837c52df18"
   },
   {
    "path": "check.sh",
@@ -126,8 +126,8 @@
   },
   {
    "path": "final.css",
-   "bytes": 37040,
-   "sha256": "5f1d0cc6dcc3b78c786b5804f8445f5e7ddb72b50910529f065e52e3665f9afa"
+   "bytes": 40839,
+   "sha256": "12cd49a0f248d2e8962637eaebc840b00188c763146888f7e8df0c5bf350472c"
   },
   {
    "path": "map_source.json",
@@ -151,8 +151,8 @@
   },
   {
    "path": "neural_map.html",
-   "bytes": 50792,
-   "sha256": "f6c7f9af9637dbc74277f1afb35ed16a85bfb6d7b51795188acdbf3fca1de51a"
+   "bytes": 51294,
+   "sha256": "b9cf39d11bfb79f40873a4ce9002eda44eb60026fd110dc171acdb641cea23f6"
   },
   {
    "path": "neural_svg.frag",
@@ -181,8 +181,8 @@
   },
   {
    "path": "site_ui.js",
-   "bytes": 9624,
-   "sha256": "90544cf851a7738f2ed542687b26745b3565de4e13dd9af5255526d541cf8efa"
+   "bytes": 12808,
+   "sha256": "d1d77d41f0e615149f12d111c5f397d52c3a91f6a88d996336485ba2f5c46d9a"
   },
   {
    "path": "sources_manifest.md",

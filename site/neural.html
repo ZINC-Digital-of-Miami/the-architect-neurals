@@ -662,7 +662,7 @@
       <div class="nm-legend" aria-label="Relationship evidence legend"><span><b class="nm-grade">A</b> Documented</span><span><b class="nm-grade nm-grade-B">B</b> Reported</span><span><b class="nm-grade nm-grade-C">C</b> Alleged / denied</span><span><b class="nm-grade nm-grade-O">O</b> Adjacency</span></div><p class="nm-meta" id="nm-registry-status">Grades describe relationship claims in the existing report, not ratings of people.</p>
     </div>
     <div class="nm-sheet-shade" id="nm-sheet-shade" hidden></div>
-    <aside class="nm-dossier" id="nm-dossier" aria-label="Entity dossier"><div id="nm-idle"><h3>Inspect the record</h3><p>Select an entity in the network or the entity list. Its relationships retain the report’s existing labels and evidence grades.</p><p>Topic membership helps navigation. It does not establish a factual or causal connection.</p></div><div id="nm-card" hidden><div class="nm-dossier-top"><div><p class="nm-meta" id="nm-flag"></p><h3 id="nm-name" tabindex="-1"></h3></div><button type="button" id="nm-close" class="nm-close" aria-label="Close entity dossier">×</button></div><p id="nm-subtitle"></p><div class="nm-tabs" role="tablist" aria-label="Entity details"><button id="nm-tab-overview" role="tab" aria-selected="true" aria-controls="nm-panel-overview" tabindex="0" type="button">Overview</button><button id="nm-tab-connections" role="tab" aria-selected="false" aria-controls="nm-panel-connections" tabindex="-1" type="button">Connections</button><button id="nm-tab-evidence" role="tab" aria-selected="false" aria-controls="nm-panel-evidence" tabindex="-1" type="button">Evidence</button></div><div class="nm-panel" id="nm-panel-overview" role="tabpanel" aria-labelledby="nm-tab-overview"></div><div class="nm-panel" id="nm-panel-connections" role="tabpanel" aria-labelledby="nm-tab-connections" hidden></div><div class="nm-panel" id="nm-panel-evidence" role="tabpanel" aria-labelledby="nm-tab-evidence" hidden></div><button type="button" class="nm-action" id="nm-copy">Copy entity link</button><p class="nm-copy-status" id="nm-copy-status" role="status"></p><p class="nm-meta">Historical grades are preserved. New relationships link to reviewed records; missing source links remain explicit.</p></div></aside>
+    <aside class="nm-dossier" id="nm-dossier" aria-label="Entity dossier"><div id="nm-idle"><h3>Inspect the record</h3><p>Select an entity in the network or the entity list. Its relationships retain the report’s existing labels and evidence grades.</p><p>Topic membership helps navigation. It does not establish a factual or causal connection.</p></div><div id="nm-card" hidden><div class="nm-dossier-top"><div><p class="nm-meta" id="nm-flag"></p><h3 id="nm-name" tabindex="-1"></h3></div><button type="button" id="nm-close" class="nm-close" aria-label="Close entity dossier">×</button></div><p id="nm-subtitle"></p><div class="nm-tabs" role="tablist" aria-label="Entity details"><button id="nm-tab-overview" role="tab" aria-selected="true" aria-controls="nm-panel-overview" tabindex="0" type="button">Overview</button><button id="nm-tab-connections" role="tab" aria-selected="false" aria-controls="nm-panel-connections" tabindex="-1" type="button">Connections</button><button id="nm-tab-evidence" role="tab" aria-selected="false" aria-controls="nm-panel-evidence" tabindex="-1" type="button">Evidence</button></div><div class="nm-panel" id="nm-panel-overview" role="tabpanel" aria-labelledby="nm-tab-overview"></div><div class="nm-panel" id="nm-panel-connections" role="tabpanel" aria-labelledby="nm-tab-connections" hidden></div><div class="nm-panel" id="nm-panel-evidence" role="tabpanel" aria-labelledby="nm-tab-evidence" hidden></div><button type="button" class="nm-action" id="nm-copy">Copy entity link</button><button type="button" class="nm-action" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share entity</button><button type="button" class="nm-action" data-ui-print>Print record</button><p class="nm-copy-status" id="nm-copy-status" role="status"></p><p class="nm-meta">Historical grades are preserved. New relationships link to reviewed records; missing source links remain explicit.</p></div></aside>
   </div>
   <div class="nm-foot">
     <p class="nm-note">* “dismissals upheld” reflects district rulings; DOJ appeals pending. A propagandist draws the dotted edges solid. An investigator marks them dotted — and names who could make them solid.</p>
@@ -1158,8 +1158,8 @@
     box = next;
     svg.setAttribute("viewBox", box.map((n) => Number(n.toFixed(3))).join(" "));
   }
-  function fit() {
-    if (!svg || state.view !== "network") return;
+  function fit(forPrint = false) {
+    if (!svg || (state.view !== "network" && forPrint !== true)) return;
     const bounds = graphNodes
       .filter((node) => visibleKeys.has(node.dataset.key))
       .map((node) => node.getBBox());
@@ -1173,6 +1173,16 @@
       bottom = Math.max(...bounds.map((b) => b.y + b.height)) + 80;
     applyBox([left, top, Math.max(right - left, 220), Math.max(bottom - top, 220)]);
   }
+  let screenBox = null;
+  window.addEventListener("beforeprint", () => {
+    if (!svg) return;
+    screenBox = box.slice();
+    fit(true);
+  });
+  window.addEventListener("afterprint", () => {
+    if (screenBox) applyBox(screenBox);
+    screenBox = null;
+  });
   function zoom(factor) {
     if (!box) return;
     const width = Math.max(originalBox[2] / 12, Math.min(originalBox[2] * 2, box[2] * factor)),
@@ -1532,7 +1542,14 @@
 <span class="reader-current">Current section: <span id="whereami">Introduction</span></span>
 <a class="reader-topics" href="/topics.html">Topics</a>
 <button type="button" data-ui-save><svg viewBox="0 0 16 20" width="13" height="17" aria-hidden="true"><path d="M2 1h12v17l-6-4-6 4Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg> Save place</button>
+<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button>
 <button type="button" data-ui-resume hidden>Resume reading</button>
 <a class="reader-top" href="#top"><span aria-hidden="true">↑</span> Top</a>
 <progress id="reading-progress" max="100" value="0" aria-label="Page reading progress"></progress>
-</div><p class="reader-status" data-ui-status role="status" aria-live="polite"></p><script src="/site-ui.js" defer></script></body></html>
+</div><p class="reader-status" data-ui-status role="status" aria-live="polite"></p>
+<dialog class="contents-dialog share-dialog" id="share-dialog" aria-labelledby="share-heading">
+<div class="dialog-heading"><p id="share-heading">Share this record</p><button type="button" data-share-close aria-label="Close sharing">Close ×</button></div>
+<div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
+<input id="share-url" type="url" readonly spellcheck="false">
+<div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button><button type="button" data-ui-print>Print page</button></div>
+<p data-share-status role="status" aria-live="polite"></p></div></dialog><script src="/site-ui.js" defer></script></body></html>

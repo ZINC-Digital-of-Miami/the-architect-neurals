@@ -650,7 +650,7 @@
       <div class="nm-legend" aria-label="Relationship evidence legend"><span><b class="nm-grade">A</b> Documented</span><span><b class="nm-grade nm-grade-B">B</b> Reported</span><span><b class="nm-grade nm-grade-C">C</b> Alleged / denied</span><span><b class="nm-grade nm-grade-O">O</b> Adjacency</span></div><p class="nm-meta" id="nm-registry-status">Grades describe relationship claims in the existing report, not ratings of people.</p>
     </div>
     <div class="nm-sheet-shade" id="nm-sheet-shade" hidden></div>
-    <aside class="nm-dossier" id="nm-dossier" aria-label="Entity dossier"><div id="nm-idle"><h3>Inspect the record</h3><p>Select an entity in the network or the entity list. Its relationships retain the report’s existing labels and evidence grades.</p><p>Topic membership helps navigation. It does not establish a factual or causal connection.</p></div><div id="nm-card" hidden><div class="nm-dossier-top"><div><p class="nm-meta" id="nm-flag"></p><h3 id="nm-name" tabindex="-1"></h3></div><button type="button" id="nm-close" class="nm-close" aria-label="Close entity dossier">×</button></div><p id="nm-subtitle"></p><div class="nm-tabs" role="tablist" aria-label="Entity details"><button id="nm-tab-overview" role="tab" aria-selected="true" aria-controls="nm-panel-overview" tabindex="0" type="button">Overview</button><button id="nm-tab-connections" role="tab" aria-selected="false" aria-controls="nm-panel-connections" tabindex="-1" type="button">Connections</button><button id="nm-tab-evidence" role="tab" aria-selected="false" aria-controls="nm-panel-evidence" tabindex="-1" type="button">Evidence</button></div><div class="nm-panel" id="nm-panel-overview" role="tabpanel" aria-labelledby="nm-tab-overview"></div><div class="nm-panel" id="nm-panel-connections" role="tabpanel" aria-labelledby="nm-tab-connections" hidden></div><div class="nm-panel" id="nm-panel-evidence" role="tabpanel" aria-labelledby="nm-tab-evidence" hidden></div><button type="button" class="nm-action" id="nm-copy">Copy entity link</button><p class="nm-copy-status" id="nm-copy-status" role="status"></p><p class="nm-meta">Historical grades are preserved. New relationships link to reviewed records; missing source links remain explicit.</p></div></aside>
+    <aside class="nm-dossier" id="nm-dossier" aria-label="Entity dossier"><div id="nm-idle"><h3>Inspect the record</h3><p>Select an entity in the network or the entity list. Its relationships retain the report’s existing labels and evidence grades.</p><p>Topic membership helps navigation. It does not establish a factual or causal connection.</p></div><div id="nm-card" hidden><div class="nm-dossier-top"><div><p class="nm-meta" id="nm-flag"></p><h3 id="nm-name" tabindex="-1"></h3></div><button type="button" id="nm-close" class="nm-close" aria-label="Close entity dossier">×</button></div><p id="nm-subtitle"></p><div class="nm-tabs" role="tablist" aria-label="Entity details"><button id="nm-tab-overview" role="tab" aria-selected="true" aria-controls="nm-panel-overview" tabindex="0" type="button">Overview</button><button id="nm-tab-connections" role="tab" aria-selected="false" aria-controls="nm-panel-connections" tabindex="-1" type="button">Connections</button><button id="nm-tab-evidence" role="tab" aria-selected="false" aria-controls="nm-panel-evidence" tabindex="-1" type="button">Evidence</button></div><div class="nm-panel" id="nm-panel-overview" role="tabpanel" aria-labelledby="nm-tab-overview"></div><div class="nm-panel" id="nm-panel-connections" role="tabpanel" aria-labelledby="nm-tab-connections" hidden></div><div class="nm-panel" id="nm-panel-evidence" role="tabpanel" aria-labelledby="nm-tab-evidence" hidden></div><button type="button" class="nm-action" id="nm-copy">Copy entity link</button><button type="button" class="nm-action" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share entity</button><button type="button" class="nm-action" data-ui-print>Print record</button><p class="nm-copy-status" id="nm-copy-status" role="status"></p><p class="nm-meta">Historical grades are preserved. New relationships link to reviewed records; missing source links remain explicit.</p></div></aside>
   </div>
   <div class="nm-foot">
     <p class="nm-note">* “dismissals upheld” reflects district rulings; DOJ appeals pending. A propagandist draws the dotted edges solid. An investigator marks them dotted — and names who could make them solid.</p>
@@ -1146,8 +1146,8 @@
     box = next;
     svg.setAttribute("viewBox", box.map((n) => Number(n.toFixed(3))).join(" "));
   }
-  function fit() {
-    if (!svg || state.view !== "network") return;
+  function fit(forPrint = false) {
+    if (!svg || (state.view !== "network" && forPrint !== true)) return;
     const bounds = graphNodes
       .filter((node) => visibleKeys.has(node.dataset.key))
       .map((node) => node.getBBox());
@@ -1161,6 +1161,16 @@
       bottom = Math.max(...bounds.map((b) => b.y + b.height)) + 80;
     applyBox([left, top, Math.max(right - left, 220), Math.max(bottom - top, 220)]);
   }
+  let screenBox = null;
+  window.addEventListener("beforeprint", () => {
+    if (!svg) return;
+    screenBox = box.slice();
+    fit(true);
+  });
+  window.addEventListener("afterprint", () => {
+    if (screenBox) applyBox(screenBox);
+    screenBox = null;
+  });
   function zoom(factor) {
     if (!box) return;
     const width = Math.max(originalBox[2] / 12, Math.min(originalBox[2] * 2, box[2] * factor)),

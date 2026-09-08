@@ -458,6 +458,43 @@ img,svg,video{max-width:100%}
 }
 
 /* Research pages share the report's typography and rules; rows remain easy to compare. */
+.reader-bar [data-ui-share],.section-share{color:var(--accent)}
+.page-actions{display:flex;justify-content:flex-end;gap:.5rem;margin:.5rem 0 1rem}
+.page-actions button{min-height:44px;padding:.5rem .9rem;border:1px solid var(--rule);border-radius:4px;background:var(--paper);color:var(--accent);font:inherit;font-size:.85rem;cursor:pointer}
+.page-actions button:hover{border-color:var(--accent);background:var(--rule-soft)}
+.section-share{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;margin-left:.5rem;width:44px;height:44px;border:1px solid var(--rule);border-radius:50%;background:var(--paper);cursor:pointer}
+.section-share:hover{background:var(--rule-soft);border-color:var(--accent)}
+.dialog-heading #share-heading{font-size:1.7rem;color:var(--ink);margin:0}
+.share-body{padding:1.2rem 1.4rem}.share-body label{display:block;font-size:.85rem;margin-bottom:.5rem}
+.share-body input{box-sizing:border-box;width:100%;min-width:0;padding:.75rem;border:1px solid var(--rule);background:var(--paper);color:var(--ink);font:inherit;font-size:.9rem}
+.share-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.share-actions button{min-height:44px;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--paper);font:inherit;cursor:pointer}
+.share-actions button:hover{background:var(--ink);border-color:var(--ink)}
+.share-body [role="status"]{min-height:1.5em;font-size:.9rem}
+@media(max-width:760px){.reader-bar .reader-topics{display:none}.reader-bar{gap:0;padding-left:.65rem;padding-right:.65rem}.reader-bar button,.reader-bar>a{padding-left:.35rem;padding-right:.35rem}}
+@media print{
+  @page{margin:14mm}
+  .section-share,.share-dialog,.page-actions,.view-tabs{display:none!important}
+  html,body{height:auto!important;overflow:visible!important;background:#fff!important;color:#111!important}
+  .content,.shell,.research-view{max-width:none!important}
+  a{color:inherit!important;text-decoration:underline}
+  h1,h2,h3,h4{break-after:avoid}p,li{orphans:3;widows:3}
+  .research-intro h1{font-size:26pt!important;line-height:1.15!important}
+  #neural{--nm-bg:#fff!important;--nm-ink:#111!important;--nm-soft:#333!important;--nm-faint:#444!important;--nm-card:#fff!important;--nm-rule:#999!important;--nm-gold:#8c2f1b!important;background:#fff!important;color:#111!important;padding:0!important;border:0!important}
+  #neural .nm-toolbar,#neural .nm-filters,#neural .nm-mobile-guide,#neural .nm-sheet-shade,#neural .nm-network-note,#neural .nm-zoom,#neural button{display:none!important}
+  #neural #nm-network{display:block!important;background:#fff!important;break-inside:avoid}
+  #neural .nm-canvas{height:100mm!important;background:#fff!important}
+  #neural svg text{fill:#111!important;stroke:none!important}
+  #neural svg rect{fill:#fff!important;stroke:#aaa!important}
+  #neural svg .nm-disc{fill:#fff!important;stroke:#555!important;filter:none!important;animation:none!important}
+  #neural .nm-explorer,#neural .nm-workspace,#neural .nm-dossier{display:block!important;position:static!important;width:auto!important;max-height:none!important;height:auto!important;overflow:visible!important;transform:none!important;box-shadow:none!important}
+  #neural #nm-entities,#neural .nm-entity-list{display:block!important;max-height:none!important;overflow:visible!important}
+  #neural.has-selection #nm-entities{display:none!important}
+  #neural .nm-entity-list button{display:grid!important;break-inside:avoid}
+  #neural .nm-dossier .nm-panel{display:block!important}
+  #neural .nm-dossier [data-node]{display:inline!important;color:#111!important;background:none!important;border:0!important;padding:0!important}
+  #neural .nm-tabs,#neural .nm-close,#neural .nm-copy-status{display:none!important}
+}
 .topnav .nav-current{color:var(--paper);box-shadow:inset 0 -2px var(--accent)}
 .research-page .content{max-width:75rem;width:100%;padding-top:2rem}
 .sidebar-links .sidebar-label{font:500 .62rem/1.5 'IBM Plex Mono',monospace;letter-spacing:.16em;color:var(--ink-2);text-transform:uppercase;margin:1.6rem 0 .55rem}
