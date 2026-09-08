@@ -556,6 +556,30 @@ img,svg,video{max-width:100%}
   .research-grid,.history-grid{gap:1.5rem}.topic-links,.source-links{gap:.5rem .9rem}
 }
 
+.dialog-heading #print-heading{font-size:1.7rem;color:var(--ink);margin:0}
+.print-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.print-actions a{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--paper);font:inherit;text-decoration:none}
+.print-actions a:hover{background:var(--ink);border-color:var(--ink)}
+@media print{#print-dialog{display:none!important}}
+
+.source-links li{max-width:100%;overflow-wrap:anywhere}
+@media print{tr{break-inside:avoid}}
+@media print{
+  html{font-size:14px!important}
+  body{font-size:11pt!important}
+  .content p,.story p{font-size:11pt!important;line-height:1.45!important;max-width:none!important}
+  .table-scroll{width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important}
+  table{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:fixed!important;font-size:9pt!important}
+  td,th{font-size:9pt!important;white-space:normal!important;overflow-wrap:anywhere!important;min-width:0!important}
+  tr,td,th{break-inside:avoid!important;page-break-inside:avoid!important}
+}
+@media print{
+  .rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible!important}
+  .rail .stop{min-width:0;break-inside:avoid}
+  .cast dl,.update .cols{columns:1!important}
+  .arch3,.howto,.research-grid{display:block}
+}
+
 </style>
 <a class="skip-link" href="#main-content">Skip to content</a><div class="progress" id="progress" aria-hidden="true"></div><header class="topnav" id="top"><a class="brand" href="/">THE ARCHITECTURE</a><button class="menu-toggle" type="button" data-ui-menu aria-expanded="false" aria-controls="site-navigation"><span aria-hidden="true">☰</span> Menu</button><nav class="navlinks" id="site-navigation" aria-label="Main navigation"><a href="/" aria-current="page">Report</a><a href="/#update">Weekly record</a><div class="navgroup"><button type="button" data-ui-dropdown aria-expanded="false" aria-controls="topics-navigation">Topics <span aria-hidden="true">⌄</span></button><div class="dd topics-menu" id="topics-navigation" hidden><div class="topic-menu-grid"><div><h3>People &amp; financial history</h3><a href="/topics/trump-early-financing.html">Trump: early financing</a><a href="/topics/ownership-disclosures.html">Ownership &amp; financial disclosures</a><a href="/topics/digital-assets.html">Digital assets &amp; financial entities</a><a href="/topics/technology-infrastructure.html">Technology &amp; infrastructure</a><a href="/topics/trump-later-financing.html">Trump: later financing</a></div><div><h3>Institutions &amp; law</h3><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/us-midterms.html">2026 U.S. midterms</a><a href="/topics/executive-authority.html">Executive authority &amp; courts</a><a href="/topics/enforcement-surveillance.html">Enforcement &amp; surveillance</a><a href="/topics/civil-society.html">Civic institutions &amp; responses</a><a href="/topics/technology-infrastructure.html">Technology &amp; infrastructure</a></div><div><h3>Conflict &amp; foreign affairs</h3><a href="/topics/iran-us-decisions.html">Iran &amp; U.S. decisions</a><a href="/topics/war-trade.html">War, trade &amp; international records</a></div><div><h3>Campaigns &amp; public communication</h3><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/us-midterms.html">2026 U.S. midterms</a><a href="/topics/information-media.html">Information &amp; public communication</a><a href="/topics/civil-society.html">Civic institutions &amp; responses</a></div><div><h3>Historical context</h3><a href="/topics/trump-early-financing.html">Trump: early financing</a><a href="/topics/germany-afd.html">Germany / AfD</a><a href="/topics/historical-comparisons.html">Historical comparisons</a></div><div><h3>Evidence &amp; corrections</h3><a href="/topics/corrections-provenance.html">Corrections &amp; source provenance</a></div></div><a class="browse-topics" href="/topics.html">Browse all topics &rarr;</a></div></div><a href="/synthesis.html">Synthesis</a><a href="/neural.html">Neural map</a><a href="/sources.html">Sources</a><a class="search-link" href="/topics.html#topic-search" aria-label="Search topics"><svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="10" cy="10" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="1.4"/></svg></a></nav></header><div class="shell"><aside class="sidebar sidebar-links" aria-label="Section navigation"><div class="sb-label">Start here</div>
 <a href="/#cover">The report</a><a href="/#howto">How to read this</a>
@@ -3534,7 +3558,12 @@ Sourced entries: 200
 <div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
 <input id="share-url" type="url" readonly spellcheck="false">
 <div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button></div>
-<p data-share-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
+<p data-share-status role="status" aria-live="polite"></p></div></dialog>
+<dialog class="contents-dialog" id="print-dialog" aria-labelledby="print-heading">
+<div class="dialog-heading"><p id="print-heading">Print-ready document</p><button type="button" data-print-close aria-label="Close print options">Close ×</button></div>
+<div class="share-body"><p data-print-title></p><p>This PDF includes the complete page or entity record. Download it to print from your PDF app.</p>
+<div class="print-actions"><a data-print-download download>Download PDF</a><a data-print-open>Open PDF</a></div>
+<p data-print-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
 (() => {
   'use strict';
   document.documentElement.classList.add('ui-ready');
@@ -3578,15 +3607,55 @@ Sourced entries: 200
     tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
     main.prepend(tools);
   }
-  let printStarted = false;
-  window.addEventListener('beforeprint', () => { printStarted = true; });
-  document.addEventListener('click', event => {
-    if (!event.target.closest('[data-ui-print]')) return;
-    printStarted = false;
-    // Keep native printing inside the user's click, without a deferred callback.
+  const printDialog = document.getElementById('print-dialog');
+  let printTrigger;
+  let nativePrintStarted = false;
+  window.addEventListener('beforeprint', () => { nativePrintStarted = true; });
+  document.querySelector('[data-print-close]')?.addEventListener('click', () => printDialog.close());
+  printDialog?.addEventListener('close', () => printTrigger?.focus({preventScroll: true}));
+  function printRoute() {
+    const path = location.pathname === '/' ? '/index.html' : location.pathname;
+    const params = new URLSearchParams(location.search);
+    if (path === '/neural.html') {
+      const entity = params.get('entity');
+      const topic = params.get('topic');
+      if (entity) return `${path}?entity=${encodeURIComponent(entity)}`;
+      if (topic) return `${path}?topic=${encodeURIComponent(topic)}`;
+    }
+    if (path === '/synthesis.html') {
+      const selected = document.querySelector('[data-view-tab][aria-selected="true"]');
+      return `${path}?view=${encodeURIComponent(selected?.dataset.viewTab || 'overview')}`;
+    }
+    return path;
+  }
+  document.addEventListener('click', async event => {
+    const button = event.target.closest('[data-ui-print]');
+    if (!button || button.disabled) return;
+    nativePrintStarted = false;
     window.print();
-    if (!printStarted) {
-      announce('This browser did not open printing. Open this page in Safari or Chrome, then select Print.');
+    if (nativePrintStarted) return;
+    printTrigger = button;
+    const label = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Opening PDF…';
+    try {
+      const response = await fetch('/print/manifest.json', {cache: 'no-cache'});
+      if (!response.ok) throw new Error('Print catalog unavailable');
+      const catalog = await response.json();
+      const record = catalog.routes?.[printRoute()];
+      if (!record || !/^\/print\/[a-zA-Z0-9._-]+\.pdf$/.test(record.url)) {
+        throw new Error('Printable record unavailable');
+      }
+      document.querySelector('[data-print-title]').textContent = `${record.title} · ${record.pages} pages`;
+      document.querySelector('[data-print-download]').href = record.url;
+      document.querySelector('[data-print-open]').href = record.url;
+      document.querySelector('[data-print-status]').textContent = '';
+      printDialog.showModal();
+    } catch {
+      announce('The printable PDF could not be opened. Please retry Print.');
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
     }
   });
   main?.querySelectorAll('h2[id]').forEach(heading => {

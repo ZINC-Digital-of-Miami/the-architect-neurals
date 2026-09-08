@@ -9,15 +9,20 @@ import subprocess
 import sys
 import tempfile
 
+from check_print_pdfs import MANIFEST_PATH as PRINT_MANIFEST_PATH, validate as validate_print_pdfs
+
 ROOT = Path(__file__).resolve().parents[1]
-ROOT_INPUTS = ("AGENT_INSTRUCTIONS.md", "AUTOMATED_RUN_TASK.md", "check.sh", "deploy.sh", "pull_src.sh")
+ROOT_INPUTS = ("AGENT_INSTRUCTIONS.md", "AUTOMATED_RUN_TASK.md", "check.sh", "deploy.sh", "pull_src.sh",
+               "scripts/build_print_pdfs.cjs")
 
 
-def artifact_hashes(site, public_only=False):
+def artifact_hashes(site, public_only=False, exclude_print=False):
     """Only exact CLI-local metadata is exempt; unknown files/configuration must fail."""
     result = {}
     for path in sorted(site.rglob("*")):
         name = path.relative_to(site).as_posix()
+        if exclude_print and (name == "print" or name.startswith("print/")):
+            continue
         if name == ".vercel" or name.startswith(".vercel/"):
             continue
         if path.is_symlink():
@@ -74,12 +79,15 @@ def rebuild_hashes(inputs):
 
 def check_rebuild(root):
     inputs = source_inputs(root)
-    actual = artifact_hashes(root / "site")
+    all_actual = artifact_hashes(root / "site")
+    print_manifest = root / PRINT_MANIFEST_PATH
+    exclude_print = print_manifest.is_file() and not validate_print_pdfs(root, required=False)
+    actual = artifact_hashes(root / "site", exclude_print=exclude_print)
     expected = rebuild_hashes(inputs)
     errors = []
     if source_inputs(root) != inputs:
         errors.append("source inputs changed during isolated rebuild; rerun after the writer finishes")
-    if artifact_hashes(root / "site") != actual:
+    if artifact_hashes(root / "site") != all_actual:
         errors.append("generated artifact changed during isolated rebuild; rerun after the writer finishes")
     errors += [f"generated artifact missing: {name}" for name in sorted(expected.keys() - actual.keys())]
     errors += [f"unexpected generated artifact: {name}" for name in sorted(actual.keys() - expected.keys())]
@@ -88,7 +96,7 @@ def check_rebuild(root):
     return errors
 
 
-def check(root):
+def check(root, require_print=False):
     errors = []
     site = root / "site"
     manifest = json.loads((site / "src/MANIFEST.json").read_text())
@@ -134,12 +142,13 @@ def check(root):
             errors.append("a candidate cannot collapse multiple missed weekly briefs into one run")
         if manifest["current_through"] < before["current_through"]:
             errors.append("published coverage moved backward")
+    errors.extend(validate_print_pdfs(root, required=require_print))
     errors.extend(check_rebuild(root))
     return errors
 
 
 if __name__ == "__main__":
-    issues = check(ROOT)
+    issues = check(ROOT, require_print=True)
     if issues:
         raise SystemExit("ARTIFACT FAILED:\n" + "\n".join(issues))
     print("ARTIFACT: all generated paths/bytes match an isolated current-source rebuild; source/map/coverage checks passed")

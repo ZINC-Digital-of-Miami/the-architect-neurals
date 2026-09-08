@@ -552,3 +552,27 @@ img,svg,video{max-width:100%}
   .topic-row{padding:1.35rem 0}.topic-row h2{font-size:1.55rem}.topic-row p{margin-top:0}
   .research-grid,.history-grid{gap:1.5rem}.topic-links,.source-links{gap:.5rem .9rem}
 }
+
+.dialog-heading #print-heading{font-size:1.7rem;color:var(--ink);margin:0}
+.print-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+.print-actions a{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--paper);font:inherit;text-decoration:none}
+.print-actions a:hover{background:var(--ink);border-color:var(--ink)}
+@media print{#print-dialog{display:none!important}}
+
+.source-links li{max-width:100%;overflow-wrap:anywhere}
+@media print{tr{break-inside:avoid}}
+@media print{
+  html{font-size:14px!important}
+  body{font-size:11pt!important}
+  .content p,.story p{font-size:11pt!important;line-height:1.45!important;max-width:none!important}
+  .table-scroll{width:100%!important;max-width:100%!important;min-width:0!important;overflow:visible!important}
+  table{width:100%!important;max-width:100%!important;min-width:0!important;table-layout:fixed!important;font-size:9pt!important}
+  td,th{font-size:9pt!important;white-space:normal!important;overflow-wrap:anywhere!important;min-width:0!important}
+  tr,td,th{break-inside:avoid!important;page-break-inside:avoid!important}
+}
+@media print{
+  .rail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible!important}
+  .rail .stop{min-width:0;break-inside:avoid}
+  .cast dl,.update .cols{columns:1!important}
+  .arch3,.howto,.research-grid{display:block}
+}

@@ -15,10 +15,32 @@ from unittest.mock import patch
 
 import preservation as p
 import check_artifact as artifact
+import check_print_pdfs as print_pdfs
 import release
 import weekly_run as w
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def write_print_catalog(root):
+    print_root = root / "site/print"
+    print_root.mkdir(parents=True, exist_ok=True)
+    artifacts = []
+    routes = {}
+    for index, (route, kind) in enumerate(sorted(print_pdfs.expected_routes(root).items())):
+        output = f"site/print/fixture-{index:03d}.pdf"
+        raw = f"%PDF-1.4\n% fixture {route}\n%%EOF\n".encode()
+        (root / output).write_bytes(raw)
+        item = {"kind": kind, "route": route, "url": "/" + output.removeprefix("site/"),
+                "canonicalUrl": print_pdfs.CANONICAL_ORIGIN + route, "output": output,
+                "title": route, "pages": 1, "sha256": print_pdfs.sha256(raw), "bytes": len(raw)}
+        artifacts.append(item)
+        routes[route] = {key: item[key] for key in print_pdfs.ROUTE_KEYS}
+    manifest = {"schemaVersion": 1, "generatedAt": "2026-09-08T00:00:00Z",
+                "canonicalOrigin": print_pdfs.CANONICAL_ORIGIN,
+                "sourceFingerprint": print_pdfs.source_fingerprint(root),
+                "routes": routes, "artifacts": artifacts}
+    (print_root / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 
 
 class PreservationTests(unittest.TestCase):
@@ -332,7 +354,7 @@ class ArtifactTests(unittest.TestCase):
             path = cls.base / name
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_bytes(raw)
-        shutil.copytree(ROOT / "scripts", cls.base / "scripts", ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
+        shutil.copytree(ROOT / "scripts", cls.base / "scripts", dirs_exist_ok=True, ignore=shutil.ignore_patterns("__pycache__", "*.pyc"))
         shutil.copytree(ROOT / "preservation", cls.base / "preservation")
         env = os.environ.copy()
         env.pop("ARCH_SITE_URL", None)
@@ -341,6 +363,7 @@ class ArtifactTests(unittest.TestCase):
             result = subprocess.run(command, cwd=cls.base, env=env, capture_output=True, text=True)
             if result.returncode:
                 raise AssertionError(result.stderr)
+        write_print_catalog(cls.base)
 
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -394,12 +417,45 @@ class ArtifactTests(unittest.TestCase):
         (site / ".vercel").mkdir()
         (site / ".vercel/project.json").write_text('{"projectId":"local-metadata"}')
         (site / ".gitignore").write_text(".vercel\n")
+        write_print_catalog(self.root)
         self.assertEqual(artifact.check_rebuild(self.root), [])
         self.assertNotIn(".gitignore", release.file_hashes(site))
         self.assertNotIn(".vercel/project.json", release.file_hashes(site))
         (site / ".gitignore").write_text(".vercel\nindex.html\n")
         with self.assertRaisesRegex(ValueError, "may contain only"):
             artifact.check_rebuild(self.root)
+
+
+class PrintPdfTests(unittest.TestCase):
+    def setUp(self):
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
+        self.root = Path(self.temp.name)
+        (self.root / "scripts").mkdir()
+        (self.root / "scripts/build_print_pdfs.cjs").write_text("// fixture builder\n")
+        site = self.root / "site"
+        (site / "map").mkdir(parents=True)
+        (site / "research").mkdir()
+        (site / "index.html").write_text('<script src="/site-ui.js"></script>')
+        (site / "neural.html").write_text('<script src="/site-ui.js"></script>')
+        (site / "synthesis.html").write_text('<button data-view-tab="overview"></button><script src="/site-ui.js"></script>')
+        (site / "map/data.json").write_text(json.dumps({"nodes": {"ENTITY": {}}}))
+        (site / "research/data.json").write_text(json.dumps({"topics": [{"id": "topic"}]}))
+        write_print_catalog(self.root)
+
+    def test_stale_rendered_source_is_rejected(self):
+        self.assertEqual(print_pdfs.validate(self.root), [])
+        (self.root / "site/index.html").write_text('<script src="/site-ui.js"></script>changed')
+        self.assertIn("print PDFs are stale: rendered source fingerprint differs",
+                      print_pdfs.validate(self.root))
+
+    def test_tampered_pdf_is_rejected(self):
+        manifest = json.loads((self.root / "site/print/manifest.json").read_text())
+        output = self.root / manifest["artifacts"][0]["output"]
+        output.write_bytes(output.read_bytes() + b"tampered")
+        errors = print_pdfs.validate(self.root)
+        self.assertTrue(any("signature invalid" in error for error in errors))
+        self.assertTrue(any("bytes/hash mismatch" in error for error in errors))
 
 
 class ReleaseTests(unittest.TestCase):

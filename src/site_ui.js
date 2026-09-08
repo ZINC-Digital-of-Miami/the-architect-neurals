@@ -42,15 +42,55 @@
     tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
     main.prepend(tools);
   }
-  let printStarted = false;
-  window.addEventListener('beforeprint', () => { printStarted = true; });
-  document.addEventListener('click', event => {
-    if (!event.target.closest('[data-ui-print]')) return;
-    printStarted = false;
-    // Keep native printing inside the user's click, without a deferred callback.
+  const printDialog = document.getElementById('print-dialog');
+  let printTrigger;
+  let nativePrintStarted = false;
+  window.addEventListener('beforeprint', () => { nativePrintStarted = true; });
+  document.querySelector('[data-print-close]')?.addEventListener('click', () => printDialog.close());
+  printDialog?.addEventListener('close', () => printTrigger?.focus({preventScroll: true}));
+  function printRoute() {
+    const path = location.pathname === '/' ? '/index.html' : location.pathname;
+    const params = new URLSearchParams(location.search);
+    if (path === '/neural.html') {
+      const entity = params.get('entity');
+      const topic = params.get('topic');
+      if (entity) return `${path}?entity=${encodeURIComponent(entity)}`;
+      if (topic) return `${path}?topic=${encodeURIComponent(topic)}`;
+    }
+    if (path === '/synthesis.html') {
+      const selected = document.querySelector('[data-view-tab][aria-selected="true"]');
+      return `${path}?view=${encodeURIComponent(selected?.dataset.viewTab || 'overview')}`;
+    }
+    return path;
+  }
+  document.addEventListener('click', async event => {
+    const button = event.target.closest('[data-ui-print]');
+    if (!button || button.disabled) return;
+    nativePrintStarted = false;
     window.print();
-    if (!printStarted) {
-      announce('This browser did not open printing. Open this page in Safari or Chrome, then select Print.');
+    if (nativePrintStarted) return;
+    printTrigger = button;
+    const label = button.textContent;
+    button.disabled = true;
+    button.textContent = 'Opening PDF…';
+    try {
+      const response = await fetch('/print/manifest.json', {cache: 'no-cache'});
+      if (!response.ok) throw new Error('Print catalog unavailable');
+      const catalog = await response.json();
+      const record = catalog.routes?.[printRoute()];
+      if (!record || !/^\/print\/[a-zA-Z0-9._-]+\.pdf$/.test(record.url)) {
+        throw new Error('Printable record unavailable');
+      }
+      document.querySelector('[data-print-title]').textContent = `${record.title} · ${record.pages} pages`;
+      document.querySelector('[data-print-download]').href = record.url;
+      document.querySelector('[data-print-open]').href = record.url;
+      document.querySelector('[data-print-status]').textContent = '';
+      printDialog.showModal();
+    } catch {
+      announce('The printable PDF could not be opened. Please retry Print.');
+    } finally {
+      button.disabled = false;
+      button.textContent = label;
     }
   });
   main?.querySelectorAll('h2[id]').forEach(heading => {
