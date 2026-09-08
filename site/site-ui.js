@@ -29,6 +29,70 @@
     statusTimer = setTimeout(() => { status.textContent = ''; }, 6000);
   }
 
+  const shareDialog = document.getElementById('share-dialog');
+  const shareUrl = document.getElementById('share-url');
+  const shareStatus = document.querySelector('[data-share-status]');
+  const nativeShare = document.querySelector('[data-share-native]');
+  let shareTrigger;
+  let shareTitle = document.title;
+  if (main) {
+    const tools = document.createElement('div');
+    tools.className = 'page-actions';
+    tools.setAttribute('aria-label', 'Share and print');
+    tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
+    main.prepend(tools);
+  }
+  document.addEventListener('click', event => {
+    if (!event.target.closest('[data-ui-print]')) return;
+    if (shareDialog?.open) shareDialog.close();
+    requestAnimationFrame(() => window.print());
+  });
+  main?.querySelectorAll('h2[id]').forEach(heading => {
+    if (heading.closest('#neural')) return;
+    const title = heading.textContent.trim();
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'section-share';
+    button.dataset.uiShare = heading.id;
+    button.dataset.shareTitle = title;
+    button.setAttribute('aria-label', `Share section: ${title}`);
+    button.setAttribute('aria-haspopup', 'dialog');
+    button.setAttribute('aria-controls', 'share-dialog');
+    button.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M12 16V3m-5 5 5-5 5 5M5 13v7h14v-7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    heading.append(button);
+  });
+  document.addEventListener('click', event => {
+    const button = event.target.closest('[data-ui-share]');
+    if (!button || !shareDialog) return;
+    shareTrigger = button;
+    const url = new URL(location.pathname + location.search + location.hash, 'https://the-architecture-neurals.vercel.app');
+    if (button.dataset.uiShare) url.hash = button.dataset.uiShare;
+    shareTitle = button.dataset.shareTitle || document.title;
+    shareUrl.value = url.href;
+    document.querySelector('[data-share-title]').textContent = shareTitle;
+    shareStatus.textContent = '';
+    nativeShare.hidden = typeof navigator.share !== 'function';
+    shareDialog.showModal();
+  });
+  document.querySelector('[data-share-close]')?.addEventListener('click', () => shareDialog.close());
+  shareDialog?.addEventListener('close', () => shareTrigger?.focus({preventScroll: true}));
+  document.querySelector('[data-share-copy]')?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(shareUrl.value);
+      shareStatus.textContent = 'Link copied.';
+    } catch {
+      shareUrl.focus();
+      shareUrl.select();
+      shareStatus.textContent = 'Select and copy the link above.';
+    }
+  });
+  nativeShare?.addEventListener('click', async () => {
+    try { await navigator.share({title: shareTitle, url: shareUrl.value}); }
+    catch (error) {
+      if (error.name !== 'AbortError') shareStatus.textContent = 'Sharing is unavailable here. Copy the link instead.';
+    }
+  });
+
   function closeDropdowns(except) {
     dropdowns.forEach(button => {
       if (button === except) return;
