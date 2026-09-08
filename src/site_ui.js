@@ -42,10 +42,16 @@
     tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
     main.prepend(tools);
   }
+  let printStarted = false;
+  window.addEventListener('beforeprint', () => { printStarted = true; });
   document.addEventListener('click', event => {
     if (!event.target.closest('[data-ui-print]')) return;
-    if (shareDialog?.open) shareDialog.close();
-    requestAnimationFrame(() => window.print());
+    printStarted = false;
+    // Keep native printing inside the user's click, without a deferred callback.
+    window.print();
+    if (!printStarted) {
+      announce('This browser did not open printing. Open this page in Safari or Chrome, then select Print.');
+    }
   });
   main?.querySelectorAll('h2[id]').forEach(heading => {
     if (heading.closest('#neural')) return;

@@ -11,7 +11,7 @@
   "clocks": 12,
   "map_nodes": 59,
   "map_edges": 93,
-  "index_bytes": 640247
+  "index_bytes": 640192
  },
  "files": [
   {
@@ -111,8 +111,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 40431,
-   "sha256": "9fe58d6760c800df74c2bf055de7755481b95ab740f4245775c694837c52df18"
+   "bytes": 40376,
+   "sha256": "d7298dd4ef2425d2d2266fe38f4ffa775ac4b6431a90dd08e8ada1295223a2a2"
   },
   {
    "path": "check.sh",
@@ -181,8 +181,8 @@
   },
   {
    "path": "site_ui.js",
-   "bytes": 12808,
-   "sha256": "d1d77d41f0e615149f12d111c5f397d52c3a91f6a88d996336485ba2f5c46d9a"
+   "bytes": 13082,
+   "sha256": "b35345399135b3ad83928be75ab78c6546d79d544538726a00616db04b5f16b9"
   },
   {
    "path": "sources_manifest.md",
