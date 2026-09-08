@@ -402,6 +402,105 @@
       "sub": "Pledged-asset line · 2025",
       "core": false,
       "flag": ""
+    },
+    "DONALD_TRUMP_JR": {
+      "x": 1740,
+      "y": 145,
+      "r": 57,
+      "name": "Donald Trump Jr.",
+      "sub": "1789 partner · profile reviewed Sep 2026",
+      "core": false,
+      "flag": ""
+    },
+    "CAPITAL_1789": {
+      "x": 1990,
+      "y": 120,
+      "r": 57,
+      "name": "1789 Capital",
+      "sub": "Venture firm · named partner record",
+      "core": false,
+      "flag": ""
+    },
+    "ERIC_TRUMP": {
+      "x": 1740,
+      "y": 415,
+      "r": 57,
+      "name": "Eric Trump",
+      "sub": "ALT5 observer designation · Aug 2025",
+      "core": false,
+      "flag": ""
+    },
+    "ZACH_WITKOFF": {
+      "x": 1740,
+      "y": 680,
+      "r": 57,
+      "name": "Zachary Witkoff",
+      "sub": "ALT5 chairman appointment · Aug 2025",
+      "core": false,
+      "flag": ""
+    },
+    "OFAC": {
+      "x": 780,
+      "y": 1650,
+      "r": 57,
+      "name": "OFAC",
+      "sub": "Treasury sanctions office",
+      "core": false,
+      "flag": ""
+    },
+    "GG_BANK": {
+      "x": 650,
+      "y": 1920,
+      "r": 57,
+      "name": "Golden Global Bank",
+      "sub": "Golden Global Yatirim Bankasi AS",
+      "core": false,
+      "flag": ""
+    },
+    "GG_LEASING": {
+      "x": 330,
+      "y": 1840,
+      "r": 57,
+      "name": "Golden Global Varlık Kiralama",
+      "sub": "Separate designated entity · Sep 2026",
+      "core": false,
+      "flag": ""
+    },
+    "GG_PORTFOLIO": {
+      "x": 1030,
+      "y": 1830,
+      "r": 57,
+      "name": "Golden Global Portföy Yönetimi",
+      "sub": "Separate designated entity · Sep 2026",
+      "core": false,
+      "flag": ""
+    },
+    "MUSK": {
+      "x": 1740,
+      "y": 1010,
+      "r": 55,
+      "name": "Elon Musk",
+      "sub": "Dated U.S. and AfD records",
+      "core": false,
+      "flag": ""
+    },
+    "WEIDEL": {
+      "x": 2320,
+      "y": 455,
+      "r": 55,
+      "name": "Alice Weidel",
+      "sub": "AfD candidate · 2025 campaign records",
+      "core": false,
+      "flag": ""
+    },
+    "VANCE": {
+      "x": 1990,
+      "y": -160,
+      "r": 55,
+      "name": "JD Vance",
+      "sub": "Vice-presidential pool record · Feb 2025",
+      "core": false,
+      "flag": ""
     }
   },
   "edges": [
@@ -890,6 +989,78 @@
       "LADDER_FINANCE_I",
       "A",
       "Listed subsidiary · 2025 exhibit"
+    ],
+    [
+      "DONALD_TRUMP_JR",
+      "CAPITAL_1789",
+      "A",
+      "Partner · firm profile reviewed Sep 2026"
+    ],
+    [
+      "ERIC_TRUMP",
+      "ALT5",
+      "A",
+      "Observer designation · Aug 2025 filing"
+    ],
+    [
+      "ZACH_WITKOFF",
+      "ALT5",
+      "A",
+      "Chairman appointment · Aug 2025 filing"
+    ],
+    [
+      "WLF",
+      "ALT5",
+      "A",
+      "Two director nomination rights · Aug 2025"
+    ],
+    [
+      "TREASURY",
+      "OFAC",
+      "A",
+      "Treasury office issuing license · Sep 2026"
+    ],
+    [
+      "OFAC",
+      "GG_BANK",
+      "A",
+      "SDN designation · Sep 4, 2026"
+    ],
+    [
+      "OFAC",
+      "GG_LEASING",
+      "A",
+      "SDN designation · Sep 4, 2026"
+    ],
+    [
+      "OFAC",
+      "GG_PORTFOLIO",
+      "A",
+      "SDN designation · Sep 4, 2026"
+    ],
+    [
+      "TRUMP",
+      "MUSK",
+      "A",
+      "Announced advisory role · Nov 2024"
+    ],
+    [
+      "MUSK",
+      "AFD",
+      "A",
+      "Campaign video appearance · Jan 2025"
+    ],
+    [
+      "WEIDEL",
+      "AFD",
+      "A",
+      "Chancellor candidate · Jan 2025 record"
+    ],
+    [
+      "VANCE",
+      "WEIDEL",
+      "A",
+      "Meeting confirmed to pool · Feb 2025"
     ]
   ]
 }

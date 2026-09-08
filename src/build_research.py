@@ -156,10 +156,12 @@ def build_research(root, dist, render_page):
         feedback_html = "".join(f'<li>{esc(f["date"])} · {esc(feedback_labels[f.get("purpose", "topic_fit")])} · {esc(f["decision"])}: {esc(f["reason"])}</li>' for f in relevant_feedback)
         body = (f'<header class="research-intro"><p class="kicker"><a href="/topics.html">TOPICS</a> / {esc(topic["status"].upper())}</p><h1>{esc(topic["title"])}</h1>'
                 f'<p class="dek">{esc(topic["description"])}</p>{freshness}</header>'
+                + f'<section class="research-panel"><h2 id="report">In the full report</h2><p class="topic-meta">{len(topic.get("reportLinks", []))} linked sections · {len(current_claims)} structured records · {len(topic.get("entityIds", []))} mapped entities</p>'
+                + '<p>These links open the preserved report, including its dated evidence and qualifications.</p>' + report_links + '</section>'
                 '<section><h2 id="records">Evidence & context</h2>'
-                + ("".join(claim_html(c) for c in current_claims) if current_claims else '<p class="research-note">The preserved report covers this subject. Separate structured claims await original-source verification; the links below open the authored record.</p>')
+                + ("".join(claim_html(c) for c in current_claims) if current_claims else '<p class="research-note">Separate structured records have not yet been added here. Read the report sections above for the existing coverage.</p>')
                 + '</section><div class="research-grid"><section class="research-panel"><h2 id="questions">Open questions</h2>' + questions
-                + '</section><section class="research-panel"><h2 id="report">Read in the report</h2>' + report_links + '</section></div>'
+                + f'</section><section class="research-panel"><h2>Explore connections</h2><p><a href="/neural.html?topic={quote(ident)}">Open this topic in the map →</a></p><p><a href="/synthesis.html?view=connections">Follow dated connection paths →</a></p></section></div>'
                 + '<section><h2 id="entities">Related entities</h2>' + entities + '</section>'
                 + '<section><h2 id="history">Research history</h2><p>Topic opened ' + esc(topic["createdAt"]) + '; updated ' + esc(topic["updatedAt"]) + '.</p>'
                 + ('<ul>' + feedback_html + '</ul>' if feedback_html else '<p>No retrieval feedback has been recorded for this topic yet.</p>')
@@ -188,7 +190,7 @@ def build_research(root, dist, render_page):
         connections += '<p>No connection paths have completed evidence review yet.</p>'
     connections += '</section>'
 
-    overview = ('<section class="research-view" id="view-overview" data-view="overview"><h2>Questions across the report</h2><p><a href="?view=connections">Explore connections across the record →</a></p><div class="topic-list">'
+    overview = (f'<section class="research-view" id="view-overview" data-view="overview"><section class="research-panel"><h2>The complete report is here</h2><p>Explore {len(outline)} linked headings and the preserved weekly archive alongside the new structured records.</p><p><a href="?view=contents">Browse the full report index →</a> · <a href="/#top">Read the report →</a></p></section><h2>Questions across the report</h2><p><a href="?view=connections">Explore connections across the record →</a></p><div class="topic-list">'
                 + "".join(topic_row(t) for t in data["topics"] if t["status"] in {"active", "new"})
                 + '</div><p><a href="/topics.html">Browse every research topic →</a></p><div class="research-grid">'
                 '<section class="research-panel"><h2>Compare the history</h2><p>Examine original records, similarities, material differences and evidence against each comparison.</p><a href="?view=compare">Open historical comparisons →</a></section>'

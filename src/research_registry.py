@@ -16,7 +16,7 @@ from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parent
 ID = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
-PRIMARY = {"court", "official_record", "party_statement", "pool_report", "historical_reference", "corporate_filing"}
+PRIMARY = {"court", "official_record", "party_statement", "pool_report", "historical_reference", "corporate_filing", "corporate_statement"}
 
 
 def read_json(path):

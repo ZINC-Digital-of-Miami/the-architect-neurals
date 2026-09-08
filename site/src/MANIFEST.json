@@ -9,9 +9,9 @@
   "briefs": 3,
   "corrections": 18,
   "clocks": 12,
-  "map_nodes": 48,
-  "map_edges": 81,
-  "index_bytes": 638163
+  "map_nodes": 59,
+  "map_edges": 93,
+  "index_bytes": 639430
  },
  "files": [
   {
@@ -106,13 +106,13 @@
   },
   {
    "path": "build_research.py",
-   "bytes": 19193,
-   "sha256": "315f197fe848d35ee9fbbb4a2e12872599f0660b88b4f5b6b08668ffc49b2c60"
+   "bytes": 20022,
+   "sha256": "17a0088b051779f4b94b3dc772bb177d9f2f2a5744392415f662c49f78aff44a"
   },
   {
    "path": "build_site3.py",
-   "bytes": 38822,
-   "sha256": "0b7ed35e150a3d4f71b9ce208ebc89d9e3a53fac58c679bd6aeead81cbbd21b3"
+   "bytes": 39614,
+   "sha256": "b5dc3309da209d0f2acff3d5d22779378e6cfadee5894491a0d731dab25c7fca"
   },
   {
    "path": "check.sh",
@@ -131,8 +131,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 16741,
-   "sha256": "548ddf15f36ec0a63099c9f06364f4ea149599691ea3affa5a2650a8308c919b"
+   "bytes": 20145,
+   "sha256": "9aa2e2a22388043715574c66f083ccbab9bacb7b7b6690ae4284c0d0198ad135"
   },
   {
    "path": "mapgen.js",
@@ -146,18 +146,18 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 10582,
-   "sha256": "0c39c1384482c49aa6013d8ec3b13339bb0d902214bf949ae9823ed3b4ec9eff"
+   "bytes": 12575,
+   "sha256": "dd29ddcec7cf4187fecb3aa58955bfe3f14844696131dee1671a52d6acac458c"
   },
   {
    "path": "neural_map.html",
-   "bytes": 49149,
-   "sha256": "41506c281bdc21e021c4107930c75a47c44a096d0217e01129eb8129ff12c538"
+   "bytes": 50792,
+   "sha256": "f6c7f9af9637dbc74277f1afb35ed16a85bfb6d7b51795188acdbf3fca1de51a"
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 96946,
-   "sha256": "80a42b85ac211d662b9d740b29f704d35fcfaacfb1468e09c0ffb94d10ac75b6"
+   "bytes": 115655,
+   "sha256": "4e45da8e0914d1993826e3566f5b7599cbca06d6fdd582e5ed43a65da75c8df3"
   },
   {
    "path": "pull_src.sh",
@@ -166,13 +166,13 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 92003,
-   "sha256": "1d5a34340c1b2194b5d626689969a491f4ca5604d31717d0ca62570106f31876"
+   "bytes": 191127,
+   "sha256": "296757b9b6cab43696995324016a6bd28099ad97fb8bc81c8f90464ec66ba615"
   },
   {
    "path": "research_registry.py",
-   "bytes": 20405,
-   "sha256": "e9b50c6cc20301826d127e628640af05e87802ce29412fa75f2ea72de8ad7393"
+   "bytes": 20428,
+   "sha256": "8ca8fc36f8ef9a66c96ffc9edb21745060a32777a81a4d4c89a2c6bbb5251df7"
   },
   {
    "path": "research_ui.js",

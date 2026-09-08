@@ -177,12 +177,14 @@ cast = f'''
   <dl>
     <dt>Donald Trump</dt><dd>The report's principal subject: <a href="#{S['Formation: The Making of the Man']}">formation and early financing</a>, <a href="#{crown}">presidential authority</a>, and <a href="#{money}">family businesses</a>.</dd>
     <dt>Wilbur Ross</dt><dd>Trace his <a href="/topics/trump-early-financing.html">Rothschild Inc. creditor-side work in the Taj restructuring</a> and his later role as Trump's Commerce secretary. The <a href="/neural.html?entity=ROSS&amp;topic=trump-early-financing">dated map</a> keeps employment, negotiation and public office distinct.</dd>
-    <dt>Donald Trump Jr.</dt><dd>1789 Capital; Polymarket adviser. His investment and advisory roles are covered in <a href="#{money}">the money architecture</a>. <a href="https://1789capital.vc/don-trump-jr">1789's partner biography</a>.</dd>
-    <dt>Eric Trump</dt><dd>American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Read <a href="#u-corrections">the correction</a> alongside <a href="#{money}">the family portfolio</a>.</dd>
+    <dt>Donald Trump Jr.</dt><dd>1789 Capital; Polymarket adviser. His investment and advisory roles are covered in <a href="#{money}">the money architecture</a>. <a href="https://1789capital.vc/don-trump-jr">1789's partner biography</a>. <a href="/neural.html?entity=DONALD_TRUMP_JR">View individual connections</a>.</dd>
+    <dt>Eric Trump</dt><dd>American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Read <a href="#u-corrections">the correction</a> alongside <a href="#{money}">the family portfolio</a>. <a href="/neural.html?entity=ERIC_TRUMP">View individual connections</a>.</dd>
     <dt>Steve Witkoff</dt><dd>Diplomacy and financial disclosures, including the distinction between agency and OGE certification. Read <a href="#u-corrections">the dated certification correction</a> and <a href="#{money}">the envoy economy</a>; his son's company roles are listed separately.</dd>
-    <dt>Zach Witkoff</dt><dd>WLF CEO, trust-bank president, ALT5 chairman. Follow <a href="#{money}">the company and trust-bank records</a>.</dd>
+    <dt>Zach Witkoff</dt><dd>WLF CEO, trust-bank president, ALT5 chairman. Follow <a href="#{money}">the company and trust-bank records</a>. <a href="/neural.html?entity=ZACH_WITKOFF">View individual connections</a>.</dd>
     <dt>Jared Kushner</dt><dd>Affinity Partners — Gulf sovereign money; the envoy economy's other pole. Read <a href="#{money}">the envoy economy and foreign-state revenue chapters</a>.</dd>
-    <dt>JD Vance</dt><dd>Vice-presidential authority and the Rockbridge / 1789 references in <a href="#{ideol}">the network chapter</a>.</dd>
+    <dt>JD Vance</dt><dd>Vice-presidential authority and the Rockbridge / 1789 references in <a href="#{ideol}">the network chapter</a>. <a href="/neural.html?entity=VANCE">Dated individual connections</a>.</dd>
+    <dt>Elon Musk</dt><dd>The dated records connect Trump's November 2024 advisory-role announcement with Musk's January 2025 AfD campaign appearance. <a href="/neural.html?entity=MUSK">Explore the map</a> and <a href="/topics/germany-afd.html#records">source context</a>.</dd>
+    <dt>Alice Weidel</dt><dd>AfD's 2025 chancellor candidate; campaign participation and a vice-presidential pool record are kept separately dated. <a href="/neural.html?entity=WEIDEL">Explore her connections</a>.</dd>
     <dt>Stephen Miller</dt><dd>Immigration policy and the enforcement structure covered in <a href="#{curdoc}">the current documentation</a>.</dd>
     <dt>Todd Blanche</dt><dd>The president's former defense lawyer; confirmed Attorney General Aug 8, 2026, 50&ndash;49&ndash;1; under Sullivan's contempt warning over the Epstein files. Read <a href="#update">the dated record and corrections</a>.</dd>
     <dt>Kash Patel</dt><dd>FBI leadership and the investigations examined in <a href="#{curdoc}">the current documentation</a>.</dd>
@@ -270,7 +272,7 @@ def topic_menu():
         if not topics:
             continue
         links = "".join(f'<a href="/topics/{html.escape(t["id"], quote=True)}.html">'
-                        f'{html.escape(t["title"])}</a>' for t in topics[:3])
+                        f'{html.escape(t["title"])}</a>' for t in topics)
         groups.append(f'<div><h3>{html.escape(category["title"])}</h3>{links}</div>')
     return ('<div class="topic-menu-grid">' + "".join(groups) + '</div>'
             '<a class="browse-topics" href="/topics.html">Browse all topics &rarr;</a>')
