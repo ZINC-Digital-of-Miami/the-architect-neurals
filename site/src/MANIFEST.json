@@ -7,27 +7,27 @@
  "counts": {
   "agents": 8,
   "briefs": 3,
-  "corrections": 17,
+  "corrections": 18,
   "clocks": 12,
-  "map_nodes": 31,
-  "map_edges": 62,
-  "index_bytes": 637562
+  "map_nodes": 48,
+  "map_edges": 81,
+  "index_bytes": 638163
  },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 22691,
-   "sha256": "5fc911100b18c93a03b4249d6e01cf9e6c9fba6c3d68cc51d2b965283abc3021"
+   "bytes": 12838,
+   "sha256": "4ed559699300647376b31705385873a5ef63fb676a33d79e832b84671d989300"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 14293,
-   "sha256": "88b9cff80b1c39df5dcdbe0f26a7d9a3b548ae0fcfbbb3085f4dd150e634bd34"
+   "bytes": 11059,
+   "sha256": "4061f135bfdf0d40386d2b7659981a5d6422aba8c50fa627e13bba592a0bce81"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 22234,
-   "sha256": "fa8feb80586f86018aad0244a26d38c6277b100e61ac471f72535751ec9f2d70"
+   "bytes": 10795,
+   "sha256": "53bef2f8bf9317485890cd9dcec9e293dbd4579e452c5d54426bf0c79c659127"
   },
   {
    "path": "agents/1-elections.md",
@@ -96,8 +96,8 @@
   },
   {
    "path": "build_neural_map.js",
-   "bytes": 2009,
-   "sha256": "c24d345bfa7a591c6d1d3a907ddeae17ec17cf676f77d7c8edb5f42f89955086"
+   "bytes": 1930,
+   "sha256": "2e1d8ca77a0cd83f302ee56b5b755b96b4ca94bad2eeda850274e080324c9258"
   },
   {
    "path": "build_neural_map.py",
@@ -105,34 +105,39 @@
    "sha256": "6a40403eca7da0335bb8e7b701056ef76baa26da00537f2a617857dc0415a3e1"
   },
   {
+   "path": "build_research.py",
+   "bytes": 19193,
+   "sha256": "315f197fe848d35ee9fbbb4a2e12872599f0660b88b4f5b6b08668ffc49b2c60"
+  },
+  {
    "path": "build_site3.py",
-   "bytes": 31920,
-   "sha256": "c48af7597103e77c15d062e6e362fee4462f5e450f4c6e7c6a1b956128924221"
+   "bytes": 38822,
+   "sha256": "0b7ed35e150a3d4f71b9ce208ebc89d9e3a53fac58c679bd6aeead81cbbd21b3"
   },
   {
    "path": "check.sh",
-   "bytes": 6825,
-   "sha256": "d40264cee725d9f209531ce8279e2a80bac997c176065899f31b1c98bb490cf8"
+   "bytes": 6144,
+   "sha256": "80f825410b4c6a3c9e2da7b001c365ce93c7cc49173bd80b94894dffea2ad01d"
   },
   {
    "path": "deploy.sh",
-   "bytes": 2699,
-   "sha256": "d4f5a4d6ae6f0e15c6c099f4d3c8bd44ed6d648b3748e62c490da412512d5afb"
+   "bytes": 292,
+   "sha256": "fe0c15e6a56146d3ce6747363b61aacfdabf77d931b6559f64c3b624659b7036"
   },
   {
    "path": "final.css",
-   "bytes": 18884,
-   "sha256": "2ef00da80bbd84f45b8ac1009f7e3e4512a00cdacf2a22e98f6139c8acad4e45"
+   "bytes": 37040,
+   "sha256": "5f1d0cc6dcc3b78c786b5804f8445f5e7ddb72b50910529f065e52e3665f9afa"
   },
   {
    "path": "map_source.json",
-   "bytes": 9813,
-   "sha256": "b4f8002a5f2af0f07e65623671e2cf86eaa2f563a95a27e5bdab83013f2c57d7"
+   "bytes": 16741,
+   "sha256": "548ddf15f36ec0a63099c9f06364f4ea149599691ea3affa5a2650a8308c919b"
   },
   {
    "path": "mapgen.js",
-   "bytes": 7218,
-   "sha256": "f2276bf6c5da7969b2c3cb6a89ed9be4e8ed70a1badfc16cb3d049127a60db51"
+   "bytes": 8349,
+   "sha256": "cf588bd8e6c33fdedfa1fb211b9f55b70747a622393cbb255f71a2422df0d22a"
   },
   {
    "path": "master_report.md",
@@ -141,23 +146,43 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 7528,
-   "sha256": "ffd339639662ba3b23a2584eaec774958d07c3fbcac8e87b0626d19e1af97447"
+   "bytes": 10582,
+   "sha256": "0c39c1384482c49aa6013d8ec3b13339bb0d902214bf949ae9823ed3b4ec9eff"
   },
   {
    "path": "neural_map.html",
-   "bytes": 18516,
-   "sha256": "a2b48de67b6e2ee81648c94e25ad56627f9425b3148ecc267207dbaa94b167bc"
+   "bytes": 49149,
+   "sha256": "41506c281bdc21e021c4107930c75a47c44a096d0217e01129eb8129ff12c538"
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 70791,
-   "sha256": "8b536bec4a439bc59a0759ed83db0467b69b765e7c6a0361eabeb75ee095fe38"
+   "bytes": 96946,
+   "sha256": "80a42b85ac211d662b9d740b29f704d35fcfaacfb1468e09c0ffb94d10ac75b6"
   },
   {
    "path": "pull_src.sh",
-   "bytes": 2600,
-   "sha256": "a85d4051b9c88b709151af60574910aeaaf581ba3b88f8ca72a8db7865f240c4"
+   "bytes": 242,
+   "sha256": "30ee1aa5c7adbe28b890f8b0d758d0eeff996a496583daf97c03f3c04b1fbe3a"
+  },
+  {
+   "path": "research_registry.json",
+   "bytes": 92003,
+   "sha256": "1d5a34340c1b2194b5d626689969a491f4ca5604d31717d0ca62570106f31876"
+  },
+  {
+   "path": "research_registry.py",
+   "bytes": 20405,
+   "sha256": "e9b50c6cc20301826d127e628640af05e87802ce29412fa75f2ea72de8ad7393"
+  },
+  {
+   "path": "research_ui.js",
+   "bytes": 4550,
+   "sha256": "e608039dbc7845b1e7d5ae9cd1e9ee5b5a185cd852a189fcb4ec0826c16a115c"
+  },
+  {
+   "path": "site_ui.js",
+   "bytes": 9624,
+   "sha256": "90544cf851a7738f2ed542687b26745b3565de4e13dd9af5255526d541cf8efa"
   },
   {
    "path": "sources_manifest.md",
@@ -166,8 +191,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 41274,
-   "sha256": "f410807ad029437101823f4325e68c45a6ee27008c674fe095d069dc484961d4"
+   "bytes": 42059,
+   "sha256": "34736aa336903d9550240bbb05acd1bdea19aa56c374b0c91d65e45506fcc897"
   }
  ]
 }

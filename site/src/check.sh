@@ -20,7 +20,7 @@ for id in chapter-0-b chapter-c-2 chapter-e-2 chapter-e-3 chapter-g-2 chapter-h-
   grep -q "id=\"$id" site/index.html                      || fail "missing #$id — consolidated-edition chapter dropped"
 done
 [ "$(grep -c 'class="clock"' site/index.html)" -ge 9 ]    || fail "silence ledger has fewer than 9 clocks — a clock was dropped"
-# map prose must match map data (neural_map.html counts are hand-typed)
+# rendered map counts and date must match generated map data
 NN=$(python3 -c "import json;d=json.load(open('site/map/data.json'));print(len(d['nodes']))")
 NE=$(python3 -c "import json;d=json.load(open('site/map/data.json'));print(len(d['edges']))")
 grep -q "$NN nodes · $NE edges" site/neural.html          || fail "neural.html says a different node/edge count than map/data.json ($NN/$NE)"
@@ -50,22 +50,19 @@ if dead: print("dead in-page anchors:",dead[:10]); sys.exit(1)
 for ph in ["YYYY-MM-DD","{{SUNDAY}}","{{SITE}}","Edition NNN","EDITION NNN","The topic lead."]:
     if ph in h: print("template residue in index:",ph); sys.exit(1)
 PY
-# ---- the look is frozen: final.css may change only when this pin is updated by hand ----
-FINAL_CSS_SHA=$(shasum -a 256 src/final.css | cut -c1-16)
-[ "$FINAL_CSS_SHA" = "2ef00da80bbd84f4" ]                    || fail "src/final.css changed (sha $FINAL_CSS_SHA) — the look is settled; if this is deliberate, update 2ef00da80bbd84f4 in check.sh"
-# ---- the ENTIRE design is locked (owner, 2026-08-22): map-page CSS, the site shell generator, the brief template ----
-python3 - <<'PY' || fail "design surface changed — the look is settled; if deliberate, update the three DESIGN pins in check.sh"
-import re,hashlib,pathlib
-sha=lambda t: hashlib.sha256(t.encode()).hexdigest()[:16]
-nm=pathlib.Path("src/neural_map.html").read_text(); st=re.search(r"<style>.*?</style>",nm,re.S).group(0)
-b=pathlib.Path("src/build_site3.py").read_text(); shell=re.sub(r"rail_stops = \[.*?\n\]\n","rail_stops = [...]\n",b,flags=re.S)
-tp=pathlib.Path("src/briefs/_TEMPLATE.html").read_text()
-bad=[]
-if sha(st)!="9ff6113991fe4c1c": bad.append(f"neural_map.html <style> (now {sha(st)}, pinned 9ff6113991fe4c1c)")
-if sha(shell)!="293b2a68a5f22070": bad.append(f"build_site3.py outside rail_stops (now {sha(shell)}, pinned 293b2a68a5f22070)")
-if sha(tp)!="91e3ef93168f0864": bad.append(f"_TEMPLATE.html (now {sha(tp)}, pinned 91e3ef93168f0864)")
-if bad: print("DESIGN PIN MISMATCH: "+"; ".join(bad)); raise SystemExit(1)
-PY
+# The owner authorized the responsive design; content remains independently protected.
+python3 scripts/preservation.py check || fail "historical content preservation"
+python3 scripts/check_artifact.py || fail "stale generated artifact"
+if [ -s .architecture/base-preservation.json ]; then
+  python3 scripts/preservation.py check --baseline .architecture/base-preservation.json || fail "prior publication preservation"
+fi
+if [ -f src/research_registry.py ]; then
+  if [ -s .architecture/base-registry.json ]; then
+    python3 src/research_registry.py validate --previous .architecture/base-registry.json || fail "registry history transition"
+  else
+    python3 src/research_registry.py validate || fail "research registry"
+  fi
+fi
 # ---- monotonic guards vs the previous week's pulled manifest (present only inside a work/ pull) ----
 if [ -s MANIFEST.json ]; then
 python3 - <<'PY' || fail "monotonic guard"

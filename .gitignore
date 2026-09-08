@@ -3,3 +3,6 @@ site/.vercel/
 work/
 .plan-triage/
 work.prev-*/
+.architecture/
+__pycache__/
+*.pyc

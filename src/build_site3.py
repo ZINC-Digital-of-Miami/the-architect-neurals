@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
-"""v3.1: white, large-type, full-width shell with sidebar + top menu, orientation layer,
-part openers, clocks, node diagram.
+"""Editorial static-site builder with shared navigation, accessible reading controls,
+preserved report, weekly archive, relationship map, and source-backed research pages.
 
 Reads sources from this script's directory (src/): master_report.md, update_part2.html,
 sources_manifest.md, final.css, briefs/*.html.
 Emits ../site/ (index.html + styles.css + sources.html + briefs/*.html + robots.txt + sitemap.xml)
 plus artifact.html (same body, no document wrapper) for publishers that wrap content themselves.
 
-Weekly: drop the new briefs/YYYY-MM-DD.html and rewrite update_part2.html, then re-run.
+Weekly: add briefs/YYYY-MM-DD.html and refresh the dated update in update_part2.html,
+preserving every prior correction and archive record, then re-run.
 Brief numbering, the edition number, the masthead date, the archive, the per-brief pages,
 and the sitemap all follow from the briefs/ directory automatically."""
-import re, html, pathlib, unicodedata, os
+import re, html, pathlib, unicodedata, os, json
 import markdown
 
 # Portable paths. Sources live beside this script; output goes to ../site (the Vercel deploy dir).
@@ -34,6 +35,10 @@ notes = [
   ED % 'Blanche was confirmed Attorney General 50–49–1 at 4:17 a.m. on Aug 8, 2026 (Senate roll call #230; Collins and Murkowski no), and sworn in Aug 10 by Third Circuit Judge Emil Bove, his former co-defense counsel, with press excluded. See <a href="#update">The Record Since July 19</a>.'),
  ("## Current Documentation (2025–July 2026)",
   ED % 'This part runs through July 19, 2026. For July 19 – August 16 — the war, the count, the dockets, the money — see <a href="#update">The Record Since July 19</a>.'),
+ ("These are documented facts about electoral mathematics",
+  '<span class="ed-note">[<strong>Correction, 2026-09-08 · C-017</strong> — Trump won the 2024 national popular-vote plurality: 77,302,580 votes (49.80%), ahead of Harris. A plurality below 50% is not a popular-vote loss. See <a href="#u-c017">the FEC record and correction</a>.]</span>'),
+ ("## Formation: The Making of the Man",
+  '<span class="ed-note">[<strong>Research added, 2026-09-08</strong> — Follow <a href="/topics/trump-early-financing.html">Trump’s early financing, Rothschild Inc. and Wilbur Ross</a>: the creditor negotiations, exact entities, later personnel bridge and remaining records to check. <a href="/neural.html?topic=trump-early-financing">Explore the dated connections</a>; <a href="/topics/trump-later-financing.html">continue into later financing</a>.]</span>'),
 ]
 for anchor, note in notes:
     idx = body_md.find(anchor)
@@ -99,6 +104,11 @@ for i, chunk in enumerate(parts):
           f'<header class="part-open"><div class="pmeta"><span>Section {order} of {len(h2s)}</span>'
           f'<span class="rt">~{mins} min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div>'
           f'<h2 id="{sid}">{inner}</h2>' + (f'<p class="dek">{dek}</p>' if dek else "") + "</header>")
+        if txt == "Formation: The Making of the Man":
+            out.append('<aside class="research-note" aria-label="Research navigation">'
+                       '<span class="topic-meta">Research navigation · 2026-09-08</span><br>'
+                       '<a href="/topics/trump-early-financing.html">'
+                       'Research topic: early financing and creditor records</a></aside>')
     else:
         out.append(chunk)
 body_html = "".join(out)
@@ -148,31 +158,52 @@ howto = f'''
   </div>
   <div class="card paths">
     <h4>Three ways in</h4>
-    <a href="#the-sentence"><span class="pm">~10 MIN</span><span class="pt">The ten-minute read</span>
-      <span class="pd">The sentence &rarr; <a href="#{execs}">executive summary</a> &rarr; <a href="#u-week">this week's lede</a> &rarr; <a href="#u-node">the node</a> &rarr; <a href="#{concl}">the conclusion</a>.</span></a>
-    <a href="#{money}"><span class="pm">~50 MIN</span><span class="pt">The evidence spine</span>
-      <span class="pd">The <a href="#{money}">money architecture</a> &rarr; <a href="#{curdoc}">current documentation</a> &rarr; <a href="#u-corrections">corrections</a> &rarr; <a href="#u-silence">the silence ledger</a>.</span></a>
-    <a href="#{execs}"><span class="pm">~{read_total//60} HR {read_total%60} MIN</span><span class="pt">The full synthesis</span>
-      <span class="pd">Cover to conclusion in order, the <a href="#{hist}">historical lens</a> in full, honest assessment included.</span></a>
+    <div class="reading-path"><span class="pm">~10 MIN</span><a class="pt" href="#the-sentence">The ten-minute read</a>
+      <span class="pd">The sentence &rarr; <a href="#{execs}">executive summary</a> &rarr; <a href="#u-week">this week's lede</a> &rarr; <a href="#u-node">the node</a> &rarr; <a href="#{concl}">the conclusion</a>.</span></div>
+    <div class="reading-path"><span class="pm">~50 MIN</span><a class="pt" href="#{money}">The evidence spine</a>
+      <span class="pd">The <a href="#{money}">money architecture</a> &rarr; <a href="#{curdoc}">current documentation</a> &rarr; <a href="#u-corrections">corrections</a> &rarr; <a href="#u-silence">the silence ledger</a>.</span></div>
+    <div class="reading-path"><span class="pm">~{read_total//60} HR {read_total%60} MIN</span><a class="pt" href="#{execs}">The full synthesis</a>
+      <span class="pd">Cover to conclusion in order, the <a href="#{hist}">historical lens</a> in full, honest assessment included.</span></div>
   </div>
 </div>
 </section>'''
 
-cast = '''
+cast = f'''
 <section id="cast">
 <div class="card cast">
   <h4>The cast, briefly — people and vehicles this report keeps distinct</h4>
+  <p>A guide to the principal figures already covered in the report. Follow each section for its dated evidence, corrections, denials, and limits.</p>
+  <h5>People</h5>
+  <dl>
+    <dt>Donald Trump</dt><dd>The report's principal subject: <a href="#{S['Formation: The Making of the Man']}">formation and early financing</a>, <a href="#{crown}">presidential authority</a>, and <a href="#{money}">family businesses</a>.</dd>
+    <dt>Wilbur Ross</dt><dd>Trace his <a href="/topics/trump-early-financing.html">Rothschild Inc. creditor-side work in the Taj restructuring</a> and his later role as Trump's Commerce secretary. The <a href="/neural.html?entity=ROSS&amp;topic=trump-early-financing">dated map</a> keeps employment, negotiation and public office distinct.</dd>
+    <dt>Donald Trump Jr.</dt><dd>1789 Capital; Polymarket adviser. His investment and advisory roles are covered in <a href="#{money}">the money architecture</a>. <a href="https://1789capital.vc/don-trump-jr">1789's partner biography</a>.</dd>
+    <dt>Eric Trump</dt><dd>American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Read <a href="#u-corrections">the correction</a> alongside <a href="#{money}">the family portfolio</a>.</dd>
+    <dt>Steve Witkoff</dt><dd>Diplomacy and financial disclosures, including the distinction between agency and OGE certification. Read <a href="#u-corrections">the dated certification correction</a> and <a href="#{money}">the envoy economy</a>; his son's company roles are listed separately.</dd>
+    <dt>Zach Witkoff</dt><dd>WLF CEO, trust-bank president, ALT5 chairman. Follow <a href="#{money}">the company and trust-bank records</a>.</dd>
+    <dt>Jared Kushner</dt><dd>Affinity Partners — Gulf sovereign money; the envoy economy's other pole. Read <a href="#{money}">the envoy economy and foreign-state revenue chapters</a>.</dd>
+    <dt>JD Vance</dt><dd>Vice-presidential authority and the Rockbridge / 1789 references in <a href="#{ideol}">the network chapter</a>.</dd>
+    <dt>Stephen Miller</dt><dd>Immigration policy and the enforcement structure covered in <a href="#{curdoc}">the current documentation</a>.</dd>
+    <dt>Todd Blanche</dt><dd>The president's former defense lawyer; confirmed Attorney General Aug 8, 2026, 50&ndash;49&ndash;1; under Sullivan's contempt warning over the Epstein files. Read <a href="#update">the dated record and corrections</a>.</dd>
+    <dt>Kash Patel</dt><dd>FBI leadership and the investigations examined in <a href="#{curdoc}">the current documentation</a>.</dd>
+    <dt>Russell Vought</dt><dd>OMB, Project 2025, and executive-branch personnel policy in <a href="#{curdoc}">the blueprint and machinery chapters</a>.</dd>
+    <dt>Omeed Malik</dt><dd>1789 Capital and the financing connections identified in <a href="#{ideol}">the network chapter</a>.</dd>
+    <dt>Chris Buskirk</dt><dd>1789 Capital and the network's organizing connections in <a href="#{ideol}">the network chapter</a>.</dd>
+    <dt>Rebekah Mercer</dt><dd>1789 Capital and the financing references in <a href="#{ideol}">the network chapter</a>.</dd>
+    <dt>David Sacks</dt><dd>The crypto-policy and investment references covered in <a href="#{money}">the money architecture</a> and <a href="#{ideol}">network chapter</a>.</dd>
+    <dt>Justin Sun</dt><dd>Token purchases and regulatory proceedings documented in <a href="#{money}">the crypto ledger</a>.</dd>
+    <dt>Changpeng Zhao</dt><dd>Binance, WLF-related transactions, and the pardon record. <a href="#{money}">The report distinguishes the documented sequence from alleged causation</a>.</dd>
+    <dt>Sheikh Tahnoon bin Zayed Al Nahyan</dt><dd>The UAE-linked financing and MGX / USD1 transaction covered in <a href="#{money}">the foreign-state and crypto records</a>.</dd>
+    <dt>Mohammed bin Salman</dt><dd>Saudi Arabia, PIF, and the sovereign-funding references in <a href="#{money}">the envoy economy</a>.</dd>
+  </dl>
+  <h5>Companies and vehicles</h5>
   <dl>
     <dt>World Liberty Financial (WLF / WLFI / USD1)</dt><dd>The family crypto venture: governance token (WLFI) and dollar-pegged stablecoin (USD1, ~$4B).</dd>
     <dt>DT Marks DEFI LLC</dt><dd>The Trump vehicle that WLF's own disclosures say receives 75% of token-sale proceeds [A].</dd>
     <dt>DT Marks SC LLC</dt><dd>A second Trump vehicle — named in OCC Corporate Decision #1385 as a passive indirect investor in the family's chartered trust bank [A].</dd>
     <dt>World Liberty Trust Company, N.A.</dt><dd>The national trust bank the OCC conditionally approved Aug 14, 2026. Zachary Witkoff, president and director.</dd>
     <dt>ALT5 Sigma = AI Financial Corp (AIFC)</dt><dd>One SEC registrant (CIK 862861), renamed April 2026 — WLFI's largest disclosed token holder, &minus;92.2% with going-concern doubt.</dd>
-    <dt>Zach Witkoff &middot; Steve Witkoff</dt><dd>Son: WLF CEO, trust-bank president, ALT5 chairman. Father: special envoy whose OGE disclosure remains uncertified ~12 months on.</dd>
-    <dt>Eric Trump &middot; Donald Trump Jr.</dt><dd>Eric: American Bitcoin; ALT5 <em>observer</em>, never seated as director (corrected at [A]). Don Jr.: 1789 Capital; Polymarket adviser.</dd>
-    <dt>Jared Kushner</dt><dd>Affinity Partners — Gulf sovereign money; the envoy economy's other pole.</dd>
     <dt>TMTG / DJT (Truth Social)</dt><dd>The president's media company — whose API sells structured post feeds to ~10 customers, primarily high-frequency trading firms, per its interim CEO on the record.</dd>
-    <dt>Todd Blanche</dt><dd>The president's former defense lawyer; confirmed Attorney General Aug 8, 2026, 50&ndash;49&ndash;1; under Sullivan's contempt warning over the Epstein files.</dd>
   </dl>
 </div>
 </section>'''
@@ -197,93 +228,91 @@ rail = ('<section id="dates"><div class="card rail-wrap"><h4>The nearest dates �
  + "".join(f'<div class="stop {b}"><a href="#u-threads"><div class="d">{d}</div><div class="w">{w}</div></a></div>' for d,w,b in rail_stops)
  + "</div></div></section>")
 
-# ---------- nav + sidebar ----------
-story_menu = "".join(f'<a href="#{sid}">{html.escape(t)}</a>' for sid, t in h2s)
-menu = f'''<div class="progress" id="progress"></div>
-<nav class="topnav" id="top">
-  <a class="brand" href="#top">THE&nbsp;ARCHITECTURE</a>
-  <span class="whereami" id="whereami"></span>
-  <div class="navlinks">
-    <div class="navgroup"><button type="button">Start ▾</button><div class="dd">
-      <a href="#the-sentence">The Sentence</a><a href="#arch">The Three Architectures</a>
-      <a href="#howto">How to Read &middot; Three Ways In</a><a href="#cast">The Cast, Briefly</a>
-      <a href="#dates">The Nearest Dates</a></div></div>
-    <div class="navgroup"><button type="button">Updates ▾</button><div class="dd">
-      <a href="#update">The Record Since July 19</a><a href="#u-gap">The Gap — Jul 19 &rarr; Aug 9</a>
-      <a href="#u-week">The Week — Aug 9&ndash;16</a><a href="#u-node">The Node</a>
-      <a href="#u-corrections">Corrections Log</a><a href="#u-silence">The Silence Ledger</a>
-      <a href="#u-threads">Open Threads &middot; Next Checks</a><a href="#brief-001">Weekly Brief Archive</a></div></div>
-    <a class="nav-flag" href="/neural.html">Neural Map</a>
-    <div class="navgroup"><button type="button">The Story ▾</button><div class="dd">{story_menu}</div></div>
-    <a href="#sources">Sources</a>
-  </div>
-</nav>'''
-
-# sidebar with h3 children
+# ---------- shared navigation and reading chrome ----------
 children = {}
 cur = None
-for tag, sid, t in toc:
-    if tag == "h2": cur = sid; children[cur] = []
-    elif cur: children[cur].append((sid, t))
+for tag, sid, text in toc:
+    if tag == "h2":
+        cur = sid
+        children[cur] = []
+    elif cur:
+        children[cur].append((sid, text))
 sb_story = ""
-for sid, t in h2s:
-    kids = children.get(sid, [])
-    inner = "".join(f'<a href="#{k}">{html.escape(kt)}</a>' for k, kt in kids)
-    sb_story += (f'<details data-part="{sid}"><summary><a href="#{sid}" style="all:unset;cursor:pointer">{html.escape(t)}</a></summary>'
-                 + (f"<div>{inner}</div>" if inner else "") + "</details>")
-sidebar = f'''<aside class="sidebar" aria-label="Section navigation">
-  <div class="sb-label">Orient</div>
-  <a href="#the-sentence">The Sentence</a><a href="#arch">Three Architectures</a>
-  <a href="#howto">How to Read</a><a href="#cast">The Cast</a><a href="#dates">The Nearest Dates</a>
-  <div class="sb-label">The Record</div>
-  <a href="#update">Since July 19</a><a href="#u-gap">— The Gap</a><a href="#u-week">— The Week</a>
-  <a href="#u-node">— The Node</a><a href="#u-corrections">— Corrections</a>
-  <a href="#u-silence">— Silence Ledger</a><a href="#u-threads">— Next Checks</a>
-  <a class="sb-flag" href="/neural.html">The Neural Map &rarr;</a>
-  <div class="sb-label">The Story</div>
-  {sb_story}
-  <div class="sb-label">Reference</div>
-  <a href="#brief-001">Weekly Briefs</a><a href="#sources">Source Archive</a>
-</aside>'''
+for sid, text in h2s:
+    links = f'<a href="/#{sid}">Read this section</a>'
+    links += "".join(f'<a href="/#{child}">{html.escape(label)}</a>'
+                     for child, label in children.get(sid, []))
+    sb_story += (f'<details data-part="{sid}"><summary>{html.escape(text)}</summary>'
+                 f'<div>{links}</div></details>')
+sidebar = f'''<div class="sb-label">Start here</div>
+<a href="/#cover">The report</a><a href="/#howto">How to read this</a>
+<a href="/#edition-notes">Edition notes</a>
+<div class="sb-label">The record</div>
+<a href="/#update">This week's record</a><a href="/#brief-001">Weekly briefs</a>
+<a href="/#u-corrections">Corrections</a><a href="/#u-silence">Silence ledger</a>
+<a href="/#u-threads">Next checks</a>
+<div class="sb-label">The story</div>{sb_story}
+<div class="sb-label">Reference</div>
+<a href="/topics.html">Topics</a><a href="/synthesis.html">Synthesis</a>
+<a href="/neural.html">Neural map</a><a href="/sources.html">Sources</a>'''
 
-JS = '''<script>
-document.querySelectorAll('.navgroup > button').forEach(function(b){
-  b.addEventListener('click', function(e){ e.stopPropagation();
-    var g=b.parentElement, open=g.classList.contains('open');
-    document.querySelectorAll('.navgroup.open').forEach(function(x){x.classList.remove('open')});
-    if(!open) g.classList.add('open'); });});
-document.addEventListener('click', function(){
-  document.querySelectorAll('.navgroup.open').forEach(function(x){x.classList.remove('open')});});
-var bar=document.getElementById('progress');
-addEventListener('scroll', function(){
-  var h=document.documentElement, p=h.scrollTop/(h.scrollHeight-h.clientHeight);
-  bar.style.width=(p*100).toFixed(2)+'%';}, {passive:true});
-var where=document.getElementById('whereami');
-var targets=[].slice.call(document.querySelectorAll('section[id], h2[id], h3[id], h4[id]'));
-var sbLinks={}; [].slice.call(document.querySelectorAll('.sidebar a[href^="#"]')).forEach(function(a){
-  sbLinks[a.getAttribute('href').slice(1)]=a;});
-var sbParts={}; [].slice.call(document.querySelectorAll('.sidebar details[data-part]')).forEach(function(d){
-  sbParts[d.getAttribute('data-part')]=d;});
-function label(el){var t=el.tagName==='SECTION'?(el.querySelector('h2,h4')||el):el;return (t.textContent||'').trim().slice(0,60);}
-var current=null;
-var io=new IntersectionObserver(function(es){
-  es.forEach(function(e){ if(e.isIntersecting){ current=e.target;
-    if(where) where.textContent='You are in: '+label(current);
-    var id=current.id;
-    document.querySelectorAll('.sidebar a.on').forEach(function(x){x.classList.remove('on')});
-    document.querySelectorAll('.sidebar details.on').forEach(function(x){x.classList.remove('on')});
-    if(sbLinks[id]) sbLinks[id].classList.add('on');
-    var el=current;
-    while(el && el!==document.body){
-      if(el.id && sbParts[el.id]){sbParts[el.id].classList.add('on');sbParts[el.id].open=true;break;} el=el.parentElement;}
-    if(sbParts[id]){sbParts[id].classList.add('on');sbParts[id].open=true;}
-    var h2p=current.closest && current.closest('header.part-open');
-    var pd=null, node=current;
-    if(current.tagName==='H3'){ var prev=current; while(prev && !(prev.tagName==='H2'&&prev.id)){prev=prev.previousElementSibling||prev.parentElement;}
-      if(prev&&prev.id&&sbParts[prev.id]){sbParts[prev.id].classList.add('on');sbParts[prev.id].open=true;}}
-  }});},{rootMargin:'-35% 0px -55% 0px'});
-targets.forEach(function(t){io.observe(t)});
-</script>'''
+
+def topic_menu():
+    """The registry supplies labels and routes; it never changes the authored report."""
+    registry_path = ROOT / "research_registry.json"
+    if not registry_path.exists():
+        return '<a href="/topics.html">Browse all topics &rarr;</a>'
+    registry = json.loads(registry_path.read_text())
+    groups = []
+    for category in registry.get("categories", []):
+        topics = [t for t in registry.get("topics", [])
+                  if category["id"] in t.get("categoryIds", [])]
+        if not topics:
+            continue
+        links = "".join(f'<a href="/topics/{html.escape(t["id"], quote=True)}.html">'
+                        f'{html.escape(t["title"])}</a>' for t in topics[:3])
+        groups.append(f'<div><h3>{html.escape(category["title"])}</h3>{links}</div>')
+    return ('<div class="topic-menu-grid">' + "".join(groups) + '</div>'
+            '<a class="browse-topics" href="/topics.html">Browse all topics &rarr;</a>')
+
+
+def site_header(active="report"):
+    def link(label, href, key):
+        current = ' aria-current="page"' if active == key else ''
+        return f'<a href="{href}"{current}>{label}</a>'
+    topics_current = ' class="nav-current"' if active == "topics" else ''
+    return ('<a class="skip-link" href="#main-content">Skip to content</a>'
+            '<div class="progress" id="progress" aria-hidden="true"></div>'
+            '<header class="topnav" id="top"><a class="brand" href="/">THE ARCHITECTURE</a>'
+            '<button class="menu-toggle" type="button" data-ui-menu aria-expanded="false" '
+            'aria-controls="site-navigation"><span aria-hidden="true">☰</span> Menu</button>'
+            '<nav class="navlinks" id="site-navigation" aria-label="Main navigation">'
+            + link('Report', '/', 'report') + link('Weekly record', '/#update', 'record')
+            + f'<div class="navgroup"><button{topics_current} type="button" data-ui-dropdown aria-expanded="false" '
+            'aria-controls="topics-navigation">Topics <span aria-hidden="true">⌄</span></button>'
+            '<div class="dd topics-menu" id="topics-navigation" hidden>' + topic_menu() + '</div></div>'
+            + link('Synthesis', '/synthesis.html', 'synthesis')
+            + link('Neural map', '/neural.html', 'neural') + link('Sources', '/sources.html', 'sources')
+            + '<a class="search-link" href="/topics.html#topic-search" aria-label="Search topics">'
+            '<svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><circle cx="10" cy="10" r="6.5" '
+            'fill="none" stroke="currentColor" stroke-width="1.4"/><path d="m15 15 6 6" stroke="currentColor" '
+            'stroke-width="1.4"/></svg></a></nav></header>')
+
+
+def reading_controls(sidebar_html):
+    return ('''<dialog class="contents-dialog" id="contents-dialog" aria-labelledby="contents-heading">
+<div class="dialog-heading"><h2 id="contents-heading">Contents</h2>
+<button type="button" data-ui-close-contents aria-label="Close contents">Close <span aria-hidden="true">×</span></button></div>
+<nav class="contents-links sidebar-links" aria-label="Page contents">''' + sidebar_html + '''</nav></dialog>
+<div class="reader-bar" role="region" aria-label="Reading controls">
+<button type="button" data-ui-contents aria-controls="contents-dialog" aria-haspopup="dialog"><span aria-hidden="true">☰</span> Contents</button>
+<span class="reader-current">Current section: <span id="whereami">Introduction</span></span>
+<a class="reader-topics" href="/topics.html">Topics</a>
+<button type="button" data-ui-save><svg viewBox="0 0 16 20" width="13" height="17" aria-hidden="true"><path d="M2 1h12v17l-6-4-6 4Z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg> Save place</button>
+<button type="button" data-ui-resume hidden>Resume reading</button>
+<a class="reader-top" href="#top"><span aria-hidden="true">↑</span> Top</a>
+<progress id="reading-progress" max="100" value="0" aria-label="Page reading progress"></progress>
+</div><p class="reader-status" data-ui-status role="status" aria-live="polite"></p>''')
 
 # ---------- assemble shared body ----------
 update_html = (ROOT / "update_part2.html").read_text()
@@ -332,7 +361,7 @@ sources_section = ('<section id="sources"><h2><span class="num">REFERENCE</span>
 cover = (f'<header class="cover" id="cover">{head_html}'
          f'<div class="mast-meta"><span>MASTER REPORT: CONSOLIDATED EDITION &middot; 2026-08-22</span><span>RESEARCH BEGUN 2025-12</span>'
          f'<span>EDITION UPDATE {edition_no} &middot; {latest_brief}</span><span>~{read_total//60} HR {read_total%60} MIN &middot; {len(h2s)} SECTIONS</span></div>'
-         f'<details class="front-matter"><summary>Front matter — edition notes, table of contents, what this document is and is not</summary>'
+         f'<details class="front-matter" id="edition-notes"><summary>Front matter — edition notes, table of contents, what this document is and is not</summary>'
          f'<div class="fm-body">{fm_html}</div></details></header>')
 
 footer = f'''<footer class="site-footer">
@@ -341,8 +370,8 @@ footer = f'''<footer class="site-footer">
 </footer>'''
 
 content = (cover + sentence + arch3 + howto + cast + rail + update_html
-           + '<main class="story">' + body_html + "</main>" + brief_section + sources_section + footer)
-page_body = menu + '<div class="shell">' + sidebar + '<div class="content">' + content + "</div></div>" + JS
+           + '<article class="story" id="report-story">' + body_html + "</article>" + brief_section + sources_section + footer)
+
 
 css = (ROOT / "final.css").read_text()
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
@@ -353,42 +382,66 @@ TITLE = "The Architecture — Power, Money, and Ideology in the Second Trump Era
 DESC = ("An investigative synthesis of the second Trump era: the power architecture, the money architecture, "
         "and the ideology architecture — with a tiered-evidence weekly record, corrections log, and source archive.")
 
-site = f'''<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="index,follow">
-<title>{html.escape(TITLE)}</title>
-<meta name="description" content="{html.escape(DESC)}">
-<meta property="og:title" content="{html.escape(TITLE)}"><meta property="og:description" content="{html.escape(DESC)}">
-<meta property="og:type" content="article">
-{FONTS}<style>
-{css}</style>
-</head>
-<body>
-{page_body}
-</body>
-</html>'''
+def render_page(title, body_inner, *, active="report", sidebar_html=None,
+                description="", page_class=""):
+    """Shared editorial shell for preserved report, briefs, map and research pages.
+
+    body_inner is trusted generated HTML. sidebar_html is navigation HTML without IDs;
+    it appears in the desktop rail and the keyboard-accessible contents dialog.
+    Existing content, heading IDs and route shapes are not rewritten.
+    """
+    side = sidebar if sidebar_html is None else sidebar_html
+    table_number = 0
+    def wrap_table(match):
+        nonlocal table_number
+        table_number += 1
+        return (f'<div class="table-scroll" role="region" aria-label="Table {table_number}" '
+                f'tabindex="0">{match.group(0)}</div>')
+    body_inner = re.sub(r'<table\b[^>]*>.*?</table>', wrap_table, body_inner, flags=re.S)
+    body = (site_header(active) + '<div class="shell">'
+            '<aside class="sidebar sidebar-links" aria-label="Section navigation">' + side + '</aside>'
+            '<main class="content" id="main-content" tabindex="-1">' + body_inner + '</main></div>'
+            + reading_controls(side) + '<script src="/site-ui.js" defer></script>')
+    desc = html.escape(description or DESC, quote=True)
+    return ('''<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">'''
+            + f'<title>{html.escape(title)}</title><meta name="description" content="{desc}">'
+            + f'<meta property="og:title" content="{html.escape(title, quote=True)}">'
+            + f'<meta property="og:description" content="{desc}"><meta property="og:type" content="article">'
+            + FONTS + '<link rel="stylesheet" href="/styles.css"></head>'
+            + f'<body class="{html.escape(page_class, quote=True)}">{body}</body></html>')
+
+latest_record = (f'<a class="latest-record" href="/briefs/{latest_brief}.html">'
+                 f'<span><span class="mast-kicker">Latest record · {latest_brief}</span>'
+                 f'<strong>Weekly Brief {edition_no}</strong></span>'
+                 f'<span class="latest-record-action">Read the brief <span aria-hidden="true">→</span></span></a>')
+entry_links = (f'<div class="entry-links"><a href="#{execs}"><strong>Read the report</strong>'
+               '<span>Start at the beginning →</span></a><a href="#update"><strong>Read this week</strong>'
+               '<span>Latest record and analysis →</span></a><a href="/neural.html"><strong>Explore the map</strong>'
+               '<span>People, money, institutions →</span></a></div>')
+content = content.replace('</header>', '</header>' + latest_record + entry_links, 1)
+site = render_page(TITLE, content, page_class="report-page")
 (DIST / "index.html").write_text(site)
 (DIST / "styles.css").write_text(css)
+(DIST / "site-ui.js").write_text((ROOT / "site_ui.js").read_text())
 
-# standalone brief + sources pages for direct URLs (site build)
-def subpage(title, body_inner):
-    return ('<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
-            '<meta name="viewport" content="width=device-width, initial-scale=1">'
-            '<meta name="robots" content="index,follow">'
-            f'<title>{html.escape(title)}</title>{FONTS}<link rel="stylesheet" href="/styles.css"></head>'
-            f'<body><div class="content" style="max-width:1200px;margin:0 auto">{body_inner}</div></body></html>')
+# Standalone URLs retain the complete source body and use the same reading controls.
 for stem, inner in briefs:
-    (DIST / "briefs" / f"{stem}.html").write_text(subpage(
+    (DIST / "briefs" / f"{stem}.html").write_text(render_page(
         f"Brief — week ending {stem} · The Architecture",
-        '<p class="mast-kicker" style="margin-top:2rem"><a href="/">&larr; The Architecture</a></p>'
-        + inner.replace('href="#brief-001"', 'href="/#brief-001"')))
-(DIST / "sources.html").write_text(subpage("Source Archive Index — The Architecture",
-    '<p class="mast-kicker" style="margin-top:2rem"><a href="/">&larr; The Architecture</a></p>'
-    '<h1 class="mast">Source Archive Index</h1><pre class="manifest">' + html.escape(src_md) + "</pre>"))
+        '<p class="mast-kicker"><a href="/">&larr; The Architecture</a></p>'
+        + inner.replace('href="#brief-001"', 'href="/#brief-001"'),
+        active="record", page_class="brief-page"))
+(DIST / "sources.html").write_text(render_page("Source Archive Index — The Architecture",
+    '<p class="mast-kicker"><a href="/">&larr; The Architecture</a></p>'
+    '<h1 class="mast">Source Archive Index</h1><pre class="manifest">' + html.escape(src_md) + '</pre>',
+    active="sources", page_class="sources-page"))
 
-# artifact: content-only (publisher wraps)
+# Content-only export keeps its CSS and reading behavior self-contained for publishers.
+page_body = site.split('<body class="report-page">', 1)[1].rsplit('</body>', 1)[0]
+page_body = page_body.replace('<script src="/site-ui.js" defer></script>',
+                              '<script>' + (ROOT / "site_ui.js").read_text() + '</script>')
 artifact = f"<title>The Architecture</title>\n{FONTS}\n<style>\n{css}\n</style>\n{page_body}"
 (ROOT / "artifact.html").write_text(artifact)
 
@@ -401,27 +454,26 @@ shutil.copyfile(ROOT / "neural_data.json", DIST / "map" / "data.json")
 import json as _json
 _nd = _json.loads((ROOT / "neural_data.json").read_text())
 _n_nodes, _n_edges = len(_nd["nodes"]), len(_nd["edges"])   # counts follow the data, never hand-typed
-NEURAL_NAV = ('<nav class="topnav" id="top">'
-  '<a class="brand" href="/">THE&nbsp;ARCHITECTURE</a><div class="navlinks">'
-  '<a href="/">&larr; Main report</a><a href="/#update">The Record</a>'
-  '<a class="nav-flag" href="/neural.html" aria-current="page">Neural Map</a>'
-  '<a href="/sources.html">Sources</a></div></nav>')
-(DIST / "neural.html").write_text(
-    '<!doctype html>\n<html lang="en"><head><meta charset="utf-8">'
-    '<meta name="viewport" content="width=device-width, initial-scale=1">'
-    '<meta name="robots" content="index,follow">'
-    '<title>The Neural Map \u2014 The Architecture</title>'
-    f'<meta name="description" content="The Architecture\u2019s neural map: {_n_nodes} nodes and {_n_edges} edges of power, '
-    'money and ideology in the second Trump era, every edge graded by evidence.">'
-    f'{FONTS}<link rel="stylesheet" href="styles.css"></head><body>{NEURAL_NAV}'
-    '<div class="content" style="max-width:1700px;margin:0 auto;padding:0 clamp(1rem,3vw,2.5rem) 5rem">'
-    f'{neural_html}</div></body></html>')
+neural_html = re.sub(r'(<span id="nm-count">)[^<]*(</span>)',
+                     lambda m: f'{m[1]}{_n_nodes} nodes · {_n_edges} edges{m[2]}', neural_html)
+neural_html = re.sub(r'(<span id="nm-data-state">)[^<]*(</span>)',
+                     lambda m: f'{m[1]}data state {html.escape(_nd["current"])}{m[2]}', neural_html)
+(DIST / "neural.html").write_text(render_page(
+    "The Neural Map — The Architecture", neural_html, active="neural", page_class="map-page",
+    description=f"The Architecture's relationship map: {_n_nodes} nodes and {_n_edges} edges, graded by evidence."))
+
+# The research builder owns its content and registry; this builder owns shared chrome.
+import sys
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from build_research import build_research
+research_urls = build_research(ROOT, DIST, render_page)
 
 # Production address of Vercel project `the-architecture` (team zincdigitalofmiamis-projects).
 # the-architecture-liard.vercel.app is the project's former address and redirects here.
 SITE_URL = os.environ.get("ARCH_SITE_URL", "https://the-architecture-neurals.vercel.app").rstrip("/")
 (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
-urls = ["/", "/neural.html", "/sources.html"] + [f"/briefs/{s}.html" for s, _ in reversed(briefs)]
+urls = ["/", "/neural.html", "/sources.html"] + research_urls + [f"/briefs/{s}.html" for s, _ in reversed(briefs)]
 (DIST / "sitemap.xml").write_text(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"<url><loc>{SITE_URL}{u}</loc><lastmod>{latest_brief}</lastmod></url>\n" for u in urls)
@@ -439,7 +491,8 @@ if _srcdst.exists():
     _sh.rmtree(_srcdst)
 _srcdst.mkdir()
 for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
-           "build_site3.py", "neural_map.html", "neural_data.json", "neural_svg.frag",
+           "build_site3.py", "site_ui.js", "build_research.py", "research_registry.json",
+           "research_registry.py", "research_ui.js", "neural_map.html", "neural_data.json", "neural_svg.frag",
            "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
     _sp = ROOT / _f
     if _sp.exists():

@@ -9,8 +9,8 @@
 //        src/neural_data.json  ─┘ by build_site3.py on the next build
 //
 // Node 18+. No dependencies, no network. Run it BEFORE build_site3.py whenever
-// map_source.json changes; then update the counts, "data state" date, window chips
-// and week ledger in src/neural_map.html by hand — those are prose, not generated.
+// map_source.json changes. The site builder renders counts and the map-state date
+// from these outputs. Add new dated research/weekly prose without rewriting history.
 //
 // NOTE: src/build_neural_map.py is a LEGACY artifact with hardcoded tables. It does not
 // read map_source.json and does not write these two files. Do not use it. See its header.
@@ -40,6 +40,5 @@ console.log(
 );
 console.log(`flagged this window: ${flagged.length ? flagged.join(" ") : "none"}`);
 console.log(
-  `now update src/neural_map.html: "${nodes} nodes · ${edges} edges", the data-state date` +
-    ` (${data.current}), the window chips, and the week ledger.`
+  `now run src/build_site3.py; counts and map-state date render from this data.`
 );

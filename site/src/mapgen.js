@@ -3,10 +3,25 @@
 // Source shape: {current, nodes:{KEY:{x,y,r,name,sub,flag}}, edges:[[s,t,grade,label],...]}
 // Grades: A solid amber 3.0 · B solid faint 2.2 · C dashed 9,7 red · O dotted 2,7 faint.
 function buildMap(SRC){
+  if(!SRC || typeof SRC.current!=="string" || !/^\d{4}-\d{2}-\d{2}$/.test(SRC.current) ||
+     !Number.isFinite(Date.parse(SRC.current+"T00:00:00Z")) || new Date(SRC.current+"T00:00:00Z").toISOString().slice(0,10)!==SRC.current)
+    throw new Error("Map state requires a valid YYYY-MM-DD date");
+  if(!SRC.nodes || Array.isArray(SRC.nodes) || typeof SRC.nodes!=="object" || !Object.keys(SRC.nodes).length || !Array.isArray(SRC.edges))
+    throw new Error("Map requires named nodes and an edge array");
+  for(const [key,n] of Object.entries(SRC.nodes)){
+    if(!/^[A-Z][A-Z0-9_]*$/.test(key) || !n || ![n.x,n.y,n.r].every(Number.isFinite) || n.r<=0 ||
+       typeof n.name!=="string" || !n.name.trim() || typeof n.sub!=="string")
+      throw new Error("Invalid map node: "+key);
+  }
+  for(const edge of SRC.edges){
+    if(!Array.isArray(edge) || edge.length!==4 || !Object.hasOwn(SRC.nodes,edge[0]) || !Object.hasOwn(SRC.nodes,edge[1]) ||
+       !["A","B","C","O"].includes(edge[2]) || typeof edge[3]!=="string" || !edge[3].trim())
+      throw new Error("Invalid map relationship");
+  }
   const BG="#141210",INK="#e9e3d6",SOFT="#b9b0a0",FAINT="#8a8172",AMBER="#d98a2b",AMBER_HI="#e9a94e",RED="#c0562f",RULE="#3a352d";
   const GRADE={A:{stroke:AMBER,width:3.0,dash:null},B:{stroke:FAINT,width:2.2,dash:null},C:{stroke:RED,width:2.0,dash:"9,7"},O:{stroke:FAINT,width:2.0,dash:"2,7"}};
   const NODES=SRC.nodes, EDGES=SRC.edges;
-  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
   const wrap=(t,w)=>{if(!t)return[];const out=[];let cur="";for(const word of t.split(/\s+/)){const trial=(cur+" "+word).trim();if(trial.length<=w)cur=trial;else{if(cur)out.push(cur);cur=word;}}if(cur)out.push(cur);return out;};
   const keys=Object.keys(NODES);
   const xs=keys.map(k=>NODES[k].x), ys=keys.map(k=>NODES[k].y);
