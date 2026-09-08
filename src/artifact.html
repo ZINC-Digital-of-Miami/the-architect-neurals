@@ -3533,7 +3533,7 @@ Sourced entries: 200
 <div class="dialog-heading"><p id="share-heading">Share this record</p><button type="button" data-share-close aria-label="Close sharing">Close ×</button></div>
 <div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
 <input id="share-url" type="url" readonly spellcheck="false">
-<div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button><button type="button" data-ui-print>Print page</button></div>
+<div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button></div>
 <p data-share-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
 (() => {
   'use strict';
@@ -3578,10 +3578,16 @@ Sourced entries: 200
     tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
     main.prepend(tools);
   }
+  let printStarted = false;
+  window.addEventListener('beforeprint', () => { printStarted = true; });
   document.addEventListener('click', event => {
     if (!event.target.closest('[data-ui-print]')) return;
-    if (shareDialog?.open) shareDialog.close();
-    requestAnimationFrame(() => window.print());
+    printStarted = false;
+    // Keep native printing inside the user's click, without a deferred callback.
+    window.print();
+    if (!printStarted) {
+      announce('This browser did not open printing. Open this page in Safari or Chrome, then select Print.');
+    }
   });
   main?.querySelectorAll('h2[id]').forEach(heading => {
     if (heading.closest('#neural')) return;
