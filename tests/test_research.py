@@ -19,6 +19,16 @@ class ResearchIntegrityTests(unittest.TestCase):
         self.data = read_json(ROOT / "src/research_registry.json")
         self.map = read_json(ROOT / "src/map_source.json")
 
+    def build_fixture(self, temp, data=None, index_html='<main id="main-content"><article id="report-story"><h2 id="existing">Original heading</h2></article></main>'):
+        src, dist = Path(temp) / "src", Path(temp) / "site"
+        src.mkdir(); dist.mkdir(); (src / "briefs").mkdir()
+        (src / "research_registry.json").write_text(json.dumps(data or self.data))
+        (src / "map_source.json").write_text(json.dumps(self.map))
+        (src / "research_ui.js").write_text("")
+        (dist / "index.html").write_text(index_html)
+        build_research(src, dist, lambda title, body, **kw: body)
+        return dist
+
     def test_real_registry_has_resolvable_sources_and_entities(self):
         validate(self.data, self.map)
 
@@ -336,6 +346,73 @@ assert.deepEqual(failures, []);
         parser = Outline()
         parser.feed('<h4 id="u-corrections">Corrections</h4><h4 id="u-silence">Silence ledger</h4>')
         self.assertEqual([r["id"] for r in parser.rows], ["u-corrections", "u-silence"])
+
+    def test_outline_uses_main_content_and_disambiguates_heading_context(self):
+        parser = Outline()
+        parser.feed('''<nav><h3 id="menu-topic">Menu topic</h3></nav>
+            <main id="main-content">
+              <section id="update"><h2 id="current">Current record</h2></section>
+              <article id="report-story"><h2 id="report">Report section</h2><h4 id="detail">Detail</h4></article>
+              <section id="brief-001">
+                <details id="brief-2026-08-30"><h2 id="new-lede">The lede</h2></details>
+                <details id="brief-2026-08-23"><h2 id="old-lede">The lede</h2></details>
+              </section>
+            </main>
+            <dialog><h2 id="contents-heading">Contents</h2></dialog>''')
+        self.assertEqual([row["id"] for row in parser.rows],
+                         ["current", "report", "detail", "new-lede", "old-lede"])
+        detail = next(row for row in parser.rows if row["id"] == "detail")
+        self.assertEqual(detail["parents"], ["Report section"])
+        self.assertEqual(detail["scope"], "report")
+        briefs = [row for row in parser.rows if row["title"] == "The lede"]
+        self.assertEqual([row["dateContext"] for row in briefs],
+                         ["Week ending 2026-08-30", "Week ending 2026-08-23"])
+
+    def test_synthesis_renders_every_reviewed_relationship_and_curated_path(self):
+        with tempfile.TemporaryDirectory() as temp:
+            dist = self.build_fixture(temp)
+            output = (dist / "synthesis.html").read_text()
+            for relation in self.data["relationships"]:
+                index = relation["mapEdgeIndex"]
+                self.assertEqual(output.count(f'id="relationship-edge-{index}"'), 1)
+                self.assertIn(html.escape(relation["reportHref"], quote=True), output)
+                for claim_id in relation["claimIds"]:
+                    self.assertIn(f'href="/synthesis.html#claim-{claim_id}"', output)
+                for source_id in relation["sourceIds"]:
+                    source = next(source for source in self.data["sources"] if source["id"] == source_id)
+                    self.assertIn(html.escape(source["url"], quote=True), output)
+            for path in self.data["networkPaths"]:
+                self.assertEqual(output.count(f'id="connection-{path["id"]}"'), 1)
+            self.assertIn("Curated connection paths", output)
+            self.assertIn("All reviewed relationships", output)
+
+    def test_synthesis_renders_every_revision_with_preserved_details(self):
+        with tempfile.TemporaryDirectory() as temp:
+            dist = self.build_fixture(temp)
+            output = (dist / "synthesis.html").read_text()
+            for revision in self.data["revisions"]:
+                self.assertEqual(output.count(f'id="revision-{revision["id"]}"'), 1)
+                self.assertIn(html.escape(revision["summary"], quote=True), output)
+            changed = next(revision for revision in self.data["revisions"] if revision.get("changes"))
+            change = changed["changes"][0]
+            self.assertIn(html.escape(change["reason"], quote=True), output)
+            self.assertIn(html.escape(json.dumps(change["before"], ensure_ascii=False, indent=2), quote=True), output)
+            self.assertIn(html.escape(json.dumps(change["after"], ensure_ascii=False, indent=2), quote=True), output)
+
+    def test_generated_entities_merge_explicit_registry_metadata(self):
+        data = copy.deepcopy(self.data)
+        entity_id = next(iter(self.map["nodes"]))
+        extra_topic = next(topic["id"] for topic in data["topics"] if entity_id not in topic.get("entityIds", []))
+        data["entities"] = [{"id": entity_id, "topicIds": [extra_topic],
+                             "reportHref": "/#explicit-record", "note": "Preserved metadata"}]
+        with tempfile.TemporaryDirectory() as temp:
+            dist = self.build_fixture(temp, data)
+            published = read_json(dist / "research/data.json")
+            entity = next(row for row in published["entities"] if row["id"] == entity_id)
+            derived = [topic["id"] for topic in data["topics"] if entity_id in topic.get("entityIds", [])]
+            self.assertEqual(entity["reportHref"], "/#explicit-record")
+            self.assertEqual(entity["note"], "Preserved metadata")
+            self.assertEqual(entity["topicIds"], [extra_topic, *derived])
 
     def test_self_and_cyclic_supersession_are_rejected(self):
         candidate = copy.deepcopy(self.data)

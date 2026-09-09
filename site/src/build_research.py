@@ -16,27 +16,71 @@ def esc(value):
 class Outline(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.rows = []
+        self._rows = []
+        self._main_rows = []
+        self._saw_main = False
+        self.stack = []
+        self.hierarchy = {}
         self.current = None
-        self.level = 0
+
+    @property
+    def rows(self):
+        return self._main_rows if self._saw_main else self._rows
+
+    def context(self):
+        ancestors = list(reversed(self.stack))
+        brief = next((attrs.get("id", "") for tag, attrs in ancestors
+                      if tag == "details" and attrs.get("id", "").startswith("brief-")), "")
+        if brief:
+            return "brief", "Week ending " + brief.removeprefix("brief-")
+        if any(tag == "article" and attrs.get("id") == "report-story" for tag, attrs in ancestors):
+            return "report", ""
+        if any(tag == "section" and attrs.get("id") == "update" for tag, attrs in ancestors):
+            return "current", ""
+        return "main", ""
 
     def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        self.stack.append((tag, attrs))
+        if tag == "main" and attrs.get("id") == "main-content":
+            self._saw_main = True
         if tag in {"h2", "h3", "h4"} and self.current is None:
-            self.current = {"id": dict(attrs).get("id", ""), "title": "", "level": int(tag[1])}
-            self.level = 1
-        elif self.current and tag not in {"br", "hr", "img", "input", "meta", "link", "wbr", "source", "area", "base", "col", "embed", "param", "track"}:
-            self.level += 1
+            in_dialog = any(parent == "dialog" for parent, _ in self.stack[:-1])
+            in_main = any(parent == "main" and values.get("id") == "main-content"
+                          for parent, values in self.stack[:-1])
+            if not in_dialog:
+                scope, date_context = self.context()
+                level = int(tag[1])
+                key = (scope, date_context)
+                parents = [self.hierarchy.get(key, {}).get(parent, "")
+                           for parent in range(2, level)]
+                self.current = {"id": attrs.get("id", ""), "title": "", "level": level,
+                                "tag": tag, "inMain": in_main, "scope": scope,
+                                "dateContext": date_context,
+                                "parents": [title for title in parents if title]}
 
     def handle_startendtag(self, tag, attrs):
         pass
 
     def handle_endtag(self, tag):
-        if self.current:
-            self.level -= 1
-            if self.level == 0:
-                if self.current["id"]:
-                    self.rows.append(self.current)
-                self.current = None
+        if self.current and tag == self.current["tag"]:
+            row = {key: value for key, value in self.current.items()
+                   if key not in {"tag", "inMain"}}
+            context_key = (row["scope"], row["dateContext"])
+            hierarchy = self.hierarchy.setdefault(context_key, {})
+            hierarchy[row["level"]] = row["title"]
+            for level in list(hierarchy):
+                if level > row["level"]:
+                    del hierarchy[level]
+            if row["id"]:
+                self._rows.append(row)
+                if self.current["inMain"]:
+                    self._main_rows.append(row)
+            self.current = None
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
 
     def handle_data(self, value):
         if self.current:
@@ -62,10 +106,19 @@ def build_research(root, dist, render_page):
     data["reportSections"] = outline
     data["reportCurrentThrough"] = current_through
     data["briefs"] = [{"date": d, "url": f"/briefs/{d}.html"} for d in dated_briefs]
-    data["entities"] = [{"id": ident,
-                         "topicIds": [t["id"] for t in data["topics"] if ident in t.get("entityIds", [])],
-                         "reportHref": next((l["href"] for t in data["topics"] if ident in t.get("entityIds", []) for l in t.get("reportLinks", [])), "/#top")}
-                        for ident in map_data["nodes"]]
+    explicit_entities = {row["id"]: dict(row) for row in data.get("entities", [])
+                         if isinstance(row, dict) and isinstance(row.get("id"), str)}
+    entities = []
+    for ident in map_data["nodes"]:
+        explicit = explicit_entities.pop(ident, {})
+        derived_topics = [t["id"] for t in data["topics"] if ident in t.get("entityIds", [])]
+        topic_ids = list(dict.fromkeys([*explicit.get("topicIds", []), *derived_topics]))
+        report_href = explicit.get("reportHref") or next(
+            (link["href"] for topic in data["topics"] if ident in topic.get("entityIds", [])
+             for link in topic.get("reportLinks", [])), "/#top")
+        entities.append({**explicit, "id": ident, "topicIds": topic_ids, "reportHref": report_href})
+    entities.extend(explicit_entities.values())
+    data["entities"] = entities
     (dist / "research").mkdir(parents=True, exist_ok=True)
     (dist / "topics").mkdir(parents=True, exist_ok=True)
     (dist / "research" / "data.json").write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -170,7 +223,7 @@ def build_research(root, dist, render_page):
         write_page(f"topics/{ident}.html", topic["title"] + " — The Architecture", body, "topics")
         urls.append(f"/topics/{ident}.html")
 
-    connections = '<section class="research-view" id="view-connections" data-view="connections"><h2>Connections across the record</h2><p>Follow each relationship, its date and its evidence. A path can cross different periods; it does not by itself establish shared intent or continuing control.</p>'
+    connections = '<section class="research-view" id="view-connections" data-view="connections"><h2>Connections across the record</h2><p>Follow each relationship, its date and its evidence. A path can cross different periods; it does not by itself establish shared intent or continuing control.</p><h3>Curated connection paths</h3>'
     relationships = {r["mapEdgeIndex"]: r for r in data.get("relationships", [])}
     for path in data.get("networkPaths", []):
         connections += (f'<article class="evidence-record" id="connection-{esc(path["id"])}"><h3>{esc(path["title"])}</h3>'
@@ -188,6 +241,22 @@ def build_research(root, dist, render_page):
                         f'<p><a href="/neural.html?topic={quote(path["topicIds"][0])}">Explore the complete topic map →</a></p></article>')
     if not data.get("networkPaths"):
         connections += '<p>No connection paths have completed evidence review yet.</p>'
+    connections += '<h3>All reviewed relationships</h3><p>Each record below is an existing relationship with attached reviewed evidence. The accumulated map also retains relationships whose source link has not yet been attached; their existing grade remains explicit in the map.</p>'
+    for relation in data.get("relationships", []):
+        index = relation["mapEdgeIndex"]
+        start, end, grade, label = map_data["edges"][index]
+        claim_records = [tables["claims"][claim_id] for claim_id in relation.get("claimIds", [])]
+        connections += (f'<article class="evidence-record" id="relationship-edge-{index}">'
+                        f'<h4>{esc(map_data["nodes"][start]["name"])} → {esc(map_data["nodes"][end]["name"])}</h4>'
+                        f'<p>{esc(label)} · Evidence [{esc(grade)}]</p>')
+        if claim_records:
+            connections += '<ul class="question-list">' + "".join(
+                f'<li><a href="/synthesis.html#claim-{esc(claim["id"])}">{esc(claim["text"])}</a>'
+                f'<p class="record-context">{esc(claim["context"])}</p></li>' for claim in claim_records) + '</ul>'
+        connections += source_links(relation["sourceIds"])
+        if relation.get("reportHref"):
+            connections += f'<p><a href="{esc(relation["reportHref"])}">Read report context →</a></p>'
+        connections += '</article>'
     connections += '</section>'
 
     overview = (f'<section class="research-view" id="view-overview" data-view="overview"><section class="research-panel"><h2>The complete report is here</h2><p>Explore {len(outline)} linked headings and the preserved weekly archive alongside the new structured records.</p><p><a href="?view=contents">Browse the full report index →</a> · <a href="/#top">Read the report →</a></p></section><h2>Questions across the report</h2><p><a href="?view=connections">Explore connections across the record →</a></p><div class="topic-list">'
@@ -215,9 +284,38 @@ def build_research(root, dist, render_page):
                    f'<p class="topic-meta">Last checked: {esc(check.get("lastCheckedAt") or "Not yet recorded")} · {esc(check["status"])}</p>'
                    f'<p>{esc(check["outcome"])}</p><p><strong>Next check:</strong> {esc(check.get("nextCheck") or "Not yet specified")}</p>'
                    + source_links(check.get("sourceIds", [])) + '<p>' + " · ".join(f'<a href="/topics/{esc(t)}.html">{esc(topics[t]["title"])}</a>' for t in check["topicIds"]) + '</p></article>')
+    checks += '</div><h2>Revision history</h2><p>These dated records preserve additions and before-and-after corrections to the structured research layer.</p><div class="checks-list">'
+    for revision in data["revisions"]:
+        checks += (f'<article class="evidence-record" id="revision-{esc(revision["id"])}">'
+                   f'<h3>{esc(revision["date"])} · {esc(revision["id"])}</h3><p>{esc(revision["summary"])}</p>')
+        links = []
+        links.extend(f'<a href="/synthesis.html#claim-{esc(claim_id)}">Claim: {esc(claim_id)}</a>'
+                     for claim_id in revision.get("claimIds", []))
+        links.extend(f'<a href="/topics/{esc(topic_id)}.html">Topic: {esc(topics[topic_id]["title"])}</a>'
+                     for topic_id in revision.get("topicIds", []))
+        links.extend(f'<a href="/synthesis.html#connection-{esc(path_id)}">Path: {esc(path_id)}</a>'
+                     for path_id in revision.get("pathIds", []))
+        if links:
+            checks += '<p>' + ' · '.join(links) + '</p>'
+        for change in revision.get("changes", []):
+            identity = change.get("id", change.get("mapEdgeIndex", "record"))
+            checks += (f'<details><summary>{esc(change.get("collection", "record"))} · {esc(identity)}</summary>'
+                       f'<p>{esc(change.get("reason", "Reason not recorded"))}</p>')
+            if "before" in change:
+                checks += '<h4>Before</h4><pre>' + esc(json.dumps(change["before"], ensure_ascii=False, indent=2)) + '</pre>'
+            if "after" in change:
+                checks += '<h4>After</h4><pre>' + esc(json.dumps(change["after"], ensure_ascii=False, indent=2)) + '</pre>'
+            checks += '</details>'
+        checks += '</article>'
     checks += '</div></section>'
     contents = '<section class="research-view" id="view-contents" data-view="contents"><h2>The complete report index</h2><p>These links open the preserved authored sections, including their interpretations and qualifications. Inclusion is not a new verification of each underlying claim.</p><ol class="report-outline">'
-    contents += "".join(f'<li class="outline-level-{row["level"]}"><a href="{esc(row["href"])}">{esc(row["title"])}</a></li>' for row in outline) + '</ol></section>'
+    contents += "".join(
+        f'<li class="outline-level-{row["level"]}"><a href="{esc(row["href"])}">{esc(row["title"])}</a>'
+        + ('<span class="topic-meta">' + esc(" · ".join([
+            row.get("dateContext") or {"current": "Current weekly record", "report": "Preserved report"}.get(row.get("scope"), "Main report"),
+            " › ".join(row.get("parents", []))
+        ]).strip(" · ")) + '</span>' if row.get("scope") or row.get("parents") else '')
+        + '</li>' for row in outline) + '</ol></section>'
     tabs = '<div class="view-tabs" aria-label="Synthesis views">' + "".join(f'<button type="button" data-view-tab="{ident}" aria-controls="view-{ident}">{label}</button>' for ident, label in (("overview", "Overview"), ("connections", "Connections"), ("timeline", "Timeline"), ("compare", "Historical comparisons"), ("checks", "Records to check"), ("contents", "Full report"))) + '</div>'
     body = ('<header class="research-intro"><p class="kicker">SYNTHESIS</p><h1>The wider picture.</h1><p class="dek">Explore the record, compare the history, follow what changes.</p>'
             + freshness + '</header>' + tabs + overview + connections + timeline + comparison_html + checks + contents + footer)

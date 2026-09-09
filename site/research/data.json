@@ -5615,559 +5615,2016 @@
       "id": "u-gap",
       "title": "The Gap — July 19 → August 9",
       "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19"
+      ],
       "href": "/#u-gap"
     },
     {
       "id": "u-week",
       "title": "The Week — August 24–30",
       "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19"
+      ],
       "href": "/#u-week"
     },
     {
       "id": "u-node",
       "title": "The node — where the architectures touch",
       "level": 3,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19"
+      ],
       "href": "/#u-node"
     },
     {
       "id": "u-corrections",
       "title": "Corrections Log",
       "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
       "href": "/#u-corrections"
     },
     {
       "id": "u-silence",
       "title": "The Silence Ledger",
       "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
       "href": "/#u-silence"
     },
     {
       "id": "u-threads",
       "title": "Open Threads — Next Checks",
       "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
       "href": "/#u-threads"
     },
     {
       "id": "executive-summary-one-page",
       "title": "Executive Summary (one page)",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#executive-summary-one-page"
+    },
+    {
+      "id": "what-this-document-is",
+      "title": "What This Document Is",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Executive Summary (one page)"
+      ],
+      "href": "/#what-this-document-is"
+    },
+    {
+      "id": "what-this-document-is-not",
+      "title": "What This Document Is Not",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Executive Summary (one page)"
+      ],
+      "href": "/#what-this-document-is-not"
+    },
+    {
+      "id": "how-evidence-is-tiered-throughout-this-document",
+      "title": "How Evidence Is Tiered Throughout This Document",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Executive Summary (one page)"
+      ],
+      "href": "/#how-evidence-is-tiered-throughout-this-document"
+    },
+    {
+      "id": "the-honest-acknowledgment-of-differences",
+      "title": "The Honest Acknowledgment of Differences",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Executive Summary (one page)"
+      ],
+      "href": "/#the-honest-acknowledgment-of-differences"
     },
     {
       "id": "formation-the-making-of-the-man",
       "title": "Formation: The Making of the Man",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#formation-the-making-of-the-man"
     },
     {
       "id": "chapter-0-the-father-s-two-words-king-and-killer-and-the-mac",
       "title": "Chapter 0: The Father's Two Words — \"King\" and \"Killer,\" and the Machinery of Endless Retribution",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Formation: The Making of the Man"
+      ],
       "href": "/#chapter-0-the-father-s-two-words-king-and-killer-and-the-mac"
     },
     {
       "id": "chapter-0-b-the-unfit-record-what-clinicians-and-family-have",
       "title": "Chapter 0-B: The Unfit Record — What Clinicians and Family Have Said, and the Limits of Saying It",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Formation: The Making of the Man"
+      ],
       "href": "/#chapter-0-b-the-unfit-record-what-clinicians-and-family-have"
     },
     {
       "id": "the-crown-the-architecture-of-power",
       "title": "The Crown: The Architecture of Power",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-crown-the-architecture-of-power"
     },
     {
       "id": "chapter-a-the-king-words-royal-signaling-the-third-term-and-",
       "title": "Chapter A: The King Words — Royal Signaling, the Third Term, and Eight Million in the Streets",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Crown: The Architecture of Power"
+      ],
       "href": "/#chapter-a-the-king-words-royal-signaling-the-third-term-and-"
     },
     {
       "id": "chapter-b-the-power-ledger-what-has-actually-been-consolidat",
       "title": "Chapter B: The Power Ledger — What Has Actually Been Consolidated, and What Has Held",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Crown: The Architecture of Power"
+      ],
       "href": "/#chapter-b-the-power-ledger-what-has-actually-been-consolidat"
     },
     {
       "id": "the-money-the-profit-architecture",
       "title": "The Money: The Profit Architecture",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-money-the-profit-architecture"
     },
     {
       "id": "chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r",
       "title": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
     },
     {
       "id": "chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september",
       "title": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
     },
     {
       "id": "chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma",
       "title": "Chapter D: The Envoy Economy — Kushner, the Witkoffs, and Diplomacy on Commission",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
     },
     {
       "id": "chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo",
       "title": "Chapter E: Foreign-State Revenue — The Jet, the Gulf, and the Emoluments Question",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
     },
     {
       "id": "chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso",
       "title": "Chapter E-2: The Qatar File — A Security Guarantee, a Jet, a Resort, and a Base",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
     },
     {
       "id": "chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a",
       "title": "Chapter E-3: The Argentina Channel — A $40 Billion Bailout and a Treasury Secretary's Friend",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
     },
     {
       "id": "chapter-f-the-pardon-and-access-market",
       "title": "Chapter F: The Pardon and Access Market",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-f-the-pardon-and-access-market"
     },
     {
       "id": "chapter-g-war-finance-prediction-markets-defense-portfolios-",
       "title": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
     },
     {
       "id": "chapter-g-2-five-follow-the-money-streams",
       "title": "Chapter G-2: Five Follow-the-Money Streams",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-g-2-five-follow-the-money-streams"
+    },
+    {
+      "id": "stream-1-stargate-and-the-ai-buildout",
+      "title": "Stream 1 — Stargate and the AI buildout",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture",
+        "Chapter G-2: Five Follow-the-Money Streams"
+      ],
+      "href": "/#stream-1-stargate-and-the-ai-buildout"
+    },
+    {
+      "id": "stream-2-critical-minerals-and-project-vault",
+      "title": "Stream 2 — Critical minerals and Project Vault",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture",
+        "Chapter G-2: Five Follow-the-Money Streams"
+      ],
+      "href": "/#stream-2-critical-minerals-and-project-vault"
+    },
+    {
+      "id": "stream-3-the-russia-track",
+      "title": "Stream 3 — The Russia track",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture",
+        "Chapter G-2: Five Follow-the-Money Streams"
+      ],
+      "href": "/#stream-3-the-russia-track"
+    },
+    {
+      "id": "stream-4-sovereign-wealth-that-never-arrived-and-the-state-e",
+      "title": "Stream 4 — Sovereign wealth that never arrived, and the state equity that did",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture",
+        "Chapter G-2: Five Follow-the-Money Streams"
+      ],
+      "href": "/#stream-4-sovereign-wealth-that-never-arrived-and-the-state-e"
+    },
+    {
+      "id": "stream-5-defense-procurement-and-the-family-portfolio",
+      "title": "Stream 5 — Defense procurement and the family portfolio",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture",
+        "Chapter G-2: Five Follow-the-Money Streams"
+      ],
+      "href": "/#stream-5-defense-procurement-and-the-family-portfolio"
     },
     {
       "id": "chapter-h-the-warehouse-state-detention-as-an-industry",
       "title": "Chapter H: The Warehouse State — Detention as an Industry",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
     },
     {
       "id": "chapter-i-the-sum-what-the-money-architecture-adds-up-to",
       "title": "Chapter I: The Sum — What the Money Architecture Adds Up To",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Money: The Profit Architecture"
+      ],
       "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
     },
     {
       "id": "the-ideology-supremacy-politics-and-its-limits",
       "title": "The Ideology: Supremacy Politics and Its Limits",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-ideology-supremacy-politics-and-its-limits"
     },
     {
       "id": "chapter-j-what-nazi-light-gets-right-what-it-gets-wrong-and-",
       "title": "Chapter J: What 'Nazi-Light' Gets Right, What It Gets Wrong, and What the Precise Words Are",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Ideology: Supremacy Politics and Its Limits"
+      ],
       "href": "/#chapter-j-what-nazi-light-gets-right-what-it-gets-wrong-and-"
     },
     {
       "id": "chapter-k-the-network-map-every-actor-every-edge-graded-by-e",
       "title": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Ideology: Supremacy Politics and Its Limits"
+      ],
       "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
     },
     {
       "id": "chapter-l-the-convergence-what-kushner-china-russia-cuba-gre",
       "title": "Chapter L: The Convergence — What Kushner, China, Russia, Cuba, Greenland, ICE, AI, and the Midterms Have in Common",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Ideology: Supremacy Politics and Its Limits"
+      ],
       "href": "/#chapter-l-the-convergence-what-kushner-china-russia-cuba-gre"
     },
     {
       "id": "chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces",
       "title": "Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Ideology: Supremacy Politics and Its Limits"
+      ],
       "href": "/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces"
     },
     {
       "id": "the-historical-lens-retained-in-full",
       "title": "The Historical Lens — retained in full",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-historical-lens-retained-in-full"
     },
     {
       "id": "the-historical-record",
       "title": "The Historical Record",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-historical-record"
     },
     {
       "id": "chapter-1-formation-austria-the-army-and-the-birth-of-a-poli",
       "title": "Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-1-formation-austria-the-army-and-the-birth-of-a-poli"
+    },
+    {
+      "id": "the-vienna-years-1889-1913",
+      "title": "The Vienna Years (1889–1913)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal"
+      ],
+      "href": "/#the-vienna-years-1889-1913"
+    },
+    {
+      "id": "the-army-1914-1918-identity-found",
+      "title": "The Army (1914–1918): Identity Found",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal"
+      ],
+      "href": "/#the-army-1914-1918-identity-found"
+    },
+    {
+      "id": "political-awakening-1919-1923",
+      "title": "Political Awakening (1919–1923)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 1: Formation — Austria, the Army, and the Birth of a Political Animal"
+      ],
+      "href": "/#political-awakening-1919-1923"
     },
     {
       "id": "chapter-2-the-prison-pivot-from-putsch-to-parliamentary-stra",
       "title": "Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-2-the-prison-pivot-from-putsch-to-parliamentary-stra"
+    },
+    {
+      "id": "landsberg-prison-and-mein-kampf-1924",
+      "title": "Landsberg Prison and Mein Kampf (1924)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy"
+      ],
+      "href": "/#landsberg-prison-and-mein-kampf-1924"
+    },
+    {
+      "id": "the-strategic-pivot-using-democracy-to-destroy-democracy",
+      "title": "The Strategic Pivot: Using Democracy to Destroy Democracy",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy"
+      ],
+      "href": "/#the-strategic-pivot-using-democracy-to-destroy-democracy"
+    },
+    {
+      "id": "the-propaganda-infrastructure-1924-1932",
+      "title": "The Propaganda Infrastructure (1924–1932)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 2: The Prison Pivot — From Putsch to Parliamentary Strategy"
+      ],
+      "href": "/#the-propaganda-infrastructure-1924-1932"
     },
     {
       "id": "chapter-3-the-weimar-republic-democratic-mechanics-weaponize",
       "title": "Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-3-the-weimar-republic-democratic-mechanics-weaponize"
+    },
+    {
+      "id": "the-electoral-record",
+      "title": "The Electoral Record",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized"
+      ],
+      "href": "/#the-electoral-record"
+    },
+    {
+      "id": "the-october-1929-crash-the-crisis-that-transformed-a-fringe-",
+      "title": "The October 1929 Crash: The Crisis That Transformed a Fringe into a Mass Movement",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized"
+      ],
+      "href": "/#the-october-1929-crash-the-crisis-that-transformed-a-fringe-"
+    },
+    {
+      "id": "the-savior-myth-manufactured-and-engineered",
+      "title": "The Savior Myth: Manufactured and Engineered",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized"
+      ],
+      "href": "/#the-savior-myth-manufactured-and-engineered"
+    },
+    {
+      "id": "the-anti-immigrant-playbook-jews-as-the-manufactured-enemy",
+      "title": "The Anti-Immigrant Playbook: Jews as the Manufactured Enemy",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 3: The Weimar Republic — Democratic Mechanics Weaponized"
+      ],
+      "href": "/#the-anti-immigrant-playbook-jews-as-the-manufactured-enemy"
     },
     {
       "id": "chapter-4-the-legal-revolution-53-days",
       "title": "Chapter 4: The Legal Revolution — 53 Days",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-4-the-legal-revolution-53-days"
+    },
+    {
+      "id": "the-elite-miscalculation-von-papen-and-the-appointment",
+      "title": "The Elite Miscalculation: Von Papen and the Appointment",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 4: The Legal Revolution — 53 Days"
+      ],
+      "href": "/#the-elite-miscalculation-von-papen-and-the-appointment"
+    },
+    {
+      "id": "the-reichstag-fire-february-27-1933",
+      "title": "The Reichstag Fire: February 27, 1933",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 4: The Legal Revolution — 53 Days"
+      ],
+      "href": "/#the-reichstag-fire-february-27-1933"
+    },
+    {
+      "id": "the-reichstag-fire-decree-february-28-1933",
+      "title": "The Reichstag Fire Decree: February 28, 1933",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 4: The Legal Revolution — 53 Days"
+      ],
+      "href": "/#the-reichstag-fire-decree-february-28-1933"
+    },
+    {
+      "id": "the-enabling-act-march-23-1933",
+      "title": "The Enabling Act: March 23, 1933",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 4: The Legal Revolution — 53 Days"
+      ],
+      "href": "/#the-enabling-act-march-23-1933"
     },
     {
       "id": "chapter-5-the-enforcement-architecture-sa-ss-and-persecution",
       "title": "Chapter 5: The Enforcement Architecture — SA, SS, and Persecution",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-5-the-enforcement-architecture-sa-ss-and-persecution"
+    },
+    {
+      "id": "the-sa-political-violence-as-governing-strategy",
+      "title": "The SA: Political Violence as Governing Strategy",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 5: The Enforcement Architecture — SA, SS, and Persecution"
+      ],
+      "href": "/#the-sa-political-violence-as-governing-strategy"
+    },
+    {
+      "id": "the-april-1-1933-boycott",
+      "title": "The April 1, 1933 Boycott",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 5: The Enforcement Architecture — SA, SS, and Persecution"
+      ],
+      "href": "/#the-april-1-1933-boycott"
+    },
+    {
+      "id": "the-concentration-camp-system-early-phase",
+      "title": "The Concentration Camp System — Early Phase",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 5: The Enforcement Architecture — SA, SS, and Persecution"
+      ],
+      "href": "/#the-concentration-camp-system-early-phase"
+    },
+    {
+      "id": "the-trans-and-lgbtq-community-the-most-progressive-society-d",
+      "title": "The Trans and LGBTQ+ Community: The Most Progressive Society Destroyed",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 5: The Enforcement Architecture — SA, SS, and Persecution"
+      ],
+      "href": "/#the-trans-and-lgbtq-community-the-most-progressive-society-d"
     },
     {
       "id": "chapter-6-consolidation-night-of-the-long-knives-and-the-thi",
       "title": "Chapter 6: Consolidation — Night of the Long Knives and the Third Reich",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-6-consolidation-night-of-the-long-knives-and-the-thi"
+    },
+    {
+      "id": "night-of-the-long-knives-june-30-july-2-1934",
+      "title": "Night of the Long Knives: June 30 – July 2, 1934",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 6: Consolidation — Night of the Long Knives and the Third Reich"
+      ],
+      "href": "/#night-of-the-long-knives-june-30-july-2-1934"
+    },
+    {
+      "id": "the-personal-loyalty-oath-august-2-1934",
+      "title": "The Personal Loyalty Oath: August 2, 1934",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 6: Consolidation — Night of the Long Knives and the Third Reich"
+      ],
+      "href": "/#the-personal-loyalty-oath-august-2-1934"
+    },
+    {
+      "id": "the-nuremberg-rally-1934-and-triumph-of-the-will",
+      "title": "The Nuremberg Rally (1934) and Triumph of the Will",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 6: Consolidation — Night of the Long Knives and the Third Reich"
+      ],
+      "href": "/#the-nuremberg-rally-1934-and-triumph-of-the-will"
     },
     {
       "id": "chapter-7-war-genocide-and-the-aftermath",
       "title": "Chapter 7: War, Genocide, and the Aftermath",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record"
+      ],
       "href": "/#chapter-7-war-genocide-and-the-aftermath"
+    },
+    {
+      "id": "expansion-and-appeasement-1936-1939",
+      "title": "Expansion and Appeasement (1936–1939)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 7: War, Genocide, and the Aftermath"
+      ],
+      "href": "/#expansion-and-appeasement-1936-1939"
+    },
+    {
+      "id": "world-war-ii-and-the-holocaust",
+      "title": "World War II and the Holocaust",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 7: War, Genocide, and the Aftermath"
+      ],
+      "href": "/#world-war-ii-and-the-holocaust"
+    },
+    {
+      "id": "defeat-nuremberg-and-the-reckoning",
+      "title": "Defeat, Nuremberg, and the Reckoning",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Historical Record",
+        "Chapter 7: War, Genocide, and the Aftermath"
+      ],
+      "href": "/#defeat-nuremberg-and-the-reckoning"
     },
     {
       "id": "the-scholarly-framework",
       "title": "The Scholarly Framework",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-scholarly-framework"
     },
     {
       "id": "chapter-8-what-scholars-tell-us-about-democratic-erosion",
       "title": "Chapter 8: What Scholars Tell Us About Democratic Erosion",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework"
+      ],
       "href": "/#chapter-8-what-scholars-tell-us-about-democratic-erosion"
+    },
+    {
+      "id": "timothy-snyder-on-tyranny-and-the-road-to-unfreedom",
+      "title": "Timothy Snyder — On Tyranny and The Road to Unfreedom",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework",
+        "Chapter 8: What Scholars Tell Us About Democratic Erosion"
+      ],
+      "href": "/#timothy-snyder-on-tyranny-and-the-road-to-unfreedom"
+    },
+    {
+      "id": "hannah-arendt-the-origins-of-totalitarianism-and-the-banalit",
+      "title": "Hannah Arendt — The Origins of Totalitarianism and the Banality of Evil",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework",
+        "Chapter 8: What Scholars Tell Us About Democratic Erosion"
+      ],
+      "href": "/#hannah-arendt-the-origins-of-totalitarianism-and-the-banalit"
+    },
+    {
+      "id": "christopher-browning-ordinary-men",
+      "title": "Christopher Browning — Ordinary Men",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework",
+        "Chapter 8: What Scholars Tell Us About Democratic Erosion"
+      ],
+      "href": "/#christopher-browning-ordinary-men"
+    },
+    {
+      "id": "madeleine-albright-fascism-a-warning",
+      "title": "Madeleine Albright — Fascism: A Warning",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework",
+        "Chapter 8: What Scholars Tell Us About Democratic Erosion"
+      ],
+      "href": "/#madeleine-albright-fascism-a-warning"
+    },
+    {
+      "id": "the-common-elements-what-academic-consensus-identifies",
+      "title": "The Common Elements: What Academic Consensus Identifies",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Scholarly Framework",
+        "Chapter 8: What Scholars Tell Us About Democratic Erosion"
+      ],
+      "href": "/#the-common-elements-what-academic-consensus-identifies"
     },
     {
       "id": "pattern-recognition",
       "title": "Pattern Recognition",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#pattern-recognition"
     },
     {
       "id": "chapter-9-the-rhetorical-architecture-restoration-and-the-sa",
       "title": "Chapter 9: The Rhetorical Architecture — Restoration and the Savior Myth",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-9-the-rhetorical-architecture-restoration-and-the-sa"
     },
     {
       "id": "chapter-10-using-democracy-against-itself-the-legal-entry",
       "title": "Chapter 10: Using Democracy Against Itself — The Legal Entry",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-10-using-democracy-against-itself-the-legal-entry"
     },
     {
       "id": "chapter-11-the-conservative-enablement-elite-miscalculation",
       "title": "Chapter 11: The Conservative Enablement — Elite Miscalculation",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-11-the-conservative-enablement-elite-miscalculation"
     },
     {
       "id": "chapter-12-purging-dissent-the-loyalty-architecture",
       "title": "Chapter 12: Purging Dissent — The Loyalty Architecture",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-12-purging-dissent-the-loyalty-architecture"
     },
     {
       "id": "chapter-13-emergency-powers-and-the-parallel-enforcement-arc",
       "title": "Chapter 13: Emergency Powers and the Parallel Enforcement Architecture",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-13-emergency-powers-and-the-parallel-enforcement-arc"
     },
     {
       "id": "chapter-14-the-enforcement-and-detention-industrial-complex",
       "title": "Chapter 14: The Enforcement and Detention Industrial Complex",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
     },
     {
       "id": "chapter-15-technology-propaganda-and-the-information-environ",
       "title": "Chapter 15: Technology, Propaganda, and the Information Environment",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
     },
     {
       "id": "chapter-16-the-targeting-of-vulnerable-communities",
       "title": "Chapter 16: The Targeting of Vulnerable Communities",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-16-the-targeting-of-vulnerable-communities"
     },
     {
       "id": "chapter-17-foreign-policy-and-the-expansionist-pattern",
       "title": "Chapter 17: Foreign Policy and the Expansionist Pattern",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
     },
     {
       "id": "chapter-18-the-chaos-doctrine-manufacturing-crisis",
       "title": "Chapter 18: The Chaos Doctrine — Manufacturing Crisis",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition"
+      ],
       "href": "/#chapter-18-the-chaos-doctrine-manufacturing-crisis"
     },
     {
       "id": "current-documentation-2025-july-2026",
       "title": "Current Documentation (2025–July 2026)",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#current-documentation-2025-july-2026"
     },
     {
       "id": "chapter-19-the-executive-order-record",
       "title": "Chapter 19: The Executive Order Record",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-19-the-executive-order-record"
     },
     {
       "id": "chapter-20-the-detention-infrastructure-key-metrics",
       "title": "Chapter 20: The Detention Infrastructure — Key Metrics",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-20-the-detention-infrastructure-key-metrics"
     },
     {
       "id": "the-budget-architecture-priorities-revealed",
       "title": "The Budget Architecture — Priorities Revealed",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#the-budget-architecture-priorities-revealed"
     },
     {
       "id": "chapter-21-b-the-war-the-united-states-israel-and-iran-febru",
       "title": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
     },
     {
       "id": "chapter-21-c-the-home-front-january-july-2026",
       "title": "Chapter 21-C: The Home Front (January–July 2026)",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-c-the-home-front-january-july-2026"
+    },
+    {
+      "id": "the-loyalty-purge-continues-bondi-fired",
+      "title": "The Loyalty Purge Continues: Bondi Fired",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-loyalty-purge-continues-bondi-fired"
+    },
+    {
+      "id": "the-gop-exodus-record-retirements",
+      "title": "The GOP Exodus: Record Retirements",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-gop-exodus-record-retirements"
+    },
+    {
+      "id": "easter-sunday-april-5-2026-the-unraveling",
+      "title": "Easter Sunday, April 5, 2026: The Unraveling",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#easter-sunday-april-5-2026-the-unraveling"
+    },
+    {
+      "id": "the-health-question",
+      "title": "The Health Question",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-health-question"
+    },
+    {
+      "id": "the-psychological-architecture-a-black-hole-of-need",
+      "title": "The Psychological Architecture: 'A Black Hole of Need'",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-psychological-architecture-a-black-hole-of-need"
+    },
+    {
+      "id": "the-courts-two-landmark-defeats-accepted-one-landmark-victor",
+      "title": "The Courts: Two Landmark Defeats Accepted, One Landmark Victory",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-courts-two-landmark-defeats-accepted-one-landmark-victor"
+    },
+    {
+      "id": "the-epstein-files-the-transparency-fight",
+      "title": "The Epstein Files: The Transparency Fight",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-epstein-files-the-transparency-fight"
+    },
+    {
+      "id": "minneapolis-the-insurrection-act-threshold-and-enforcement-l",
+      "title": "Minneapolis, the Insurrection Act Threshold, and Enforcement Lethality",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#minneapolis-the-insurrection-act-threshold-and-enforcement-l"
+    },
+    {
+      "id": "relitigating-2020-before-2026-the-election-administration-fr",
+      "title": "Relitigating 2020 Before 2026: The Election-Administration Front",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#relitigating-2020-before-2026-the-election-administration-fr"
+    },
+    {
+      "id": "the-war-economy-at-home",
+      "title": "The War Economy at Home",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)",
+        "Chapter 21-C: The Home Front (January–July 2026)"
+      ],
+      "href": "/#the-war-economy-at-home"
     },
     {
       "id": "chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce",
       "title": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
     },
     {
       "id": "chapter-21-e-the-capture-of-civil-society-law-the-academy-an",
       "title": "Chapter 21-E: The Capture of Civil Society — Law, the Academy, and the Press",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-e-the-capture-of-civil-society-law-the-academy-an"
     },
     {
       "id": "chapter-21-f-the-war-on-expertise-hhs-the-cdc-and-the-vaccin",
       "title": "Chapter 21-F: The War on Expertise — HHS, the CDC, and the Vaccine Schedule",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-f-the-war-on-expertise-hhs-the-cdc-and-the-vaccin"
     },
     {
       "id": "chapter-21-g-the-military-purge-and-the-war-from-within",
       "title": "Chapter 21-G: The Military Purge and the \"War From Within\"",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-g-the-military-purge-and-the-war-from-within"
     },
     {
       "id": "chapter-21-h-the-43-day-shutdown-and-the-affordability-revol",
       "title": "Chapter 21-H: The 43-Day Shutdown and the Affordability Revolt",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-h-the-43-day-shutdown-and-the-affordability-revol"
     },
     {
       "id": "chapter-21-i-the-surveillance-consolidation",
       "title": "Chapter 21-I: The Surveillance Consolidation",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-i-the-surveillance-consolidation"
     },
     {
       "id": "chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o",
       "title": "Chapter 21-J: The External Board — Russia's Draft, Venezuela's Oil",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-j-the-external-board-russia-s-draft-venezuela-s-o"
     },
     {
       "id": "chapter-21-k-the-redistricting-war-and-the-fall-of-the-votin",
       "title": "Chapter 21-K: The Redistricting War and the Fall of the Voting Rights Act",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-k-the-redistricting-war-and-the-fall-of-the-votin"
     },
     {
       "id": "chapter-21-l-the-retribution-docket-every-case-one-table",
       "title": "Chapter 21-L: The Retribution Docket — Every Case, One Table",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-l-the-retribution-docket-every-case-one-table"
     },
     {
       "id": "chapter-21-m-the-epstein-files-what-they-say-about-the-princ",
       "title": "Chapter 21-M: The Epstein Files — What They Say About the Principal",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-m-the-epstein-files-what-they-say-about-the-princ"
     },
     {
       "id": "chapter-21-n-the-blueprint-executed-project-2025-schedule-f-",
       "title": "Chapter 21-N: The Blueprint Executed — Project 2025, Schedule F, and the Shutdown as Instrument",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-n-the-blueprint-executed-project-2025-schedule-f-"
     },
     {
       "id": "chapter-21-o-the-evolving-epstein-narrative-every-explanatio",
       "title": "Chapter 21-O: The Evolving Epstein Narrative — Every Explanation, in Order",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-o-the-evolving-epstein-narrative-every-explanatio"
     },
     {
       "id": "chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-",
       "title": "Chapter 21-P: The Hemisphere — Boat Strikes, a Legal Theory, and a Captured Government",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-p-the-hemisphere-boat-strikes-a-legal-theory-and-"
     },
     {
       "id": "chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut",
       "title": "Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Current Documentation (2025–July 2026)"
+      ],
       "href": "/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut"
     },
     {
       "id": "the-honest-assessment",
       "title": "The Honest Assessment",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#the-honest-assessment"
     },
     {
       "id": "chapter-22-where-the-parallels-are-strongest",
       "title": "Chapter 22: Where the Parallels Are Strongest",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-22-where-the-parallels-are-strongest"
+    },
+    {
+      "id": "1-the-loyalty-architecture",
+      "title": "1. The Loyalty Architecture",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#1-the-loyalty-architecture"
+    },
+    {
+      "id": "2-the-detention-industrial-complex",
+      "title": "2. The Detention Industrial Complex",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#2-the-detention-industrial-complex"
+    },
+    {
+      "id": "3-the-emergency-powers-accumulation",
+      "title": "3. The Emergency Powers Accumulation",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#3-the-emergency-powers-accumulation"
+    },
+    {
+      "id": "4-the-information-environment",
+      "title": "4. The Information Environment",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#4-the-information-environment"
+    },
+    {
+      "id": "5-the-emergency-architecture-activated-added-july-2026",
+      "title": "5. The Emergency Architecture Activated (added July 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#5-the-emergency-architecture-activated-added-july-2026"
+    },
+    {
+      "id": "6-the-election-administration-front-added-july-2026",
+      "title": "6. The Election-Administration Front (added July 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 22: Where the Parallels Are Strongest"
+      ],
+      "href": "/#6-the-election-administration-front-added-july-2026"
     },
     {
       "id": "chapter-23-where-the-parallels-break-down-the-genuine-differ",
       "title": "Chapter 23: Where the Parallels Break Down — The Genuine Differences",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-23-where-the-parallels-break-down-the-genuine-differ"
+    },
+    {
+      "id": "1-institutional-resilience",
+      "title": "1. Institutional Resilience",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#1-institutional-resilience"
+    },
+    {
+      "id": "2-the-courts",
+      "title": "2. The Courts",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#2-the-courts"
+    },
+    {
+      "id": "3-the-press",
+      "title": "3. The Press",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#3-the-press"
+    },
+    {
+      "id": "4-the-methods",
+      "title": "4. The Methods",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#4-the-methods"
+    },
+    {
+      "id": "5-public-awareness",
+      "title": "5. Public Awareness",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#5-public-awareness"
+    },
+    {
+      "id": "6-the-2026-record-of-functioning-checks-added-july-2026",
+      "title": "6. The 2026 Record of Functioning Checks (added July 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 23: Where the Parallels Break Down — The Genuine Differences"
+      ],
+      "href": "/#6-the-2026-record-of-functioning-checks-added-july-2026"
     },
     {
       "id": "chapter-24-what-pattern-recognition-tells-us-and-what-it-doe",
       "title": "Chapter 24: What Pattern Recognition Tells Us — And What It Doesn't",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-24-what-pattern-recognition-tells-us-and-what-it-doe"
+    },
+    {
+      "id": "the-open-tests-as-of-july-19-2026",
+      "title": "The Open Tests, as of July 19, 2026",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment",
+        "Chapter 24: What Pattern Recognition Tells Us — And What It Doesn't"
+      ],
+      "href": "/#the-open-tests-as-of-july-19-2026"
     },
     {
       "id": "chapter-24-b-what-would-change-this-report-s-mind-the-falsif",
       "title": "Chapter 24-B: What Would Change This Report's Mind — The Falsifiability Statement (added in the Fifth Edition)",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-24-b-what-would-change-this-report-s-mind-the-falsif"
     },
     {
       "id": "chapter-25-weighing-the-frames-monarchy-kleptocracy-patrimon",
       "title": "Chapter 25: Weighing the Frames — Monarchy, Kleptocracy, Patrimonialism, Fascism (added in the Third Edition)",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-25-weighing-the-frames-monarchy-kleptocracy-patrimon"
     },
     {
       "id": "chapter-26-the-forecast-base-rates-scenarios-and-dated-tests",
       "title": "Chapter 26: The Forecast — Base Rates, Scenarios, and Dated Tests (How This Could End)",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "The Honest Assessment"
+      ],
       "href": "/#chapter-26-the-forecast-base-rates-scenarios-and-dated-tests"
     },
     {
       "id": "pattern-recognition-is-not-prophecy-it-is-responsibility",
       "title": "Pattern Recognition Is Not Prophecy — It Is Responsibility",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#pattern-recognition-is-not-prophecy-it-is-responsibility"
     },
     {
       "id": "key-sources-and-further-reading",
       "title": "Key Sources and Further Reading",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility"
+      ],
       "href": "/#key-sources-and-further-reading"
+    },
+    {
+      "id": "primary-historical-scholarship",
+      "title": "Primary Historical Scholarship",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#primary-historical-scholarship"
+    },
+    {
+      "id": "contemporary-democratic-erosion-scholarship",
+      "title": "Contemporary Democratic Erosion Scholarship",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#contemporary-democratic-erosion-scholarship"
+    },
+    {
+      "id": "current-documentation-sources",
+      "title": "Current Documentation Sources",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#current-documentation-sources"
+    },
+    {
+      "id": "fifth-edition-sources-the-machinery-chapters-added-july-19-2",
+      "title": "Fifth-Edition Sources — The Machinery Chapters (added July 19, 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#fifth-edition-sources-the-machinery-chapters-added-july-19-2"
+    },
+    {
+      "id": "fourth-edition-sources-formation-network-convergence-forecas",
+      "title": "Fourth-Edition Sources — Formation, Network, Convergence, Forecast (added July 19, 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#fourth-edition-sources-formation-network-convergence-forecas"
+    },
+    {
+      "id": "third-edition-sources-the-money-and-power-architecture-added",
+      "title": "Third-Edition Sources — The Money and Power Architecture (added July 19, 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#third-edition-sources-the-money-and-power-architecture-added"
+    },
+    {
+      "id": "second-edition-sources-added-july-19-2026",
+      "title": "Second-Edition Sources (added July 19, 2026)",
+      "level": 4,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Pattern Recognition Is Not Prophecy — It Is Responsibility",
+        "Key Sources and Further Reading"
+      ],
+      "href": "/#second-edition-sources-added-july-19-2026"
     },
     {
       "id": "appendix-a-editorial-method-and-verification-history",
       "title": "Appendix A — Editorial Method and Verification History",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#appendix-a-editorial-method-and-verification-history"
     },
     {
       "id": "a-1-the-standing-method",
       "title": "A.1 — The standing method",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix A — Editorial Method and Verification History"
+      ],
       "href": "/#a-1-the-standing-method"
     },
     {
       "id": "a-2-edition-history",
       "title": "A.2 — Edition history",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix A — Editorial Method and Verification History"
+      ],
       "href": "/#a-2-edition-history"
     },
     {
       "id": "a-3-corrections-carried-forward-from-the-review",
       "title": "A.3 — Corrections carried forward from the review",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix A — Editorial Method and Verification History"
+      ],
       "href": "/#a-3-corrections-carried-forward-from-the-review"
     },
     {
       "id": "a-4-what-could-not-be-independently-re-verified",
       "title": "A.4 — What could not be independently re-verified",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix A — Editorial Method and Verification History"
+      ],
       "href": "/#a-4-what-could-not-be-independently-re-verified"
     },
     {
       "id": "a-5-the-reviewer-s-standing-cautions",
       "title": "A.5 — The reviewer's standing cautions",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix A — Editorial Method and Verification History"
+      ],
       "href": "/#a-5-the-reviewer-s-standing-cautions"
     },
     {
       "id": "appendix-b-provenance-what-this-edition-consolidated",
       "title": "Appendix B — Provenance: What This Edition Consolidated",
       "level": 2,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [],
       "href": "/#appendix-b-provenance-what-this-edition-consolidated"
     },
     {
       "id": "b-1-why-this-edition-exists",
       "title": "B.1 — Why this edition exists",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix B — Provenance: What This Edition Consolidated"
+      ],
       "href": "/#b-1-why-this-edition-exists"
     },
     {
       "id": "b-2-sources-merged",
       "title": "B.2 — Sources merged",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix B — Provenance: What This Edition Consolidated"
+      ],
       "href": "/#b-2-sources-merged"
     },
     {
       "id": "b-3-what-could-not-be-reached-and-how-it-was-handled",
       "title": "B.3 — What could not be reached, and how it was handled",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix B — Provenance: What This Edition Consolidated"
+      ],
       "href": "/#b-3-what-could-not-be-reached-and-how-it-was-handled"
     },
     {
       "id": "b-4-new-this-edition",
       "title": "B.4 — New this edition",
       "level": 3,
+      "scope": "report",
+      "dateContext": "",
+      "parents": [
+        "Appendix B — Provenance: What This Edition Consolidated"
+      ],
       "href": "/#b-4-new-this-edition"
     },
     {
-      "id": "contents-heading",
-      "title": "Contents",
+      "id": "brief-2026-08-30-the-lede",
+      "title": "The lede",
       "level": 2,
-      "href": "/#contents-heading"
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-the-lede"
+    },
+    {
+      "id": "brief-2026-08-30-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-08-30-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-08-30-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-08-30-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-08-30-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-08-30-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-08-30-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-30",
+      "parents": [],
+      "href": "/#brief-2026-08-30-next-week-s-priorities"
+    },
+    {
+      "id": "brief-2026-08-23-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-the-lede"
+    },
+    {
+      "id": "brief-2026-08-23-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-08-23-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-08-23-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-08-23-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-08-23-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-08-23-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-08-23-next-week-s-priorities",
+      "title": "Next week’s priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-23",
+      "parents": [],
+      "href": "/#brief-2026-08-23-next-week-s-priorities"
+    },
+    {
+      "id": "brief-2026-08-16-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-the-lede"
+    },
+    {
+      "id": "brief-2026-08-16-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-08-16-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-08-16-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-08-16-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-08-16-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-08-16-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-08-16-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-08-16",
+      "parents": [],
+      "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
   "reportCurrentThrough": "2026-08-30",
