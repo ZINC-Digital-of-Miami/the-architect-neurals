@@ -403,21 +403,22 @@ img,svg,video{max-width:100%}
 .contents-links{padding:1.2rem 1.4rem 2rem}
 @media (max-width:1100px){
   .shell{display:block}.shell>.sidebar{display:none}
-  .menu-toggle{display:flex;align-items:center;margin-left:auto}
+  .menu-toggle{display:flex;align-items:center;justify-content:center;margin-left:auto;min-height:44px}
   .topnav .navlinks{position:absolute;top:100%;left:0;right:0;height:auto;max-height:calc(100dvh - var(--nav-h) - var(--reader-h));
-    overflow:auto;padding:.75rem 1.25rem 1.25rem;background:var(--ink);display:flex;flex-direction:column;align-items:stretch;gap:0}
+    overflow:auto;padding:.75rem 1.25rem 1.25rem;background:var(--ink);display:flex;flex-direction:column;align-items:stretch;gap:0;font-size:.84rem}
   .ui-ready .topnav .navlinks:not(.is-open){display:none}
   .topnav .navlinks>a,.navgroup>button{padding:.65rem .2rem;min-height:46px}
   .topnav .navlinks>a[aria-current="page"]::after{right:auto;width:2rem}
   .navgroup{display:block;height:auto}
   .navgroup>button{width:100%;justify-content:space-between}
   .navgroup .dd{position:static;min-width:0;width:100%;max-width:none;max-height:none;padding:1rem;box-shadow:none;margin:.3rem 0 .7rem}
+  .navgroup .dd a{display:flex;align-items:center;min-height:44px;font-size:.84rem}
   .search-link{border-left:0;border-top:1px solid var(--ink-3)}
   .content{padding:0 clamp(1.25rem,5vw,3.5rem) 4rem}
 }
 @media (max-width:760px){
   :root{--nav-h:3.75rem}
-  body{font-size:17px;line-height:1.65}
+  body{font-size:18px;line-height:1.68}
   .topnav .brand{font-size:1.15rem}
   .topnav{gap:.6rem;padding:0 1.1rem}
   .cover{margin-top:1.8rem}.cover h1{font-size:clamp(2.4rem,10vw,4.5rem);overflow-wrap:normal}
@@ -575,4 +576,16 @@ img,svg,video{max-width:100%}
   .rail .stop{min-width:0;break-inside:avoid}
   .cast dl,.update .cols{columns:1!important}
   .arch3,.howto,.research-grid{display:block}
+}
+
+/* Research history and the preserved source index remain readable on narrow screens. */
+.evidence-record pre{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere;font-size:.88rem;line-height:1.6}
+.source-archive{max-width:85ch;overflow-wrap:anywhere}
+.clock .clock-reference-note{font-size:.8rem;line-height:1.5;margin:.75rem 0 0;color:var(--ink-3)}
+.report-outline .outline-level-3{margin-left:1rem}
+.report-outline .outline-level-4{margin-left:2rem}
+@media(max-width:760px){
+  .source-archive p,.source-archive li,.record-context{font-size:1.0625rem;line-height:1.7}
+  .contents-links a,.contents-links summary{min-height:44px;display:flex;align-items:center}
+  .part-open .pmeta .top a,.site-footer .mono a,a.tier{min-height:44px;display:inline-flex;align-items:center;font-size:.84rem;letter-spacing:.03em}
 }

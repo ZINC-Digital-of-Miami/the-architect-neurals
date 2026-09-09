@@ -11,7 +11,8 @@ Weekly: add briefs/YYYY-MM-DD.html and refresh the dated update in update_part2.
 preserving every prior correction and archive record, then re-run.
 Brief numbering, the edition number, the masthead date, the archive, the per-brief pages,
 and the sitemap all follow from the briefs/ directory automatically."""
-import re, html, pathlib, unicodedata, os, json
+import re, html, pathlib, unicodedata, os, json, sys
+from dataclasses import asdict
 import markdown
 
 # Portable paths. Sources live beside this script; output goes to ../site (the Vercel deploy dir).
@@ -19,6 +20,19 @@ import markdown
 ROOT = pathlib.Path(os.environ.get("ARCH_ROOT") or pathlib.Path(__file__).resolve().parent)
 DIST = pathlib.Path(os.environ.get("ARCH_DIST") or (ROOT.parent / "site"))
 (DIST / "briefs").mkdir(parents=True, exist_ok=True)
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from report_references import link_report_references
+from report_navigation import link_silence_clocks, repair_directional_references
+reference_inventory = []
+
+def reference_links(markup, source):
+    markup = repair_directional_references(markup, source)
+    linked, inventory = link_report_references(markup, toc,
+        aliases={"Chapter 21": "The Budget Architecture — Priorities Revealed"})
+    reference_inventory.append({"source": source, "resolved": [asdict(row) for row in inventory.resolved],
+        "unresolved": [asdict(row) for row in inventory.unresolved]})
+    return linked
 
 master = (ROOT / "master_report.md").read_text()
 split_at = master.index("## Executive Summary")
@@ -67,6 +81,10 @@ def add_id(m):
     sid = slugify(inner); toc.append((tag, sid, re.sub(r"<[^>]+>", "", inner)))
     return f'<{tag} id="{sid}">{inner}</{tag}>'
 body_html = re.sub(r"<(h[23])>(.*?)</\1>", add_id, body_html, flags=re.S)
+# Assign subsection anchors after the existing headings so their published IDs stay stable.
+body_html = re.sub(r"<(h4)>(.*?)</\1>", add_id, body_html, flags=re.S)
+toc = [(m[1], m[2], re.sub(r"<[^>]+>", "", m[3]))
+       for m in re.finditer(r'<(h[234]) id="([^"]+)">(.*?)</\1>', body_html, re.S)]
 h2s = [(sid, txt) for tag, sid, txt in toc if tag == "h2"]
 slug_of = {txt: sid for sid, txt in h2s}
 
@@ -102,7 +120,7 @@ for i, chunk in enumerate(parts):
         dek = DEKS.get(txt, "")
         out.append(
           f'<header class="part-open"><div class="pmeta"><span>Section {order} of {len(h2s)}</span>'
-          f'<span class="rt">~{mins} min read</span><span class="top"><a href="#top">contents &uarr;</a></span></div>'
+          f'<span class="rt">~{mins} min read</span><span class="top"><a href="#top">Back to top &uarr;</a></span></div>'
           f'<h2 id="{sid}">{inner}</h2>' + (f'<p class="dek">{dek}</p>' if dek else "") + "</header>")
         if txt == "Formation: The Making of the Man":
             out.append('<aside class="research-note" aria-label="Research navigation">'
@@ -111,7 +129,9 @@ for i, chunk in enumerate(parts):
                        'Research topic: early financing and creditor records</a></aside>')
     else:
         out.append(chunk)
-body_html = "".join(out)
+body_html = reference_links("".join(out), "master_report.md:body")
+head_html = reference_links(head_html, "master_report.md:title")
+fm_html = reference_links(fm_html, "master_report.md:edition-notes")
 read_total = round((total_words/220 + 15))
 
 # ---------- orientation ----------
@@ -329,7 +349,10 @@ def reading_controls(sidebar_html):
 <p data-print-status role="status" aria-live="polite"></p></div></dialog>''')
 
 # ---------- assemble shared body ----------
-update_html = (ROOT / "update_part2.html").read_text()
+update_html = reference_links((ROOT / "update_part2.html").read_text(), "update_part2.html")
+update_html, navigation_inventory = link_silence_clocks(update_html,
+    json.loads((ROOT / "report_reference_targets.json").read_text())["targets"],
+    set(re.findall(r'\bid="([^"]+)"', body_html + update_html)))
 neural_html = (ROOT / "neural_map.html").read_text()   # interactive map section (own <style>/<script>)
 
 # ---------- weekly briefs: every briefs/YYYY-MM-DD.html is picked up automatically ----------
@@ -346,7 +369,19 @@ def brief_inner(raw):
 
 briefs = []  # [(date_stem, inner_html)] oldest -> newest
 for bp in sorted((ROOT / "briefs").glob("2*.html")):
-    inner = brief_inner(bp.read_text())
+    inner = reference_links(brief_inner(bp.read_text()), "briefs/" + bp.name)
+    brief_seen = {}
+    def brief_heading(match):
+        tag, attrs, title = match.groups()
+        if re.search(r'\bid\s*=', attrs):
+            return match.group(0)
+        label = html.unescape(re.sub(r"<[^>]+>", "", title))
+        base = re.sub(r"[^a-z0-9]+", "-", unicodedata.normalize("NFKD", label).lower()).strip("-")[:60] or "section"
+        number = brief_seen.get(base, 0)
+        brief_seen[base] = number + 1
+        ident = f"brief-{bp.stem}-{base}" + (f"-{number}" if number else "")
+        return f'<{tag}{attrs} id="{ident}">{title}</{tag}>'
+    inner = re.sub(r"<(h[234])([^>]*)>(.*?)</\1>", brief_heading, inner, flags=re.S)
     inner = inner.replace('<div class="mast-kicker"><a href="/">&larr; The Architecture — Main Report</a></div>',
                           '<div class="mast-kicker">Weekly Brief Archive</div>')
     inner = inner.replace('<a href="/">&larr; MAIN REPORT</a> &middot; ', '')
@@ -367,10 +402,23 @@ brief_section = ('<section id="brief-001"><h2><span class="num">ARCHIVE</span>We
                  'Each opens in full — lede, three architectures, rejects, sourcing notes.</p>'
                  + items + '</section>')
 src_md = (ROOT / "sources_manifest.md").read_text()
+# Keep the archived wording intact, but render it as readable prose instead of code.
+source_archive_html = reference_links(markdown.markdown(src_md, extensions=["tables"]), "sources_manifest.md")
+source_archive_html = re.sub(r"<h1>(.*?)</h1>", r'<p class="mast-kicker">\1</p>', source_archive_html, count=1, flags=re.S)
+source_registry = json.loads((ROOT / "research_registry.json").read_text())
+reviewed_sources = '<ul class="source-links">'
+for source in source_registry.get("sources", []):
+    reviewed_sources += (f'<li id="source-{html.escape(source["id"], quote=True)}">'
+        f'<a href="{html.escape(source["url"], quote=True)}" rel="noopener noreferrer">'
+        f'{html.escape(source["publisher"])}: {html.escape(source["title"])}</a>'
+        f'<span class="topic-meta">{html.escape(source.get("publishedAt") or "Publication date not recorded")} '
+        f'· reviewed {html.escape(source["accessedAt"])}</span>'
+        + (f'<span class="topic-meta">Location: {html.escape(source["locator"])}</span>' if source.get("locator") else "") + '</li>')
+reviewed_sources += '</ul>'
 sources_section = ('<section id="sources"><h2><span class="num">REFERENCE</span>Source Archive Index (2026-07-19)</h2>'
                    '<p>Every sourced line in the master report, extracted for archiving — 200 entries. Weekly-update sourcing lives inline in the update sections and archived briefs.</p>'
                    '<details class="front-matter"><summary>Open the 200-entry source index</summary><div class="fm-body">'
-                   '<pre class="manifest">' + html.escape(src_md) + "</pre></div></details></section>")
+                   + source_archive_html + "</div></details></section>")
 
 cover = (f'<header class="cover" id="cover">{head_html}'
          f'<div class="mast-meta"><span>MASTER REPORT: CONSOLIDATED EDITION &middot; 2026-08-22</span><span>RESEARCH BEGUN 2025-12</span>'
@@ -450,7 +498,12 @@ for stem, inner in briefs:
         active="record", page_class="brief-page"))
 (DIST / "sources.html").write_text(render_page("Source Archive Index — The Architecture",
     '<p class="mast-kicker"><a href="/">&larr; The Architecture</a></p>'
-    '<h1 class="mast">Source Archive Index</h1><pre class="manifest">' + html.escape(src_md) + '</pre>',
+    '<h1 class="mast">Sources</h1><p>Open the reviewed records, or read the preserved historical source index.</p>'
+    + f'<section id="reviewed-sources"><h2>Reviewed source records</h2><p>{len(source_registry.get("sources", []))} records linked in the research views.</p>'
+    + reviewed_sources + '</section><section id="historical-sources"><h2>Historical source archive</h2>'
+    + '<p>The original index cites sources by name and date. Navigation wording is updated for this layout; the original wording remains in the download. '
+    '<a href="/src/sources_manifest.md" download>Download the original index</a>.</p>'
+    + '<div class="source-archive">' + source_archive_html + '</div></section>',
     active="sources", page_class="sources-page"))
 
 # Content-only export keeps its CSS and reading behavior self-contained for publishers.
@@ -483,6 +536,11 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from build_research import build_research
 research_urls = build_research(ROOT, DIST, render_page)
+(DIST / "research" / "references.json").write_text(json.dumps(reference_inventory, ensure_ascii=False, indent=2) + "\n")
+unresolved_references = [row for document in reference_inventory for row in document["unresolved"]]
+if unresolved_references:
+    raise SystemExit("Unresolved named report references: " + json.dumps(unresolved_references, ensure_ascii=False))
+(DIST / "research" / "navigation.json").write_text(json.dumps(navigation_inventory, ensure_ascii=False, indent=2) + "\n")
 
 # Production address of Vercel project `the-architecture` (team zincdigitalofmiamis-projects).
 # the-architecture-liard.vercel.app is the project's former address and redirects here.
@@ -507,7 +565,7 @@ if _srcdst.exists():
 _srcdst.mkdir()
 for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
            "build_site3.py", "site_ui.js", "build_research.py", "research_registry.json",
-           "research_registry.py", "research_ui.js", "neural_map.html", "neural_data.json", "neural_svg.frag",
+           "research_registry.py", "research_ui.js", "report_references.py", "report_navigation.py", "report_reference_targets.json", "neural_map.html", "neural_data.json", "neural_svg.frag",
            "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
     _sp = ROOT / _f
     if _sp.exists():

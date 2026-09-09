@@ -642,11 +642,11 @@
   <header class="nm-head"><div class="nm-kicker">Neural map · <span id="nm-data-state">data state 2026-08-30</span></div><h2 id="neural-map">The Neural Map</h2><p class="nm-dek">Explore relationships. Inspect the record.</p></header>
   <div class="nm-explorer">
     <div class="nm-workspace" id="nm-workspace">
-      <div class="nm-toolbar"><label class="nm-search" for="nm-search"><span class="nm-label">Find an entity or topic</span><input id="nm-search" type="search" placeholder="Search people, institutions, topics…" autocomplete="off" aria-controls="nm-entity-list"></label><div class="nm-mode" role="group" aria-label="Map display"><span class="nm-label nm-mode-label" aria-hidden="true">View</span><button type="button" id="nm-view-network" aria-pressed="true" aria-controls="nm-network">Network</button><button type="button" id="nm-view-entities" aria-pressed="false" aria-controls="nm-entities">Entities</button></div></div><p class="nm-mobile-guide">Entities opens first on phones. Choose Network to explore connections; use Fit to return to the visible map.</p>
+      <div class="nm-toolbar"><label class="nm-search" for="nm-search"><span class="nm-label">Find an entity or topic</span><input id="nm-search" type="search" placeholder="Search people, institutions, topics…" autocomplete="off" aria-controls="nm-entity-list"></label><div class="nm-mode" role="group" aria-label="Map display"><span class="nm-label nm-mode-label" aria-hidden="true">View</span><button type="button" id="nm-view-network" aria-pressed="true" aria-controls="nm-network">Network</button><button type="button" id="nm-view-entities" aria-pressed="false" aria-controls="nm-entities">Entities</button></div></div><p class="nm-mobile-guide">Pinch or use + / − to zoom. Drag to move; tap an entity to read its record. Fit shows the whole map. Entities provides a readable list.</p>
       <div class="nm-filters"><label class="nm-filter"><span class="nm-label">Topic</span><select id="nm-topic"><option value="">All topics</option></select></label><label class="nm-filter"><span class="nm-label">Relationship grade</span><select id="nm-grade"><option value="">All grades</option><option value="A">[A] Documented</option><option value="B">[B] Reported</option><option value="C">[C] Alleged / denied</option><option value="O">[O] Adjacency</option></select></label><button type="button" id="nm-reset">Reset all</button></div>
       <p class="nm-meta"><span id="nm-count">31 nodes · 62 edges</span> · preserved report and reviewed additions</p><p class="nm-meta nm-status" id="nm-status" role="status" aria-live="polite">Loading relationships…</p><div class="nm-coverage" id="nm-coverage" role="status" hidden></div>
       <div class="nm-network" id="nm-network"><div class="nm-canvas" id="nm-canvas"><div class="nm-loading">Loading the map…</div></div><p class="nm-network-note">Select an entity to focus its connections. Drag empty space to pan. Use + / − to zoom; arrow keys pan the focused canvas.</p><div class="nm-zoom" role="group" aria-label="Map viewport"><button type="button" id="nm-zoom-in" aria-label="Zoom in">+</button><button type="button" id="nm-zoom-out" aria-label="Zoom out">−</button><button type="button" id="nm-fit" aria-label="Fit visible entities">Fit</button><button type="button" id="nm-motion" aria-pressed="false">Pause pulse</button></div></div>
-      <div id="nm-entities" hidden><ul class="nm-entity-list" id="nm-entity-list" aria-label="Entities"></ul><p class="nm-empty" id="nm-empty" hidden>No entities match these filters. Try another term or reset the filters.</p></div>
+      <div id="nm-entities" hidden><ul class="nm-entity-list" id="nm-entity-list" aria-label="Entities"></ul></div><p class="nm-empty" id="nm-empty" hidden>No entities match these filters. Try another term or reset the filters.</p>
       <div class="nm-legend" aria-label="Relationship evidence legend"><span><b class="nm-grade">A</b> Documented</span><span><b class="nm-grade nm-grade-B">B</b> Reported</span><span><b class="nm-grade nm-grade-C">C</b> Alleged / denied</span><span><b class="nm-grade nm-grade-O">O</b> Adjacency</span></div><p class="nm-meta" id="nm-registry-status">Grades describe relationship claims in the existing report, not ratings of people.</p>
     </div>
     <div class="nm-sheet-shade" id="nm-sheet-shade" hidden></div>
@@ -667,6 +667,12 @@
   const canvas = $("nm-canvas"),
     dossier = $("nm-dossier"),
     shade = $("nm-sheet-shade");
+  const toolbar = root.querySelector(".nm-toolbar"),
+    coverage = $("nm-coverage"),
+    network = $("nm-network");
+  function placeNetwork() {
+    (small.matches ? toolbar : coverage).insertAdjacentElement("afterend", network);
+  }
   const gradeNames = { A: "Documented", B: "Reported", C: "Alleged / denied", O: "Adjacency" };
   const state = {
     query: "",
@@ -675,7 +681,7 @@
     selected: null,
     edge: null,
     tab: "overview",
-    view: small.matches ? "entities" : "network",
+    view: "network",
   };
   let data = null,
     registry = null,
@@ -685,7 +691,6 @@
     lastTrigger = null,
     lastTriggerKey = null,
     savedOverflow = null,
-    manualView = false,
     drag = null;
   let graphNodes = [],
     graphEdges = [],
@@ -797,7 +802,6 @@
   function setView(view, manual) {
     if (drawingFailed && view === "network") view = "entities";
     state.view = view;
-    if (manual) manualView = true;
     $("nm-network").hidden = view !== "network";
     $("nm-entities").hidden = view !== "entities";
     ["network", "entities"].forEach((name) =>
@@ -1173,7 +1177,7 @@
   });
   function zoom(factor) {
     if (!box) return;
-    const width = Math.max(originalBox[2] / 12, Math.min(originalBox[2] * 2, box[2] * factor)),
+    const width = Math.max(originalBox[2] / 24, Math.min(originalBox[2] * 2, box[2] * factor)),
       ratio = width / box[2],
       height = box[3] * ratio;
     applyBox([box[0] + (box[2] - width) / 2, box[1] + (box[3] - height) / 2, width, height]);
@@ -1199,10 +1203,27 @@
       [edge.s, edge.t].forEach((key) => connections.set(key, (connections.get(key) || 0) + 1));
     });
     const hubs = new Set([...connections].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 4).map(([key]) => key));
+    const touches = new Map();
+    let pinch = null;
+    let suppressClickUntil = 0;
+    const beginPinch = () => {
+      if (touches.size !== 2) return;
+      const [a, b] = [...touches.values()];
+      const matrix = svg.getScreenCTM();
+      if (!matrix) return;
+      const center = {x: (a.x + b.x) / 2, y: (a.y + b.y) / 2};
+      const point = new DOMPoint(center.x, center.y).matrixTransform(matrix.inverse());
+      pinch = {distance: Math.max(1, Math.hypot(a.x - b.x, a.y - b.y)),
+        box: box.slice(), center, point, scale: matrix.a};
+      drag = null;
+      suppressClickUntil = Infinity;
+    };
     graphNodes.forEach((node, index) => {
       node.classList.toggle("is-hub", hubs.has(node.dataset.key));
       node.querySelector(".nm-disc").style.animationDelay = `${-(index % 4)}s`;
-      node.addEventListener("click", () => selectNode(node.dataset.key, node));
+      node.addEventListener("click", () => {
+        if (performance.now() >= suppressClickUntil) selectNode(node.dataset.key, node);
+      });
       node.addEventListener("keydown", (event) => {
         if (event.key === "Enter" || event.key === " ") {
           event.preventDefault();
@@ -1215,7 +1236,7 @@
       element.addEventListener("click", () => {
         const index = Number(element.dataset.i),
           edge = data.edges[index];
-        if (edge && (!drag || !drag.moved))
+        if (edge && performance.now() >= suppressClickUntil && (!drag || !drag.moved))
           selectNode(
             state.selected && (edge.s === state.selected || edge.t === state.selected)
               ? state.selected
@@ -1226,6 +1247,14 @@
       }),
     );
     canvas.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "touch") {
+        touches.set(event.pointerId, {x: event.clientX, y: event.clientY});
+        if (touches.size === 2) {
+          touches.forEach((_, id) => canvas.setPointerCapture(id));
+          beginPinch();
+          return;
+        }
+      }
       if (event.button !== 0 || event.target.closest(".nm-node,.nm-edge,.nm-lab")) return;
       const matrix = svg.getScreenCTM();
       if (!matrix) return;
@@ -1240,6 +1269,22 @@
       canvas.setPointerCapture(event.pointerId);
     });
     canvas.addEventListener("pointermove", (event) => {
+      if (touches.has(event.pointerId)) {
+        touches.set(event.pointerId, {x: event.clientX, y: event.clientY});
+        if (pinch && touches.size === 2) {
+          const [a, b] = [...touches.values()];
+          const distance = Math.max(1, Math.hypot(a.x - b.x, a.y - b.y));
+          const width = Math.max(originalBox[2] / 24, Math.min(originalBox[2] * 2,
+            pinch.box[2] * pinch.distance / distance));
+          const ratio = width / pinch.box[2];
+          const dx = ((a.x + b.x) / 2 - pinch.center.x) / pinch.scale;
+          const dy = ((a.y + b.y) / 2 - pinch.center.y) / pinch.scale;
+          applyBox([pinch.point.x - (pinch.point.x - pinch.box[0] + dx) * ratio,
+            pinch.point.y - (pinch.point.y - pinch.box[1] + dy) * ratio,
+            width, pinch.box[3] * ratio]);
+          return;
+        }
+      }
       if (!drag || event.pointerId !== drag.id) return;
       const dx = (event.clientX - drag.x) / drag.scale,
         dy = (event.clientY - drag.y) / drag.scale;
@@ -1251,6 +1296,12 @@
       }
     });
     const release = (event) => {
+      touches.delete(event.pointerId);
+      if (pinch) {
+        pinch = null;
+        suppressClickUntil = performance.now() + 350;
+        if (canvas.hasPointerCapture(event.pointerId)) canvas.releasePointerCapture(event.pointerId);
+      }
       if (drag && drag.id === event.pointerId) {
         if (canvas.hasPointerCapture(event.pointerId))
           canvas.releasePointerCapture(event.pointerId);
@@ -1411,6 +1462,8 @@
     }
   });
   document.addEventListener("keydown", (event) => {
+    // Native dialogs own keyboard focus while open above the entity sheet.
+    if (document.querySelector("dialog[open]")) return;
     if (
       event.key === "Escape" &&
       state.selected &&
@@ -1448,9 +1501,11 @@
     if (data) readURL();
   });
   small.addEventListener("change", () => {
-    if (!manualView) setView(small.matches ? "entities" : "network", false);
+    placeNetwork();
+    if (state.view === "network") requestAnimationFrame(() => fit());
     setSheet();
   });
+  placeNetwork();
   setView(state.view, false);
   fetch(root.dataset.researchUrl)
     .then((response) => {
@@ -1502,8 +1557,12 @@
     .catch((error) => {
       canvas.innerHTML =
         '<p class="nm-loading">The map could not load. Please reload this page.</p>';
+      drawingFailed = true;
+      setView("entities", false);
+      ["nm-search", "nm-topic", "nm-grade", "nm-reset", "nm-view-network",
+        "nm-view-entities", "nm-zoom-in", "nm-zoom-out", "nm-fit", "nm-motion"]
+        .forEach((id) => { $(id).disabled = true; });
       $("nm-status").textContent = "Map unavailable: " + error.message;
-      $("nm-entities").hidden = false;
       $("nm-empty").hidden = false;
       $("nm-empty").textContent =
         "The entity data could not be loaded. The main report is still available from the menu.";

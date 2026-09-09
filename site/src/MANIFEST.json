@@ -11,7 +11,7 @@
   "clocks": 12,
   "map_nodes": 59,
   "map_edges": 93,
-  "index_bytes": 641101
+  "index_bytes": 671363
  },
  "files": [
   {
@@ -106,18 +106,18 @@
   },
   {
    "path": "build_research.py",
-   "bytes": 20022,
-   "sha256": "17a0088b051779f4b94b3dc772bb177d9f2f2a5744392415f662c49f78aff44a"
+   "bytes": 26133,
+   "sha256": "a94747e6995a1be2460db8358737454e1666f0d139feeb356f535f32702d1abd"
   },
   {
    "path": "build_site3.py",
-   "bytes": 41302,
-   "sha256": "b7b89abfef4ff21793566ba57632a4d7e8d2af0ca0d9b6fe69217b0baf4aa48b"
+   "bytes": 45637,
+   "sha256": "f80f2820456d5d77519ea62d5c602fdd093126f7d776266d90f79e7a2531ac15"
   },
   {
    "path": "check.sh",
-   "bytes": 6144,
-   "sha256": "80f825410b4c6a3c9e2da7b001c365ce93c7cc49173bd80b94894dffea2ad01d"
+   "bytes": 6214,
+   "sha256": "b8be0a4fdc438e6d06b84acace91ab424c0470026cf333ad5c44089cb4f42f11"
   },
   {
    "path": "deploy.sh",
@@ -126,8 +126,8 @@
   },
   {
    "path": "final.css",
-   "bytes": 42285,
-   "sha256": "d96238dbc115450976bccbafd49c23af82397f38f39e283a568d2594eea4b9d6"
+   "bytes": 43246,
+   "sha256": "9ba6422d158ffdcb222f57932c892937ba6be082fa0e865e4c23c3ed1a666e73"
   },
   {
    "path": "map_source.json",
@@ -151,8 +151,8 @@
   },
   {
    "path": "neural_map.html",
-   "bytes": 51294,
-   "sha256": "b9cf39d11bfb79f40873a4ce9002eda44eb60026fd110dc171acdb641cea23f6"
+   "bytes": 53950,
+   "sha256": "ea0f96beaab5013cbce994750712298d571a44a898ad9a067348c0668e2e5a17"
   },
   {
    "path": "neural_svg.frag",
@@ -163,6 +163,21 @@
    "path": "pull_src.sh",
    "bytes": 242,
    "sha256": "30ee1aa5c7adbe28b890f8b0d758d0eeff996a496583daf97c03f3c04b1fbe3a"
+  },
+  {
+   "path": "report_navigation.py",
+   "bytes": 3397,
+   "sha256": "e29d8e5cf97c6a9f35a360e25cbff5c848f0d13adf7a501c68c476f9d1a23c8d"
+  },
+  {
+   "path": "report_reference_targets.json",
+   "bytes": 7313,
+   "sha256": "bcce6251147bdc9c22dfc0f41d8f85bc20af107ea51fea3363ebe128592a6fd3"
+  },
+  {
+   "path": "report_references.py",
+   "bytes": 11122,
+   "sha256": "6649da2f25e31d09abae8225dfdb8f1218d6ea1f189eaff1d43ba6b9bd803d96"
   },
   {
    "path": "research_registry.json",

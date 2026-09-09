@@ -52,6 +52,7 @@ for ph in ["YYYY-MM-DD","{{SUNDAY}}","{{SITE}}","Edition NNN","EDITION NNN","The
 PY
 # The owner authorized the responsive design; content remains independently protected.
 python3 scripts/preservation.py check || fail "historical content preservation"
+python3 scripts/check_section_links.py || fail "report section links"
 python3 scripts/check_artifact.py || fail "stale generated artifact"
 if [ -s .architecture/base-preservation.json ]; then
   python3 scripts/preservation.py check --baseline .architecture/base-preservation.json || fail "prior publication preservation"

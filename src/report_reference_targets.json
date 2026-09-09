@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "purpose": "Source-backed destinations for Silence Ledger clocks whose authored href was reviewed semantically.",
+  "targets": {
+    "who bought WLFI — sanctioned, DPRK-linked, Tornado Cash wallets": {
+      "currentHref": "#u-week",
+      "status": "unresolved",
+      "canonicalHref": null,
+      "canonicalTitle": null,
+      "evidence": [{"path": "src/update_part2.html", "line": 124, "excerpt": "Warren–Reed → Treasury/DOJ: who bought WLFI — sanctioned, DPRK-linked, Tornado Cash wallets."}],
+      "rationale": "No preserved master or update section outside the clock records this inquiry. Crypto chapters are topical counterexamples, but do not contain this claim."
+    },
+    "USD1 / PancakeSwap": {
+      "currentHref": "#u-week",
+      "status": "unresolved",
+      "canonicalHref": null,
+      "canonicalTitle": null,
+      "evidence": [{"path": "src/update_part2.html", "line": 126, "excerpt": "Warren follow-up → Treasury/DOJ: USD1 / PancakeSwap."}],
+      "rationale": "PancakeSwap appears nowhere else in the preserved master or update. A broad crypto destination would not support the inquiry."
+    },
+    "Steve Witkoff's Form 278e": {
+      "currentHref": "#u-week",
+      "status": "resolved",
+      "canonicalHref": "/#u-corrections",
+      "canonicalTitle": "Corrections Log",
+      "evidence": [{"path": "src/update_part2.html", "line": 92, "excerpt": "The posted Form 278e ... bears the agency certifying official's electronic signature dated 12/12/2025 ... The U.S. Office of Government Ethics certification line in that posted version is unsigned."}],
+      "rationale": "C-010 records the same form, dates, certification distinction, and unsigned OGE line."
+    },
+    "White House physician: health-records inconsistencies": {
+      "currentHref": "#u-week",
+      "status": "unresolved",
+      "canonicalHref": null,
+      "canonicalTitle": null,
+      "evidence": [{"path": "src/update_part2.html", "line": 132, "excerpt": "Raskin → White House physician: health-records inconsistencies."}],
+      "rationale": "No preserved master or update section outside the clock records this inquiry. General health discussion would not support this specific letter."
+    },
+    "companies taking federal mineral stakes": {
+      "currentHref": "#u-week",
+      "status": "resolved",
+      "canonicalHref": "/#stream-2-critical-minerals-and-project-vault",
+      "canonicalTitle": "Stream 2 — Critical minerals and Project Vault",
+      "evidence": [{"path": "src/master_report.md", "line": 559, "excerpt": "Representatives Huffman and Garcia and Senator Heinrich wrote Defense, Commerce, Energy, and Interior ... asking directly whether ... affiliates of the Trump Organization have equity positions in any of the companies. Documents were due February 26, 2026. No public response has been located."}],
+      "rationale": "The deepest existing heading contains the same senders, recipients, equity question, deadline, and non-response."
+    },
+    "Trump Presidential Library Foundation: the ~$14.5M gap": {
+      "currentHref": "#u-week",
+      "status": "resolved",
+      "canonicalHref": "/#chapter-m-the-media-revenge-campaign-lawsuits-licenses-acces",
+      "canonicalTitle": "Chapter M: The Media Revenge Campaign — Lawsuits, Licenses, Access, and Subpoenas",
+      "evidence": [{"path": "src/master_report.md", "line": 756, "excerpt": "A July 16, 2026 letter from Senators Warren, Blumenthal, and Representative Stansbury documents that identified settlements total $64.5 million, while the Foundation reported only $50 million in revenue ... leaving up to $14.5 million unaccounted for — plus roughly $7 million in expenditures with no clear explanation."}],
+      "rationale": "The chapter contains the same letter, amounts, foundation, date, and unanswered status."
+    },
+    "$3.2B in awards to companies tied to 1789 Capital and American Ventures": {
+      "currentHref": "#u-week",
+      "status": "resolved",
+      "canonicalHref": "/#stream-5-defense-procurement-and-the-family-portfolio",
+      "canonicalTitle": "Stream 5 — Defense procurement and the family portfolio",
+      "evidence": [{"path": "src/master_report.md", "line": 593, "excerpt": "Senators Warren, Blumenthal, Duckworth and Representative Garcia wrote the Defense Department Inspector General on August 5, 2026: fifteen-plus defense companies tied to 1789 Capital and American Ventures received $3.2 billion in federal contracts, loans, and investments."}],
+      "rationale": "The deepest existing heading contains the same writers, recipient, date, companies, and $3.2B figure."
+    },
+    "World Liberty partner led by individuals sanctioned Oct 2025 (Prince Group)": {
+      "currentHref": "#u-week",
+      "status": "unresolved",
+      "canonicalHref": null,
+      "canonicalTitle": null,
+      "evidence": [{"path": "src/update_part2.html", "line": 140, "excerpt": "Warren / Reed → Bessent and Acting AG Blanche ... a World Liberty partner led by individuals sanctioned Oct 2025 (Prince Group)."}],
+      "rationale": "Prince Group and this inquiry appear nowhere else in the preserved master or update. A generic World Liberty chapter would not support the record."
+    },
+    "settlement addendum a federal judge found “directly contravenes” 26 U.S.C. §7217": {
+      "currentHref": "#u-week",
+      "status": "unresolved",
+      "canonicalHref": null,
+      "canonicalTitle": null,
+      "evidence": [{"path": "src/update_part2.html", "line": 142, "excerpt": "Warren / Wyden → Treasury and IRS ... cease implementing the May 19 settlement addendum a federal judge found directly contravenes 26 U.S.C. §7217."}],
+      "rationale": "The Gap discusses an alleged May settlement and immunity for pre-May 19 conduct, but does not contain the July 16 letter, judicial finding, addendum, or §7217. Routing there would overstate the support."
+    },
+    "3,555 individual stock trades in the OGE Form 278-T": {
+      "currentHref": "#u-week",
+      "status": "keep_existing",
+      "canonicalHref": "/#u-week",
+      "canonicalTitle": "The Week — August 24–30",
+      "evidence": [{"path": "src/update_part2.html", "line": 21, "excerpt": "The Warren–Garcia trades letter came due August 28 with no response located ... it asks about 3,555 trades in the Form 278-T for the first quarter of 2026."}],
+      "rationale": "The existing destination is semantically correct; the weekly section records the same letter, deadline, non-response, count, form, and period."
+    },
+    "15% / 25% China chip cut": {
+      "currentHref": "#u-week",
+      "status": "resolved",
+      "canonicalHref": "/#chapter-21-q-china-tariff-whiplash-tiktok-and-the-chip-cut",
+      "canonicalTitle": "Chapter 21-Q: China — Tariff Whiplash, TikTok, and the Chip Cut",
+      "evidence": [{"path": "src/master_report.md", "line": 1725, "excerpt": "Nvidia and AMD agreed to remit 15% of China AI-chip revenue ... H200 sales were cleared at a 25% cut. Nvidia's own filings state that no regulation ... was ever published ... This report has been unable to verify that any of it was ever collected, or into which account."}],
+      "rationale": "The chapter contains the same percentages, companies, absent regulation, collection uncertainty, and account question."
+    }
+  }
+}

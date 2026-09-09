@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T17:32:59.252Z",
+  "generatedAt": "2026-09-09T02:38:54.249Z",
   "canonicalOrigin": "https://the-architecture-neurals.vercel.app",
   "sourceFingerprint": {
     "algorithm": "sha256",
-    "value": "722ea7983445000667c43d1707426eb7d923001fca1edac387e6149fd6c48eef",
+    "value": "a03cb12ce854f52df7aa6d3d812acb5e9831cd884859ddff1494c44e728e7dad",
     "inputs": [
       {
         "path": "scripts/build_print_pdfs.cjs",
@@ -28,23 +28,23 @@
       },
       {
         "path": "site/briefs/2026-08-16.html",
-        "sha256": "224910ba8a4e44c47eadb0cdf0a615c71deb23608e34de041a936eb6c557e782",
-        "bytes": 61898
+        "sha256": "c307a3476bd6651ee159a38735f9b921242f176d89f4c9ff69485515886b7545",
+        "bytes": 75924
       },
       {
         "path": "site/briefs/2026-08-23.html",
-        "sha256": "2d4fc9d7b9441a36bac007bc7fa872ce2229e69949955fcb8451718b0e4ca4bc",
-        "bytes": 71764
+        "sha256": "ae808601bb54010f5edb3dbb14d0ef58e7cbea1c7ba6b75fb87f73c4fa665a9a",
+        "bytes": 86014
       },
       {
         "path": "site/briefs/2026-08-30.html",
-        "sha256": "5d6b5fd256fadf0bf8a6f0e01d27145f35a2335ba7fc7a202640acd54bcf18e3",
-        "bytes": 71667
+        "sha256": "5b496d5bb7d96d9c75de75ff4842b6714e110429963e626aa91678b9de665241",
+        "bytes": 85693
       },
       {
         "path": "site/index.html",
-        "sha256": "15720f1999af36384461c7776a5df8c05b72ea95957e43701f5241fbb61d2f88",
-        "bytes": 641101
+        "sha256": "cf2ae50fcaa0be81566dcfc2011e8a0a1dd313443c79a1c9ec9d15833658eed9",
+        "bytes": 671363
       },
       {
         "path": "site/map/data.json",
@@ -58,8 +58,8 @@
       },
       {
         "path": "site/neural.html",
-        "sha256": "7286661909bae0c85ee81d4ed1cb6e1463e35b868b8a359c87da9ac433bde1e1",
-        "bytes": 85291
+        "sha256": "1e103c8393b4098d01b61a508608aeb46177e4794eb9d5c223d1d326f351d5f2",
+        "bytes": 101565
       },
       {
         "path": "site/research-ui.js",
@@ -68,8 +68,18 @@
       },
       {
         "path": "site/research/data.json",
-        "sha256": "4ed8c1ecb3d225a7b5f86da7447941a2e719b7a6a0b8c0bf22669080b23d4729",
-        "bytes": 223995
+        "sha256": "f89c1b4694352953b3bd6b09e29d6b24caaed54ff1e071e32566d93a5d92953c",
+        "bytes": 268156
+      },
+      {
+        "path": "site/research/navigation.json",
+        "sha256": "86973622d0daaab56887ff5ac691259980d9eb219be393b68d165e6b74e25997",
+        "bytes": 1604
+      },
+      {
+        "path": "site/research/references.json",
+        "sha256": "de12cca947542a548ed3ef65379443826ca0e239c0aa96e5d82e4b23c118466f",
+        "bytes": 32701
       },
       {
         "path": "site/robots.txt",
@@ -88,8 +98,8 @@
       },
       {
         "path": "site/sources.html",
-        "sha256": "108b39876f1f4070ef5e8f8abbebc8681474c8fd8e3347771e384ab07df09872",
-        "bytes": 103318
+        "sha256": "6cca80ba558528a27531a0c52d0abcd0321fc9a43dee229f37268a75ec97b562",
+        "bytes": 135639
       },
       {
         "path": "site/src/AGENT_INSTRUCTIONS.md",
@@ -103,8 +113,8 @@
       },
       {
         "path": "site/src/MANIFEST.json",
-        "sha256": "32f505aee69e5c05f7cd2d56c3bbb57fa5531c228ed6665e4d5311a6b5012a3e",
-        "bytes": 5410
+        "sha256": "52bf30fe25932d331f1715ffa019f2a69bc7be84260077e24a2f154ceba4d9b1",
+        "bytes": 5846
       },
       {
         "path": "site/src/WEEKLY_RUN.md",
@@ -188,18 +198,18 @@
       },
       {
         "path": "site/src/build_research.py",
-        "sha256": "17a0088b051779f4b94b3dc772bb177d9f2f2a5744392415f662c49f78aff44a",
-        "bytes": 20022
+        "sha256": "a94747e6995a1be2460db8358737454e1666f0d139feeb356f535f32702d1abd",
+        "bytes": 26133
       },
       {
         "path": "site/src/build_site3.py",
-        "sha256": "b7b89abfef4ff21793566ba57632a4d7e8d2af0ca0d9b6fe69217b0baf4aa48b",
-        "bytes": 41302
+        "sha256": "f80f2820456d5d77519ea62d5c602fdd093126f7d776266d90f79e7a2531ac15",
+        "bytes": 45637
       },
       {
         "path": "site/src/check.sh",
-        "sha256": "80f825410b4c6a3c9e2da7b001c365ce93c7cc49173bd80b94894dffea2ad01d",
-        "bytes": 6144
+        "sha256": "b8be0a4fdc438e6d06b84acace91ab424c0470026cf333ad5c44089cb4f42f11",
+        "bytes": 6214
       },
       {
         "path": "site/src/deploy.sh",
@@ -208,8 +218,8 @@
       },
       {
         "path": "site/src/final.css",
-        "sha256": "d96238dbc115450976bccbafd49c23af82397f38f39e283a568d2594eea4b9d6",
-        "bytes": 42285
+        "sha256": "9ba6422d158ffdcb222f57932c892937ba6be082fa0e865e4c23c3ed1a666e73",
+        "bytes": 43246
       },
       {
         "path": "site/src/map_source.json",
@@ -233,8 +243,8 @@
       },
       {
         "path": "site/src/neural_map.html",
-        "sha256": "b9cf39d11bfb79f40873a4ce9002eda44eb60026fd110dc171acdb641cea23f6",
-        "bytes": 51294
+        "sha256": "ea0f96beaab5013cbce994750712298d571a44a898ad9a067348c0668e2e5a17",
+        "bytes": 53950
       },
       {
         "path": "site/src/neural_svg.frag",
@@ -245,6 +255,21 @@
         "path": "site/src/pull_src.sh",
         "sha256": "30ee1aa5c7adbe28b890f8b0d758d0eeff996a496583daf97c03f3c04b1fbe3a",
         "bytes": 242
+      },
+      {
+        "path": "site/src/report_navigation.py",
+        "sha256": "e29d8e5cf97c6a9f35a360e25cbff5c848f0d13adf7a501c68c476f9d1a23c8d",
+        "bytes": 3397
+      },
+      {
+        "path": "site/src/report_reference_targets.json",
+        "sha256": "bcce6251147bdc9c22dfc0f41d8f85bc20af107ea51fea3363ebe128592a6fd3",
+        "bytes": 7313
+      },
+      {
+        "path": "site/src/report_references.py",
+        "sha256": "6649da2f25e31d09abae8225dfdb8f1218d6ea1f189eaff1d43ba6b9bd803d96",
+        "bytes": 11122
       },
       {
         "path": "site/src/research_registry.json",
@@ -278,13 +303,13 @@
       },
       {
         "path": "site/styles.css",
-        "sha256": "d96238dbc115450976bccbafd49c23af82397f38f39e283a568d2594eea4b9d6",
-        "bytes": 42285
+        "sha256": "9ba6422d158ffdcb222f57932c892937ba6be082fa0e865e4c23c3ed1a666e73",
+        "bytes": 43246
       },
       {
         "path": "site/synthesis.html",
-        "sha256": "38bf6f8f1f2b459d294e9fc6124971a4010aa9174322ea757823891caa87b8dc",
-        "bytes": 111565
+        "sha256": "a5e5f0257a119db9ff3827550418cfc57b7dc956248b46fdf4e7e7b124382216",
+        "bytes": 293566
       },
       {
         "path": "site/topics.html",
@@ -374,7 +399,7 @@
       "title": "Brief — week ending 2026-08-16 · The Architecture",
       "pages": 8,
       "kind": "page",
-      "sha256": "ca4e93ab1e82153bf9793d2e3c64ef27d2a029da8f71ffdcf2661d154092a8c4",
+      "sha256": "77a8ce152cd06e3a00bf8157d888f6860cbbc0ebb2f9bec47acaa99b182742c4",
       "bytes": 306087
     },
     "/briefs/2026-08-23.html": {
@@ -382,31 +407,31 @@
       "title": "Brief — week ending 2026-08-23 · The Architecture",
       "pages": 9,
       "kind": "page",
-      "sha256": "da02348ac5b18b63456e7848465d770365e6a0463ebe6924267d6f7548e76d31",
-      "bytes": 324159
+      "sha256": "47e0d5cbd7c3bcce9c7447f57248642140cf140808ac46b3d03bfdac16b48884",
+      "bytes": 327619
     },
     "/briefs/2026-08-30.html": {
       "url": "/print/briefs--2026-08-30.pdf",
       "title": "Brief — week ending 2026-08-30 · The Architecture",
       "pages": 10,
       "kind": "page",
-      "sha256": "7bf9f5ff8378f44108f17a9dbee8cce910da0458d2906d3f4caf0deeed940ce6",
+      "sha256": "a622bdcae0130f15c9ca547dd1f6dc07e0b606cd0d5712a6250294c3d1ae6a67",
       "bytes": 299795
     },
     "/index.html": {
       "url": "/print/index.pdf",
       "title": "The Architecture — Power, Money, and Ideology in the Second Trump Era",
-      "pages": 198,
+      "pages": 204,
       "kind": "page",
-      "sha256": "c24a95eb4d2fbe47ab17817e350b710f14c73b3b5eeef2f4bdd3ed044e1f6d45",
-      "bytes": 3690672
+      "sha256": "eabde6e04928d22f1b69bd1893f50649a0a46864370a0f7fa56074380ad35f54",
+      "bytes": 4022632
     },
     "/neural.html": {
       "url": "/print/neural.pdf",
       "title": "The Neural Map — The Architecture",
       "pages": 36,
       "kind": "page",
-      "sha256": "683c01197e26e26c84ee7d99fd6c501467871848038412b23bb245caa035fa7a",
+      "sha256": "5e2d1db6b4c0b4a82aef4492604941ae2b0b4b9f65b2db04d696ba5db678911a",
       "bytes": 1043940
     },
     "/neural.html?entity=AFD": {
@@ -414,7 +439,7 @@
       "title": "AfD — Full entity record — The Neural Map",
       "pages": 7,
       "kind": "map-entity",
-      "sha256": "5d260926823a0c20b87d6902336c395afbd5cfe1b4ad37ad44354ccf924c272b",
+      "sha256": "b1d75959f565f8cd957a82723399a398eeb97d89181a5155381bb8aac049af57",
       "bytes": 327472
     },
     "/neural.html?entity=AFD_THURINGIA": {
@@ -422,7 +447,7 @@
       "title": "AfD Thüringen — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "aee5f0947ddc3589371db3bf877f983663220b505fee2e039485e5ad58bf8cd2",
+      "sha256": "fa7233c620d9534ae7ffb0121f30973565811b37e8b2905da6d75fb878aaea87",
       "bytes": 277264
     },
     "/neural.html?entity=ALT5": {
@@ -430,7 +455,7 @@
       "title": "ALT5 · AIFC — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "4f63d2d20438babe177c92b21e2cbd67f4543c2f6816dc58daa4cbe211f167a0",
+      "sha256": "4d23fd2cd8387d920efbfc56e9e0d1214c1eb128c6c1890ce4ce14f410b959f9",
       "bytes": 302651
     },
     "/neural.html?entity=AXOS": {
@@ -438,7 +463,7 @@
       "title": "Axos Bank — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "9434cfebb6fdf39b73b0d88bff67aec1884e33e388cdd01d1a46503b527a630a",
+      "sha256": "b79eb9c3cf21777d6e6a813f6d125f3d6046999d14bbb2c587d78e0dda328bb4",
       "bytes": 277933
     },
     "/neural.html?entity=CAPITAL_1789": {
@@ -446,7 +471,7 @@
       "title": "1789 Capital — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "73277b13865fe90016d9e4967e71f30347adfe90c86b1e0e6a43ca7acdd4bbfe",
+      "sha256": "0310e5f4de578eafb6902f54121bb3b80403fcd22f7a5eb4630553f596fbb296",
       "bytes": 247967
     },
     "/neural.html?entity=CHRUPALLA": {
@@ -454,7 +479,7 @@
       "title": "Tino Chrupalla — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "671f0e1f9abd9e3d8425552b55c65c4399be67997c78fbd7dddeed43798874ed",
+      "sha256": "eb41415d9980c08e09753b2b48eeec3aa97903982fa6c0100667c5b2fe2b75f7",
       "bytes": 262436
     },
     "/neural.html?entity=DOJ": {
@@ -462,7 +487,7 @@
       "title": "DOJ — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "0ac97b46ae0de5ff7d88c4f2771911aba31978d4e2f08d9207743f5c7507ecf9",
+      "sha256": "30e2fcb16491e57de8053176a7a62930a40c1ebbc4105e539aef0bc5aac42a7f",
       "bytes": 284035
     },
     "/neural.html?entity=DONALD_TRUMP_JR": {
@@ -470,7 +495,7 @@
       "title": "Donald Trump Jr. — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "5ba1204e34fad5973d26e24265576326676ba71fff597159a0776aaf26796eca",
+      "sha256": "1b826303f05259ca792dfecf6818e42642565003e26fd2ca185027877a09b756",
       "bytes": 250397
     },
     "/neural.html?entity=ERIC_TRUMP": {
@@ -478,7 +503,7 @@
       "title": "Eric Trump — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "9775234944d3fb7dbde8083e430ac6d93665c11a1f912af8427941b4c13e0e66",
+      "sha256": "2b88bf9908a74fd7d45b76a3c81d1eb2d3776853c718454e41f9b74314c0e47d",
       "bytes": 250647
     },
     "/neural.html?entity=FCC": {
@@ -486,7 +511,7 @@
       "title": "FCC · CARR — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "9aa45dc92c304599f036db26ff6025f85f0de8710225f78d906864c81f877d14",
+      "sha256": "fbbf6861d208d2f23b3cbbc6085387b4d2bc31012e5b38c6a785e2a30673280a",
       "bytes": 250185
     },
     "/neural.html?entity=GEO": {
@@ -494,7 +519,7 @@
       "title": "GEO · CORECIVIC — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "b1b77ae2dd2c7cb027398ec7a2ec5ff2e7c0b2ef20713256b972f226f018762c",
+      "sha256": "466b62d08c20c1232bfc840ccbf426ae89593015861a9b23c3b23984bf1df4d7",
       "bytes": 239616
     },
     "/neural.html?entity=GG_BANK": {
@@ -502,7 +527,7 @@
       "title": "Golden Global Bank — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "84d20f453b698a4d18f0ff77a8ac532b57bf11be31c7ad5b22fa51280c0b4f1c",
+      "sha256": "fdab83423ecefa86b3d08bb4b8cfee0a3e526884f196dd6ce4cbe2e47790d5f5",
       "bytes": 251756
     },
     "/neural.html?entity=GG_LEASING": {
@@ -510,7 +535,7 @@
       "title": "Golden Global Varlık Kiralama — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "802158d98d610dacf23881bbe145e9b6d6840e29233869511a350d4f70fb70d8",
+      "sha256": "40255c1eae39eec0f7f9806f43ec76d94b0295ce9f9c0956a6b8788f832ff740",
       "bytes": 256622
     },
     "/neural.html?entity=GG_PORTFOLIO": {
@@ -518,7 +543,7 @@
       "title": "Golden Global Portföy Yönetimi — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "a91c37e525c12fd9b42c753a6167145b9c24e9bd11ecb280679b674a2c0ad9af",
+      "sha256": "e5842dbc13afd43448db6d9ac332675acea9eaa164e7bafc4404402011fea4f0",
       "bytes": 259134
     },
     "/neural.html?entity=HOECKE": {
@@ -526,7 +551,7 @@
       "title": "Björn Höcke — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "df3476c09d47f18ed85d1e7220a7cf1948d459b1b2e4ff0634c8b8afd38ba566",
+      "sha256": "9a53a0f4baeba7cd014325c1f7959c29ec4a2cc544683a757f49fb638c0703f2",
       "bytes": 261923
     },
     "/neural.html?entity=ICE": {
@@ -534,7 +559,7 @@
       "title": "ICE — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "752765af391f8b380c76cb772968cf5b2e9e87e68f0814dc8f78936d3379cedb",
+      "sha256": "0effcbea70d4c1812e63fa3b3c42ae6aad03f72e97fc6452f37f55d0e7f60ced",
       "bytes": 283460
     },
     "/neural.html?entity=IRAN": {
@@ -542,7 +567,7 @@
       "title": "IRAN — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "8f6a56665cc7533e8b18dcb5c08205de929f289a20ac219437e5316d7ead0926",
+      "sha256": "f9ca2e9200af24e3d3b2b016134d832709577dec015f0ea96157c7543dc50384",
       "bytes": 265463
     },
     "/neural.html?entity=KUSHNER": {
@@ -550,7 +575,7 @@
       "title": "KUSHNER — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "bd28bff4b06465b1efb71e49629bef12c1e822c3fde26da5bee3c433467df3f0",
+      "sha256": "8ec6e8af6ba8de01befbdc5b4393d7996bf29eb16d25689d50c15b9fed0278ab",
       "bytes": 262000
     },
     "/neural.html?entity=LADDER_CAPITAL": {
@@ -558,7 +583,7 @@
       "title": "Ladder Capital Corp — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "e3012db427e26dffec64be043efd5955a96bc750cb0ca35d533fb80086898f18",
+      "sha256": "c6377f47498110ef8c825a118a80563bc1ee086bf9280b95c16ebd3b8144bf5f",
       "bytes": 283118
     },
     "/neural.html?entity=LADDER_FINANCE": {
@@ -566,7 +591,7 @@
       "title": "Ladder Finance LLC — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "6d12ea85ed0f770dc29ca6dfbbb6d1ec4bdb198eee102e3af11f2b32d6c79b41",
+      "sha256": "24fb5fc51c7221bc2237cdff59789042d7317d609128823e2ddcaa03c1784d36",
       "bytes": 292199
     },
     "/neural.html?entity=LADDER_FINANCE_I": {
@@ -574,7 +599,7 @@
       "title": "Ladder Finance I LLC — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "ba1d66e708291ef903bf3fd2cfd70f9fa2a6bf22cb000f08be5f613907b184a2",
+      "sha256": "a3b6c06e6ccee3cc5eb07b9bdb6f73bf6633fde97cc2776f621127ff5d956c40",
       "bytes": 291780
     },
     "/neural.html?entity=LANZERATH": {
@@ -582,7 +607,7 @@
       "title": "Rainer Lanzerath — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "4cf294d95c7a8a19fe22551da05fe6a0fb890109736aa5f734b76bbb94b5223d",
+      "sha256": "f10e902dc1deba07834ed78e58a4a0ceacd64de3dc0e78eeeef7a1e7a4abf228",
       "bytes": 247286
     },
     "/neural.html?entity=MEGAHUB": {
@@ -590,7 +615,7 @@
       "title": "MEGA HUB — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "ebae43117604a5146f6c47835067e90e153ac444cd5d7f6433c6e08c2dd2a073",
+      "sha256": "99cce86bdf846b9b7fc8d3de84cf54d3af7d7b47a0dd04425bf4d0535f5a1e57",
       "bytes": 224179
     },
     "/neural.html?entity=MERRILL_LYNCH": {
@@ -598,7 +623,7 @@
       "title": "Merrill Lynch — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "97107337a559c36c6beadecd0fb992ec50f157a1aae1bd9f2a70d53fa0321f37",
+      "sha256": "f86c1e157420a43f0e5f7ff42de3c79ef85fdb520fa29a5d1060e50e0164f587",
       "bytes": 258855
     },
     "/neural.html?entity=MEUTHEN": {
@@ -606,7 +631,7 @@
       "title": "Jörg Meuthen — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "4c65e3a38885669ffd7720c8b736e9e56192303e577211c04258c243934d9dc0",
+      "sha256": "32a7db4dbecbd0f6f0e243afac7736a719ab4fa973ce84d96b47916237c30027",
       "bytes": 263228
     },
     "/neural.html?entity=MUSK": {
@@ -614,7 +639,7 @@
       "title": "Elon Musk — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "cfc1af0a57814e560e5a55b292a47204d0fc21574560cc817e8e30d0dcdbc37f",
+      "sha256": "53c3b861c0bc0a30951e80ee8a3bd70c224895b5b305bb2e2a46b3e6850a6efe",
       "bytes": 274352
     },
     "/neural.html?entity=OFAC": {
@@ -622,7 +647,7 @@
       "title": "OFAC — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "810a94d63083a72d538da1514fb91297a7e12d9fe7fe2292bdd6cbe939e42165",
+      "sha256": "debd379f54bbc11480d290135f2b5c447ea220a76bcf804945bc7a83c460f969",
       "bytes": 299458
     },
     "/neural.html?entity=P2025": {
@@ -630,7 +655,7 @@
       "title": "PROJECT 2025 — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "d466d042cc82003ad8515df5c7faeb6f724e5eb8d13d4c7add02ac8b9087701a",
+      "sha256": "0c3fded2327ee3c2f9be794214c92176a6783804e5ef619a9459b764152ac14d",
       "bytes": 225225
     },
     "/neural.html?entity=PAKISTAN": {
@@ -638,7 +663,7 @@
       "title": "PAKISTAN — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "5efe24ec488c0a5bbf4a048025a77a2b3c29308b117f75b4c1f15cd8abf7d7eb",
+      "sha256": "af86cef2d75dc81b2171f66d391c87f053452dfba78a68f90913f8d89471fe1a",
       "bytes": 233475
     },
     "/neural.html?entity=PALANTIR": {
@@ -646,7 +671,7 @@
       "title": "PALANTIR — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "cd8659df8433412d158d2bdfb989786a9d56c295c6c97110fc27572a48ccb781",
+      "sha256": "71538f73d850e83df61e31b0adba495053e24923fa26c6af5f2f73a755279648",
       "bytes": 219811
     },
     "/neural.html?entity=PENTAGON": {
@@ -654,7 +679,7 @@
       "title": "PENTAGON — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "0ab4daf43300971913483b632225c0974529cdf29b33f013d535683dd345984c",
+      "sha256": "5d901c0ba3105ca92927b0cbcefb5b217ff97bfb569f3810d16f8baebaf3296d",
       "bytes": 234012
     },
     "/neural.html?entity=POLY": {
@@ -662,7 +687,7 @@
       "title": "POLYMARKET — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "89b37021ff68c2e4e4458bd55dad0a30142a116d8ddf237799b21d21af9c1e40",
+      "sha256": "3766125198911fce30983529010df9ba7ea67abbf1635aa50493d631bdb92f11",
       "bytes": 238380
     },
     "/neural.html?entity=PULTE": {
@@ -670,7 +695,7 @@
       "title": "PULTE — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "15eeb1139ca076450df729ee083bd3b92413dd0aeac44a10cfdc4700370b5a99",
+      "sha256": "fcacd3e410649832c81750e5ee4a9de5f4bfa3c04190b665ea55394e0556816e",
       "bytes": 237910
     },
     "/neural.html?entity=QATAR": {
@@ -678,7 +703,7 @@
       "title": "QATAR — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "702584cd65632fe1b06dd8fd626879df91241da9f77042fec2a4b72d16c8947b",
+      "sha256": "2aa23d24415661261025d644ef79cf768f075f1e416e34e1171e35c29d091380",
       "bytes": 226537
     },
     "/neural.html?entity=ROSS": {
@@ -686,7 +711,7 @@
       "title": "Wilbur Ross — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "d96cd0bfe001dc7b4675e9f80e29e9468af7d8e8af5362833d6cf64e0df36b91",
+      "sha256": "0f3b5fd623238f2d619f8a3dd961b5b19ae0f6766700d9df96af74fc02f64f77",
       "bytes": 292530
     },
     "/neural.html?entity=ROTHSCHILD_INC": {
@@ -694,7 +719,7 @@
       "title": "Rothschild Inc. — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "1f964089f0a09a6f58e63d3f0daa4fa1656ee22cb8bf2e1a8d3e05d90af2caf5",
+      "sha256": "c2c9b3448cf1f4eb338d06c71fcc38a65f6276a9370ca2b06c5e900db47955b7",
       "bytes": 282105
     },
     "/neural.html?entity=RUSSIA": {
@@ -702,7 +727,7 @@
       "title": "RUSSIA — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "2474a72f425b2b36a95de73d41015ebacde29bc500ead9e21f9731554412006a",
+      "sha256": "86c4d7b06b21fe3e2b60c982c8b3a2ee1a6e957262deb93406cd79a5b2ca7d8e",
       "bytes": 234346
     },
     "/neural.html?entity=SAUDI": {
@@ -710,7 +735,7 @@
       "title": "SAUDI — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "2c0dcd902db46f9d05909eb12c5b9ddc52170dcbf7f37db9ecd72f7a3a287901",
+      "sha256": "b8cf63292143ee84818b41383cce620ccc32e1994ee6febaca24ad46f0757c09",
       "bytes": 251027
     },
     "/neural.html?entity=SCHWAB_BANK": {
@@ -718,7 +743,7 @@
       "title": "Charles Schwab Bank — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "9c3aabb2e73c585233d7d511f2276af270819bd97616c3d85e56237e3100268d",
+      "sha256": "6781998951aea8a8ae9e619fc72e6919bd49b0485825339e6f78aa21f655ca10",
       "bytes": 284628
     },
     "/neural.html?entity=SCOTUS": {
@@ -726,7 +751,7 @@
       "title": "SCOTUS — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "dc6bb239a6c9bb2b189fa13850d6b47f48bf65a8cfac58ba1d36b623bdef4fb1",
+      "sha256": "22cfd523cc78f36d6c7b424fa96a88745d7fadc4b0dc2b3ea818d85bd30051ff",
       "bytes": 251758
     },
     "/neural.html?entity=SONS": {
@@ -734,7 +759,7 @@
       "title": "SONS — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "8505710c482a86fa2f7ae82b963abd105d67c25b98d7486cfe460da41b2126b3",
+      "sha256": "65e3594a25a4bd7ed2b73a7f02bd214a829dc43a6bf33b5950397a308acd7ea2",
       "bytes": 276220
     },
     "/neural.html?entity=STARGATE": {
@@ -742,7 +767,7 @@
       "title": "STARGATE — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "6b5cc9635c4e574bc46b4e29d3fd743ccf11bea0af42a2aaaf22e5b6ff1df0e0",
+      "sha256": "b8f67ec657b3bbee4a93ac214a1f218e5dd153a67027e63ee98535a5da6ae465",
       "bytes": 259311
     },
     "/neural.html?entity=TAJ_ASSOCIATES": {
@@ -750,7 +775,7 @@
       "title": "Taj Associates — Full entity record — The Neural Map",
       "pages": 5,
       "kind": "map-entity",
-      "sha256": "f08740c026ab1ac89b434c217be3e12df5f282bc93e150c37b44e5bc36131caf",
+      "sha256": "e0b2f073633441791380c2b3f30649cec6490d81f38ce1b0f2a0115b8688ae18",
       "bytes": 292480
     },
     "/neural.html?entity=TAJ_BONDHOLDERS": {
@@ -758,7 +783,7 @@
       "title": "Taj bondholders — Full entity record — The Neural Map",
       "pages": 6,
       "kind": "map-entity",
-      "sha256": "e95b0c07cd21dab111ea78f9ce9b7f7f4d564e7939a59cf068818d64034d1b01",
+      "sha256": "7a87bb9c662a3847b247fabdb1a281b30c48844247ce6983d2b578b935aa6b32",
       "bytes": 303791
     },
     "/neural.html?entity=TAJ_FUNDING": {
@@ -766,7 +791,7 @@
       "title": "Taj Funding Inc. — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "b68f06d924f9c20049fbe79e6f03663faba7422c355a2e59ef42b0e61522232a",
+      "sha256": "a616bfb7e2d681ec2ec6fd1beb92283d6d4496cf92e8c8f83f4d005896575d26",
       "bytes": 255585
     },
     "/neural.html?entity=TMTG": {
@@ -774,7 +799,7 @@
       "title": "TMTG · DJT — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "045b01f9cc87c8e6aa1757ec0b4895e72487a0e2c76a84956b366311c2fb617c",
+      "sha256": "92f2cd9546f4cd01438df82b8691428b690ebae9c17ccdc7db761e195eeebe23",
       "bytes": 230636
     },
     "/neural.html?entity=TREASURY": {
@@ -782,7 +807,7 @@
       "title": "TREASURY · BESSENT — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "16e11904a7fc47a42148bc107716e1287666e047e67e1dfa5a55f2ebef2cf36e",
+      "sha256": "2e1d3371e8da45f3c56df3905a574c56ec4b3c080f153b1da73672d5d61ebcf9",
       "bytes": 289033
     },
     "/neural.html?entity=TRUMP": {
@@ -790,7 +815,7 @@
       "title": "THE PRINCIPAL — Full entity record — The Neural Map",
       "pages": 16,
       "kind": "map-entity",
-      "sha256": "d03ba20d176b6cfc25590e05788e20304e9780ea76f1b01190a76dde2f91f1e0",
+      "sha256": "dcff9401605b271cedae313e3d00b0c7b3cc0f9aa9c698a812cf243cd87b51fe",
       "bytes": 612561
     },
     "/neural.html?entity=TRUST": {
@@ -798,7 +823,7 @@
       "title": "TRUST BANK — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "cadb38d2a5a31a6b231996ff1c154ed9502f5baa097218ddae7d813112b0bb9a",
+      "sha256": "b98046a177432bba3a549fbc1574880585633e91708d440fde2ed70adc82af04",
       "bytes": 285845
     },
     "/neural.html?entity=UAE": {
@@ -806,7 +831,7 @@
       "title": "UAE — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "aa6199d46e7d7bf4e5ef03957e3cd9306df271ed69b6a2ad08e7158b344faa99",
+      "sha256": "53e1edb4274780aa7a4babdee1457a7ee03e233efadb97873b2ce8c9b432f09c",
       "bytes": 241203
     },
     "/neural.html?entity=USPS": {
@@ -814,7 +839,7 @@
       "title": "USPS — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "3c4d672c54065ccdf33a86f15e5c3ef28052f473d8fff20c71850e86c91e5f79",
+      "sha256": "75d56bf2704e4b9edc86666eef96102886d5175939aa0424835492f880554d41",
       "bytes": 238552
     },
     "/neural.html?entity=VANCE": {
@@ -822,7 +847,7 @@
       "title": "JD Vance — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "38d49e8784aecf9f85e0a3e0ff2b65f71f5e56c895b8553ecf4aae9ed5f9e506",
+      "sha256": "4834594d06721f37b0bb195f2fe36a6718c62a1cd19fe508b6a7e514d683be67",
       "bytes": 252323
     },
     "/neural.html?entity=VAULT": {
@@ -830,7 +855,7 @@
       "title": "PROJECT VAULT — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "05a1bd0089fe5a53dcc5dbe510fe9b29680bfcf4f075098ebfb5d93629ea8639",
+      "sha256": "0ee917907fae067d78ee5aa37cc53ec92f665cc61b17e5198cf6d29c711955ac",
       "bytes": 247228
     },
     "/neural.html?entity=VZ": {
@@ -838,7 +863,7 @@
       "title": "VENEZUELA — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "0c043a17c6c149d80cf116403410cf4e029493d9cdc94e517857745c142804a9",
+      "sha256": "3285bf844b06be90ff2d698cd01b621d59670ec03058df163225ffd331c20298",
       "bytes": 220862
     },
     "/neural.html?entity=WEIDEL": {
@@ -846,7 +871,7 @@
       "title": "Alice Weidel — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "12477381774bba65b06e4864b022c9fcd6936ec30ad30e58f32c59a4e4b3338e",
+      "sha256": "451a0a965558fbeffcdab9a47cd6c35aabd3809f02f1d08b8b38e08a1c28ae78",
       "bytes": 261646
     },
     "/neural.html?entity=WITKOFF": {
@@ -854,7 +879,7 @@
       "title": "WITKOFF — Full entity record — The Neural Map",
       "pages": 4,
       "kind": "map-entity",
-      "sha256": "6cc3bc214b78ed825027874f06a185d061e9757fca8ff05722374828cfbbd8a9",
+      "sha256": "351be353c83bab577fbd8bda618d1d7e8304346b849a852c141c2a7567979f9c",
       "bytes": 281381
     },
     "/neural.html?entity=WLF": {
@@ -862,7 +887,7 @@
       "title": "WLF — Full entity record — The Neural Map",
       "pages": 6,
       "kind": "map-entity",
-      "sha256": "48394c1f3c89c6d6d843a5afba9ea8d34ce19f67fa6759220ef92d943c8cfc89",
+      "sha256": "f5793193f38f04c18cd62fe5ab4ec5566b426a1fb20f98a5d729d509785aac5f",
       "bytes": 338845
     },
     "/neural.html?entity=ZACH_WITKOFF": {
@@ -870,7 +895,7 @@
       "title": "Zachary Witkoff — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "70788fb90fcda4fd998ad293743c10a91f9a2cb600b1367e4918d00044ede614",
+      "sha256": "9d88b6657249ab98af6dc2530358fb29bb73319c1934e6bc3ed05fd8f292f13f",
       "bytes": 254727
     },
     "/neural.html?entity=ZHAO": {
@@ -878,7 +903,7 @@
       "title": "ZHAO — Full entity record — The Neural Map",
       "pages": 3,
       "kind": "map-entity",
-      "sha256": "d44221704eed4468a43f308dab572748f5a00b6ee0741430921830365b5dc1bc",
+      "sha256": "1a98286b3744c5ba99f86fb4398b8778c57a1c379e198221b1d6008fb9ba45c9",
       "bytes": 245028
     },
     "/neural.html?topic=civil-society": {
@@ -886,39 +911,39 @@
       "title": "Civic institutions & responses — Topic map — The Neural Map",
       "pages": 2,
       "kind": "map-topic",
-      "sha256": "025e5a3ae4bd607af094b53d0ccbb4f958d55ef9b96000eeafe0b7c3ddae0357",
-      "bytes": 179362
+      "sha256": "3216eb8e3b167b6a8a3d409ac2e3c75243a7ffd1962d106515a80d6e041d978e",
+      "bytes": 179268
     },
     "/neural.html?topic=corrections-provenance": {
       "url": "/print/neural--topic--corrections-provenance.pdf",
       "title": "Corrections & source provenance — Topic map — The Neural Map",
       "pages": 2,
       "kind": "map-topic",
-      "sha256": "06e76158aa4502660408e220e755d0a2aa84796ee6b6afc2c7b3c16d22790081",
-      "bytes": 162798
+      "sha256": "a8bc4d008ed2b7ca76aa2b8d5dd7153ae5ccb3f269553612d72e85996888fa6e",
+      "bytes": 162704
     },
     "/neural.html?topic=digital-assets": {
       "url": "/print/neural--topic--digital-assets.pdf",
       "title": "Digital assets & financial entities — Topic map — The Neural Map",
       "pages": 5,
       "kind": "map-topic",
-      "sha256": "df680445e25639876960add701f0721d7d9f0ed534ee78ecd97974627cf3d797",
-      "bytes": 306089
+      "sha256": "a895e82f8adc82dc022fa17d40896c531877e34c10e36c150bc85e81e0645054",
+      "bytes": 306097
     },
     "/neural.html?topic=enforcement-surveillance": {
       "url": "/print/neural--topic--enforcement-surveillance.pdf",
       "title": "Enforcement & surveillance — Topic map — The Neural Map",
       "pages": 3,
       "kind": "map-topic",
-      "sha256": "a9611e289ed77ecc5e93b51ac1c0fa527c5b4ed1fc81c53ee1d4963170438400",
-      "bytes": 229285
+      "sha256": "66f67b45e8ac05c32c259d54290c0239e8d70a0653939e6b4b73d64215a80256",
+      "bytes": 229281
     },
     "/neural.html?topic=executive-authority": {
       "url": "/print/neural--topic--executive-authority.pdf",
       "title": "Executive authority & courts — Topic map — The Neural Map",
       "pages": 4,
       "kind": "map-topic",
-      "sha256": "b16af87c87804fcc569b1b96dc37dff06039522aa670b5db3c0a86c037f7c97f",
+      "sha256": "6f112df72360b6559f0f1a0478b7db9d57ea3e85fd958a76213ad571d588e07f",
       "bytes": 230738
     },
     "/neural.html?topic=germany-afd": {
@@ -926,23 +951,23 @@
       "title": "Germany / AfD — Topic map — The Neural Map",
       "pages": 8,
       "kind": "map-topic",
-      "sha256": "2842f828f234675515cf974b6c5fbbefac6641ab6eeb1f5de776eeed325e4948",
-      "bytes": 286992
+      "sha256": "6dd9fcc8ff52d8520791004b3a90e49ac82d35ca1a0c6046acc9cb8ac716cbbf",
+      "bytes": 287015
     },
     "/neural.html?topic=historical-comparisons": {
       "url": "/print/neural--topic--historical-comparisons.pdf",
       "title": "Historical comparisons — Topic map — The Neural Map",
       "pages": 2,
       "kind": "map-topic",
-      "sha256": "a11fa9564b2e1ad09e68036b8008d0ca293e8be4d546bd0a6cc8f58abfcdb328",
-      "bytes": 159217
+      "sha256": "c68be45e05dc379c8a8d055073a88092e7af56c2751496fb551f7212e84c6103",
+      "bytes": 159123
     },
     "/neural.html?topic=information-media": {
       "url": "/print/neural--topic--information-media.pdf",
       "title": "Information & public communication — Topic map — The Neural Map",
       "pages": 4,
       "kind": "map-topic",
-      "sha256": "176f70a62cda77f4158e9be55488ecfe7d2cdb3f561935a030237a366929f381",
+      "sha256": "6cf9443178e3f59af7f09649c011b7ffeeb70a33dafb5fb6a57e01dafdebe650",
       "bytes": 227898
     },
     "/neural.html?topic=iran-us-decisions": {
@@ -950,7 +975,7 @@
       "title": "Iran & U.S. decisions — Topic map — The Neural Map",
       "pages": 5,
       "kind": "map-topic",
-      "sha256": "db4710737b8c542963e419512a421822285dacbfcc5d7d115adfe43edea39ada",
+      "sha256": "4c2df32efe312f570da1a301a7fff827b6eb68a961ecd26379121364b4486a81",
       "bytes": 257727
     },
     "/neural.html?topic=ownership-disclosures": {
@@ -958,15 +983,15 @@
       "title": "Ownership & financial disclosures — Topic map — The Neural Map",
       "pages": 13,
       "kind": "map-topic",
-      "sha256": "ab45f4234208d2fe4c3ed21a1850f91a3af5a85eeb3b8a2cddd738bfc2064bc1",
-      "bytes": 416908
+      "sha256": "14a7026e7bafdf72525ac245ce6d790492b80df35df996b7565e0e7fb2b23708",
+      "bytes": 416890
     },
     "/neural.html?topic=technology-infrastructure": {
       "url": "/print/neural--topic--technology-infrastructure.pdf",
       "title": "Technology & infrastructure — Topic map — The Neural Map",
       "pages": 3,
       "kind": "map-topic",
-      "sha256": "5b8c0e3bbe94fa824bf835b511b864bac18d00551bd78146391ec47e2685a47d",
+      "sha256": "f6c6949ca40a16b368af43c3540be5db52e149951ac5c963a3437a95b65a1b8c",
       "bytes": 235647
     },
     "/neural.html?topic=trump-early-financing": {
@@ -974,15 +999,15 @@
       "title": "Trump: early financing — Topic map — The Neural Map",
       "pages": 6,
       "kind": "map-topic",
-      "sha256": "ab32a4e8d91b26b81e294ffa8502e4b865caaa88939d17649097920ac6661962",
-      "bytes": 265458
+      "sha256": "95324c72a4f7e215911d426705a4891b2e6a3b819688a47c841c81daa84824bb",
+      "bytes": 265454
     },
     "/neural.html?topic=trump-later-financing": {
       "url": "/print/neural--topic--trump-later-financing.pdf",
       "title": "Trump: later financing — Topic map — The Neural Map",
       "pages": 10,
       "kind": "map-topic",
-      "sha256": "c9378102b2dcc1bd491797e1de945e80eddcbfdfdedddb40022bb1048443ce61",
+      "sha256": "58cac9ff41001e10c16d53914a8f8e8c5a3a35c0bc14194d6781f011591961bf",
       "bytes": 286358
     },
     "/neural.html?topic=us-midterms": {
@@ -990,7 +1015,7 @@
       "title": "2026 U.S. midterms — Topic map — The Neural Map",
       "pages": 2,
       "kind": "map-topic",
-      "sha256": "df57118b95d3357b9837753f950d2838ffd2aaabc779e328b4819a9815b82188",
+      "sha256": "729e4737f927d81259712ab969d04f1fa2e761fb9e89d3e1105c8bf097aaf73a",
       "bytes": 196642
     },
     "/neural.html?topic=war-trade": {
@@ -998,71 +1023,71 @@
       "title": "War, trade & international records — Topic map — The Neural Map",
       "pages": 5,
       "kind": "map-topic",
-      "sha256": "bf5fbb26571538becac7fcf4c77b1d22c6e54646d9d998f851691de7abde6b16",
+      "sha256": "6715d23914c35cebf8b3c0e88cf2df0454e27d73b102bf8b3a9f3d99f080d01d",
       "bytes": 285598
     },
     "/sources.html": {
       "url": "/print/sources.pdf",
       "title": "Source Archive Index — The Architecture",
-      "pages": 17,
+      "pages": 28,
       "kind": "page",
-      "sha256": "be0deef77c4d4a2373ba5f18d5267acccbf90f116544b447f2d6960eff57db22",
-      "bytes": 138333
+      "sha256": "5266b270b7606e8be886386161c4d1e70c71e0779836004ee9d1f573e6e5cc3b",
+      "bytes": 716997
     },
     "/synthesis.html": {
       "url": "/print/synthesis.pdf",
       "title": "Synthesis — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "a0ace59f3cb2b559cb672e2cae83973c4cdaf863ab304b82e7e1f337dfb4268f",
-      "bytes": 152831
+      "sha256": "2d4d88c1bca82bdc4cde3b4b1f44e9d48a16be2fbc7bd90193ddeae687afc801",
+      "bytes": 152824
     },
     "/synthesis.html?view=checks": {
       "url": "/print/synthesis--view--checks.pdf",
       "title": "Records to check — Synthesis view — The Architecture",
-      "pages": 6,
+      "pages": 65,
       "kind": "synthesis",
-      "sha256": "06fbfc2d4607caf8ee0db3b8061c00d67a90f59662b44b42ac999a57bcb1e7e3",
-      "bytes": 221452
+      "sha256": "bab363a23ad17e0bbe0ba5fd3b48f0e92426dfec3d864c648d14aa50e8bede1f",
+      "bytes": 511606
     },
     "/synthesis.html?view=compare": {
       "url": "/print/synthesis--view--compare.pdf",
       "title": "Historical comparisons — Synthesis view — The Architecture",
       "pages": 3,
       "kind": "synthesis",
-      "sha256": "bc84e6451526a4bf6244d5f9a7d9ddfc031136c745305e9ea1fe496829df95c6",
+      "sha256": "53e4a4170e0939588de3e694c521052409a2c4e8234eaf305a9566cd200ffebf",
       "bytes": 171580
     },
     "/synthesis.html?view=connections": {
       "url": "/print/synthesis--view--connections.pdf",
       "title": "Connections — Synthesis view — The Architecture",
-      "pages": 5,
+      "pages": 21,
       "kind": "synthesis",
-      "sha256": "74af5877264436c66778e8785d87b1085ee6eb8e5d759e65571aa75e6c4054c4",
-      "bytes": 246229
+      "sha256": "a02f7f39a5d8abb740c66efbca0fc9e3f5635f6af2355cac5db1901fea338498",
+      "bytes": 566231
     },
     "/synthesis.html?view=contents": {
       "url": "/print/synthesis--view--contents.pdf",
       "title": "Full report — Synthesis view — The Architecture",
-      "pages": 5,
+      "pages": 11,
       "kind": "synthesis",
-      "sha256": "0a8ef32d6f64ac884edf29e33b480994d4fed7c592612c8c5564825c41628a74",
-      "bytes": 207727
+      "sha256": "d6c91b952923409164e9073f7bbf1e8b117c31c9fc5d7efb3198d37f285dbc37",
+      "bytes": 334064
     },
     "/synthesis.html?view=overview": {
       "url": "/print/synthesis--view--overview.pdf",
       "title": "Overview — Synthesis view — The Architecture",
       "pages": 3,
       "kind": "synthesis",
-      "sha256": "5b837ca0a35d3fd335861c34f540692c3ce59e083ed8a14e45638533859ec343",
-      "bytes": 155491
+      "sha256": "e091d10d07f48f6b115cf8a82800c114d7d0a5c2b9504ebe5ae761b2e01e93b8",
+      "bytes": 155498
     },
     "/synthesis.html?view=timeline": {
       "url": "/print/synthesis--view--timeline.pdf",
       "title": "Timeline — Synthesis view — The Architecture",
       "pages": 13,
       "kind": "synthesis",
-      "sha256": "74f93b4bc733cf58f69f7b3d57eebc16b17e728ace078c6a78983d777fac8c6f",
+      "sha256": "11b96b530bacd89548b20cd773cd9751e5cc7b3a3a0387073e50d44bf0c7d2b3",
       "bytes": 335457
     },
     "/topics.html": {
@@ -1070,7 +1095,7 @@
       "title": "Topics — The Architecture",
       "pages": 4,
       "kind": "page",
-      "sha256": "bee76afd5e54d68cab85073b0b72a75e139ddb6601a662796958fcc88a399db2",
+      "sha256": "ebc9603e33afd4d3ac6d516671e0447ced941eaab92f8914c60b767c895ba776",
       "bytes": 173039
     },
     "/topics/civil-society.html": {
@@ -1078,7 +1103,7 @@
       "title": "Civic institutions & responses — The Architecture",
       "pages": 2,
       "kind": "page",
-      "sha256": "41f0a7361c0a28b1faf88603f2e701593dc95abc78045f96beb4ff22bcbe3492",
+      "sha256": "e8a33db15c82528334243a1892cdc433b3cc785653d68b50770b8d0c20d2cc33",
       "bytes": 119358
     },
     "/topics/corrections-provenance.html": {
@@ -1086,7 +1111,7 @@
       "title": "Corrections & source provenance — The Architecture",
       "pages": 2,
       "kind": "page",
-      "sha256": "a8bedcadd16f47a3dabd66081aa12989f1995b6ea76ab60177bd76a220a9ffdb",
+      "sha256": "44fcc5895768d4aaaa0a1e6f297ab48792b6493539a62f5a1aa0393fa1580568",
       "bytes": 145229
     },
     "/topics/digital-assets.html": {
@@ -1094,7 +1119,7 @@
       "title": "Digital assets & financial entities — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "b8d69b7fbc0fee33aa926b92439fc2cb684cb06403a933bdbdd9705f4bc877db",
+      "sha256": "ed6801805bf3fdd8bca1529224093d08de0b656942bd69481f947178d2ef9d53",
       "bytes": 169700
     },
     "/topics/enforcement-surveillance.html": {
@@ -1102,7 +1127,7 @@
       "title": "Enforcement & surveillance — The Architecture",
       "pages": 2,
       "kind": "page",
-      "sha256": "3895d609776ec48369724eb138f90c95c3559e1c7262b6a63b451d22a6e832e7",
+      "sha256": "97cb5308a92e6e9d258b53672344a47464b20a1ce3a818955cb47e103ac987d0",
       "bytes": 128659
     },
     "/topics/executive-authority.html": {
@@ -1110,7 +1135,7 @@
       "title": "Executive authority & courts — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "2a0890b3d037d5bc7b774892d003799c21b17d94d46832fbb2cff64dc0d899bf",
+      "sha256": "4e694f93ef57b44033c1cf5fda42edf92d9c0b221dd4e41f12bcf6083dcbbc5b",
       "bytes": 180811
     },
     "/topics/germany-afd.html": {
@@ -1118,7 +1143,7 @@
       "title": "Germany / AfD — The Architecture",
       "pages": 8,
       "kind": "page",
-      "sha256": "889c1e9f5e0604b9ebcd811d45aff9f2011c9ae84f6617e99e92c044e1e20efb",
+      "sha256": "c1f564a898205d93cca8761629c9d19b79ed464b84b01ecfb9a8c0bf97e253fd",
       "bytes": 265447
     },
     "/topics/historical-comparisons.html": {
@@ -1126,7 +1151,7 @@
       "title": "Historical comparisons — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "8dfa0675b7b9da4a315ee4567bab12705a66222af04bd1c3bc01e1bd44728745",
+      "sha256": "86a30da7c6d362af4a3cdd34bfec84dbac3eb8c21c4c4db2bee28b131c819589",
       "bytes": 179015
     },
     "/topics/information-media.html": {
@@ -1134,7 +1159,7 @@
       "title": "Information & public communication — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "334ad592e542a550a1688c1916eb5a89de1ff54f11f0332d884902bbc020474f",
+      "sha256": "900dad99f8abf11f12db803711a3686dab7f5f89399b10f5f64f560643c58d9e",
       "bytes": 175228
     },
     "/topics/iran-us-decisions.html": {
@@ -1142,7 +1167,7 @@
       "title": "Iran & U.S. decisions — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "e61d7e0db47545bced0e600458b305076adbf6be08b32904d526aeee502430b4",
+      "sha256": "b5580a05f63781939f65af566b1c2bea63bbc66196bc26cff7f36dcc7029bad0",
       "bytes": 178346
     },
     "/topics/ownership-disclosures.html": {
@@ -1150,7 +1175,7 @@
       "title": "Ownership & financial disclosures — The Architecture",
       "pages": 5,
       "kind": "page",
-      "sha256": "014fd6694c8eef3a2ffcacb10d82a1d2ebab9937198a54f96f4465639c284f81",
+      "sha256": "5c63995ca7b782fa3b92b582dcaaa9eb8ca3465b3c20a537a5dd12f561b9df8b",
       "bytes": 215130
     },
     "/topics/technology-infrastructure.html": {
@@ -1158,7 +1183,7 @@
       "title": "Technology & infrastructure — The Architecture",
       "pages": 2,
       "kind": "page",
-      "sha256": "bc171cfaf04ae544511cee4e92c589c67929b78de7be5d3ce4861e5bcb3625df",
+      "sha256": "2212d3b72f104763f1edfef0e2067483b3999926969b5413326091b956e8f7b0",
       "bytes": 121870
     },
     "/topics/trump-early-financing.html": {
@@ -1166,7 +1191,7 @@
       "title": "Trump: early financing — The Architecture",
       "pages": 5,
       "kind": "page",
-      "sha256": "4cee63a679bbd03b9f8299b952906eb363caf5d98fa63afa7a87aca7d1c4db06",
+      "sha256": "c06cffe4bbd113eebf99251d7c5031c56aebc6a3e599200f8f0950c0f1f32bcd",
       "bytes": 219767
     },
     "/topics/trump-later-financing.html": {
@@ -1174,7 +1199,7 @@
       "title": "Trump: later financing — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "8d226fb0d9bcf8e10f895995eb9bcf7bab2704e92df7c607a4ff218cbdaf64ac",
+      "sha256": "170ce52f484f3a317875369badf9d9673c11cde5112a27eda84b0eaaa3d250f5",
       "bytes": 189820
     },
     "/topics/us-midterms.html": {
@@ -1182,7 +1207,7 @@
       "title": "2026 U.S. midterms — The Architecture",
       "pages": 2,
       "kind": "page",
-      "sha256": "085dd165d82f6ddfc62bbb885fd4a97126d8ad801d64c46fe4aa09ec5eb72e5d",
+      "sha256": "0cf7a257758c2c455d13c68cfb6851cb7a21741d2ce47dcf47205595a9eda79e",
       "bytes": 156526
     },
     "/topics/war-trade.html": {
@@ -1190,7 +1215,7 @@
       "title": "War, trade & international records — The Architecture",
       "pages": 3,
       "kind": "page",
-      "sha256": "dcf04bae81ab5683743d2f0de2c8291ae3283139d5a7f545c9efcdf0bc07d149",
+      "sha256": "8f51e9ae15dff8b00332c7e512bb9f00fe89b78eb905968f21e2817c445eb219",
       "bytes": 185627
     }
   },
@@ -1203,7 +1228,7 @@
       "output": "site/print/briefs--2026-08-16.pdf",
       "title": "Brief — week ending 2026-08-16 · The Architecture",
       "pages": 8,
-      "sha256": "ca4e93ab1e82153bf9793d2e3c64ef27d2a029da8f71ffdcf2661d154092a8c4",
+      "sha256": "77a8ce152cd06e3a00bf8157d888f6860cbbc0ebb2f9bec47acaa99b182742c4",
       "bytes": 306087
     },
     {
@@ -1214,8 +1239,8 @@
       "output": "site/print/briefs--2026-08-23.pdf",
       "title": "Brief — week ending 2026-08-23 · The Architecture",
       "pages": 9,
-      "sha256": "da02348ac5b18b63456e7848465d770365e6a0463ebe6924267d6f7548e76d31",
-      "bytes": 324159
+      "sha256": "47e0d5cbd7c3bcce9c7447f57248642140cf140808ac46b3d03bfdac16b48884",
+      "bytes": 327619
     },
     {
       "kind": "page",
@@ -1225,7 +1250,7 @@
       "output": "site/print/briefs--2026-08-30.pdf",
       "title": "Brief — week ending 2026-08-30 · The Architecture",
       "pages": 10,
-      "sha256": "7bf9f5ff8378f44108f17a9dbee8cce910da0458d2906d3f4caf0deeed940ce6",
+      "sha256": "a622bdcae0130f15c9ca547dd1f6dc07e0b606cd0d5712a6250294c3d1ae6a67",
       "bytes": 299795
     },
     {
@@ -1235,9 +1260,9 @@
       "canonicalUrl": "https://the-architecture-neurals.vercel.app/index.html",
       "output": "site/print/index.pdf",
       "title": "The Architecture — Power, Money, and Ideology in the Second Trump Era",
-      "pages": 198,
-      "sha256": "c24a95eb4d2fbe47ab17817e350b710f14c73b3b5eeef2f4bdd3ed044e1f6d45",
-      "bytes": 3690672
+      "pages": 204,
+      "sha256": "eabde6e04928d22f1b69bd1893f50649a0a46864370a0f7fa56074380ad35f54",
+      "bytes": 4022632
     },
     {
       "kind": "page",
@@ -1247,7 +1272,7 @@
       "output": "site/print/neural.pdf",
       "title": "The Neural Map — The Architecture",
       "pages": 36,
-      "sha256": "683c01197e26e26c84ee7d99fd6c501467871848038412b23bb245caa035fa7a",
+      "sha256": "5e2d1db6b4c0b4a82aef4492604941ae2b0b4b9f65b2db04d696ba5db678911a",
       "bytes": 1043940
     },
     {
@@ -1258,7 +1283,7 @@
       "output": "site/print/neural--entity--afd.pdf",
       "title": "AfD — Full entity record — The Neural Map",
       "pages": 7,
-      "sha256": "5d260926823a0c20b87d6902336c395afbd5cfe1b4ad37ad44354ccf924c272b",
+      "sha256": "b1d75959f565f8cd957a82723399a398eeb97d89181a5155381bb8aac049af57",
       "bytes": 327472
     },
     {
@@ -1269,7 +1294,7 @@
       "output": "site/print/neural--entity--afd_thuringia.pdf",
       "title": "AfD Thüringen — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "aee5f0947ddc3589371db3bf877f983663220b505fee2e039485e5ad58bf8cd2",
+      "sha256": "fa7233c620d9534ae7ffb0121f30973565811b37e8b2905da6d75fb878aaea87",
       "bytes": 277264
     },
     {
@@ -1280,7 +1305,7 @@
       "output": "site/print/neural--entity--alt5.pdf",
       "title": "ALT5 · AIFC — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "4f63d2d20438babe177c92b21e2cbd67f4543c2f6816dc58daa4cbe211f167a0",
+      "sha256": "4d23fd2cd8387d920efbfc56e9e0d1214c1eb128c6c1890ce4ce14f410b959f9",
       "bytes": 302651
     },
     {
@@ -1291,7 +1316,7 @@
       "output": "site/print/neural--entity--axos.pdf",
       "title": "Axos Bank — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "9434cfebb6fdf39b73b0d88bff67aec1884e33e388cdd01d1a46503b527a630a",
+      "sha256": "b79eb9c3cf21777d6e6a813f6d125f3d6046999d14bbb2c587d78e0dda328bb4",
       "bytes": 277933
     },
     {
@@ -1302,7 +1327,7 @@
       "output": "site/print/neural--entity--capital_1789.pdf",
       "title": "1789 Capital — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "73277b13865fe90016d9e4967e71f30347adfe90c86b1e0e6a43ca7acdd4bbfe",
+      "sha256": "0310e5f4de578eafb6902f54121bb3b80403fcd22f7a5eb4630553f596fbb296",
       "bytes": 247967
     },
     {
@@ -1313,7 +1338,7 @@
       "output": "site/print/neural--entity--chrupalla.pdf",
       "title": "Tino Chrupalla — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "671f0e1f9abd9e3d8425552b55c65c4399be67997c78fbd7dddeed43798874ed",
+      "sha256": "eb41415d9980c08e09753b2b48eeec3aa97903982fa6c0100667c5b2fe2b75f7",
       "bytes": 262436
     },
     {
@@ -1324,7 +1349,7 @@
       "output": "site/print/neural--entity--doj.pdf",
       "title": "DOJ — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "0ac97b46ae0de5ff7d88c4f2771911aba31978d4e2f08d9207743f5c7507ecf9",
+      "sha256": "30e2fcb16491e57de8053176a7a62930a40c1ebbc4105e539aef0bc5aac42a7f",
       "bytes": 284035
     },
     {
@@ -1335,7 +1360,7 @@
       "output": "site/print/neural--entity--donald_trump_jr.pdf",
       "title": "Donald Trump Jr. — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "5ba1204e34fad5973d26e24265576326676ba71fff597159a0776aaf26796eca",
+      "sha256": "1b826303f05259ca792dfecf6818e42642565003e26fd2ca185027877a09b756",
       "bytes": 250397
     },
     {
@@ -1346,7 +1371,7 @@
       "output": "site/print/neural--entity--eric_trump.pdf",
       "title": "Eric Trump — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "9775234944d3fb7dbde8083e430ac6d93665c11a1f912af8427941b4c13e0e66",
+      "sha256": "2b88bf9908a74fd7d45b76a3c81d1eb2d3776853c718454e41f9b74314c0e47d",
       "bytes": 250647
     },
     {
@@ -1357,7 +1382,7 @@
       "output": "site/print/neural--entity--fcc.pdf",
       "title": "FCC · CARR — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "9aa45dc92c304599f036db26ff6025f85f0de8710225f78d906864c81f877d14",
+      "sha256": "fbbf6861d208d2f23b3cbbc6085387b4d2bc31012e5b38c6a785e2a30673280a",
       "bytes": 250185
     },
     {
@@ -1368,7 +1393,7 @@
       "output": "site/print/neural--entity--geo.pdf",
       "title": "GEO · CORECIVIC — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "b1b77ae2dd2c7cb027398ec7a2ec5ff2e7c0b2ef20713256b972f226f018762c",
+      "sha256": "466b62d08c20c1232bfc840ccbf426ae89593015861a9b23c3b23984bf1df4d7",
       "bytes": 239616
     },
     {
@@ -1379,7 +1404,7 @@
       "output": "site/print/neural--entity--gg_bank.pdf",
       "title": "Golden Global Bank — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "84d20f453b698a4d18f0ff77a8ac532b57bf11be31c7ad5b22fa51280c0b4f1c",
+      "sha256": "fdab83423ecefa86b3d08bb4b8cfee0a3e526884f196dd6ce4cbe2e47790d5f5",
       "bytes": 251756
     },
     {
@@ -1390,7 +1415,7 @@
       "output": "site/print/neural--entity--gg_leasing.pdf",
       "title": "Golden Global Varlık Kiralama — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "802158d98d610dacf23881bbe145e9b6d6840e29233869511a350d4f70fb70d8",
+      "sha256": "40255c1eae39eec0f7f9806f43ec76d94b0295ce9f9c0956a6b8788f832ff740",
       "bytes": 256622
     },
     {
@@ -1401,7 +1426,7 @@
       "output": "site/print/neural--entity--gg_portfolio.pdf",
       "title": "Golden Global Portföy Yönetimi — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "a91c37e525c12fd9b42c753a6167145b9c24e9bd11ecb280679b674a2c0ad9af",
+      "sha256": "e5842dbc13afd43448db6d9ac332675acea9eaa164e7bafc4404402011fea4f0",
       "bytes": 259134
     },
     {
@@ -1412,7 +1437,7 @@
       "output": "site/print/neural--entity--hoecke.pdf",
       "title": "Björn Höcke — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "df3476c09d47f18ed85d1e7220a7cf1948d459b1b2e4ff0634c8b8afd38ba566",
+      "sha256": "9a53a0f4baeba7cd014325c1f7959c29ec4a2cc544683a757f49fb638c0703f2",
       "bytes": 261923
     },
     {
@@ -1423,7 +1448,7 @@
       "output": "site/print/neural--entity--ice.pdf",
       "title": "ICE — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "752765af391f8b380c76cb772968cf5b2e9e87e68f0814dc8f78936d3379cedb",
+      "sha256": "0effcbea70d4c1812e63fa3b3c42ae6aad03f72e97fc6452f37f55d0e7f60ced",
       "bytes": 283460
     },
     {
@@ -1434,7 +1459,7 @@
       "output": "site/print/neural--entity--iran.pdf",
       "title": "IRAN — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "8f6a56665cc7533e8b18dcb5c08205de929f289a20ac219437e5316d7ead0926",
+      "sha256": "f9ca2e9200af24e3d3b2b016134d832709577dec015f0ea96157c7543dc50384",
       "bytes": 265463
     },
     {
@@ -1445,7 +1470,7 @@
       "output": "site/print/neural--entity--kushner.pdf",
       "title": "KUSHNER — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "bd28bff4b06465b1efb71e49629bef12c1e822c3fde26da5bee3c433467df3f0",
+      "sha256": "8ec6e8af6ba8de01befbdc5b4393d7996bf29eb16d25689d50c15b9fed0278ab",
       "bytes": 262000
     },
     {
@@ -1456,7 +1481,7 @@
       "output": "site/print/neural--entity--ladder_capital.pdf",
       "title": "Ladder Capital Corp — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "e3012db427e26dffec64be043efd5955a96bc750cb0ca35d533fb80086898f18",
+      "sha256": "c6377f47498110ef8c825a118a80563bc1ee086bf9280b95c16ebd3b8144bf5f",
       "bytes": 283118
     },
     {
@@ -1467,7 +1492,7 @@
       "output": "site/print/neural--entity--ladder_finance.pdf",
       "title": "Ladder Finance LLC — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "6d12ea85ed0f770dc29ca6dfbbb6d1ec4bdb198eee102e3af11f2b32d6c79b41",
+      "sha256": "24fb5fc51c7221bc2237cdff59789042d7317d609128823e2ddcaa03c1784d36",
       "bytes": 292199
     },
     {
@@ -1478,7 +1503,7 @@
       "output": "site/print/neural--entity--ladder_finance_i.pdf",
       "title": "Ladder Finance I LLC — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "ba1d66e708291ef903bf3fd2cfd70f9fa2a6bf22cb000f08be5f613907b184a2",
+      "sha256": "a3b6c06e6ccee3cc5eb07b9bdb6f73bf6633fde97cc2776f621127ff5d956c40",
       "bytes": 291780
     },
     {
@@ -1489,7 +1514,7 @@
       "output": "site/print/neural--entity--lanzerath.pdf",
       "title": "Rainer Lanzerath — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "4cf294d95c7a8a19fe22551da05fe6a0fb890109736aa5f734b76bbb94b5223d",
+      "sha256": "f10e902dc1deba07834ed78e58a4a0ceacd64de3dc0e78eeeef7a1e7a4abf228",
       "bytes": 247286
     },
     {
@@ -1500,7 +1525,7 @@
       "output": "site/print/neural--entity--megahub.pdf",
       "title": "MEGA HUB — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "ebae43117604a5146f6c47835067e90e153ac444cd5d7f6433c6e08c2dd2a073",
+      "sha256": "99cce86bdf846b9b7fc8d3de84cf54d3af7d7b47a0dd04425bf4d0535f5a1e57",
       "bytes": 224179
     },
     {
@@ -1511,7 +1536,7 @@
       "output": "site/print/neural--entity--merrill_lynch.pdf",
       "title": "Merrill Lynch — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "97107337a559c36c6beadecd0fb992ec50f157a1aae1bd9f2a70d53fa0321f37",
+      "sha256": "f86c1e157420a43f0e5f7ff42de3c79ef85fdb520fa29a5d1060e50e0164f587",
       "bytes": 258855
     },
     {
@@ -1522,7 +1547,7 @@
       "output": "site/print/neural--entity--meuthen.pdf",
       "title": "Jörg Meuthen — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "4c65e3a38885669ffd7720c8b736e9e56192303e577211c04258c243934d9dc0",
+      "sha256": "32a7db4dbecbd0f6f0e243afac7736a719ab4fa973ce84d96b47916237c30027",
       "bytes": 263228
     },
     {
@@ -1533,7 +1558,7 @@
       "output": "site/print/neural--entity--musk.pdf",
       "title": "Elon Musk — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "cfc1af0a57814e560e5a55b292a47204d0fc21574560cc817e8e30d0dcdbc37f",
+      "sha256": "53c3b861c0bc0a30951e80ee8a3bd70c224895b5b305bb2e2a46b3e6850a6efe",
       "bytes": 274352
     },
     {
@@ -1544,7 +1569,7 @@
       "output": "site/print/neural--entity--ofac.pdf",
       "title": "OFAC — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "810a94d63083a72d538da1514fb91297a7e12d9fe7fe2292bdd6cbe939e42165",
+      "sha256": "debd379f54bbc11480d290135f2b5c447ea220a76bcf804945bc7a83c460f969",
       "bytes": 299458
     },
     {
@@ -1555,7 +1580,7 @@
       "output": "site/print/neural--entity--p2025.pdf",
       "title": "PROJECT 2025 — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "d466d042cc82003ad8515df5c7faeb6f724e5eb8d13d4c7add02ac8b9087701a",
+      "sha256": "0c3fded2327ee3c2f9be794214c92176a6783804e5ef619a9459b764152ac14d",
       "bytes": 225225
     },
     {
@@ -1566,7 +1591,7 @@
       "output": "site/print/neural--entity--pakistan.pdf",
       "title": "PAKISTAN — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "5efe24ec488c0a5bbf4a048025a77a2b3c29308b117f75b4c1f15cd8abf7d7eb",
+      "sha256": "af86cef2d75dc81b2171f66d391c87f053452dfba78a68f90913f8d89471fe1a",
       "bytes": 233475
     },
     {
@@ -1577,7 +1602,7 @@
       "output": "site/print/neural--entity--palantir.pdf",
       "title": "PALANTIR — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "cd8659df8433412d158d2bdfb989786a9d56c295c6c97110fc27572a48ccb781",
+      "sha256": "71538f73d850e83df61e31b0adba495053e24923fa26c6af5f2f73a755279648",
       "bytes": 219811
     },
     {
@@ -1588,7 +1613,7 @@
       "output": "site/print/neural--entity--pentagon.pdf",
       "title": "PENTAGON — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "0ab4daf43300971913483b632225c0974529cdf29b33f013d535683dd345984c",
+      "sha256": "5d901c0ba3105ca92927b0cbcefb5b217ff97bfb569f3810d16f8baebaf3296d",
       "bytes": 234012
     },
     {
@@ -1599,7 +1624,7 @@
       "output": "site/print/neural--entity--poly.pdf",
       "title": "POLYMARKET — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "89b37021ff68c2e4e4458bd55dad0a30142a116d8ddf237799b21d21af9c1e40",
+      "sha256": "3766125198911fce30983529010df9ba7ea67abbf1635aa50493d631bdb92f11",
       "bytes": 238380
     },
     {
@@ -1610,7 +1635,7 @@
       "output": "site/print/neural--entity--pulte.pdf",
       "title": "PULTE — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "15eeb1139ca076450df729ee083bd3b92413dd0aeac44a10cfdc4700370b5a99",
+      "sha256": "fcacd3e410649832c81750e5ee4a9de5f4bfa3c04190b665ea55394e0556816e",
       "bytes": 237910
     },
     {
@@ -1621,7 +1646,7 @@
       "output": "site/print/neural--entity--qatar.pdf",
       "title": "QATAR — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "702584cd65632fe1b06dd8fd626879df91241da9f77042fec2a4b72d16c8947b",
+      "sha256": "2aa23d24415661261025d644ef79cf768f075f1e416e34e1171e35c29d091380",
       "bytes": 226537
     },
     {
@@ -1632,7 +1657,7 @@
       "output": "site/print/neural--entity--ross.pdf",
       "title": "Wilbur Ross — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "d96cd0bfe001dc7b4675e9f80e29e9468af7d8e8af5362833d6cf64e0df36b91",
+      "sha256": "0f3b5fd623238f2d619f8a3dd961b5b19ae0f6766700d9df96af74fc02f64f77",
       "bytes": 292530
     },
     {
@@ -1643,7 +1668,7 @@
       "output": "site/print/neural--entity--rothschild_inc.pdf",
       "title": "Rothschild Inc. — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "1f964089f0a09a6f58e63d3f0daa4fa1656ee22cb8bf2e1a8d3e05d90af2caf5",
+      "sha256": "c2c9b3448cf1f4eb338d06c71fcc38a65f6276a9370ca2b06c5e900db47955b7",
       "bytes": 282105
     },
     {
@@ -1654,7 +1679,7 @@
       "output": "site/print/neural--entity--russia.pdf",
       "title": "RUSSIA — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "2474a72f425b2b36a95de73d41015ebacde29bc500ead9e21f9731554412006a",
+      "sha256": "86c4d7b06b21fe3e2b60c982c8b3a2ee1a6e957262deb93406cd79a5b2ca7d8e",
       "bytes": 234346
     },
     {
@@ -1665,7 +1690,7 @@
       "output": "site/print/neural--entity--saudi.pdf",
       "title": "SAUDI — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "2c0dcd902db46f9d05909eb12c5b9ddc52170dcbf7f37db9ecd72f7a3a287901",
+      "sha256": "b8cf63292143ee84818b41383cce620ccc32e1994ee6febaca24ad46f0757c09",
       "bytes": 251027
     },
     {
@@ -1676,7 +1701,7 @@
       "output": "site/print/neural--entity--schwab_bank.pdf",
       "title": "Charles Schwab Bank — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "9c3aabb2e73c585233d7d511f2276af270819bd97616c3d85e56237e3100268d",
+      "sha256": "6781998951aea8a8ae9e619fc72e6919bd49b0485825339e6f78aa21f655ca10",
       "bytes": 284628
     },
     {
@@ -1687,7 +1712,7 @@
       "output": "site/print/neural--entity--scotus.pdf",
       "title": "SCOTUS — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "dc6bb239a6c9bb2b189fa13850d6b47f48bf65a8cfac58ba1d36b623bdef4fb1",
+      "sha256": "22cfd523cc78f36d6c7b424fa96a88745d7fadc4b0dc2b3ea818d85bd30051ff",
       "bytes": 251758
     },
     {
@@ -1698,7 +1723,7 @@
       "output": "site/print/neural--entity--sons.pdf",
       "title": "SONS — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "8505710c482a86fa2f7ae82b963abd105d67c25b98d7486cfe460da41b2126b3",
+      "sha256": "65e3594a25a4bd7ed2b73a7f02bd214a829dc43a6bf33b5950397a308acd7ea2",
       "bytes": 276220
     },
     {
@@ -1709,7 +1734,7 @@
       "output": "site/print/neural--entity--stargate.pdf",
       "title": "STARGATE — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "6b5cc9635c4e574bc46b4e29d3fd743ccf11bea0af42a2aaaf22e5b6ff1df0e0",
+      "sha256": "b8f67ec657b3bbee4a93ac214a1f218e5dd153a67027e63ee98535a5da6ae465",
       "bytes": 259311
     },
     {
@@ -1720,7 +1745,7 @@
       "output": "site/print/neural--entity--taj_associates.pdf",
       "title": "Taj Associates — Full entity record — The Neural Map",
       "pages": 5,
-      "sha256": "f08740c026ab1ac89b434c217be3e12df5f282bc93e150c37b44e5bc36131caf",
+      "sha256": "e0b2f073633441791380c2b3f30649cec6490d81f38ce1b0f2a0115b8688ae18",
       "bytes": 292480
     },
     {
@@ -1731,7 +1756,7 @@
       "output": "site/print/neural--entity--taj_bondholders.pdf",
       "title": "Taj bondholders — Full entity record — The Neural Map",
       "pages": 6,
-      "sha256": "e95b0c07cd21dab111ea78f9ce9b7f7f4d564e7939a59cf068818d64034d1b01",
+      "sha256": "7a87bb9c662a3847b247fabdb1a281b30c48844247ce6983d2b578b935aa6b32",
       "bytes": 303791
     },
     {
@@ -1742,7 +1767,7 @@
       "output": "site/print/neural--entity--taj_funding.pdf",
       "title": "Taj Funding Inc. — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "b68f06d924f9c20049fbe79e6f03663faba7422c355a2e59ef42b0e61522232a",
+      "sha256": "a616bfb7e2d681ec2ec6fd1beb92283d6d4496cf92e8c8f83f4d005896575d26",
       "bytes": 255585
     },
     {
@@ -1753,7 +1778,7 @@
       "output": "site/print/neural--entity--tmtg.pdf",
       "title": "TMTG · DJT — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "045b01f9cc87c8e6aa1757ec0b4895e72487a0e2c76a84956b366311c2fb617c",
+      "sha256": "92f2cd9546f4cd01438df82b8691428b690ebae9c17ccdc7db761e195eeebe23",
       "bytes": 230636
     },
     {
@@ -1764,7 +1789,7 @@
       "output": "site/print/neural--entity--treasury.pdf",
       "title": "TREASURY · BESSENT — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "16e11904a7fc47a42148bc107716e1287666e047e67e1dfa5a55f2ebef2cf36e",
+      "sha256": "2e1d3371e8da45f3c56df3905a574c56ec4b3c080f153b1da73672d5d61ebcf9",
       "bytes": 289033
     },
     {
@@ -1775,7 +1800,7 @@
       "output": "site/print/neural--entity--trump.pdf",
       "title": "THE PRINCIPAL — Full entity record — The Neural Map",
       "pages": 16,
-      "sha256": "d03ba20d176b6cfc25590e05788e20304e9780ea76f1b01190a76dde2f91f1e0",
+      "sha256": "dcff9401605b271cedae313e3d00b0c7b3cc0f9aa9c698a812cf243cd87b51fe",
       "bytes": 612561
     },
     {
@@ -1786,7 +1811,7 @@
       "output": "site/print/neural--entity--trust.pdf",
       "title": "TRUST BANK — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "cadb38d2a5a31a6b231996ff1c154ed9502f5baa097218ddae7d813112b0bb9a",
+      "sha256": "b98046a177432bba3a549fbc1574880585633e91708d440fde2ed70adc82af04",
       "bytes": 285845
     },
     {
@@ -1797,7 +1822,7 @@
       "output": "site/print/neural--entity--uae.pdf",
       "title": "UAE — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "aa6199d46e7d7bf4e5ef03957e3cd9306df271ed69b6a2ad08e7158b344faa99",
+      "sha256": "53e1edb4274780aa7a4babdee1457a7ee03e233efadb97873b2ce8c9b432f09c",
       "bytes": 241203
     },
     {
@@ -1808,7 +1833,7 @@
       "output": "site/print/neural--entity--usps.pdf",
       "title": "USPS — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "3c4d672c54065ccdf33a86f15e5c3ef28052f473d8fff20c71850e86c91e5f79",
+      "sha256": "75d56bf2704e4b9edc86666eef96102886d5175939aa0424835492f880554d41",
       "bytes": 238552
     },
     {
@@ -1819,7 +1844,7 @@
       "output": "site/print/neural--entity--vance.pdf",
       "title": "JD Vance — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "38d49e8784aecf9f85e0a3e0ff2b65f71f5e56c895b8553ecf4aae9ed5f9e506",
+      "sha256": "4834594d06721f37b0bb195f2fe36a6718c62a1cd19fe508b6a7e514d683be67",
       "bytes": 252323
     },
     {
@@ -1830,7 +1855,7 @@
       "output": "site/print/neural--entity--vault.pdf",
       "title": "PROJECT VAULT — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "05a1bd0089fe5a53dcc5dbe510fe9b29680bfcf4f075098ebfb5d93629ea8639",
+      "sha256": "0ee917907fae067d78ee5aa37cc53ec92f665cc61b17e5198cf6d29c711955ac",
       "bytes": 247228
     },
     {
@@ -1841,7 +1866,7 @@
       "output": "site/print/neural--entity--vz.pdf",
       "title": "VENEZUELA — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "0c043a17c6c149d80cf116403410cf4e029493d9cdc94e517857745c142804a9",
+      "sha256": "3285bf844b06be90ff2d698cd01b621d59670ec03058df163225ffd331c20298",
       "bytes": 220862
     },
     {
@@ -1852,7 +1877,7 @@
       "output": "site/print/neural--entity--weidel.pdf",
       "title": "Alice Weidel — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "12477381774bba65b06e4864b022c9fcd6936ec30ad30e58f32c59a4e4b3338e",
+      "sha256": "451a0a965558fbeffcdab9a47cd6c35aabd3809f02f1d08b8b38e08a1c28ae78",
       "bytes": 261646
     },
     {
@@ -1863,7 +1888,7 @@
       "output": "site/print/neural--entity--witkoff.pdf",
       "title": "WITKOFF — Full entity record — The Neural Map",
       "pages": 4,
-      "sha256": "6cc3bc214b78ed825027874f06a185d061e9757fca8ff05722374828cfbbd8a9",
+      "sha256": "351be353c83bab577fbd8bda618d1d7e8304346b849a852c141c2a7567979f9c",
       "bytes": 281381
     },
     {
@@ -1874,7 +1899,7 @@
       "output": "site/print/neural--entity--wlf.pdf",
       "title": "WLF — Full entity record — The Neural Map",
       "pages": 6,
-      "sha256": "48394c1f3c89c6d6d843a5afba9ea8d34ce19f67fa6759220ef92d943c8cfc89",
+      "sha256": "f5793193f38f04c18cd62fe5ab4ec5566b426a1fb20f98a5d729d509785aac5f",
       "bytes": 338845
     },
     {
@@ -1885,7 +1910,7 @@
       "output": "site/print/neural--entity--zach_witkoff.pdf",
       "title": "Zachary Witkoff — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "70788fb90fcda4fd998ad293743c10a91f9a2cb600b1367e4918d00044ede614",
+      "sha256": "9d88b6657249ab98af6dc2530358fb29bb73319c1934e6bc3ed05fd8f292f13f",
       "bytes": 254727
     },
     {
@@ -1896,7 +1921,7 @@
       "output": "site/print/neural--entity--zhao.pdf",
       "title": "ZHAO — Full entity record — The Neural Map",
       "pages": 3,
-      "sha256": "d44221704eed4468a43f308dab572748f5a00b6ee0741430921830365b5dc1bc",
+      "sha256": "1a98286b3744c5ba99f86fb4398b8778c57a1c379e198221b1d6008fb9ba45c9",
       "bytes": 245028
     },
     {
@@ -1907,8 +1932,8 @@
       "output": "site/print/neural--topic--civil-society.pdf",
       "title": "Civic institutions & responses — Topic map — The Neural Map",
       "pages": 2,
-      "sha256": "025e5a3ae4bd607af094b53d0ccbb4f958d55ef9b96000eeafe0b7c3ddae0357",
-      "bytes": 179362
+      "sha256": "3216eb8e3b167b6a8a3d409ac2e3c75243a7ffd1962d106515a80d6e041d978e",
+      "bytes": 179268
     },
     {
       "kind": "map-topic",
@@ -1918,8 +1943,8 @@
       "output": "site/print/neural--topic--corrections-provenance.pdf",
       "title": "Corrections & source provenance — Topic map — The Neural Map",
       "pages": 2,
-      "sha256": "06e76158aa4502660408e220e755d0a2aa84796ee6b6afc2c7b3c16d22790081",
-      "bytes": 162798
+      "sha256": "a8bc4d008ed2b7ca76aa2b8d5dd7153ae5ccb3f269553612d72e85996888fa6e",
+      "bytes": 162704
     },
     {
       "kind": "map-topic",
@@ -1929,8 +1954,8 @@
       "output": "site/print/neural--topic--digital-assets.pdf",
       "title": "Digital assets & financial entities — Topic map — The Neural Map",
       "pages": 5,
-      "sha256": "df680445e25639876960add701f0721d7d9f0ed534ee78ecd97974627cf3d797",
-      "bytes": 306089
+      "sha256": "a895e82f8adc82dc022fa17d40896c531877e34c10e36c150bc85e81e0645054",
+      "bytes": 306097
     },
     {
       "kind": "map-topic",
@@ -1940,8 +1965,8 @@
       "output": "site/print/neural--topic--enforcement-surveillance.pdf",
       "title": "Enforcement & surveillance — Topic map — The Neural Map",
       "pages": 3,
-      "sha256": "a9611e289ed77ecc5e93b51ac1c0fa527c5b4ed1fc81c53ee1d4963170438400",
-      "bytes": 229285
+      "sha256": "66f67b45e8ac05c32c259d54290c0239e8d70a0653939e6b4b73d64215a80256",
+      "bytes": 229281
     },
     {
       "kind": "map-topic",
@@ -1951,7 +1976,7 @@
       "output": "site/print/neural--topic--executive-authority.pdf",
       "title": "Executive authority & courts — Topic map — The Neural Map",
       "pages": 4,
-      "sha256": "b16af87c87804fcc569b1b96dc37dff06039522aa670b5db3c0a86c037f7c97f",
+      "sha256": "6f112df72360b6559f0f1a0478b7db9d57ea3e85fd958a76213ad571d588e07f",
       "bytes": 230738
     },
     {
@@ -1962,8 +1987,8 @@
       "output": "site/print/neural--topic--germany-afd.pdf",
       "title": "Germany / AfD — Topic map — The Neural Map",
       "pages": 8,
-      "sha256": "2842f828f234675515cf974b6c5fbbefac6641ab6eeb1f5de776eeed325e4948",
-      "bytes": 286992
+      "sha256": "6dd9fcc8ff52d8520791004b3a90e49ac82d35ca1a0c6046acc9cb8ac716cbbf",
+      "bytes": 287015
     },
     {
       "kind": "map-topic",
@@ -1973,8 +1998,8 @@
       "output": "site/print/neural--topic--historical-comparisons.pdf",
       "title": "Historical comparisons — Topic map — The Neural Map",
       "pages": 2,
-      "sha256": "a11fa9564b2e1ad09e68036b8008d0ca293e8be4d546bd0a6cc8f58abfcdb328",
-      "bytes": 159217
+      "sha256": "c68be45e05dc379c8a8d055073a88092e7af56c2751496fb551f7212e84c6103",
+      "bytes": 159123
     },
     {
       "kind": "map-topic",
@@ -1984,7 +2009,7 @@
       "output": "site/print/neural--topic--information-media.pdf",
       "title": "Information & public communication — Topic map — The Neural Map",
       "pages": 4,
-      "sha256": "176f70a62cda77f4158e9be55488ecfe7d2cdb3f561935a030237a366929f381",
+      "sha256": "6cf9443178e3f59af7f09649c011b7ffeeb70a33dafb5fb6a57e01dafdebe650",
       "bytes": 227898
     },
     {
@@ -1995,7 +2020,7 @@
       "output": "site/print/neural--topic--iran-us-decisions.pdf",
       "title": "Iran & U.S. decisions — Topic map — The Neural Map",
       "pages": 5,
-      "sha256": "db4710737b8c542963e419512a421822285dacbfcc5d7d115adfe43edea39ada",
+      "sha256": "4c2df32efe312f570da1a301a7fff827b6eb68a961ecd26379121364b4486a81",
       "bytes": 257727
     },
     {
@@ -2006,8 +2031,8 @@
       "output": "site/print/neural--topic--ownership-disclosures.pdf",
       "title": "Ownership & financial disclosures — Topic map — The Neural Map",
       "pages": 13,
-      "sha256": "ab45f4234208d2fe4c3ed21a1850f91a3af5a85eeb3b8a2cddd738bfc2064bc1",
-      "bytes": 416908
+      "sha256": "14a7026e7bafdf72525ac245ce6d790492b80df35df996b7565e0e7fb2b23708",
+      "bytes": 416890
     },
     {
       "kind": "map-topic",
@@ -2017,7 +2042,7 @@
       "output": "site/print/neural--topic--technology-infrastructure.pdf",
       "title": "Technology & infrastructure — Topic map — The Neural Map",
       "pages": 3,
-      "sha256": "5b8c0e3bbe94fa824bf835b511b864bac18d00551bd78146391ec47e2685a47d",
+      "sha256": "f6c6949ca40a16b368af43c3540be5db52e149951ac5c963a3437a95b65a1b8c",
       "bytes": 235647
     },
     {
@@ -2028,8 +2053,8 @@
       "output": "site/print/neural--topic--trump-early-financing.pdf",
       "title": "Trump: early financing — Topic map — The Neural Map",
       "pages": 6,
-      "sha256": "ab32a4e8d91b26b81e294ffa8502e4b865caaa88939d17649097920ac6661962",
-      "bytes": 265458
+      "sha256": "95324c72a4f7e215911d426705a4891b2e6a3b819688a47c841c81daa84824bb",
+      "bytes": 265454
     },
     {
       "kind": "map-topic",
@@ -2039,7 +2064,7 @@
       "output": "site/print/neural--topic--trump-later-financing.pdf",
       "title": "Trump: later financing — Topic map — The Neural Map",
       "pages": 10,
-      "sha256": "c9378102b2dcc1bd491797e1de945e80eddcbfdfdedddb40022bb1048443ce61",
+      "sha256": "58cac9ff41001e10c16d53914a8f8e8c5a3a35c0bc14194d6781f011591961bf",
       "bytes": 286358
     },
     {
@@ -2050,7 +2075,7 @@
       "output": "site/print/neural--topic--us-midterms.pdf",
       "title": "2026 U.S. midterms — Topic map — The Neural Map",
       "pages": 2,
-      "sha256": "df57118b95d3357b9837753f950d2838ffd2aaabc779e328b4819a9815b82188",
+      "sha256": "729e4737f927d81259712ab969d04f1fa2e761fb9e89d3e1105c8bf097aaf73a",
       "bytes": 196642
     },
     {
@@ -2061,7 +2086,7 @@
       "output": "site/print/neural--topic--war-trade.pdf",
       "title": "War, trade & international records — Topic map — The Neural Map",
       "pages": 5,
-      "sha256": "bf5fbb26571538becac7fcf4c77b1d22c6e54646d9d998f851691de7abde6b16",
+      "sha256": "6715d23914c35cebf8b3c0e88cf2df0454e27d73b102bf8b3a9f3d99f080d01d",
       "bytes": 285598
     },
     {
@@ -2071,9 +2096,9 @@
       "canonicalUrl": "https://the-architecture-neurals.vercel.app/sources.html",
       "output": "site/print/sources.pdf",
       "title": "Source Archive Index — The Architecture",
-      "pages": 17,
-      "sha256": "be0deef77c4d4a2373ba5f18d5267acccbf90f116544b447f2d6960eff57db22",
-      "bytes": 138333
+      "pages": 28,
+      "sha256": "5266b270b7606e8be886386161c4d1e70c71e0779836004ee9d1f573e6e5cc3b",
+      "bytes": 716997
     },
     {
       "kind": "page",
@@ -2083,8 +2108,8 @@
       "output": "site/print/synthesis.pdf",
       "title": "Synthesis — The Architecture",
       "pages": 3,
-      "sha256": "a0ace59f3cb2b559cb672e2cae83973c4cdaf863ab304b82e7e1f337dfb4268f",
-      "bytes": 152831
+      "sha256": "2d4d88c1bca82bdc4cde3b4b1f44e9d48a16be2fbc7bd90193ddeae687afc801",
+      "bytes": 152824
     },
     {
       "kind": "synthesis",
@@ -2093,9 +2118,9 @@
       "canonicalUrl": "https://the-architecture-neurals.vercel.app/synthesis.html?view=checks",
       "output": "site/print/synthesis--view--checks.pdf",
       "title": "Records to check — Synthesis view — The Architecture",
-      "pages": 6,
-      "sha256": "06fbfc2d4607caf8ee0db3b8061c00d67a90f59662b44b42ac999a57bcb1e7e3",
-      "bytes": 221452
+      "pages": 65,
+      "sha256": "bab363a23ad17e0bbe0ba5fd3b48f0e92426dfec3d864c648d14aa50e8bede1f",
+      "bytes": 511606
     },
     {
       "kind": "synthesis",
@@ -2105,7 +2130,7 @@
       "output": "site/print/synthesis--view--compare.pdf",
       "title": "Historical comparisons — Synthesis view — The Architecture",
       "pages": 3,
-      "sha256": "bc84e6451526a4bf6244d5f9a7d9ddfc031136c745305e9ea1fe496829df95c6",
+      "sha256": "53e4a4170e0939588de3e694c521052409a2c4e8234eaf305a9566cd200ffebf",
       "bytes": 171580
     },
     {
@@ -2115,9 +2140,9 @@
       "canonicalUrl": "https://the-architecture-neurals.vercel.app/synthesis.html?view=connections",
       "output": "site/print/synthesis--view--connections.pdf",
       "title": "Connections — Synthesis view — The Architecture",
-      "pages": 5,
-      "sha256": "74af5877264436c66778e8785d87b1085ee6eb8e5d759e65571aa75e6c4054c4",
-      "bytes": 246229
+      "pages": 21,
+      "sha256": "a02f7f39a5d8abb740c66efbca0fc9e3f5635f6af2355cac5db1901fea338498",
+      "bytes": 566231
     },
     {
       "kind": "synthesis",
@@ -2126,9 +2151,9 @@
       "canonicalUrl": "https://the-architecture-neurals.vercel.app/synthesis.html?view=contents",
       "output": "site/print/synthesis--view--contents.pdf",
       "title": "Full report — Synthesis view — The Architecture",
-      "pages": 5,
-      "sha256": "0a8ef32d6f64ac884edf29e33b480994d4fed7c592612c8c5564825c41628a74",
-      "bytes": 207727
+      "pages": 11,
+      "sha256": "d6c91b952923409164e9073f7bbf1e8b117c31c9fc5d7efb3198d37f285dbc37",
+      "bytes": 334064
     },
     {
       "kind": "synthesis",
@@ -2138,8 +2163,8 @@
       "output": "site/print/synthesis--view--overview.pdf",
       "title": "Overview — Synthesis view — The Architecture",
       "pages": 3,
-      "sha256": "5b837ca0a35d3fd335861c34f540692c3ce59e083ed8a14e45638533859ec343",
-      "bytes": 155491
+      "sha256": "e091d10d07f48f6b115cf8a82800c114d7d0a5c2b9504ebe5ae761b2e01e93b8",
+      "bytes": 155498
     },
     {
       "kind": "synthesis",
@@ -2149,7 +2174,7 @@
       "output": "site/print/synthesis--view--timeline.pdf",
       "title": "Timeline — Synthesis view — The Architecture",
       "pages": 13,
-      "sha256": "74f93b4bc733cf58f69f7b3d57eebc16b17e728ace078c6a78983d777fac8c6f",
+      "sha256": "11b96b530bacd89548b20cd773cd9751e5cc7b3a3a0387073e50d44bf0c7d2b3",
       "bytes": 335457
     },
     {
@@ -2160,7 +2185,7 @@
       "output": "site/print/topics.pdf",
       "title": "Topics — The Architecture",
       "pages": 4,
-      "sha256": "bee76afd5e54d68cab85073b0b72a75e139ddb6601a662796958fcc88a399db2",
+      "sha256": "ebc9603e33afd4d3ac6d516671e0447ced941eaab92f8914c60b767c895ba776",
       "bytes": 173039
     },
     {
@@ -2171,7 +2196,7 @@
       "output": "site/print/topics--civil-society.pdf",
       "title": "Civic institutions & responses — The Architecture",
       "pages": 2,
-      "sha256": "41f0a7361c0a28b1faf88603f2e701593dc95abc78045f96beb4ff22bcbe3492",
+      "sha256": "e8a33db15c82528334243a1892cdc433b3cc785653d68b50770b8d0c20d2cc33",
       "bytes": 119358
     },
     {
@@ -2182,7 +2207,7 @@
       "output": "site/print/topics--corrections-provenance.pdf",
       "title": "Corrections & source provenance — The Architecture",
       "pages": 2,
-      "sha256": "a8bedcadd16f47a3dabd66081aa12989f1995b6ea76ab60177bd76a220a9ffdb",
+      "sha256": "44fcc5895768d4aaaa0a1e6f297ab48792b6493539a62f5a1aa0393fa1580568",
       "bytes": 145229
     },
     {
@@ -2193,7 +2218,7 @@
       "output": "site/print/topics--digital-assets.pdf",
       "title": "Digital assets & financial entities — The Architecture",
       "pages": 3,
-      "sha256": "b8d69b7fbc0fee33aa926b92439fc2cb684cb06403a933bdbdd9705f4bc877db",
+      "sha256": "ed6801805bf3fdd8bca1529224093d08de0b656942bd69481f947178d2ef9d53",
       "bytes": 169700
     },
     {
@@ -2204,7 +2229,7 @@
       "output": "site/print/topics--enforcement-surveillance.pdf",
       "title": "Enforcement & surveillance — The Architecture",
       "pages": 2,
-      "sha256": "3895d609776ec48369724eb138f90c95c3559e1c7262b6a63b451d22a6e832e7",
+      "sha256": "97cb5308a92e6e9d258b53672344a47464b20a1ce3a818955cb47e103ac987d0",
       "bytes": 128659
     },
     {
@@ -2215,7 +2240,7 @@
       "output": "site/print/topics--executive-authority.pdf",
       "title": "Executive authority & courts — The Architecture",
       "pages": 3,
-      "sha256": "2a0890b3d037d5bc7b774892d003799c21b17d94d46832fbb2cff64dc0d899bf",
+      "sha256": "4e694f93ef57b44033c1cf5fda42edf92d9c0b221dd4e41f12bcf6083dcbbc5b",
       "bytes": 180811
     },
     {
@@ -2226,7 +2251,7 @@
       "output": "site/print/topics--germany-afd.pdf",
       "title": "Germany / AfD — The Architecture",
       "pages": 8,
-      "sha256": "889c1e9f5e0604b9ebcd811d45aff9f2011c9ae84f6617e99e92c044e1e20efb",
+      "sha256": "c1f564a898205d93cca8761629c9d19b79ed464b84b01ecfb9a8c0bf97e253fd",
       "bytes": 265447
     },
     {
@@ -2237,7 +2262,7 @@
       "output": "site/print/topics--historical-comparisons.pdf",
       "title": "Historical comparisons — The Architecture",
       "pages": 3,
-      "sha256": "8dfa0675b7b9da4a315ee4567bab12705a66222af04bd1c3bc01e1bd44728745",
+      "sha256": "86a30da7c6d362af4a3cdd34bfec84dbac3eb8c21c4c4db2bee28b131c819589",
       "bytes": 179015
     },
     {
@@ -2248,7 +2273,7 @@
       "output": "site/print/topics--information-media.pdf",
       "title": "Information & public communication — The Architecture",
       "pages": 3,
-      "sha256": "334ad592e542a550a1688c1916eb5a89de1ff54f11f0332d884902bbc020474f",
+      "sha256": "900dad99f8abf11f12db803711a3686dab7f5f89399b10f5f64f560643c58d9e",
       "bytes": 175228
     },
     {
@@ -2259,7 +2284,7 @@
       "output": "site/print/topics--iran-us-decisions.pdf",
       "title": "Iran & U.S. decisions — The Architecture",
       "pages": 3,
-      "sha256": "e61d7e0db47545bced0e600458b305076adbf6be08b32904d526aeee502430b4",
+      "sha256": "b5580a05f63781939f65af566b1c2bea63bbc66196bc26cff7f36dcc7029bad0",
       "bytes": 178346
     },
     {
@@ -2270,7 +2295,7 @@
       "output": "site/print/topics--ownership-disclosures.pdf",
       "title": "Ownership & financial disclosures — The Architecture",
       "pages": 5,
-      "sha256": "014fd6694c8eef3a2ffcacb10d82a1d2ebab9937198a54f96f4465639c284f81",
+      "sha256": "5c63995ca7b782fa3b92b582dcaaa9eb8ca3465b3c20a537a5dd12f561b9df8b",
       "bytes": 215130
     },
     {
@@ -2281,7 +2306,7 @@
       "output": "site/print/topics--technology-infrastructure.pdf",
       "title": "Technology & infrastructure — The Architecture",
       "pages": 2,
-      "sha256": "bc171cfaf04ae544511cee4e92c589c67929b78de7be5d3ce4861e5bcb3625df",
+      "sha256": "2212d3b72f104763f1edfef0e2067483b3999926969b5413326091b956e8f7b0",
       "bytes": 121870
     },
     {
@@ -2292,7 +2317,7 @@
       "output": "site/print/topics--trump-early-financing.pdf",
       "title": "Trump: early financing — The Architecture",
       "pages": 5,
-      "sha256": "4cee63a679bbd03b9f8299b952906eb363caf5d98fa63afa7a87aca7d1c4db06",
+      "sha256": "c06cffe4bbd113eebf99251d7c5031c56aebc6a3e599200f8f0950c0f1f32bcd",
       "bytes": 219767
     },
     {
@@ -2303,7 +2328,7 @@
       "output": "site/print/topics--trump-later-financing.pdf",
       "title": "Trump: later financing — The Architecture",
       "pages": 3,
-      "sha256": "8d226fb0d9bcf8e10f895995eb9bcf7bab2704e92df7c607a4ff218cbdaf64ac",
+      "sha256": "170ce52f484f3a317875369badf9d9673c11cde5112a27eda84b0eaaa3d250f5",
       "bytes": 189820
     },
     {
@@ -2314,7 +2339,7 @@
       "output": "site/print/topics--us-midterms.pdf",
       "title": "2026 U.S. midterms — The Architecture",
       "pages": 2,
-      "sha256": "085dd165d82f6ddfc62bbb885fd4a97126d8ad801d64c46fe4aa09ec5eb72e5d",
+      "sha256": "0cf7a257758c2c455d13c68cfb6851cb7a21741d2ce47dcf47205595a9eda79e",
       "bytes": 156526
     },
     {
@@ -2325,7 +2350,7 @@
       "output": "site/print/topics--war-trade.pdf",
       "title": "War, trade & international records — The Architecture",
       "pages": 3,
-      "sha256": "dcf04bae81ab5683743d2f0de2c8291ae3283139d5a7f545c9efcdf0bc07d149",
+      "sha256": "8f51e9ae15dff8b00332c7e512bb9f00fe89b78eb905968f21e2817c445eb219",
       "bytes": 185627
     }
   ]
