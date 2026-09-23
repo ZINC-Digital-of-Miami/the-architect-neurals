@@ -1308,6 +1308,201 @@
       "sourceType": "official_record",
       "accessedAt": "2026-09-23",
       "locator": "One-page certificate; filed October 28, 2025; file number 10374042"
+    },
+    {
+      "id": "usps-ballot-sorn-20260717",
+      "title": "USPS Federal Ballot Mail system-of-records notice",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-07-17/pdf/2026-14508.pdf",
+      "publisher": "U.S. Postal Service / Federal Register",
+      "originId": "usps-federal-register",
+      "sourceType": "official_record",
+      "publishedAt": "2026-07-17",
+      "accessedAt": "2026-09-23",
+      "locator": "91 FR 44880; USPS 820.225"
+    },
+    {
+      "id": "usps-ballot-sorn-response-20260901",
+      "title": "USPS response to comments and effective SOR notice",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-09-01/pdf/2026-17986.pdf",
+      "publisher": "U.S. Postal Service / Federal Register",
+      "originId": "usps-federal-register",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-01",
+      "accessedAt": "2026-09-23",
+      "locator": "91 FR 56368; states USPS 820.225 effective on publication"
+    },
+    {
+      "id": "usps-ballot-pi-20260904",
+      "title": "Preliminary-injunction memorandum and order in ballot-mail cases",
+      "url": "https://cases.justia.com/federal/district-courts/massachusetts/madce/1:2026cv11549/298449/285/0.pdf",
+      "publisher": "U.S. District Court, District of Massachusetts",
+      "originId": "d-mass-ballot-cases",
+      "sourceType": "court",
+      "publishedAt": "2026-09-04",
+      "accessedAt": "2026-09-23",
+      "locator": "ECF 285; operative injunction and dissolution of TRO"
+    },
+    {
+      "id": "scotus-usps-stay-docket-26a305",
+      "title": "Supreme Court docket for postal-rule preliminary-injunction stay request",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a305.html",
+      "publisher": "Supreme Court of the United States",
+      "originId": "scotus-docket",
+      "sourceType": "court",
+      "accessedAt": "2026-09-23",
+      "locator": "No. 26A305; Sep 6 filing and Sep 9 response deadline; continuously updated"
+    },
+    {
+      "id": "missouri-referendum-opinion-20260903",
+      "title": "Missouri Supreme Court opinion in von Glahn v Hoskins",
+      "url": "https://www.courts.mo.gov/file/SC/Opinion_SC101805.pdf",
+      "publisher": "Supreme Court of Missouri",
+      "originId": "missouri-supreme-court",
+      "sourceType": "court",
+      "publishedAt": "2026-09-03",
+      "accessedAt": "2026-09-23",
+      "locator": "SC101805; certificate and ballot placement before Sep 8"
+    },
+    {
+      "id": "scotus-missouri-stay-docket-26a304",
+      "title": "Supreme Court docket for Missouri referendum stay application",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/26a304.html",
+      "publisher": "Supreme Court of the United States",
+      "originId": "scotus-docket",
+      "sourceType": "court",
+      "accessedAt": "2026-09-23",
+      "locator": "No. 26A304; application Sep 4; continuously updated"
+    },
+    {
+      "id": "fcc-abc-opposition-20260903",
+      "title": "FCC combined dismissal motion and opposition in ABC/Disney case",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.295648/gov.uscourts.dcd.295648.23.0.pdf",
+      "publisher": "U.S. District Court, District of Columbia / FCC filing",
+      "originId": "d-dc-abc-fcc",
+      "sourceType": "court",
+      "publishedAt": "2026-09-03",
+      "accessedAt": "2026-09-23",
+      "locator": "D.D.C. 1:26-cv-02902, ECF 23; litigating positions"
+    },
+    {
+      "id": "phang-plaintiff-reply-20260902",
+      "title": "Plaintiff reply on proposed order in Phang v Blanche",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.40.0.pdf",
+      "publisher": "U.S. District Court, District of Columbia / plaintiff filing",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-02",
+      "accessedAt": "2026-09-23",
+      "locator": "D.D.C. 1:26-cv-01417, ECF 40; allegations and requested relief"
+    },
+    {
+      "id": "slavin-complaint-20260827",
+      "title": "Complaint for declaratory and injunctive relief in Slavin v Parnell",
+      "url": "https://clearinghouse.net/doc/173809/",
+      "publisher": "U.S. District Court, District of Columbia / plaintiff filing",
+      "originId": "d-dc-slavin",
+      "sourceType": "court",
+      "publishedAt": "2026-08-27",
+      "accessedAt": "2026-09-23",
+      "locator": "D.D.C. 1:26-cv-03009, ECF 1; proposed-separation allegation"
+    },
+    {
+      "id": "slavin-order-20260904",
+      "title": "Memorandum order denying temporary and preliminary relief in Slavin",
+      "url": "https://docs.justia.com/cases/federal/district-courts/district-of-columbia/dcdce/1:2026cv03009/295983/22",
+      "publisher": "U.S. District Court, District of Columbia",
+      "originId": "d-dc-slavin",
+      "sourceType": "court",
+      "publishedAt": "2026-09-04",
+      "accessedAt": "2026-09-23",
+      "locator": "D.D.C. 1:26-cv-03009, ECF 22"
+    },
+    {
+      "id": "california-ab1539-history-20260903",
+      "title": "California AB 1539 bill history",
+      "url": "https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB1539",
+      "publisher": "California Legislature",
+      "originId": "california-legislature",
+      "sourceType": "official_record",
+      "accessedAt": "2026-09-23",
+      "locator": "Sep 3 presentation to governor; continuously updated history"
+    },
+    {
+      "id": "centcom-iran-strikes-20260901",
+      "title": "CENTCOM account of September 1 strikes on IRGC targets",
+      "url": "https://www.dvidshub.net/news/573727/centcom-completes-strikes-irgc-targets-iran",
+      "publisher": "U.S. Central Command Public Affairs via DVIDS",
+      "originId": "us-centcom",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-01",
+      "accessedAt": "2026-09-23",
+      "locator": "DVIDS story 573727; command account, not independent damage proof"
+    },
+    {
+      "id": "centcom-tankers-20260905",
+      "title": "CENTCOM account of September 5 tanker strikes",
+      "url": "https://www.dvidshub.net/news/574030/centcom-destroys-3-irgc-oil-tankers-after-iran-targets-2-us-navy-warships",
+      "publisher": "U.S. Central Command Public Affairs via DVIDS",
+      "originId": "us-centcom",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-05",
+      "accessedAt": "2026-09-23",
+      "locator": "DVIDS story 574030; command account, not cumulative casualty proof"
+    },
+    {
+      "id": "afd-sachsen-anhalt-statement-20260903",
+      "title": "Federal AfD statement on Sachsen-Anhalt campaign",
+      "url": "https://www.afd.de/tino-chrupalla-und-alice-weidel-wahl-in-sachsen-anhalt-entscheidend-fuer-die-zukunft-deutschlands/",
+      "publisher": "Alternative für Deutschland",
+      "originId": "afd-federal",
+      "sourceType": "party_statement",
+      "publishedAt": "2026-09-03",
+      "accessedAt": "2026-09-23",
+      "locator": "Weidel/Chrupalla named; poll assertion is not an election result"
+    },
+    {
+      "id": "sachsen-anhalt-election-officer-20260906",
+      "title": "Sachsen-Anhalt election officer statement at close of voting",
+      "url": "https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/Pressemitteilungen/2026_Landtagswahl_Positive_Bilanz_zum_Ablauf_der_Wahlzeit.pdf",
+      "publisher": "Sachsen-Anhalt state election officer",
+      "originId": "sachsen-anhalt-election-office",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-06",
+      "accessedAt": "2026-09-23",
+      "locator": "Release 23/2026; counting began at 18:00"
+    },
+    {
+      "id": "truth-api-pi-memo-20260831",
+      "title": "Memorandum supporting Truth API preliminary-injunction motion",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.nysd.670362/gov.uscourts.nysd.670362.36.1.pdf",
+      "publisher": "U.S. District Court, Southern District of New York / plaintiff filing",
+      "originId": "sdny-intercept-trump",
+      "sourceType": "court",
+      "publishedAt": "2026-08-31",
+      "accessedAt": "2026-09-23",
+      "locator": "S.D.N.Y. 1:26-cv-06867, ECF 36-1; allegations only"
+    },
+    {
+      "id": "tmtg-truth-api-interview-20260828",
+      "title": "SEC-furnished interview transcript on Truth API",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926029174/ex_1008428.htm",
+      "publisher": "Trump Media & Technology Group / SEC exhibit",
+      "originId": "tmtg-sec",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2026-08-28",
+      "accessedAt": "2026-09-23",
+      "locator": "Exhibit 99.1; interim CEO claims 50 ms speed advantage and public posting"
+    },
+    {
+      "id": "occ-world-liberty-charter-20260814",
+      "title": "OCC Corporate Decision 1385 on proposed World Liberty Trust Company",
+      "url": "https://occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2026/cd1385.pdf",
+      "publisher": "Office of the Comptroller of the Currency",
+      "originId": "occ-charter",
+      "sourceType": "official_record",
+      "publishedAt": "2026-08-14",
+      "accessedAt": "2026-09-23",
+      "locator": "Control 2026-Charter-344521; footnote 2 confirms indirect common owners and USD1 link"
     }
   ],
   "claims": [
@@ -2165,6 +2360,190 @@
       "eventDate": "2026-09-21",
       "reviewedAt": "2026-09-23",
       "recordType": "Senate request for investigation and testimony",
+      "status": "documented"
+    },
+    {
+      "id": "usps-sorn-correction-20260901",
+      "text": "USPS 820.225 had a July 17 notice and became effective on September 1; this does not prove portal operation.",
+      "context": "The prior August-only search missed the July notice. The September 4 order cites a USPS declaration that the portal was not operational then.",
+      "sourceIds": [
+        "usps-ballot-sorn-20260717",
+        "usps-ballot-sorn-response-20260901",
+        "usps-ballot-pi-20260904"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-01",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Federal Register notices and court-record correction",
+      "status": "documented"
+    },
+    {
+      "id": "usps-ballot-pi-20260904",
+      "text": "The district court enjoined mandatory ballot-mail rule provisions September 4 and dissolved the prior TRO.",
+      "context": "Preliminary relief for elections through November 3; a September 6 stay application did not itself stay the order.",
+      "sourceIds": [
+        "usps-ballot-pi-20260904",
+        "scotus-usps-stay-docket-26a305"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-04",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Preliminary injunction and pending stay",
+      "status": "documented"
+    },
+    {
+      "id": "missouri-referendum-opinion-20260903",
+      "text": "Missouri Supreme Court ordered certification and November-ballot placement before September 8 and suspended HB 1 districts.",
+      "context": "The 2022 map remained operative under the state judgment; federal stay application was pending by September 6, and actual ballot compliance was not directly verified.",
+      "sourceIds": [
+        "missouri-referendum-opinion-20260903",
+        "scotus-missouri-stay-docket-26a304"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-03",
+      "reviewedAt": "2026-09-23",
+      "recordType": "State-court judgment and pending stay",
+      "status": "documented"
+    },
+    {
+      "id": "fcc-abc-defense-20260903",
+      "text": "FCC filed a combined opposition and dismissal motion in the ABC/Disney broadcast-license case.",
+      "context": "The FCC denies retaliation and argues an appellate review route; these are defendant positions, not a merits ruling.",
+      "sourceIds": [
+        "fcc-abc-opposition-20260903"
+      ],
+      "topicIds": [
+        "information-media",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-03",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Agency litigation position",
+      "status": "documented"
+    },
+    {
+      "id": "phang-plaintiff-reply-20260902",
+      "text": "Phang filed a reply challenging DOJ’s claim that its categorical Federal Register report discharged a separate redaction-justification duty.",
+      "context": "The reply was filed September 2, before the September 3 deadline. It states party arguments; no judicial sufficiency ruling was found by September 6.",
+      "sourceIds": [
+        "phang-plaintiff-reply-20260902"
+      ],
+      "topicIds": [
+        "corrections-provenance",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-02",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Plaintiff filing and unresolved statutory dispute",
+      "status": "documented"
+    },
+    {
+      "id": "slavin-relief-denied-20260904",
+      "text": "The court denied temporary and preliminary relief September 4 after proposed separation notices, not established final firings.",
+      "context": "The complaint alleges administrative leave; the court order documents a voluntary delay to September 4 and denial of relief, not final personnel status.",
+      "sourceIds": [
+        "slavin-complaint-20260827",
+        "slavin-order-20260904"
+      ],
+      "topicIds": [
+        "information-media",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-04",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Court order and plaintiff employment allegation",
+      "status": "documented"
+    },
+    {
+      "id": "california-ab1539-presented-20260903",
+      "text": "California AB 1539 was enrolled and presented to the governor September 3.",
+      "context": "The bill proposed party certification under the Twenty-Second Amendment. Presentation was neither signature nor veto by the September 6 cutoff.",
+      "sourceIds": [
+        "california-ab1539-history-20260903"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-03",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Legislative history",
+      "status": "documented"
+    },
+    {
+      "id": "centcom-iran-strikes-20260905",
+      "text": "CENTCOM reported September 1 strikes on IRGC sites and September 5 strikes on three named tankers.",
+      "context": "These are command descriptions of discrete events, not independently confirmed damage, cumulative casualties or a new congressional authorization.",
+      "sourceIds": [
+        "centcom-iran-strikes-20260901",
+        "centcom-tankers-20260905"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "eventDate": "2026-09-05",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Military command statements",
+      "status": "documented"
+    },
+    {
+      "id": "afd-sachsen-anhalt-election-20260906",
+      "text": "Federal AfD spokespeople backed a regional candidate September 3; the state election officer reported voting closed and counting began September 6.",
+      "context": "The party’s polling assertion is not a result. The officer’s release does not establish vote share, seats, or any U.S.–AfD coordination.",
+      "sourceIds": [
+        "afd-sachsen-anhalt-statement-20260903",
+        "sachsen-anhalt-election-officer-20260906"
+      ],
+      "topicIds": [
+        "germany-afd"
+      ],
+      "eventDate": "2026-09-06",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Party statement and election administration record",
+      "status": "documented"
+    },
+    {
+      "id": "truth-api-pi-motion-20260831",
+      "text": "Plaintiffs moved for preliminary relief concerning paid Truth API access August 31.",
+      "context": "Their pricing and governmental-benefit theories are allegations. A SEC-furnished issuer interview acknowledges a claimed 50 ms advantage while saying posts remained public; no customer payment or exchange for an official decision was verified.",
+      "sourceIds": [
+        "truth-api-pi-memo-20260831",
+        "tmtg-truth-api-interview-20260828"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption",
+        "information-media"
+      ],
+      "eventDate": "2026-08-31",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Plaintiff motion and issuer statement",
+      "status": "documented"
+    },
+    {
+      "id": "occ-world-liberty-common-owners-20260814",
+      "text": "OCC Decision 1385 says World Liberty Financial LLC and the proposed bank share indirect common owners and a USD1 product link.",
+      "context": "The decision grants preliminary conditional approval only. The shared-owners footnote does not identify the Emirati entities from the separate Sun citizenship disclosure as bank owners or controllers.",
+      "sourceIds": [
+        "occ-world-liberty-charter-20260814"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets",
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-08-14",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Regulatory charter decision",
       "status": "documented"
     }
   ],
@@ -3410,6 +3789,17 @@
         "germany-afd"
       ],
       "reason": "Normalize incoming source origins against the existing registry before admission. Different article dates, author labels or packet-local origin names do not create independent outlets; repeated UPI stories remain one origin."
+    },
+    {
+      "id": "usps-sorn-search-window-correction-20260923",
+      "date": "2026-09-23",
+      "purpose": "source_route",
+      "decision": "reject",
+      "topicIds": [
+        "us-midterms",
+        "corrections-provenance"
+      ],
+      "reason": "The August-only USPS Federal Register search missed the July 17 notice. Future system-of-record checks must search backward from the rule’s dependencies, then test legal effectiveness and actual operation separately."
     }
   ],
   "topicProposals": [],
@@ -6300,6 +6690,36 @@
       "pathIds": [
         "freedom250-payment-and-reception-offer"
       ]
+    },
+    {
+      "id": "weekly-backfill-20260906-reviewed-20260923",
+      "date": "2026-09-23",
+      "summary": "Append original records and bounded claims for the August 31–September 6 backfill; record the corrected USPS search route without changing historical map relationships.",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority",
+        "information-media",
+        "corrections-provenance",
+        "iran-us-decisions",
+        "war-trade",
+        "germany-afd",
+        "pay-to-play-corruption",
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "claimIds": [
+        "usps-sorn-correction-20260901",
+        "usps-ballot-pi-20260904",
+        "missouri-referendum-opinion-20260903",
+        "fcc-abc-defense-20260903",
+        "phang-plaintiff-reply-20260902",
+        "slavin-relief-denied-20260904",
+        "california-ab1539-presented-20260903",
+        "centcom-iran-strikes-20260905",
+        "afd-sachsen-anhalt-election-20260906",
+        "truth-api-pi-motion-20260831",
+        "occ-world-liberty-common-owners-20260814"
+      ]
     }
   ],
   "networkPaths": [
@@ -6447,6 +6867,18 @@
         "The Record Since July 19"
       ],
       "href": "/#u-node"
+    },
+    {
+      "id": "u-week-2026-09-06",
+      "title": "The Week — August 31–September 6",
+      "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
+      "href": "/#u-week-2026-09-06"
     },
     {
       "id": "u-corrections",
@@ -8215,6 +8647,78 @@
       "href": "/#b-4-new-this-edition"
     },
     {
+      "id": "brief-2026-09-06-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-the-lede"
+    },
+    {
+      "id": "brief-2026-09-06-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-09-06-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-09-06-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-09-06-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-09-06-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-09-06-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-09-06-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-09-06",
+      "parents": [],
+      "href": "/#brief-2026-09-06-next-week-s-priorities"
+    },
+    {
       "id": "brief-2026-08-30-the-lede",
       "title": "The lede",
       "level": 2,
@@ -8431,7 +8935,7 @@
       "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
-  "reportCurrentThrough": "2026-08-30",
+  "reportCurrentThrough": "2026-09-06",
   "briefs": [
     {
       "date": "2026-08-16",
@@ -8444,6 +8948,10 @@
     {
       "date": "2026-08-30",
       "url": "/briefs/2026-08-30.html"
+    },
+    {
+      "date": "2026-09-06",
+      "url": "/briefs/2026-09-06.html"
     }
   ]
 }
