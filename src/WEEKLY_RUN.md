@@ -160,7 +160,8 @@ python3 scripts/weekly_run.py complete --token TOKEN --receipt RELEASE_RECEIPT.j
 
 The release wrapper deploys an isolated exact-main artifact without automatically promoting
 it, checks its bytes, rechecks main, promotes it, and verifies the live alias. Its private
-receipt contains source/deployment identity and every public hash. `complete` rechecks that
+receipt contains source/deployment identity and every active public hash. Archived PDFs are
+checked locally but excluded from the live receipt. `complete` rechecks that
 receipt against the staged candidate, live main and served bytes before advancing successful
 coverage. Only then may another interval begin. A failure after main or deployment is
 reported at that exact stage; do not relabel it as a completed week or erase its candidate.

@@ -11,23 +11,23 @@
   "clocks": 12,
   "map_nodes": 63,
   "map_edges": 97,
-  "index_bytes": 671519
+  "index_bytes": 670930
  },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 13989,
-   "sha256": "8f31f4534b6f2ed0c0f7833423a32e330a07035f0bb16df3f36b536d5aac2f0c"
+   "bytes": 14085,
+   "sha256": "06408a029fe8512a911fff7ad262f5dbd233f7deebebfc09b997911c473daab3"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 12419,
-   "sha256": "5bc2dcc43bad69706b36a201b83e67831893741de3fae6c90baa1390634f71d5"
+   "bytes": 12521,
+   "sha256": "a1ade5a739fb8858d1e070a097cdcaa24b4e531a794d1df74762970f6e962e1e"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 11993,
-   "sha256": "c2cbe6b9bcd244aa97271cbde24c93ccad00ff51c9bfb342069693e82ef2ce5c"
+   "bytes": 12070,
+   "sha256": "b7776e8d0cbc013a0d91349b2e115adbda48ce80eef64760afd1dce15e101d9e"
   },
   {
    "path": "agents/1-elections.md",
@@ -111,8 +111,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 45637,
-   "sha256": "f80f2820456d5d77519ea62d5c602fdd093126f7d776266d90f79e7a2531ac15"
+   "bytes": 45048,
+   "sha256": "594cb07bf9282acf8da45a41cbe1e12e0f4f4be6786fc5b49f04fd7e0397a9cb"
   },
   {
    "path": "check.sh",
@@ -126,8 +126,8 @@
   },
   {
    "path": "final.css",
-   "bytes": 43246,
-   "sha256": "9ba6422d158ffdcb222f57932c892937ba6be082fa0e865e4c23c3ed1a666e73"
+   "bytes": 42759,
+   "sha256": "553c2bf28693301d2204ba7d8634dbcb6d30e88bc09073961510fc99ad369fc5"
   },
   {
    "path": "map_source.json",
@@ -196,8 +196,8 @@
   },
   {
    "path": "site_ui.js",
-   "bytes": 14985,
-   "sha256": "b492e122a413e3a4e826845f850e6489a19601e1613d30cf54e558aff13a14c6"
+   "bytes": 13121,
+   "sha256": "d1b15385ea2f663b74f53235225ee1f5860901928eef1fec537f34203c3fe07b"
   },
   {
    "path": "sources_manifest.md",

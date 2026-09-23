@@ -136,7 +136,8 @@ Do not auto-promote a source grade or interpret semantic similarity as evidence 
 6. Only after the change is on live main and the clean checkout matches its SHA, run
    `./deploy.sh --prod --run-token <token>`. The wrapper uploads an isolated copy of that
    committed artifact, verifies the deployment before promotion, rechecks live main,
-   promotes, and compares every public file's bytes at the live alias. Its private release
+   promotes, and compares every active public file's bytes at the live alias. Archived PDF
+   binaries are locally integrity-checked but excluded from live-byte comparison. Its private release
    receipt includes the main SHA, deployment identity, source coverage date and hashes.
 7. Run `python3 scripts/weekly_run.py complete --token <token> --receipt <release-receipt.json>`.
    It independently rechecks live main and served bytes, matches the reviewed candidate,
