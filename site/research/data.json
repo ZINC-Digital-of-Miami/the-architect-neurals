@@ -708,7 +708,12 @@
         "ALT5",
         "TRUST",
         "ZHAO",
-        "CAPITAL_1789"
+        "CAPITAL_1789",
+        "TMTG",
+        "FREEDOM_250_LLC",
+        "CHEVRON_USA",
+        "RTX_CORP",
+        "UMAR_KREMLEV"
       ],
       "reportLinks": [
         {
@@ -1162,6 +1167,147 @@
       "sourceType": "pool_report",
       "originId": "white-house-pool",
       "locator": "20:31 CET pool report #13, Alice Weidel; complete entry and adjacent arrival/departure records"
+    },
+    {
+      "id": "schiff-freedom250-letter-20260913",
+      "title": "Senators request Freedom 250 donor and spending records",
+      "url": "https://www.schiff.senate.gov/wp-content/uploads/2026/09/Letter-from-Senators-Warren-and-Schiff-Freedom-250-on-Corporate-Donations-and-Potential-Pay-to-Play.pdf",
+      "publisher": "U.S. Senators Warren, Schiff, Padilla and Blumenthal",
+      "accessedAt": "2026-09-23",
+      "sourceType": "official_record",
+      "originId": "senate-freedom250",
+      "locator": "Eight-page letter; pp. 1, 3-4, 6-8; released September 14",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "id": "chevron-ld203-freedom250-2026",
+      "title": "Chevron U.S.A. Inc. midyear 2026 LD-203 contribution report",
+      "url": "https://lda.gov/filings/public/contribution/2cdd54b5-ab49-4fb4-9e0c-3b3b11a80799/print/",
+      "publisher": "Clerk of the House and Secretary of the Senate",
+      "accessedAt": "2026-09-23",
+      "sourceType": "corporate_filing",
+      "originId": "chevron-ld203",
+      "locator": "Honorary Expenses row #109, May 28, 2026",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "id": "rtx-ld203-freedom250-2026",
+      "title": "RTX Corporation and Affiliates midyear 2026 LD-203 contribution report",
+      "url": "https://lda.gov/filings/public/contribution/4a8309bf-68c8-41f8-aaef-e37797fec728/print/",
+      "publisher": "Clerk of the House and Secretary of the Senate",
+      "accessedAt": "2026-09-23",
+      "sourceType": "corporate_filing",
+      "originId": "rtx-ld203",
+      "locator": "Honorary Expenses row #367, May 29, 2026",
+      "publishedAt": "2026-07-30"
+    },
+    {
+      "id": "freedom250-sponsorship-brochure",
+      "title": "Freedom 250 sponsorship brochure",
+      "url": "https://static01.nyt.com/newsgraphics/documenttools/f6e549fa141d220f/01cfe3d5-full.pdf",
+      "publisher": "Freedom 250, mirrored by The New York Times",
+      "accessedAt": "2026-09-23",
+      "sourceType": "corporate_statement",
+      "originId": "freedom250",
+      "locator": "Undated brochure; PDF pp. 6, 8, 10, 12-13; offered reception and photo opportunity"
+    },
+    {
+      "id": "garcia-trumpjr-kremlev-letter-20260914",
+      "title": "Garcia letter to Donald Trump Jr. concerning Umar Kremlev",
+      "url": "https://oversightdemocrats.house.gov/imo/media/doc/2026-09-14garcia_to_trump_jrrekremlev.pdf",
+      "publisher": "House Oversight Committee Democrats",
+      "accessedAt": "2026-09-23",
+      "sourceType": "official_record",
+      "originId": "house-oversight-democrats",
+      "locator": "Four-page letter; records request due September 28",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "id": "garcia-wiles-kremlev-letter-20260914",
+      "title": "Garcia letter to White House chief of staff Susie Wiles concerning Umar Kremlev",
+      "url": "https://oversightdemocrats.house.gov/imo/media/doc/2026-09-14garciatowilesrekremlevdonjr.pdf",
+      "publisher": "House Oversight Committee Democrats",
+      "accessedAt": "2026-09-23",
+      "sourceType": "official_record",
+      "originId": "house-oversight-democrats",
+      "locator": "Three-page letter; records request due September 28",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "id": "propublica-trumpjr-kremlev-20260914",
+      "title": "Donald Trump Jr.’s Bahamas Wedding Was Secretly Bankrolled by Russian Oligarch Close to Putin",
+      "url": "https://www.propublica.org/article/donald-trump-jr-wedding-bankrolled-russian-oligarch-umar-kremlev-putin",
+      "publisher": "ProPublica",
+      "accessedAt": "2026-09-23",
+      "sourceType": "reporting",
+      "originId": "propublica",
+      "locator": "Original investigation; records and interviews; responses from Trump Jr. and Kremlev",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "id": "ap-trumpjr-wedding-repayment-20260918",
+      "title": "Trump says his son’s wedding party being bankrolled by a Russian oligarch is “totally allowed”",
+      "url": "https://apnews.com/article/fbd62b7fec21f439762289a068f30e5e",
+      "publisher": "Associated Press",
+      "accessedAt": "2026-09-23",
+      "sourceType": "reporting",
+      "originId": "ap",
+      "locator": "AP Oval Office report, September 18: completed or intended repayment attributed to President Trump; also read in SeattlePI syndication",
+      "publishedAt": "2026-09-18",
+      "alternateUrl": "https://www.seattlepi.com/news/politics/trump-says-his-son-s-wedding-party-being-a22438984"
+    },
+    {
+      "id": "ao-cfa-truth-api-complaint-20260917",
+      "title": "American Oversight and Campaign for Accountability v. Trump et al., complaint, D.D.C. 1:26-cv-03258",
+      "url": "https://campaignforaccountability.org/wp-content/uploads/2026/09/Truth-Social-API-Complaint-Campaign-for-Accountability-and-American-Oversight.pdf",
+      "publisher": "U.S. District Court for the District of Columbia",
+      "accessedAt": "2026-09-23",
+      "sourceType": "court",
+      "originId": "ddc-ao-cfa",
+      "locator": "Document 1 filed September 17, 2026; introduction, allegations, counts and prayer for relief",
+      "publishedAt": "2026-09-17"
+    },
+    {
+      "id": "tmtg-truth-api-sec-exhibit-20260810",
+      "title": "Trump Media & Technology Group second-quarter 2026 results, Exhibit 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926026797/ex_1001984.htm",
+      "publisher": "Trump Media & Technology Group, filed with SEC",
+      "accessedAt": "2026-09-23",
+      "sourceType": "corporate_filing",
+      "originId": "tmtg",
+      "locator": "Exhibit 99.1; Truth API launch and company commercial characterization",
+      "publishedAt": "2026-08-10"
+    },
+    {
+      "id": "curtis-presidential-families-letter-20260921",
+      "title": "Curtis requests investigation and testimony on presidential-family business dealings",
+      "url": "https://www.curtis.senate.gov/wp-content/uploads/2026/09/09.21.2026-Curtis-Letter-to-Senate-Judiciary-re_-Don-Jr.-Hunter-Biden-1.pdf",
+      "publisher": "U.S. Senator John Curtis",
+      "originId": "senator-john-curtis",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-22",
+      "accessedAt": "2026-09-23",
+      "locator": "Three-page letter to Grassley and Durbin, dated September 21; requests investigation and subpoenas"
+    },
+    {
+      "id": "curtis-presidential-families-release-20260922",
+      "title": "Curtis releases request for investigation into presidential families’ business dealings",
+      "url": "https://www.curtis.senate.gov/press-releases/curtis-calls-for-investigation-into-presidential-families-business-dealings/",
+      "publisher": "U.S. Senator John Curtis",
+      "originId": "senator-john-curtis",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-22",
+      "accessedAt": "2026-09-23"
+    },
+    {
+      "id": "freedom250-delaware-formation-20251028",
+      "title": "Certificate of formation of Freedom 250 LLC",
+      "url": "https://static01.nyt.com/newsgraphics/documenttools/75fed935b281ea3b/ab15c888-full.pdf",
+      "publisher": "Delaware Division of Corporations, mirrored by The New York Times",
+      "originId": "delaware-division-corporations",
+      "sourceType": "official_record",
+      "accessedAt": "2026-09-23",
+      "locator": "One-page certificate; filed October 28, 2025; file number 10374042"
     }
   ],
   "claims": [
@@ -1838,6 +1984,188 @@
       "recordType": "Company-published role description",
       "status": "documented",
       "supersedes": "trump-jr-1789-partner-profile"
+    },
+    {
+      "id": "freedom250-senators-records-request-20260913",
+      "text": "Four senators asked Freedom 250 for a donor, spending, government-resource and private-event accounting by September 28, 2026.",
+      "context": "Their September 13 letter, released September 14, raises possible pay-to-play concerns. It is an inquiry; the letter does not establish that a donor received a favor or attended a private event.",
+      "sourceIds": [
+        "schiff-freedom250-letter-20260913"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "FREEDOM_250_LLC"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-09-13",
+      "recordType": "Congressional records request",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "chevron-freedom250-ld203-20260528",
+      "text": "Chevron U.S.A. Inc.’s midyear LD-203 reports a $5 million Honorary Expenses payment to Freedom 250 LLC dated May 28, 2026.",
+      "context": "This is Chevron’s self-reported payment to the named entity. The filing does not show reception attendance, an official favor, or a payment to President Trump personally.",
+      "sourceIds": [
+        "chevron-ld203-freedom250-2026"
+      ],
+      "entityIds": [
+        "CHEVRON_USA",
+        "FREEDOM_250_LLC"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-05-28",
+      "recordType": "Lobbying contribution report",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "rtx-freedom250-ld203-20260529",
+      "text": "RTX Corporation and Affiliates’ midyear LD-203 reports a $1.5 million Honorary Expenses payment to Freedom 250 LLC dated May 29, 2026.",
+      "context": "This is RTX’s self-reported payment to the named entity. The filing does not establish reception attendance, a contract exchange, or an official favor.",
+      "sourceIds": [
+        "rtx-ld203-freedom250-2026"
+      ],
+      "entityIds": [
+        "RTX_CORP",
+        "FREEDOM_250_LLC"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-05-29",
+      "recordType": "Lobbying contribution report",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "freedom250-brochure-reception-offer",
+      "text": "An undated Freedom 250 sponsorship brochure offered sponsors at $1 million and higher tiers an invitation to a private reception hosted by President Trump with a photo opportunity.",
+      "context": "The senators’ letter identifies the fundraising organization as the LLC formed in October 2025 and cites both its formation certificate and sponsorship brochure. The undated brochure offers a benefit; it does not establish attendance or any ensuing official action.",
+      "sourceIds": [
+        "freedom250-sponsorship-brochure",
+        "schiff-freedom250-letter-20260913",
+        "freedom250-delaware-formation-20251028"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "FREEDOM_250_LLC"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "recordType": "Undated sponsorship brochure",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "garcia-kremlev-records-request-20260914",
+      "text": "Rep. Robert Garcia sent separate September 14 letters to Donald Trump Jr. and White House chief of staff Susie Wiles seeking Kremlev-related financial and communications records by September 28.",
+      "context": "The minority-party requests ask about possible exchange of value for favorable government treatment; they are neither subpoenas nor findings of an exchange or official act.",
+      "sourceIds": [
+        "garcia-trumpjr-kremlev-letter-20260914",
+        "garcia-wiles-kremlev-letter-20260914"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "DONALD_TRUMP_JR",
+        "UMAR_KREMLEV"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-09-14",
+      "recordType": "Congressional records requests",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "kremlev-trumpjr-celebration-report-20260914",
+      "text": "ProPublica reported Kremlev’s funding of Trump Jr.’s wedding celebrations. The couple acknowledged two hosted nights.",
+      "context": "Trump Jr.’s spokesperson described friendship without business ties; Kremlev denied political discussions. On September 18, President Trump said he understood his son had paid or would pay Kremlev back. The reviewed record contains no underlying repayment documents or established exchange for government action.",
+      "sourceIds": [
+        "propublica-trumpjr-kremlev-20260914",
+        "garcia-trumpjr-kremlev-letter-20260914",
+        "ap-trumpjr-wedding-repayment-20260918"
+      ],
+      "entityIds": [
+        "DONALD_TRUMP_JR",
+        "UMAR_KREMLEV",
+        "TRUMP"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-05-24",
+      "recordType": "Investigative reporting and attributed responses",
+      "status": "lead",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "tmtg-truth-api-commercial-statement-20260810",
+      "text": "Trump Media’s SEC-filed August 10 release says Truth API launched August 1 as a paid business-to-business feed for low-latency access to publicly available Truth Social posts.",
+      "context": "The company said more than ten customer agreements had been signed and described criticism of the product as factually inaccurate. The statement does not resolve any claim about comparative public delay or legal compliance.",
+      "sourceIds": [
+        "tmtg-truth-api-sec-exhibit-20260810"
+      ],
+      "entityIds": [
+        "TMTG",
+        "TRUMP"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption",
+        "digital-assets"
+      ],
+      "eventDate": "2026-08-01",
+      "recordType": "SEC-filed company statement",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "ao-cfa-truth-api-complaint-20260917",
+      "text": "American Oversight and Campaign for Accountability filed a September 17 civil complaint in D.D.C. 1:26-cv-03258 alleging that paid Truth API access gives subscribers earlier access to official government posts.",
+      "context": "The plaintiffs seek a declaration and an injunction against official posts through accounts covered by Truth API. Filing the complaint establishes their allegations, not judicial findings. Trump Media’s earlier SEC-filed statement describes a licensed feed of public posts; it predates this suit. Later docket responses or rulings were not inspected for this entry.",
+      "sourceIds": [
+        "ao-cfa-truth-api-complaint-20260917",
+        "tmtg-truth-api-sec-exhibit-20260810"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "TMTG"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption",
+        "information-media"
+      ],
+      "eventDate": "2026-09-17",
+      "recordType": "Civil complaint and company counterposition",
+      "status": "documented",
+      "reviewedAt": "2026-09-23"
+    },
+    {
+      "id": "curtis-presidential-families-request-20260921",
+      "text": "Senator John Curtis asked Senate Judiciary leaders to investigate presidential-family business dealings and subpoena both Donald Trump Jr. and Hunter Biden. His letter is dated September 21 and was released September 22.",
+      "context": "Curtis asks the same oversight standard for both parties, citing foreign gifts, business interests and possible expectations of favorable treatment. The letter requests testimony; it does not issue subpoenas or establish misconduct. Its stated purpose includes examining existing ethics and disclosure law and possible reforms.",
+      "sourceIds": [
+        "curtis-presidential-families-letter-20260921",
+        "curtis-presidential-families-release-20260922"
+      ],
+      "entityIds": [
+        "DONALD_TRUMP_JR",
+        "TRUMP",
+        "UMAR_KREMLEV"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-09-21",
+      "reviewedAt": "2026-09-23",
+      "recordType": "Senate request for investigation and testimony",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -2093,6 +2421,70 @@
       "lastCheckedAt": "2026-09-08",
       "outcome": "The checked disclosures identify named creditors and a common Ladder group; the Ross personnel bridge is separately documented. A later Rothschild institutional or financial bridge remains unresolved.",
       "nextCheck": "Inspect executed loan instruments, assignment chains, adviser engagements and compensation records; reconcile 2026 maturities and payoffs against later originals."
+    },
+    {
+      "id": "check-freedom250-september28-response",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "question": "Did Freedom 250 answer the senators’ September 13 donor, spending and event-attendance requests by September 28, and do any original records establish a specific exchange?",
+      "sourceIds": [
+        "schiff-freedom250-letter-20260913"
+      ],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Inspect Freedom 250’s response and any disclosed underlying records after September 28, 2026.",
+      "outcome": "Request letter reviewed; no response or donor-access exchange established.",
+      "createdAt": "2026-09-23"
+    },
+    {
+      "id": "check-garcia-kremlev-september28-response",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "question": "Did Trump Jr. or the White House answer Garcia’s September 14 requests, and do original financial records verify the reported gift, repayment or government connection?",
+      "sourceIds": [
+        "garcia-trumpjr-kremlev-letter-20260914",
+        "garcia-wiles-kremlev-letter-20260914"
+      ],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Inspect responses and underlying financial records after the September 28, 2026 request deadline.",
+      "outcome": "Letters and attributed responses reviewed; no financial record or exchange established.",
+      "createdAt": "2026-09-23"
+    },
+    {
+      "id": "check-truth-api-lawsuit-response",
+      "topicIds": [
+        "pay-to-play-corruption",
+        "information-media"
+      ],
+      "question": "What do defendants’ response, court orders and direct posting-time records establish about Truth API and public access?",
+      "sourceIds": [
+        "ao-cfa-truth-api-complaint-20260917",
+        "tmtg-truth-api-sec-exhibit-20260810"
+      ],
+      "status": "open",
+      "lastCheckedAt": null,
+      "nextCheck": "Inspect later filings in D.D.C. 1:26-cv-03258 and compare primary API and public posting-time evidence.",
+      "outcome": "Complaint and SEC-filed company statement reviewed; later docket filings and direct latency were not checked.",
+      "createdAt": "2026-09-23"
+    },
+    {
+      "id": "check-curtis-presidential-family-testimony",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "sourceIds": [
+        "curtis-presidential-families-letter-20260921",
+        "curtis-presidential-families-release-20260922"
+      ],
+      "question": "Will Senate Judiciary act on Curtis’s request, and what testimony or financial records will it obtain?",
+      "status": "open",
+      "createdAt": "2026-09-23",
+      "lastCheckedAt": "2026-09-23",
+      "outcome": "The September 21 request, released September 22, calls for testimony from both Donald Trump Jr. and Hunter Biden; it does not itself issue a subpoena.",
+      "nextCheck": "Inspect Judiciary committee announcements, issued subpoenas, hearing notices and responses to the Curtis letter."
     }
   ],
   "entities": [
@@ -2277,7 +2669,8 @@
       "id": "TMTG",
       "topicIds": [
         "ownership-disclosures",
-        "information-media"
+        "information-media",
+        "pay-to-play-corruption"
       ],
       "reportHref": "/#the-money-the-profit-architecture"
     },
@@ -2551,6 +2944,34 @@
         "information-media"
       ],
       "reportHref": "/#the-historical-lens-retained-in-full"
+    },
+    {
+      "id": "FREEDOM_250_LLC",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "reportHref": "/#the-money-the-profit-architecture"
+    },
+    {
+      "id": "CHEVRON_USA",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "reportHref": "/#the-money-the-profit-architecture"
+    },
+    {
+      "id": "RTX_CORP",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "reportHref": "/#the-money-the-profit-architecture"
+    },
+    {
+      "id": "UMAR_KREMLEV",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "reportHref": "/#the-money-the-profit-architecture"
     }
   ],
   "relationships": [
@@ -2880,6 +3301,50 @@
         "vance-weidel-meeting-pool-2025"
       ],
       "reportHref": "/topics/germany-afd.html#records"
+    },
+    {
+      "mapEdgeIndex": 93,
+      "sourceIds": [
+        "chevron-ld203-freedom250-2026"
+      ],
+      "claimIds": [
+        "chevron-freedom250-ld203-20260528"
+      ],
+      "reportHref": "/topics/pay-to-play-corruption.html#claim-chevron-freedom250-ld203-20260528"
+    },
+    {
+      "mapEdgeIndex": 94,
+      "sourceIds": [
+        "rtx-ld203-freedom250-2026"
+      ],
+      "claimIds": [
+        "rtx-freedom250-ld203-20260529"
+      ],
+      "reportHref": "/topics/pay-to-play-corruption.html#claim-rtx-freedom250-ld203-20260529"
+    },
+    {
+      "mapEdgeIndex": 95,
+      "sourceIds": [
+        "freedom250-sponsorship-brochure",
+        "schiff-freedom250-letter-20260913",
+        "freedom250-delaware-formation-20251028"
+      ],
+      "claimIds": [
+        "freedom250-brochure-reception-offer"
+      ],
+      "reportHref": "/topics/pay-to-play-corruption.html#claim-freedom250-brochure-reception-offer"
+    },
+    {
+      "mapEdgeIndex": 96,
+      "sourceIds": [
+        "propublica-trumpjr-kremlev-20260914",
+        "garcia-trumpjr-kremlev-letter-20260914",
+        "ap-trumpjr-wedding-repayment-20260918"
+      ],
+      "claimIds": [
+        "kremlev-trumpjr-celebration-report-20260914"
+      ],
+      "reportHref": "/topics/pay-to-play-corruption.html#claim-kremlev-trumpjr-celebration-report-20260914"
     }
   ],
   "feedback": [
@@ -5615,6 +6080,226 @@
           "reason": "Consolidated release provenance across the separately retained admission and coverage revisions."
         }
       ]
+    },
+    {
+      "id": "pay-to-play-september-records-20260923",
+      "date": "2026-09-23",
+      "summary": "Append primary records and carefully attributed September pay-to-play inquiries, payments and civil complaint to the report-guide topic.",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "claimIds": [
+        "freedom250-senators-records-request-20260913",
+        "chevron-freedom250-ld203-20260528",
+        "rtx-freedom250-ld203-20260529",
+        "freedom250-brochure-reception-offer",
+        "garcia-kremlev-records-request-20260914",
+        "kremlev-trumpjr-celebration-report-20260914",
+        "tmtg-truth-api-commercial-statement-20260810",
+        "ao-cfa-truth-api-complaint-20260917"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "pay-to-play-corruption",
+          "before": {
+            "id": "pay-to-play-corruption",
+            "title": "Pay-to-play & corruption",
+            "presentation": "report-guide",
+            "description": "Follow money, access and official decisions across the report: family businesses, diplomatic interests, foreign-state revenue, pardons and the records connecting them.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "DONALD_TRUMP_JR",
+              "ERIC_TRUMP",
+              "KUSHNER",
+              "WITKOFF",
+              "ZACH_WITKOFF",
+              "ALT5",
+              "TRUST",
+              "ZHAO",
+              "CAPITAL_1789"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money: the profit architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Chapter C: the family crypto empire",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: the crypto apparatus",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter D: the envoy economy",
+                "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
+              },
+              {
+                "label": "Chapter E: foreign-state revenue",
+                "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
+              },
+              {
+                "label": "Chapter E-2: the Qatar file",
+                "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
+              },
+              {
+                "label": "Chapter E-3: the Argentina channel",
+                "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
+              },
+              {
+                "label": "Chapter F: the pardon and access market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "Chapter G: war finance",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter G-2: five follow-the-money streams",
+                "href": "/#chapter-g-2-five-follow-the-money-streams"
+              },
+              {
+                "label": "Chapter I: what the money architecture adds up to",
+                "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
+              }
+            ],
+            "researchQuestions": [
+              "Who paid whom, through which legal entity, and when?",
+              "Which access, appointment, pardon, contract or policy decision followed, and what do the original records establish?",
+              "What evidence connects a payment or financial interest to an official act, and what alternative explanations or denials must be tested?",
+              "Which earlier cases and cross-report connections help explain the consequences and the next records to investigate?"
+            ],
+            "status": "active",
+            "keywords": [
+              "pay-to-play",
+              "corruption",
+              "payments",
+              "access",
+              "pardons",
+              "foreign-state revenue",
+              "conflicts of interest",
+              "official decisions"
+            ],
+            "createdAt": "2026-09-23",
+            "updatedAt": "2026-09-23"
+          },
+          "after": {
+            "id": "pay-to-play-corruption",
+            "title": "Pay-to-play & corruption",
+            "presentation": "report-guide",
+            "description": "Follow money, access and official decisions across the report: family businesses, diplomatic interests, foreign-state revenue, pardons and the records connecting them.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "DONALD_TRUMP_JR",
+              "ERIC_TRUMP",
+              "KUSHNER",
+              "WITKOFF",
+              "ZACH_WITKOFF",
+              "ALT5",
+              "TRUST",
+              "ZHAO",
+              "CAPITAL_1789",
+              "TMTG",
+              "FREEDOM_250_LLC",
+              "CHEVRON_USA",
+              "RTX_CORP",
+              "UMAR_KREMLEV"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money: the profit architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Chapter C: the family crypto empire",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: the crypto apparatus",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter D: the envoy economy",
+                "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
+              },
+              {
+                "label": "Chapter E: foreign-state revenue",
+                "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
+              },
+              {
+                "label": "Chapter E-2: the Qatar file",
+                "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
+              },
+              {
+                "label": "Chapter E-3: the Argentina channel",
+                "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
+              },
+              {
+                "label": "Chapter F: the pardon and access market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "Chapter G: war finance",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter G-2: five follow-the-money streams",
+                "href": "/#chapter-g-2-five-follow-the-money-streams"
+              },
+              {
+                "label": "Chapter I: what the money architecture adds up to",
+                "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
+              }
+            ],
+            "researchQuestions": [
+              "Who paid whom, through which legal entity, and when?",
+              "Which access, appointment, pardon, contract or policy decision followed, and what do the original records establish?",
+              "What evidence connects a payment or financial interest to an official act, and what alternative explanations or denials must be tested?",
+              "Which earlier cases and cross-report connections help explain the consequences and the next records to investigate?"
+            ],
+            "status": "active",
+            "keywords": [
+              "pay-to-play",
+              "corruption",
+              "payments",
+              "access",
+              "pardons",
+              "foreign-state revenue",
+              "conflicts of interest",
+              "official decisions"
+            ],
+            "createdAt": "2026-09-23",
+            "updatedAt": "2026-09-23"
+          },
+          "reason": "Add exact entities for newly documented source records while retaining every prior link and topic field."
+        }
+      ]
+    },
+    {
+      "id": "september-pay-to-play-connections-20260923",
+      "date": "2026-09-23",
+      "summary": "Add the September 21 Curtis request, connect four new map relationships to their source records, and trace disclosed donations to a documented reception offer while preserving historical map records.",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "claimIds": [
+        "curtis-presidential-families-request-20260921"
+      ],
+      "pathIds": [
+        "freedom250-payment-and-reception-offer"
+      ]
     }
   ],
   "networkPaths": [
@@ -5707,6 +6392,26 @@
         92
       ],
       "reviewedAt": "2026-09-08"
+    },
+    {
+      "id": "freedom250-payment-and-reception-offer",
+      "title": "Corporate donations and a presidential reception offer",
+      "summary": "Chevron’s contribution record and Freedom 250’s sponsorship brochure connect a named payer, a fundraising entity and an offered presidential reception.",
+      "context": "These records establish payments and a marketed benefit. They leave the consequential question open: who actually attended, what was discussed, and whether any official decision was exchanged for a contribution. The path supports investigation of that sequence without asserting the exchange occurred.",
+      "nextCheck": "Match donor records to actual event invitations, attendee lists, communications and dated federal decisions; assess any organization response to the September 28 request.",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "entityIds": [
+        "CHEVRON_USA",
+        "FREEDOM_250_LLC",
+        "TRUMP"
+      ],
+      "edgeIndices": [
+        93,
+        95
+      ],
+      "reviewedAt": "2026-09-23"
     }
   ],
   "reportSections": [

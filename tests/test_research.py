@@ -63,6 +63,16 @@ class ResearchIntegrityTests(unittest.TestCase):
     def test_report_guide_links_existing_research_without_empty_review_annotations(self):
         data = copy.deepcopy(self.data)
         topic = next(t for t in data['topics'] if t['id'] == 'pay-to-play-corruption')
+        # Keep this guide empty even when the published registry gains pay-to-play claims.
+        records_topic = copy.deepcopy(topic)
+        records_topic['id'] = 'test-pay-to-play-records'
+        data['topics'].append(records_topic)
+        for claim in data['claims']:
+            claim['topicIds'] = [records_topic['id'] if ident == topic['id'] else ident
+                                 for ident in claim['topicIds']]
+        for path in data.get('networkPaths', []):
+            path['topicIds'] = [records_topic['id'] if ident == topic['id'] else ident
+                                for ident in path['topicIds']]
         with tempfile.TemporaryDirectory() as temp:
             dist = self.build_fixture(temp, data)
             page = (dist / 'topics/pay-to-play-corruption.html').read_text()
@@ -71,6 +81,28 @@ class ResearchIntegrityTests(unittest.TestCase):
             self.assertIn('/neural.html?topic=pay-to-play-corruption', page)
             self.assertNotIn('class="research-note"', page)
             self.assertNotIn('id="records"', page)
+            self.assertNotIn('No retrieval feedback', page)
+            self.assertNotIn('Structured research reviewed', page)
+
+    def test_report_guide_renders_sourced_claim_without_hiding_report_links(self):
+        data = copy.deepcopy(self.data)
+        topic = next(t for t in data['topics'] if t['id'] == 'pay-to-play-corruption')
+        claim = next(c for c in data['claims'] if c['id'] == 'trump-jr-1789-partner-profile-precise')
+        if topic['id'] not in claim['topicIds']:
+            claim['topicIds'].append(topic['id'])
+        source = next(s for s in data['sources'] if s['id'] == claim['sourceIds'][0])
+        with tempfile.TemporaryDirectory() as temp:
+            dist = self.build_fixture(temp, data)
+            page = (dist / 'topics/pay-to-play-corruption.html').read_text()
+            self.assertIn('id="records"', page)
+            self.assertIn('id="claim-' + claim['id'] + '"', page)
+            self.assertIn(html.escape(claim['text'], quote=True), page)
+            self.assertIn(html.escape(source['url'], quote=True), page)
+            self.assertIn(html.escape(source['publisher'] + ': ' + source['title'], quote=True), page)
+            for link in topic['reportLinks']:
+                self.assertIn(html.escape(link['href'], quote=True), page)
+            self.assertLess(page.index('id="report"'), page.index('id="records"'))
+            self.assertNotIn('class="research-note"', page)
             self.assertNotIn('No retrieval feedback', page)
             self.assertNotIn('Structured research reviewed', page)
 

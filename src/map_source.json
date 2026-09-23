@@ -501,6 +501,42 @@
       "sub": "Vice-presidential pool record · Feb 2025",
       "core": false,
       "flag": ""
+    },
+    "FREEDOM_250_LLC": {
+      "x": 1080,
+      "y": 720,
+      "r": 55,
+      "name": "Freedom 250 LLC",
+      "sub": "Anniversary sponsorships · reception offers",
+      "core": false,
+      "flag": ""
+    },
+    "CHEVRON_USA": {
+      "x": 1300,
+      "y": 610,
+      "r": 52,
+      "name": "Chevron U.S.A. Inc.",
+      "sub": "$5M May 28 · LD-203",
+      "core": false,
+      "flag": ""
+    },
+    "RTX_CORP": {
+      "x": 1280,
+      "y": 850,
+      "r": 52,
+      "name": "RTX Corporation and Affiliates",
+      "sub": "$1.5M May 29 · LD-203",
+      "core": false,
+      "flag": ""
+    },
+    "UMAR_KREMLEV": {
+      "x": 2050,
+      "y": 330,
+      "r": 53,
+      "name": "Umar Kremlev",
+      "sub": "Two May celebration nights · Sept 14 statement",
+      "core": false,
+      "flag": ""
     }
   },
   "edges": [
@@ -1061,6 +1097,30 @@
       "WEIDEL",
       "A",
       "Meeting confirmed to pool · Feb 2025"
+    ],
+    [
+      "CHEVRON_USA",
+      "FREEDOM_250_LLC",
+      "A",
+      "$5M · May 28, 2026"
+    ],
+    [
+      "RTX_CORP",
+      "FREEDOM_250_LLC",
+      "A",
+      "$1.5M · May 29, 2026"
+    ],
+    [
+      "FREEDOM_250_LLC",
+      "TRUMP",
+      "A",
+      "Brochure offered Trump-hosted reception · $1M+"
+    ],
+    [
+      "UMAR_KREMLEV",
+      "DONALD_TRUMP_JR",
+      "O",
+      "Couple said he hosted two May nights · Sept 14"
     ]
   ]
 }
