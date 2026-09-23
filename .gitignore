@@ -4,5 +4,6 @@ work/
 .plan-triage/
 work.prev-*/
 .architecture/
+site/print/
 __pycache__/
 *.pyc
