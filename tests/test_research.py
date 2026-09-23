@@ -60,6 +60,20 @@ class ResearchIntegrityTests(unittest.TestCase):
             self.assertLess(page.index('id="report"'), page.index('id="records"'))
             self.assertIn(html.escape(topic['reportLinks'][0]['href'], quote=True), page[:page.index('id="records"')])
 
+    def test_report_guide_links_existing_research_without_empty_review_annotations(self):
+        data = copy.deepcopy(self.data)
+        topic = next(t for t in data['topics'] if t['id'] == 'pay-to-play-corruption')
+        with tempfile.TemporaryDirectory() as temp:
+            dist = self.build_fixture(temp, data)
+            page = (dist / 'topics/pay-to-play-corruption.html').read_text()
+            for link in topic['reportLinks']:
+                self.assertIn(html.escape(link['href'], quote=True), page)
+            self.assertIn('/neural.html?topic=pay-to-play-corruption', page)
+            self.assertNotIn('class="research-note"', page)
+            self.assertNotIn('id="records"', page)
+            self.assertNotIn('No retrieval feedback', page)
+            self.assertNotIn('Structured research reviewed', page)
+
     def test_connection_path_rejects_a_disconnected_intermediary(self):
         path = self.data["networkPaths"][0]
         path["entityIds"][1] = next(n for n in self.map["nodes"] if n not in path["entityIds"])

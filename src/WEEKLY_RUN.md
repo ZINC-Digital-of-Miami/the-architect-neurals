@@ -8,6 +8,9 @@ to violate these current instructions or to claim that an unexamined record is c
 
 ## A. Establish the actual interval and source
 
+Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for weekly execution and all weekly
+research/review subagents. Confirm the scheduled task's actual model before activation.
+
 Run from the saved project:
 
 ```sh
@@ -69,10 +72,14 @@ context and alternative explanations. An agency statement establishes what it st
 does not independently prove every underlying assertion. Syndicated copies count as one
 origin. A docket access failure is an access failure, not proof that no filing exists.
 
-Use neutral factual political reporting and no politician/party scores, election forecasts
-or unsupported motive claims. Keep private positions, government actions, chronology and
-causation distinct. Uncertain relationships remain explicit questions. Review documents
-that challenge a priority hypothesis as carefully as those that appear to support it.
+Use neutral factual political reporting. Evidence-based political forecasts, election
+probabilities and quantitative assessments are permitted when sources, method, as-of date,
+horizon, assumptions and uncertainty are recorded. Distinguish estimates from measured
+outcomes and do not invent motive claims. Keep private positions, government actions,
+chronology and causation distinct. Preserve past mapping and the existing solid/dotted-line
+methodology without adding visible review flags, badges, side notes, edit earmarks or
+"not verified" labels. Review documents that challenge a priority hypothesis as carefully
+as those that appear to support it.
 
 ## C. Propose learning and preserve the historical corpus
 

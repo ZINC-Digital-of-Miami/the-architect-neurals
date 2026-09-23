@@ -92,6 +92,8 @@ def validate(data, map_data=None):
             refs(topic, "entityIds", map_nodes)
         if topic.get("status") not in {"active", "watching", "new", "dormant"}:
             raise ValueError(f"{topic['id']}: invalid topic status")
+        if topic.get("presentation", "standard") not in {"standard", "report-guide"}:
+            raise ValueError(f"{topic['id']}: invalid topic presentation")
         valid_date(topic.get("createdAt"), topic["id"] + ".createdAt")
         valid_date(topic.get("updatedAt"), topic["id"] + ".updatedAt")
         if topic["updatedAt"] < topic["createdAt"]:

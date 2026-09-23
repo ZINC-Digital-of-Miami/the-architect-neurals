@@ -11,23 +11,23 @@
   "clocks": 12,
   "map_nodes": 59,
   "map_edges": 93,
-  "index_bytes": 671363
+  "index_bytes": 671519
  },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 12838,
-   "sha256": "4ed559699300647376b31705385873a5ef63fb676a33d79e832b84671d989300"
+   "bytes": 13551,
+   "sha256": "f41d6a726527d29a90e7c78f0ca922fd69953c6262ef544486a2ea0b12fda6af"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 11059,
-   "sha256": "4061f135bfdf0d40386d2b7659981a5d6422aba8c50fa627e13bba592a0bce81"
+   "bytes": 11620,
+   "sha256": "26f6c68294cb71cdcf0bee3aed7337320b4cbad02689454350b23cc015540703"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 10795,
-   "sha256": "53bef2f8bf9317485890cd9dcec9e293dbd4579e452c5d54426bf0c79c659127"
+   "bytes": 11274,
+   "sha256": "2e209d90b517e334c8085569abf6bbb1ecad8947b8ccf5f1cd67d75b0dec51d2"
   },
   {
    "path": "agents/1-elections.md",
@@ -106,8 +106,8 @@
   },
   {
    "path": "build_research.py",
-   "bytes": 26133,
-   "sha256": "a94747e6995a1be2460db8358737454e1666f0d139feeb356f535f32702d1abd"
+   "bytes": 26334,
+   "sha256": "0c1dab24a1c9ea2a93fe62a6b9b23078d0082f57214c93ad292ef729672fefb2"
   },
   {
    "path": "build_site3.py",
@@ -181,13 +181,13 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 191127,
-   "sha256": "296757b9b6cab43696995324016a6bd28099ad97fb8bc81c8f90464ec66ba615"
+   "bytes": 194331,
+   "sha256": "2861676ec47d9a407366b43a7fdf2a29738a4cd903a5c4737d3791920ed86bbe"
   },
   {
    "path": "research_registry.py",
-   "bytes": 20428,
-   "sha256": "8ca8fc36f8ef9a66c96ffc9edb21745060a32777a81a4d4c89a2c6bbb5251df7"
+   "bytes": 20589,
+   "sha256": "3466461dd3ab05563c899d7e506132f7eb8d1869e39fe5036eb08f012f0ecf86"
   },
   {
    "path": "research_ui.js",

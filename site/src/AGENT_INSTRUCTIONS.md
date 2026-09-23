@@ -58,6 +58,9 @@ create alternative remotes, overwrite drafts or synchronize with deletion.
 
 The authoritative Codex task prompt is `AUTOMATED_RUN_TASK.md`; the in-run procedure is
 `src/WEEKLY_RUN.md`. The actual scheduler record is separate and must be freshly inspected.
+Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for the weekly coordinator and every
+weekly research or review subagent. Do not silently substitute another model or effort.
+Confirm the scheduled task's actual model setting before activating weekly execution.
 Sunday 07:00 **America/Chicago** is the due boundary, including DST. A daily status check
 permits catch-up without daily research. The oldest uncovered Sunday is processed first.
 A dispatch timestamp, a written draft, a preview, or a successful push does not advance
@@ -88,13 +91,18 @@ co-occurrence into a causal link. Validate transitions against the original regi
 require an evidence review before accepting claims or publishing new relationships.
 
 Political research must be neutral, factual and attributed. Distinguish official actions,
-stated reasons, and hypotheses. Do not invent private motives, collective control, political
-probabilities, recommendations, or quantitative scores for officials, parties or candidates.
+stated reasons, and hypotheses. Evidence-based political forecasts, election probabilities
+and quantitative assessments are permitted. Record their sources, method, as-of date, time
+horizon, assumptions and uncertainty; distinguish estimates from measured outcomes. Do not
+invent private motives, collective control or numerical precision unsupported by evidence.
 Respect legal-entity identities and dates; former employment alone proves no current mandate.
 
 The approved redesign may change layout, responsive navigation, Topics, search, accessible
 controls and map exploration. Preserve existing anchor URLs and archived reading routes.
 Keep all old content recoverable, keyboard operation, reduced motion and mobile readability.
+Preserve all past mapping and the current solid/dotted-line methodology. Do not add visible
+review flags, badges, side notes, edit earmarks or "not verified" labels to the map, or sweep
+such annotations through the report. Keep research review in the existing workflow.
 No source credential, private retrieval log or runtime lock may enter the public source export.
 
 The following historical evidence rules and correction descriptions are retained for
