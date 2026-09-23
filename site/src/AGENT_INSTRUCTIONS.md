@@ -89,6 +89,11 @@ may suggest topic membership from explicit retrieval feedback and propose new qu
 They never autonomously change historical prose, erase evidence, promote grades, or turn
 co-occurrence into a causal link. Validate transitions against the original registry and
 require an evidence review before accepting claims or publishing new relationships.
+Each weekly cycle should use reviewed findings, rejected matches and failed source routes
+to refine the next questions and search routes. Trace proposed cross-document and historical
+connections through dated, independently checked evidence and counterevidence; the existing
+solid/dotted map method expresses the resulting limits. This is a reviewed research loop,
+not model-weight training or automatic promotion of a claim or map edge.
 
 Political research must be neutral, factual and attributed. Distinguish official actions,
 stated reasons, and hypotheses. Evidence-based political forecasts, election probabilities

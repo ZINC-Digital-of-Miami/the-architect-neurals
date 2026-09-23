@@ -38,7 +38,7 @@ research responsibilities using the eight domains below as expertise, and add cr
 questions from the registry where the evidence warrants them. This instruction explicitly
 supersedes the archived "eight agents in one message" rule and hardcoded topic allocation.
 The current runtime has four total slots including the coordinator. Keep three independent
-`gpt-5.6-sol` researchers at `max` reasoning on bounded assignments while research work
+`gpt-6-sol` researchers at `max` reasoning on bounded assignments while research work
 remains, reusing completed workers for the next uncovered question. Finish when coverage
 and verification are complete; do not create filler assignments. Assign work from the registry queue, overdue checks, newly found
 records and coverage gaps; cover all topic areas in a coverage ledger and say exactly which
@@ -51,6 +51,14 @@ Each packet records successful source routes, rejected candidate matches, counte
 and a next disconfirming check. Admit reviewed feedback to the registry and use access
 failures to select another route. Retain a dated coverage ledger. Learning here means
 improved retrieval and question selection, not model training or automatic truth promotion.
+Trace each substantive cross-document connection through exact actors, entities, dates and
+actions, including money, access or official decisions where relevant. Compare historical
+parallels, alternative explanations and counterevidence before proposing a relationship;
+use the existing dotted-line method for hypotheses rather than silently changing old map
+edges. When records support it, explain the consequence for readers and conditional one-
+and five-year scenarios with method, assumptions, uncertainty and a disconfirming check.
+End the cycle with the reviewed findings and failed routes that change next week's questions,
+source routes and priority order; never auto-edit historical material from that feedback.
 
 | Domain | Standing source |
 |---|---|
