@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-23T13:40:02.928Z",
+  "generatedAt": "2026-09-23T14:17:20.399Z",
   "canonicalOrigin": "https://the-architecture-neurals.vercel.app",
   "sourceFingerprint": {
     "algorithm": "sha256",
-    "value": "7575866e169bc4715e74c3ead8e52fa0860021302a25212a9eee818f18879afa",
+    "value": "08d70c92eed8e2b4d04be9bdb4b6d3f3ba755e3d601327ef67e60c5c04ec79f0",
     "inputs": [
       {
         "path": "scripts/build_print_pdfs.cjs",
@@ -93,23 +93,23 @@
       },
       {
         "path": "site/src/AGENT_INSTRUCTIONS.md",
-        "sha256": "f41d6a726527d29a90e7c78f0ca922fd69953c6262ef544486a2ea0b12fda6af",
-        "bytes": 13551
+        "sha256": "8f31f4534b6f2ed0c0f7833423a32e330a07035f0bb16df3f36b536d5aac2f0c",
+        "bytes": 13989
       },
       {
         "path": "site/src/AUTOMATED_RUN_TASK.md",
-        "sha256": "26f6c68294cb71cdcf0bee3aed7337320b4cbad02689454350b23cc015540703",
-        "bytes": 11620
+        "sha256": "5bc2dcc43bad69706b36a201b83e67831893741de3fae6c90baa1390634f71d5",
+        "bytes": 12419
       },
       {
         "path": "site/src/MANIFEST.json",
-        "sha256": "b9ba6ab789bb4b813ab4ea9c47332870e6f1bcc002f9c34f8c16df23493073f3",
+        "sha256": "4bad121a88c1931ba5477ef0dd161c029dbff9b3be9f12e9971feefd2467524a",
         "bytes": 5846
       },
       {
         "path": "site/src/WEEKLY_RUN.md",
-        "sha256": "2e209d90b517e334c8085569abf6bbb1ecad8947b8ccf5f1cd67d75b0dec51d2",
-        "bytes": 11274
+        "sha256": "c2cbe6b9bcd244aa97271cbde24c93ccad00ff51c9bfb342069693e82ef2ce5c",
+        "bytes": 11993
       },
       {
         "path": "site/src/agents/1-elections.md",

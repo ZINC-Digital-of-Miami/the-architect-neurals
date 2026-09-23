@@ -59,7 +59,7 @@ to finish, or restart the same broad assignment. The coordinator integrates exis
 results and narrows any genuinely necessary follow-up. Keep prompts concise.
 
 The current four-slot runtime includes the coordinator. Use three independent leaf
-researchers with `gpt-5.6-sol` and `max` reasoning while bounded research work remains;
+researchers with `gpt-6-sol` and `max` reasoning while bounded research work remains;
 reassign a completed worker to the next uncovered question. Do not manufacture work once
 research and independent verification are complete. This supersedes the archived
 eight-at-once Claude rule. Allocate their
@@ -86,6 +86,16 @@ article dates, packet labels or URLs from the same wire do not create independen
 Keep a dated coverage ledger and propose new topics only when the evidence exposes a
 distinct question. This improves retrieval and research planning; it does not train model
 weights or allow the system to certify its own claims.
+
+For each substantive lead, trace the named people and legal entities, dated actions,
+money or access where relevant, and historical parallels across the report. Check each
+proposed link against original records, timing, independent support, counterevidence and
+alternative explanations. Keep proximity and untested causation as hypotheses under the
+existing dotted-line method. Explain supported implications for readers; where evidence
+permits a one- or five-year outlook, state the method, assumptions, uncertainty, competing
+scenario and next observable disconfirming event. At handoff, record how reviewed findings,
+rejected matches and failed routes change the next research questions and source search
+order. This loop cannot autonomously revise past prose, map records or relationship grades.
 
 Keep people, legal entities, topics, claims, sources, and dated relationships distinct.
 For political material, use neutral factual reporting and attribution. Evidence-based
