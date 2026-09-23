@@ -3561,7 +3561,7 @@ and preserve via the Wayback Machine (web.archive.org/save/) before link-rot set
 <div class="dialog-heading"><p id="share-heading">Share this record</p><button type="button" data-share-close aria-label="Close sharing">Close ×</button></div>
 <div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
 <input id="share-url" type="url" readonly spellcheck="false">
-<div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button></div>
+<div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button><button type="button" data-share-pdf aria-label="Print or save as PDF">PDF</button></div>
 <p data-share-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
 (() => {
   'use strict';
@@ -3646,6 +3646,10 @@ and preserve via the Wayback Machine (web.archive.org/save/) before link-rot set
     shareDialog.showModal();
   });
   document.querySelector('[data-share-close]')?.addEventListener('click', () => shareDialog.close());
+  document.querySelector('[data-share-pdf]')?.addEventListener('click', () => {
+    shareDialog.close();
+    window.print();
+  });
   shareDialog?.addEventListener('close', () => shareTrigger?.focus({preventScroll: true}));
   document.querySelector('[data-share-copy]')?.addEventListener('click', async () => {
     try {

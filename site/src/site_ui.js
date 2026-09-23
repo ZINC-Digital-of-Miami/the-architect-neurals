@@ -82,6 +82,10 @@
     shareDialog.showModal();
   });
   document.querySelector('[data-share-close]')?.addEventListener('click', () => shareDialog.close());
+  document.querySelector('[data-share-pdf]')?.addEventListener('click', () => {
+    shareDialog.close();
+    window.print();
+  });
   shareDialog?.addEventListener('close', () => shareTrigger?.focus({preventScroll: true}));
   document.querySelector('[data-share-copy]')?.addEventListener('click', async () => {
     try {
