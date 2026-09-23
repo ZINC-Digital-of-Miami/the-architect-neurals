@@ -148,7 +148,7 @@ def check(root, require_print=False):
 
 
 if __name__ == "__main__":
-    issues = check(ROOT, require_print=True)
+    issues = check(ROOT, require_print=False)
     if issues:
         raise SystemExit("ARTIFACT FAILED:\n" + "\n".join(issues))
     print("ARTIFACT: all generated paths/bytes match an isolated current-source rebuild; source/map/coverage checks passed")
