@@ -163,7 +163,7 @@ def build_research(root, dist, render_page):
         ) + '</ul><p class="sidebar-label">The record</p><ul><li><a href="/#u-corrections">Corrections</a></li><li><a href="/sources.html">Original source index</a></li><li><a href="/synthesis.html?view=contents">Full report contents</a></li></ul>'
 
     freshness = (f'<p class="topic-meta">Published weekly record through {esc(current_through)} · '
-                 f'Structured research reviewed {esc(data["updatedAt"])}</p>')
+                 f'Research registry updated {esc(data["updatedAt"])}</p>')
     footer = ('<aside class="research-note"><strong>How this record grows.</strong> '
               'The topic registry supplies these pages and the map filters. New evidence can suggest topics; '
               'recorded review accepts or rejects those suggestions. A source establishes only what it actually records. '
@@ -194,6 +194,7 @@ def build_research(root, dist, render_page):
 
     for topic in data["topics"]:
         ident = topic["id"]
+        report_guide = topic.get("presentation") == "report-guide"
         claims = [c for c in data["claims"] if ident in c["topicIds"]]
         current_claims = [c for c in claims if c["status"] != "superseded"]
         old_claims = [c for c in claims if c["status"] == "superseded"]
@@ -207,19 +208,20 @@ def build_research(root, dist, render_page):
         relevant_feedback = [f for f in data["feedback"] if ident in f.get("topicIds", [])]
         feedback_labels = {"topic_fit": "Topic relevance", "source_route": "Source access", "evidence_review": "Evidence review"}
         feedback_html = "".join(f'<li>{esc(f["date"])} · {esc(feedback_labels[f.get("purpose", "topic_fit")])} · {esc(f["decision"])}: {esc(f["reason"])}</li>' for f in relevant_feedback)
+        records = ('<section><h2 id="records">Evidence & context</h2>'
+                   + ("".join(claim_html(c) for c in current_claims) if current_claims else '<p class="research-note">Separate structured records have not yet been added here. Read the report sections above for the existing coverage.</p>')
+                   + '</section>') if current_claims or not report_guide else ''
         body = (f'<header class="research-intro"><p class="kicker"><a href="/topics.html">TOPICS</a> / {esc(topic["status"].upper())}</p><h1>{esc(topic["title"])}</h1>'
                 f'<p class="dek">{esc(topic["description"])}</p>{freshness}</header>'
                 + f'<section class="research-panel"><h2 id="report">In the full report</h2><p class="topic-meta">{len(topic.get("reportLinks", []))} linked sections · {len(current_claims)} structured records · {len(topic.get("entityIds", []))} mapped entities</p>'
                 + '<p>These links open the preserved report, including its dated evidence and qualifications.</p>' + report_links + '</section>'
-                '<section><h2 id="records">Evidence & context</h2>'
-                + ("".join(claim_html(c) for c in current_claims) if current_claims else '<p class="research-note">Separate structured records have not yet been added here. Read the report sections above for the existing coverage.</p>')
-                + '</section><div class="research-grid"><section class="research-panel"><h2 id="questions">Open questions</h2>' + questions
+                + records + '<div class="research-grid"><section class="research-panel"><h2 id="questions">Open questions</h2>' + questions
                 + f'</section><section class="research-panel"><h2>Explore connections</h2><p><a href="/neural.html?topic={quote(ident)}">Open this topic in the map →</a></p><p><a href="/synthesis.html?view=connections">Follow dated connection paths →</a></p></section></div>'
                 + '<section><h2 id="entities">Related entities</h2>' + entities + '</section>'
                 + '<section><h2 id="history">Research history</h2><p>Topic opened ' + esc(topic["createdAt"]) + '; updated ' + esc(topic["updatedAt"]) + '.</p>'
-                + ('<ul>' + feedback_html + '</ul>' if feedback_html else '<p>No retrieval feedback has been recorded for this topic yet.</p>')
+                + ('<ul>' + feedback_html + '</ul>' if feedback_html else '' if report_guide else '<p>No retrieval feedback has been recorded for this topic yet.</p>')
                 + ("<details><summary>Superseded records</summary>" + "".join(claim_html(c) for c in old_claims) + "</details>" if old_claims else "")
-                + '</section>' + footer)
+                + '</section>' + ('' if report_guide else footer))
         write_page(f"topics/{ident}.html", topic["title"] + " — The Architecture", body, "topics")
         urls.append(f"/topics/{ident}.html")
 

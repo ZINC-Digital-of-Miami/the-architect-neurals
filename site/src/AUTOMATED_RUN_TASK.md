@@ -2,6 +2,9 @@
 
 This is the reviewable operating prompt for the Codex automation. The actual automation
 record is managed in Codex; this file does not prove that a schedule is installed or enabled.
+Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for the weekly coordinator and all
+weekly research/review subagents. Verify the scheduled task's actual model before activation;
+do not silently substitute another model or reasoning effort.
 The former Claude task `architecture-sunday-run` must be disabled only as part of the
 owner-authorized cutover, after the Codex replacement and recovery path are verified.
 Do not change any other Claude task.
@@ -85,10 +88,13 @@ distinct question. This improves retrieval and research planning; it does not tr
 weights or allow the system to certify its own claims.
 
 Keep people, legal entities, topics, claims, sources, and dated relationships distinct.
-For political material, use neutral factual reporting and attribution: no political
-preferences, politician/party scores, election probabilities, inferred private motives, or
-claims of control inferred from proximity or former employment. Preserve legacy material
-without silently revalidating its assertions.
+For political material, use neutral factual reporting and attribution. Evidence-based
+political forecasts, election probabilities and quantitative assessments are permitted;
+record sources, method, as-of date, horizon, assumptions and uncertainty. Keep estimates
+distinct from measured outcomes. Do not infer private motives or control from proximity or
+former employment. Preserve legacy material without silently revalidating its assertions.
+Preserve past mapping and its solid/dotted-line methodology; add no visible review flags,
+badges, side notes, edit earmarks or "not verified" labels to the map or across the report.
 
 `research_registry.py suggest` and `feedback` write separate review candidates. They may
 improve retrieval and topic assignment from accepted/rejected corrections; they do not

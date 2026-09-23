@@ -5,6 +5,7 @@ const base = process.env.ARCH_TEST_BASE || 'http://127.0.0.1:8765';
 fs.mkdirSync('.architecture/app-audit',{recursive:true});
 let browser;
 const canonical = 'https://the-architecture-neurals.vercel.app';
+const expectedTopicRoutes = JSON.parse(fs.readFileSync('src/research_registry.json', 'utf8')).topics.map(topic => `/topics/${topic.id}.html`);
 const out = { startedAt: new Date().toISOString(), checks: [], failures: [], console: [], responses: [], measurements: {} };
 const ok = (name, pass, detail = {}) => {
   const row = { name, pass: !!pass, ...detail };
@@ -25,7 +26,7 @@ const slug = s => s.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').slice(0, 
   await page.goto(base + '/', { waitUntil: 'domcontentloaded' });
   await page.locator('[data-ui-dropdown][aria-controls="topics-navigation"]').click();
   const navTopics = await page.locator('#topics-navigation a[href^="/topics/"]').evaluateAll(as => [...new Set(as.map(a => new URL(a.href).pathname))]);
-  ok('root topic dropdown exposes exactly 15 unique topic routes', navTopics.length === 15, { count: navTopics.length, routes: navTopics });
+  ok('root topic dropdown exposes every registered topic exactly once', navTopics.length === expectedTopicRoutes.length && expectedTopicRoutes.every(route => navTopics.includes(route)), { count: navTopics.length, routes: navTopics });
   ok('root topic dropdown is actually open and its topic links are rendered', await page.locator('#topics-navigation').isVisible() && await page.locator('[data-ui-dropdown][aria-controls="topics-navigation"]').getAttribute('aria-expanded') === 'true');
 
   await page.locator('[data-ui-contents]').click();
@@ -79,7 +80,7 @@ const slug = s => s.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '').slice(0, 
     hidden: row.hidden
   })));
   const coverageRoutes = [...new Set(coverage.map(x => x.href))];
-  ok('topics index has one visible record for every dropdown topic route', coverage.length === 15 && coverageRoutes.length === 15 && coverage.every(x => !x.hidden) && navTopics.every(x => coverageRoutes.includes(x)), { count: coverage.length, routes: coverageRoutes });
+  ok('topics index has one visible record for every dropdown topic route', coverage.length === expectedTopicRoutes.length && coverageRoutes.length === expectedTopicRoutes.length && coverage.every(x => !x.hidden) && navTopics.every(x => coverageRoutes.includes(x)), { count: coverage.length, routes: coverageRoutes });
   const api = await request.newContext();
   for (const path of coverageRoutes) {
     const response = await api.get(base + path);

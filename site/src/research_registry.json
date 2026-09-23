@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-08",
+  "updatedAt": "2026-09-23",
   "categories": [
     {
       "id": "financial-history",
@@ -687,6 +687,94 @@
       ],
       "createdAt": "2026-09-08",
       "updatedAt": "2026-09-08"
+    },
+    {
+      "id": "pay-to-play-corruption",
+      "title": "Pay-to-play & corruption",
+      "presentation": "report-guide",
+      "description": "Follow money, access and official decisions across the report: family businesses, diplomatic interests, foreign-state revenue, pardons and the records connecting them.",
+      "categoryIds": [
+        "financial-history",
+        "institutions"
+      ],
+      "entityIds": [
+        "TRUMP",
+        "WLF",
+        "DONALD_TRUMP_JR",
+        "ERIC_TRUMP",
+        "KUSHNER",
+        "WITKOFF",
+        "ZACH_WITKOFF",
+        "ALT5",
+        "TRUST",
+        "ZHAO",
+        "CAPITAL_1789"
+      ],
+      "reportLinks": [
+        {
+          "label": "The Money: the profit architecture",
+          "href": "/#the-money-the-profit-architecture"
+        },
+        {
+          "label": "Chapter C: the family crypto empire",
+          "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+        },
+        {
+          "label": "Chapter C-2: the crypto apparatus",
+          "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+        },
+        {
+          "label": "Chapter D: the envoy economy",
+          "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
+        },
+        {
+          "label": "Chapter E: foreign-state revenue",
+          "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
+        },
+        {
+          "label": "Chapter E-2: the Qatar file",
+          "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
+        },
+        {
+          "label": "Chapter E-3: the Argentina channel",
+          "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
+        },
+        {
+          "label": "Chapter F: the pardon and access market",
+          "href": "/#chapter-f-the-pardon-and-access-market"
+        },
+        {
+          "label": "Chapter G: war finance",
+          "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+        },
+        {
+          "label": "Chapter G-2: five follow-the-money streams",
+          "href": "/#chapter-g-2-five-follow-the-money-streams"
+        },
+        {
+          "label": "Chapter I: what the money architecture adds up to",
+          "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
+        }
+      ],
+      "researchQuestions": [
+        "Who paid whom, through which legal entity, and when?",
+        "Which access, appointment, pardon, contract or policy decision followed, and what do the original records establish?",
+        "What evidence connects a payment or financial interest to an official act, and what alternative explanations or denials must be tested?",
+        "Which earlier cases and cross-report connections help explain the consequences and the next records to investigate?"
+      ],
+      "status": "active",
+      "keywords": [
+        "pay-to-play",
+        "corruption",
+        "payments",
+        "access",
+        "pardons",
+        "foreign-state revenue",
+        "conflicts of interest",
+        "official decisions"
+      ],
+      "createdAt": "2026-09-23",
+      "updatedAt": "2026-09-23"
     }
   ],
   "sources": [
