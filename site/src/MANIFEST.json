@@ -9,8 +9,8 @@
   "briefs": 3,
   "corrections": 18,
   "clocks": 12,
-  "map_nodes": 59,
-  "map_edges": 93,
+  "map_nodes": 63,
+  "map_edges": 97,
   "index_bytes": 671519
  },
  "files": [
@@ -131,8 +131,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 20145,
-   "sha256": "9aa2e2a22388043715574c66f083ccbab9bacb7b7b6690ae4284c0d0198ad135"
+   "bytes": 21394,
+   "sha256": "9afb7a9cc9b471531bbece866554d2ba4ad267ea355c1f922461a4682e937ef2"
   },
   {
    "path": "mapgen.js",
@@ -146,8 +146,8 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 12575,
-   "sha256": "dd29ddcec7cf4187fecb3aa58955bfe3f14844696131dee1671a52d6acac458c"
+   "bytes": 13320,
+   "sha256": "4527aaf8743302a25dee56be9acc856f6b9463e5b559efda80a7299671f94971"
   },
   {
    "path": "neural_map.html",
@@ -156,8 +156,8 @@
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 115655,
-   "sha256": "4e45da8e0914d1993826e3566f5b7599cbca06d6fdd582e5ed43a65da75c8df3"
+   "bytes": 123182,
+   "sha256": "de38877bcf49eb174691449f422dc291bb00f07552f5ee59738ffefc5eb36cae"
   },
   {
    "path": "pull_src.sh",
@@ -181,8 +181,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 194331,
-   "sha256": "2861676ec47d9a407366b43a7fdf2a29738a4cd903a5c4737d3791920ed86bbe"
+   "bytes": 224737,
+   "sha256": "1a57636df6a0c9536e6481c4aa22d800b65e91a9490f2920d12e1b97c54d093a"
   },
   {
    "path": "research_registry.py",
