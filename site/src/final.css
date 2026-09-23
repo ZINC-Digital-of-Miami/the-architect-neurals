@@ -554,12 +554,6 @@ img,svg,video{max-width:100%}
   .research-grid,.history-grid{gap:1.5rem}.topic-links,.source-links{gap:.5rem .9rem}
 }
 
-.dialog-heading #print-heading{font-size:1.7rem;color:var(--ink);margin:0}
-.print-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
-.print-actions a{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--paper);font:inherit;text-decoration:none}
-.print-actions a:hover{background:var(--ink);border-color:var(--ink)}
-@media print{#print-dialog{display:none!important}}
-
 .source-links li{max-width:100%;overflow-wrap:anywhere}
 @media print{tr{break-inside:avoid}}
 @media print{

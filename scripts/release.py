@@ -41,7 +41,10 @@ def vc(args, cwd):
 
 
 def file_hashes(site):
-    return artifact_hashes(site, public_only=True)
+    # Legacy PDFs are locally integrity-checked but no longer power live printing.
+    # Keep them deployed without downloading all of them for each release receipt.
+    return {name: sha for name, sha in artifact_hashes(site, public_only=True).items()
+            if not (name.startswith("print/") and name.endswith(".pdf"))}
 
 
 def public_bytes(url):

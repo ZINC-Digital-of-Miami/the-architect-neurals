@@ -78,8 +78,9 @@ copy. Main is checked before upload and promotion and after live verification. P
 `release.json` is generated only in the isolated artifact to identify the already-existing
 main commit; no circular commit hash is written into tracked files.
 
-`weekly_run.py complete` independently verifies the receipt against current main, all public
-bytes and the exact staged candidate before advancing coverage. Failures retain evidence.
+`weekly_run.py complete` independently verifies the receipt against current main, all active
+public bytes and the exact staged candidate before advancing coverage. Archived PDFs are
+integrity-checked locally and excluded from live publication receipts. Failures retain evidence.
 The script never treats deployment success as permission to overwrite the repository.
 
 ## 5. Research, learning and presentation

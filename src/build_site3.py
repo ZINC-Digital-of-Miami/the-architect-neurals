@@ -341,12 +341,7 @@ def reading_controls(sidebar_html):
 <div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
 <input id="share-url" type="url" readonly spellcheck="false">
 <div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button></div>
-<p data-share-status role="status" aria-live="polite"></p></div></dialog>
-<dialog class="contents-dialog" id="print-dialog" aria-labelledby="print-heading">
-<div class="dialog-heading"><p id="print-heading">Print-ready document</p><button type="button" data-print-close aria-label="Close print options">Close ×</button></div>
-<div class="share-body"><p data-print-title></p><p>This PDF includes the complete page or entity record. Download it to print from your PDF app.</p>
-<div class="print-actions"><a data-print-download download>Download PDF</a><a data-print-open>Open PDF</a></div>
-<p data-print-status role="status" aria-live="polite"></p></div></dialog>''')
+<p data-share-status role="status" aria-live="polite"></p></div></dialog>''')
 
 # ---------- assemble shared body ----------
 update_html = reference_links((ROOT / "update_part2.html").read_text(), "update_part2.html")

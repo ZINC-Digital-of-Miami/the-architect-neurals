@@ -443,11 +443,11 @@ class PrintPdfTests(unittest.TestCase):
         (site / "research/data.json").write_text(json.dumps({"topics": [{"id": "topic"}]}))
         write_print_catalog(self.root)
 
-    def test_stale_rendered_source_is_rejected(self):
+    def test_live_page_and_map_changes_do_not_require_new_archived_pdfs(self):
         self.assertEqual(print_pdfs.validate(self.root), [])
         (self.root / "site/index.html").write_text('<script src="/site-ui.js"></script>changed')
-        self.assertIn("print PDFs are stale: rendered source fingerprint differs",
-                      print_pdfs.validate(self.root))
+        (self.root / "site/map/data.json").write_text(json.dumps({"nodes": {"ENTITY": {}, "NEW": {}}}))
+        self.assertEqual(print_pdfs.validate(self.root), [])
 
     def test_tampered_pdf_is_rejected(self):
         manifest = json.loads((self.root / "site/print/manifest.json").read_text())
@@ -459,6 +459,18 @@ class PrintPdfTests(unittest.TestCase):
 
 
 class ReleaseTests(unittest.TestCase):
+    def test_archived_pdfs_are_not_rechecked_over_the_network(self):
+        with tempfile.TemporaryDirectory() as temp:
+            site = Path(temp)
+            (site / "print").mkdir()
+            (site / "index.html").write_text("live page")
+            (site / "print/old.pdf").write_bytes(b"%PDF-1.4\n%%EOF\n")
+            (site / "print/manifest.json").write_text("archival inventory")
+            files = release.file_hashes(site)
+            self.assertIn("index.html", files)
+            self.assertIn("print/manifest.json", files)
+            self.assertNotIn("print/old.pdf", files)
+
     def test_weekly_upload_is_bound_to_reviewed_bytes_before_external_mutation(self):
         for mutation in ("changed", "unstaged", "wrong_interval"):
             with self.subTest(mutation=mutation), tempfile.TemporaryDirectory() as temp:

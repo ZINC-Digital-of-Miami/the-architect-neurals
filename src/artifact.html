@@ -557,12 +557,6 @@ img,svg,video{max-width:100%}
   .research-grid,.history-grid{gap:1.5rem}.topic-links,.source-links{gap:.5rem .9rem}
 }
 
-.dialog-heading #print-heading{font-size:1.7rem;color:var(--ink);margin:0}
-.print-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
-.print-actions a{display:inline-flex;align-items:center;min-height:44px;padding:.6rem 1rem;border:1px solid var(--accent);border-radius:4px;background:var(--accent);color:var(--paper);font:inherit;text-decoration:none}
-.print-actions a:hover{background:var(--ink);border-color:var(--ink)}
-@media print{#print-dialog{display:none!important}}
-
 .source-links li{max-width:100%;overflow-wrap:anywhere}
 @media print{tr{break-inside:avoid}}
 @media print{
@@ -3568,12 +3562,7 @@ and preserve via the Wayback Machine (web.archive.org/save/) before link-rot set
 <div class="share-body"><p data-share-title></p><label for="share-url">Link to this page or section</label>
 <input id="share-url" type="url" readonly spellcheck="false">
 <div class="share-actions"><button type="button" data-share-copy>Copy link</button><button type="button" data-share-native hidden>Share via…</button></div>
-<p data-share-status role="status" aria-live="polite"></p></div></dialog>
-<dialog class="contents-dialog" id="print-dialog" aria-labelledby="print-heading">
-<div class="dialog-heading"><p id="print-heading">Print-ready document</p><button type="button" data-print-close aria-label="Close print options">Close ×</button></div>
-<div class="share-body"><p data-print-title></p><p>This PDF includes the complete page or entity record. Download it to print from your PDF app.</p>
-<div class="print-actions"><a data-print-download download>Download PDF</a><a data-print-open>Open PDF</a></div>
-<p data-print-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
+<p data-share-status role="status" aria-live="polite"></p></div></dialog><script>/* Shared reading controls. Reading places stay in this browser; no network or analytics. */
 (() => {
   'use strict';
   document.documentElement.classList.add('ui-ready');
@@ -3617,56 +3606,17 @@ and preserve via the Wayback Machine (web.archive.org/save/) before link-rot set
     tools.innerHTML = '<button type="button" data-ui-share aria-haspopup="dialog" aria-controls="share-dialog">Share</button><button type="button" data-ui-print>Print</button>';
     main.prepend(tools);
   }
-  const printDialog = document.getElementById('print-dialog');
-  let printTrigger;
-  let nativePrintStarted = false;
-  window.addEventListener('beforeprint', () => { nativePrintStarted = true; });
-  document.querySelector('[data-print-close]')?.addEventListener('click', () => printDialog.close());
-  printDialog?.addEventListener('close', () => printTrigger?.focus({preventScroll: true}));
-  function printRoute() {
-    const path = location.pathname === '/' ? '/index.html' : location.pathname;
-    const params = new URLSearchParams(location.search);
-    if (path === '/neural.html') {
-      const entity = params.get('entity');
-      const topic = params.get('topic');
-      if (entity) return `${path}?entity=${encodeURIComponent(entity)}`;
-      if (topic) return `${path}?topic=${encodeURIComponent(topic)}`;
-    }
-    if (path === '/synthesis.html') {
-      const selected = document.querySelector('[data-view-tab][aria-selected="true"]');
-      return `${path}?view=${encodeURIComponent(selected?.dataset.viewTab || 'overview')}`;
-    }
-    return path;
-  }
-  document.addEventListener('click', async event => {
-    const button = event.target.closest('[data-ui-print]');
-    if (!button || button.disabled) return;
-    nativePrintStarted = false;
-    window.print();
-    if (nativePrintStarted) return;
-    printTrigger = button;
-    const label = button.textContent;
-    button.disabled = true;
-    button.textContent = 'Opening PDF…';
-    try {
-      const response = await fetch('/print/manifest.json', {cache: 'no-cache'});
-      if (!response.ok) throw new Error('Print catalog unavailable');
-      const catalog = await response.json();
-      const record = catalog.routes?.[printRoute()];
-      if (!record || !/^\/print\/[a-zA-Z0-9._-]+\.pdf$/.test(record.url)) {
-        throw new Error('Printable record unavailable');
-      }
-      document.querySelector('[data-print-title]').textContent = `${record.title} · ${record.pages} pages`;
-      document.querySelector('[data-print-download]').href = record.url;
-      document.querySelector('[data-print-open]').href = record.url;
-      document.querySelector('[data-print-status]').textContent = '';
-      printDialog.showModal();
-    } catch {
-      announce('The printable PDF could not be opened. Please retry Print.');
-    } finally {
-      button.disabled = false;
-      button.textContent = label;
-    }
+  let detailsOpenedForPrint = [];
+  window.addEventListener('beforeprint', () => {
+    detailsOpenedForPrint = [...document.querySelectorAll('details:not([open])')];
+    detailsOpenedForPrint.forEach(details => { details.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    detailsOpenedForPrint.forEach(details => { details.open = false; });
+    detailsOpenedForPrint = [];
+  });
+  document.addEventListener('click', event => {
+    if (event.target.closest('[data-ui-print]')) window.print();
   });
   main?.querySelectorAll('h2[id]').forEach(heading => {
     if (heading.closest('#neural')) return;

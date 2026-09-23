@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate that every printable route has a current, intact static PDF."""
+"""Validate intact archived PDFs; current pages print from the live browser."""
 import hashlib
 import json
 from pathlib import Path
@@ -83,15 +83,6 @@ def validate(root, required=True):
         errors.append(f"print PDF canonicalOrigin must be {CANONICAL_ORIGIN}")
     if not isinstance(manifest.get("generatedAt"), str) or not manifest["generatedAt"]:
         errors.append("print PDF manifest generatedAt is missing")
-    actual_fingerprint = source_fingerprint(root)
-    if manifest.get("sourceFingerprint") != actual_fingerprint:
-        errors.append("print PDFs are stale: rendered source fingerprint differs")
-
-    try:
-        expected = expected_routes(root)
-    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
-        errors.append(f"print route coverage could not be derived from rendered sources: {exc}")
-        expected = {}
     routes = manifest.get("routes")
     artifacts = manifest.get("artifacts")
     if not isinstance(routes, dict):
@@ -100,12 +91,6 @@ def validate(root, required=True):
     if not isinstance(artifacts, list):
         errors.append("print PDF manifest artifacts must be an array")
         artifacts = []
-
-    expected_set, route_set = set(expected), set(routes)
-    for route in sorted(expected_set - route_set):
-        errors.append(f"print PDF route missing: {route}")
-    for route in sorted(route_set - expected_set):
-        errors.append(f"unexpected print PDF route: {route}")
 
     artifacts_by_route = {}
     expected_files = {path}
@@ -118,8 +103,11 @@ def validate(root, required=True):
             errors.append(f"duplicate print PDF artifact route: {route}")
             continue
         artifacts_by_route[route] = item
-        if expected.get(route) != item["kind"]:
-            errors.append(f"print PDF kind differs from expected route: {route}")
+        if not isinstance(route, str) or not route.startswith("/"):
+            errors.append(f"invalid archived print route: {route}")
+            continue
+        if item["kind"] not in {"page", "map-entity", "map-topic", "synthesis"}:
+            errors.append(f"invalid archived print kind: {route}")
         if item["canonicalUrl"] != CANONICAL_ORIGIN + route:
             errors.append(f"print PDF canonicalUrl differs from route: {route}")
         output = Path(item["output"])
@@ -144,8 +132,10 @@ def validate(root, required=True):
         if item["bytes"] != len(raw) or item["sha256"] != sha256(raw):
             errors.append(f"print PDF bytes/hash mismatch: {item['output']}")
 
-    for route in sorted(expected_set - set(artifacts_by_route)):
+    for route in sorted(set(routes) - set(artifacts_by_route)):
         errors.append(f"print PDF artifact missing: {route}")
+    for route in sorted(set(artifacts_by_route) - set(routes)):
+        errors.append(f"print PDF route record missing: {route}")
     for route, record in routes.items():
         item = artifacts_by_route.get(route)
         if not isinstance(record, dict) or set(record) != ROUTE_KEYS:
@@ -165,4 +155,4 @@ if __name__ == "__main__":
     issues = validate(root, required=True)
     if issues:
         raise SystemExit("PRINT PDF FAILED:\n" + "\n".join(issues))
-    print("PRINT PDF: current source fingerprint, route coverage, bytes and hashes passed")
+    print("PRINT PDF ARCHIVE: recorded routes, bytes and hashes passed")
