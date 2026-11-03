@@ -1948,6 +1948,136 @@
       "sourceType": "reporting",
       "accessedAt": "2026-11-03",
       "locator": "Current third-party contract listing; October 29 modification and November 30 end date. Rejected as evidence of duration at the October 4 cutoff."
+    },
+    {
+      "id": "oct11-oct05-action",
+      "title": "OFAC October 5 actions: publication of Iran banking alert and amended FAQ",
+      "url": "https://ofac.treasury.gov/recent-actions/20261005",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Opening paragraphs",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "id": "oct11-ffi-alert",
+      "title": "Notice to Foreign Financial Institutions Conducting Business with Iran",
+      "url": "https://ofac.treasury.gov/media/937091/download?inline=",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Two-page OFAC alert; page 1 warning and authorities; page 2 shadow banking",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "id": "oct11-faq156",
+      "title": "OFAC FAQ 156: notice of restrictions on foreign financial institutions",
+      "url": "https://ofac.treasury.gov/faqs/156",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Answer and Date Updated field",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "id": "oct11-oct08-action",
+      "title": "OFAC October 8 Iran designations and General License EE",
+      "url": "https://ofac.treasury.gov/recent-actions/20261008",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Opening license announcement; added-entity list; removed-vessel list",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "id": "oct11-gl-ee",
+      "title": "Iran General License EE: Samudra Marine Services wind-down authorization",
+      "url": "https://ofac.treasury.gov/media/937096/download?inline=",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Paragraphs (a)-(b), signature/date",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "id": "oct11-oct08-treasury",
+      "title": "Treasury announces action against Iran’s shadow-fleet network",
+      "url": "https://home.treasury.gov/news/press-releases/sb0653/",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "U.S. Department of the Treasury",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Shadow Fleet Vessels; Sanctions Implications; paragraph on two removals",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "id": "phang-ecf54-20261005",
+      "title": "Phang: government notice of compliance",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.54.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 54; complete original PDF",
+      "publishedAt": "2026-10-05"
+    },
+    {
+      "id": "phang-ecf55-20261008",
+      "title": "Phang: opposition to record-postponement motion",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.55.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 55; complete original PDF",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "id": "phang-ecf57-20261009",
+      "title": "Phang: order on specified redactions and underlying notes",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.57.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 57; complete original PDF",
+      "publishedAt": "2026-10-09"
+    },
+    {
+      "id": "jz-biometrics-order-20261007",
+      "title": "J.Z. v. DHS: memorandum opinion and order on biometrics policy",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_26-cv-01510/pdf/USCOURTS-dcd-1_26-cv-01510-1.pdf",
+      "publisher": "U.S. District Court for the District of Columbia",
+      "originId": "U.S. District Court for the District of Columbia",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 46, pages 21–23; scope and operative relief",
+      "publishedAt": "2026-10-07"
+    },
+    {
+      "id": "ice-transaction-query-20261004-11",
+      "title": "USAspending: ICE contract transactions dated October 4–11",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_transaction/",
+      "publisher": "U.S. Department of the Treasury, USAspending.gov",
+      "originId": "U.S. Department of the Treasury, USAspending.gov",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "POST: ICE awarding subagency, types A–D, October 4–11; retrieved November 3."
+    },
+    {
+      "id": "mef-chronology-retrieved-20261103",
+      "title": "Middle East Forum: Executive Actions Chronology",
+      "url": "https://actions.meforum.org/",
+      "publisher": "Middle East Forum",
+      "originId": "Middle East Forum",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-03",
+      "locator": "October 8 aggregate of 55 designated parties; current page retrieved November 3, includes later events; rejected as independently reconciled total"
     }
   ],
   "claims": [
@@ -3521,6 +3651,138 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original official action or native transaction record",
       "status": "documented"
+    },
+    {
+      "id": "ofac-banking-warning-20261005",
+      "text": "OFAC published a warning to foreign financial institutions and amended FAQ 156 on October 5.",
+      "context": "An enforcement warning and publication process; no institution-specific new restriction or measured loss inferred.",
+      "sourceIds": [
+        "oct11-oct05-action",
+        "oct11-ffi-alert",
+        "oct11-faq156"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "war-trade"
+      ],
+      "eventDate": "2026-10-05",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "samudra-license-20261008",
+      "text": "OFAC designated Samudra and issued General License EE with a limited wind-down ending October 22 at 11:01 p.m. CT.",
+      "context": "Payments to blocked persons require blocked U.S. accounts; the license is not a delisting.",
+      "sourceIds": [
+        "oct11-oct08-action",
+        "oct11-gl-ee"
+      ],
+      "topicIds": [
+        "war-trade",
+        "ownership-disclosures"
+      ],
+      "eventDate": "2026-10-08",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "treasury-maritime-action-20261008",
+      "text": "Treasury announced maritime sanctions and described seventeen targeted vessels and associated companies.",
+      "context": "The announcement establishes Treasury’s position; operational neutralization is not independently measured here.",
+      "sourceIds": [
+        "oct11-oct08-treasury"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "eventDate": "2026-10-08",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "phang-notice-20261005",
+      "text": "The government filed its October 5 account of the September 24 in-camera delivery.",
+      "context": "A party representation; ECF 54’s September 18 citation conflicts with ECF 57’s September 16 date for ECF 43.",
+      "sourceIds": [
+        "phang-ecf54-20261005"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-10-05",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "phang-opposition-20261008",
+      "text": "Phang opposed postponing the administrative-record deadlines.",
+      "context": "The opposition and proposed order establish a request, not its disposition.",
+      "sourceIds": [
+        "phang-ecf55-20261008"
+      ],
+      "topicIds": [
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-08",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "phang-specific-order-20261009",
+      "text": "The court discharged specified items and required three redacted note sets for in-camera review October 16 at 11 a.m. CT.",
+      "context": "Partial findings only; no whole-case compliance or public release established.",
+      "sourceIds": [
+        "phang-ecf57-20261009"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-10-09",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "jz-biometrics-stay-20261007",
+      "text": "The court stayed the biometrics policy under APA section 705 and ordered an October 21 compliance report.",
+      "context": "Additional preliminary injunction denied as unnecessary; relief is preliminary, implementation unverified.",
+      "sourceIds": [
+        "jz-biometrics-order-20261007"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "enforcement-surveillance",
+        "civil-society"
+      ],
+      "eventDate": "2026-10-07",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
+    },
+    {
+      "id": "ice-five-zero-modifications-20261009",
+      "text": "A native ICE contract query returned five October 5–9 modifications, each recording a $0 transaction amount.",
+      "context": "Filtered returned transactions; this is not all spending, historical completeness or delivery.",
+      "sourceIds": [
+        "ice-transaction-query-20261004-11"
+      ],
+      "topicIds": [
+        "enforcement-surveillance",
+        "technology-infrastructure"
+      ],
+      "eventDate": "2026-10-09",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record or attributed party filing",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -4887,6 +5149,28 @@
         "corrections-provenance"
       ],
       "reason": "RebidRadar current contract listing cannot establish historical duration at the October 4 cutoff. Its October 29 modification and November 30 end date are later-state values, not independent evidence of the September funding action terms."
+    },
+    {
+      "id": "oct11-chronology-rejected-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "war-trade",
+        "corrections-provenance"
+      ],
+      "reason": "The single-origin chronology count is a discovery lead. Its aggregate was not independently reconciled; current later events cannot be imported into the October11 interval."
+    },
+    {
+      "id": "oct11-native-query-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "accept",
+      "topicIds": [
+        "enforcement-surveillance",
+        "technology-infrastructure"
+      ],
+      "reason": "Native Treasury transaction search succeeded after correcting the field name to Transaction Description. Retain exact request and response; zero-dollar modifications do not measure total spending."
     }
   ],
   "topicProposals": [],
@@ -8387,6 +8671,31 @@
         "hr9340-cloture-rejected-20260930",
         "sres852-discharge-rejected-20260929"
       ]
+    },
+    {
+      "id": "weekly-backfill-20261011-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append October11 retrospective court, biometrics, native procurement and Iran sanctions findings with attributed positions and unresolved coverage.",
+      "topicIds": [
+        "civil-society",
+        "corrections-provenance",
+        "enforcement-surveillance",
+        "executive-authority",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "technology-infrastructure",
+        "war-trade"
+      ],
+      "claimIds": [
+        "ofac-banking-warning-20261005",
+        "samudra-license-20261008",
+        "treasury-maritime-action-20261008",
+        "phang-notice-20261005",
+        "phang-opposition-20261008",
+        "phang-specific-order-20261009",
+        "jz-biometrics-stay-20261007",
+        "ice-five-zero-modifications-20261009"
+      ]
     }
   ],
   "networkPaths": [
@@ -8594,6 +8903,18 @@
         "The node — where the architectures touch"
       ],
       "href": "/#u-week-2026-10-04"
+    },
+    {
+      "id": "u-week-2026-10-11",
+      "title": "Week ending October 11 — retrospective addition, compiled November 3",
+      "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
+      "href": "/#u-week-2026-10-11"
     },
     {
       "id": "u-corrections",
@@ -10362,6 +10683,78 @@
       "href": "/#b-4-new-this-edition"
     },
     {
+      "id": "brief-2026-10-11-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-the-lede"
+    },
+    {
+      "id": "brief-2026-10-11-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-10-11-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-10-11-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-10-11-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-10-11-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-10-11-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-10-11-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-11",
+      "parents": [],
+      "href": "/#brief-2026-10-11-next-week-s-priorities"
+    },
+    {
       "id": "brief-2026-10-04-the-lede",
       "title": "The lede",
       "level": 2,
@@ -10938,7 +11331,7 @@
       "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
-  "reportCurrentThrough": "2026-10-04",
+  "reportCurrentThrough": "2026-10-11",
   "briefs": [
     {
       "date": "2026-08-16",
@@ -10971,6 +11364,10 @@
     {
       "date": "2026-10-04",
       "url": "/briefs/2026-10-04.html"
+    },
+    {
+      "date": "2026-10-11",
+      "url": "/briefs/2026-10-11.html"
     }
   ]
 }
