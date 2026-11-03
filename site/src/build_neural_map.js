@@ -12,9 +12,6 @@
 // map_source.json changes. The site builder renders counts and the map-state date
 // from these outputs. Add new dated research/weekly prose without rewriting history.
 //
-// NOTE: src/build_neural_map.py is a LEGACY artifact with hardcoded tables. It does not
-// read map_source.json and does not write these two files. Do not use it. See its header.
-
 const fs = require("fs");
 const path = require("path");
 

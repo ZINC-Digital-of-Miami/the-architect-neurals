@@ -561,7 +561,7 @@ _srcdst.mkdir()
 for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
            "build_site3.py", "site_ui.js", "build_research.py", "research_registry.json",
            "research_registry.py", "research_ui.js", "report_references.py", "report_navigation.py", "report_reference_targets.json", "neural_map.html", "neural_data.json", "neural_svg.frag",
-           "build_neural_map.py", "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
+           "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
     _sp = ROOT / _f
     if _sp.exists():
         _sh.copy(_sp, _srcdst / _f)

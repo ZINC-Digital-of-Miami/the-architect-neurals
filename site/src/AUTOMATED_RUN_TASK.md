@@ -2,9 +2,12 @@
 
 This is the reviewable operating prompt for the Codex automation. The actual automation
 record is managed in Codex; this file does not prove that a schedule is installed or enabled.
-Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for the weekly coordinator and all
-weekly research/review subagents. Verify the scheduled task's actual model before activation;
-do not silently substitute another model or reasoning effort.
+Owner direction, 2026-11-03: use GPT-6 Astra with High reasoning (`gpt-6-astra`, `high`)
+for the scheduled coordinator and every weekly research/review subagent. The separately
+authorized immediate catch-up through 2026-11-01 uses GPT-6 Astra with Max reasoning
+(`gpt-6-astra`, `max`) for its coordinator and every researcher/reviewer. Verify actual
+execution settings before running; prompt text alone is not verification. Heartbeats inherit
+their target chat's settings. Do not silently substitute another model or reasoning effort.
 The former Claude task `architecture-sunday-run` must be disabled only as part of the
 owner-authorized cutover, after the Codex replacement and recovery path are verified.
 Do not change any other Claude task.
@@ -28,6 +31,8 @@ The research interval ends **Sunday at 07:00 America/Chicago**. The script handl
 saving time and late dispatch. A lightweight daily check may call `status`; it does not
 perform extra daily research. Use the oldest missing Sunday first. Never date a brief in
 the future, infer success from dispatch, or skip an interval when the app was unavailable.
+The existing schedule dispatches **Sunday at 09:00 America/Chicago**. For retrospective
+briefs, distinguish the interval cutoff from the actual research and publication dates.
 
 1. Run `python3 scripts/weekly_run.py status` from the saved project. If no Sunday is due,
    remain quiet. A status check does not create a run or advance coverage.
@@ -58,8 +63,9 @@ if unfinished. Save evidence incrementally. Do not extend the limit, repeatedly 
 to finish, or restart the same broad assignment. The coordinator integrates existing
 results and narrows any genuinely necessary follow-up. Keep prompts concise.
 
-The current four-slot runtime includes the coordinator. Use three independent leaf
-researchers with `gpt-6-sol` and `max` reasoning while bounded research work remains;
+The current four-slot runtime includes the coordinator. Use up to three independent leaf
+researchers within available capacity, with `gpt-6-astra` and the run's required reasoning
+effort (scheduled `high`; immediate 2026-11-03 catch-up `max`), while bounded research remains;
 reassign a completed worker to the next uncovered question. Do not manufacture work once
 research and independent verification are complete. This supersedes the archived
 eight-at-once Claude rule. Allocate their
@@ -102,9 +108,13 @@ For political material, use neutral factual reporting and attribution. Evidence-
 political forecasts, election probabilities and quantitative assessments are permitted;
 record sources, method, as-of date, horizon, assumptions and uncertainty. Keep estimates
 distinct from measured outcomes. Do not infer private motives or control from proximity or
-former employment. Preserve legacy material without silently revalidating its assertions.
+former employment. Preserve historical material without silently revalidating its assertions.
 Preserve past mapping and its solid/dotted-line methodology; add no visible review flags,
 badges, side notes, edit earmarks or "not verified" labels to the map or across the report.
+Preserve existing typography, colors, navigation, responsive behavior, presentation code,
+and map layout algorithms. Only source-reviewed map additions are allowed; preserve all
+existing nodes, edges, labels, and grades. Compare desktop/mobile views and map behavior
+before release, including data-driven repositioning and label collisions.
 
 `research_registry.py suggest` and `feedback` write separate review candidates. They may
 improve retrieval and topic assignment from accepted/rejected corrections; they do not

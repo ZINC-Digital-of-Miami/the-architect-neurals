@@ -40,7 +40,7 @@ for later evidence or a changed interpretation.
 
 - `src/master_report.md`, `src/sources_manifest.md`, dated `src/briefs/`: preserved sources.
 - `src/update_part2.html`: current summary, permanent correction ledger, clocks, open checks.
-- `src/map_source.json`: preserved legacy node and edge records.
+- `src/map_source.json`: canonical map data with preserved historical node and edge records.
 - `src/research_registry.json` and `src/research_registry.py`: versioned topics, sources,
   entities, claims, relationships, watchpoints and reviewable retrieval feedback.
 - `src/build_site3.py`, `src/build_neural_map.js`, `src/build_research.py`: generators.
@@ -58,9 +58,14 @@ create alternative remotes, overwrite drafts or synchronize with deletion.
 
 The authoritative Codex task prompt is `AUTOMATED_RUN_TASK.md`; the in-run procedure is
 `src/WEEKLY_RUN.md`. The actual scheduler record is separate and must be freshly inspected.
-Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for the weekly coordinator and every
-weekly research or review subagent. Do not silently substitute another model or effort.
-Confirm the scheduled task's actual model setting before activating weekly execution.
+Owner direction, 2026-11-03: use GPT-6 Astra with Max reasoning (`gpt-6-astra`, `max`)
+for the immediate catch-up coordinator and every catch-up researcher/reviewer through the
+2026-11-01 interval. Scheduled weekly coordinators and research/review subagents use GPT-6
+Astra with High reasoning (`gpt-6-astra`, `high`). Verify actual session settings before
+execution and the scheduler's execution context before activation; prompt text alone is
+not model verification. Do not silently substitute another model or effort.
+The existing Codex schedule dispatches Sunday 09:00 America/Chicago. A heartbeat inherits
+its target chat's execution settings; verify those settings on every scheduled run.
 Sunday 07:00 **America/Chicago** is the due boundary, including DST. A daily status check
 permits catch-up without daily research. The oldest uncovered Sunday is processed first.
 A dispatch timestamp, a written draft, a preview, or a successful push does not advance
@@ -82,6 +87,11 @@ main commit; no circular commit hash is written into tracked files.
 public bytes and the exact staged candidate before advancing coverage. Archived PDFs are
 integrity-checked locally and excluded from live publication receipts. Failures retain evidence.
 The script never treats deployment success as permission to overwrite the repository.
+
+For the owner-authorized 2026-11-03 maintenance work, use the existing Python/Node checks
+and exact-main Vercel wrapper, without Docker or GitHub Actions. The owner approved reviewed
+PR merges for this update despite the repository's unprotected main; do not alter branch
+protections. This exception does not waive independent review, preservation, or live proof.
 
 ## 5. Research, learning and presentation
 
@@ -110,6 +120,14 @@ Preserve all past mapping and the current solid/dotted-line methodology. Do not 
 review flags, badges, side notes, edit earmarks or "not verified" labels to the map, or sweep
 such annotations through the report. Keep research review in the existing workflow.
 No source credential, private retrieval log or runtime lock may enter the public source export.
+
+The 2026-11-03 catch-up and ongoing weekly maintenance preserve the existing typography,
+colors, navigation, responsive behavior, presentation code, and map layout algorithms.
+Source-reviewed map additions are permitted; existing nodes, edges, labels, and grades
+remain protected. Compare desktop/mobile rendering and map interactions before release:
+data additions can move elements even when layout code is unchanged. Do not redesign the
+map to make an addition fit. Distinguish each retrospective interval's evidence cutoff from
+the actual research/publication date; never imply a late brief was published on its cutoff.
 
 The following historical evidence rules and correction descriptions are retained for
 continuity. They describe the existing corpus; they do not establish that an assertion was

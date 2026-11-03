@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-11-03",
   "categories": [
     {
       "id": "financial-history",
@@ -1503,6 +1503,91 @@
       "publishedAt": "2026-08-14",
       "accessedAt": "2026-09-23",
       "locator": "Control 2026-Charter-344521; footnote 2 confirms indirect common owners and USD1 link"
+    },
+    {
+      "id": "ca1-postal-stay-denial-20260910",
+      "title": "First Circuit order denying stays of postal-rule preliminary injunctions",
+      "url": "https://www.supremecourt.gov/DocketPDF/26/26A305/423849/20260910172543171_20260910%20Final%20Letter%20of%20COA1%20Stay%20Denied.pdf",
+      "publisher": "U.S. Court of Appeals for the First Circuit, filed as Supreme Court exhibit",
+      "originId": "us-first-circuit",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "publishedAt": "2026-09-10",
+      "locator": "Exhibit 1; appeals 26-2029/2030/2031/2032; order pages 4-8; footnote 4"
+    },
+    {
+      "id": "usps-stay-reply-20260910",
+      "title": "USPS reply supporting Supreme Court stay application",
+      "url": "https://www.supremecourt.gov/DocketPDF/26/26A305/423751/20260910115455143_USPS%20Mail-Ballot%20Rule%20PI%20Stay%20Reply%20Final.pdf",
+      "publisher": "U.S. Department of Justice / Supreme Court filing",
+      "originId": "us-doj-postal-litigation",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "publishedAt": "2026-09-10",
+      "locator": "No.26A305; printed pages 1-4 and 16-20; government litigation position"
+    },
+    {
+      "id": "sec-aifc-submissions-retrieved-20261103",
+      "title": "SEC submissions history for AI Financial Corp, CIK 0000862861",
+      "url": "https://data.sec.gov/submissions/CIK0000862861.json",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "originId": "us-sec-edgar",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Native feed retrieved November 3; 899 filing rows; searched September 6-13 inclusive"
+    },
+    {
+      "id": "sec-aifc-efts-september6-13-2026",
+      "title": "SEC full-text search for CIK 0000862861, September 6-13, 2026",
+      "url": "https://efts.sec.gov/LATEST/search-index?dateRange=custom&startdt=2026-09-06&enddt=2026-09-13&ciks=0000862861",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "originId": "us-sec-edgar",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Exact CIK; inclusive filing-date envelope; zero hits, exact total, no timeout or failed shards"
+    },
+    {
+      "id": "aifc-minimum-bid-notice-20260702",
+      "title": "AI Financial Corporation July 2 Form 8-K, Item 3.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/862861/000149315226031925/form8-k.htm",
+      "publisher": "AI Financial Corporation / SEC filing",
+      "originId": "alt5-sec-filings",
+      "sourceType": "corporate_filing",
+      "accessedAt": "2026-11-03",
+      "publishedAt": "2026-07-02",
+      "locator": "July 1 notice; December 28 compliance deadline; no immediate listing effect; reverse split only possible"
+    },
+    {
+      "id": "sachsen-anhalt-preliminary-announcement-20260907",
+      "title": "Sachsen-Anhalt preliminary state-election result announcement",
+      "url": "https://wahlen.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/MI/wahlen/Pressemitteilungen/Bekanntgabe_des_vorl%C3%A4ufigen_Wahlergebnisses.pdf",
+      "publisher": "Landeswahlleiterin Sachsen-Anhalt",
+      "originId": "sachsen-anhalt-election-office",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "publishedAt": "2026-09-07",
+      "locator": "Press release 24/2026; one page; announcement contains no party totals"
+    },
+    {
+      "id": "centcom-tankers-20260908",
+      "title": "CENTCOM account of September 8 tanker strikes",
+      "url": "https://www.dvidshub.net/news/574128/us-destroys-5-irgc-tankers-after-iran-targets-another-american-warship",
+      "publisher": "U.S. Central Command Public Affairs via DVIDS",
+      "originId": "us-centcom",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "publishedAt": "2026-09-08",
+      "locator": "DVIDS story 574128; five named vessels; command statement, not independent damage proof"
+    },
+    {
+      "id": "senate-rollcalls-119-2-retrieved-20261103",
+      "title": "Senate roll-call votes, 119th Congress second session",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm",
+      "publisher": "United States Senate",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Retrieved November 3; sequence from August 8 vote 231 to September 14 vote 232; no intervening roll call"
     }
   ],
   "claims": [
@@ -2545,6 +2630,136 @@
       "reviewedAt": "2026-09-23",
       "recordType": "Regulatory charter decision",
       "status": "documented"
+    },
+    {
+      "id": "postal-ca1-stay-denial-20260910",
+      "text": "The First Circuit denied motions to stay the postal-rule preliminary injunctions on September 10.",
+      "context": "Emergency stay posture, not final merits judgment. Likelihood analysis confined to Elections Clause; additional statutory theories undecided. Footnote 4 preserves voluntary compliance and implementation for elections after November 2026.",
+      "sourceIds": [
+        "ca1-postal-stay-denial-20260910"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-10",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Appellate emergency order",
+      "status": "documented"
+    },
+    {
+      "id": "postal-scotus-posture-20260913",
+      "text": "The inspected Supreme Court docket records September 9 responses and September 10 reply filings, with no Supreme Court stay through September 13 at 07:00 CT.",
+      "context": "Retrospective bounded docket status; the later September 14 disposition is excluded from this interval. No inference about nationwide postal compliance.",
+      "sourceIds": [
+        "scotus-usps-stay-docket-26a305",
+        "ca1-postal-stay-denial-20260910"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-13",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Dated court docket sequence",
+      "status": "documented"
+    },
+    {
+      "id": "postal-government-defense-20260910",
+      "text": "The government defended the ballot-mail rule as ordinary postal regulation of envelopes and addressee information, denying displacement of state voter-eligibility law.",
+      "context": "A filed litigation position, not verification of fraud, operational readiness or successful implementation; the First Circuit rejected its showing for emergency stay relief.",
+      "sourceIds": [
+        "usps-stay-reply-20260910"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-10",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Government litigation filing",
+      "status": "documented"
+    },
+    {
+      "id": "missouri-stay-denial-20260908",
+      "text": "Justice Kavanaugh denied Missouri Secretary of State Denny Hoskins stay application in 26A304 on September 8.",
+      "context": "Docket denial gives no reasons. It does not establish a Supreme Court merits affirmance or actual ballot certification, printing or distribution.",
+      "sourceIds": [
+        "scotus-missouri-stay-docket-26a304"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-08",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Supreme Court docket order",
+      "status": "documented"
+    },
+    {
+      "id": "aifc-filing-search-september6-13-2026",
+      "text": "Two native SEC searches returned no filings for CIK 0000862861 dated September 6 through September 13, 2026 inclusive.",
+      "context": "Retrieved November 3. Feed contained 899 rows with latest August 17; EFTS returned exact zero without timeout or failed shards. Same SEC origin, not independent witnesses; no inference of no transactions or Nasdaq communication.",
+      "sourceIds": [
+        "sec-aifc-submissions-retrieved-20261103",
+        "sec-aifc-efts-september6-13-2026"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "eventDate": "2026-09-13",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Bounded historical filing search",
+      "status": "documented"
+    },
+    {
+      "id": "sachsen-preliminary-result-announced-20260907",
+      "text": "Sachsen-Anhalt election officer announced availability of the preliminary state-election result on September 7.",
+      "context": "Press release 24/2026 says the result includes seats and names considered elected, but prints no party totals. Present-day portal values are not admitted as the historical preliminary dataset.",
+      "sourceIds": [
+        "sachsen-anhalt-preliminary-announcement-20260907"
+      ],
+      "topicIds": [
+        "germany-afd"
+      ],
+      "eventDate": "2026-09-07",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Official election announcement",
+      "status": "documented"
+    },
+    {
+      "id": "centcom-five-tankers-statement-20260908",
+      "text": "CENTCOM reported September 8 strikes on five named crude-oil carriers following attempted missile attacks on a U.S. Navy warship.",
+      "context": "The command said the warship evaded attacks, no American personnel were harmed and carrier crews were directed to abandon ship. This establishes its statement, not independent damage, ownership, crew safety, cumulative casualties or legal authority.",
+      "sourceIds": [
+        "centcom-tankers-20260908"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "eventDate": "2026-09-08",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Attributed military command account",
+      "status": "documented"
+    },
+    {
+      "id": "senate-rollcall-gap-september6-13-2026",
+      "text": "The official Senate roll-call list contains no vote in the September 6-13 reporting interval.",
+      "context": "The inspected sequence moves from August 8 to September 14. Recorded floor votes only; no inference about committee work, executive reports, existing authority or all congressional activity.",
+      "sourceIds": [
+        "senate-rollcalls-119-2-retrieved-20261103"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-13",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Bounded official vote-list search",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -3314,6 +3529,49 @@
         "corrections-provenance"
       ],
       "reason": "The August-only USPS Federal Register search missed the July 17 notice. Future system-of-record checks must search backward from the rule’s dependencies, then test legal effectiveness and actual operation separately."
+    },
+    {
+      "id": "sec-descriptive-user-agent-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "accept",
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "reason": "Native SEC endpoints returned 200 with descriptive User-Agent TheArchitectureResearch after default curl returned 403. Retain exact date/CIK query and response. Access failure is not absence; no unverified contact email is needed."
+    },
+    {
+      "id": "centcom-dvids-recovery-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "accept",
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "reason": "After CENTCOM direct website returned 403, the command own DVIDS story 574128 supplied the original dated statement. Preserve us-centcom origin; mirrors do not create independent origins."
+    },
+    {
+      "id": "historical-election-snapshot-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "germany-afd"
+      ],
+      "reason": "Reject current portal totals as proof of September 7 preliminary values without a dated snapshot. The original September 7 announcement contains no totals; retrieve its contemporary dataset."
+    },
+    {
+      "id": "stay-posture-boundaries-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "reason": "Original September 10 order supports denial of emergency stays, not a final merits ruling; preserve Elections Clause scope, voluntary compliance distinction and post-November boundary."
     }
   ],
   "topicProposals": [],
@@ -6234,6 +6492,507 @@
         "truth-api-pi-motion-20260831",
         "occ-world-liberty-common-owners-20260814"
       ]
+    },
+    {
+      "id": "weekly-backfill-20260913-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append bounded original-source findings for the September 13 retrospective interval, preserving historical prose, corrections and map records; retain superseded exporter observations before its authorized retirement.",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority",
+        "ownership-disclosures",
+        "digital-assets",
+        "germany-afd",
+        "iran-us-decisions",
+        "war-trade",
+        "corrections-provenance"
+      ],
+      "claimIds": [
+        "postal-ca1-stay-denial-20260910",
+        "postal-scotus-posture-20260913",
+        "postal-government-defense-20260910",
+        "missouri-stay-denial-20260908",
+        "aifc-filing-search-september6-13-2026",
+        "sachsen-preliminary-result-announced-20260907",
+        "centcom-five-tankers-statement-20260908",
+        "senate-rollcall-gap-september6-13-2026"
+      ],
+      "preservedMapObservations": {
+        "preservedAt": "2026-11-03",
+        "purpose": "Historical observations and provenance retained during removal of the superseded renderer. This is an exact record of the original transcription, not fresh verification or a change to the current map.",
+        "source": {
+          "path": "src/build_neural_map.py",
+          "checkoutCommit": "0c7a348e60869901066cff3dbdd38d34a17f8f3f",
+          "lastFileCommit": "d1731999056e0ac07c8d31475a7b96e20ab3b849",
+          "gitBlob": "fc6168ff37de717cdfd9c220821c353f135f4a00",
+          "sha256": "6a40403eca7da0335bb8e7b701056ef76baa26da00537f2a617857dc0415a3e1",
+          "bytes": 20729
+        },
+        "revisionState": {
+          "dataState": "2026-08-10",
+          "supersededAt": "2026-08-22",
+          "status": "superseded historical transcription",
+          "currentMapUnchanged": true
+        },
+        "originalProvenance": {
+          "header": "\nLEGACY — NOT THE BUILD STEP. Superseded 2026-08-22 by build_neural_map.js.\n\nThis file carries its own hardcoded node/edge tables (21 nodes, data state 2026-08-10).\nIt does NOT read map_source.json, and it does NOT write neural_svg.frag or\nneural_data.json — it emits a standalone HTML sheet to an absolute path that does not\nexist outside the machine it was written on. Running it will not update the site and\nwill leave the map silently stale.\n\nTo regenerate the map:  node src/build_neural_map.js\n\nKept only as the transcription of record for the original design tokens and the\ncanonical coordinates, which map_source.json inherited.\n\nTHE ARCHITECTURE — Neural Map renderer (original).\n\nRebuilt from the canonical DATA STATE recorded in Google Drive file\n1ivWJ7K_26TdoBF0FSXTANMpeXuj2vVge\n(\"network_map_2026-08-10_GENERATOR (build_map3.py - regenerates PNG+HTML exactly)\").\n\nNode coordinates, node subtitles, the full edge list with evidence grades and\nlabels, the footer text, and the colour/stroke design tokens are transcribed\nverbatim from that record. Node radii and the typeface were not present in the\nretrievable portion of that record and are reconstructed here.\n",
+          "driveFileId": "1ivWJ7K_26TdoBF0FSXTANMpeXuj2vVge",
+          "driveRecordTitle": "network_map_2026-08-10_GENERATOR (build_map3.py - regenerates PNG+HTML exactly)",
+          "nodeCoordinateAndSubtitleNote": "NODES - (x, y) and subtitle verbatim from the canonical record.",
+          "nodeRadiusNote": "radius reconstructed: tiered by structural role.",
+          "edgeNote": "EDGES - (source, target, grade, label) verbatim from the canonical record",
+          "windowNote": "Nodes new or updated in this window - drawn with a highlight ring"
+        },
+        "observations": {
+          "BG": "#141210",
+          "INK": "#e9e3d6",
+          "SOFT": "#b9b0a0",
+          "FAINT": "#8a8172",
+          "AMBER": "#d98a2b",
+          "AMBER_HI": "#e9a94e",
+          "RED": "#c0562f",
+          "RULE": "#3a352d",
+          "RULE_2": "#2a2620",
+          "CURRENT_THROUGH": "2026-08-10",
+          "NODES": {
+            "TRUMP": [
+              850,
+              790,
+              84,
+              "THE PRINCIPAL",
+              ""
+            ],
+            "WLF": [
+              545,
+              505,
+              60,
+              "WLF",
+              "family crypto · $1.4B+ 2025 income"
+            ],
+            "SONS": [
+              1170,
+              505,
+              60,
+              "SONS",
+              "1789 · ABTC · 9 new Form D vehicles (Jun)"
+            ],
+            "KUSHNER": [
+              395,
+              720,
+              56,
+              "KUSHNER",
+              "envoy · $4.8B Gulf money"
+            ],
+            "WITKOFF": [
+              505,
+              985,
+              56,
+              "WITKOFF",
+              "envoy father · WLF sons · $130M"
+            ],
+            "UAE": [
+              255,
+              360,
+              48,
+              "UAE",
+              "49% WLF pre-inauguration · chips"
+            ],
+            "SAUDI": [
+              150,
+              590,
+              48,
+              "SAUDI",
+              "Affinity base · 123 nuclear approved"
+            ],
+            "QATAR": [
+              205,
+              880,
+              48,
+              "QATAR",
+              "$400M jet · $5.5B golf"
+            ],
+            "PAKISTAN": [
+              330,
+              1135,
+              48,
+              "PAKISTAN",
+              "WLF deal Jan 2026 · war mediator"
+            ],
+            "ZHAO": [
+              640,
+              265,
+              48,
+              "ZHAO",
+              "$2B in USD1 → pardon"
+            ],
+            "POLY": [
+              1030,
+              250,
+              48,
+              "POLYMARKET",
+              "98% win rate · unidentified"
+            ],
+            "VAULT": [
+              1330,
+              275,
+              54,
+              "PROJECT VAULT",
+              "demand floor · shielded reserve · DPA 101"
+            ],
+            "PENTAGON": [
+              1490,
+              480,
+              52,
+              "PENTAGON",
+              "11/15 defense startups = 1789"
+            ],
+            "DOJ": [
+              1435,
+              700,
+              54,
+              "DOJ",
+              "BLANCHE AG · confirmed 50–49 · Comey/James dismissed"
+            ],
+            "PULTE": [
+              1400,
+              945,
+              50,
+              "PULTE",
+              "FHFA · referrals stand · DNI stint → Clayton 51–47"
+            ],
+            "ICE": [
+              1185,
+              1120,
+              50,
+              "ICE",
+              "$45B · no-bid · Palantir layer"
+            ],
+            "SCOTUS": [
+              925,
+              1210,
+              52,
+              "SCOTUS",
+              "obeyed twice · Callais gutted VRA"
+            ],
+            "IRAN": [
+              655,
+              1205,
+              52,
+              "IRAN",
+              "Senate check collapsed 47–49 · 49–50"
+            ],
+            "VZ": [
+              860,
+              300,
+              48,
+              "VENEZUELA",
+              "US-controlled revenue"
+            ],
+            "RUSSIA": [
+              355,
+              245,
+              48,
+              "RUSSIA",
+              "plan co-drafted · sanctions passed 86–11"
+            ],
+            "P2025": [
+              1085,
+              905,
+              50,
+              "PROJECT 2025",
+              "53% executed · Vought"
+            ]
+          },
+          "NEW_NODES": [
+            "VAULT"
+          ],
+          "UPDATED_NODES": [
+            "DOJ",
+            "IRAN",
+            "PULTE",
+            "RUSSIA"
+          ],
+          "EDGES": [
+            [
+              "TRUMP",
+              "WLF",
+              "A",
+              "75% of coin revenue"
+            ],
+            [
+              "UAE",
+              "WLF",
+              "A",
+              "$2B MGX in USD1"
+            ],
+            [
+              "UAE",
+              "WLF",
+              "B",
+              "49%/$500M secret"
+            ],
+            [
+              "SAUDI",
+              "KUSHNER",
+              "A",
+              "fund base + leverage"
+            ],
+            [
+              "SAUDI",
+              "KUSHNER",
+              "O",
+              "123 ↔ Affinity adjacency"
+            ],
+            [
+              "TRUMP",
+              "SAUDI",
+              "A",
+              "123 pact · PD 2026-18"
+            ],
+            [
+              "KUSHNER",
+              "IRAN",
+              "A",
+              "US negotiator"
+            ],
+            [
+              "WITKOFF",
+              "WLF",
+              "A",
+              "co-founders"
+            ],
+            [
+              "WITKOFF",
+              "RUSSIA",
+              "A",
+              "28-pt co-draft"
+            ],
+            [
+              "WITKOFF",
+              "RUSSIA",
+              "C",
+              "coached Ushakov"
+            ],
+            [
+              "PAKISTAN",
+              "WLF",
+              "A",
+              "Jan 2026 deal"
+            ],
+            [
+              "PAKISTAN",
+              "IRAN",
+              "O",
+              "mediator adjacency"
+            ],
+            [
+              "QATAR",
+              "TRUMP",
+              "A",
+              "jet → library 2029"
+            ],
+            [
+              "ZHAO",
+              "WLF",
+              "A",
+              "boosted"
+            ],
+            [
+              "TRUMP",
+              "ZHAO",
+              "A",
+              "pardon Oct 23"
+            ],
+            [
+              "ZHAO",
+              "TRUMP",
+              "C",
+              "quid pro quo (denied)"
+            ],
+            [
+              "POLY",
+              "IRAN",
+              "A",
+              "$1M pre-strike bets"
+            ],
+            [
+              "POLY",
+              "TRUMP",
+              "O",
+              "holders unknown"
+            ],
+            [
+              "SONS",
+              "PENTAGON",
+              "A",
+              "defense portfolio"
+            ],
+            [
+              "TRUMP",
+              "PENTAGON",
+              "A",
+              "$1.5T request"
+            ],
+            [
+              "TRUMP",
+              "VAULT",
+              "A",
+              "EO 14415 + DPA 101"
+            ],
+            [
+              "SONS",
+              "VAULT",
+              "O",
+              "no position located · tickers: EMAT / REEMF"
+            ],
+            [
+              "TRUMP",
+              "DOJ",
+              "A",
+              "directed cases"
+            ],
+            [
+              "DOJ",
+              "SCOTUS",
+              "A",
+              "dismissals upheld*"
+            ],
+            [
+              "TRUMP",
+              "PULTE",
+              "A",
+              "acting-DNI stint → superseded"
+            ],
+            [
+              "PULTE",
+              "DOJ",
+              "A",
+              "referrals: Schiff/James/Cook"
+            ],
+            [
+              "TRUMP",
+              "ICE",
+              "A",
+              "$45B build-out"
+            ],
+            [
+              "ICE",
+              "SONS",
+              "O",
+              "patronage adjacency"
+            ],
+            [
+              "TRUMP",
+              "IRAN",
+              "A",
+              "war past Congress"
+            ],
+            [
+              "TRUMP",
+              "VZ",
+              "A",
+              "Maduro seized · oil"
+            ],
+            [
+              "P2025",
+              "TRUMP",
+              "A",
+              "blueprint 53%"
+            ],
+            [
+              "SCOTUS",
+              "TRUMP",
+              "A",
+              "checked: tariffs/birthright"
+            ],
+            [
+              "TRUMP",
+              "SONS",
+              "A",
+              "family"
+            ],
+            [
+              "TRUMP",
+              "KUSHNER",
+              "A",
+              "family envoy"
+            ],
+            [
+              "TRUMP",
+              "WITKOFF",
+              "A",
+              "friend envoy"
+            ]
+          ],
+          "FOOTER_NOTE": "* “dismissals upheld” reflects district rulings; DOJ appeals pending. A propagandist draws the dotted edges solid. An investigator marks them dotted — and names who could make them solid.",
+          "FOOTER_UNDRAWN": "UN-DRAWN BY DESIGN: wallet identities, WLFI stake buyers, any envoy market position, any family/1789 position in EMAT or REEMF. Identification would reprice the entire map.",
+          "FOOTER_LEDGER": "SINCE 2026-07-19 (Briefs 1–2, all primary-record): Senate war check collapsed (47–49 · 49–50) · Blanche confirmed AG 50–49 · Clayton confirmed DNI 51–47 · Saudi 123 approved · EO 14415 / Project Vault + DPA 101 (tickers now on the dotted edge) · federal photo-ID mandate blocked 52–46 · Russia sanctions 86–11 · no shutdown this cycle (CR 90–6).",
+          "GRADE": {
+            "A": {
+              "stroke": "#d98a2b",
+              "width": 3.0,
+              "dash": null,
+              "label": "documented"
+            },
+            "B": {
+              "stroke": "#8a8172",
+              "width": 2.2,
+              "dash": null,
+              "label": "reported"
+            },
+            "C": {
+              "stroke": "#c0562f",
+              "width": 2.0,
+              "dash": "9,7",
+              "label": "alleged / denied"
+            },
+            "O": {
+              "stroke": "#8a8172",
+              "width": 2.0,
+              "dash": "2,7",
+              "label": "adjacency"
+            }
+          }
+        },
+        "recordShape": {
+          "NODES": [
+            "x",
+            "y",
+            "r",
+            "name",
+            "sub"
+          ],
+          "EDGES": [
+            "source",
+            "target",
+            "grade",
+            "label"
+          ],
+          "NEW_NODES": "set, retained as sorted array",
+          "UPDATED_NODES": "set, retained as sorted array"
+        },
+        "staticPageContext": {
+          "title": "THE ARCHITECTURE",
+          "deck": "The neural map — power, money, and ideology in the second Trump era. Every solid edge resolves to a primary record. Every dotted edge is an adjacency that the record has not yet closed.",
+          "cadence": "Updated weekly",
+          "researchSeriesSince": "spring 2026",
+          "firstCompiled": "2026-07-19",
+          "attribution": "Kirk Musick, MS, MBA · ZINC Digital",
+          "reconstructedTypeface": [
+            "Georgia",
+            "Times New Roman",
+            "DejaVu Serif",
+            "serif"
+          ]
+        },
+        "reconciliation": {
+          "originalNodes": 21,
+          "originalEdges": 35,
+          "retainedNodes": 21,
+          "retainedEdges": 35,
+          "edgeOrderAndDuplicatesPreserved": true
+        }
+      }
     }
   ],
   "networkPaths": [

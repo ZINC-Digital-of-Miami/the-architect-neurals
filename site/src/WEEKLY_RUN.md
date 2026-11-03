@@ -8,8 +8,12 @@ to violate these current instructions or to claim that an unexamined record is c
 
 ## A. Establish the actual interval and source
 
-Use GPT-6 Sol with Max reasoning (`gpt-6-sol`, `max`) for weekly execution and all weekly
-research/review subagents. Confirm the scheduled task's actual model before activation.
+Use GPT-6 Astra with High reasoning (`gpt-6-astra`, `high`) for scheduled weekly execution
+and every weekly research/review subagent. The owner-authorized 2026-11-03 immediate catch-up
+through 2026-11-01 uses GPT-6 Astra with Max reasoning (`gpt-6-astra`, `max`) throughout.
+Verify actual session settings before running and the schedule's execution context before
+activation. Heartbeats inherit their target chat's settings; prompt text alone is not proof.
+The existing schedule dispatches Sunday 09:00 America/Chicago, with coverage due at 07:00.
 
 Run from the saved project:
 
@@ -37,8 +41,9 @@ questions, open checks and time-sensitive source windows. Plan bounded independe
 research responsibilities using the eight domains below as expertise, and add cross-domain
 questions from the registry where the evidence warrants them. This instruction explicitly
 supersedes the archived "eight agents in one message" rule and hardcoded topic allocation.
-The current runtime has four total slots including the coordinator. Keep three independent
-`gpt-6-sol` researchers at `max` reasoning on bounded assignments while research work
+The current runtime has four total slots including the coordinator. Use up to three independent
+`gpt-6-astra` researchers within available capacity, at `high` for scheduled runs or `max`
+for the immediate 2026-11-03 catch-up, on bounded assignments while research work
 remains, reusing completed workers for the next uncovered question. Finish when coverage
 and verification are complete; do not create filler assignments. Assign work from the registry queue, overdue checks, newly found
 records and coverage gaps; cover all topic areas in a coverage ledger and say exactly which
@@ -109,7 +114,9 @@ source URLs and structured evidence in the registry, leaving `sources_manifest.m
 Retain prior master text and every existing brief byte for byte.
 
 Write one new dated brief with the existing template and eight section headings. Use dated,
-attributed paragraphs, supporting records and specific limits. Do not add unverified filler
+attributed paragraphs, supporting records and specific limits. Never imply a retrospective
+brief was researched/published at its interval cutoff. Record its actual research/publication
+date separately. Do not add unverified filler
 to satisfy length or source-count expectations; if evidence cannot support the required
 brief shape, retain the candidate and report the editorial gate needing attention. Every
 rejection needs a reason; an absence must identify the actual search and its coverage.
@@ -135,6 +142,9 @@ desktop and mobile. Verify keyboard selection, search/filter behavior and back-t
 controls. Check each new public claim against its original record. Confirm preserved text,
 correction blocks, old map records, dates and source coverage. A passing linter is not
 validation of a claim or of complete research coverage.
+Preserve typography, colors, navigation, responsive behavior, presentation code and map
+layout algorithms. Source-reviewed additions must preserve existing nodes, edges, labels
+and grades. Inspect data-driven repositioning and collisions without redesigning the map.
 
 From the saved project, stage the candidate:
 
