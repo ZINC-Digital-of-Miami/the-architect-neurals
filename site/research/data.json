@@ -2362,6 +2362,103 @@
       "accessedAt": "2026-11-03",
       "locator": "ECF 45; identical PDF under two differently labeled links",
       "publishedAt": "2026-10-22"
+    },
+    {
+      "id": "nov01-tmtg-s4a",
+      "title": "TMTG: October 29 registration-statement amendment",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926033844/djt20261026_s4a.htm",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "originId": "Trump Media & Technology Group Corp.",
+      "sourceType": "corporate_filing",
+      "accessedAt": "2026-11-03",
+      "locator": "Cover; printed pages 129 and 150–151, footnote 9",
+      "publishedAt": "2026-10-29"
+    },
+    {
+      "id": "nov01-phang-appellate",
+      "title": "Phang: appellate stay denial",
+      "url": "https://media.cadc.uscourts.gov/orders/docs/2026/10/26-5299LDSN2.pdf",
+      "publisher": "U.S. Court of Appeals for the District of Columbia Circuit",
+      "originId": "U.S. Court of Appeals for the District of Columbia Circuit",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "No. 26-5299, consolidated with 26-5334; complete two-page order",
+      "publishedAt": "2026-10-28"
+    },
+    {
+      "id": "nov01-nashville-order",
+      "title": "Nashville: district court denies stay",
+      "url": "https://www.brennancenter.org/media/16440/download/049-order-denying-motion-for-stay.pdf",
+      "publisher": "Brennan Center for Justice; original district court order",
+      "originId": "U.S. District Court for the District of Columbia",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 49; nine pages; actual PDF identity differs from tracker label",
+      "publishedAt": "2026-10-26"
+    },
+    {
+      "id": "nov01-nashville-motion",
+      "title": "Nashville: government appellate stay motion",
+      "url": "https://www.brennancenter.org/media/16441/download/d.c-cir-stay-motion.pdf",
+      "publisher": "Brennan Center for Justice; original appellate filing",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "D.C. Circuit No. 26-5368, document 2200353; introduction and argument",
+      "publishedAt": "2026-10-26"
+    },
+    {
+      "id": "nov01-ff1",
+      "title": "OFAC General License FF-1: bank wind-down extension",
+      "url": "https://ofac.treasury.gov/media/937311/download?inline=",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Complete license, paragraphs (a)–(c)",
+      "publishedAt": "2026-10-29"
+    },
+    {
+      "id": "nov01-extreme-release",
+      "title": "OFAC: Extreme Networks enforcement release",
+      "url": "https://ofac.treasury.gov/media/937281/download?inline=",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Five-page release; historical conduct and aggravating and mitigating factors",
+      "publishedAt": "2026-10-27"
+    },
+    {
+      "id": "nov01-extreme-agreement",
+      "title": "OFAC and Extreme Networks: settlement agreement",
+      "url": "https://ofac.treasury.gov/media/937286/download?inline=",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control and Extreme Networks, Inc.",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Part IV and signature pages; company signed October 21, OFAC October 22; publicly released October 27",
+      "publishedAt": "2026-10-27"
+    },
+    {
+      "id": "nov01-nashville-tracker",
+      "title": "Brennan Center: Nashville tracker link identities rechecked",
+      "url": "https://www.brennancenter.org/our-work/court-cases/nashville-v-dhs",
+      "publisher": "Brennan Center for Justice",
+      "originId": "Brennan Center for Justice, counsel for plaintiffs",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-03",
+      "locator": "October 26 links are reversed relative to actual PDF captions"
+    },
+    {
+      "id": "nov01-uscis-current-route",
+      "title": "USCIS policy updates: current notice with unresolved posting date",
+      "url": "https://www.uscis.gov/policy-manual/updates",
+      "publisher": "U.S. Citizenship and Immigration Services",
+      "originId": "U.S. Citizenship and Immigration Services",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "November 3 retrieval; court-stay notice under older entry is not dated implementation proof"
     }
   ],
   "claims": [
@@ -4272,6 +4369,90 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original record or attributed party position",
       "status": "documented"
+    },
+    {
+      "id": "nov01-tmtg-structure",
+      "text": "The amendment discloses distinct trust benefit and decision rights alongside transaction and financing risks.",
+      "context": "Historical measurement dates remain attached.",
+      "sourceIds": [
+        "nov01-tmtg-s4a"
+      ],
+      "topicIds": [
+        "trump-later-financing",
+        "ownership-disclosures",
+        "technology-infrastructure"
+      ],
+      "eventDate": "2026-10-29",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "nov01-phang-stay",
+      "text": "The D.C. Circuit denied the stay while leaving merits and disputed disclosures unresolved.",
+      "context": "Preparatory review is distinct from completed publication.",
+      "sourceIds": [
+        "nov01-phang-appellate"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "civil-society"
+      ],
+      "eventDate": "2026-10-28",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "nov01-nashville-dispute",
+      "text": "The district court denied a stay; the government sought appellate relief under its competing authority theory.",
+      "context": "Court conclusions and party arguments are separately attributed.",
+      "sourceIds": [
+        "nov01-nashville-order",
+        "nov01-nashville-motion"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "us-midterms"
+      ],
+      "eventDate": "2026-10-26",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "nov01-license-replacement",
+      "text": "OFAC expressly replaced FF with FF-1 for the named bank.",
+      "context": "The amended permission preserves blocked-payment and other limits.",
+      "sourceIds": [
+        "nov01-ff1"
+      ],
+      "topicIds": [
+        "war-trade",
+        "iran-us-decisions"
+      ],
+      "eventDate": "2026-10-29",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "nov01-extreme-resolution",
+      "text": "OFAC resolved potential civil liability for historical conduct with credited payment obligations and continuing terms.",
+      "context": "Resolution date differs from transaction period; settlement is not a payment receipt.",
+      "sourceIds": [
+        "nov01-extreme-release",
+        "nov01-extreme-agreement"
+      ],
+      "topicIds": [
+        "war-trade",
+        "ownership-disclosures",
+        "technology-infrastructure"
+      ],
+      "eventDate": "2026-10-27",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -5715,6 +5896,52 @@
         "corrections-provenance"
       ],
       "reason": "Distinguish the October 19 House printing record from October 16 presidential action and November 3 retrieval. No precise historical web availability or economic outcome inferred."
+    },
+    {
+      "id": "nov01-swapped-labels-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "reject",
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "reason": "October 26 Nashville links reverse the order and motion labels. Actual PDF captions and content establish each identity; labels are not authoritative."
+    },
+    {
+      "id": "nov01-uscis-date-gap-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "enforcement-surveillance",
+        "corrections-provenance"
+      ],
+      "reason": "Current USCIS notice lacks independently verified posting date. It cannot establish the promised October 28 update by the November 1 cutoff."
+    },
+    {
+      "id": "nov01-native-sec-web-route-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "accept",
+      "topicIds": [
+        "ownership-disclosures",
+        "corrections-provenance"
+      ],
+      "reason": "Native SEC feed identified accession; original filing succeeded through web extraction after native filing route403. Neither route failure nor sparse recent feed establishes company inactivity."
+    },
+    {
+      "id": "nov01-specific-comparisons-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "executive-authority",
+        "ownership-disclosures",
+        "war-trade",
+        "corrections-provenance"
+      ],
+      "reason": "Replace abstract methodological passages with dated interview/disclosure, district/appellate and original/amended-license comparisons. Preserve denials, favorable board position and unresolved implementation; no causal map relationship added."
     }
   ],
   "topicProposals": [],
@@ -9286,6 +9513,28 @@
         "oct25-presidential-certifications",
         "oct25-distinct-licenses"
       ]
+    },
+    {
+      "id": "weekly-backfill-20261101-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append November 1 retrospective ownership, court and sanctions findings with original dates, competing positions and unresolved operational evidence.",
+      "topicIds": [
+        "civil-society",
+        "executive-authority",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "technology-infrastructure",
+        "trump-later-financing",
+        "us-midterms",
+        "war-trade"
+      ],
+      "claimIds": [
+        "nov01-tmtg-structure",
+        "nov01-phang-stay",
+        "nov01-nashville-dispute",
+        "nov01-license-replacement",
+        "nov01-extreme-resolution"
+      ]
     }
   ],
   "networkPaths": [
@@ -9529,6 +9778,18 @@
         "The node — where the architectures touch"
       ],
       "href": "/#u-week-2026-10-25"
+    },
+    {
+      "id": "u-week-2026-11-01",
+      "title": "Week ending November 1 — retrospective addition, compiled November 3",
+      "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
+      "href": "/#u-week-2026-11-01"
     },
     {
       "id": "u-corrections",
@@ -11297,6 +11558,78 @@
       "href": "/#b-4-new-this-edition"
     },
     {
+      "id": "brief-2026-11-01-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-the-lede"
+    },
+    {
+      "id": "brief-2026-11-01-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-11-01-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-11-01-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-11-01-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-11-01-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-11-01-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-11-01-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-01",
+      "parents": [],
+      "href": "/#brief-2026-11-01-next-week-s-priorities"
+    },
+    {
       "id": "brief-2026-10-25-the-lede",
       "title": "The lede",
       "level": 2,
@@ -12089,7 +12422,7 @@
       "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
-  "reportCurrentThrough": "2026-10-25",
+  "reportCurrentThrough": "2026-11-01",
   "briefs": [
     {
       "date": "2026-08-16",
@@ -12134,6 +12467,10 @@
     {
       "date": "2026-10-25",
       "url": "/briefs/2026-10-25.html"
+    },
+    {
+      "date": "2026-11-01",
+      "url": "/briefs/2026-11-01.html"
     }
   ]
 }
