@@ -2,16 +2,16 @@
  "site": "https://the-architecture-neurals.vercel.app",
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
- "current_through": "2026-10-18",
+ "current_through": "2026-10-25",
  "master_edition": "2026-08-22",
  "counts": {
   "agents": 8,
-  "briefs": 10,
+  "briefs": 11,
   "corrections": 20,
   "clocks": 12,
   "map_nodes": 63,
   "map_edges": 97,
-  "index_bytes": 847302
+  "index_bytes": 869067
  },
  "files": [
   {
@@ -125,6 +125,11 @@
    "sha256": "ed41b4156bcfa967569990a36e97fa568493b905c70f6379dfddf477bea85216"
   },
   {
+   "path": "briefs/2026-10-25.html",
+   "bytes": 20530,
+   "sha256": "32b4616d01b8902fff6a5be7d64f39e87c4c965a0a8262b138c55dbdbddaac06"
+  },
+  {
    "path": "briefs/_TEMPLATE.html",
    "bytes": 5788,
    "sha256": "91e3ef93168f086467f74d1fc3c1b8ccce6e6dd4b2621ee8fba1e45c05456d1e"
@@ -211,8 +216,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 338463,
-   "sha256": "4906a4a44607246d29a8648cc40af728e876d78d06556ef9d769ea25558f4a82"
+   "bytes": 349035,
+   "sha256": "aa2e7001cbd193616d980a87491427f4898f67938326ae22617f39ab7c217923"
   },
   {
    "path": "research_registry.py",
@@ -236,8 +241,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 54595,
-   "sha256": "bfa5f79af4acd5c41914333aeb29a300cd216db444cef71a025fba9437f82b9c"
+   "bytes": 55461,
+   "sha256": "ee4a6c4aef9fe1b48702645a937e197ecc2bfe83cba5d06b231aa363c175ca06"
   }
  ]
 }
