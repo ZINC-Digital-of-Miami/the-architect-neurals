@@ -1665,6 +1665,149 @@
       "publishedAt": "2026-09-16",
       "accessedAt": "2026-11-03",
       "locator": "ECF42 pp2-3 and8; answerSeptember24, certified listOctober1, record productionOctober15"
+    },
+    {
+      "id": "phang-sept27-order49",
+      "title": "Phang: September 21 order on partial stay (ECF 49)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.49.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-21",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-answer50",
+      "title": "Phang: government answer filed September 24 (ECF 50)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.50.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-appeal44",
+      "title": "Phang: September 17 notice of appeal (ECF 44)",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.44.0_1.pdf",
+      "publisher": "U.S. District Court for the District of Columbia",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-17",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-ca-order",
+      "title": "Phang appeals: September 23 briefing order",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208891196.0.pdf",
+      "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+      "originId": "dc-circuit-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-23",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-ca-stay-motion",
+      "title": "Phang appeals: September 22 motion for stay and expedition",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208890917.0.pdf",
+      "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+      "originId": "dc-circuit-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-22",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-ca-opposition",
+      "title": "Phang appeals: September 25 opposition and motion to dismiss",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208892248.0.pdf",
+      "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+      "originId": "dc-circuit-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-25",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "phang-sept27-ca-consolidation",
+      "title": "Phang appeals: September 21 consolidation order",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208890202.0.pdf",
+      "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+      "originId": "dc-circuit-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-21",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; exact document locator retained in claim"
+    },
+    {
+      "id": "senate-iran-vote-20260924",
+      "title": "Senate roll call 244: H.Con.Res.89 adoption vote, September 24",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00244.htm",
+      "publisher": "United States Senate / Government Publishing Office",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-24",
+      "accessedAt": "2026-11-03",
+      "locator": "Vote summary and alphabetical roll"
+    },
+    {
+      "id": "hconres89-text",
+      "title": "H.Con.Res.89: text referred to the Senate",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hconres89rfs/pdf/BILLS-119hconres89rfs.pdf",
+      "publisher": "United States Senate / Government Publishing Office",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-07-23",
+      "accessedAt": "2026-11-03",
+      "locator": "Three-page referred-in-Senate text"
+    },
+    {
+      "id": "senate-calendar-20260923",
+      "title": "Senate legislative calendar, September 23",
+      "url": "https://www.govinfo.gov/content/pkg/CCAL-119scal-2026-09-23/html/CCAL-119scal-2026-09-23-pt0.htm",
+      "publisher": "United States Senate / Government Publishing Office",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-23",
+      "accessedAt": "2026-11-03",
+      "locator": "Unanimous consent agreement 3"
+    },
+    {
+      "id": "berlin-prelim-announcement-20260921",
+      "title": "Berlin election: September 21 preliminary-result announcement",
+      "url": "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1716422.php",
+      "publisher": "Berlin state election officer",
+      "originId": "berlin-election-office",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-21",
+      "accessedAt": "2026-11-03",
+      "locator": "Publication date and announcement text"
+    },
+    {
+      "id": "berlin-prelim-result-20260921",
+      "title": "Berlin election: September 21 preliminary second-vote results",
+      "url": "https://www.berlin.de/wahlen/pressemitteilungen/2026/20260921_vorlaeufiges-ergebnis-festgestellt.pdf",
+      "publisher": "Berlin state election officer",
+      "originId": "berlin-election-office",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-21",
+      "accessedAt": "2026-11-03",
+      "locator": "Single-page preliminary second-vote table"
+    },
+    {
+      "id": "banking-prediction-markets-letter-20260923",
+      "title": "Banking Democrats request public prediction-market hearing",
+      "url": "https://www.banking.senate.gov/imo/media/doc/2026.09.23%20Letter%20to%20Chair%20Scott%20re%20Prediction%20Market%20Roundtable.pdf",
+      "publisher": "Democratic members of Senate Banking Committee",
+      "originId": "senate-banking-democrats",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-23",
+      "accessedAt": "2026-11-03",
+      "locator": "Three-page signed letter; request and cited-report distinctions"
     }
   ],
   "claims": [
@@ -2937,6 +3080,157 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original court scheduling order",
       "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p1",
+      "text": "On September 21, ECF 49 denied the partial-stay motion for failure to confer and separately temporarily paused the foreign-language review and notice requirement.",
+      "context": "Only that obligation was temporarily stayed. A joint notice is due within three days after appellate resolution, not three days after September 21. See ECF 49, pages 4-5.",
+      "sourceIds": [
+        "phang-sept27-order49"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p2",
+      "text": "The September 17 notice appealed ECF 43; on September 21 the circuit consolidated appeals 26-5334 and 26-5299.",
+      "context": "The notice is prior-window context. Consolidation does not resolve appealability or merits. See ECF 44 and appellate document 2194153.",
+      "sourceIds": [
+        "phang-sept27-appeal44",
+        "phang-sept27-ca-consolidation"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p3",
+      "text": "On September 22 the government sought a stay and expedition concerning the foreign-language provisions of the June and September orders.",
+      "context": "Arguments about standing, a private cause of action, harm and relief remain party positions. See appellate document 2194494, opening pages.",
+      "sourceIds": [
+        "phang-sept27-ca-stay-motion"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-22",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p4",
+      "text": "The September 23 circuit order required a response by September 25 at 10:59 p.m. CT and any reply by September 29 at 3 p.m. CT.",
+      "context": "A briefing schedule is not a stay disposition; September 29 is outside this interval. See appellate document 2194635.",
+      "sourceIds": [
+        "phang-sept27-ca-order"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-23",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p5",
+      "text": "The government filed its answer on September 24, denying statutory noncompliance and referring to ex parte, in-camera productions.",
+      "context": "The answer establishes a filing, not timely delivery of every ordered item or public release. See ECF 50, paragraphs 8 and 28.",
+      "sourceIds": [
+        "phang-sept27-answer50"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-24",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "phang-sept27-p6",
+      "text": "On September 25 Phang opposed a stay and sought dismissal of appeal 26-5334, disputing appealability and the government theories.",
+      "context": "This is a litigant filing, not an order dismissing the appeal. See appellate document 2195149, opening argument and conclusion.",
+      "sourceIds": [
+        "phang-sept27-ca-opposition"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-25",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court filing or order; procedural status precisely scoped",
+      "status": "documented"
+    },
+    {
+      "id": "senate-hconres89-rejected-20260924",
+      "text": "On September 24 the Senate rejected H.Con.Res.89 on adoption: 49 yeas, 50 nays and one senator not voting.",
+      "context": "Vote 244 was not a discharge or cloture vote, or a new force authorization. Collins, Murkowski, Paul and Tillis voted yea; Fetterman voted nay; Alsobrooks did not vote.",
+      "sourceIds": [
+        "senate-iran-vote-20260924",
+        "hconres89-text",
+        "senate-calendar-20260923"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-24",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record with bounded attribution",
+      "status": "documented"
+    },
+    {
+      "id": "berlin-preliminary-secondvotes-20260921",
+      "text": "Berlin’s preliminary result records 296,601 AfD second votes, or 16.3 percent of 1,824,514 valid second votes; turnout was 74.2 percent.",
+      "context": "Announced September 21 at 02:14 in Berlin, equivalent to September 20 at 7:14 p.m. CT. Later final totals are excluded; no coalition, seat-allocation or conduct inference is made.",
+      "sourceIds": [
+        "berlin-prelim-announcement-20260921",
+        "berlin-prelim-result-20260921"
+      ],
+      "topicIds": [
+        "germany-afd",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record with bounded attribution",
+      "status": "documented"
+    },
+    {
+      "id": "banking-public-hearing-request-20260923",
+      "text": "Eleven Banking Democrats requested a public prediction-market hearing with all members able to participate.",
+      "context": "Reports of planned Republican-only roundtable are cited allegations, not proof meeting occurred; letter is not an SEC classification or independently verified market measurement.",
+      "sourceIds": [
+        "banking-prediction-markets-letter-20260923"
+      ],
+      "topicIds": [
+        "digital-assets",
+        "ownership-disclosures",
+        "pay-to-play-corruption",
+        "information-media"
+      ],
+      "eventDate": "2026-09-23",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official record with bounded attribution",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -3771,6 +4065,29 @@
         "digital-assets"
       ],
       "reason": "Read original orders and filings; retain allegation, requested relief, in-camera review and forfeiture-execution boundaries. No postcutoff event imported."
+    },
+    {
+      "id": "sept27-version-boundary-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "germany-afd",
+        "digital-assets",
+        "corrections-provenance"
+      ],
+      "reason": "Use dated Berlin preliminary PDF; later final counts and rolling SEC FAQ revisions cannot be backdated. Original web extraction succeeded where native Senate curl 403 receipts did not contain source content."
+    },
+    {
+      "id": "sept27-phang-compliance-boundary-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "reason": "ECF 49 denies partial stay but separately pauses foreign-language duty; Answer 50 proves pleading filed, not every in-camera submission delivered. Joint notice clock requires appellate disposition."
     }
   ],
   "topicProposals": [],
@@ -7216,6 +7533,33 @@
         "iran-usdt-forfeiture-allegations-20260914",
         "trumpjr-repayment-counterposition-20260918",
         "phang-answer-record-deadlines-20260916"
+      ]
+    },
+    {
+      "id": "weekly-backfill-20260927-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append bounded September27 retrospective findings from original Phang filings, Senate vote, Banking letter and Berlin preliminary result; recheck existing Curtis request without importing later outcomes or modifying historical records.",
+      "topicIds": [
+        "corrections-provenance",
+        "digital-assets",
+        "executive-authority",
+        "germany-afd",
+        "information-media",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "pay-to-play-corruption",
+        "war-trade"
+      ],
+      "claimIds": [
+        "phang-sept27-p1",
+        "phang-sept27-p2",
+        "phang-sept27-p3",
+        "phang-sept27-p4",
+        "phang-sept27-p5",
+        "phang-sept27-p6",
+        "senate-hconres89-rejected-20260924",
+        "berlin-preliminary-secondvotes-20260921",
+        "banking-public-hearing-request-20260923"
       ]
     }
   ],
