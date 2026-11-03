@@ -1588,6 +1588,83 @@
       "sourceType": "official_record",
       "accessedAt": "2026-11-03",
       "locator": "Retrieved November 3; sequence from August 8 vote 231 to September 14 vote 232; no intervening roll call"
+    },
+    {
+      "id": "scotus-postal-stay-order-20260914",
+      "title": "Supreme Court postal stay denial and separate opinions",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/26a305_4g15.pdf",
+      "publisher": "Supreme Court of the United States",
+      "originId": "scotus-docket",
+      "sourceType": "court",
+      "publishedAt": "2026-09-14",
+      "accessedAt": "2026-11-03",
+      "locator": "26A305; nine-page order, concurrence and dissent"
+    },
+    {
+      "id": "phang-compliance-order-20260916",
+      "title": "Phang compliance order ECF43",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_26-cv-01417/pdf/USCOURTS-dcd-1_26-cv-01417-2.pdf",
+      "publisher": "United States District Court for the District of Columbia",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-16",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF43 pp12-20; in-camera review, foreign-language review, Section2(c)(2) scope"
+    },
+    {
+      "id": "abc-fcc-reply-20260917",
+      "title": "ABC Disney opposition to dismissal and reply supporting preliminary relief",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.295648/gov.uscourts.dcd.295648.43.0.pdf",
+      "publisher": "ABC and Disney plaintiffs",
+      "originId": "d-dc-abc-fcc",
+      "sourceType": "court",
+      "publishedAt": "2026-09-17",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF43; original filed PDF on RECAP mirror"
+    },
+    {
+      "id": "sdny-iran-usdt-complaint-20260914",
+      "title": "Verified complaint seeking forfeiture of USDT in ten addresses",
+      "url": "https://www.justice.gov/usao-sdny/media/1461216/dl",
+      "publisher": "United States Attorney Southern District of New York",
+      "originId": "us-doj-sdny",
+      "sourceType": "court",
+      "publishedAt": "2026-09-14",
+      "accessedAt": "2026-11-03",
+      "locator": "1:26-cv-08010 ECF1; pp1-5, paragraphs1-4 and footnote1"
+    },
+    {
+      "id": "sdny-iran-forfeiture-announcement-20260914",
+      "title": "DOJ announcement of approximately61million dollar forfeiture complaint",
+      "url": "https://www.justice.gov/usao-sdny/pr/us-attorney-seeks-forfeiture-61-million-cryptocurrency-iranian-militarys-black-market",
+      "publisher": "United States Attorney Southern District of New York",
+      "originId": "us-doj-sdny",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-14",
+      "accessedAt": "2026-11-03",
+      "locator": "Release26-258; allegations and explicit judgment limitation"
+    },
+    {
+      "id": "ap-trumpjr-repayment-statement-20260918",
+      "title": "AP report of presidential repayment statement",
+      "url": "https://www.seattlepi.com/news/politics/trump-says-his-son-s-wedding-party-being-a22438984",
+      "publisher": "Associated Press via SeattlePI",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "publishedAt": "2026-09-18",
+      "accessedAt": "2026-11-03",
+      "locator": "Will Weissert; qualified presidential statement, not transfer records"
+    },
+    {
+      "id": "phang-answer-record-order-20260916",
+      "title": "Phang ECF42 answer and administrative-record order",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_26-cv-01417/pdf/USCOURTS-dcd-1_26-cv-01417-1.pdf",
+      "publisher": "United States District Court for the District of Columbia",
+      "originId": "d-dc-phang",
+      "sourceType": "court",
+      "publishedAt": "2026-09-16",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF42 pp2-3 and8; answerSeptember24, certified listOctober1, record productionOctober15"
     }
   ],
   "claims": [
@@ -2760,6 +2837,106 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Bounded official vote-list search",
       "status": "documented"
+    },
+    {
+      "id": "postal-scotus-stay-denied-20260914",
+      "text": "The Supreme Court denied the postal-rule stay application; Kavanaugh concurred on2026 implementation timing and Alito, joined byThomas, dissented.",
+      "context": "Emergency relief only; separate opinions do not settle final statutory legality or actual compliance.",
+      "sourceIds": [
+        "scotus-postal-stay-order-20260914"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-14",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Retrospective original-source review",
+      "status": "documented"
+    },
+    {
+      "id": "phang-compliance-limits-20260916",
+      "text": "ECF43 requires FBI notes and victim-name supporting material for in-camera review September24, and initiation of foreign-language review with notice bySeptember24.",
+      "context": "Not public unsealing or contempt; Section2(c)(2) show-cause discharged on scope of original motion, substantive Section3-report sufficiency left open.",
+      "sourceIds": [
+        "phang-compliance-order-20260916"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-16",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Retrospective original-source review",
+      "status": "documented"
+    },
+    {
+      "id": "abc-fcc-plaintiff-reply-20260917",
+      "text": "ABC/Disney filed opposition to dismissal and reply supporting preliminary relief, alleging retaliatory early renewals.",
+      "context": "Plaintiff position only; FCC disputes causation, jurisdiction and irreparable harm. Complete docket not verified.",
+      "sourceIds": [
+        "abc-fcc-reply-20260917",
+        "fcc-abc-opposition-20260903"
+      ],
+      "topicIds": [
+        "information-media",
+        "executive-authority",
+        "civil-society"
+      ],
+      "eventDate": "2026-09-17",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Retrospective original-source review",
+      "status": "documented"
+    },
+    {
+      "id": "iran-usdt-forfeiture-allegations-20260914",
+      "text": "DOJ announced an approximately61million dollar civil forfeiture complaint targeting USDT in ten addresses allegedly linked to Iranian oil proceeds.",
+      "context": "Complaint allegations not judgment; prospective custody mechanism not completed execution. USDT is distinct from USD1; no family connection established.",
+      "sourceIds": [
+        "sdny-iran-usdt-complaint-20260914",
+        "sdny-iran-forfeiture-announcement-20260914"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade",
+        "digital-assets"
+      ],
+      "eventDate": "2026-09-14",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Retrospective original-source review",
+      "status": "documented"
+    },
+    {
+      "id": "trumpjr-repayment-counterposition-20260918",
+      "text": "AP reported President Trump said he understood his son had repaid or was repaying Kremlev.",
+      "context": "Attributed qualified statement, not independent proof of a transfer, amount, date or recipient.",
+      "sourceIds": [
+        "ap-trumpjr-repayment-statement-20260918"
+      ],
+      "topicIds": [
+        "trump-later-financing",
+        "pay-to-play-corruption"
+      ],
+      "eventDate": "2026-09-18",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Attributed reported counterposition",
+      "status": "lead"
+    },
+    {
+      "id": "phang-answer-record-deadlines-20260916",
+      "text": "ECF42 grants the motion to compel an answer and denies a stay; answer dueSeptember24, certified administrative-record listOctober1, production to plaintiffOctober15.",
+      "context": "Prospective deadlines ordered September16; no later compliance imported. Separate from ECF43 in-camera and foreign-language requirements.",
+      "sourceIds": [
+        "phang-answer-record-order-20260916"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-16",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original court scheduling order",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -3572,6 +3749,28 @@
         "executive-authority"
       ],
       "reason": "Original September 10 order supports denial of emergency stays, not a final merits ruling; preserve Elections Clause scope, voluntary compliance distinction and post-November boundary."
+    },
+    {
+      "id": "sept20-ice-route-gap-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "reject",
+      "topicIds": [
+        "enforcement-surveillance"
+      ],
+      "reason": "ICE detention-management web route403 is access failure, not verified absence or permission to refresh historical totals."
+    },
+    {
+      "id": "sept20-procedural-limits-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "executive-authority",
+        "information-media",
+        "digital-assets"
+      ],
+      "reason": "Read original orders and filings; retain allegation, requested relief, in-camera review and forfeiture-execution boundaries. No postcutoff event imported."
     }
   ],
   "topicProposals": [],
@@ -6993,6 +7192,31 @@
           "edgeOrderAndDuplicatesPreserved": true
         }
       }
+    },
+    {
+      "id": "weekly-backfill-20260920-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Retrospective September20 original-source update; append court decisions, new filings and attributed counterposition without changing historical records or map. Existing September14Garcia and September17TruthAPI records freshly checked, not newly dated events.",
+      "topicIds": [
+        "civil-society",
+        "corrections-provenance",
+        "digital-assets",
+        "executive-authority",
+        "information-media",
+        "iran-us-decisions",
+        "pay-to-play-corruption",
+        "trump-later-financing",
+        "us-midterms",
+        "war-trade"
+      ],
+      "claimIds": [
+        "postal-scotus-stay-denied-20260914",
+        "phang-compliance-limits-20260916",
+        "abc-fcc-plaintiff-reply-20260917",
+        "iran-usdt-forfeiture-allegations-20260914",
+        "trumpjr-repayment-counterposition-20260918",
+        "phang-answer-record-deadlines-20260916"
+      ]
     }
   ],
   "networkPaths": [
