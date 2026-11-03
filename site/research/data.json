@@ -1808,6 +1808,146 @@
       "publishedAt": "2026-09-23",
       "accessedAt": "2026-11-03",
       "locator": "Three-page signed letter; request and cited-report distinctions"
+    },
+    {
+      "id": "newsom-ab1539-signed-20260930",
+      "title": "Governor Newsom legislative update, September 30, 2026",
+      "url": "https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/",
+      "publisher": "Office of the Governor of California",
+      "originId": "california-governor",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Signed-bills list, AB1539 entry",
+      "publishedAt": "2026-09-30"
+    },
+    {
+      "id": "camp-east-montana-transaction-search-20261103",
+      "title": "USAspending transaction records for Camp East Montana contract",
+      "url": "https://api.usaspending.gov/api/v2/transactions/",
+      "publisher": "U.S. Department of the Treasury, USAspending",
+      "originId": "us-treasury-usaspending",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "POST parameters: award_id 355995518, page 1, limit 100, sort action_date, order desc; all three rows returned, hasNext false."
+    },
+    {
+      "id": "camp-east-montana-current-award-20261103",
+      "title": "Current USAspending award record for Camp East Montana",
+      "url": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_70CDCR26C00000016_7012_-NONE-_-NONE-/",
+      "publisher": "U.S. Department of the Treasury, USAspending",
+      "originId": "us-treasury-usaspending",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Award 355995518; current record last modified October 29."
+    },
+    {
+      "id": "senate-sres852-discharge-20260929",
+      "title": "Senate vote 252 on discharging S.Res.852",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00252.htm",
+      "publisher": "United States Senate",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Vote252 summary and roll",
+      "publishedAt": "2026-09-29"
+    },
+    {
+      "id": "sres852-introduced-text",
+      "title": "S.Res.852 as introduced, request for information on Israel human rights",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119sres852is/html/BILLS-119sres852is.htm",
+      "publisher": "United States Congress, Government Publishing Office",
+      "originId": "us-congress",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Section1 request and elements; context text forSeptember29dischargevote",
+      "publishedAt": "2026-09-14"
+    },
+    {
+      "id": "hr9340-house-text",
+      "title": "Ratepayer Protection Act, H.R.9340, House-engrossed text",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+      "publisher": "United States Congress, Government Publishing Office",
+      "originId": "us-congress",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Section2 proposedPURPAstandard,100MWdefinition,consideration deadlines/exceptions",
+      "publishedAt": "2026-09-16"
+    },
+    {
+      "id": "senate-hr9340-cloture-20260930",
+      "title": "Senate vote 254 on cloture to proceed to H.R.9340",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm",
+      "publisher": "United States Senate",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-30",
+      "accessedAt": "2026-11-03",
+      "locator": "Vote summary; direct original recovered by independent reviewer"
+    },
+    {
+      "id": "senate-hr7008-cloture-20260930",
+      "title": "Senate vote 253 on cloture to proceed to H.R.7008",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00253.htm",
+      "publisher": "United States Senate",
+      "originId": "us-senate-119th-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-30",
+      "accessedAt": "2026-11-03",
+      "locator": "Vote question, three-fifths requirement and result"
+    },
+    {
+      "id": "hr7008-senate-calendar-text",
+      "title": "H.R.7008 Senate-calendar text: stock restrictions and voter identification",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr7008pcs/html/BILLS-119hr7008pcs.htm",
+      "publisher": "U.S. Government Publishing Office",
+      "originId": "us-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-08-06",
+      "accessedAt": "2026-11-03",
+      "locator": "Calendar 548; Section 2 financial restrictions and Section 3 voter identification"
+    },
+    {
+      "id": "phang-oct04-record-postponement",
+      "title": "Government motion to postpone the Phang administrative-record deadlines",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.51.0.pdf",
+      "publisher": "U.S. Department of Justice, filed in the Phang litigation",
+      "originId": "us-doj-phang-litigation",
+      "sourceType": "court",
+      "publishedAt": "2026-10-01",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; document and page identified in associated claim"
+    },
+    {
+      "id": "phang-oct04-judgment-motion",
+      "title": "Government motion for judgment on the pleadings in Phang",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.52.0.pdf",
+      "publisher": "U.S. Department of Justice, filed in the Phang litigation",
+      "originId": "us-doj-phang-litigation",
+      "sourceType": "court",
+      "publishedAt": "2026-10-01",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; document and page identified in associated claim"
+    },
+    {
+      "id": "phang-oct04-appellate-reply",
+      "title": "Government reply supporting a stay in the Phang appeals",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208892754.0.pdf",
+      "publisher": "U.S. Department of Justice, filed in the Phang litigation",
+      "originId": "us-doj-phang-litigation",
+      "sourceType": "court",
+      "publishedAt": "2026-09-29",
+      "accessedAt": "2026-11-03",
+      "locator": "Original filed PDF on CourtListener RECAP; document and page identified in associated claim"
+    },
+    {
+      "id": "rebidradar-camp-east-montana-retrieved-20261103",
+      "title": "RebidRadar current listing for Camp East Montana contract",
+      "url": "https://rebidradar.com/contract/70CDCR26C00000016",
+      "publisher": "RebidRadar",
+      "originId": "rebidradar",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-03",
+      "locator": "Current third-party contract listing; October 29 modification and November 30 end date. Rejected as evidence of duration at the October 4 cutoff."
     }
   ],
   "claims": [
@@ -3231,6 +3371,156 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original official record with bounded attribution",
       "status": "documented"
+    },
+    {
+      "id": "phang-oct04-o1",
+      "text": "The Government filed its reply supporting a stay pending appeal and opposing Phang’s dismissal motion. It argues EFTA enforcement belongs to congressional oversight rather than this private APA action, disputes standing, asserts irreversible harm from review/production, and seeks stays of the June 25 and September 16 orders.",
+      "context": "Party arguments, not a stay disposition. Filed date is verified from original footer; the prior deadline was 3 p.m. CT September 29. No conclusion about filing time or appellate outcome is inferred. Locator: Document 2195401; cover, printed pages 1-5, 23-25",
+      "sourceIds": [
+        "phang-oct04-appellate-reply"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-09-29",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original litigant filing; requested relief distinguished from a ruling",
+      "status": "documented"
+    },
+    {
+      "id": "phang-oct04-o2",
+      "text": "The Government requested postponement of the October 1 certified administrative-record list deadline and later record production until resolution of its contemporaneous Rule 12(c) motion. It argues the case presents legal issues and counsel knows of no administrative-record material not already public.",
+      "context": "This document is a motion, not the certified list or a granted extension. Counsel’s knowledge-qualified assertion does not establish completeness of the public record. Locator: ECF 51, all five pages, especially pages 1-4",
+      "sourceIds": [
+        "phang-oct04-record-postponement"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-10-01",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original litigant filing; requested relief distinguished from a ruling",
+      "status": "documented"
+    },
+    {
+      "id": "phang-oct04-o3",
+      "text": "The same filing records Phang’s opposition: the certified contents are required with a dispositive motion, and a Rule 12(c) motion supplies no basis to delay either the list or record.",
+      "context": "Phang’s position is reproduced in the Government filing; it is not a ruling. Her later brief was not imported into this interval. Locator: ECF 51, page 4 certificate of compliance",
+      "sourceIds": [
+        "phang-oct04-record-postponement"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-10-01",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original litigant filing; requested relief distinguished from a ruling",
+      "status": "documented"
+    },
+    {
+      "id": "phang-oct04-o4",
+      "text": "The Government filed a Rule 12(c) motion for judgment on the pleadings. Page 2 is explicitly a proposed order, with blank judicial date/signature lines.",
+      "context": "Do not report judgment granted. Supporting memorandum was not substantively inspected in this pass. Locator: ECF 52, pages 1-3",
+      "sourceIds": [
+        "phang-oct04-judgment-motion"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "eventDate": "2026-10-01",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original litigant filing; requested relief distinguished from a ruling",
+      "status": "documented"
+    },
+    {
+      "id": "ab1539-signing-20260930",
+      "text": "Governor Newsom’s September 30 announcement lists AB1539 among the bills he signed.",
+      "context": "Signing established; current chapter text, commencement and implementation were not established through the blocked legislative routes.",
+      "sourceIds": [
+        "newsom-ab1539-signed-20260930"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-30",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official action or native transaction record",
+      "status": "documented"
+    },
+    {
+      "id": "camp-east-montana-funding-20260928",
+      "text": "USAspending records a September 28 funding-only action, P00001, obligating $204,700,000 on contract 70CDCR26C00000016.",
+      "context": "The base and September action sum to $657,555,435.04. Obligation is not outlay or capacity. Retrieved November 3; historical performance terms and contemporaneous publication are not established.",
+      "sourceIds": [
+        "camp-east-montana-transaction-search-20261103",
+        "camp-east-montana-current-award-20261103"
+      ],
+      "topicIds": [
+        "enforcement-surveillance",
+        "ownership-disclosures"
+      ],
+      "eventDate": "2026-09-28",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official action or native transaction record",
+      "status": "documented"
+    },
+    {
+      "id": "hr7008-cloture-rejected-20260930",
+      "text": "The Senate rejected cloture on proceeding to H.R.7008, 53–47; the package combined limited congressional-family stock restrictions and voter-photo-ID provisions.",
+      "context": "Procedural failure, not final passage. The text permits existing holdings and contains exceptions; its covered-person definition does not include the President or Vice President.",
+      "sourceIds": [
+        "senate-hr7008-cloture-20260930",
+        "hr7008-senate-calendar-text"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "pay-to-play-corruption",
+        "us-midterms"
+      ],
+      "eventDate": "2026-09-30",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official action or native transaction record",
+      "status": "documented"
+    },
+    {
+      "id": "hr9340-cloture-rejected-20260930",
+      "text": "The Senate rejected cloture on proceeding to H.R.9340, 57–43, concerning a proposed standard for recovering upgrade costs from qualifying large computing loads.",
+      "context": "Proposed cost recovery, financial assurances and regulatory consideration are not enacted requirements or verified project expenditures.",
+      "sourceIds": [
+        "senate-hr9340-cloture-20260930",
+        "hr9340-house-text"
+      ],
+      "topicIds": [
+        "technology-infrastructure",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-30",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official action or native transaction record",
+      "status": "documented"
+    },
+    {
+      "id": "sres852-discharge-rejected-20260929",
+      "text": "The Senate rejected discharge of S.Res.852, 47–51 with two not voting, concerning an information request about Israel’s human-rights practices.",
+      "context": "A discharge vote is not a direct arms-cutoff decision. The proposed thirty-day report period depends on adoption, not this failed vote.",
+      "sourceIds": [
+        "senate-sres852-discharge-20260929",
+        "sres852-introduced-text"
+      ],
+      "topicIds": [
+        "war-trade",
+        "civil-society",
+        "executive-authority"
+      ],
+      "eventDate": "2026-09-29",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original official action or native transaction record",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -4574,6 +4864,29 @@
         "corrections-provenance"
       ],
       "reason": "ECF 49 denies partial stay but separately pauses foreign-language duty; Answer 50 proves pleading filed, not every in-camera submission delivered. Joint notice clock requires appellate disposition."
+    },
+    {
+      "id": "oct04-record-grain-and-version-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "enforcement-surveillance",
+        "technology-infrastructure",
+        "corrections-provenance"
+      ],
+      "reason": "Separate a dated obligation from current performance dates, a proposed standard from expenditure, and a motion from an order. Native Treasury records succeeded through normal-TLS curl after Python certificate failure; no unavailable source was treated as absent."
+    },
+    {
+      "id": "oct04-current-contract-listing-rejected-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "enforcement-surveillance",
+        "corrections-provenance"
+      ],
+      "reason": "RebidRadar current contract listing cannot establish historical duration at the October 4 cutoff. Its October 29 modification and November 30 end date are later-state values, not independent evidence of the September funding action terms."
     }
   ],
   "topicProposals": [],
@@ -8047,6 +8360,33 @@
         "berlin-preliminary-secondvotes-20260921",
         "banking-public-hearing-request-20260923"
       ]
+    },
+    {
+      "id": "weekly-backfill-20261004-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append October 4 retrospective findings on detention funding, California signing, three Senate procedural votes and Phang filings; preserve historical records and unresolved source gaps.",
+      "topicIds": [
+        "civil-society",
+        "corrections-provenance",
+        "enforcement-surveillance",
+        "executive-authority",
+        "ownership-disclosures",
+        "pay-to-play-corruption",
+        "technology-infrastructure",
+        "us-midterms",
+        "war-trade"
+      ],
+      "claimIds": [
+        "phang-oct04-o1",
+        "phang-oct04-o2",
+        "phang-oct04-o3",
+        "phang-oct04-o4",
+        "ab1539-signing-20260930",
+        "camp-east-montana-funding-20260928",
+        "hr7008-cloture-rejected-20260930",
+        "hr9340-cloture-rejected-20260930",
+        "sres852-discharge-rejected-20260929"
+      ]
     }
   ],
   "networkPaths": [
@@ -8242,6 +8582,18 @@
         "The node — where the architectures touch"
       ],
       "href": "/#u-week-2026-09-27"
+    },
+    {
+      "id": "u-week-2026-10-04",
+      "title": "Week ending October 4 — funding recorded, signing confirmed",
+      "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
+      "href": "/#u-week-2026-10-04"
     },
     {
       "id": "u-corrections",
@@ -10010,6 +10362,78 @@
       "href": "/#b-4-new-this-edition"
     },
     {
+      "id": "brief-2026-10-04-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-the-lede"
+    },
+    {
+      "id": "brief-2026-10-04-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-10-04-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-10-04-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-10-04-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-10-04-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-10-04-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-10-04-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-10-04",
+      "parents": [],
+      "href": "/#brief-2026-10-04-next-week-s-priorities"
+    },
+    {
       "id": "brief-2026-09-27-the-lede",
       "title": "The lede",
       "level": 2,
@@ -10514,7 +10938,7 @@
       "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
-  "reportCurrentThrough": "2026-09-27",
+  "reportCurrentThrough": "2026-10-04",
   "briefs": [
     {
       "date": "2026-08-16",
@@ -10543,6 +10967,10 @@
     {
       "date": "2026-09-27",
       "url": "/briefs/2026-09-27.html"
+    },
+    {
+      "date": "2026-10-04",
+      "url": "/briefs/2026-10-04.html"
     }
   ]
 }
