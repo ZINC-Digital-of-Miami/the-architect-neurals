@@ -64,6 +64,9 @@ for the immediate catch-up coordinator and every catch-up researcher/reviewer th
 Astra with High reasoning (`gpt-6-astra`, `high`). Verify actual session settings before
 execution and the scheduler's execution context before activation; prompt text alone is
 not model verification. Do not silently substitute another model or effort.
+The owner subsequently directed the remaining 2026-11-03 investigation and integration
+to continue on GPT-6 Sol (`gpt-6-sol`); this supersedes Astra for that continuation.
+Verify actual execution metadata; retain the separately approved Astra High weekly setting.
 The existing Codex schedule dispatches Sunday 09:00 America/Chicago. A heartbeat inherits
 its target chat's execution settings; verify those settings on every scheduled run.
 Sunday 07:00 **America/Chicago** is the due boundary, including DST. A daily status check
@@ -95,11 +98,31 @@ protections. This exception does not waive independent review, preservation, or 
 
 ## 5. Research, learning and presentation
 
+Owner correction, 2026-11-03: maintenance must actively investigate relationships, not
+stop at docket summaries or a list of new records. Follow substantive leads through
+transactions, ownership and decision rights, contracts, intermediaries, lobbying and
+campaign-finance disclosures, official actions, and counterevidence. Pursue the next
+original record that can establish or disprove each connection. A documented payment,
+governance role, representation, advocacy statement or clemency grant can support its own
+reviewed edge; an alleged illicit causal exchange is a separate claim with its own evidence
+burden. Keep requested, promised, planned, executed and reported actions distinct. Design
+preservation permits source-reviewed additions and does not justify omitting eligible
+connections. Retain specific unresolved leads and rejected matches. An unchanged map is
+not evidence that no new connections exist, and generic prose is not investigative depth.
+
 Topics/categories, not hardcoded menu lists, drive discovery and the map. Registry helpers
 may suggest topic membership from explicit retrieval feedback and propose new questions.
 They never autonomously change historical prose, erase evidence, promote grades, or turn
 co-occurrence into a causal link. Validate transitions against the original registry and
 require an evidence review before accepting claims or publishing new relationships.
+Reuse retained source evidence before making new requests. Once a source route is known
+to be inaccessible, record the failure and move to an accessible original record, official
+mirror, filing, transcript or independently sourced alternative. Do not repeatedly retry
+the same blocked route without evidence that access changed. Follow FRED/ALFRED source
+and release links to the original government datasets and agency releases; use accessible
+alternative records where they support the specific claim. Preserve observation dates,
+release dates and vintage limits separately.
+
 Each weekly cycle should use reviewed findings, rejected matches and failed source routes
 to refine the next questions and search routes. Trace proposed cross-document and historical
 connections through dated, independently checked evidence and counterevidence; the existing

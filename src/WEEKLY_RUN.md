@@ -13,6 +13,9 @@ and every weekly research/review subagent. The owner-authorized 2026-11-03 immed
 through 2026-11-01 uses GPT-6 Astra with Max reasoning (`gpt-6-astra`, `max`) throughout.
 Verify actual session settings before running and the schedule's execution context before
 activation. Heartbeats inherit their target chat's settings; prompt text alone is not proof.
+The owner subsequently directed the remaining 2026-11-03 investigation and integration
+to continue on GPT-6 Sol (`gpt-6-sol`); this supersedes Astra for that continuation.
+Verify actual execution metadata; retain the separately approved Astra High weekly setting.
 The existing schedule dispatches Sunday 09:00 America/Chicago, with coverage due at 07:00.
 
 Run from the saved project:
@@ -35,6 +38,24 @@ handoffs in that candidate. A private per-run preservation baseline includes eve
 brief/correction/map record, including publications newer than the migration baseline.
 
 ## B. Research from records and challenge conclusions
+
+Apply the owner's 2026-11-03 correction: pursue actual relationship discovery, not only
+record updates. Trace exact parties, money, ownership, decision rights, intermediaries and
+official actions through original records and counterevidence. Record the specific new
+edge supported, any existing edge it duplicates, and the next evidence needed where a
+connection remains unresolved. A documented transaction or role is distinct from an
+allegation of an illicit exchange. Review and admit supported additions while preserving
+historical graph records and the existing design; an unchanged map is not itself a
+successful relationship investigation. Do not invent connections or fill coverage with
+generic analysis.
+
+Reuse retained source evidence before making new requests. Once a source route is known
+to be inaccessible, record the failure and move to an accessible original record, official
+mirror, filing, transcript or independently sourced alternative. Do not repeatedly retry
+the same blocked route without evidence that access changed. Follow FRED/ALFRED source
+and release links to the original government datasets and agency releases; use accessible
+alternative records where they support the specific claim. Preserve observation dates,
+release dates and vintage limits separately.
 
 Run `python3 src/research_registry.py queue` in the candidate. Review all active topic
 questions, open checks and time-sensitive source windows. Plan bounded independent leaf
