@@ -2078,6 +2078,170 @@
       "sourceType": "reporting",
       "accessedAt": "2026-11-03",
       "locator": "October 8 aggregate of 55 designated parties; current page retrieved November 3, includes later events; rejected as independently reconciled total"
+    },
+    {
+      "id": "oct18-ofac-oct15",
+      "title": "OFAC: October 15 designation notice",
+      "url": "https://ofac.treasury.gov/recent-actions/20261015",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Entity additions; International Development Bank legal identifiers",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-treasury-oct15",
+      "title": "Treasury: Iran financial-network designation announcement",
+      "url": "https://home.treasury.gov/news/press-releases/sb0660/",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "U.S. Department of the Treasury",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Iraqi bank and offshore-bank sections; attributed agency allegations",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-gl-ff",
+      "title": "Iran General License FF: Iraq Development Bank wind-down",
+      "url": "https://ofac.treasury.gov/media/937246/download?inline=",
+      "publisher": "U.S. Treasury, Office of Foreign Assets Control",
+      "originId": "U.S. Treasury, Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Paragraphs (a) and (b)",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-fcc-brown",
+      "title": "FCC v. Brown: October 14 Supreme Court opinion",
+      "url": "https://www.supremecourt.gov/opinions/26pdf/26a476_k537.pdf",
+      "publisher": "Supreme Court of the United States",
+      "originId": "Supreme Court of the United States",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "Five-page stay opinion; timetable, scope and dissent notation",
+      "publishedAt": "2026-10-14"
+    },
+    {
+      "id": "oct18-ca-complaint",
+      "title": "United States v. California: complaint",
+      "url": "https://www.justice.gov/opa/media/1466286/dl?inline=",
+      "publisher": "U.S. District Court for the Central District of California; DOJ-hosted filing",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "Case 2:26-cv-12025, ECF 1, introduction and prayer",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-doj-release",
+      "title": "DOJ announcement of California voter-list suit",
+      "url": "https://www.justice.gov/opa/pr/justice-department-sues-state-california-over-voter-list",
+      "publisher": "U.S. Department of Justice",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "DHS statement describes preliminary, ongoing analysis",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-ca-response",
+      "title": "California Secretary of State response to DOJ demands",
+      "url": "https://admin.cdn.sos.ca.gov/pdf/other/casos-to-doj-101526.pdf",
+      "publisher": "California Secretary of State",
+      "originId": "California Secretary of State",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Three-page response; date supported by PR26-128",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-ca-response-date",
+      "title": "California PR26-128: publication of response to DOJ",
+      "url": "https://www.sos.ca.gov/administration/news-releases-and-advisories/2026-news-releases-and-advisories/california-secretary-state-shirley-n-weber-phd-shares-response-us-department-justice-demands",
+      "publisher": "California Secretary of State",
+      "originId": "California Secretary of State",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Publication date and linked original response",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-lwv-complaint",
+      "title": "League of Women Voters v. DHS: voter-data complaint",
+      "url": "https://epic.org/wp-content/uploads/2026/10/LWV-v.-DHS-voter-files-complaint-10.15.26.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; EPIC-hosted filing",
+      "originId": "League of Women Voters, EPIC and LULAC plaintiff coalition",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 1, paragraph 3 and prayer for relief",
+      "publishedAt": "2026-10-15"
+    },
+    {
+      "id": "oct18-eo14436",
+      "title": "Executive Order 14436: Graham Act implementation and waivers",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/10/implementing-the-lindsey-o-graham-sanctioning-russia-and-iran-act-of-2026/",
+      "publisher": "The White House",
+      "originId": "The White House",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Sections 2–5; October 16 publication",
+      "publishedAt": "2026-10-16"
+    },
+    {
+      "id": "oct18-graham-act",
+      "title": "Public Law 119-111: Graham Act",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ111/pdf/PLAW-119publ111.pdf",
+      "publisher": "U.S. Government Publishing Office",
+      "originId": "U.S. Government Publishing Office",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Sections 115 and 201; historical statutory context",
+      "publishedAt": "2026-09-18"
+    },
+    {
+      "id": "oct18-wrong-case",
+      "title": "Habeas Dockets: Garcia Torres v. Dedos",
+      "url": "https://habeasdockets.org/dockets/docket/87977/",
+      "publisher": "Habeas Dockets",
+      "originId": "Habeas Dockets",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-03",
+      "locator": "District of New Mexico; rejected match to a D.D.C. case number"
+    },
+    {
+      "id": "oct18-phang-58",
+      "title": "Phang: government reply on postponement",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.58.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 58; complete original PDF",
+      "publishedAt": "2026-10-13"
+    },
+    {
+      "id": "oct18-phang-58-1",
+      "title": "Phang: October 8 counsel correspondence filed October 13",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.58.1.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 58-1; complete original PDF",
+      "publishedAt": "2026-10-13"
+    },
+    {
+      "id": "oct18-phang-59",
+      "title": "Phang: government account of October 16 submission",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.59.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original filing via RECAP",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 59; complete original PDF",
+      "publishedAt": "2026-10-16"
     }
   ],
   "claims": [
@@ -3783,6 +3947,126 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original official record or attributed party filing",
       "status": "documented"
+    },
+    {
+      "id": "oct18-bank",
+      "text": "OFAC designated the identified Iraqi bank and issued a limited wind-down license.",
+      "context": "Agency allegations remain attributed; no family connection established.",
+      "sourceIds": [
+        "oct18-ofac-oct15",
+        "oct18-treasury-oct15",
+        "oct18-gl-ff"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "war-trade"
+      ],
+      "eventDate": "2026-10-15",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-phang-reply",
+      "text": "The government filed its postponement reply and counsel correspondence.",
+      "context": "Contested legal positions; no disposition inferred.",
+      "sourceIds": [
+        "oct18-phang-58",
+        "oct18-phang-58-1"
+      ],
+      "topicIds": [
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-13",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-phang-submission",
+      "text": "The government reported delivery of the specified note versions for in-camera review.",
+      "context": "Judicial adequacy and public release remain unresolved.",
+      "sourceIds": [
+        "oct18-phang-59"
+      ],
+      "topicIds": [
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-16",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-fcc-stay",
+      "text": "The Supreme Court stayed the FCC decision-timetable mandate.",
+      "context": "No final decision on lowest-unit-charge eligibility.",
+      "sourceIds": [
+        "oct18-fcc-brown"
+      ],
+      "topicIds": [
+        "information-media",
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-14",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-ca-dispute",
+      "text": "Federal officials sought ballot segregation; California challenged the evidence and demanded process.",
+      "context": "Competing assertions, not a verified unlawful-voting total.",
+      "sourceIds": [
+        "oct18-ca-complaint",
+        "oct18-doj-release",
+        "oct18-ca-response",
+        "oct18-ca-response-date"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-15",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-lwv-filing",
+      "text": "Three organizations challenged DHS voter-data collection and sought deletion and use restrictions.",
+      "context": "Complaint allegations and requested remedies, not judicial findings.",
+      "sourceIds": [
+        "oct18-lwv-complaint"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "civil-society",
+        "enforcement-surveillance"
+      ],
+      "eventDate": "2026-10-15",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct18-graham-waiver",
+      "text": "Executive Order 14436 implemented responsibilities while waiving specified Graham Act measures.",
+      "context": "Existing Russia executive-order sanctions and the statute’s Iran extension are distinct.",
+      "sourceIds": [
+        "oct18-eo14436",
+        "oct18-graham-act"
+      ],
+      "topicIds": [
+        "war-trade",
+        "iran-us-decisions",
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-16",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -4685,6 +4969,28 @@
         "technology-infrastructure"
       ],
       "reason": "Native Treasury transaction search succeeded after correcting the field name to Transaction Description. Retain exact request and response; zero-dollar modifications do not measure total spending."
+    },
+    {
+      "id": "oct18-wrong-case-rejection-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "information-media",
+        "corrections-provenance"
+      ],
+      "reason": "Identical numeric case suffix led to a different district and parties. Reject Habeas Dockets result as evidence about the D.D.C. Truth API case; that response inquiry remains unresolved."
+    },
+    {
+      "id": "oct18-publication-cutoff-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "accept",
+      "topicIds": [
+        "war-trade",
+        "corrections-provenance"
+      ],
+      "reason": "Use October 16 White House order for the waiver; October 19 House printing and October 21 Federal Register publication are later corroboration, excluded from contemporaneous availability claims."
     }
   ],
   "topicProposals": [],
@@ -8209,6 +8515,30 @@
         "phang-specific-order-20261009",
         "jz-biometrics-stay-20261007",
         "ice-five-zero-modifications-20261009"
+      ]
+    },
+    {
+      "id": "weekly-backfill-20261018-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append October 18 court, election and sanctions findings with competing positions, precise instruments and unresolved coverage.",
+      "topicIds": [
+        "civil-society",
+        "enforcement-surveillance",
+        "executive-authority",
+        "information-media",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "us-midterms",
+        "war-trade"
+      ],
+      "claimIds": [
+        "oct18-bank",
+        "oct18-phang-reply",
+        "oct18-phang-submission",
+        "oct18-fcc-stay",
+        "oct18-ca-dispute",
+        "oct18-lwv-filing",
+        "oct18-graham-waiver"
       ]
     }
   ],
