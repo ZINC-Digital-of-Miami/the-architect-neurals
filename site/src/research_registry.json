@@ -2242,6 +2242,126 @@
       "accessedAt": "2026-11-03",
       "locator": "ECF 59; complete original PDF",
       "publishedAt": "2026-10-16"
+    },
+    {
+      "id": "oct25-tmtg-425",
+      "title": "TMTG: SEC-filed October 20 interview",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926033275/djt20261022_425.htm",
+      "publisher": "U.S. Securities and Exchange Commission",
+      "originId": "Trump Media & Technology Group Corp.",
+      "sourceType": "corporate_filing",
+      "accessedAt": "2026-11-03",
+      "locator": "Interview transcript; commercial and investigation questions",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "id": "oct25-cna-order",
+      "title": "California Nurses Association v. Mullin: preliminary injunction",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cand.479338/gov.uscourts.cand.479338.87.0_1.pdf",
+      "publisher": "U.S. District Court for the Northern District of California; original via RECAP",
+      "originId": "U.S. District Court for the Northern District of California",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 87, operative pages 18–19",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "id": "oct25-jz-report",
+      "title": "J.Z. v. DHS: government compliance report",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291982/gov.uscourts.dcd.291982.48.0.pdf",
+      "publisher": "U.S. District Court for the District of Columbia; original via RECAP",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 48, pages 2–3",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "id": "oct25-house-certifications",
+      "title": "House Document 119-202: presidential waiver certifications",
+      "url": "https://www.govinfo.gov/content/pkg/CDOC-119hdoc202/pdf/CDOC-119hdoc202.pdf",
+      "publisher": "U.S. Government Publishing Office",
+      "originId": "President of the United States",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Cover and October 16 letters; printing date differs from action date",
+      "publishedAt": "2026-10-19"
+    },
+    {
+      "id": "oct25-house-metadata",
+      "title": "GPO metadata for House Document 119-202",
+      "url": "https://www.govinfo.gov/metadata/pkg/CDOC-119hdoc202/mods.xml",
+      "publisher": "U.S. Government Publishing Office",
+      "originId": "U.S. Government Publishing Office",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "dateIssued and recordCreationDate fields",
+      "publishedAt": "2026-10-20"
+    },
+    {
+      "id": "oct25-gl-gg",
+      "title": "OFAC General License GG: Karnakis and Karnakis wind-down",
+      "url": "https://ofac.treasury.gov/media/937266/download?inline",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Complete license, paragraphs (a)–(c)",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "id": "oct25-gl-hh",
+      "title": "OFAC General License HH: listed vessels and limited activities",
+      "url": "https://ofac.treasury.gov/media/937271/download?inline",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Paragraphs (a)–(b) and annex",
+      "publishedAt": "2026-10-21"
+    },
+    {
+      "id": "oct25-gl-ee-recheck",
+      "title": "OFAC General License EE: original Samudra deadline rechecked",
+      "url": "https://ofac.treasury.gov/media/937096/download?inline=",
+      "publisher": "U.S. Department of the Treasury",
+      "originId": "Office of Foreign Assets Control",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-03",
+      "locator": "Original license; later review does not alter issuance date",
+      "publishedAt": "2026-10-08"
+    },
+    {
+      "id": "oct25-jtn-headline",
+      "title": "Just the News: election-operations headline reviewed against order",
+      "url": "https://justthenews.com/government/courts-law/judge-blocks-dhs-voter-fraud-operations-9-states",
+      "publisher": "Just the News",
+      "originId": "Just the News",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-03",
+      "locator": "Ben Whedon article; body states the likely U.S.-citizen limitation. Only a blanket reading of the headline is rejected; the original order controls scope.",
+      "publishedAt": "2026-10-22"
+    },
+    {
+      "id": "oct25-nashville-tracker",
+      "title": "Brennan Center: Nashville v. DHS case tracker",
+      "url": "https://www.brennancenter.org/our-work/court-cases/nashville-v-dhs",
+      "publisher": "Brennan Center for Justice",
+      "originId": "Brennan Center for Justice, counsel for plaintiffs",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-03",
+      "locator": "October 23 opposition link label and later-event cutoff"
+    },
+    {
+      "id": "oct25-nashville-mislabeled-motion",
+      "title": "Nashville: defendants motion returned by opposition-labeled link",
+      "url": "https://www.brennancenter.org/media/16439/download/045-defendants-motion-for-stay-pending-appeal_0.pdf",
+      "publisher": "Brennan Center for Justice; original court filing",
+      "originId": "U.S. Department of Justice",
+      "sourceType": "court",
+      "accessedAt": "2026-11-03",
+      "locator": "ECF 45; identical PDF under two differently labeled links",
+      "publishedAt": "2026-10-22"
     }
   ],
   "claims": [
@@ -4067,6 +4187,91 @@
       "reviewedAt": "2026-11-03",
       "recordType": "Original record or attributed party position",
       "status": "documented"
+    },
+    {
+      "id": "oct25-tmtg-position",
+      "text": "TMTG filed its executive interview; commercial and investigative remarks remain company statements.",
+      "context": "No exact API financial figures or named agency proceeding established.",
+      "sourceIds": [
+        "oct25-tmtg-425"
+      ],
+      "topicIds": [
+        "information-media",
+        "ownership-disclosures",
+        "trump-later-financing"
+      ],
+      "eventDate": "2026-10-22",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct25-cna-conditional-order",
+      "text": "The court issued a scoped election-operations injunction with bond and temporary-stay conditions.",
+      "context": "Later operative status was not verified.",
+      "sourceIds": [
+        "oct25-cna-order"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority",
+        "enforcement-surveillance"
+      ],
+      "eventDate": "2026-10-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct25-jz-reported-process",
+      "text": "DOJ described request-triggered biometrics assistance and anticipated website corrections.",
+      "context": "Party account; implementation counts and judicial adequacy remain unresolved.",
+      "sourceIds": [
+        "oct25-jz-report"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "enforcement-surveillance"
+      ],
+      "eventDate": "2026-10-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct25-presidential-certifications",
+      "text": "House printing records preserve the President’s October 16 waiver certifications and negotiating rationale.",
+      "context": "October 19 referral and October 20 metadata are distinct from effective action and measured outcomes.",
+      "sourceIds": [
+        "oct25-house-certifications",
+        "oct25-house-metadata"
+      ],
+      "topicIds": [
+        "war-trade",
+        "executive-authority"
+      ],
+      "eventDate": "2026-10-19",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
+    },
+    {
+      "id": "oct25-distinct-licenses",
+      "text": "OFAC issued separate Karnakis and listed-vessel licenses with limited permissions and blocked-payment conditions.",
+      "context": "Neither instrument extends the differently named Samudra license.",
+      "sourceIds": [
+        "oct25-gl-gg",
+        "oct25-gl-hh",
+        "oct25-gl-ee-recheck"
+      ],
+      "topicIds": [
+        "war-trade",
+        "iran-us-decisions"
+      ],
+      "eventDate": "2026-10-21",
+      "reviewedAt": "2026-11-03",
+      "recordType": "Original record or attributed party position",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -4991,6 +5196,39 @@
         "corrections-provenance"
       ],
       "reason": "Use October 16 White House order for the waiver; October 19 House printing and October 21 Federal Register publication are later corroboration, excluded from contemporaneous availability claims."
+    },
+    {
+      "id": "oct25-mislabeled-opposition-20261103",
+      "date": "2026-11-03",
+      "purpose": "source_route",
+      "decision": "reject",
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "reason": "The opposition-labeled Brennan link returns the defendants motion. Reject it as evidence of plaintiffs arguments; filing absence is not established."
+    },
+    {
+      "id": "oct25-headline-scope-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "us-midterms",
+        "corrections-provenance"
+      ],
+      "reason": "Single-origin headline cannot establish blanket prohibition; retain operative original scope and unresolved bond/stay status."
+    },
+    {
+      "id": "oct25-retrospective-dates-20261103",
+      "date": "2026-11-03",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "war-trade",
+        "corrections-provenance"
+      ],
+      "reason": "Distinguish the October 19 House printing record from October 16 presidential action and November 3 retrieval. No precise historical web availability or economic outcome inferred."
     }
   ],
   "topicProposals": [],
@@ -8539,6 +8777,28 @@
         "oct18-ca-dispute",
         "oct18-lwv-filing",
         "oct18-graham-waiver"
+      ]
+    },
+    {
+      "id": "weekly-backfill-20261025-reviewed-20261103",
+      "date": "2026-11-03",
+      "summary": "Append bounded October 25 corporate, election, biometrics and sanctions findings with conditional mechanisms and unresolved coverage.",
+      "topicIds": [
+        "enforcement-surveillance",
+        "executive-authority",
+        "information-media",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "trump-later-financing",
+        "us-midterms",
+        "war-trade"
+      ],
+      "claimIds": [
+        "oct25-tmtg-position",
+        "oct25-cna-conditional-order",
+        "oct25-jz-reported-process",
+        "oct25-presidential-certifications",
+        "oct25-distinct-licenses"
       ]
     }
   ],
