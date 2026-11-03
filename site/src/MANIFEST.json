@@ -9,25 +9,25 @@
   "briefs": 12,
   "corrections": 20,
   "clocks": 12,
-  "map_nodes": 63,
-  "map_edges": 97,
-  "index_bytes": 891285
+  "map_nodes": 109,
+  "map_edges": 157,
+  "index_bytes": 898336
  },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 15533,
-   "sha256": "27bad730d722f5008d4115147a3d4058ecebafb60c6e6187f863b874e89d3a15"
+   "bytes": 17339,
+   "sha256": "f0926a3da9db6e8edf256f9e76d2ac38f82091cc226ec58d451de586187e10ca"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 13439,
-   "sha256": "1e4e1be99c022cfc5bc23014c7e2f5ba9528fa57b90e8fd497d08adc8dc85447"
+   "bytes": 15062,
+   "sha256": "1a01f8b8a387cde2edfa6b01b8e8e08a663ebd4072928d89aa2f59ce95387b39"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 12939,
-   "sha256": "866a8aac22ff05a978e0b21cbdbe18b8b9c8d7c89da83b74c05bf68050ed7a67"
+   "bytes": 14495,
+   "sha256": "e2649943e4eb085e8537b781d17f9c77254ccf6ff8d7108b8421dc2170010968"
   },
   {
    "path": "agents/1-elections.md",
@@ -171,8 +171,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 21394,
-   "sha256": "9afb7a9cc9b471531bbece866554d2ba4ad267ea355c1f922461a4682e937ef2"
+   "bytes": 37944,
+   "sha256": "a6bf1754edc18d8bffc56a922781c18d5472f80706b9833ea145ee29f118e11c"
   },
   {
    "path": "mapgen.js",
@@ -186,8 +186,8 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 13320,
-   "sha256": "4527aaf8743302a25dee56be9acc856f6b9463e5b559efda80a7299671f94971"
+   "bytes": 23758,
+   "sha256": "1127461dbe3f27fa0f0e7b1bab5fb56fa77814ccee52efb5e3713735db15b69e"
   },
   {
    "path": "neural_map.html",
@@ -196,8 +196,8 @@
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 123182,
-   "sha256": "de38877bcf49eb174691449f422dc291bb00f07552f5ee59738ffefc5eb36cae"
+   "bytes": 211351,
+   "sha256": "e46e6b970c2d4bc4ebeea2a6f79416dd038ef13cefd64657edf610c0077c29c7"
   },
   {
    "path": "pull_src.sh",
@@ -221,8 +221,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 359119,
-   "sha256": "c95bacb59aa80c80bb9a2c8b79e288c0b9b9b5db225b08eadbaabfc1144f3025"
+   "bytes": 662053,
+   "sha256": "28d62ef5d63e51078a52d9c1d78ad6e9905144a2c48a4bab284151c92c36feaa"
   },
   {
    "path": "research_registry.py",
@@ -246,8 +246,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 56441,
-   "sha256": "7a62542b9c2384d92783e4b8505dd6299dbd66d72e7083c3b978beec67a015ef"
+   "bytes": 63492,
+   "sha256": "805e6e4bd747215a9e189f0b625461c87236838d4f5c5e02e5be41e4d6c7aa34"
   }
  ]
 }

@@ -25,12 +25,23 @@ completed run receipt before research. Inspect the original sources and then-cur
 records. Existing report text, source checklist, prior briefs, corrections and map history
 are protected by machine checks, independently of presentation changes.
 
+Reuse retained source evidence before making new requests. Once a source route is known
+to be inaccessible, record the failure and move to an accessible original record, official
+mirror, filing, transcript or independently sourced alternative. Do not repeatedly retry
+the same blocked route without evidence that access changed. Follow FRED/ALFRED source
+and release links to the original government datasets and agency releases; use accessible
+alternative records where they support the specific claim. Preserve observation dates,
+release dates and vintage limits separately.
+
 ## Due time, catch-up, and ownership
 
 The research interval ends **Sunday at 07:00 America/Chicago**. The script handles daylight
 saving time and late dispatch. A lightweight daily check may call `status`; it does not
 perform extra daily research. Use the oldest missing Sunday first. Never date a brief in
 the future, infer success from dispatch, or skip an interval when the app was unavailable.
+The owner subsequently directed the remaining 2026-11-03 investigation and integration
+to continue on GPT-6 Sol (`gpt-6-sol`); this supersedes Astra for that continuation.
+Verify actual execution metadata; retain the separately approved Astra High weekly setting.
 The existing schedule dispatches **Sunday at 09:00 America/Chicago**. For retrospective
 briefs, distinguish the interval cutoff from the actual research and publication dates.
 
@@ -50,6 +61,16 @@ briefs, distinguish the interval cutoff from the actual research and publication
    Never initialize from Claude `lastRunAt` or a last-scheduled timestamp.
 
 ## Research and review
+
+Investigate the relationships behind substantive developments. Follow money, beneficial
+interests, decision rights, contracts, intermediaries, lobbying, campaign finance and
+clemency records to the next original source; do not stop at headlines or procedural
+summaries. Compare findings with the current graph and independently review new edge
+candidates. Admit documented ordinary relationships without demanding proof of an illicit
+bargain; test any alleged causal exchange separately. Preserve exact dates and distinguish
+requests, promises, plans, actions and attributed reports. Carry concrete unresolved leads
+forward. Preserve the design while adding supported relationships; never manufacture edges
+or pad prose to suggest that the investigation went further than it did.
 
 Work exclusively in the candidate. Run `python3 src/research_registry.py queue` there.
 The dynamic registry supplies topic questions and open checks; the eight specialist files
