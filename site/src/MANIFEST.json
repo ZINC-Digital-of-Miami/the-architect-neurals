@@ -2,32 +2,32 @@
  "site": "https://the-architecture-neurals.vercel.app",
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
- "current_through": "2026-09-06",
+ "current_through": "2026-09-13",
  "master_edition": "2026-08-22",
  "counts": {
   "agents": 8,
-  "briefs": 4,
+  "briefs": 5,
   "corrections": 20,
   "clocks": 12,
   "map_nodes": 63,
   "map_edges": 97,
-  "index_bytes": 709533
+  "index_bytes": 733763
  },
  "files": [
   {
    "path": "AGENT_INSTRUCTIONS.md",
-   "bytes": 14085,
-   "sha256": "06408a029fe8512a911fff7ad262f5dbd233f7deebebfc09b997911c473daab3"
+   "bytes": 15533,
+   "sha256": "27bad730d722f5008d4115147a3d4058ecebafb60c6e6187f863b874e89d3a15"
   },
   {
    "path": "AUTOMATED_RUN_TASK.md",
-   "bytes": 12521,
-   "sha256": "a1ade5a739fb8858d1e070a097cdcaa24b4e531a794d1df74762970f6e962e1e"
+   "bytes": 13439,
+   "sha256": "1e4e1be99c022cfc5bc23014c7e2f5ba9528fa57b90e8fd497d08adc8dc85447"
   },
   {
    "path": "WEEKLY_RUN.md",
-   "bytes": 12070,
-   "sha256": "b7776e8d0cbc013a0d91349b2e115adbda48ce80eef64760afd1dce15e101d9e"
+   "bytes": 12939,
+   "sha256": "866a8aac22ff05a978e0b21cbdbe18b8b9c8d7c89da83b74c05bf68050ed7a67"
   },
   {
    "path": "agents/1-elections.md",
@@ -95,19 +95,19 @@
    "sha256": "bbc0ddb676264ffc480a79829dd4ea5234b250c53f24869eea65b48bb441d3ee"
   },
   {
+   "path": "briefs/2026-09-13.html",
+   "bytes": 21955,
+   "sha256": "2495810d10d063e0bc7eee152a091b1433a3f3e502ac58729570bc31787df2ed"
+  },
+  {
    "path": "briefs/_TEMPLATE.html",
    "bytes": 5788,
    "sha256": "91e3ef93168f086467f74d1fc3c1b8ccce6e6dd4b2621ee8fba1e45c05456d1e"
   },
   {
    "path": "build_neural_map.js",
-   "bytes": 1930,
-   "sha256": "2e1d8ca77a0cd83f302ee56b5b755b96b4ca94bad2eeda850274e080324c9258"
-  },
-  {
-   "path": "build_neural_map.py",
-   "bytes": 20729,
-   "sha256": "6a40403eca7da0335bb8e7b701056ef76baa26da00537f2a617857dc0415a3e1"
+   "bytes": 1749,
+   "sha256": "b645f4be15aff409e9cea42b9d861cb9653ebb5454e366a8c0fb23d402493157"
   },
   {
    "path": "build_research.py",
@@ -116,8 +116,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 45131,
-   "sha256": "5ea3b693df302badd741f9450d294e7aa0a05d9098fa0e885c7ca7a812548f67"
+   "bytes": 45108,
+   "sha256": "b3a7d82ceca7fdc4e4c9aee14190293e2b57ff13e47f9cda90b283fa5953ef8d"
   },
   {
    "path": "check.sh",
@@ -186,8 +186,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 243422,
-   "sha256": "fe220b0fbeb6b5a84870394ab7863e45767ac18b3c4b402a3783c7d01fbb1fdd"
+   "bytes": 270731,
+   "sha256": "4d013168936cef5753e4db4d4dd27aceab5a995c8170770e57f3055fc110d84e"
   },
   {
    "path": "research_registry.py",
@@ -211,8 +211,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 47777,
-   "sha256": "80a85754193a928c25fa57b51d062377131aee64049051ad9801a1e6e2d981eb"
+   "bytes": 49684,
+   "sha256": "937f1ff212e7e4ab6676a170127300a077196ecc7e8eb233983c40c1a6474776"
   }
  ]
 }
