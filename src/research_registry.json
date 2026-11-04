@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03",
+  "updatedAt": "2026-11-04",
   "categories": [
     {
       "id": "financial-history",
@@ -173,7 +173,7 @@
     {
       "id": "us-midterms",
       "title": "2026 U.S. midterms",
-      "description": "Official election dates, administration, campaign-finance disclosures and court records.",
+      "description": "The November 3 election: attributed race calls, certification, congressional powers and the records connecting elections to clemency and oversight.",
       "categoryIds": [
         "institutions",
         "campaigns"
@@ -195,6 +195,10 @@
       ],
       "reportLinks": [
         {
+          "label": "Mid Terms: November 3 results and institutional consequences",
+          "href": "/midterms.html"
+        },
+        {
           "label": "Report: institutions",
           "href": "/#the-crown-the-architecture-of-power"
         }
@@ -214,7 +218,7 @@
         "campaign finance"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-11-03"
+      "updatedAt": "2026-11-04"
     },
     {
       "id": "executive-authority",
@@ -3080,6 +3084,296 @@
       "sourceType": "party_statement",
       "accessedAt": "2026-11-03",
       "locator": "Article lines 194–255; Nikola founder/pardonee, matching receipts, direct denial"
+    },
+    {
+      "id": "midterms-20261104-ap-control",
+      "title": "The Latest: Voters give Democrats control of Congress in rebuke to Trump",
+      "url": "https://apnews.com/article/ef6199e25927a9ac9f4c18eae0e497cd",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Opening summary and section Democrats win the US House and take unified control of Congress"
+    },
+    {
+      "id": "midterms-20261104-reuters-control",
+      "title": "Democrats seize Congress in sweeping midterm repudiation of Trump",
+      "url": "https://www.investing.com/news/politics-news/democrats-seize-congress-in-sweeping-midterm-repudiation-of-trump-4997528",
+      "publisher": "Reuters",
+      "originId": "reuters",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Opening paragraphs; Published Nov 04 2026 01:58 AM / Updated 02:00 AM (site timezone unstated)"
+    },
+    {
+      "id": "midterms-20261104-cbs-senate",
+      "title": "Democrats win majority in the Senate, flipping control of upper chamber",
+      "url": "https://www.cbsnews.com/news/senate-control-democrats-republicans-2026-midterm-elections/",
+      "publisher": "CBS News",
+      "originId": "cbs-news",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Opening two paragraphs; updated Nov 3 2026 11:46 PM EST (10:46 PM CT)"
+    },
+    {
+      "id": "midterms-20261104-cbs-house",
+      "title": "Democrats retake House majority after 4 years",
+      "url": "https://www.cbsnews.com/news/democrats-win-house-majority/",
+      "publisher": "CBS News",
+      "originId": "cbs-news",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Opening paragraph; updated Nov 3 2026 10:22 PM EST (9:22 PM CT)"
+    },
+    {
+      "id": "midterms-20261104-ap-sc-identity",
+      "title": "Democrat Annie Andrews wins US Senate election in South Carolina over Republican Darline Graham",
+      "url": "https://apnews.com/article/74fc0bf08f5822378fcfa2fe09377d69",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and first two paragraphs"
+    },
+    {
+      "id": "midterms-20261104-ap-me-identity",
+      "title": "Troy Jackson wins the Maine US Senate race over GOP Sen. Susan Collins in a key Democratic victory",
+      "url": "https://apnews.com/article/ac895e873f373e5560c4a6c137b2ac19",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and opening paragraph"
+    },
+    {
+      "id": "midterms-20261104-ap-tx-gov",
+      "title": "Democrat Gina Hinojosa wins election for governor in Texas",
+      "url": "https://apnews.com/article/4cbe7e21109148709cb9d4a5a599bb5d",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and bulletin timestamp"
+    },
+    {
+      "id": "midterms-20261104-tx-sos-returns",
+      "title": "Election Results - Tuesday, November 3, 2026",
+      "url": "https://electionresults.sos.state.tx.us/results.html",
+      "publisher": "Texas Secretary of State",
+      "originId": "texas-secretary-of-state",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Lines 5-25 and 438-449; header Updated 11/03/2026 11:40 PM"
+    },
+    {
+      "id": "midterms-20261104-tx-sos-canvass",
+      "title": "Canvass and Recount Deadlines for the November 3, 2026 General Election for Federal, State, and County Officers",
+      "url": "https://www.sos.texas.gov/elections/laws/advisory2026-28.shtml",
+      "publisher": "Texas Secretary of State",
+      "originId": "texas-secretary-of-state",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Election Advisory 2026-28, Oct 23 2026, Canvass Dates"
+    },
+    {
+      "id": "midterms-20261104-nara-20",
+      "title": "The Constitution: Amendments 11-27",
+      "url": "https://www.archives.gov/founding-docs/amendments-11-27#xx",
+      "publisher": "National Archives",
+      "originId": "national-archives",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Amendment XX sections 1-2, lines 156-166"
+    },
+    {
+      "id": "midterms-20261104-ap-method",
+      "title": "2026 Midterm Election Results: Senate, House and Governor Races",
+      "url": "https://apnews.com/projects/elections-2026/",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "About AP election results and race calls, lines 59-61"
+    },
+    {
+      "id": "midterms-20261104-ap-senate-guide",
+      "title": "U.S. Senate results",
+      "url": "https://apnews.com/projects/elections-2026/us-senate-results/",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "reporting",
+      "accessedAt": "2026-11-04",
+      "locator": "Lines 34-41"
+    },
+    {
+      "id": "midterms-20261104-ap-tx-call",
+      "title": "Democrat James Talarico wins election to U.S. Senate from TX",
+      "url": "https://apnews.com/article/a83aaba344fe45c59299da1ee30c8b7f",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-nc-call",
+      "title": "Democrat Roy Cooper wins election to U.S. Senate from NC",
+      "url": "https://apnews.com/article/aad6b36fe94e422baad0184776aca6d2",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-sc-call",
+      "title": "Democrat Annie Andrews wins election to U.S. Senate from SC",
+      "url": "https://apnews.com/article/2f90850a409247de9ba6cc20e38ce817",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-oh-call",
+      "title": "Democrat Sherrod Brown wins election to U.S. Senate from OH",
+      "url": "https://apnews.com/article/abb72413eadd4fe4a6e98965d4a66e6f",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-ks-call",
+      "title": "Democrat Adam Hamilton wins election to U.S. Senate from KS",
+      "url": "https://apnews.com/article/84215e24897947c28d25beffee7cdc73",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-ia-call",
+      "title": "Democrat Josh Turek wins election to U.S. Senate from IA",
+      "url": "https://apnews.com/article/bccfed993cfb4e38bcc64e3737d72e21",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-ap-me-call",
+      "title": "Democrat Troy Jackson wins election to U.S. Senate from ME",
+      "url": "https://apnews.com/article/9ea4d79a26ae48ce9aba82ffafdbb23a",
+      "publisher": "Associated Press",
+      "originId": "associated-press",
+      "sourceType": "party_statement",
+      "accessedAt": "2026-11-04",
+      "locator": "Headline and dated AP call bulletin"
+    },
+    {
+      "id": "midterms-20261104-law-constitution",
+      "title": "United States Constitution, transcript",
+      "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+      "publisher": "National Archives",
+      "originId": "national-archives",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Senate About Impeachment; Article I sections 2–3; Article II section 2; DOJ FAQ pardon, state-conviction and expungement answers; R46179 summary and constraints; Article II section 2 Appointments Clause; Article I sections 7, 9; CRS IF11577 June 16, 2020"
+    },
+    {
+      "id": "midterms-20261104-law-amendments",
+      "title": "Constitution Amendments 11–27",
+      "url": "https://www.archives.gov/founding-docs/amendments-11-27",
+      "publisher": "National Archives",
+      "originId": "national-archives",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Twentieth Amendment sections 1–2; Senate FAQ first-day answer; Twenty-fifth Amendment section 1; 3 U.S.C. 19(a), (b), (e)"
+    },
+    {
+      "id": "midterms-20261104-law-investigations",
+      "title": "Senate investigations and oversight",
+      "url": "https://www.senate.gov/about/powers-procedures/investigations.htm",
+      "publisher": "United States Senate",
+      "originId": "united-states-senate",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Senate Investigations page: opening explanation of congressional oversight, investigative authority and committee powers."
+    },
+    {
+      "id": "midterms-20261104-law-impeachment",
+      "title": "Senate: impeachment",
+      "url": "https://www.senate.gov/about/powers-procedures/impeachment.htm",
+      "publisher": "United States Senate",
+      "originId": "united-states-senate",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Senate About Impeachment; Article I sections 2–3"
+    },
+    {
+      "id": "midterms-20261104-law-new-congress",
+      "title": "Senate: beginning a new Congress",
+      "url": "https://www.senate.gov/general/common/generic/NewCongress_faq.htm",
+      "publisher": "United States Senate",
+      "originId": "united-states-senate",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Twentieth Amendment sections 1–2; Senate FAQ first-day answer"
+    },
+    {
+      "id": "midterms-20261104-law-pardon-faq",
+      "title": "DOJ: frequently asked questions about clemency",
+      "url": "https://www.justice.gov/pardon/frequently-asked-questions",
+      "publisher": "U.S. Department of Justice",
+      "originId": "u.s.-department-of-justice",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Article II section 2; DOJ FAQ pardon, state-conviction and expungement answers; R46179 summary and constraints"
+    },
+    {
+      "id": "midterms-20261104-law-pardon-crs",
+      "title": "CRS R46179: Presidential Pardons: Overview and Selected Legal Issues",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R46179/R46179.2.pdf",
+      "publisher": "Congressional Research Service",
+      "originId": "congressional-research-service",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Article II section 2; DOJ FAQ pardon, state-conviction and expungement answers; R46179 summary and constraints; R46179 January 14, 2020, printed pages 15–19, Oversight and Impeachment"
+    },
+    {
+      "id": "midterms-20261104-law-oversight-crs",
+      "title": "CRS RL30240: Congressional Oversight Manual",
+      "url": "https://www.congress.gov/crs_external_products/RL/PDF/RL30240/RL30240.35.pdf",
+      "publisher": "Congressional Research Service",
+      "originId": "congressional-research-service",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "RL30240 updated March 29, 2021, The Subpoena Power, printed pages 45–49; legislative-purpose and privilege sections"
+    },
+    {
+      "id": "midterms-20261104-law-succession",
+      "title": "3 U.S.C. §19: presidential succession",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title3/html/USCODE-2024-title3-chap1-sec19.htm",
+      "publisher": "U.S. Government Publishing Office",
+      "originId": "u.s.-government-publishing-office",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Twenty-fifth Amendment section 1; 3 U.S.C. 19(a), (b), (e)"
+    },
+    {
+      "id": "midterms-20261104-law-appropriations-crs",
+      "title": "CRS IF11577: Congress’s Power Over Appropriations: A Primer",
+      "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF11577/IF11577.1.pdf",
+      "publisher": "Congressional Research Service",
+      "originId": "congressional-research-service",
+      "sourceType": "official_record",
+      "accessedAt": "2026-11-04",
+      "locator": "Article I sections 7, 9; CRS IF11577 June 16, 2020"
     }
   ],
   "claims": [
@@ -6430,6 +6724,226 @@
       "status": "documented",
       "reviewedAt": "2026-11-03",
       "predicate": "denied_money_discussion_in_pardon_conversations"
+    },
+    {
+      "id": "midterms-20261104-results-control",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "Democrats won control of both the House and Senate in the November 3 midterms, according to AP and Reuters.",
+      "context": "As of November 4, 2026, 6:32 AM CT. Attributed election-desk calls are distinct from official state canvasses and certification; final chamber composition is not established by this record.",
+      "sourceIds": [
+        "midterms-20261104-ap-control",
+        "midterms-20261104-reuters-control"
+      ],
+      "recordType": "Attributed election-desk calls and original election-administration records",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-seven-flips",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "AP called seven Republican-held Senate seats for Democrats: North Carolina, South Carolina, Texas, Ohio, Kansas, Iowa and Maine.",
+      "context": "As of November 4, 2026, 6:32 AM CT. Attributed election-desk calls are distinct from official state canvasses and certification; final chamber composition is not established by this record.",
+      "sourceIds": [
+        "midterms-20261104-ap-control",
+        "midterms-20261104-ap-tx-call",
+        "midterms-20261104-ap-nc-call",
+        "midterms-20261104-ap-sc-call",
+        "midterms-20261104-ap-oh-call",
+        "midterms-20261104-ap-ks-call",
+        "midterms-20261104-ap-ia-call",
+        "midterms-20261104-ap-me-call"
+      ],
+      "recordType": "Attributed election-desk calls and original election-administration records",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-tx-gov",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "AP called the Texas governorship for Gina Hinojosa; the state returns inspected were incomplete.",
+      "context": "As of November 4, 2026, 6:32 AM CT. Attributed election-desk calls are distinct from official state canvasses and certification; final chamber composition is not established by this record.",
+      "sourceIds": [
+        "midterms-20261104-ap-tx-gov",
+        "midterms-20261104-tx-sos-returns"
+      ],
+      "recordType": "Attributed election-desk calls and original election-administration records",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-certification",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "Election-night calls precede final canvasses. Texas schedules its final state canvass window for November 21–December 7.",
+      "context": "As of November 4, 2026, 6:32 AM CT. Attributed election-desk calls are distinct from official state canvasses and certification; final chamber composition is not established by this record.",
+      "sourceIds": [
+        "midterms-20261104-tx-sos-canvass"
+      ],
+      "recordType": "Attributed election-desk calls and original election-administration records",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-transition",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "entityIds": [],
+      "text": "Regular congressional terms begin at noon January 3, 2027. Special-election seating follows its own certification and qualification process.",
+      "context": "As of November 4, 2026, 6:32 AM CT. Attributed election-desk calls are distinct from official state canvasses and certification; final chamber composition is not established by this record.",
+      "sourceIds": [
+        "midterms-20261104-nara-20",
+        "midterms-20261104-ap-senate-guide"
+      ],
+      "recordType": "Attributed election-desk calls and original election-administration records",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-transition",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "The regular terms of successor Senators and Representatives begin at noon January 3, 2027. Congress normally assembles then unless a law appoints a different meeting day. Election results do not themselves replace the sitting Congress on November 4.",
+      "context": "Constitutional and statutory framework; this does not establish any new November 4 official action.",
+      "sourceIds": [
+        "midterms-20261104-law-amendments",
+        "midterms-20261104-law-new-congress"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-oversight",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "Both House and Senate conduct legislative oversight. Committees can seek records and testimony and employ subpoenas under chamber and committee rules. A committee majority or chair’s subpoena authority depends on the applicable rules; a subpoena does not guarantee immediate production.",
+      "context": "2021 manual supports constitutional framework, not proof of the incoming 120th Congress rules or chair assignments.",
+      "sourceIds": [
+        "midterms-20261104-law-investigations",
+        "midterms-20261104-law-oversight-crs"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-impeachment",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "The House approves articles of impeachment by a simple majority. The Senate tries impeachments; conviction requires two-thirds of members present and results in removal. A House majority alone cannot remove a president.",
+      "context": "Constitutional and statutory framework; this does not establish any new November 4 official action.",
+      "sourceIds": [
+        "midterms-20261104-law-impeachment",
+        "midterms-20261104-law-constitution"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-clemency-limits",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "Presidential clemency reaches federal offenses, not state convictions or impeachment; a pardon may precede charge or conviction after the offense has occurred, but cannot cover a crime before its commission. A pardon does not establish innocence or expunge the conviction, and does not end non-criminal civil proceedings.",
+      "context": "Constitutional and statutory framework; this does not establish any new November 4 official action.",
+      "sourceIds": [
+        "midterms-20261104-law-constitution",
+        "midterms-20261104-law-pardon-faq",
+        "midterms-20261104-law-pardon-crs"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-oversight-clemency",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "Clemency does not extinguish Congress’s institutional oversight or impeachment powers. CRS describes historical oversight of clemency but also executive-privilege and legislative-purpose disputes over compelled disclosure. Congress generally cannot legislatively override the constitutional pardon power.",
+      "context": "CRS describes the constitutional framework and historical disputes; this record establishes no specific new 2026 subpoena, enforceability decision or compliance.",
+      "sourceIds": [
+        "midterms-20261104-law-pardon-crs"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-appointments",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "The President nominates, and the Senate provides advice and consent for principal officers and federal judges covered by Article II. House control alone does not transfer confirmation authority. Existing officers do not lose office merely because congressional control changes.",
+      "context": "Constitutional and statutory framework; this does not establish any new November 4 official action.",
+      "sourceIds": [
+        "midterms-20261104-law-constitution"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-budget",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "Federal spending requires appropriations made by law. Binding appropriations and legislative restrictions generally require House and Senate passage and presidential signature, or a veto override; chamber control provides bargaining and oversight authority, not unilateral executive control.",
+      "context": "Constitutional and statutory framework; this does not establish any new November 4 official action.",
+      "sourceIds": [
+        "midterms-20261104-law-constitution",
+        "midterms-20261104-law-appropriations-crs"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "midterms-20261104-law-succession",
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "text": "The Vice President succeeds to the presidency upon presidential removal, death or resignation. Statutory succession to a qualifying Speaker, then President pro tempore, requires neither a President nor Vice President available to discharge the office and the statutory resignation/eligibility conditions. A House election victory or presidential impeachment alone does not put the Speaker in the presidency.",
+      "context": "Government-hosted 2024 U.S. Code edition inspected; current preliminary House search result also identifies 3 USC 19 in force September 29, 2026.",
+      "sourceIds": [
+        "midterms-20261104-law-amendments",
+        "midterms-20261104-law-succession"
+      ],
+      "recordType": "Constitutional and statutory institutional framework",
+      "status": "documented",
+      "reviewedAt": "2026-11-04"
     }
   ],
   "comparisons": [
@@ -16427,6 +16941,133 @@
             "updatedAt": "2026-11-03"
           },
           "reason": "Cumulative membership change from the preserved base to the reviewed final registry; intermediate dated revisions remain retained."
+        }
+      ]
+    },
+    {
+      "id": "midterms-20261104-dedicated-record",
+      "date": "2026-11-04",
+      "summary": "Add the owner-requested Mid Terms record, attributed election calls and original institutional sources; preserve the November 1 weekly cutoff and existing graph.",
+      "claimIds": [
+        "midterms-20261104-results-control",
+        "midterms-20261104-seven-flips",
+        "midterms-20261104-tx-gov",
+        "midterms-20261104-certification",
+        "midterms-20261104-transition",
+        "midterms-20261104-law-transition",
+        "midterms-20261104-law-oversight",
+        "midterms-20261104-law-impeachment",
+        "midterms-20261104-law-clemency-limits",
+        "midterms-20261104-law-oversight-clemency",
+        "midterms-20261104-law-appointments",
+        "midterms-20261104-law-budget",
+        "midterms-20261104-law-succession"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "us-midterms",
+          "before": {
+            "id": "us-midterms",
+            "title": "2026 U.S. midterms",
+            "description": "Official election dates, administration, campaign-finance disclosures and court records.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [
+              "USPS",
+              "TRUMP",
+              "ADMINISTRATION_PERSONNEL",
+              "MUSK",
+              "MIKE_DAVIS",
+              "ZACHARY_JOHN_CZUBAK",
+              "PATRICK_THOMAS_FLEMING",
+              "MICHAEL_WAYNE_HANZUK_II",
+              "ARM_RIPPIN_TOYS_INC",
+              "WASILLA_CAMPAIGN_RALLY_2026_10_13",
+              "DAN_SULLIVAN",
+              "NICK_BEGICH",
+              "MACKENZIE_SCOTT_SPURLOCK"
+            ],
+            "reportLinks": [
+              {
+                "label": "Report: institutions",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "Which election-administration rules are operative after rulings and appeals?",
+              "What do official campaign-finance records disclose?",
+              "Which results have been certified, and by which authority?"
+            ],
+            "status": "active",
+            "keywords": [
+              "midterms",
+              "FEC",
+              "election",
+              "ballot",
+              "certification",
+              "campaign finance"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-03"
+          },
+          "after": {
+            "id": "us-midterms",
+            "title": "2026 U.S. midterms",
+            "description": "The November 3 election: attributed race calls, certification, congressional powers and the records connecting elections to clemency and oversight.",
+            "categoryIds": [
+              "institutions",
+              "campaigns"
+            ],
+            "entityIds": [
+              "USPS",
+              "TRUMP",
+              "ADMINISTRATION_PERSONNEL",
+              "MUSK",
+              "MIKE_DAVIS",
+              "ZACHARY_JOHN_CZUBAK",
+              "PATRICK_THOMAS_FLEMING",
+              "MICHAEL_WAYNE_HANZUK_II",
+              "ARM_RIPPIN_TOYS_INC",
+              "WASILLA_CAMPAIGN_RALLY_2026_10_13",
+              "DAN_SULLIVAN",
+              "NICK_BEGICH",
+              "MACKENZIE_SCOTT_SPURLOCK"
+            ],
+            "reportLinks": [
+              {
+                "label": "Mid Terms: November 3 results and institutional consequences",
+                "href": "/midterms.html"
+              },
+              {
+                "label": "Report: institutions",
+                "href": "/#the-crown-the-architecture-of-power"
+              }
+            ],
+            "researchQuestions": [
+              "Which election-administration rules are operative after rulings and appeals?",
+              "What do official campaign-finance records disclose?",
+              "Which results have been certified, and by which authority?"
+            ],
+            "status": "active",
+            "keywords": [
+              "midterms",
+              "FEC",
+              "election",
+              "ballot",
+              "certification",
+              "campaign finance"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-04"
+          },
+          "reason": "Connect the existing election topic to the dedicated dated Mid Terms record; exact preserved base-to-final change."
         }
       ]
     }

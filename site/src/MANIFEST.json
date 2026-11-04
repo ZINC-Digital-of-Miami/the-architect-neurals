@@ -11,7 +11,7 @@
   "clocks": 12,
   "map_nodes": 109,
   "map_edges": 157,
-  "index_bytes": 898336
+  "index_bytes": 898450
  },
  "files": [
   {
@@ -151,8 +151,8 @@
   },
   {
    "path": "build_site3.py",
-   "bytes": 45108,
-   "sha256": "b3a7d82ceca7fdc4e4c9aee14190293e2b57ff13e47f9cda90b283fa5953ef8d"
+   "bytes": 46332,
+   "sha256": "d923b0a5f5afaf5453ccb341c1f3566f92f72e9918e2d3da4545a5a00526f1c5"
   },
   {
    "path": "check.sh",
@@ -183,6 +183,11 @@
    "path": "master_report.md",
    "bytes": 339941,
    "sha256": "1197bc1f67bf57b957bdd3f8807f135cf64f20113263f1ab1510fbfbea04d310"
+  },
+  {
+   "path": "midterms.html",
+   "bytes": 24256,
+   "sha256": "eed96bc4e5281851d114f31d6aa65c89d0223866edc6dbcaebfd09e5a19e81c7"
   },
   {
    "path": "neural_data.json",
@@ -221,8 +226,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 662053,
-   "sha256": "28d62ef5d63e51078a52d9c1d78ad6e9905144a2c48a4bab284151c92c36feaa"
+   "bytes": 691074,
+   "sha256": "66d80acc87444d4eb685e306d17231a1134ba152a0db897407ff6fcfb6059a20"
   },
   {
    "path": "research_registry.py",
