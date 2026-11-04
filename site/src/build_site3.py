@@ -270,7 +270,7 @@ sidebar = f'''<div class="sb-label">Start here</div>
 <a href="/#cover">The report</a><a href="/#howto">How to read this</a>
 <a href="/#edition-notes">Edition notes</a>
 <div class="sb-label">The record</div>
-<a href="/#update">This week's record</a><a href="/#brief-001">Weekly briefs</a>
+<a href="/#update">This week's record</a><a href="/midterms.html">Mid Terms</a><a href="/#brief-001">Weekly briefs</a>
 <a href="/#u-corrections">Corrections</a><a href="/#u-silence">Silence ledger</a>
 <a href="/#u-threads">Next checks</a>
 <div class="sb-label">The story</div>{sb_story}
@@ -310,6 +310,7 @@ def site_header(active="report"):
             'aria-controls="site-navigation"><span aria-hidden="true">☰</span> Menu</button>'
             '<nav class="navlinks" id="site-navigation" aria-label="Main navigation">'
             + link('Report', '/', 'report') + link('Weekly record', '/#update', 'record')
+            + link('Mid Terms', '/midterms.html', 'midterms')
             + f'<div class="navgroup"><button{topics_current} type="button" data-ui-dropdown aria-expanded="false" '
             'aria-controls="topics-navigation">Topics <span aria-hidden="true">⌄</span></button>'
             '<div class="dd topics-menu" id="topics-navigation" hidden>' + topic_menu() + '</div></div>'
@@ -501,6 +502,20 @@ for stem, inner in briefs:
     + '<div class="source-archive">' + source_archive_html + '</div></section>',
     active="sources", page_class="sources-page"))
 
+# The dated midterms record uses the existing editorial research shell.
+(DIST / "midterms.html").write_text(render_page(
+    "Mid Terms — The Architecture", (ROOT / "midterms.html").read_text(),
+    active="midterms", page_class="research-page",
+    sidebar_html='<div class="sb-label">Mid Terms</div>' + ''.join(
+        f'<a href="#{anchor}">{label}</a>' for anchor, label in [
+            ("midterms-overview", "Overview"), ("midterms-control", "Called control"),
+            ("midterms-races", "Key races"), ("midterms-certification", "Counting and certification"),
+            ("midterms-powers", "Congressional powers"), ("midterms-record-trails", "Follow the record"),
+            ("midterms-next", "Next checks"), ("midterms-sources", "Sources and scope")])
+        + '<div class="sb-label">Research</div><a href="/topics/us-midterms.html">Midterms evidence</a>'
+        + '<a href="/neural.html?topic=us-midterms">Neural map</a><a href="/">The report</a>',
+    description="The November 3, 2026 midterms: called results, certification, congressional powers and next checks."))
+
 # Content-only export keeps its CSS and reading behavior self-contained for publishers.
 page_body = site.split('<body class="report-page">', 1)[1].rsplit('</body>', 1)[0]
 page_body = page_body.replace('<script src="/site-ui.js" defer></script>',
@@ -541,7 +556,7 @@ if unresolved_references:
 # the-architecture-liard.vercel.app is the project's former address and redirects here.
 SITE_URL = os.environ.get("ARCH_SITE_URL", "https://the-architecture-neurals.vercel.app").rstrip("/")
 (DIST / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {SITE_URL}/sitemap.xml\n")
-urls = ["/", "/neural.html", "/sources.html"] + research_urls + [f"/briefs/{s}.html" for s, _ in reversed(briefs)]
+urls = ["/", "/neural.html", "/sources.html", "/midterms.html"] + research_urls + [f"/briefs/{s}.html" for s, _ in reversed(briefs)]
 (DIST / "sitemap.xml").write_text(
     '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     + "".join(f"<url><loc>{SITE_URL}{u}</loc><lastmod>{latest_brief}</lastmod></url>\n" for u in urls)
@@ -559,7 +574,7 @@ if _srcdst.exists():
     _sh.rmtree(_srcdst)
 _srcdst.mkdir()
 for _f in ["master_report.md", "sources_manifest.md", "update_part2.html", "final.css", "WEEKLY_RUN.md",
-           "build_site3.py", "site_ui.js", "build_research.py", "research_registry.json",
+           "build_site3.py", "midterms.html", "site_ui.js", "build_research.py", "research_registry.json",
            "research_registry.py", "research_ui.js", "report_references.py", "report_navigation.py", "report_reference_targets.json", "neural_map.html", "neural_data.json", "neural_svg.frag",
            "build_neural_map.js", "map_source.json", "mapgen.js", "brief_lint.py"]:
     _sp = ROOT / _f
