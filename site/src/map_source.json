@@ -987,6 +987,42 @@
       "sub": "Nov 2 agreement counterparty",
       "core": false,
       "flag": ""
+    },
+    "ALT5_DIGITAL": {
+      "x": 2650,
+      "y": 1450,
+      "r": 51,
+      "name": "Alt5 Digital Holdings",
+      "sub": "Wyoming subsidiary",
+      "core": false,
+      "flag": ""
+    },
+    "CONCRETE": {
+      "x": 2650,
+      "y": 1650,
+      "r": 51,
+      "name": "Concrete Network Services",
+      "sub": "BVI vault-services counterparty",
+      "core": false,
+      "flag": ""
+    },
+    "FINCEN": {
+      "x": 2650,
+      "y": 650,
+      "r": 51,
+      "name": "FinCEN",
+      "sub": "MEXC order · November 10",
+      "core": false,
+      "flag": ""
+    },
+    "MEXC_GLOBAL": {
+      "x": 2650,
+      "y": 450,
+      "r": 51,
+      "name": "MEXC Global",
+      "sub": "Order effective December 10",
+      "core": false,
+      "flag": ""
     }
   },
   "edges": [
@@ -1949,6 +1985,24 @@
       "OPENAI",
       "A",
       "Five-year agreement reported · Nov 2"
+    ],
+    [
+      "ALT5",
+      "ALT5_DIGITAL",
+      "A",
+      "Indirect wholly owned subsidiary"
+    ],
+    [
+      "ALT5_DIGITAL",
+      "CONCRETE",
+      "A",
+      "Vault-services agreement · July 2026"
+    ],
+    [
+      "FINCEN",
+      "MEXC_GLOBAL",
+      "A",
+      "Order published Nov 10 · effective Dec 10"
     ]
   ]
 }
