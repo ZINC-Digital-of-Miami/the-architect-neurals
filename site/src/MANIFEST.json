@@ -2,16 +2,16 @@
  "site": "https://the-architecture-neurals.vercel.app",
  "vercel_project": "the-architecture",
  "vercel_team": "zincdigitalofmiamis-projects",
- "current_through": "2026-11-15",
+ "current_through": "2026-11-22",
  "master_edition": "2026-08-22",
  "counts": {
   "agents": 8,
-  "briefs": 14,
+  "briefs": 15,
   "corrections": 20,
   "clocks": 12,
-  "map_nodes": 117,
-  "map_edges": 163,
-  "index_bytes": 947429
+  "map_nodes": 121,
+  "map_edges": 166,
+  "index_bytes": 969704
  },
  "files": [
   {
@@ -145,6 +145,11 @@
    "sha256": "9b35eefa238fa086ec5c18e64678918860045a8f8791b98d8a5c3e78d8c4ee00"
   },
   {
+   "path": "briefs/2026-11-22.html",
+   "bytes": 21203,
+   "sha256": "6fe58d4b699d59cd9ff339eee4fe9ee87210338732acf3fd3c92c75193cf10d1"
+  },
+  {
    "path": "briefs/_TEMPLATE.html",
    "bytes": 5788,
    "sha256": "91e3ef93168f086467f74d1fc3c1b8ccce6e6dd4b2621ee8fba1e45c05456d1e"
@@ -181,8 +186,8 @@
   },
   {
    "path": "map_source.json",
-   "bytes": 40108,
-   "sha256": "b81573167d5dee4b18f5cabf4aff5c7769ff6ecd5cd9ca3158f7fa1d474fd791"
+   "bytes": 41278,
+   "sha256": "82af155477d93de982632898f3d2d2639a8981528ab5d81f5c042761a3e8fb20"
   },
   {
    "path": "mapgen.js",
@@ -201,8 +206,8 @@
   },
   {
    "path": "neural_data.json",
-   "bytes": 24952,
-   "sha256": "84c7f92eb086ef04fb73d0dcd1226ec3e656c3c626f8502527a1be4211804fba"
+   "bytes": 25639,
+   "sha256": "e45e660fc360830cf4cfaa4a02658173a0e57bad7c1cb25a0f4e7de76737c057"
   },
   {
    "path": "neural_map.html",
@@ -211,8 +216,8 @@
   },
   {
    "path": "neural_svg.frag",
-   "bytes": 222253,
-   "sha256": "01bcffb08a311f958b31041d783e6953a825f929504dbe89287b69541d7c926f"
+   "bytes": 228970,
+   "sha256": "6eb8813e01787f2cfec47caa0f8689b9087bed0b419a22bc922cbce38b2cdb79"
   },
   {
    "path": "pull_src.sh",
@@ -236,8 +241,8 @@
   },
   {
    "path": "research_registry.json",
-   "bytes": 765518,
-   "sha256": "ed8b54591adb0bdc06088c79a3ee1fa64aec56c5db2922395102e262e724c449"
+   "bytes": 806143,
+   "sha256": "b3844613c3b40dfbb6448ec80b6147cbccb97a96a4bf92f6e6ddf2f71d960d77"
   },
   {
    "path": "research_registry.py",
@@ -261,8 +266,8 @@
   },
   {
    "path": "update_part2.html",
-   "bytes": 66321,
-   "sha256": "947d783a7d1c74a5790d4a226fbc8604e39bc5e972bdc2834a4afd63007ca9f7"
+   "bytes": 66990,
+   "sha256": "5a8fa162182f5196a496084f0016889d627d814f690a9c1ecb1b573443b7d003"
   }
  ]
 }

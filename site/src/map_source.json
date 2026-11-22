@@ -1023,6 +1023,42 @@
       "sub": "Order effective December 10",
       "core": false,
       "flag": ""
+    },
+    "US_BANK_TRUST_NA": {
+      "x": 1420,
+      "y": -150,
+      "r": 48,
+      "name": "U.S. Bank Trust Company, N.A.",
+      "sub": "Note trustee and collateral agent",
+      "flag": "",
+      "core": false
+    },
+    "CORECIVIC_INC": {
+      "x": 3150,
+      "y": 420,
+      "r": 48,
+      "name": "CoreCivic, Inc.",
+      "sub": "Maryland corporation · Prairie seller",
+      "flag": "",
+      "core": false
+    },
+    "US_DHS_BUYER": {
+      "x": 3450,
+      "y": 550,
+      "r": 48,
+      "name": "United States through DHS",
+      "sub": "Prairie property buyer",
+      "flag": "",
+      "core": false
+    },
+    "CHICAGO_TITLE": {
+      "x": 3450,
+      "y": 300,
+      "r": 48,
+      "name": "Chicago Title Insurance Company",
+      "sub": "Limited contractual escrow role",
+      "flag": "",
+      "core": false
     }
   },
   "edges": [
@@ -2003,6 +2039,24 @@
       "MEXC_GLOBAL",
       "A",
       "Order published Nov 10 · effective Dec 10"
+    ],
+    [
+      "TMTG",
+      "US_BANK_TRUST_NA",
+      "A",
+      "Note trustee / collateral agent · May 2025"
+    ],
+    [
+      "CORECIVIC_INC",
+      "US_DHS_BUYER",
+      "A",
+      "Prairie sale · Aug 4, 2026"
+    ],
+    [
+      "CHICAGO_TITLE",
+      "US_DHS_BUYER",
+      "A",
+      "Limited escrow role · Prairie agreement"
     ]
   ]
 }

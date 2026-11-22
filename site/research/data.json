@@ -331,7 +331,8 @@
         "MAHA_ALLIANCE_C00888172",
         "TRUMP_47_COMMITTEE_C00867937",
         "ALT5_DIGITAL",
-        "CONCRETE"
+        "CONCRETE",
+        "US_BANK_TRUST_NA"
       ],
       "reportLinks": [
         {
@@ -471,7 +472,10 @@
         "GEO",
         "MEGAHUB",
         "PALANTIR",
-        "DOJ"
+        "DOJ",
+        "CORECIVIC_INC",
+        "US_DHS_BUYER",
+        "CHICAGO_TITLE"
       ],
       "reportLinks": [
         {
@@ -509,7 +513,7 @@
         "Palantir"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-11-22"
     },
     {
       "id": "war-trade",
@@ -747,7 +751,8 @@
         "TAE_TECHNOLOGIES",
         "TRUMP_REVOCABLE_TRUST",
         "FREEDOM_250_LLC",
-        "DONALD_TRUMP_JR"
+        "DONALD_TRUMP_JR",
+        "US_BANK_TRUST_NA"
       ],
       "reportLinks": [
         {
@@ -775,7 +780,7 @@
         "Wilbur Ross"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-11-03"
+      "updatedAt": "2026-11-22"
     },
     {
       "id": "pay-to-play-corruption",
@@ -3770,6 +3775,248 @@
       "publishedAt": "2026-11-05",
       "accessedAt": "2026-11-22",
       "locator": "Notes3,managementdiscussionpp24-25; extracted relevant paragraphs"
+    },
+    {
+      "id": "nov22-phang-67-0",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.67.0.pdf",
+      "title": "Defendant’s Notice of Appeal",
+      "publisher": "United States Department of Justice",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "ECF 67 pp1-2"
+    },
+    {
+      "id": "nov22-phang-68-0",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.68.0.pdf",
+      "title": "Defendant’s Certified List of the Contents of the Administrative Record",
+      "publisher": "United States Department of Justice",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "ECF 68 pp1-2"
+    },
+    {
+      "id": "nov22-phang-68-1",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.68.1.pdf",
+      "title": "Declaration of Shantrell Nicole Collier",
+      "publisher": "United States Department of Justice",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "ECF 68-1 pp1-2; certification signed14:28:22EST"
+    },
+    {
+      "id": "nov22-phang-68-2",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.68.2.pdf",
+      "title": "List of Contents of Administrative Record",
+      "publisher": "United States Department of Justice",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "ECF 68-2 pp1-2, entries1–21"
+    },
+    {
+      "id": "nov22-phang-appeal-nov20",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cadc.43517/gov.uscourts.cadc.43517.01208910015.0.pdf",
+      "title": "Order2204297, Phang v Blanche26-5299 consolidated26-5334",
+      "publisher": "Court original / official state record",
+      "originId": "us-federal-courts",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-20",
+      "accessedAt": "2026-11-22",
+      "locator": "pp1-2"
+    },
+    {
+      "id": "nov22-ca-order-nov16",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.cacd.1043513/gov.uscourts.cacd.1043513.182.0.pdf",
+      "title": "Order, United States v California26-7231",
+      "publisher": "Court original / official state record",
+      "originId": "us-federal-courts",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-16",
+      "accessedAt": "2026-11-22",
+      "locator": "p1; districtECF182"
+    },
+    {
+      "id": "nov22-ca-motion-nov17",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.ca9.d906b021-93d2-446e-bb3b-e3705f517169/gov.uscourts.ca9.d906b021-93d2-446e-bb3b-e3705f517169.63.0.pdf",
+      "title": "Plaintiff-Appellant’s Motion to Dismiss Appeal26-7231",
+      "publisher": "Court original / official state record",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "Dkt63.1 pp1–3, substantive motionp3"
+    },
+    {
+      "id": "nov22-seiu-dismissal-nov10",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.ca9.34809698-a4bb-456f-906e-40cfcf74ab7a/gov.uscourts.ca9.34809698-a4bb-456f-906e-40cfcf74ab7a.42.0.pdf",
+      "title": "Order, SEIU v DOJ26-7303",
+      "publisher": "Court original / official state record",
+      "originId": "us-federal-courts",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-10",
+      "accessedAt": "2026-11-22",
+      "locator": "Dkt42.1 p1"
+    },
+    {
+      "id": "nov22-mn-certification",
+      "url": "https://sos.mn.gov/about-the-office/news-room/state-canvassing-board-certifies-results-of-the-2026-general-election/",
+      "title": "State Canvassing Board Certifies Results of the2026 General Election",
+      "publisher": "Minnesota Secretary of State",
+      "originId": "minnesota-sos",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-19",
+      "accessedAt": "2026-11-22",
+      "locator": "announcement; explicitNovember 20update"
+    },
+    {
+      "id": "nov22-tmtg-repurchase-8k",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926037406/djt20261117_8k.htm",
+      "title": "tmtg-repurchase-8k",
+      "publisher": "Trump Media & Technology Group Corp.",
+      "originId": "tmtg",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "Item7.01/8.01; issuer report"
+    },
+    {
+      "id": "nov22-tmtg-repurchase-release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926037406/ex_1047428.htm",
+      "title": "tmtg-repurchase-release",
+      "publisher": "Trump Media & Technology Group Corp.",
+      "originId": "tmtg",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2026-11-17",
+      "accessedAt": "2026-11-22",
+      "locator": "Exhibit99.1; completed repurchase account; same origin as8K"
+    },
+    {
+      "id": "nov22-tmtg-indenture",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000114036125020967/ef20049966_ex4-1.htm",
+      "title": "tmtg-indenture",
+      "publisher": "Trump Media & Technology Group Corp.",
+      "originId": "tmtg",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2025-05-30",
+      "accessedAt": "2026-11-22",
+      "locator": "Instrument/event May 29, 2025; SEC filing May 30, 2025. Sections2.18,4.3,10.10 and executed signatures; newly inspected background"
+    },
+    {
+      "id": "nov22-tmtg-note-origination",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000114036125020967/ef20049966_8k.htm",
+      "title": "tmtg-note-origination",
+      "publisher": "Trump Media & Technology Group Corp.",
+      "originId": "tmtg",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2025-05-30",
+      "accessedAt": "2026-11-22",
+      "locator": "Instrument/event May 29, 2025; SEC filing May 30, 2025. Item1.01; historical context"
+    },
+    {
+      "id": "nov22-prairie-contract",
+      "url": "https://www.sec.gov/Archives/edgar/data/1070985/000119312526335068/d174637dex102.htm",
+      "title": "Prairie purchase and sale agreement",
+      "publisher": "CoreCivic Inc.",
+      "originId": "corecivic",
+      "sourceType": "corporate_filing",
+      "publishedAt": "2026-08-04",
+      "accessedAt": "2026-11-22",
+      "locator": "Sections1–2,14.20 and executed signatures p14"
+    },
+    {
+      "id": "nov22-senate-vote269",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00269.xml",
+      "title": "The Senate rejected H.Con.Res.93,48–51 with one not voting.",
+      "publisher": "United States Senate",
+      "originId": "us-senate",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-19",
+      "accessedAt": "2026-11-22",
+      "locator": "senate269.xml; retained original"
+    },
+    {
+      "id": "nov22-kaine-russia-request",
+      "url": "https://www.kaine.senate.gov/imo/media/doc/russia_502b_resolution.pdf",
+      "title": "Sponsor-provided proposed text requests Russia human-rights and policy-impact information under502B(c).",
+      "publisher": "Senator Tim Kaine",
+      "originId": "us-senate",
+      "sourceType": "official_record",
+      "publishedAt": null,
+      "accessedAt": "2026-11-22",
+      "locator": "kaine-resolution; retained original"
+    },
+    {
+      "id": "nov22-prairie-oversight",
+      "url": "https://mccollum.house.gov/sites/evo-subsites/mccollum-evo.house.gov/files/evo-media-document/letter-to-secretary-mullin-on-prairie-ice-detention-facility-purchase-and-conditions.pdf",
+      "title": "Congressional letter asks DHS for Prairie purchase and operating records, with responses requested December 3.",
+      "publisher": "Representative Betty McCollum and other signatories",
+      "originId": "us-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-20",
+      "accessedAt": "2026-11-22",
+      "locator": "prairie-letter; retained original"
+    },
+    {
+      "id": "nov22-landtag-delegates",
+      "url": "https://www.landtag.sachsen-anhalt.de/artikel/bundesversammlung",
+      "title": "Parliament lists17 delegates to the January 30, 2027 Federal Convention, eight underAfD.",
+      "publisher": "Landtag of Sachsen-Anhalt",
+      "originId": "landtag-sachsen-anhalt",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-18",
+      "accessedAt": "2026-11-22",
+      "locator": "landtag.html; retained original"
+    },
+    {
+      "id": "nov22-mdr-proposal",
+      "url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl/wahl-ministerpraesident-zeitpunkt-video-social-media-einschaetzung-mp-wahl,afd-siegmund-114.html",
+      "title": "MDR reports a proposal for December 8 rather than December 15 minister-president vote, and no convening request at its stated observation time.",
+      "publisher": "MDR Sachsen-Anhalt",
+      "originId": "mdr",
+      "sourceType": "reporting",
+      "publishedAt": "2026-11-20",
+      "accessedAt": "2026-11-22",
+      "locator": "mdr.html; retained original"
+    },
+    {
+      "id": "nov22-hconres93-text",
+      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hconres93rfs/html/BILLS-119hconres93rfs.htm",
+      "title": "H.Con.Res.93 referred in Senate",
+      "publisher": "United States Congress / GPO",
+      "originId": "us-congress",
+      "sourceType": "official_record",
+      "publishedAt": "2026-09-16",
+      "accessedAt": "2026-11-22",
+      "locator": "Referred text and House passage notation"
+    },
+    {
+      "id": "nov22-phang-69-0",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.69.0.pdf",
+      "title": "Phang ECF 69: transmission record and reproduced orders",
+      "publisher": "United States District Court for the District of Columbia",
+      "originId": "ddc-phang",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-18",
+      "accessedAt": "2026-11-22",
+      "locator": "Docket transmission, ECF 67 and November 9 orders, 24 pages"
+    },
+    {
+      "id": "nov22-kaine-announcement",
+      "url": "https://www.kaine.senate.gov/press-releases/kaine-introduces-resolution-to-demand-answers-on-trump-vance-administrations-decisions-that-benefit-russia-and-harm-our-allies",
+      "title": "Kaine announces Russia information-request resolution",
+      "publisher": "Senator Tim Kaine",
+      "originId": "us-senate",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-19",
+      "accessedAt": "2026-11-22",
+      "locator": "Dated announcement and linked sponsor-provided resolution"
     }
   ],
   "claims": [
@@ -7769,6 +8016,289 @@
       "reviewedAt": "2026-11-22",
       "recordType": "Original records inspected retrospectively for November15 interval",
       "status": "documented"
+    },
+    {
+      "id": "nov22-phang-certified-list",
+      "text": "DOJ filed a certified list on the November 17 deadline and reports the required meet-and-confer occurred November 16. Attachment68-2 contains21 numbered entries: statutes, review protocols/instructions, congressional letters and Federal Register notice, FBI Vault processing/inventory materials, and two protective orders. Attachment68-1 is CIO Shantrell Nicole Collier’s certification.",
+      "context": "Filing a list is not producing the entire administrative record to Phang or completing the Library publication order. Collier expressly warns the list may omit statutes, regulations, court orders or case law considered by individual reviewers. The21 entries are index entries, not21 disclosed Epstein documents or a total page count. No judicial finding that the record is complete was obtained.",
+      "sourceIds": [
+        "nov22-phang-68-0",
+        "nov22-phang-68-1",
+        "nov22-phang-68-2"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-17",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-phang-ocio-production-responsibility",
+      "text": "Collier identifies herself as DOJ CIO since February 17, 2026 and states OCIO operates review platforms including Everlaw, receives component data, and facilitates final production/publication after second-level review, quality control and necessary USAO consultations.",
+      "context": "Official sworn account of responsibilities and historical process, not independent validation of every review or disclosure. No procurement contract, payment, vendor ownership or improper withholding motive established. Do not infer Everlaw legal entity or ownership from platform name.",
+      "sourceIds": [
+        "nov22-phang-68-1"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-17",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-phang-notes-order-appeal",
+      "text": "ECF 67 appeals only the November 9 handwritten-notes publication order ECF 64. On November 18, ECF 69 transmits the appeal and district docket through November 17, reproducing the appealed order.",
+      "context": "The notice is not a motion for both stay and expedited review. ECF 64’s conditional temporary stay requires that specific motion before14days expire. November 23 deadline is future at November 22 07CT. Neither actual publication, a compliance notice through cutoff, nor a qualifying stay motion has been verified. ECF 69 reproduces the district court’s ECF 64; these are the same underlying order, not independent corroboration. Origin ddc-phang follows the existing district-court record; DOJ notices and separate appellate orders retain their institutional origins.",
+      "sourceIds": [
+        "nov22-phang-67-0",
+        "nov22-phang-69-0",
+        "nov15-phang-64"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-17",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-phang-older-appeals-expedited",
+      "text": "Panel Millett,Katsas,Rao orders revised briefing: appellantDecember 4, appelleeJanuary 8, replyJanuary 25, appendixJanuary 29, final briefsFebruary 3; clerk to calendar argument on first appropriate March 2027 date.",
+      "context": "This order applies to older consolidated appeals and contains no stay of ECF 64. It does not set exact oral-argument date or merits-panel composition; order expressly says those will be supplied later. Do not use this expedition to trigger the separate notes-order temporary-stay clause.",
+      "sourceIds": [
+        "nov22-phang-appeal-nov20"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-20",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-california-appeal-instruction",
+      "text": "Judges Bennett,Bumatay,Sanchez direct United States to notify court within10days what it intends to do with appeal after district voluntary dismissal and closing.",
+      "context": "An instruction to state intentions, not an appellate dismissal or merits ruling on voter citizenship or list validity.",
+      "sourceIds": [
+        "nov22-ca-order-nov16"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-16",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-california-appeal-dismissal-motion",
+      "text": "Government moves under FRAP42(b) to dismiss appeal. Appellees and intervenor-appellees consent, reserving the right to seek costs and fees.",
+      "context": "A motion requesting dismissal, not an obtained judicial order. No order granting this motion inspected through cutoff; do not report entire California appellate litigation ended. No fees awarded or paid established.",
+      "sourceIds": [
+        "nov22-ca-motion-nov17"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-17",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-seiu-judicial-dismissal-gap-closed",
+      "text": "Eleven-judge en banc panel approves joint stipulation, dismisses appeal underFRAP42(b)(1), allocates own fees/costs to each party; order serves as mandate.",
+      "context": "PrewindowNovember 10 event newly obtained now; do not label newNovember 16–22 action. Does not vacate November 3 published ruling or decide eligibility of persons on federal list.",
+      "sourceIds": [
+        "nov22-seiu-dismissal-nov10"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-10",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-minnesota-certification-with-recounts",
+      "text": "Secretary of State’s November 19 original announcement says board certified U.S.Senate,U.S.House and specified state contests. It reports CongressionalDistrict1 JakeJohnson over BradFinstad by324votes/0.1%, qualifying for publicly funded recount; recount requested and scheduledNovember 30. StateSenateDistrict4 recount also pending. Page explicitly updatedNovember 20 for Kupec request.",
+      "context": "Certification and recount eligibility coexist. This single-state record cannot establish nationwide House/Senate totals, seating, Speaker selection or presidential succession. No new national call count inferred. Article contains apparent label error “Senate District 32A”; avoid using that irrelevant line as a factual claim.",
+      "sourceIds": [
+        "nov22-mn-certification"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-19",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-nov22-tmtg-completed-note-repurchase",
+      "text": "TMTG reports completed repurchase of $100 million principal of 0.00% convertible senior secured notes due May 29, 2028, at a discount to par using cash on hand. Approximately $883.5 million principal remains outstanding.",
+      "context": "No seller identities, exact cash consideration, government action, Trump-personal proceeds or beneficial-control change established. This is debt repurchase, not common-share buyback. Further repurchases are possibilities, not completed actions.",
+      "sourceIds": [
+        "nov22-tmtg-repurchase-8k",
+        "nov22-tmtg-repurchase-release"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "trump-later-financing"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-16",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-tmtg-trustee-collateral-agent",
+      "text": "Executed indenture names U.S. Bank Trust Company, National Association trustee and collateral agent for TMTG notes. Section 2.18 permits open-market or negotiated repurchases. Section 4.3 gives holders cash repurchase option November 30, 2026, at100% principal plus applicable accrued/unpaid interest.",
+      "context": "Trustee/collateral-agent role does not establish ownership of notes, status as Nov16 seller, or receipt of economic proceeds. Do not conflate with U.S.Bancorp or unrelated bank legal entities. Contract has confidential omissions; ExhibitA form note contains inconsistent maturity template text, so use current Nov17 disclosure for stated instrument maturity and preserve original for review.",
+      "sourceIds": [
+        "nov22-tmtg-indenture",
+        "nov22-tmtg-note-origination"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "trump-later-financing"
+      ],
+      "entityIds": [],
+      "eventDate": "2025-05-29",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record personally inspected; bounded November22 review",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-prairie-contract",
+      "text": "The executed August 4, 2026 agreement names CoreCivic Inc. seller and United States through DHS buyer, at $495,639,588 subject to adjustments; Chicago Title signs for limited escrow duties.",
+      "context": "Historical contract newly traced this week. Sale consideration differs from operating fees; contract alone establishes no corruption, appraisal conclusion, operational headcount or escrow compensation.",
+      "sourceIds": [
+        "nov22-prairie-contract"
+      ],
+      "topicIds": [
+        "enforcement-surveillance",
+        "pay-to-play-corruption"
+      ],
+      "entityIds": [
+        "CORECIVIC_INC",
+        "US_DHS_BUYER",
+        "CHICAGO_TITLE"
+      ],
+      "eventDate": "2026-08-04",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Executed contract",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-senate-vote269",
+      "text": "The Senate rejected H.Con.Res.93,48–51 with one not voting.",
+      "context": "The vote concerns a withdrawal resolution; it is not a new force authorization or operational measurement.",
+      "sourceIds": [
+        "nov22-senate-vote269",
+        "nov22-hconres93-text"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-19",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original source inspected",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-kaine-russia-request",
+      "text": "Sponsor-provided proposed text requests Russia human-rights and policy-impact information under502B(c).",
+      "context": "Text has blank resolution number/date; response clock is thirty days after adoption, which was not verified.",
+      "sourceIds": [
+        "nov22-kaine-russia-request",
+        "nov22-kaine-announcement"
+      ],
+      "topicIds": [
+        "war-trade",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-19",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original source inspected",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-prairie-oversight",
+      "text": "Congressional letter asks DHS for Prairie purchase and operating records, with responses requested December 3.",
+      "context": "Inquiry and allegations are not adjudicated findings; prior offer, appraisal and operating fee claims require underlying originals.",
+      "sourceIds": [
+        "nov22-prairie-oversight"
+      ],
+      "topicIds": [
+        "enforcement-surveillance",
+        "pay-to-play-corruption"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-20",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original source inspected",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-landtag-delegates",
+      "text": "Parliament lists17 delegates to the January 30, 2027 Federal Convention, eight underAfD.",
+      "context": "Delegation is not minister-president election, government formation or a coalition.",
+      "sourceIds": [
+        "nov22-landtag-delegates"
+      ],
+      "topicIds": [
+        "germany-afd"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-18",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original source inspected",
+      "status": "documented"
+    },
+    {
+      "id": "nov22-mdr-proposal",
+      "text": "MDR reports a proposal for December 8 rather than December 15 minister-president vote, and no convening request at its stated observation time.",
+      "context": "Attributed single-origin reporting; no formal scheduling order, majority or treaty termination verified.",
+      "sourceIds": [
+        "nov22-mdr-proposal"
+      ],
+      "topicIds": [
+        "germany-afd",
+        "information-media"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-20",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original source inspected",
+      "status": "lead"
     }
   ],
   "comparisons": [
@@ -9179,6 +9709,35 @@
         "digital-assets"
       ],
       "reportHref": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+    },
+    {
+      "id": "US_BANK_TRUST_NA",
+      "topicIds": [
+        "ownership-disclosures",
+        "trump-later-financing"
+      ],
+      "reportHref": "/#the-money-the-profit-architecture"
+    },
+    {
+      "id": "CORECIVIC_INC",
+      "topicIds": [
+        "enforcement-surveillance"
+      ],
+      "reportHref": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+    },
+    {
+      "id": "US_DHS_BUYER",
+      "topicIds": [
+        "enforcement-surveillance"
+      ],
+      "reportHref": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+    },
+    {
+      "id": "CHICAGO_TITLE",
+      "topicIds": [
+        "enforcement-surveillance"
+      ],
+      "reportHref": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
     }
   ],
   "relationships": [
@@ -10300,6 +10859,39 @@
       ],
       "predicate": "issued_restriction_order",
       "reportHref": "/topics/iran-us-decisions.html#claim-nov15-mexc-order"
+    },
+    {
+      "mapEdgeIndex": 163,
+      "sourceIds": [
+        "nov22-tmtg-indenture"
+      ],
+      "claimIds": [
+        "nov22-tmtg-trustee-collateral-agent"
+      ],
+      "predicate": "contracted_trustee",
+      "reportHref": "/briefs/2026-11-22.html"
+    },
+    {
+      "mapEdgeIndex": 164,
+      "sourceIds": [
+        "nov22-prairie-contract"
+      ],
+      "claimIds": [
+        "nov22-prairie-contract"
+      ],
+      "predicate": "property_sale",
+      "reportHref": "/briefs/2026-11-22.html"
+    },
+    {
+      "mapEdgeIndex": 165,
+      "sourceIds": [
+        "nov22-prairie-contract"
+      ],
+      "claimIds": [
+        "nov22-prairie-contract"
+      ],
+      "predicate": "escrow_agent",
+      "reportHref": "/briefs/2026-11-22.html"
     }
   ],
   "feedback": [
@@ -10695,6 +11287,26 @@
         "pay-to-play-corruption"
       ],
       "reason": "Related-party vault arrangement and margin transfer do not establish personal proceeds or an exchange for official action."
+    },
+    {
+      "id": "nov22-notes-appeal-is-not-stay",
+      "date": "2026-11-22",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "executive-authority"
+      ],
+      "reason": "The November17 notice and November20 order in older appeals do not establish the qualifying motion or publication compliance for ECF64."
+    },
+    {
+      "id": "nov22-principal-not-cash",
+      "date": "2026-11-22",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "trump-later-financing"
+      ],
+      "reason": "Principal repurchased is not exact cash consideration; the indenture trustee is not identified as a selling noteholder."
     }
   ],
   "topicProposals": [],
@@ -19805,6 +20417,383 @@
           "reason": "Add exact entities from personally inspected original records; preserve prior topic membership."
         }
       ]
+    },
+    {
+      "id": "nov22-contract-entity-discovery",
+      "date": "2026-11-22",
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "ownership-disclosures",
+          "before": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "BORIS_EPSHTEYN",
+              "MEREDITH_OROURKE",
+              "NATIONAL_PARK_FOUNDATION",
+              "FREEDOM_250_LLC",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937",
+              "ALT5_DIGITAL",
+              "CONCRETE"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "after": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "BORIS_EPSHTEYN",
+              "MEREDITH_OROURKE",
+              "NATIONAL_PARK_FOUNDATION",
+              "FREEDOM_250_LLC",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937",
+              "ALT5_DIGITAL",
+              "CONCRETE",
+              "US_BANK_TRUST_NA"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact legal entities supported by inspected historical executed instruments; preserve previous topic record."
+        },
+        {
+          "collection": "topics",
+          "id": "enforcement-surveillance",
+          "before": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter H: The Warehouse State — Detention as an Industry",
+                "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+              },
+              {
+                "label": "Chapter 14: The Enforcement and Detention Industrial Complex",
+                "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
+              },
+              {
+                "label": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
+                "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "enforcement-surveillance",
+            "title": "Enforcement & surveillance",
+            "description": "Authorities, contracts, operational records, populations and oversight.",
+            "categoryIds": [
+              "institutions"
+            ],
+            "entityIds": [
+              "ICE",
+              "GEO",
+              "MEGAHUB",
+              "PALANTIR",
+              "DOJ",
+              "CORECIVIC_INC",
+              "US_DHS_BUYER",
+              "CHICAGO_TITLE"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter H: The Warehouse State — Detention as an Industry",
+                "href": "/#chapter-h-the-warehouse-state-detention-as-an-industry"
+              },
+              {
+                "label": "Chapter 14: The Enforcement and Detention Industrial Complex",
+                "href": "/#chapter-14-the-enforcement-and-detention-industrial-complex"
+              },
+              {
+                "label": "Chapter 21-D: The Rendition Pipeline — the Alien Enemies Act, CECOT, and Abrego Garcia",
+                "href": "/#chapter-21-d-the-rendition-pipeline-the-alien-enemies-act-ce"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Current documentation",
+                "href": "/#current-documentation-2025-july-2026"
+              }
+            ],
+            "researchQuestions": [
+              "Does a source describe a contract ceiling, funded capacity or an operational facility?",
+              "What are the observation date, population definition and oversight findings?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "detention",
+              "ICE",
+              "surveillance",
+              "facility",
+              "GEO",
+              "Palantir"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact legal entities supported by inspected historical executed instruments; preserve previous topic record."
+        },
+        {
+          "collection": "topics",
+          "id": "trump-later-financing",
+          "before": {
+            "id": "trump-later-financing",
+            "title": "Trump: later financing",
+            "description": "Follow the named creditors and corporate entities in later records, with paid-off loans, reporting periods and unresolved intermediaries kept distinct.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "ROSS",
+              "ROTHSCHILD_INC",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "TMTG",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "FREEDOM_250_LLC",
+              "DONALD_TRUMP_JR"
+            ],
+            "reportLinks": [
+              {
+                "label": "The money architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Early financing and creditor negotiations",
+                "href": "/topics/trump-early-financing.html"
+              }
+            ],
+            "researchQuestions": [
+              "Which exact borrower, creditor and assignee appear in the underlying loan instruments?",
+              "What later ownership, compensation or advisory record could connect a historical intermediary to a current transaction?",
+              "Which liabilities have matured, been assigned or been repaid since the reporting period?"
+            ],
+            "status": "new",
+            "keywords": [
+              "Axos",
+              "Ladder Capital",
+              "Charles Schwab",
+              "mortgage",
+              "refinancing",
+              "Rothschild",
+              "Wilbur Ross"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-03"
+          },
+          "after": {
+            "id": "trump-later-financing",
+            "title": "Trump: later financing",
+            "description": "Follow the named creditors and corporate entities in later records, with paid-off loans, reporting periods and unresolved intermediaries kept distinct.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "ROSS",
+              "ROTHSCHILD_INC",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "TMTG",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "FREEDOM_250_LLC",
+              "DONALD_TRUMP_JR",
+              "US_BANK_TRUST_NA"
+            ],
+            "reportLinks": [
+              {
+                "label": "The money architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Early financing and creditor negotiations",
+                "href": "/topics/trump-early-financing.html"
+              }
+            ],
+            "researchQuestions": [
+              "Which exact borrower, creditor and assignee appear in the underlying loan instruments?",
+              "What later ownership, compensation or advisory record could connect a historical intermediary to a current transaction?",
+              "Which liabilities have matured, been assigned or been repaid since the reporting period?"
+            ],
+            "status": "new",
+            "keywords": [
+              "Axos",
+              "Ladder Capital",
+              "Charles Schwab",
+              "mortgage",
+              "refinancing",
+              "Rothschild",
+              "Wilbur Ross"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact legal entities supported by inspected historical executed instruments; preserve previous topic record."
+        }
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "enforcement-surveillance",
+        "trump-later-financing"
+      ],
+      "summary": "Original executed instruments support ordinary trustee, sale and escrow relationships.",
+      "claimIds": [
+        "nov22-phang-certified-list",
+        "nov22-phang-ocio-production-responsibility",
+        "nov22-phang-notes-order-appeal",
+        "nov22-phang-older-appeals-expedited",
+        "nov22-california-appeal-instruction",
+        "nov22-california-appeal-dismissal-motion",
+        "nov22-seiu-judicial-dismissal-gap-closed",
+        "nov22-minnesota-certification-with-recounts",
+        "nov22-nov22-tmtg-completed-note-repurchase",
+        "nov22-tmtg-trustee-collateral-agent",
+        "nov22-prairie-contract",
+        "nov22-senate-vote269",
+        "nov22-kaine-russia-request",
+        "nov22-prairie-oversight",
+        "nov22-landtag-delegates",
+        "nov22-mdr-proposal"
+      ],
+      "pathIds": []
     }
   ],
   "networkPaths": [
@@ -20541,6 +21530,18 @@
         "The node — where the architectures touch"
       ],
       "href": "/#u-week-20261115"
+    },
+    {
+      "id": "u-week-20261122",
+      "title": "November 22 interval — researched November 22",
+      "level": 4,
+      "scope": "current",
+      "dateContext": "",
+      "parents": [
+        "The Record Since July 19",
+        "The node — where the architectures touch"
+      ],
+      "href": "/#u-week-20261122"
     },
     {
       "id": "u-corrections",
@@ -22309,6 +23310,78 @@
       "href": "/#b-4-new-this-edition"
     },
     {
+      "id": "brief-2026-11-22-the-lede",
+      "title": "The lede",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-the-lede"
+    },
+    {
+      "id": "brief-2026-11-22-architecture-i-the-family-money",
+      "title": "Architecture I — The family money",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-architecture-i-the-family-money"
+    },
+    {
+      "id": "brief-2026-11-22-architecture-ii-executive-power",
+      "title": "Architecture II — Executive power",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-architecture-ii-executive-power"
+    },
+    {
+      "id": "brief-2026-11-22-architecture-iii-the-wars-and-the-count",
+      "title": "Architecture III — The wars and the count",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-architecture-iii-the-wars-and-the-count"
+    },
+    {
+      "id": "brief-2026-11-22-the-node-where-the-architectures-touch",
+      "title": "The node where the architectures touch",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-the-node-where-the-architectures-touch"
+    },
+    {
+      "id": "brief-2026-11-22-what-would-change-the-tier",
+      "title": "What would change the tier",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-what-would-change-the-tier"
+    },
+    {
+      "id": "brief-2026-11-22-rejected-below-b-with-reasons",
+      "title": "Rejected below [B], with reasons",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-rejected-below-b-with-reasons"
+    },
+    {
+      "id": "brief-2026-11-22-next-week-s-priorities",
+      "title": "Next week's priorities",
+      "level": 2,
+      "scope": "brief",
+      "dateContext": "Week ending 2026-11-22",
+      "parents": [],
+      "href": "/#brief-2026-11-22-next-week-s-priorities"
+    },
+    {
       "id": "brief-2026-11-15-the-lede",
       "title": "The lede",
       "level": 2,
@@ -23317,7 +24390,7 @@
       "href": "/#brief-2026-08-16-next-week-s-priorities"
     }
   ],
-  "reportCurrentThrough": "2026-11-15",
+  "reportCurrentThrough": "2026-11-22",
   "briefs": [
     {
       "date": "2026-08-16",
@@ -23374,6 +24447,10 @@
     {
       "date": "2026-11-15",
       "url": "/briefs/2026-11-15.html"
+    },
+    {
+      "date": "2026-11-22",
+      "url": "/briefs/2026-11-22.html"
     }
   ]
 }
