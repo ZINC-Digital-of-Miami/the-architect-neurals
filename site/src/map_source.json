@@ -951,6 +951,42 @@
       "sub": "FEC committee C00888172",
       "core": false,
       "flag": ""
+    },
+    "RICHARD_BLUMENTHAL": {
+      "x": -580,
+      "y": 1700,
+      "r": 51,
+      "name": "Richard Blumenthal",
+      "sub": "Senator · Nov 5 records request",
+      "core": false,
+      "flag": ""
+    },
+    "G42": {
+      "x": 2000,
+      "y": 1400,
+      "r": 51,
+      "name": "G42",
+      "sub": "Inception42 parent · stated Nov 2",
+      "core": false,
+      "flag": ""
+    },
+    "INCEPTION42": {
+      "x": 2200,
+      "y": 1500,
+      "r": 51,
+      "name": "Inception42",
+      "sub": "G42 subsidiary · Nov 2 agreement",
+      "core": false,
+      "flag": ""
+    },
+    "OPENAI": {
+      "x": 2400,
+      "y": 1400,
+      "r": 51,
+      "name": "OpenAI",
+      "sub": "Nov 2 agreement counterparty",
+      "core": false,
+      "flag": ""
     }
   },
   "edges": [
@@ -1895,6 +1931,24 @@
       "TRUMP_47_COMMITTEE_C00867937",
       "A",
       "$920k committee receipt · Oct 10, 2024"
+    ],
+    [
+      "RICHARD_BLUMENTHAL",
+      "BINANCE_HOLDINGS_LTD",
+      "A",
+      "Records request · Nov 5, 2026"
+    ],
+    [
+      "G42",
+      "INCEPTION42",
+      "A",
+      "Subsidiary stated · Nov 2, 2026"
+    ],
+    [
+      "INCEPTION42",
+      "OPENAI",
+      "A",
+      "Five-year agreement reported · Nov 2"
     ]
   ]
 }

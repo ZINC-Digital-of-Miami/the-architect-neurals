@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04",
+  "updatedAt": "2026-11-22",
   "categories": [
     {
       "id": "financial-history",
@@ -622,7 +622,10 @@
       "entityIds": [
         "STARGATE",
         "PALANTIR",
-        "FCC"
+        "FCC",
+        "G42",
+        "INCEPTION42",
+        "OPENAI"
       ],
       "reportLinks": [
         {
@@ -834,7 +837,8 @@
         "GEORGE_BOCHETTO",
         "TREVOR_MILTON",
         "MAHA_ALLIANCE_C00888172",
-        "TRUMP_47_COMMITTEE_C00867937"
+        "TRUMP_47_COMMITTEE_C00867937",
+        "RICHARD_BLUMENTHAL"
       ],
       "reportLinks": [
         {
@@ -3374,6 +3378,215 @@
       "sourceType": "official_record",
       "accessedAt": "2026-11-04",
       "locator": "Article I sections 7, 9; CRS IF11577 June 16, 2020"
+    },
+    {
+      "id": "nov08-phang-ecf62",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.62.0_1.pdf",
+      "title": "Phang v. Blanche: November 2 joint status notice (ECF 62)",
+      "publisher": "US District Court DC",
+      "originId": "us-district-court-dc",
+      "sourceType": "court",
+      "publishedAt": "2026-11-02",
+      "accessedAt": "2026-11-22",
+      "locator": "pp2-5"
+    },
+    {
+      "id": "nov08-phang-ecf62-1",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.62.1.pdf",
+      "title": "Phang v. Blanche: counsel email exchange (ECF 62-1)",
+      "publisher": "US District Court DC",
+      "originId": "us-district-court-dc",
+      "sourceType": "court",
+      "publishedAt": "2026-11-02",
+      "accessedAt": "2026-11-22",
+      "locator": "p2, November 2 08:15 email; pp3-5 preceding exchange"
+    },
+    {
+      "id": "nov08-phang-proposed63-1",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.63.1.pdf",
+      "title": "Phang v. Blanche: plaintiff proposed production order (ECF 63-1)",
+      "publisher": "US District Court DC",
+      "originId": "us-district-court-dc",
+      "sourceType": "court",
+      "publishedAt": "2026-11-02",
+      "accessedAt": "2026-11-22",
+      "locator": "pp1-3; proposed caption and blank judicial date/signature"
+    },
+    {
+      "id": "nov08-blumenthal-binance-letter",
+      "url": "https://www.blumenthal.senate.gov/imo/media/doc/2026-11-05_letter_from_sen_richard_blumenthal_to_binance.pdf",
+      "title": "Senator Blumenthal: November 5 records request to Binance",
+      "publisher": "US Senate",
+      "originId": "us-senate",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "PDF pp1-2 current letter; pp3-6 April 1 letter; pp7-10 February 24 letter"
+    },
+    {
+      "id": "nov08-blumenthal-release",
+      "url": "https://www.blumenthal.senate.gov/newsroom/press/release/blumenthal-sends-warning-to-targets-of-investigations-into-crypto-corruption-immigration-abuses-big-tech-and-more",
+      "title": "Senator Blumenthal: November 5 investigative records requests",
+      "publisher": "US Senate",
+      "originId": "us-senate",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Published 11.05.2026; Binance/Tether paragraph and linked original letter"
+    },
+    {
+      "id": "nov08-binance-counterstatement",
+      "url": "https://www.binance.com/en/blog/compliance/6264258296613630636",
+      "title": "Binance: March 6 response to Senator Blumenthal",
+      "publisher": "Binance",
+      "originId": "binance",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-03-06",
+      "accessedAt": "2026-11-22",
+      "locator": "Full Letter opening and Sections II-III"
+    },
+    {
+      "id": "nov08-ofac-list",
+      "url": "https://ofac.treasury.gov/recent-actions/20261106",
+      "title": "OFAC: November 6 Canadian money services business designations",
+      "publisher": "OFAC",
+      "originId": "ofac",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 19-41"
+    },
+    {
+      "id": "nov08-treasury-canada",
+      "url": "https://home.treasury.gov/news/press-releases/sb0686/",
+      "title": "Treasury: November 6 Canadian money services business sanctions",
+      "publisher": "Treasury/OFAC",
+      "originId": "ofac",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 330-361"
+    },
+    {
+      "id": "nov08-fintrac",
+      "url": "https://fintrac-canafe.canada.ca/new-neuf/statement-declaration-2026-11-06-eng",
+      "title": "FINTRAC: November 6 coordination statement",
+      "publisher": "FINTRAC",
+      "originId": "fintrac",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 26-35"
+    },
+    {
+      "id": "nov08-mexc-announcement",
+      "url": "https://www.fincen.gov/news/news-releases/operation-economic-outcast-severs-mexc-globals-access-us-financial-system/",
+      "title": "FinCEN: November 6 MEXC Global action announcement",
+      "publisher": "FinCEN",
+      "originId": "fincen",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 9-15"
+    },
+    {
+      "id": "nov08-mexc-treasury",
+      "url": "https://home.treasury.gov/news/press-releases/sb0685/",
+      "title": "Treasury: November 6 MEXC Global action announcement",
+      "publisher": "Treasury/FinCEN",
+      "originId": "fincen",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 333-348"
+    },
+    {
+      "id": "nov08-mexc-response",
+      "url": "https://www.mexc.com/announcements/article/statement-regarding-fincen-s-november-6-order-17827791539626",
+      "title": "MEXC: response to the November 6 FinCEN action",
+      "publisher": "MEXC",
+      "originId": "mexc",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-11-07",
+      "accessedAt": "2026-11-22",
+      "locator": "lines 115-124"
+    },
+    {
+      "id": "nov08-kumar-recommendation",
+      "url": "https://cases.justia.com/federal/district-courts/california/caedce/1:2026cv06688/498576/8/0.pdf?ts=1793875511",
+      "title": "Kumar: November 4 findings and recommendations (ECF 8)",
+      "publisher": "EDCA court",
+      "originId": "edca-court",
+      "sourceType": "court",
+      "publishedAt": "2026-11-04",
+      "accessedAt": "2026-11-22",
+      "locator": "caption p1; argument pp4-6; recommendation pp7-9; date p9"
+    },
+    {
+      "id": "nov08-washington-tro",
+      "url": "https://www.courthousenews.com/wp-content/uploads/2026/11/j-jamal-whitehead-order.pdf",
+      "title": "OneAmerica Votes v. Trump, No. 2:26-cv-04223-JNW, Document 21: Order Granting Temporary Restraining Order in Part",
+      "publisher": "US Federal Courts",
+      "originId": "us-federal-courts",
+      "sourceType": "court",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Filed 11/05/26; pp2-4,18-25, operative pp24-25; signed Nov 5 4:21pm Pacific (6:21pm CT)"
+    },
+    {
+      "id": "nov08-california-voluntary-dismissal",
+      "url": "https://oag.ca.gov/system/files/attachments/press-docs/11-6-2026-voluntary-dismissal.pdf",
+      "title": "United States v. State of California, No. 2:26-cv-12025-DOC-ADS, Document 180: United States Notice of Voluntary Dismissal",
+      "publisher": "US Federal Courts",
+      "originId": "us-federal-courts",
+      "sourceType": "court",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "Three-page stamped filing, pp2-3"
+    },
+    {
+      "id": "nov08-seiu-voluntary-dismissal",
+      "url": "https://www.courthousenews.com/wp-content/uploads/2026/11/seiu-notice-of-dismissal.pdf",
+      "title": "SEIU v. DOJ, No. 3:26-cv-12800-TLT, Document 79: Plaintiffs Notice of Voluntary Dismissal Without Prejudice",
+      "publisher": "US Federal Courts",
+      "originId": "us-federal-courts",
+      "sourceType": "court",
+      "publishedAt": "2026-11-06",
+      "accessedAt": "2026-11-22",
+      "locator": "Four-page stamped filing; substantive paragraph PDF p2"
+    },
+    {
+      "id": "nov08-inception-openai",
+      "url": "https://www.mediaoffice.abudhabi/en/crown-prince-news/khaled-bin-mohamed-bin-zayed-meets-sam-altman-and-witnesses-signing-of-agreements-with-openai/",
+      "title": "November 2 Abu Dhabi agreements and production pilot",
+      "publisher": "Abu Dhabi Media Office",
+      "originId": "abu-dhabi-media-office",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-02",
+      "accessedAt": "2026-11-22",
+      "locator": "Dated body, agreement and pilot paragraphs"
+    },
+    {
+      "id": "nov08-tmtg-effect",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/999999999526003450/primary_doc.xml",
+      "title": "TMTG S-4 original effectiveness notice",
+      "publisher": "SEC EDGAR",
+      "originId": "sec",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Complete original EFFECT XML; file 333-299201"
+    },
+    {
+      "id": "nov08-tmtg-425",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926035284/djt20261105_425.htm",
+      "title": "TMTG proposed merger registration effectiveness announcement",
+      "publisher": "Trump Media and Technology Group",
+      "originId": "tmtg",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Form 425 opening announcement, closing conditions and forward-looking statements"
     }
   ],
   "claims": [
@@ -6944,6 +7157,217 @@
       "recordType": "Constitutional and statutory institutional framework",
       "status": "documented",
       "reviewedAt": "2026-11-04"
+    },
+    {
+      "id": "nov08-binance-records-request",
+      "text": "On November 5 Richard Blumenthal renewed records requests to Binance Holdings Ltd., asking production to begin by November 30 and warning of possible alternative measures after January 4.",
+      "context": "This is a documented records request, not a subpoena, proof of wrongdoing, payment or clemency exchange. The letter complains of inadequate responses; Binance had previously answered and disputed allegations.",
+      "sourceIds": [
+        "nov08-blumenthal-binance-letter",
+        "nov08-blumenthal-release",
+        "nov08-binance-counterstatement"
+      ],
+      "topicIds": [
+        "pay-to-play-corruption",
+        "digital-assets"
+      ],
+      "entityIds": [
+        "RICHARD_BLUMENTHAL",
+        "BINANCE_HOLDINGS_LTD"
+      ],
+      "eventDate": "2026-11-05",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-phang-review-notice",
+      "text": "DOJ stated in the November 2 Phang joint notice that foreign-language record review had begun; it proposed another update in thirty days and opposed a fixed production timetable.",
+      "context": "The joint notice contains competing party positions, including DOJ rejection of past-noncompliance allegations. It is not a production measurement or agreed schedule.",
+      "sourceIds": [
+        "nov08-phang-ecf62",
+        "nov08-phang-ecf62-1"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "information-media"
+      ],
+      "entityIds": [
+        "DOJ"
+      ],
+      "eventDate": "2026-11-02",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-phang-proposed-dates",
+      "text": "Phang ECF63-1 proposes November 6 reporting and November 27 review-completion requirements.",
+      "context": "The original is expressly proposed with uncompleted judicial date/signature; these are not established signed deadlines. This document-specific observation is not a complete docket absence finding.",
+      "sourceIds": [
+        "nov08-phang-proposed63-1"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-02",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-washington-ballot-restraint",
+      "text": "The November 5 Washington TRO restrains specified federal ballot demands and related threats to Washington officials while preserving information sharing, cooperation requests and lawful investigations.",
+      "context": "Temporary Washington-specific operative relief; no complete subsequent-docket audit or actual ballot-impact measurement. Do not infer final merits disposition or nationwide prohibition.",
+      "sourceIds": [
+        "nov08-washington-tro"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [
+        "DOJ"
+      ],
+      "eventDate": "2026-11-05",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-california-dismissals",
+      "text": "DOJ and SEIU plaintiffs filed voluntary-dismissal notices in their separate California district cases on November 6.",
+      "context": "The cases and parties remain distinct. DOJ stated that the desired segregation relief would no longer be available after ballot commingling; that is its litigation position, not a finding of unlawful votes. Later closing orders are excluded.",
+      "sourceIds": [
+        "nov08-california-voluntary-dismissal",
+        "nov08-seiu-voluntary-dismissal"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-06",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-canadian-msb-designations",
+      "text": "OFAC added eight separately identified Canadian money services businesses under its Iran authority on November 6; FINTRAC confirmed coordination.",
+      "context": "The designations and institutional cooperation are documented. Shared Amin aliases do not merge1380079 BC LTD and TOP PC TECHNICIAN INC. Underlying alleged transactions are agency assessments, not independently reconstructed here.",
+      "sourceIds": [
+        "nov08-ofac-list",
+        "nov08-treasury-canada",
+        "nov08-fintrac"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade",
+        "digital-assets"
+      ],
+      "entityIds": [
+        "OFAC"
+      ],
+      "eventDate": "2026-11-06",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-mexc-announcement-response",
+      "text": "FinCEN announced a MEXC Global funds-transfer order November 6; MEXC acknowledged it November 7 and said operations continued and controls were under review.",
+      "context": "Announcement is distinct from legal effectiveness and actual access loss. Treasury allegations concern historical flows. Later Federal Register publication belongs to the following interval. Company assurance is not an independent liquidity test.",
+      "sourceIds": [
+        "nov08-mexc-announcement",
+        "nov08-mexc-treasury",
+        "nov08-mexc-response"
+      ],
+      "topicIds": [
+        "digital-assets",
+        "war-trade"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-07",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-kumar-recommendation",
+      "text": "On November 4 Magistrate Judge Allison Claire recommended partial habeas relief in Kumar v. Warden, ECF8.",
+      "context": "Recommendation is distinct from adoption, release or national detention conditions. Government supervision and legal arguments are recorded; adoption/compliance by cutoff not established.",
+      "sourceIds": [
+        "nov08-kumar-recommendation"
+      ],
+      "topicIds": [
+        "enforcement-surveillance",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-04",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-inception-openai-agreement",
+      "text": "The November 2 Abu Dhabi government release reports a five-year OpenAI–Inception42 agreement and identifies Inception42 as a G42 subsidiary.",
+      "context": "Attributed public signing and subsidiary identification; signed contracts, ownership percentages, consideration and payment records not inspected. No established MGX, USD1, family-beneficiary or Stargate-financing bridge.",
+      "sourceIds": [
+        "nov08-inception-openai"
+      ],
+      "topicIds": [
+        "technology-infrastructure",
+        "ownership-disclosures"
+      ],
+      "entityIds": [
+        "G42",
+        "INCEPTION42",
+        "OPENAI"
+      ],
+      "eventDate": "2026-11-02",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-adafsa-pilot",
+      "text": "The November 2 Abu Dhabi release reports that an ADAFSA food-import pilot is already in production using UAE computation, with officials retaining final decisions.",
+      "context": "Official implementation statement, not independent operational audit or evidence of a named Stargate campus, commissioned capacity or capital disbursement.",
+      "sourceIds": [
+        "nov08-inception-openai"
+      ],
+      "topicIds": [
+        "technology-infrastructure"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-02",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original record inspected retrospectively for November 8 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov08-tmtg-registration-effective",
+      "text": "SEC records TMTG S-4 file 333-299201 effective November 5. Its same-day Form 425 reports a definitive proxy/prospectus filing while preserving shareholder approvals and other closing conditions.",
+      "context": "Registration effectiveness does not establish consummation, realized profit, approval of merits or an executed ownership change.",
+      "sourceIds": [
+        "nov08-tmtg-effect",
+        "nov08-tmtg-425"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "technology-infrastructure"
+      ],
+      "entityIds": [
+        "TMTG"
+      ],
+      "eventDate": "2026-11-05",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original EFFECT and company filing inspected retrospectively",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -7343,6 +7767,27 @@
       "lastCheckedAt": "2026-11-03",
       "outcome": "FOX 13 links the FEC donor to the pardonee; FEC rows establish committee receipts. Milton denied donation-money discussion in pardon conversations. No causal exchange is established.",
       "nextCheck": "Inspect underlying FEC images, joint committee allocation records and released pardon correspondence."
+    },
+    {
+      "id": "nov08-records-and-execution",
+      "topicIds": [
+        "pay-to-play-corruption",
+        "executive-authority",
+        "technology-infrastructure",
+        "ownership-disclosures"
+      ],
+      "sourceIds": [
+        "nov08-blumenthal-binance-letter",
+        "nov08-phang-ecf62",
+        "nov08-inception-openai",
+        "nov08-tmtg-effect"
+      ],
+      "question": "Which requested records, judicial directions, signed agreements and proposed transactions have actually advanced to production, operative orders, delivery or closing?",
+      "status": "open",
+      "createdAt": "2026-11-22",
+      "lastCheckedAt": "2026-11-22",
+      "outcome": "November 8 retrospective checks establish the specified request, party positions, official signing account and registration effectiveness. They do not establish responsive production, adoption of the proposed Phang dates, infrastructure disbursements or TMTG merger closing.",
+      "nextCheck": "Inspect actual production receipts and subsequent docket orders; executed infrastructure agreements and delivery evidence; vote results and closing filings. Preserve the distinct event and disclosure dates."
     }
   ],
   "entities": [],
@@ -8397,6 +8842,39 @@
       ],
       "predicate": "reported_nonmemo_individual_receipt_from",
       "reportHref": "/topics/pay-to-play-corruption.html#claim-nov3-milton-trump47-receipt"
+    },
+    {
+      "mapEdgeIndex": 157,
+      "sourceIds": [
+        "nov08-blumenthal-binance-letter"
+      ],
+      "claimIds": [
+        "nov08-binance-records-request"
+      ],
+      "predicate": "renewed_records_request",
+      "reportHref": "/topics/pay-to-play-corruption.html#claim-nov08-binance-records-request"
+    },
+    {
+      "mapEdgeIndex": 158,
+      "sourceIds": [
+        "nov08-inception-openai"
+      ],
+      "claimIds": [
+        "nov08-inception-openai-agreement"
+      ],
+      "predicate": "identified_subsidiary",
+      "reportHref": "/topics/technology-infrastructure.html#claim-nov08-inception-openai-agreement"
+    },
+    {
+      "mapEdgeIndex": 159,
+      "sourceIds": [
+        "nov08-inception-openai"
+      ],
+      "claimIds": [
+        "nov08-inception-openai-agreement"
+      ],
+      "predicate": "reported_agreement_signing",
+      "reportHref": "/topics/technology-infrastructure.html#claim-nov08-inception-openai-agreement"
     }
   ],
   "feedback": [
@@ -17068,6 +17546,417 @@
             "updatedAt": "2026-11-04"
           },
           "reason": "Connect the existing election topic to the dedicated dated Mid Terms record; exact preserved base-to-final change."
+        }
+      ]
+    },
+    {
+      "id": "nov08-retrospective-update",
+      "date": "2026-11-22",
+      "summary": "November 8 retrospective original-record update; preserve historical corpus and distinguish actual research date, requests, proposals, official actions and remaining source gaps.",
+      "claimIds": [
+        "nov08-binance-records-request",
+        "nov08-phang-review-notice",
+        "nov08-phang-proposed-dates",
+        "nov08-washington-ballot-restraint",
+        "nov08-california-dismissals",
+        "nov08-canadian-msb-designations",
+        "nov08-mexc-announcement-response",
+        "nov08-kumar-recommendation",
+        "nov08-inception-openai-agreement",
+        "nov08-adafsa-pilot",
+        "nov08-tmtg-registration-effective"
+      ],
+      "topicIds": [
+        "corrections-provenance",
+        "digital-assets",
+        "enforcement-surveillance",
+        "executive-authority",
+        "information-media",
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "pay-to-play-corruption",
+        "technology-infrastructure",
+        "us-midterms",
+        "war-trade"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "technology-infrastructure",
+          "before": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
+                "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "technology-infrastructure",
+            "title": "Technology & infrastructure",
+            "description": "Companies, procurement, infrastructure commitments and implementation records.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "STARGATE",
+              "PALANTIR",
+              "FCC",
+              "G42",
+              "INCEPTION42",
+              "OPENAI"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 15: Technology, Propaganda, and the Information Environment",
+                "href": "/#chapter-15-technology-propaganda-and-the-information-environ"
+              },
+              {
+                "label": "Chapter 21-I: The Surveillance Consolidation",
+                "href": "/#chapter-21-i-the-surveillance-consolidation"
+              },
+              {
+                "label": "Chapter K: The Network Map — Every Actor, Every Edge, Graded by Evidence",
+                "href": "/#chapter-k-the-network-map-every-actor-every-edge-graded-by-e"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Is a figure an announcement, financing commitment, contract or completed expenditure?",
+              "Which parties, obligations and implementation dates are documented?"
+            ],
+            "status": "watching",
+            "keywords": [
+              "technology",
+              "data center",
+              "infrastructure",
+              "procurement",
+              "Stargate"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "reason": "Add original-record-supported entities to the existing topic while preserving its prior record."
+        },
+        {
+          "collection": "topics",
+          "id": "pay-to-play-corruption",
+          "before": {
+            "id": "pay-to-play-corruption",
+            "title": "Pay-to-play & corruption",
+            "presentation": "report-guide",
+            "description": "Follow money, access and official decisions across the report: family businesses, diplomatic interests, foreign-state revenue, pardons and the records connecting them.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "DONALD_TRUMP_JR",
+              "ERIC_TRUMP",
+              "KUSHNER",
+              "WITKOFF",
+              "ZACH_WITKOFF",
+              "ALT5",
+              "TRUST",
+              "ZHAO",
+              "CAPITAL_1789",
+              "TMTG",
+              "FREEDOM_250_LLC",
+              "CHEVRON_USA",
+              "RTX_CORP",
+              "UMAR_KREMLEV",
+              "SAMUEL_BENJAMIN_BANKMAN_FRIED",
+              "DOJ",
+              "ANDEAN_MEDJEDOVIC",
+              "JM_BURKMAN_ASSOCIATES_LLC",
+              "ELIZABETH_STINEBAUGH",
+              "MEGAN_MILLER",
+              "CHRISTINA_LASSITER",
+              "CHECKMATE_GOVERNMENT_RELATIONS",
+              "BINANCE_HOLDINGS_LTD",
+              "CHARLES_MCDOWELL",
+              "ADMINISTRATION_PERSONNEL",
+              "MUSK",
+              "MIKE_DAVIS",
+              "ZACHARY_JOHN_CZUBAK",
+              "PATRICK_THOMAS_FLEMING",
+              "MICHAEL_WAYNE_HANZUK_II",
+              "ARM_RIPPIN_TOYS_INC",
+              "WASILLA_CAMPAIGN_RALLY_2026_10_13",
+              "DAN_SULLIVAN",
+              "NICK_BEGICH",
+              "MACKENZIE_SCOTT_SPURLOCK",
+              "MO_STRATEGIES_INC",
+              "BLESSINGER_LEGAL_PLLC",
+              "EXECUTIVE_OFFICE_OF_THE_PRESIDENT",
+              "BORIS_EPSHTEYN",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "WALKER_BARRETT",
+              "JARROD_AGEN",
+              "RICHARD_WALTERS",
+              "JAMES_BLAIR",
+              "TRUMP_PRESIDENTIAL_LIBRARY",
+              "CHRIS_LACIVITA",
+              "MICHAEL_DEAN_COHEN",
+              "GHISLAINE_MAXWELL",
+              "JOHN_DOUGHERTY",
+              "DANIEL_PELLICCIOTTI",
+              "LOU_BARLETTA",
+              "RICK_SANTORUM",
+              "GEORGE_BOCHETTO",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money: the profit architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Chapter C: the family crypto empire",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: the crypto apparatus",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter D: the envoy economy",
+                "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
+              },
+              {
+                "label": "Chapter E: foreign-state revenue",
+                "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
+              },
+              {
+                "label": "Chapter E-2: the Qatar file",
+                "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
+              },
+              {
+                "label": "Chapter E-3: the Argentina channel",
+                "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
+              },
+              {
+                "label": "Chapter F: the pardon and access market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "Chapter G: war finance",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter G-2: five follow-the-money streams",
+                "href": "/#chapter-g-2-five-follow-the-money-streams"
+              },
+              {
+                "label": "Chapter I: what the money architecture adds up to",
+                "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
+              }
+            ],
+            "researchQuestions": [
+              "Who paid whom, through which legal entity, and when?",
+              "Which access, appointment, pardon, contract or policy decision followed, and what do the original records establish?",
+              "What evidence connects a payment or financial interest to an official act, and what alternative explanations or denials must be tested?",
+              "Which earlier cases and cross-report connections help explain the consequences and the next records to investigate?"
+            ],
+            "status": "active",
+            "keywords": [
+              "pay-to-play",
+              "corruption",
+              "payments",
+              "access",
+              "pardons",
+              "foreign-state revenue",
+              "conflicts of interest",
+              "official decisions"
+            ],
+            "createdAt": "2026-09-23",
+            "updatedAt": "2026-11-03"
+          },
+          "after": {
+            "id": "pay-to-play-corruption",
+            "title": "Pay-to-play & corruption",
+            "presentation": "report-guide",
+            "description": "Follow money, access and official decisions across the report: family businesses, diplomatic interests, foreign-state revenue, pardons and the records connecting them.",
+            "categoryIds": [
+              "financial-history",
+              "institutions"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "DONALD_TRUMP_JR",
+              "ERIC_TRUMP",
+              "KUSHNER",
+              "WITKOFF",
+              "ZACH_WITKOFF",
+              "ALT5",
+              "TRUST",
+              "ZHAO",
+              "CAPITAL_1789",
+              "TMTG",
+              "FREEDOM_250_LLC",
+              "CHEVRON_USA",
+              "RTX_CORP",
+              "UMAR_KREMLEV",
+              "SAMUEL_BENJAMIN_BANKMAN_FRIED",
+              "DOJ",
+              "ANDEAN_MEDJEDOVIC",
+              "JM_BURKMAN_ASSOCIATES_LLC",
+              "ELIZABETH_STINEBAUGH",
+              "MEGAN_MILLER",
+              "CHRISTINA_LASSITER",
+              "CHECKMATE_GOVERNMENT_RELATIONS",
+              "BINANCE_HOLDINGS_LTD",
+              "CHARLES_MCDOWELL",
+              "ADMINISTRATION_PERSONNEL",
+              "MUSK",
+              "MIKE_DAVIS",
+              "ZACHARY_JOHN_CZUBAK",
+              "PATRICK_THOMAS_FLEMING",
+              "MICHAEL_WAYNE_HANZUK_II",
+              "ARM_RIPPIN_TOYS_INC",
+              "WASILLA_CAMPAIGN_RALLY_2026_10_13",
+              "DAN_SULLIVAN",
+              "NICK_BEGICH",
+              "MACKENZIE_SCOTT_SPURLOCK",
+              "MO_STRATEGIES_INC",
+              "BLESSINGER_LEGAL_PLLC",
+              "EXECUTIVE_OFFICE_OF_THE_PRESIDENT",
+              "BORIS_EPSHTEYN",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "WALKER_BARRETT",
+              "JARROD_AGEN",
+              "RICHARD_WALTERS",
+              "JAMES_BLAIR",
+              "TRUMP_PRESIDENTIAL_LIBRARY",
+              "CHRIS_LACIVITA",
+              "MICHAEL_DEAN_COHEN",
+              "GHISLAINE_MAXWELL",
+              "JOHN_DOUGHERTY",
+              "DANIEL_PELLICCIOTTI",
+              "LOU_BARLETTA",
+              "RICK_SANTORUM",
+              "GEORGE_BOCHETTO",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937",
+              "RICHARD_BLUMENTHAL"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money: the profit architecture",
+                "href": "/#the-money-the-profit-architecture"
+              },
+              {
+                "label": "Chapter C: the family crypto empire",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: the crypto apparatus",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter D: the envoy economy",
+                "href": "/#chapter-d-the-envoy-economy-kushner-the-witkoffs-and-diploma"
+              },
+              {
+                "label": "Chapter E: foreign-state revenue",
+                "href": "/#chapter-e-foreign-state-revenue-the-jet-the-gulf-and-the-emo"
+              },
+              {
+                "label": "Chapter E-2: the Qatar file",
+                "href": "/#chapter-e-2-the-qatar-file-a-security-guarantee-a-jet-a-reso"
+              },
+              {
+                "label": "Chapter E-3: the Argentina channel",
+                "href": "/#chapter-e-3-the-argentina-channel-a-40-billion-bailout-and-a"
+              },
+              {
+                "label": "Chapter F: the pardon and access market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "Chapter G: war finance",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter G-2: five follow-the-money streams",
+                "href": "/#chapter-g-2-five-follow-the-money-streams"
+              },
+              {
+                "label": "Chapter I: what the money architecture adds up to",
+                "href": "/#chapter-i-the-sum-what-the-money-architecture-adds-up-to"
+              }
+            ],
+            "researchQuestions": [
+              "Who paid whom, through which legal entity, and when?",
+              "Which access, appointment, pardon, contract or policy decision followed, and what do the original records establish?",
+              "What evidence connects a payment or financial interest to an official act, and what alternative explanations or denials must be tested?",
+              "Which earlier cases and cross-report connections help explain the consequences and the next records to investigate?"
+            ],
+            "status": "active",
+            "keywords": [
+              "pay-to-play",
+              "corruption",
+              "payments",
+              "access",
+              "pardons",
+              "foreign-state revenue",
+              "conflicts of interest",
+              "official decisions"
+            ],
+            "createdAt": "2026-09-23",
+            "updatedAt": "2026-11-03"
+          },
+          "reason": "Add original-record-supported entities to the existing topic while preserving its prior record."
         }
       ]
     }
