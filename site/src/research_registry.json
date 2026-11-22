@@ -134,7 +134,9 @@
         "OFAC",
         "GG_BANK",
         "GG_LEASING",
-        "GG_PORTFOLIO"
+        "GG_PORTFOLIO",
+        "FINCEN",
+        "MEXC_GLOBAL"
       ],
       "reportLinks": [
         {
@@ -168,7 +170,7 @@
         "Hormuz"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-09-08"
+      "updatedAt": "2026-11-22"
     },
     {
       "id": "us-midterms",
@@ -327,7 +329,9 @@
         "CONTINENTAL_STRATEGY_LLC",
         "TREVOR_MILTON",
         "MAHA_ALLIANCE_C00888172",
-        "TRUMP_47_COMMITTEE_C00867937"
+        "TRUMP_47_COMMITTEE_C00867937",
+        "ALT5_DIGITAL",
+        "CONCRETE"
       ],
       "reportLinks": [
         {
@@ -349,7 +353,7 @@
         "financing"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-11-03"
+      "updatedAt": "2026-11-22"
     },
     {
       "id": "digital-assets",
@@ -370,7 +374,11 @@
         "ZACH_WITKOFF",
         "CHECKMATE_GOVERNMENT_RELATIONS",
         "BINANCE_HOLDINGS_LTD",
-        "CHARLES_MCDOWELL"
+        "CHARLES_MCDOWELL",
+        "ALT5_DIGITAL",
+        "CONCRETE",
+        "FINCEN",
+        "MEXC_GLOBAL"
       ],
       "reportLinks": [
         {
@@ -404,7 +412,7 @@
         "digital asset"
       ],
       "createdAt": "2026-09-08",
-      "updatedAt": "2026-11-03"
+      "updatedAt": "2026-11-22"
     },
     {
       "id": "information-media",
@@ -3587,6 +3595,181 @@
       "publishedAt": "2026-11-05",
       "accessedAt": "2026-11-22",
       "locator": "Form 425 opening announcement, closing conditions and forward-looking statements"
+    },
+    {
+      "id": "nov15-aifc-q3",
+      "url": "https://www.sec.gov/Archives/edgar/data/862861/000149315226051057/form10-q.htm",
+      "title": "AI Financial Q3 collateral and related-party disclosures",
+      "publisher": "AI Financial Corporation",
+      "originId": "aifc",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-11-12",
+      "accessedAt": "2026-11-22",
+      "locator": "Notes 8, 13, 21, 22; source index saved separately"
+    },
+    {
+      "id": "nov15-aifc-q2",
+      "url": "https://www.sec.gov/Archives/edgar/data/862861/000149315226038732/form10-q.htm",
+      "title": "AI Financial Q2 Concrete services disclosure",
+      "publisher": "AI Financial Corporation",
+      "originId": "aifc",
+      "sourceType": "corporate_statement",
+      "accessedAt": "2026-11-22",
+      "locator": "Subsequent-events Concrete Agreement paragraph"
+    },
+    {
+      "id": "nov15-tmtg-release",
+      "url": "https://www.sec.gov/Archives/edgar/data/1849635/000143774926035888/ex_1041067.htm",
+      "title": "TMTG November 9 merger-status announcement",
+      "publisher": "Trump Media and Technology Group",
+      "originId": "tmtg",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-11-09",
+      "accessedAt": "2026-11-22",
+      "locator": "merger conditions and October draw"
+    },
+    {
+      "id": "nov15-phang-64",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.64.0.pdf",
+      "title": "Phang November 9 handwritten-notes publication order",
+      "publisher": "United States District Court",
+      "originId": "ddc-phang",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-09",
+      "accessedAt": "2026-11-22",
+      "locator": "pp1-3"
+    },
+    {
+      "id": "nov15-phang-65",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.65.0.pdf",
+      "title": "Phang November 9 administrative-record order",
+      "publisher": "United States District Court",
+      "originId": "ddc-phang",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-09",
+      "accessedAt": "2026-11-22",
+      "locator": "pp7-8 operative deadlines; pp3-7 reasoning"
+    },
+    {
+      "id": "nov15-phang-66",
+      "url": "https://storage.courtlistener.com/recap/gov.uscourts.dcd.291779/gov.uscourts.dcd.291779.66.0.pdf",
+      "title": "Phang November 9 foreign-language review order",
+      "publisher": "United States District Court",
+      "originId": "ddc-phang",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-09",
+      "accessedAt": "2026-11-22",
+      "locator": "pp2-3"
+    },
+    {
+      "id": "nov15-wa-pi-withdrawal-20261114",
+      "url": "https://www.democracydocket.com/wp-content/uploads/2026/10/2026-11-16-WA-PI-Withdrawl.pdf",
+      "title": "Plaintiffs’ Notice to Withdraw Pending Motion for Preliminary Injunction",
+      "publisher": "Parties to election litigation",
+      "originId": "election-litigants",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-14",
+      "accessedAt": "2026-11-22",
+      "locator": "W.D. Wash. 2:26-cv-04223-JNW, ECF 24, pp.2-4 and 6"
+    },
+    {
+      "id": "nov15-wa-doj-opposition-20261112",
+      "url": "https://www.democracydocket.com/wp-content/uploads/2026/10/2026-11-12-DOJ-Response-TRO.pdf",
+      "title": "Defendants’ Opposition to Plaintiffs’ Motion for Preliminary Injunction",
+      "publisher": "Parties to election litigation",
+      "originId": "us-doj",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-12",
+      "accessedAt": "2026-11-22",
+      "locator": "W.D. Wash. 2:26-cv-04223-JNW, ECF22, especially pp.3–7"
+    },
+    {
+      "id": "nov15-ca-order-closing-20261110",
+      "url": "https://www.cacd.uscourts.gov/sites/default/files/documents/Dkt.-181-Order-Closing-Case.pdf",
+      "title": "United States of America v. State of California et al. — Order Closing Case",
+      "publisher": "United States District Court",
+      "originId": "cacd",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-10",
+      "accessedAt": "2026-11-22",
+      "locator": "C.D. Cal. 2:26-cv-12025-DOC-ADS, ECF181, p.1"
+    },
+    {
+      "id": "nov15-ca9-stipulation-20261109",
+      "url": "https://www.democracydocket.com/wp-content/uploads/2026/10/2026-11-09-voluntary-dismissal.pdf",
+      "title": "SEIU et al. v. DOJ et al. — Joint Stipulation of Dismissal",
+      "publisher": "Parties to election litigation",
+      "originId": "election-litigants",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-09",
+      "accessedAt": "2026-11-22",
+      "locator": "9th Cir. 26-7303, DktEntry41.1, p.1"
+    },
+    {
+      "id": "nov15-mexc-order",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-10/html/2026-22962.htm",
+      "title": "FinCEN MEXC Global order published November 10",
+      "publisher": "FinCEN",
+      "originId": "fincen",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-10",
+      "accessedAt": "2026-11-22",
+      "locator": "Header; section VI.A-G; original lower sections inspected"
+    },
+    {
+      "id": "nov15-iran-license-publication",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-13/html/2026-23197.htm",
+      "title": "November 13 publication of October Iran wind-down licenses",
+      "publisher": "OFAC",
+      "originId": "ofac",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-13",
+      "accessedAt": "2026-11-22",
+      "locator": "Entire short original"
+    },
+    {
+      "id": "nov15-petroleum-determination-publication",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-13/pdf/2026-23233.pdf",
+      "title": "October28 petroleum determination published November 13",
+      "publisher": "Executive Office of the President",
+      "originId": "white-house",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-13",
+      "accessedAt": "2026-11-22",
+      "locator": "Complete one-page original"
+    },
+    {
+      "id": "nov15-bundestag-protocol",
+      "url": "https://www.bundestag.de/resource/blob/1232628/amtpr21107.pdf",
+      "title": "November11 Bundestag official protocol",
+      "publisher": "Deutscher Bundestag",
+      "originId": "bundestag",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-11",
+      "accessedAt": "2026-11-22",
+      "locator": "Both pages fully read"
+    },
+    {
+      "id": "background-gao-oversight",
+      "url": "https://www.gao.gov/products/gao-27-109299",
+      "title": "GAO detention oversight report summary, November5",
+      "publisher": "Government Accountability Office",
+      "originId": "gao",
+      "sourceType": "official_record",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Full original report landing page; full20-page report not read"
+    },
+    {
+      "id": "background-corecivic-q3",
+      "url": "https://www.sec.gov/Archives/edgar/data/1070985/000119312526449151/cxw-20260930.htm",
+      "title": "CoreCivic Q3 filing: earlier Prairie sale and operating projections",
+      "publisher": "CoreCivic Inc.",
+      "originId": "corecivic",
+      "sourceType": "corporate_statement",
+      "publishedAt": "2026-11-05",
+      "accessedAt": "2026-11-22",
+      "locator": "Notes3,managementdiscussionpp24-25; extracted relevant paragraphs"
     }
   ],
   "claims": [
@@ -7368,6 +7551,224 @@
       "reviewedAt": "2026-11-22",
       "recordType": "Original EFFECT and company filing inspected retrospectively",
       "status": "documented"
+    },
+    {
+      "id": "nov15-concrete-collateral",
+      "text": "AI Financial reports a November 5 transfer of 343,400,000 WLFI tokens, fair market value $15,260,696, to wallets jointly controlled with Concrete after a margin call.",
+      "context": "Disclosed in November 12 filing; issuer retains legal and beneficial title under Note 8. No independently reconciled wallet transfer, sale, personal proceeds or official favor established.",
+      "sourceIds": [
+        "nov15-aifc-q3"
+      ],
+      "topicIds": [
+        "digital-assets",
+        "ownership-disclosures"
+      ],
+      "entityIds": [
+        "ALT5",
+        "CONCRETE"
+      ],
+      "eventDate": "2026-11-05",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-concrete-services",
+      "text": "AI Financial identifies Alt5 Digital Holdings, Inc., a Wyoming indirect wholly owned subsidiary, as contracting with Concrete Network Services Ltd., a BVI company, for vault infrastructure and services.",
+      "context": "Q3 dates MSA/SOW July 13; Q2 says entered July 30. Exact agreement date remains unresolved. Q3 identifies Concrete owner by WLF chief-technology-officer role without naming that individual. No causal-exchange finding.",
+      "sourceIds": [
+        "nov15-aifc-q3",
+        "nov15-aifc-q2"
+      ],
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets",
+        "pay-to-play-corruption"
+      ],
+      "entityIds": [
+        "ALT5",
+        "ALT5_DIGITAL",
+        "CONCRETE"
+      ],
+      "eventDate": "2026-11-12",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-phang-handwritten-order",
+      "text": "Court independently states it reviewed October 16 in-camera submissions and orders publication in Epstein Library of redacted handwritten notes underlying FD302 EFTA01245620, EFTA02858481 and EFTA02858491 within 14 days; compliance notice within 24 hours of publication.",
+      "context": "Limited to three identified note sets; government says not representative of scaling review. Temporary stay applies if government moves D.C. Circuit for BOTH stay and expedited review within 14 days; notice of appeal alone does not suffice. No publication or appellate stay verified as of November 15.",
+      "sourceIds": [
+        "nov15-phang-64"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-09",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-phang-administrative-record-order",
+      "text": "Court denies DOJ postponement motion: confer and file certified administrative-record contents list by November 17; produce record to plaintiff by December 1; plaintiff response to Rule 12(c) by December 31.",
+      "context": "Scheduling/record-production order, not merits judgment or proof production happened. Court rejects premise public-document availability replaces identifying actual decision record.",
+      "sourceIds": [
+        "nov15-phang-65"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-09",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-phang-foreign-language-order",
+      "text": "Court declines to impose fixed completion timeframe now; orders December 10 status report on foreign-language review and expected publication start, supported by declaration from person with personal knowledge/information in official capacity.",
+      "context": "DOJ statement review begun remains party representation; plaintiff requested November 27 completion but court did not adopt it. No record-count/production measurement established.",
+      "sourceIds": [
+        "nov15-phang-66"
+      ],
+      "topicIds": [
+        "executive-authority",
+        "corrections-provenance"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-09",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-wa-pi-withdrawal-20261114",
+      "text": "OneAmerica Votes, Latino Community Fund of Washington State and UFCW withdraw only the preliminary-injunction portion of Dkt 12 without prejudice, conditioned on continuing accuracy of government representations. They say restrained conduct has stopped and will not resume before December 3 certification. The filing describes the November 5 TRO as effective through November 19.",
+      "context": "This is not an extension, permanent injunction, dismissal of complaint, or independent compliance finding. Plaintiffs attribute the stop to the TRO; government attributes lack of injury to Secretary Hobbs’ refusals and other restraints. Court-stamped Filed 11/14/26 and signed November 14; certificate explains email filing during CM/ECF outage November 13–16. URL filename November 16 is not filing date. Subsequent November 16 hearing cancellation is outside cutoff and excluded.",
+      "sourceIds": [
+        "nov15-wa-pi-withdrawal-20261114"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-14",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-wa-doj-opposition-20261112",
+      "text": "DOJ asks the court to deny preliminary relief, contests standing and merits, and represents it has not taken threatened future steps. It invokes the separate November 2 LWV v DHS order as prohibiting further voter-list disclosures to election officials.",
+      "context": "Advocacy and representations, not a judgment dismissing plaintiffs or proving list accuracy/zero ballot effects. The cited LWV order itself was not independently obtained in this phase.",
+      "sourceIds": [
+        "nov15-wa-doj-opposition-20261112"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-12",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-ca-order-closing-20261110",
+      "text": "Judge David O. Carter closes the suit following DOJ unilateral withdrawal and vacates as moot the November 13 expedited hearing on validity of the government list.",
+      "context": "The hearing did not establish the list’s validity; case closure is not an adjudication that every listed voter was eligible or that DOJ obtained the sought relief.",
+      "sourceIds": [
+        "nov15-ca-order-closing-20261110"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-10",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-ca9-stipulation-20261109",
+      "text": "All parties stipulate to voluntary appeal dismissal under FRAP42(b)(1), stating that plaintiffs’ district dismissal dissolved the appealed order.",
+      "context": "This is not the judicial dismissal order. Any claim of a November 10 appellate order requires that order separately. Do not describe the November 3 reinstated injunction as continuing indefinitely.",
+      "sourceIds": [
+        "nov15-ca9-stipulation-20261109"
+      ],
+      "topicIds": [
+        "us-midterms",
+        "executive-authority"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-09",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-mexc-order",
+      "text": "FinCEN published its MEXC Global order November 10, filed November 9. Section VI.C sets December 10 effectiveness with no cessation date; section VI.B prohibits covered financial institutions from transmittals to or from the defined MEXC Global.",
+      "context": "November 6 announcement is retained background. This is not proof that all payment access had ceased by November 15. Definition excludes United States branches, subsidiaries and offices and includes foreign successors; underlying illicit-flow estimates are agency assessments, not independently reconciled transfers. MEXC’s November 7 response said operations continued and user assets remained secure, and announced a controls review; the company statement remains separately attributed in the November 8 brief.",
+      "sourceIds": [
+        "nov15-mexc-order",
+        "nov08-mexc-response"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade",
+        "digital-assets"
+      ],
+      "entityIds": [
+        "FINCEN",
+        "MEXC_GLOBAL"
+      ],
+      "eventDate": "2026-11-10",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-iran-license-publication",
+      "text": "November 13 Federal Register publishes Iran general licenses EE and FF issued October 8 and October 15 and expired October 23 and October 30 respectively. They addressed wind-down transactions involving Samudra Marine Services Private Limited and International Development Bank for Investment and Finance.",
+      "context": "Publication does not renew or extend the expired licenses or establish fresh sanctions relief in November. No underlying payment movement inspected.",
+      "sourceIds": [
+        "nov15-iran-license-publication"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-13",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
+    },
+    {
+      "id": "nov15-petroleum-determination-publication",
+      "text": "Federal Register published October 28 Presidential Determination 2027-02 on November 13. The President determines sufficient non-Iranian petroleum supply under NDAA2012 section 1245(d)(4)(B),(C), citing October EIA reporting among considerations.",
+      "context": "Determination is an official legal/policy assessment, not independently verified commodity availability, an observed reduction in imports, or new military authorization. Decision date October 28 differs from publication.",
+      "sourceIds": [
+        "nov15-petroleum-determination-publication"
+      ],
+      "topicIds": [
+        "iran-us-decisions",
+        "war-trade"
+      ],
+      "entityIds": [],
+      "eventDate": "2026-11-13",
+      "reviewedAt": "2026-11-22",
+      "recordType": "Original records inspected retrospectively for November15 interval",
+      "status": "documented"
     }
   ],
   "comparisons": [
@@ -7788,6 +8189,57 @@
       "lastCheckedAt": "2026-11-22",
       "outcome": "November 8 retrospective checks establish the specified request, party positions, official signing account and registration effectiveness. They do not establish responsive production, adoption of the proposed Phang dates, infrastructure disbursements or TMTG merger closing.",
       "nextCheck": "Inspect actual production receipts and subsequent docket orders; executed infrastructure agreements and delivery evidence; vote results and closing filings. Preserve the distinct event and disclosure dates."
+    },
+    {
+      "id": "nov15-concrete-instruments",
+      "topicIds": [
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "sourceIds": [
+        "nov15-aifc-q2",
+        "nov15-aifc-q3"
+      ],
+      "question": "What do the signed Concrete instruments establish about dates, counterparties, title, release rights and fees?",
+      "status": "open",
+      "createdAt": "2026-11-22",
+      "lastCheckedAt": "2026-11-22",
+      "outcome": "Q2 says entered July30; Q3 dates instruments July13. November5 collateral movement newly disclosed November12; personal owner identity and payment recipient unresolved.",
+      "nextCheck": "Obtain executed MSA/SOWs and contemporaneous ownership record; reconcile movements without treating collateral as a sale."
+    },
+    {
+      "id": "nov15-phang-implementation",
+      "topicIds": [
+        "executive-authority"
+      ],
+      "sourceIds": [
+        "nov15-phang-64",
+        "nov15-phang-65",
+        "nov15-phang-66"
+      ],
+      "question": "Which November9 directions have been implemented or affected by subsequent orders?",
+      "status": "open",
+      "createdAt": "2026-11-22",
+      "lastCheckedAt": "2026-11-22",
+      "outcome": "Three operative orders inspected; no later compliance or appellate stay established within November15 cutoff.",
+      "nextCheck": "Inspect note publication/compliance, qualifying appellate motion, November17 record list, December1 production and December10 declaration."
+    },
+    {
+      "id": "nov15-election-procedure",
+      "topicIds": [
+        "us-midterms"
+      ],
+      "sourceIds": [
+        "nov15-wa-pi-withdrawal-20261114",
+        "nov15-ca-order-closing-20261110",
+        "nov15-ca9-stipulation-20261109"
+      ],
+      "question": "What subsequent orders and dated certification records establish current election status?",
+      "status": "open",
+      "createdAt": "2026-11-22",
+      "lastCheckedAt": "2026-11-22",
+      "outcome": "Conditional Washington PI withdrawal preserves complaint; separate California suit closed; appellate party stipulation does not substitute for dismissal order.",
+      "nextCheck": "Obtain operative subsequent orders and dated canvasses; retain call/certification/seating distinctions."
     }
   ],
   "entities": [],
@@ -8875,6 +9327,41 @@
       ],
       "predicate": "reported_agreement_signing",
       "reportHref": "/topics/technology-infrastructure.html#claim-nov08-inception-openai-agreement"
+    },
+    {
+      "mapEdgeIndex": 160,
+      "sourceIds": [
+        "nov15-aifc-q2",
+        "nov15-aifc-q3"
+      ],
+      "claimIds": [
+        "nov15-concrete-services"
+      ],
+      "predicate": "indirectly_wholly_owns",
+      "reportHref": "/topics/ownership-disclosures.html#claim-nov15-concrete-services"
+    },
+    {
+      "mapEdgeIndex": 161,
+      "sourceIds": [
+        "nov15-aifc-q2",
+        "nov15-aifc-q3"
+      ],
+      "claimIds": [
+        "nov15-concrete-services"
+      ],
+      "predicate": "contracted_for_vault_services",
+      "reportHref": "/topics/ownership-disclosures.html#claim-nov15-concrete-services"
+    },
+    {
+      "mapEdgeIndex": 162,
+      "sourceIds": [
+        "nov15-mexc-order"
+      ],
+      "claimIds": [
+        "nov15-mexc-order"
+      ],
+      "predicate": "issued_restriction_order",
+      "reportHref": "/topics/iran-us-decisions.html#claim-nov15-mexc-order"
     }
   ],
   "feedback": [
@@ -9229,6 +9716,47 @@
         "executive-authority"
       ],
       "reason": "Post/Times-origin reported counsel/payment accounts lack inspected original admission, letter or payment record; no filed pardon request or Trump discussion established."
+    },
+    {
+      "id": "nov15-concrete-date-conflict",
+      "date": "2026-11-22",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "ownership-disclosures"
+      ],
+      "reason": "Q3 July13 and Q2 July30 agreement dates conflict; signed instruments missing. Reject silently choosing one execution date."
+    },
+    {
+      "id": "nov15-mexc-effective-date",
+      "date": "2026-11-22",
+      "purpose": "evidence_review",
+      "decision": "accept",
+      "topicIds": [
+        "iran-us-decisions",
+        "digital-assets"
+      ],
+      "reason": "November10 publication establishes order effective December10; do not infer completed payment cutoff by November15."
+    },
+    {
+      "id": "nov15-truthapi-source-route",
+      "date": "2026-11-22",
+      "purpose": "source_route",
+      "decision": "reject",
+      "topicIds": [
+        "information-media"
+      ],
+      "reason": "DocumentCloud original retrieval blocked; retain motion and order as unresolved, avoid repeating the same failed route without access change."
+    },
+    {
+      "id": "nov15-collateral-favor-bridge",
+      "date": "2026-11-22",
+      "purpose": "evidence_review",
+      "decision": "reject",
+      "topicIds": [
+        "pay-to-play-corruption"
+      ],
+      "reason": "Related-party vault arrangement and margin transfer do not establish personal proceeds or an exchange for official action."
     }
   ],
   "topicProposals": [],
@@ -17957,6 +18485,386 @@
             "updatedAt": "2026-11-03"
           },
           "reason": "Add original-record-supported entities to the existing topic while preserving its prior record."
+        }
+      ]
+    },
+    {
+      "id": "nov15-original-record-additions",
+      "date": "2026-11-22",
+      "summary": "Retrospective November15 additions from original filings and orders; dates and unresolved agreement conflict preserved.",
+      "claimIds": [
+        "nov15-concrete-collateral",
+        "nov15-concrete-services",
+        "nov15-phang-handwritten-order",
+        "nov15-phang-administrative-record-order",
+        "nov15-phang-foreign-language-order",
+        "nov15-wa-pi-withdrawal-20261114",
+        "nov15-wa-doj-opposition-20261112",
+        "nov15-ca-order-closing-20261110",
+        "nov15-ca9-stipulation-20261109",
+        "nov15-mexc-order",
+        "nov15-iran-license-publication",
+        "nov15-petroleum-determination-publication"
+      ],
+      "pathIds": [],
+      "topicIds": [
+        "iran-us-decisions",
+        "ownership-disclosures",
+        "digital-assets"
+      ],
+      "changes": [
+        {
+          "collection": "topics",
+          "id": "iran-us-decisions",
+          "before": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter 17: Foreign Policy and the Expansionist Pattern",
+                "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
+              },
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-09-08"
+          },
+          "after": {
+            "id": "iran-us-decisions",
+            "title": "Iran & U.S. decisions",
+            "description": "Dated actions, legal authorities, stated objectives and attributable explanations.",
+            "categoryIds": [
+              "foreign-affairs"
+            ],
+            "entityIds": [
+              "IRAN",
+              "TRUMP",
+              "PENTAGON",
+              "TREASURY",
+              "OFAC",
+              "GG_BANK",
+              "GG_LEASING",
+              "GG_PORTFOLIO",
+              "FINCEN",
+              "MEXC_GLOBAL"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter 21-B: The War — The United States, Israel, and Iran (February–July 2026)",
+                "href": "/#chapter-21-b-the-war-the-united-states-israel-and-iran-febru"
+              },
+              {
+                "label": "Chapter G: War Finance — Prediction Markets, Defense Portfolios, and Who Profits When It Escalates",
+                "href": "/#chapter-g-war-finance-prediction-markets-defense-portfolios-"
+              },
+              {
+                "label": "Chapter 17: Foreign Policy and the Expansionist Pattern",
+                "href": "/#chapter-17-foreign-policy-and-the-expansionist-pattern"
+              },
+              {
+                "label": "Report: money and foreign affairs",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which authorization and official stated objectives apply to each dated action?",
+              "Which explanations have direct documentary support, and what contradicts them?",
+              "Which observed consequences can be attributed, and which remain uncertain?"
+            ],
+            "status": "active",
+            "keywords": [
+              "Iran",
+              "authorization",
+              "military",
+              "sanctions",
+              "Hormuz"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact entities from personally inspected original records; preserve prior topic membership."
+        },
+        {
+          "collection": "topics",
+          "id": "ownership-disclosures",
+          "before": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "BORIS_EPSHTEYN",
+              "MEREDITH_OROURKE",
+              "NATIONAL_PARK_FOUNDATION",
+              "FREEDOM_250_LLC",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-03"
+          },
+          "after": {
+            "id": "ownership-disclosures",
+            "title": "Ownership & financial disclosures",
+            "description": "Legal entities, beneficial interests, dated holdings and disclosed transactions.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "TRUMP",
+              "WLF",
+              "SONS",
+              "KUSHNER",
+              "WITKOFF",
+              "ALT5",
+              "TMTG",
+              "TRUST",
+              "LADDER_CAPITAL",
+              "LADDER_FINANCE",
+              "LADDER_FINANCE_I",
+              "AXOS",
+              "SCHWAB_BANK",
+              "DONALD_TRUMP_JR",
+              "CAPITAL_1789",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "TAE_TECHNOLOGIES",
+              "TRUMP_REVOCABLE_TRUST",
+              "BORIS_EPSHTEYN",
+              "MEREDITH_OROURKE",
+              "NATIONAL_PARK_FOUNDATION",
+              "FREEDOM_250_LLC",
+              "REPUBLIC_OF_SRPSKA",
+              "CONTINENTAL_STRATEGY_LLC",
+              "TREVOR_MILTON",
+              "MAHA_ALLIANCE_C00888172",
+              "TRUMP_47_COMMITTEE_C00867937",
+              "ALT5_DIGITAL",
+              "CONCRETE"
+            ],
+            "reportLinks": [
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Who held which disclosed interest at the relevant date?",
+              "Does a cited record establish a transaction, an allegation or a proposed arrangement?"
+            ],
+            "status": "active",
+            "keywords": [
+              "ownership",
+              "disclosure",
+              "SEC",
+              "beneficial owner",
+              "contract",
+              "financing"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact entities from personally inspected original records; preserve prior topic membership."
+        },
+        {
+          "collection": "topics",
+          "id": "digital-assets",
+          "before": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "CHECKMATE_GOVERNMENT_RELATIONS",
+              "BINANCE_HOLDINGS_LTD",
+              "CHARLES_MCDOWELL"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter F: The Pardon and Access Market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-03"
+          },
+          "after": {
+            "id": "digital-assets",
+            "title": "Digital assets & financial entities",
+            "description": "Issuers, transactions, regulatory records and distinct corporate identities.",
+            "categoryIds": [
+              "financial-history"
+            ],
+            "entityIds": [
+              "WLF",
+              "ZHAO",
+              "POLY",
+              "VAULT",
+              "TRUST",
+              "ALT5",
+              "TREASURY",
+              "ERIC_TRUMP",
+              "ZACH_WITKOFF",
+              "CHECKMATE_GOVERNMENT_RELATIONS",
+              "BINANCE_HOLDINGS_LTD",
+              "CHARLES_MCDOWELL",
+              "ALT5_DIGITAL",
+              "CONCRETE",
+              "FINCEN",
+              "MEXC_GLOBAL"
+            ],
+            "reportLinks": [
+              {
+                "label": "Chapter C: The Family Crypto Empire — WLFI, $TRUMP, USD1, and the Regulators Who Answer to Its Owner",
+                "href": "/#chapter-c-the-family-crypto-empire-wlfi-trump-usd1-and-the-r"
+              },
+              {
+                "label": "Chapter C-2: The Crypto Apparatus — A Forensic Ledger, September 2024 to August 2026",
+                "href": "/#chapter-c-2-the-crypto-apparatus-a-forensic-ledger-september"
+              },
+              {
+                "label": "Chapter F: The Pardon and Access Market",
+                "href": "/#chapter-f-the-pardon-and-access-market"
+              },
+              {
+                "label": "The Money",
+                "href": "/#the-money-the-profit-architecture"
+              }
+            ],
+            "researchQuestions": [
+              "Which entity issued, held or transferred an asset?",
+              "Are figures cash, tokens, revenue, holdings, commitments or completed transfers?"
+            ],
+            "status": "active",
+            "keywords": [
+              "crypto",
+              "token",
+              "stablecoin",
+              "USD1",
+              "WLFI",
+              "digital asset"
+            ],
+            "createdAt": "2026-09-08",
+            "updatedAt": "2026-11-22"
+          },
+          "reason": "Add exact entities from personally inspected original records; preserve prior topic membership."
         }
       ]
     }
